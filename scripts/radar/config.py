@@ -1,5 +1,10 @@
 """網站設定：產品清單、等級門檻、資料來源。改這個檔案就能調整收錄範圍。"""
 
+# 比對規則版本：改了產品清單或規則後把數字加 1，下次執行會重新回看 FIRST_RUN_DAYS 天補抓
+RULES_VERSION = 3
+# AI 摘要格式版本：改了摘要格式就加 1，舊摘要會在之後幾次執行中逐步重新產生
+AI_VERSION = 2
+
 # ---------- 等級門檻 ----------
 # 緊急：CISA KEV（已遭利用）或 CVSS >= CRIT_CVSS
 # 高　：CVSS >= HIGH_CVSS
@@ -25,10 +30,15 @@ GEMINI_MODEL = "gemini-3.5-flash-lite"
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 NVD_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 MSRC_UPDATES_URL = "https://api.msrc.microsoft.com/cvrf/v3.0/updates"
-TWCERT_FEEDS = [
-    ("TWCERT/CC 資安新聞", "https://www.twcert.org.tw/tw/rss-104-1.xml"),
+# 新聞來源（顯示在網頁右欄）
+# filter=True：綜合新聞來源，只保留資安相關的
+# summarize=False：只顯示標題與連結，不做摘要（若對轉載有疑慮可改成 False）
+NEWS_FEEDS = [
+    dict(name="TWCERT/CC 資安新聞", short="TWCERT", url="https://www.twcert.org.tw/tw/rss-104-1.xml", filter=False, summarize=True),
+    dict(name="iThome", short="iThome", url="https://www.ithome.com.tw/rss", filter=True, summarize=True),
 ]
-# TWCERT 標題含這些字 → 升為「高」
+NEWS_SEC_WORDS = r"資安|漏洞|攻擊|駭客|勒索|零時差|釣魚|惡意|外洩|入侵|修補|CVE-\d|後門|殭屍|DDoS|APT|供應鏈攻擊|資料竊取"
+# 新聞標題含這些字 → 標示「重要」
 TW_HIGH_WORDS = ["緊急", "零時差", "已遭利用", "遭利用", "遭駭", "勒索", "重大漏洞", "警訊"]
 
 # ---------- 產品清單 ----------
@@ -103,13 +113,13 @@ PRODUCTS = [
          kw=[r"\bveeam\b"], cpe=["veeam"]),
     # --- 開發與應用 ---
     dict(name="PHP", abbr="PHP", label="PHP", color="#777BB4", text="#fff", group="開發與 AI 平台",
-         kw=[r"php-fpm", r"php-cgi", r"\bmod_php\b", r"\bphp (versions? )?\d\.\d"], cpe=["php:php"]),
+         kw=[r"php-fpm", r"php-cgi", r"\bmod_php\b", r"\bphp (versions? )?[5-9]\.\d"], cpe=["php:php"]),
     dict(name="Java", abbr="Java", label="Java", color="#E76F00", text="#fff", group="開發與 AI 平台",
          kw=[r"java se", r"\bopenjdk\b", r"oracle java", r"\bgraalvm\b"], cpe=["oracle:jdk", "oracle:jre", "oracle:graalvm"]),
     dict(name="Node.js", abbr="Node", label="Node.js", color="#5FA04E", text="#fff", group="開發與 AI 平台",
-         kw=[r"node\.js (v?\d|before|prior|versions?)"], cpe=["nodejs:node.js"]),
+         kw=[r"\bnode\.js\b"], cpe=["nodejs:node.js"]),
     dict(name="Go", abbr="Go", label="Go 語言", color="#00ADD8", text="#fff", group="開發與 AI 平台",
-         kw=[r"\bgolang\b", r"go standard library", r"\bcrypto/x509\b"], cpe=["golang:go"]),
+         kw=[r"\bgolang\b", r"go standard library", r"\bcrypto/(x509|tls)\b", r"\bnet/http\b", r"\bcmd/go\b", r"\bgo (before|prior to) 1\.\d"], cpe=["golang:go"]),
     dict(name="GitLab", abbr="GL", label="GitLab", color="#FC6D26", text="#fff", group="資料庫與應用系統",
          kw=[r"\bgitlab\b"], cpe=["gitlab"]),
     dict(name="Atlassian", abbr="ATL", label="Atlassian", color="#0052CC", text="#fff", group="資料庫與應用系統",
@@ -133,3 +143,37 @@ ZH_KW = {
 
 # 比對不到產品時 KEV 事件用的預設方塊
 OTHER = dict(name="其他", abbr="?", label="其他", color="#8A8A85", text="#fff", group="其他")
+
+
+# 結構化名稱比對（KEV 的「廠商 產品」欄位用）：寫小寫，會以完整單字比對
+ALIASES = {
+    "Windows Server": ["windows", "win32k", "windows server"], "IIS": ["internet information services", "iis"],
+    "ASP.NET": ["asp.net"], ".NET": [".net framework", ".net"], "SQL Server": ["sql server"],
+    "Exchange": ["exchange server", "exchange"], "Office": ["office", "outlook", "sharepoint", "word", "excel", "powerpoint"],
+    "Fortinet": ["fortinet"], "Cisco": ["cisco"], "Palo Alto": ["palo alto networks", "pan-os"], "Ivanti": ["ivanti"],
+    "Citrix": ["citrix", "netscaler"], "SonicWall": ["sonicwall"], "SD-WAN": ["velocloud"],
+    "Linux": ["linux kernel", "linux"], "VMware": ["vmware", "esxi", "vcenter"], "Apache": ["apache"],
+    "nginx": ["nginx"], "OpenSSL": ["openssl"], "OpenSSH": ["openssh"], "BIND": ["bind", "isc"],
+    "Oracle": ["oracle"], "QNAP": ["qnap"], "Synology": ["synology"], "Veeam": ["veeam"],
+    "PHP": ["php"], "Java": ["java", "openjdk", "graalvm"], "Node.js": ["node.js", "nodejs"], "Go": ["go", "golang"],
+    "GitLab": ["gitlab"], "Atlassian": ["atlassian", "confluence", "jira"], "Chrome": ["chrome", "chromium"],
+    "AI 平台": ["langflow", "litellm", "ollama", "n8n", "comfyui", "vllm", "open webui"],
+}
+
+# NVD 的 CNA（發布單位）對應產品：剛公布、還沒有 CPE 時靠這個辨識
+CNA = {
+    "security@php.net": "PHP", "security@golang.org": "Go", "cve@gitlab.com": "GitLab",
+    "psirt@fortinet.com": "Fortinet", "psirt@cisco.com": "Cisco", "psirt@paloaltonetworks.com": "Palo Alto",
+    "security-officer@isc.org": "BIND", "openssl-security@openssl.org": "OpenSSL", "secalert_us@oracle.com": "Oracle",
+    "chrome-cve-admin@google.com": "Chrome", "security@qnap.com": "QNAP", "security@synology.com": "Synology",
+}
+
+# 關鍵字命中但描述含這些字 → 視為誤判（例如 npm 套件描述常寫「for Node.js」）
+EXCLUDE = {
+    "Node.js": [r"\bnpm\b", r"\bpackage\b", r"\bmodule\b", r"\blibrary\b", r"\bplugin\b"],
+    "Go": [r"\bgithub\.com/"],
+    "PHP": [r"management system", r"sourcecodester", r"\.php\b", r"wordpress", r"\bplugin\b", r"\btheme\b"],
+}
+
+# 還沒有 CVSS 分數時，描述含這些字就先以「高」收錄，等評分後自動校正
+SEVERE_WORDS = r"remote code execution|execute arbitrary (code|commands)|arbitrary code execution|command injection|authentication bypass|unauthenticated (remote )?attackers?"

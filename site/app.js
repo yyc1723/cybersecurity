@@ -35,7 +35,7 @@
 
   function shown() {
     const q = $("#q").value.trim().toLowerCase();
-    let rows = DATA.events.filter((e) => e.kind !== "twcert" && (q ? true : recent(e, DAYS)));
+    let rows = DATA.events.filter((e) => e.kind !== "news" && (q ? true : recent(e, DAYS)));
     if (q) rows = rows.filter((e) => (e.title + e.sub + e.products.join() + e.cves.join() + e.pts.join()).toLowerCase().includes(q));
     if (sev !== "all") rows = rows.filter((e) => e.sev === sev);
     return rows.sort((a, b) => (isMine(b) - isMine(a)) || (ORDER[a.sev] - ORDER[b.sev]) || (new Date(b.published) - new Date(a.published)));
@@ -124,32 +124,34 @@
         <div class="pills"><span class="pill sev">${LABEL[e.sev]}</span>${e.kev ? '<span class="pill kev">已遭利用</span>' : ""}${isNew ? '<span class="pill new">新增</span>' : ""}</div>
       </div>
       <div class="bd"><div class="prod"><div class="ic brand" data-pc="${esc(e.products[0])}">${esc(m.abbr)}</div><span>${esc(m.label)}</span></div>
-        <ul>${e.pts.map((p) => `<li>${fmt(p)}</li>`).join("")}</ul></div>
+        <div class="body"><ul>${e.pts.map((p) => `<li>${fmt(p)}</li>`).join("")}</ul>
+        ${e.fix ? `<div class="fix"><b>修補方式</b><span>${fmt(e.fix)}</span></div>` : ""}</div></div>
       <div class="ft"><span class="tags">${e.products.map((p) => `<span>${esc(p)}</span>`).join("")}${e.ai ? "" : '<span>原文擷取</span>'}</span><span>${md(e.published)} · ${esc(e.src)} · <a href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">原始公告 →</a></span></div>
     </div></article>`;
-    }).join("") : `<div class="empty">${!DATA.events.some((x) => x.kind !== "twcert") ? "還沒有資料，等第一次排程執行完成後就會出現。" : q ? "找不到符合的事件，換個關鍵字試試。" : "這個等級目前沒有事件。"}</div>`;
+    }).join("") : `<div class="empty">${!DATA.events.some((x) => x.kind !== "news") ? "還沒有資料，等第一次排程執行完成後就會出現。" : q ? "找不到符合的事件，換個關鍵字試試。" : "這個等級目前沒有事件。"}</div>`;
     paintVars($("#list"));
   }
 
-  let newsLimit = 8;
+  let newsLimit = 8, newsSrc = "all";
   function renderNews() {
-    const all = DATA.events.filter((e) => e.kind === "twcert").sort((a, b) => new Date(b.published) - new Date(a.published));
+    const all = DATA.events.filter((e) => e.kind === "news" && (newsSrc === "all" || e.src.startsWith(newsSrc)))
+      .sort((a, b) => new Date(b.published) - new Date(a.published));
     const list = all.slice(0, newsLimit);
     $("#news").innerHTML = list.length ? list.map((e) => {
       const tags = e.products.filter((p) => p !== "其他");
       return `<a class="nitem ${e.sev}" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">
-        <span class="nmeta"><span class="mono">${md(e.published)}</span>${e.sev === "high" ? '<span class="nlv">重要</span>' : ""}${Date.now() - new Date(e.first_seen) < DAY ? '<span class="nnew">新</span>' : ""}</span>
+        <span class="nmeta"><span class="mono">${md(e.published)}</span><span class="nsrc">${esc(e.src.split(" ")[0])}</span>${e.sev === "high" ? '<span class="nlv">重要</span>' : ""}${Date.now() - new Date(e.first_seen) < DAY ? '<span class="nnew">新</span>' : ""}</span>
         <strong>${esc(e.title)}</strong>
         ${e.pts[0] ? `<p>${esc(e.pts[0].replace(/\*\*/g, ""))}</p>` : ""}
         ${tags.length ? `<span class="ntags">${tags.map((p) => `<span data-pc="${esc(p)}"><i></i>${esc(p)}</span>`).join("")}</span>` : ""}
       </a>`;
-    }).join("") : '<div class="hint">目前沒有 TWCERT/CC 新聞。</div>';
+    }).join("") : '<div class="hint">目前沒有新聞。</div>';
     $("#newsMore").hidden = all.length <= newsLimit;
     paintVars($("#news"));
   }
 
   function renderAll() {
-    const base = DATA.events.filter((e) => e.kind !== "twcert" && recent(e, DAYS));
+    const base = DATA.events.filter((e) => e.kind !== "news" && recent(e, DAYS));
     drawDonut(base); drawTrend(base); drawBars(base); renderQuick(base); renderTodo(); renderList(); renderNews();
   }
 
@@ -167,6 +169,11 @@
     }));
     $("#q").addEventListener("input", renderList);
     $("#newsMore").addEventListener("click", () => { newsLimit += 8; renderNews(); });
+    document.querySelectorAll("#newsSeg button").forEach((b) => b.addEventListener("click", () => {
+      newsSrc = b.dataset.src; newsLimit = 8;
+      document.querySelectorAll("#newsSeg button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      renderNews();
+    }));
     $("#qlist").addEventListener("click", (ev) => {
       const b = ev.target.closest(".qrow"); if (!b) return;
       let card = document.getElementById("ev-" + b.dataset.id);

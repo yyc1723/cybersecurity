@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>iThome</title>
+<item><title>Go 釋出 1.27.3 與 1.26.10，修補 crypto/x509 漏洞 CVE-2026-111943</title><link>https://www.ithome.com.tw/news/180001</link><description>Go 團隊釋出新版，憑證驗證將直接拒絕經 eMudhra 中繼金鑰簽發的憑證鏈，所有 Go 應用程式必須重新編譯並部署才會生效。</description><category>資安</category><pubDate>Thu, 22 Oct 2026 11:00:00 +0800</pubDate></item>
+<item><title>趨勢科技 ZDI 誤將 6 份未修補 Linux 核心漏洞報告寄至公開郵件清單</title><link>https://www.ithome.com.tw/news/180002</link><description>其中 ksmbd 兩個遠端執行漏洞 CVSS 9.0，3 份附完整 PoC，目前尚無官方修補。</description><category>資安</category><pubDate>Thu, 22 Oct 2026 15:00:00 +0800</pubDate></item>
+<item><title>某手機新品發表會重點整理</title><link>https://www.ithome.com.tw/news/180003</link><description>新機搭載更大電池與新相機。</description><category>行動</category><pubDate>Thu, 22 Oct 2026 16:00:00 +0800</pubDate></item>
+</channel></rss>

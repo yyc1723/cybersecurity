@@ -4,9 +4,9 @@
 
 ```
 GitHub Actions（每小時）
-  ├─ 抓：CISA KEV、NVD、Microsoft MSRC、TWCERT/CC
+  ├─ 抓：CISA KEV、NVD、Microsoft MSRC；新聞：TWCERT/CC、iThome
   ├─ 篩：依產品清單與 CVSS 分等級，同一 CVE 合併
-  ├─ AI：Gemini 產生中文標題與三點重點（沒有金鑰也能跑，改用原文擷取）
+  ├─ AI：Gemini 產生中文標題、重點與修補方式（沒有金鑰也能跑，改用原文擷取）
   └─ 資料有變化才 commit → Cloudflare Pages 自動部署（前面掛 Access 限公司信箱）
 ```
 
@@ -91,6 +91,7 @@ repo 的 **Settings → Secrets and variables → Actions → New repository sec
 
 - **新增或刪除產品**：編輯 `scripts/radar/config.py` 的 `PRODUCTS`，照現有格式加一筆，`group` 填分組名稱。`mine=True` 代表預設勾選在「我負責的產品」，且門檻放寬到 CVSS 7。
 - **改等級門檻**：同檔案上方的 `CRIT_CVSS`、`HIGH_CVSS`、`MINE_CVSS`。
+- **改完規則想補抓過去的事件**：把 `config.py` 最上方的 `RULES_VERSION` 加 1，下次執行會重新回看 7 天。
 - **立即更新**：Actions → 更新資安警訊 → Run workflow。
 
 ## 收錄規則
@@ -102,11 +103,15 @@ repo 的 **Settings → Secrets and variables → Actions → New repository sec
 | 注意 | 預設負責產品（微軟系列）CVSS 7.0～7.9 |
 
 - 不在產品清單內的漏洞一律不收（例如冷門 WordPress 外掛、Plex），即使已列入 KEV。
-- TWCERT/CC 新聞全部收錄，放在網頁最右欄；標題含緊急、零時差、遭利用等字會標示「重要」。
+- 新聞放在網頁最右欄：TWCERT/CC 全部收錄，iThome 只留資安相關的；標題含緊急、零時差、遭利用等字會標示「重要」。
+- 新聞提到的 CVE 若 NVD／KEV 還沒收到、且產品在清單內，會自動在中間建一張漏洞卡。
+- 「修補方式」只寫公告或原文明確提到的版本與措施，沒有就不顯示。
+- 新聞只顯示標題、簡短摘要與原文連結，不轉載全文。若單位對轉載有疑慮，把 `config.py` 的 `NEWS_FEEDS` 中該來源的 `summarize` 改成 `False`，就只顯示標題與連結。
 - 同一產品同一天有 2 個以上漏洞列入 KEV，會合併成一張卡。
 - 同一產品同一天有 3 個以上 CVE 會合併成一張卡。
 - 微軟的個別 CVE 不逐一列出，改成每月一張「例行安全更新」摘要卡。
-- NVD 剛公布、尚未評分的 CVE 會先略過，等評分後自動補進來。
+- NVD 剛公布、尚未評分的 CVE：描述含遠端執行、免驗證等字會先以「高」收錄；其他先略過，等評分後自動補進來。
+- 沒有 CVE 編號的事件（例如研究報告外洩）不會出現在 NVD／KEV，只能從右欄新聞看到。
 
 ## 注意事項
 

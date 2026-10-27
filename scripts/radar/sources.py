@@ -114,8 +114,21 @@ def _nvd_pages(params, api_key, fixture):
 
 def fetch_nvd(since, until, api_key=None):
     """抓 since～until 之間「新發布」與「新修改」的 CVE（修改用來補抓後來才評分的）。"""
-    pub = _nvd_pages({"pubStartDate": _iso(since), "pubEndDate": _iso(until)}, api_key, "nvd_pub.json")
-    mod = _nvd_pages({"lastModStartDate": _iso(since), "lastModEndDate": _iso(until)}, api_key, "nvd_mod.json")
+    pub = mod = None
+    try:
+        pub = _nvd_pages({"pubStartDate": _iso(since), "pubEndDate": _iso(until)}, api_key, "nvd_pub.json")
+    except Exception as e:
+        print(f"[NVD] 新發布查詢失敗：{e}")
+    try:
+        # 「修改」查詢量很大，最多回看 2 天就好（只是用來補抓後來才評分的）
+        mod_since = max(since, until - timedelta(days=2))
+        mod = _nvd_pages({"lastModStartDate": _iso(mod_since), "lastModEndDate": _iso(until)}, api_key, "nvd_mod.json")
+    except Exception as e:
+        print(f"[NVD] 修改查詢失敗：{e}")
+    if pub is None and mod is None:
+        raise RuntimeError("NVD 兩個查詢都失敗")
+    pub, mod = pub or [], mod or []
+    print(f"[NVD] 新發布 {len(pub)} 筆、近期修改 {len(mod)} 筆")
     seen, out = set(), []
     recent = until - timedelta(days=30)
     for it in pub + mod:
@@ -173,20 +186,30 @@ def fetch_msrc(done_ids, since):
     return out
 
 
-# ---------------- TWCERT/CC RSS ----------------
+# ---------------- 新聞 RSS（TWCERT/CC、iThome）----------------
 def _strip(s):
     s = re.sub(r"<[^>]+>", " ", s or "")
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
 
 
-def fetch_twcert(since):
-    out = []
-    for i, (name, url) in enumerate(config.TWCERT_FEEDS):
-        raw = get(url, fixture=f"twcert_{i}.xml")
-        root = ET.fromstring(raw)
+def fetch_news(since):
+    """回傳 (各來源成功與否, 新聞清單)。單一來源失敗不影響其他來源。"""
+    out, ok = [], {}
+    for i, feed in enumerate(config.NEWS_FEEDS):
+        name = feed["name"]
+        try:
+            raw = get(feed["url"], fixture=f"news_{i}.xml")
+            root = ET.fromstring(raw)
+        except Exception as e:
+            print(f"[新聞] {name} 抓取失敗：{e}")
+            ok[name] = False
+            continue
+        ok[name] = True
         for item in root.iter("item"):
             title = _strip(item.findtext("title"))
             link = (item.findtext("link") or "").strip()
+            desc = _strip(item.findtext("description"))
+            cats = " ".join(_strip(c.text) for c in item.findall("category"))
             pub = item.findtext("pubDate")
             try:
                 dt = parsedate_to_datetime(pub) if pub else None
@@ -196,6 +219,8 @@ def fetch_twcert(since):
                 dt = dt.replace(tzinfo=UTC)
             if not title or not link.startswith("https://") or (dt and dt < since):
                 continue
-            out.append(dict(title=title, link=link, desc=_strip(item.findtext("description"))[:1200],
-                            published=dt or datetime.now(UTC), src=name))
-    return out
+            if feed.get("filter") and not re.search(config.NEWS_SEC_WORDS, f"{cats} {title} {desc}", re.I):
+                continue  # 綜合新聞來源只留資安相關
+            out.append(dict(title=title, link=link, desc=desc[:1200], published=dt or datetime.now(UTC),
+                            src=name, short=feed.get("short", name), summarize=feed.get("summarize", True)))
+    return ok, out

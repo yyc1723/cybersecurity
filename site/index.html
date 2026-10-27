@@ -71,12 +71,17 @@
       <div id="list"><div class="loading">資料載入中…</div></div>
     </section>
 
-    <footer id="footer">摘要由 AI 產生，請以原始公告為準 · 資料來源：CISA KEV、NVD、Microsoft MSRC、TWCERT/CC</footer>
+    <footer id="footer">摘要由 AI 產生，請以原始公告為準 · 資料來源：CISA KEV、NVD、Microsoft MSRC、TWCERT/CC、iThome（新聞僅列標題與摘要，全文請見原站）</footer>
   </main>
 
-  <aside class="news" aria-label="TWCERT/CC 資安新聞">
+  <aside class="news" aria-label="資安新聞">
     <div class="panel newspanel">
-      <h2>TWCERT/CC 資安新聞<small>台灣在地</small></h2>
+      <h2>資安新聞<small>TWCERT/CC · iThome</small></h2>
+      <div class="nseg" id="newsSeg" role="group" aria-label="新聞來源">
+        <button class="key" type="button" data-src="all" aria-pressed="true">全部</button>
+        <button class="key" type="button" data-src="TWCERT" aria-pressed="false">TWCERT</button>
+        <button class="key" type="button" data-src="iThome" aria-pressed="false">iThome</button>
+      </div>
       <div class="nlist" id="news"></div>
       <button class="key morebtn" id="newsMore" type="button" hidden>顯示更多</button>
     </div>
