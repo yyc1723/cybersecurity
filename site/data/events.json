@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T08:58:41+00:00",
+ "generated": "2026-10-27T09:15:53+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -870,7 +870,7 @@
     "**同日有 2 個漏洞列入 CISA KEV 已遭利用清單**。",
     "PHP Memory Corruption Vulnerability: PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code exec"
    ],
-   "fix": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Note",
+   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
    "ai": false
   },
   {
@@ -949,31 +949,6 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-114102",
-   "kind": "cve",
-   "title": "Node.js 漏洞 CVE-2026-114102",
-   "sub": "CVE-2026-114102 · CVSS 8.7",
-   "sev": "high",
-   "kev": false,
-   "ransomware": false,
-   "products": [
-    "Node.js"
-   ],
-   "cves": [
-    "CVE-2026-114102"
-   ],
-   "cvss": 8.7,
-   "published": "2026-10-21T01:17:35+00:00",
-   "first_seen": "2026-10-27T09:00:35+00:00",
-   "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114102",
-   "pts": [
-    "adm-zip before 0.6.1 contains a denial of service vulnerability that allows unauthenticated attackers to crash the Node.js process via a mal"
-   ],
-   "fix": "",
-   "ai": false
-  },
-  {
    "id": "grp:AI 平台:2026-10-21",
    "kind": "group",
    "title": "AI 平台 多個高風險漏洞",
@@ -991,12 +966,12 @@
    ],
    "cvss": 9.2,
    "published": "2026-10-21T01:17:27+00:00",
-   "first_seen": "2026-10-27T08:02:19+00:00",
+   "first_seen": "2026-10-27T09:18:04+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/search/results?query=CVE-2026-114052",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114052",
    "pts": [
     "同日公布 3 個漏洞，最高 CVSS 9.2。",
-    "vLLM from 0.7.3 before 0.31.0 forwards the request-supplied mm_processor_kwargs.code_revision to Transformers AutoProcessor.from_pretrained,"
+    "vLLM after 0.24.0 and before 0.31.0 contains a memory exhaustion vulnerability in MOSS-Audio model serving that caches a processor for every"
    ],
    "fix": "",
    "ai": false
@@ -1004,7 +979,7 @@
   {
    "id": "grp:Windows Server:2026-10-21",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Windows 多個高風險漏洞",
    "sub": "11 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1028,21 +1003,20 @@
    ],
    "cvss": 9.6,
    "published": "2026-10-20T22:18:51+00:00",
-   "first_seen": "2026-10-27T08:02:19+00:00",
+   "first_seen": "2026-10-27T09:18:04+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/search/results?query=CVE-2026-113011",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113011",
    "pts": [
-    "影響 Windows 版 156.0.8078.47 以前的 Google Chrome。遠端攻擊者可透過精心設計的 HTML 網頁執行任意程式碼。",
-    "CVSS 為 9.6，目前未遭利用或用於勒索軟體。攻擊條件為誘使使用者瀏覽特製 HTML 網頁。",
-    "建議**將 Windows 版 Chrome 升級至 156.0.8078.47 以上版本**以修補漏洞。"
+    "同日公布 11 個漏洞，最高 CVSS 9.6。",
+    "Use after free in CredentialProvider in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary co"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Chrome:2026-10-21",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Chrome 多個高風險漏洞",
    "sub": "292 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1346,26 +1320,27 @@
    ],
    "cvss": 9.6,
    "published": "2026-10-20T22:18:48+00:00",
-   "first_seen": "2026-10-27T08:02:19+00:00",
+   "first_seen": "2026-10-27T09:18:04+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/search/results?query=CVE-2026-112992",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "影響 156.0.8078.47 之前的 Google Chrome。**遠端攻擊者可透過精心製作的 HTML 頁面潛在執行沙盒外任意程式碼**。",
-    "包含記憶體毀損、釋放後使用及輸入驗證不當等漏洞，CVSS 達 9.6。目前尚未遭利用或用於勒索軟體攻擊。"
+    "同日公布 292 個漏洞，最高 CVSS 9.6。",
+    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:SQL Server:2026-10-21",
    "kind": "group",
-   "title": "SQL Server 相關產品安全漏洞",
+   "title": "SQL Server 多個高風險漏洞",
    "sub": "12 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
-    "SQL Server"
+    "SQL Server",
+    "Oracle"
    ],
    "cves": [
     "CVE-2026-101679",
@@ -1383,21 +1358,20 @@
    ],
    "cvss": 9.3,
    "published": "2026-10-20T22:18:22+00:00",
-   "first_seen": "2026-10-27T08:02:19+00:00",
+   "first_seen": "2026-10-27T09:18:04+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/search/results?query=CVE-2026-101679",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101679",
    "pts": [
-    "**Bp Premier 1.14.1.1128 之前版本使用寫死 SQL Server 密碼，攻擊者可驗證為 sysadmin**；另影響 MySQL 相關版本。",
-    "CVSS 評分為 9.3，目前未遭利用或用於勒索軟體，具資料庫網路存取權限者即可發動攻擊。",
-    "建議限制資料庫個體的網路存取權限，並清查系統是否使用受影響之 Bp Premier 或 MySQL 版本。"
+    "同日公布 12 個漏洞，最高 CVSS 9.3。",
+    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs). Supported versions that are affected "
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle多款產品高風險漏洞",
+   "title": "Oracle 多個高風險漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -1624,46 +1598,21 @@
     "CVE-2026-91668"
    ],
    "cvss": 10.0,
-   "published": "2026-10-20T22:17:59+00:00",
-   "first_seen": "2026-10-27T08:02:19+00:00",
+   "published": "2026-10-20T22:17:46+00:00",
+   "first_seen": "2026-10-27T09:18:04+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/search/results?query=CVE-2026-101499",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
     "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the Workflow product of Oracle E-Business Suite (component: Workflow Notification Mailer). Supported versions that are affe"
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
    "ai": false
   },
   {
-   "id": "CVE-2026-111756",
-   "kind": "cve",
-   "title": "Node.js 漏洞 CVE-2026-111756",
-   "sub": "CVE-2026-111756 · CVSS 8.2",
-   "sev": "high",
-   "kev": false,
-   "ransomware": false,
-   "products": [
-    "Node.js"
-   ],
-   "cves": [
-    "CVE-2026-111756"
-   ],
-   "cvss": 8.2,
-   "published": "2026-10-20T18:17:18+00:00",
-   "first_seen": "2026-10-27T09:00:35+00:00",
-   "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111756",
-   "pts": [
-    "follow-redirects is a Node.js HTTP and HTTPS client wrapper that automatically follows redirects. From version 1.16.0 to before version 1.16"
-   ],
-   "fix": "原文：This issue has been patched in version 1.16.1.",
-   "ai": false
-  },
-  {
    "id": "grp:Apache:2026-10-20",
    "kind": "group",
-   "title": "Tomcat 多重安全漏洞",
+   "title": "Apache 多個高風險漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -1678,16 +1627,15 @@
    ],
    "cvss": 9.1,
    "published": "2026-10-20T14:16:54+00:00",
-   "first_seen": "2026-10-27T08:02:19+00:00",
+   "first_seen": "2026-10-27T09:18:04+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/search/results?query=CVE-2026-101296",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101296",
    "pts": [
-    "影響 Apache Tomcat 部分版本，存有身份驗證旁路、物件回收與緩衝區讀取問題，可能導致未授權存取及資料洩漏。",
-    "CVSS 評分為 9.1，發布日期為 2026-10-20，目前確定未遭利用，亦無勒索軟體利用跡象。",
-    "**請管理者儘速檢視伺服器之 Apache Tomcat 設定與影響範圍**，並持續留意官方後續更新。"
+    "同日公布 3 個漏洞，最高 CVSS 9.1。",
+    "A missing critical step in authentication vulnerability in Apache Tomcat when the JNDI realm was configured with with a non GSSAPI SASL auth"
    ],
-   "fix": "",
-   "ai": true
+   "fix": "原文：A missing critical step in authentication vulnerability in Apache Tomcat when the JNDI realm was configured with with a non GSSAPI SASL authentication mechanism allowed attacker",
+   "ai": false
   },
   {
    "id": "msrc:2026-Oct",
