@@ -1,0 +1,37 @@
+name: 更新資安警訊
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # 每小時第 17 分執行（UTC，避開整點尖峰）
+  workflow_dispatch:        # 允許在 Actions 頁面手動執行
+
+permissions:
+  contents: write           # 需要寫入權限才能把新資料 commit 回 repo
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 抓取並整理資料
+        id: run
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: python3 scripts/update.py
+
+      - name: 有變化才提交（避免用掉 Cloudflare Pages 每月建置次數）
+        if: steps.run.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/events.json data/store.json
+          git commit -m "data: 更新資安警訊 $(TZ=Asia/Taipei date '+%m/%d %H:%M')"
+          git push
