@@ -34,6 +34,127 @@
  },
  "events": [
   {
+   "id": "tw:ad95fcbf0211",
+   "kind": "news",
+   "title": "HPE修補網路作業系統ArubaOS 72個漏洞，含8個CVSS滿分重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-27T14:33:54+00:00",
+   "first_seen": "2026-10-27T14:33:54+00:00",
+   "updated": "2026-10-27T14:33:54+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180002",
+   "pts": [
+    "HPE於10月22日公告修補Aruba網路作業系統ArubaOS（AOS）共72個漏洞，涵蓋企業無線網路使用的控制器、閘道器、無線AP及虛擬控制器等設備。受影響版本包括AOS-10的10.8.1.1、10.7.2.6、10.4.1.13及更早版本，以及AOS-8的8.13.3.0、8.10.0.23"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "HPE修補網路作業系統ArubaOS 72個漏洞，含8個CVSS滿分重大漏洞",
+    "desc": "HPE於10月22日公告修補Aruba網路作業系統ArubaOS（AOS）共72個漏洞，涵蓋企業無線網路使用的控制器、閘道器、無線AP及虛擬控制器等設備。受影響版本包括AOS-10的10.8.1.1、10.7.2.6、10.4.1.13及更早版本，以及AOS-8的8.13.3.0、8.10.0.23及更早版本。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2a95cb6bf93c",
+   "kind": "news",
+   "title": "雲端平臺Railway客戶環境變數遭解密，駭客疑鎖定AI服務金鑰",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-27T14:33:54+00:00",
+   "first_seen": "2026-10-27T14:33:54+00:00",
+   "updated": "2026-10-27T14:33:54+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179996",
+   "pts": [
+    "雲端應用程式部署平臺Railway公布資安事故初步調查結果，駭客入侵內部系統，部分客戶的機密環境變數已遭解密，約10萬個工作空間可能受到影響，最多占全體工作空間1.85%。Railway研判，攻擊者鎖定AI服務API金鑰，可能企圖用於模型蒸餾。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "雲端平臺Railway客戶環境變數遭解密，駭客疑鎖定AI服務金鑰",
+    "desc": "雲端應用程式部署平臺Railway公布資安事故初步調查結果，駭客入侵內部系統，部分客戶的機密環境變數已遭解密，約10萬個工作空間可能受到影響，最多占全體工作空間1.85%。Railway研判，攻擊者鎖定AI服務API金鑰，可能企圖用於模型蒸餾。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:62d48f39a0cc",
+   "kind": "news",
+   "title": "日本GMO旗下Onamae雲端桌面日前遭駭，證券及外匯交易帳戶傳異常，最新公告緊急要求用戶斷網關機",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-27T14:33:54+00:00",
+   "first_seen": "2026-10-27T14:33:54+00:00",
+   "updated": "2026-10-27T14:33:54+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179994",
+   "pts": [
+    "日本GMO集團旗下網際網路基礎設施業者GMO Internet發生資安事件，旗下主打外匯自動交易等用途的「Onamae.com Desktop Cloud」雲端桌面服務，遭到駭客入侵，部分客戶陸續反映證券及外匯交易帳戶出現未經授權的交易操作，後續亦確認客戶資料外洩。為了因應後續攻擊威脅，GMO在10"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "日本GMO旗下Onamae雲端桌面日前遭駭，證券及外匯交易帳戶傳異常，最新公告緊急要求用戶斷網關機",
+    "desc": "日本GMO集團旗下網際網路基礎設施業者GMO Internet發生資安事件，旗下主打外匯自動交易等用途的「Onamae.com Desktop Cloud」雲端桌面服務，遭到駭客入侵，部分客戶陸續反映證券及外匯交易帳戶出現未經授權的交易操作，後續亦確認客戶資料外洩。為了因應後續攻擊威脅，GMO在10月27日的公告中，緊急要求用戶備份資料、中斷網路連線並關機，同時調查曾連接雲端桌面服務的客戶電腦是否遭植入惡意程式。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:722797c14ca9",
+   "kind": "news",
+   "title": "【資安日報】10月27日，91APP遭駭事件查出ARTEX攻擊痕跡，顯示不只日韓，臺灣也出現相關攻擊案例",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js",
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-27T14:33:54+00:00",
+   "first_seen": "2026-10-27T14:33:54+00:00",
+   "updated": "2026-10-27T14:33:54+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179981",
+   "pts": [
+    "本日新聞焦點 ● 91APP遭駭事件發現ARTEX攻擊痕跡，顯示臺灣出現相關攻擊案例 ● eMudhra憑證事件波及Python，pip緊急更新，更新系統憑證仍不足 ● 不只影響Node.js，Node2Shell漏洞恐波及其他開發工具及應用程式"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】10月27日，91APP遭駭事件查出ARTEX攻擊痕跡，顯示不只日韓，臺灣也出現相關攻擊案例",
+    "desc": "本日新聞焦點 ● 91APP遭駭事件發現ARTEX攻擊痕跡，顯示臺灣出現相關攻擊案例 ● eMudhra憑證事件波及Python，pip緊急更新，更新系統憑證仍不足 ● 不只影響Node.js，Node2Shell漏洞恐波及其他開發工具及應用程式",
+    "summarize": true
+   }
+  },
+  {
    "id": "tw:efefc8d43def",
    "kind": "news",
    "title": "預防SBOM清單也可能遭竄改，歐盟ENISA發布技術指南，提出生命週期安全防護建議",
@@ -794,6 +915,113 @@
     "desc": "PHP官方於2026年10月21日發布安全性更新，修補CVE-2026-109618及CVE-2026-109619兩項嚴重漏洞，CVSS v4.0基礎分數皆為9.2，未經身分驗證之攻擊者可能利用漏洞執行遠端程式碼。TWCERT/CC已發布 漏洞警訊公告 ，美國網路安全暨基礎設施安全局（CISA）、歐盟電腦緊急應變小組（CERT-EU）及英國國家網路安全中心（NCSC）等機構相繼發布警告，呼籲使用PHP之單位立即完成更新；若無法立即更新，應考慮隔離對外系統或暫停服務。 PHP 官方公告 PHP官方於2026年10月20日預告，將於10月21日14:00 UTC（台灣時間22:00）發布安全性更新，修補2項嚴重漏洞，並表示若漏洞細節提前公開或出現實際利用跡象，將提前發布。 PHP官方於10月21日發布更新，修補之漏洞如下： CVE 編號 漏洞類型 CVSS v4.0 基礎分數 CVE-2026-109618 遠端程式碼執行 9.2 CVE-2026-109619 遠端程式碼執行 9.2 表1、PHP於2026年10月21日修補之漏洞（資料來源：PHP安全公告） 依官方說明，CVE-2026-109618與記憶體不足之處理機制有關，可能使PHP在請求資料尚未完成初始化時中斷，後續清理程序誤將無效資料視為有效資料。CVE-2026-109619則是請求所屬之內部狀態於記憶體釋放後仍殘留，同一處理程序後續處理之請求可能在初始化前使用該狀態。 受影響範圍涵蓋所有處理網頁請求之PHP環境，包括PHP-FPM、Apache mod_php、php-cgi、FrankenPHP及LiteSpeed。官方認為Apache mod_php風險最高，並已驗證未經身分驗證之請求可於應用程式碼執行前觸發攻擊。 各版本之修補方式如下： 版本 修補方式 PHP 8.5 更新至8.5.12 PHP 8.4 更新至8.4.27 PHP 8.3 更新至8.3.36 PHP 8.2 更新至8.2.35（2026年12月31日結束生命週期） PHP 8.1及更早版本 不再接收官方更新，應洽詢發行版或長期支援廠商，或升級至受支援版本；官方另為7.4、8.0、8.1提供精簡原始碼修補 表2、PHP各版本修補方式（資料來源：PHP安全公告） 官方強調，更新為唯一完整之解決方式。公告中雖列出可降低特定攻擊路徑曝險之暫時設定，但該等措施無法確保系統安全。 國際資安機構示警 CISA呼籲各組織立即修補兩項漏洞，並更新至官方修補版本。 CERT-EU於安全公告中指出，漏洞技術細節已公開討論，初步概念驗證（PoC）開始流傳，攻擊者已利用漏洞之可能性因此升高，建議立即修補；無法立即修補者，應考慮將對外應用程式與公共網路隔離，直至修補完成並經驗證。CERT-EU並提醒，許多商用及開源產品以PHP作為後端技術，即使未直"
    },
    "fix": ""
+  },
+  {
+   "id": "grp:GitLab:2026-10-22",
+   "kind": "group",
+   "title": "GitLab 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 10.0",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-110264",
+    "CVE-2026-15723"
+   ],
+   "cvss": 10.0,
+   "published": "2026-10-22T01:16:57+00:00",
+   "first_seen": "2026-10-27T14:33:51+00:00",
+   "updated": "2026-10-27T14:33:51+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression.",
+     "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.1 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, when OmniAuth SAML and LDAP auto-linking were both enabled, an authenticated user could have taken over an existing LDAP-backed account without any interaction from the targeted user, due to improper input sanitization in the LDAP email lookup path used during OmniAuth identity linking."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-96644",
+   "kind": "cve",
+   "title": "Windows 漏洞 CVE-2026-96644",
+   "sub": "CVE-2026-96644 · CVSS 7.1",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-96644"
+   ],
+   "cvss": 7.1,
+   "published": "2026-10-21T21:20:32+00:00",
+   "first_seen": "2026-10-27T14:33:51+00:00",
+   "updated": "2026-10-27T14:33:51+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96644",
+   "pts": [
+    "Pillow is a Python imaging library. Prior to 13.0.0 on Windows, src/PIL/WmfImagePlugin.py passes unchecked 32-bit WMF or EMF dimensions to t"
+   ],
+   "fix": "原文：This issue is fixed in version 13.0.0.",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "Pillow is a Python imaging library. Prior to 13.0.0 on Windows, src/PIL/WmfImagePlugin.py passes unchecked 32-bit WMF or EMF dimensions to the native drawwmf handler in src/display.c. The handler sizes a DIB allocation from 16-bit-truncated bcWidth and bcHeight fields but copies pixel data using the original full dimensions. A crafted wide, short metafile can pass the pixel-count decompression-bomb check and make the Windows-only renderer read beyond the heap buffer, potentially disclosing memory or crashing the process. This issue is fixed in version 13.0.0.",
+    "refs": [
+     "https://github.com/python-pillow/Pillow/commit/4cf46bee338304c5c8968fd7f132ba0d40c428b7",
+     "https://github.com/python-pillow/Pillow/pull/10120",
+     "https://github.com/python-pillow/Pillow/releases/tag/13.0.0",
+     "https://github.com/python-pillow/Pillow/security/advisories/GHSA-9v9v-9qvf-h2hj"
+    ]
+   }
+  },
+  {
+   "id": "grp:Palo Alto:2026-10-21",
+   "kind": "group",
+   "title": "Palo Alto 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.2",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Palo Alto",
+    "PHP"
+   ],
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "cvss": 9.2,
+   "published": "2026-10-21T14:17:09+00:00",
+   "first_seen": "2026-10-27T14:33:51+00:00",
+   "updated": "2026-10-27T14:33:51+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.2。",
+    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+     "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE)."
+    ]
+   }
   },
   {
    "id": "grp:AI 平台:2026-10-21",
@@ -1789,7 +2017,7 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-27T09:18:04+00:00",
+   "updated": "2026-10-27T14:33:51+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
@@ -2016,7 +2244,16 @@
      "Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Essbase.  While the vulnerability is in Oracle Essbase, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Essbase. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
      "Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via T3, IIOP to compromise Oracle Essbase.  While the vulnerability is in Oracle Essbase, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Essbase. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
      "Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Essbase.  Successful attacks of this vulnerability can result in takeover of Oracle Essbase. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Dictionary Repository).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via SQL to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)."
+     "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Dictionary Repository).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via SQL to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Connectors and Connector Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows high privileged attacker with network access via SOAP to compromise Oracle Identity Manager Connector.  While the vulnerability is in Oracle Identity Manager Connector, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Identity Manager Connector accessible data as well as  unauthorized access to critical data or complete access to all Oracle Identity Manager Connector accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Generic REST).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Identity Manager Connector.  While the vulnerability is in Oracle Identity Manager Connector, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Identity Manager Connector accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+     "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: LDAP Gateway).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via LDAP to compromise Oracle Identity Manager Connector.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Identity Manager Connector accessible data as well as  unauthorized access to critical data or complete access to all Oracle Identity Manager Connector accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: LDAP Gateway).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via LDAP to compromise Oracle Identity Manager Connector.  Successful attacks of this vulnerability can result in takeover of Oracle Identity Manager Connector. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: SAP ERP+).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Identity Manager Connector.  While the vulnerability is in Oracle Identity Manager Connector, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Identity Manager Connector accessible data as well as  unauthorized access to critical data or complete access to all Oracle Identity Manager Connector accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Essbase.  While the vulnerability is in Oracle Essbase, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Essbase accessible data as well as  unauthorized update, insert or delete access to some of Oracle Essbase accessible data. CVSS 3.1 Base Score 9.3 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N).",
+     "Vulnerability in Oracle Essbase (component: Essbase Web Platform).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Essbase.  While the vulnerability is in Oracle Essbase, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Essbase accessible data as well as  unauthorized update, insert or delete access to some of Oracle Essbase accessible data. CVSS 3.1 Base Score 8.5 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N).",
+     "Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Essbase.  While the vulnerability is in Oracle Essbase, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Essbase accessible data as well as  unauthorized update, insert or delete access to some of Oracle Essbase accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Essbase. CVSS 3.1 Base Score 9.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L)."
     ]
    }
   },
@@ -2117,6 +2354,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-10-27T09:15:53+00:00",
- "kev_last": "2026-10-27T09:15:53+00:00"
+ "nvd_last": "2026-10-27T14:32:58+00:00",
+ "kev_last": "2026-10-27T14:32:58+00:00"
 }

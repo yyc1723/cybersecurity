@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T09:15:53+00:00",
+ "generated": "2026-10-27T14:32:58+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,99 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:ad95fcbf0211",
+   "kind": "news",
+   "title": "HPE修補網路作業系統ArubaOS 72個漏洞，含8個CVSS滿分重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-27T14:33:54+00:00",
+   "first_seen": "2026-10-27T14:33:54+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180002",
+   "pts": [
+    "HPE於10月22日公告修補Aruba網路作業系統ArubaOS（AOS）共72個漏洞，涵蓋企業無線網路使用的控制器、閘道器、無線AP及虛擬控制器等設備。受影響版本包括AOS-10的10.8.1.1、10.7.2.6、10.4.1.13及更早版本，以及AOS-8的8.13.3.0、8.10.0.23"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:2a95cb6bf93c",
+   "kind": "news",
+   "title": "雲端平臺Railway客戶環境變數遭解密，駭客疑鎖定AI服務金鑰",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-27T14:33:54+00:00",
+   "first_seen": "2026-10-27T14:33:54+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179996",
+   "pts": [
+    "雲端應用程式部署平臺Railway公布資安事故初步調查結果，駭客入侵內部系統，部分客戶的機密環境變數已遭解密，約10萬個工作空間可能受到影響，最多占全體工作空間1.85%。Railway研判，攻擊者鎖定AI服務API金鑰，可能企圖用於模型蒸餾。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:62d48f39a0cc",
+   "kind": "news",
+   "title": "日本GMO旗下Onamae雲端桌面日前遭駭，證券及外匯交易帳戶傳異常，最新公告緊急要求用戶斷網關機",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-27T14:33:54+00:00",
+   "first_seen": "2026-10-27T14:33:54+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179994",
+   "pts": [
+    "日本GMO集團旗下網際網路基礎設施業者GMO Internet發生資安事件，旗下主打外匯自動交易等用途的「Onamae.com Desktop Cloud」雲端桌面服務，遭到駭客入侵，部分客戶陸續反映證券及外匯交易帳戶出現未經授權的交易操作，後續亦確認客戶資料外洩。為了因應後續攻擊威脅，GMO在10"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:722797c14ca9",
+   "kind": "news",
+   "title": "【資安日報】10月27日，91APP遭駭事件查出ARTEX攻擊痕跡，顯示不只日韓，臺灣也出現相關攻擊案例",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js",
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-27T14:33:54+00:00",
+   "first_seen": "2026-10-27T14:33:54+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179981",
+   "pts": [
+    "本日新聞焦點 ● 91APP遭駭事件發現ARTEX攻擊痕跡，顯示臺灣出現相關攻擊案例 ● eMudhra憑證事件波及Python，pip緊急更新，更新系統憑證仍不足 ● 不只影響Node.js，Node2Shell漏洞恐波及其他開發工具及應用程式"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:efefc8d43def",
    "kind": "news",
@@ -947,6 +1040,86 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "grp:GitLab:2026-10-22",
+   "kind": "group",
+   "title": "GitLab 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 10.0",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-110264",
+    "CVE-2026-15723"
+   ],
+   "cvss": 10.0,
+   "published": "2026-10-22T01:16:57+00:00",
+   "first_seen": "2026-10-27T14:33:51+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-96644",
+   "kind": "cve",
+   "title": "Windows 漏洞 CVE-2026-96644",
+   "sub": "CVE-2026-96644 · CVSS 7.1",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-96644"
+   ],
+   "cvss": 7.1,
+   "published": "2026-10-21T21:20:32+00:00",
+   "first_seen": "2026-10-27T14:33:51+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96644",
+   "pts": [
+    "Pillow is a Python imaging library. Prior to 13.0.0 on Windows, src/PIL/WmfImagePlugin.py passes unchecked 32-bit WMF or EMF dimensions to t"
+   ],
+   "fix": "原文：This issue is fixed in version 13.0.0.",
+   "ai": false
+  },
+  {
+   "id": "grp:Palo Alto:2026-10-21",
+   "kind": "group",
+   "title": "Palo Alto 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.2",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Palo Alto",
+    "PHP"
+   ],
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "cvss": 9.2,
+   "published": "2026-10-21T14:17:09+00:00",
+   "first_seen": "2026-10-27T14:33:51+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.2。",
+    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:AI 平台:2026-10-21",
