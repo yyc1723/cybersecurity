@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T20:06:18+00:00",
+ "generated": "2026-10-27T23:47:28+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "items": [
    {
-    "title": "處理：SQL Server 多個高風險漏洞",
-    "desc": "請依原廠公告確認受影響版本並排程更新。"
-   },
-   {
     "title": "處理：Windows 多個高風險漏洞",
-    "desc": "請依原廠公告確認受影響版本並排程更新。"
+    "desc": "Use after free in CredentialProvider in Google Chrome on on Windows pr"
    },
    {
-    "title": "處理：Microsoft 10 月例行安全更新",
-    "desc": "請確認 Windows Update／WSUS 已部署本月累積更新。"
+    "title": "處理：SQL Server 多個高風險漏洞",
+    "desc": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MyS"
    },
    {
-    "title": "處理：Tomcat 多重安全漏洞",
-    "desc": "請管理者儘速檢視伺服器之 Apache Tomcat 設定與影響範圍，並持續留意官方後續更新。"
+    "title": "處理：Windows安全繞過漏洞",
+    "desc": "建議資安人員清查相關伺服器與產品，並追蹤官方公告以安排修補處理。"
    },
    {
-    "title": "處理：Oracle多款產品高風險漏洞",
-    "desc": "請資安與系統管理員儘速排查內部受影響之 Oracle 伺服器並進行修補。"
+    "title": "處理：Brotli解壓縮漏洞也影響.NET，微軟緊急發布臨時",
+    "desc": "微軟10月25日發布.NET臨時（Out-of-Band）安全更新，緊急修補Brotli解壓縮漏洞。應用程式若解開攻擊者提供的惡意壓縮資料，"
    },
    {
-    "title": "處理：Chrome 遠端執行程式碼漏洞",
-    "desc": "請儘速將 Google Chrome 升級至 156.0.8078.47 或更高版本。"
+    "title": "處理：Veeam 多個高風險漏洞",
+    "desc": "A vulnerability allowing an authenticated organization-transfer peer t"
+   },
+   {
+    "title": "處理：PHP 多個已遭利用漏洞",
+    "desc": "PHP Memory Corruption Vulnerability: PHP contains an out-of-memory cor"
    }
   ],
   "ai": true
@@ -361,6 +361,78 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "grp:Chrome:2026-10-28",
+   "kind": "group",
+   "title": "Chrome 多個高風險漏洞",
+   "sub": "47 個 CVE",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-118304",
+    "CVE-2026-118305",
+    "CVE-2026-118306",
+    "CVE-2026-118307",
+    "CVE-2026-118308",
+    "CVE-2026-118309",
+    "CVE-2026-118310",
+    "CVE-2026-118311",
+    "CVE-2026-118312",
+    "CVE-2026-118313",
+    "CVE-2026-118314",
+    "CVE-2026-118315",
+    "CVE-2026-118316",
+    "CVE-2026-118317",
+    "CVE-2026-118320",
+    "CVE-2026-118321",
+    "CVE-2026-118327",
+    "CVE-2026-118328",
+    "CVE-2026-118329",
+    "CVE-2026-118330",
+    "CVE-2026-118331",
+    "CVE-2026-118332",
+    "CVE-2026-118334",
+    "CVE-2026-118335",
+    "CVE-2026-118336",
+    "CVE-2026-118338",
+    "CVE-2026-118339",
+    "CVE-2026-118340",
+    "CVE-2026-118341",
+    "CVE-2026-118342",
+    "CVE-2026-118343",
+    "CVE-2026-118344",
+    "CVE-2026-118345",
+    "CVE-2026-118346",
+    "CVE-2026-118347",
+    "CVE-2026-118348",
+    "CVE-2026-118349",
+    "CVE-2026-118350",
+    "CVE-2026-118351",
+    "CVE-2026-118352",
+    "CVE-2026-118353",
+    "CVE-2026-118354",
+    "CVE-2026-118355",
+    "CVE-2026-118356",
+    "CVE-2026-118357",
+    "CVE-2026-118358",
+    "CVE-2026-118359"
+   ],
+   "cvss": null,
+   "published": "2026-10-27T23:16:58+00:00",
+   "first_seen": "2026-10-27T23:47:47+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
+   "pts": [
+    "同日公布 47 個漏洞。",
+    "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code ins"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "grp:Veeam:2026-10-28",
    "kind": "group",
@@ -776,10 +848,10 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179952",
    "pts": [
-    "澳洲科技媒體iTnews近期報導，Node.js日前修補的高風險漏洞Node2Shell，漏洞編號為CVE-2026-111497，可能也影響其他開發工具及應用程式。"
+    "Node.js修補的高風險漏洞Node2Shell（CVE-2026-111497），**恐波及其他開發工具及應用程式**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:4b62ca910814",
@@ -799,10 +871,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179944",
    "pts": [
-    "資安業者Huntress近日揭露一波針對Microsoft 365的權杖重播攻擊（Token Replay Attack），攻擊者利用竊取自不同組織使用者的登入權杖，大量嘗試冒用使用者身分登入Microsoft 365帳號。根據該公司的調查，7月14日至9月22日期間，在79家受影響組織中，至少觀測"
+    "攻擊者利用竊取的登入權杖，對Microsoft 365帳號發起權杖重播攻擊。",
+    "7月14日至9月22日期間，**共有79家組織受影響並觀測到至少497次成功登入**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:6623266504de",
@@ -845,10 +918,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179907",
    "pts": [
-    "國際刑警組織（INTERPOL）10月22日公布跨國掃蕩網路犯罪的最新成果，美國與非洲20國執法機關在Serengeti III行動中共逮捕1,462名嫌犯、干擾10,909個惡意網路的運作，並追回超過1.05億美元非法資金。執法機關在調查中確認，共有65,929人遭網路犯罪集團鎖定，相關犯罪造成的"
+    "國際刑警組織在Serengeti III行動中逮捕1,462名嫌犯，並干擾10,909個惡意網路。",
+    "**調查確認65,929人遭網路犯罪集團鎖定**，損失超過3.85億美元。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:d7bc17803a84",
@@ -869,10 +943,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179955",
    "pts": [
-    "開源AI模型串接工具LiteLLM公布1.107.0版供應鏈攻擊的調查結果，發現攻擊者利用5月外洩後未撤銷的AI代理平臺主金鑰，取得GitHub組織擁有者的存取權杖。攻擊者隨後竊取另外兩名維護者的憑證，最終操控官方發布流程，讓含有竊密程式的版本上架PyPI及容器映像檔儲存庫。"
+    "LiteLLM公布1.107.0版供應鏈攻擊調查，源於5月外洩未撤銷的AI代理平台主金鑰。",
+    "**攻擊者藉此操控發布流程**，將含有竊密程式的版本上架至PyPI及容器映像檔儲存庫。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:22dea305c50a",
@@ -892,10 +967,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179954",
    "pts": [
-    "程式語言Ruby官方發布新版本4.0.9、3.4.12及3.3.13，修補正規表示式引擎Onigmo的多項記憶體處理錯誤。問題是在GitLab調查4項可能導致遠端程式碼執行的漏洞時發現，攻擊者可利用特製的正規表示式破壞記憶體，進而在GitLab伺服器執行程式碼。GitLab先前已修補自家產品使用的R"
+    "Ruby發布4.0.9、3.4.12及3.3.13版，修補正規表示式引擎Onigmo的記憶體錯誤。",
+    "此缺陷為GitLab調查RCE漏洞時發現，**攻擊者可藉破壞記憶體於伺服器執行程式碼**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:62b1081799e7",
@@ -915,10 +991,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179953",
    "pts": [
-    "資安研究人員Erica Windisch揭露，虛擬私人網路（VPN）服務Tailscale內建的SSH遠端登入功能存在權限提升問題，攻擊者若先控制一臺獲准登入的裝置，可能在SSH轉送功能獲得允許的情況下，取得其他伺服器的最高管理權限。"
+    "Tailscale VPN服務內建的SSH遠端登入功能存在權限提升漏洞。",
+    "攻擊者若控制獲准登入的裝置，**可於允許SSH轉送時取得伺服器最高管理權限**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:27de9a931e2d",
