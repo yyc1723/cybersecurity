@@ -1,7 +1,7 @@
 """網站設定：產品清單、等級門檻、資料來源。改這個檔案就能調整收錄範圍。"""
 
 # 比對規則版本：改了產品清單或規則後把數字加 1，下次執行會重新回看 FIRST_RUN_DAYS 天補抓
-RULES_VERSION = 3
+RULES_VERSION = 4
 # AI 摘要格式版本：改了摘要格式就加 1，舊摘要會在之後幾次執行中逐步重新產生
 AI_VERSION = 2
 
@@ -14,13 +14,14 @@ HIGH_CVSS = 8.0
 MINE_CVSS = 7.0
 
 # 同一產品同一天超過幾個 CVE 就合併成一張卡
-GROUP_MIN = 3
+GROUP_MIN = 2
 # 首頁顯示天數（網頁端）／資料保留天數
 KEEP_DAYS = 60
 # 第一次執行往回抓幾天
 FIRST_RUN_DAYS = 7
-# 每次執行最多呼叫 AI 幾次（免費額度有限，剩下的下次再處理）
+# 每次執行最多呼叫 AI 幾次（免費額度有限，剩下的下次再處理）；每次呼叫一次送 AI_BATCH 則
 AI_MAX_CALLS = 12
+AI_BATCH = 6
 # 兩次 AI 呼叫間隔秒數（免費版每分鐘次數很少）
 AI_GAP_SECONDS = 7
 # Gemini 模型；想換模型可在 GitHub Secrets/Variables 設 GEMINI_MODEL 覆蓋
@@ -170,10 +171,17 @@ CNA = {
 
 # 關鍵字命中但描述含這些字 → 視為誤判（例如 npm 套件描述常寫「for Node.js」）
 EXCLUDE = {
-    "Node.js": [r"\bnpm\b", r"\bpackage\b", r"\bmodule\b", r"\blibrary\b", r"\bplugin\b"],
+    "Node.js": [r"\bnpm\b", r"\bpackage\b", r"\bmodule\b", r"\blibrary\b", r"\bplugin\b", r"\bwrapper\b",
+                r"node\.js (process|applications?|apps?|servers? built)", r"(?-i:^[a-z0-9@][\w./@-]*)\s+(before|is|prior|versions?|through|<)"],
     "Go": [r"\bgithub\.com/"],
     "PHP": [r"management system", r"sourcecodester", r"\.php\b", r"wordpress", r"\bplugin\b", r"\btheme\b"],
 }
 
 # 還沒有 CVSS 分數時，描述含這些字就先以「高」收錄，等評分後自動校正
 SEVERE_WORDS = r"remote code execution|execute arbitrary (code|commands)|arbitrary code execution|command injection|authentication bypass|unauthenticated (remote )?attackers?"
+
+# 這些 CNA 發布的多半是第三方套件（例如 GitHub 代管的 npm／Go 套件），只靠關鍵字命中時不採用
+KW_BLOCK_CNA = {
+    "Node.js": ["security-advisories@github.com"], "Go": ["security-advisories@github.com"],
+    "PHP": ["security-advisories@github.com"], "Java": ["security-advisories@github.com"],
+}

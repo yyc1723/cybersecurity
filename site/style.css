@@ -228,3 +228,8 @@ main{container-type:inline-size}
 .nseg{display:flex;gap:6px;margin:-2px 0 10px}
 .nseg button{min-height:30px;padding:0 10px;font-size:.76rem;font-weight:800;border-radius:7px}
 .nsrc{font-weight:800;color:var(--fg-2);background:var(--soft);border:1px solid var(--line2);padding:0 6px;border-radius:5px}
+
+/* 所有事件卡一樣高（以最高的一張為準，內容少的留白） */
+#list{align-items:stretch;grid-auto-rows:1fr}
+#list>.card{height:100%}
+@container (max-width:759px){#list{grid-auto-rows:auto}}

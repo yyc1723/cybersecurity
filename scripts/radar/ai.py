@@ -18,15 +18,19 @@ RULES = """你是台灣企業資安中心的分析師，替同事撰寫資安警
 - 語氣平實精簡，不加驚嘆號，不用「值得注意」「總之」這類贅詞。
 - 全文最關鍵的一句風險或行動，用 **兩個星號** 包起來，整張卡最多一處。"""
 
-EVENT_TASK = """請輸出 JSON：{"title": "...", "points": ["...", "..."], "fix": "..."}
+EVENT_TASK = """以下是多則資安事件（JSON 陣列，每則有 id）。請逐則改寫成中文卡片，輸出 JSON：
+{"items": [{"id": "...", "title": "...", "points": ["...", "..."], "fix": "..."}]}
+- 每則輸入都要有一筆輸出，id 照抄。
 - title：15 字以內的中文標題，點出產品與漏洞類型（例：「PHP 核心遠端執行漏洞」）。
-- points：2 點，每點 70 字以內：
+- points：2 點，每點 70 字以內，英文內容要翻譯成中文：
   1. 影響什麼產品／版本、漏洞造成什麼後果
   2. 目前狀況（是否已遭利用、利用條件、範圍）
-- fix：修補方式，80 字以內。只寫輸入資料明確提到的修補版本、更新名稱或緩解措施（例：「升級至 8.5.12、8.4.27 以上；暫時以 WAF 阻擋可疑請求」）。
-  輸入沒有提到具體修補資訊就輸出空字串 ""，不要寫「請依原廠公告」這類空泛建議。
-- 若類型為 news（新聞），points 改為 1～2 點新聞重點摘要，fix 輸出 ""。
-輸入資料：
+- fix：修補方式，80 字以內。只寫輸入明確提到的修補版本、更新名稱或緩解措施（例：「升級至 8.5.12、8.4.27 以上；暫時以 WAF 阻擋可疑請求」）。
+  輸入只有「依原廠指示套用緩解措施」這類通用說明時，寫「依原廠公告套用修補或緩解措施，無法修補時停用該產品」。
+  完全沒有修補資訊就輸出 ""，不要自己編。
+- 類型為 news（新聞）時，points 改為 1～2 點新聞重點，fix 輸出 ""。
+- **兩個星號** 的強調，每則最多一處。
+事件：
 """
 
 TODO_TASK = """以下是近幾天的緊急與高風險資安事件。請替同事整理「本日應辦事項」，輸出 JSON：
@@ -82,16 +86,22 @@ class AI:
                 return None
         return None
 
-    def summarize(self, context):
-        if not self.available:
-            return None
-        out = self._ask(EVENT_TASK + json.dumps(context, ensure_ascii=False, default=str))
-        if not out or not isinstance(out.get("points"), list) or len(out["points"]) < 1:
-            return None
-        pts = [clean(p, 140) for p in out["points"][:3] if isinstance(p, str) and p.strip()]
-        title = clean(out.get("title") or "", 40)
-        fix = clean(out.get("fix") or "", 160) if isinstance(out.get("fix"), str) else ""
-        return dict(title=title, pts=pts, fix=fix) if pts and title else None
+    def summarize_batch(self, items):
+        """items: [(id, context)]，一次送多則以節省額度。回傳 {id: {title, pts, fix}}。"""
+        if not self.available or not items:
+            return {}
+        payload = [dict(id=i, **ctx) for i, ctx in items]
+        out = self._ask(EVENT_TASK + json.dumps(payload, ensure_ascii=False, default=str))
+        res = {}
+        for it in (out or {}).get("items", []) if isinstance(out, dict) else []:
+            if not isinstance(it, dict) or not isinstance(it.get("points"), list):
+                continue
+            pts = [clean(p, 140) for p in it["points"][:3] if isinstance(p, str) and p.strip()]
+            title = clean(it.get("title") or "", 40)
+            fix = clean(it.get("fix") or "", 160) if isinstance(it.get("fix"), str) else ""
+            if pts and title and it.get("id") is not None:
+                res[str(it["id"])] = dict(title=title, pts=pts, fix=fix)
+        return res
 
     def todo(self, events, mine):
         if not self.available or not events:

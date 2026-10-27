@@ -163,11 +163,13 @@ def fetch_msrc(done_ids, since):
         names = {}
         for b in (doc.get("ProductTree", {}) or {}).get("FullProductName", []) or []:
             names[b.get("ProductID")] = b.get("Value", "")
-        total, exploited, public, critical, prod_text = 0, [], [], 0, []
+        seen, exploited, public, critical, prod_text = set(), [], [], 0, []
         for v in doc.get("Vulnerability", []) or []:
-            total += 1
             cve = v.get("CVE", "")
             title = (v.get("Title") or {}).get("Value", "")
+            if not cve or cve in seen or "chromium" in title.lower():
+                continue  # 重複項目與 Edge 沿用的 Chromium 漏洞不計入
+            seen.add(cve)
             threats = v.get("Threats", []) or []
             status = " ".join((t.get("Description") or {}).get("Value", "") for t in threats if t.get("Type") == 1)
             sev = " ".join((t.get("Description") or {}).get("Value", "") for t in threats if t.get("Type") == 3)
@@ -180,7 +182,7 @@ def fetch_msrc(done_ids, since):
             for ps in v.get("ProductStatuses", []) or []:
                 for pid in ps.get("ProductID", []) or []:
                     prod_text.append(names.get(pid, ""))
-        out.append(dict(id=uid, released=released, total=total, exploited=exploited, public=public,
+        out.append(dict(id=uid, released=released, total=len(seen), exploited=exploited, public=public,
                         critical=critical, prod_text=" ".join(set(prod_text)),
                         url=f"https://msrc.microsoft.com/update-guide/releaseNote/{uid}"))
     return out

@@ -64,6 +64,8 @@ def match_products(text, cpes=(), zh=False, names="", cna=""):
                 kw = any(k.lower() in text.lower() for k in config.ZH_KW.get(n, []))
             if kw and any(re.search(x, text, re.I) for x in config.EXCLUDE.get(n, [])):
                 kw = False
+            if kw and cna and cna in config.KW_BLOCK_CNA.get(n, []):
+                kw = False
             hit = kw
         if hit:
             found.append(n)
@@ -135,7 +137,7 @@ def set_sub(ev):
         ev["sub"] = ev["src"]
 
 
-KEV_STD = "apply mitigations per vendor instructions"
+KEV_STD = re.compile(r"^apply mitigations", re.I)
 FIX_RE = re.compile(r"\b(fixed in|patched in|upgrade to|update to|updating to|addressed in|resolved in|is fixed|has been fixed|versions? [\d.]+ (and|or) (later|above))\b", re.I)
 
 
@@ -153,7 +155,7 @@ def extract_fix(ev):
             end = t.find(". ", m.end())
             return clean("原文：" + t[start:end + 1 if end >= 0 else len(t)].strip(), 180)
     act = r.get("action") or ""
-    if act.lower().startswith(KEV_STD):
+    if KEV_STD.search(act):
         return "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。"
     return clean(act, 160) if act else ""
 
@@ -215,6 +217,8 @@ def run():
         # 規則改過：清掉「上次抓到哪」的紀錄，重新回看一段時間補抓
         store.pop("nvd_last", None)
         store.pop("kev_last", None)
+        # NVD 來源的事件依新規則重抓（摘要會重新產生）
+        events = {k: v for k, v in events.items() if v.get("src") != "NVD"}
         store["rules_version"] = config.RULES_VERSION
         print(f"[規則] 已更新到第 {config.RULES_VERSION} 版，重新回看 {config.FIRST_RUN_DAYS} 天")
     status = {}
@@ -272,27 +276,37 @@ def run():
         print(f"[NVD] 失敗：{e}")
         status["NVD"] = False
 
-    groups = {}
     for it, prods, sev in candidates:
-        groups.setdefault((prods[0], tpe_date(it["published"])), []).append((it, prods, sev))
-    for (prod, day), items in groups.items():
-        if len(items) >= config.GROUP_MIN:
-            all_prods = sorted({p for _, ps, _ in items for p in ps}, key=lambda p: p != prod)
-            ev = new_event(f"grp:{prod}:{day}", "group", products=all_prods,
-                           cves=sorted(i["cve"] for i, _, _ in items),
-                           cvss=max((i["cvss"] for i, _, _ in items if i["cvss"] is not None), default=None),
-                           sev=min((s for _, _, s in items), key=lambda s: SEV_RANK[s]),
-                           published=iso(min(i["published"] for i, _, _ in items)), src="NVD",
-                           url=f"https://nvd.nist.gov/vuln/search/results?query={items[0][0]['cve']}",
-                           raw=dict(descs=[i["desc"] for i, _, _ in sorted(items, key=lambda x: -(x[0]["cvss"] or 0))]))
-            upsert(ev)
-        else:
-            for it, prods, sev in items:
-                ev = new_event(it["cve"], "cve", products=prods, cves=[it["cve"]], cvss=it["cvss"], sev=sev,
-                               published=iso(it["published"]), src="NVD",
-                               url=f"https://nvd.nist.gov/vuln/detail/{it['cve']}",
-                               raw=dict(desc=it["desc"], refs=it["refs"]))
-                upsert(ev)
+        upsert(new_event(it["cve"], "cve", products=prods, cves=[it["cve"]], cvss=it["cvss"], sev=sev,
+                         published=iso(it["published"]), src="NVD",
+                         url=f"https://nvd.nist.gov/vuln/detail/{it['cve']}",
+                         raw=dict(desc=it["desc"], refs=it["refs"])))
+
+    # 同產品、同一天（台灣時間）的 NVD 漏洞合併成一張卡；之前已存在的單張卡也會併進來
+    buckets = {}
+    for e in list(events.values()):
+        if e["kind"] == "cve" and e["src"] == "NVD" and not e["kev"]:
+            buckets.setdefault((e["products"][0], tpe_date(parse(e["published"]))), []).append(e)
+    for (prod, day), singles in buckets.items():
+        gid = f"grp:{prod}:{day}"
+        grp = events.get(gid)
+        if not grp and len(singles) < config.GROUP_MIN:
+            continue
+        if not grp:
+            grp = new_event(gid, "group", products=[prod], src="NVD", published=min(e["published"] for e in singles),
+                            url="", raw=dict(descs=[]))
+            events[gid] = grp
+        for e in singles:
+            grp["cves"] = sorted(set(grp["cves"]) | set(e["cves"]))
+            grp["products"] = sorted(set(grp["products"]) | set(e["products"]), key=lambda p: p != prod)
+            if e["cvss"] is not None:
+                grp["cvss"] = max(grp["cvss"] or 0, e["cvss"])
+            grp["sev"] = worse(grp["sev"], e["sev"])
+            grp["first_seen"] = min(grp["first_seen"], e["first_seen"])
+            grp["raw"].setdefault("descs", []).append(e["raw"].get("desc", ""))
+            del events[e["id"]]
+        grp["ai"], grp["updated"] = False, iso(now())
+        grp["url"] = f"https://nvd.nist.gov/vuln/detail/{grp['cves'][0]}"
 
     # ---- CISA KEV ----
     try:
@@ -406,9 +420,9 @@ def run():
 
     # ---- 摘要（AI 優先，否則規則式）----
     ai = AI()
-    todo_list = list(events.values())
-    todo_list.sort(key=lambda e: (SEV_RANK[e["sev"]], -parse(e["published"]).timestamp()))
-    for ev in todo_list:
+    order = sorted(events.values(), key=lambda e: (SEV_RANK[e["sev"]], -parse(e["published"]).timestamp()))
+    pending = []
+    for ev in order:
         set_sub(ev)
         ev.setdefault("fix", "")
         if ev["kind"] == "news":
@@ -418,13 +432,24 @@ def run():
                 continue
         if ev["ai"] and ev.get("ai_ver") == config.AI_VERSION:
             continue
-        res = ai.summarize(ai_context(ev)) if ai.available else None
-        if res:
-            ev["pts"], ev["fix"], ev["ai"], ev["ai_ver"] = res["pts"], res["fix"], True, config.AI_VERSION
-            if ev["kind"] != "news":
-                ev["title"] = res["title"]
-        elif not ev["pts"] or not ev["title"] or not ev.get("ai"):
-            fallback(ev)
+        pending.append(ev)
+    # 批次送 AI：一次 AI_BATCH 則，省額度又能在同一次執行把新事件都翻成中文
+    for i in range(0, len(pending), config.AI_BATCH):
+        chunk = pending[i:i + config.AI_BATCH]
+        got = ai.summarize_batch([(e["id"], ai_context(e)) for e in chunk]) if ai.available else {}
+        for ev in chunk:
+            res = got.get(ev["id"])
+            if res:
+                ev["pts"], ev["fix"], ev["ai"], ev["ai_ver"] = res["pts"], res["fix"], True, config.AI_VERSION
+                if ev["kind"] not in ("news", "msrc"):  # 新聞保留原標題、微軟月更新用固定標題
+                    ev["title"] = res["title"]
+                elif ev["kind"] == "msrc":
+                    ev["title"] = f"Microsoft {month_zh(ev['raw']['id'])}例行安全更新"
+            elif not ev["pts"] or not ev["title"] or not ev.get("ai"):
+                fallback(ev)
+    left = sum(1 for e in pending if not e.get("ai"))
+    if left:
+        print(f"[AI] 還有 {left} 則待翻譯，下次執行繼續")
     print(f"[AI] 本次呼叫 {ai.calls} 次（模型 {ai.model}）")
 
     # ---- 本日應辦事項（台灣時間每天 07:00 後更新一次）----
