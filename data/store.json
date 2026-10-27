@@ -1,6 +1,6 @@
 {
- "nvd_last": "2026-10-27T07:57:36+00:00",
- "kev_last": "2026-10-27T07:57:36+00:00",
+ "nvd_last": "2026-10-27T08:25:01+00:00",
+ "kev_last": "2026-10-27T08:25:01+00:00",
  "msrc_done": [
   "2026-Oct"
  ],
@@ -36,74 +36,6 @@
  },
  "events": [
   {
-   "id": "CVE-2026-109618",
-   "kind": "cve",
-   "title": "PHP 記憶體毀損遠端執行漏洞",
-   "sub": "CVE-2026-109618 · CVSS 9.2",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-109618"
-   ],
-   "cvss": 9.2,
-   "published": "2026-10-26T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:26+00:00",
-   "updated": "2026-10-27T08:02:26+00:00",
-   "src": "CISA KEV",
-   "url": "https://www.php.net/",
-   "pts": [
-    "PHP 存在記憶體毀損漏洞 CVE-2026-109618，允許未經身分驗證的攻擊者遠端執行程式碼。",
-    "CVSS 評分為 9.2，發布於 2026 年 10 月 26 日，已知已遭利用，但無勒索軟體利用跡象。",
-    "**請依廠商指示套用緩解措施並評估資產網路暴露風險，若無緩解方案則應停止使用產品。**"
-   ],
-   "ai": true,
-   "raw": {
-    "name": "PHP Memory Corruption Vulnerability",
-    "desc": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "PHP Group",
-    "product": "PHP"
-   }
-  },
-  {
-   "id": "CVE-2026-109619",
-   "kind": "cve",
-   "title": "PHP 遠端執行程式碼漏洞",
-   "sub": "CVE-2026-109619 · CVSS 9.2",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-109619"
-   ],
-   "cvss": 9.2,
-   "published": "2026-10-26T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:34+00:00",
-   "updated": "2026-10-27T08:02:34+00:00",
-   "src": "CISA KEV",
-   "url": "https://www.php.net/",
-   "pts": [
-    "PHP 存在內部請求狀態漏洞（CVE-2026-109619），可導致未經身分驗證遠端執行程式碼。",
-    "本漏洞 CVSS 評分為 9.2 且已被利用，目前未發現用於勒索軟體。",
-    "**請依廠商說明與 CISA BOD 26-04 執行緩解措施**，評估資產網際網路曝露，無方案則停用。"
-   ],
-   "ai": true,
-   "raw": {
-    "name": "PHP Stale Internal Request-State Vulnerability",
-    "desc": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "PHP Group",
-    "product": "PHP"
-   }
-  },
-  {
    "id": "CVE-2026-114625",
    "kind": "cve",
    "title": "Arista VCO SQL漏洞",
@@ -138,40 +70,6 @@
    }
   },
   {
-   "id": "CVE-2026-110447",
-   "kind": "cve",
-   "title": "Collabora Online – Built-in CODE Server ",
-   "sub": "CVE-2026-110447 · CVSS 9.2",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-110447"
-   ],
-   "cvss": 9.2,
-   "published": "2026-10-23T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:49+00:00",
-   "updated": "2026-10-27T08:02:49+00:00",
-   "src": "CISA KEV",
-   "url": "https://help.nextcloud.com/t/to-collabora-built-in-user-update-asap/250516",
-   "pts": [
-    "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability tha",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。",
-    "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Securit"
-   ],
-   "ai": false,
-   "raw": {
-    "name": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
-    "desc": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "Collabora",
-    "product": "Collabora Online – Built-in CODE Server"
-   }
-  },
-  {
    "id": "tw:09854930ad06",
    "kind": "twcert",
    "title": "Node.js發布安全性更新修補10項漏洞，其中CVE-2026-111497可",
@@ -202,7 +100,7 @@
   {
    "id": "tw:1f0317b38ae1",
    "kind": "twcert",
-   "title": "PHP發布安全性更新修補2項可導致遠端程式碼執行之嚴重漏洞，國際資安機構籲儘速更",
+   "title": "PHP 遠端程式碼執行漏洞",
    "sub": "TWCERT/CC 資安新聞",
    "sev": "note",
    "kev": false,
@@ -218,9 +116,11 @@
    "src": "TWCERT/CC 資安新聞",
    "url": "https://www.twcert.org.tw/tw/cp-104-11308-ed8b8-1.html",
    "pts": [
-    "PHP官方於2026年10月21日發布安全性更新，修補CVE-2026-109618及CVE-2026-109619兩項嚴重漏洞，CVSS v4.0基礎分數皆為9.2，未經身分驗證之攻擊者可能利用漏洞執行遠端程式碼。TWCERT/CC已發布 漏洞警訊公告 ，美國網路安全暨基礎設施安全局（CISA）、"
+    "影響 PHP 8.2 至 8.5 等版本。未經身分驗證之攻擊者可利用 CVE-2026-109618 等漏洞執行遠端程式碼。",
+    "目前尚未發現實際攻擊，但 PoC 概念驗證已流傳。官方已釋出 8.5.12、8.4.27 等修補版本。",
+    "**官方強調更新為唯一完整之解決方式，請儘速升級**；若無法立即更新，應考慮將對外系統隔離。"
    ],
-   "ai": false,
+   "ai": true,
    "raw": {
     "title": "PHP發布安全性更新修補2項可導致遠端程式碼執行之嚴重漏洞，國際資安機構籲儘速更新",
     "desc": "PHP官方於2026年10月21日發布安全性更新，修補CVE-2026-109618及CVE-2026-109619兩項嚴重漏洞，CVSS v4.0基礎分數皆為9.2，未經身分驗證之攻擊者可能利用漏洞執行遠端程式碼。TWCERT/CC已發布 漏洞警訊公告 ，美國網路安全暨基礎設施安全局（CISA）、歐盟電腦緊急應變小組（CERT-EU）及英國國家網路安全中心（NCSC）等機構相繼發布警告，呼籲使用PHP之單位立即完成更新；若無法立即更新，應考慮隔離對外系統或暫停服務。 PHP 官方公告 PHP官方於2026年10月20日預告，將於10月21日14:00 UTC（台灣時間22:00）發布安全性更新，修補2項嚴重漏洞，並表示若漏洞細節提前公開或出現實際利用跡象，將提前發布。 PHP官方於10月21日發布更新，修補之漏洞如下： CVE 編號 漏洞類型 CVSS v4.0 基礎分數 CVE-2026-109618 遠端程式碼執行 9.2 CVE-2026-109619 遠端程式碼執行 9.2 表1、PHP於2026年10月21日修補之漏洞（資料來源：PHP安全公告） 依官方說明，CVE-2026-109618與記憶體不足之處理機制有關，可能使PHP在請求資料尚未完成初始化時中斷，後續清理程序誤將無效資料視為有效資料。CVE-2026-109619則是請求所屬之內部狀態於記憶體釋放後仍殘留，同一處理程序後續處理之請求可能在初始化前使用該狀態。 受影響範圍涵蓋所有處理網頁請求之PHP環境，包括PHP-FPM、Apache mod_php、php-cgi、FrankenPHP及LiteSpeed。官方認為Apache mod_php風險最高，並已驗證未經身分驗證之請求可於應用程式碼執行前觸發攻擊。 各版本之修補方式如下： 版本 修補方式 PHP 8.5 更新至8.5.12 PHP 8.4 更新至8.4.27 PHP 8.3 更新至8.3.36 PHP 8.2 更新至8.2.35（2026年12月31日結束生命週期） PHP 8.1及更早版本 不再接收官方更新，應洽詢發行版或長期支援廠商，或升級至受支援版本；官方另為7.4、8.0、8.1提供精簡原始碼修補 表2、PHP各版本修補方式（資料來源：PHP安全公告） 官方強調，更新為唯一完整之解決方式。公告中雖列出可降低特定攻擊路徑曝險之暫時設定，但該等措施無法確保系統安全。 國際資安機構示警 CISA呼籲各組織立即修補兩項漏洞，並更新至官方修補版本。 CERT-EU於安全公告中指出，漏洞技術細節已公開討論，初步概念驗證（PoC）開始流傳，攻擊者已利用漏洞之可能性因此升高，建議立即修補；無法立即修補者，應考慮將對外應用程式與公共網路隔離，直至修補完成並經驗證。CERT-EU並提醒，許多商用及開源產品以PHP作為後端技術，即使未直"
@@ -265,7 +165,7 @@
   {
    "id": "grp:Windows Server:2026-10-21",
    "kind": "group",
-   "title": "Windows 多個高風險漏洞",
+   "title": "Chrome 遠端執行程式碼漏洞",
    "sub": "11 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -294,11 +194,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/search/results?query=CVE-2026-113011",
    "pts": [
-    "同日公布 11 個漏洞，最高 CVSS 9.6。",
-    "Improper input validation in ANGLE in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to potentially execute ar",
-    "請依原廠公告確認受影響版本並排程更新。"
+    "影響 Windows 版 156.0.8078.47 以前的 Google Chrome。遠端攻擊者可透過精心設計的 HTML 網頁執行任意程式碼。",
+    "CVSS 為 9.6，目前未遭利用或用於勒索軟體。攻擊條件為誘使使用者瀏覽特製 HTML 網頁。",
+    "建議**將 Windows 版 Chrome 升級至 156.0.8078.47 以上版本**以修補漏洞。"
    ],
-   "ai": false,
+   "ai": true,
    "raw": {
     "descs": [
      "Improper input validation in ANGLE in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
@@ -932,7 +832,7 @@
   {
    "id": "grp:SQL Server:2026-10-21",
    "kind": "group",
-   "title": "SQL Server 多個高風險漏洞",
+   "title": "SQL Server 相關產品安全漏洞",
    "sub": "12 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -961,11 +861,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/search/results?query=CVE-2026-101679",
    "pts": [
-    "同日公布 12 個漏洞，最高 CVSS 9.3。",
-    "Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all",
-    "請依原廠公告確認受影響版本並排程更新。"
+    "**Bp Premier 1.14.1.1128 之前版本使用寫死 SQL Server 密碼，攻擊者可驗證為 sysadmin**；另影響 MySQL 相關版本。",
+    "CVSS 評分為 9.3，目前未遭利用或用於勒索軟體，具資料庫網路存取權限者即可發動攻擊。",
+    "建議限制資料庫個體的網路存取權限，並清查系統是否使用受影響之 Bp Premier 或 MySQL 版本。"
    ],
-   "ai": false,
+   "ai": true,
    "raw": {
     "descs": [
      "Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all installations and cannot be changed without breaking the application. Attackers with network access to the database instance can authenticate as sysadmin, bypass application authentication, and execute operating system commands as SYSTEM.",
@@ -1284,213 +1184,9 @@
    }
   },
   {
-   "id": "CVE-2026-106931",
-   "kind": "cve",
-   "title": "EG Secure Solutions SiteGuard Server Edi",
-   "sub": "CVE-2026-106931 · CVSS 8.5",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-106931"
-   ],
-   "cvss": 8.5,
-   "published": "2026-10-20T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:56+00:00",
-   "updated": "2026-10-27T08:02:56+00:00",
-   "src": "CISA KEV",
-   "url": "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1",
-   "pts": [
-    "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。",
-    "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Securit"
-   ],
-   "ai": false,
-   "raw": {
-    "name": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
-    "desc": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "EG Secure Solutions",
-    "product": "SiteGuard Server Edition"
-   }
-  },
-  {
-   "id": "CVE-2026-96656",
-   "kind": "cve",
-   "title": "Plex Media Server External Control of Fi",
-   "sub": "CVE-2026-96656",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-96656"
-   ],
-   "cvss": null,
-   "published": "2026-10-20T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:56+00:00",
-   "updated": "2026-10-27T08:02:56+00:00",
-   "src": "CISA KEV",
-   "url": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
-   "pts": [
-    "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files tha",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。",
-    "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Securit"
-   ],
-   "ai": false,
-   "raw": {
-    "name": "Plex Media Server External Control of File Name or Path Vulnerability",
-    "desc": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "Plex",
-    "product": "Media Server"
-   }
-  },
-  {
-   "id": "CVE-2026-96655",
-   "kind": "cve",
-   "title": "Plex Media Server Server-Side Request Fo",
-   "sub": "CVE-2026-96655",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-96655"
-   ],
-   "cvss": null,
-   "published": "2026-10-20T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:56+00:00",
-   "updated": "2026-10-27T08:02:56+00:00",
-   "src": "CISA KEV",
-   "url": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
-   "pts": [
-    "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary in",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。",
-    "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Securit"
-   ],
-   "ai": false,
-   "raw": {
-    "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-    "desc": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "Plex",
-    "product": "Media Server"
-   }
-  },
-  {
-   "id": "CVE-2026-96654",
-   "kind": "cve",
-   "title": "Plex Media Server Improper Neutralizatio",
-   "sub": "CVE-2026-96654",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-96654"
-   ],
-   "cvss": null,
-   "published": "2026-10-20T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:56+00:00",
-   "updated": "2026-10-27T08:02:56+00:00",
-   "src": "CISA KEV",
-   "url": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
-   "pts": [
-    "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to cal",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。",
-    "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Securit"
-   ],
-   "ai": false,
-   "raw": {
-    "name": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-    "desc": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "Plex",
-    "product": "Media Server"
-   }
-  },
-  {
-   "id": "CVE-2026-96652",
-   "kind": "cve",
-   "title": "Plex Media Server Server-Side Request Fo",
-   "sub": "CVE-2026-96652",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-96652"
-   ],
-   "cvss": null,
-   "published": "2026-10-20T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:56+00:00",
-   "updated": "2026-10-27T08:02:56+00:00",
-   "src": "CISA KEV",
-   "url": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
-   "pts": [
-    "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to ",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。",
-    "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Securit"
-   ],
-   "ai": false,
-   "raw": {
-    "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-    "desc": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "Plex",
-    "product": "Media Server"
-   }
-  },
-  {
-   "id": "CVE-2026-110936",
-   "kind": "cve",
-   "title": "Siemens Software Center Uncontrolled Sea",
-   "sub": "CVE-2026-110936",
-   "sev": "crit",
-   "kev": true,
-   "ransomware": false,
-   "products": [
-    "其他"
-   ],
-   "cves": [
-    "CVE-2026-110936"
-   ],
-   "cvss": null,
-   "published": "2026-10-20T00:00:00+00:00",
-   "first_seen": "2026-10-27T08:02:56+00:00",
-   "updated": "2026-10-27T08:02:56+00:00",
-   "src": "CISA KEV",
-   "url": "https://productcert.siemens.com/productcert/html/ssa-580366.html",
-   "pts": [
-    "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。",
-    "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Securit"
-   ],
-   "ai": false,
-   "raw": {
-    "name": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-    "desc": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
-    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-    "vendor": "Siemens",
-    "product": "Software Center"
-   }
-  },
-  {
    "id": "msrc:2026-Oct",
    "kind": "msrc",
-   "title": "Microsoft 10 月例行安全更新",
+   "title": "Windows安全繞過漏洞",
    "sub": "3228 個 CVE · 1 個已遭利用 · 228 個重大",
    "sev": "crit",
    "kev": true,
@@ -1513,11 +1209,11 @@
    "src": "Microsoft MSRC",
    "url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Oct",
    "pts": [
-    "本月共修補 3228 個漏洞，其中 228 個為重大等級。",
-    "**已遭利用：CVE-2026-96951**",
-    "請確認 Windows Update／WSUS 已部署本月累積更新。"
+    "影響 Windows Server、ASP.NET、.NET、SQL Server、Exchange 與 Office，包含安全繞過漏洞。",
+    "**CVE-2026-96951 已遭利用**，另有 .NET Framework 等漏洞已先行公開，未遭勒索軟體利用。",
+    "建議資安人員清查相關伺服器與產品，並追蹤官方公告以安排修補處理。"
    ],
-   "ai": false,
+   "ai": true,
    "raw": {
     "id": "2026-Oct",
     "total": 3228,
