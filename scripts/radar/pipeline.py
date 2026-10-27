@@ -118,7 +118,8 @@ def set_sub(ev):
             bits.append("已被勒索軟體利用")
         ev["sub"] = " · ".join(bits)
     elif ev["kind"] == "group":
-        ev["sub"] = f"{len(ev['cves'])} 個 CVE · 最高 CVSS {fmt_cvss(ev['cvss'])}"
+        ev["sub"] = f"{len(ev['cves'])} 個 CVE" + (f" · 最高 CVSS {fmt_cvss(ev['cvss'])}" if ev["cvss"] is not None else "") + \
+            (" · 已被勒索軟體利用" if ev.get("ransomware") else "")
     elif ev["kind"] == "msrc":
         r = ev["raw"]
         ev["sub"] = f"{r['total']} 個 CVE · {len(r['exploited'])} 個已遭利用 · {r['critical']} 個重大"
@@ -136,9 +137,13 @@ def fallback(ev):
             pts.append("**已列入 CISA KEV 已遭利用清單**，請優先處理。")
         pts.append(clean(r.get("action") or "請依原廠公告更新至修補版本，並檢查相關存取紀錄。", 120))
     elif ev["kind"] == "group":
-        ev["title"] = ev["title"] or f"{label} 多個高風險漏洞"
-        pts = [f"同日公布 {len(ev['cves'])} 個漏洞，最高 CVSS {fmt_cvss(ev['cvss'])}。",
-               clean(r.get("descs", [""])[0], 140), "請依原廠公告確認受影響版本並排程更新。"]
+        ev["title"] = ev["title"] or (f"{label} 多個已遭利用漏洞" if ev["kev"] else f"{label} 多個高風險漏洞")
+        if ev["kev"]:
+            pts = [f"**同日有 {len(ev['cves'])} 個漏洞列入 CISA KEV 已遭利用清單**。",
+                   clean(r.get("descs", [""])[0], 140), clean(r.get("action") or "請依原廠公告更新至修補版本。", 120)]
+        else:
+            pts = [f"同日公布 {len(ev['cves'])} 個漏洞，最高 CVSS {fmt_cvss(ev['cvss'])}。",
+                   clean(r.get("descs", [""])[0], 140), "請依原廠公告確認受影響版本並排程更新。"]
     elif ev["kind"] == "msrc":
         ev["title"] = ev["title"] or f"Microsoft {month_zh(r['id'])}例行安全更新"
         ex = "、".join(c for c, _ in r["exploited"][:4])
@@ -158,7 +163,7 @@ def ai_context(ev):
     if ev["kind"] == "cve":
         base.update(名稱=r.get("name"), 描述=r.get("desc"), 建議處置=r.get("action"))
     elif ev["kind"] == "group":
-        base.update(描述=[d[:300] for d in r.get("descs", [])[:8]])
+        base.update(描述=[d[:300] for d in r.get("descs", [])[:8]], 建議處置=r.get("action"))
     elif ev["kind"] == "msrc":
         base.update(月份=r["id"], 總數=r["total"], 重大=r["critical"],
                     已遭利用=[f"{c} {t}" for c, t in r["exploited"]], 先行公開=[f"{c} {t}" for c, t in r["public"]])
@@ -171,7 +176,8 @@ def ai_context(ev):
 def run():
     t0 = now()
     store = load(STORE, {})
-    events = {e["id"]: e for e in store.get("events", [])}
+    # 比對不到產品的漏洞事件不收（TWCERT 新聞除外，它們放在右欄）
+    events = {e["id"]: e for e in store.get("events", []) if e["kind"] == "twcert" or e["products"] != ["其他"]}
     first = not store.get("events")
     status = {}
     default_since = t0 - timedelta(days=config.FIRST_RUN_DAYS)
@@ -241,17 +247,36 @@ def run():
     # ---- CISA KEV ----
     try:
         since = parse(store["kev_last"]) - timedelta(days=2) if store.get("kev_last") else default_since
-        enrich = 0
+        fresh = []
         for k in sources.fetch_kev(since):
             text = f"{k['vendor']} {k['product']} {k['name']} {k['desc']}"
-            prods = match_products(text) or ["其他"]
+            prods = match_products(text)
+            if not prods:
+                continue  # 不在產品清單內的不收錄
             raw = dict(name=k["name"], desc=k["desc"], action=k["action"], vendor=k["vendor"], product=k["product"])
             old = events.get(k["cve"])
             if old:
                 if not old["kev"]:
                     old.update(kev=True, sev="crit", ransomware=k["ransomware"], ai=False, updated=iso(now()))
-                    old["raw"].update({k: v for k, v in raw.items() if k != "desc" or not old["raw"].get("desc")})
+                    old["raw"].update({a: b for a, b in raw.items() if a != "desc" or not old["raw"].get("desc")})
                 continue
+            if any(k["cve"] in e["cves"] for e in events.values()):
+                continue
+            fresh.append((k, prods, raw))
+        kgroups = {}
+        for k, prods, raw in fresh:
+            kgroups.setdefault((prods[0], tpe_date(k["added"])), []).append((k, prods, raw))
+        enrich = 0
+        for (prod, day), items in kgroups.items():
+            if len(items) >= 2:  # 同產品同一天多個已遭利用漏洞 → 合併一張卡
+                ev = new_event(f"kevgrp:{prod}:{day}", "group", products=sorted({p for _, ps, _ in items for p in ps}, key=lambda p: p != prod),
+                               cves=sorted(k["cve"] for k, _, _ in items), sev="crit", kev=True,
+                               ransomware=any(k["ransomware"] for k, _, _ in items), published=iso(items[0][0]["added"]),
+                               src="CISA KEV", url="https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+                               raw=dict(descs=[f"{k['name']}: {k['desc']}" for k, _, _ in items], action=items[0][0]["action"]))
+                upsert(ev)
+                continue
+            k, prods, raw = items[0]
             cvss = None
             if enrich < 5:
                 enrich += 1
@@ -346,6 +371,7 @@ def run():
     dump(STORE, store)
 
     public = dict(
+        groups=config.GROUP_ORDER,
         products=[{k: p[k] for k in ("name", "abbr", "label", "color", "text", "group")} | {"mine": bool(p.get("mine"))}
                   for p in config.PRODUCTS + [config.OTHER]],
         todo=todo,

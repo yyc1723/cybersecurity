@@ -89,7 +89,7 @@ repo 的 **Settings → Secrets and variables → Actions → New repository sec
 
 ## 日常調整
 
-- **新增或刪除產品**：編輯 `scripts/radar/config.py` 的 `PRODUCTS`，照現有格式加一筆。`mine=True` 代表預設勾為本單位，門檻放寬到 CVSS 7。
+- **新增或刪除產品**：編輯 `scripts/radar/config.py` 的 `PRODUCTS`，照現有格式加一筆，`group` 填分組名稱。`mine=True` 代表預設勾選在「我負責的產品」，且門檻放寬到 CVSS 7。
 - **改等級門檻**：同檔案上方的 `CRIT_CVSS`、`HIGH_CVSS`、`MINE_CVSS`。
 - **立即更新**：Actions → 更新資安警訊 → Run workflow。
 
@@ -98,10 +98,12 @@ repo 的 **Settings → Secrets and variables → Actions → New repository sec
 | 等級 | 條件 |
 |---|---|
 | 緊急 | 列入 CISA KEV（已遭利用），或常見產品 CVSS ≥ 9.0，或微軟月更新含已遭利用漏洞 |
-| 高 | 常見產品 CVSS 8.0～8.9；TWCERT 新聞標題含緊急、零時差、遭利用等字 |
-| 注意 | 本單位產品 CVSS 7.0～7.9；其他 TWCERT 資安新聞 |
+| 高 | 常見產品 CVSS 8.0～8.9 |
+| 注意 | 預設負責產品（微軟系列）CVSS 7.0～7.9 |
 
-- 不在產品清單內的 CVE 不收（例如冷門 WordPress 外掛），除非已列入 KEV。
+- 不在產品清單內的漏洞一律不收（例如冷門 WordPress 外掛、Plex），即使已列入 KEV。
+- TWCERT/CC 新聞全部收錄，放在網頁最右欄；標題含緊急、零時差、遭利用等字會標示「重要」。
+- 同一產品同一天有 2 個以上漏洞列入 KEV，會合併成一張卡。
 - 同一產品同一天有 3 個以上 CVE 會合併成一張卡。
 - 微軟的個別 CVE 不逐一列出，改成每月一張「例行安全更新」摘要卡。
 - NVD 剛公布、尚未評分的 CVE 會先略過，等評分後自動補進來。

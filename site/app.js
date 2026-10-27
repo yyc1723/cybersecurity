@@ -35,7 +35,7 @@
 
   function shown() {
     const q = $("#q").value.trim().toLowerCase();
-    let rows = DATA.events.filter((e) => (q ? true : recent(e, DAYS)));
+    let rows = DATA.events.filter((e) => e.kind !== "twcert" && (q ? true : recent(e, DAYS)));
     if (q) rows = rows.filter((e) => (e.title + e.sub + e.products.join() + e.cves.join() + e.pts.join()).toLowerCase().includes(q));
     if (sev !== "all") rows = rows.filter((e) => e.sev === sev);
     return rows.sort((a, b) => (isMine(b) - isMine(a)) || (ORDER[a.sev] - ORDER[b.sev]) || (new Date(b.published) - new Date(a.published)));
@@ -90,7 +90,8 @@
   function renderChips() {
     const groups = {};
     DATA.products.forEach((p) => { if (p.name !== "其他") (groups[p.group] = groups[p.group] || []).push(p); });
-    $("#chips").innerHTML = Object.entries(groups).map(([g, ps]) => `<div class="chipgroup">${esc(g)}</div>` +
+    const order = DATA.groups || Object.keys(groups);
+    $("#chips").innerHTML = order.filter((g) => groups[g]).map((g) => [g, groups[g]]).map(([g, ps]) => `<div class="chipgroup">${esc(g)}</div>` +
       ps.map((p) => `<button class="key chip" data-pc="${esc(p.name)}" aria-pressed="${mine.includes(p.name)}" data-p="${esc(p.name)}"><i></i>${esc(p.name)}</button>`).join("")).join("");
     $("#mineCnt").textContent = `已選 ${mine.length}`;
     paintVars($("#chips"));
@@ -126,13 +127,30 @@
         <ul>${e.pts.map((p) => `<li>${fmt(p)}</li>`).join("")}</ul></div>
       <div class="ft"><span class="tags">${e.products.map((p) => `<span>${esc(p)}</span>`).join("")}${e.ai ? "" : '<span>原文擷取</span>'}</span><span>${md(e.published)} · ${esc(e.src)} · <a href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">原始公告 →</a></span></div>
     </div></article>`;
-    }).join("") : `<div class="empty">${!DATA.events.length ? "還沒有資料，等第一次排程執行完成後就會出現。" : q ? "找不到符合的事件，換個關鍵字試試。" : "這個等級目前沒有事件。"}</div>`;
+    }).join("") : `<div class="empty">${!DATA.events.some((x) => x.kind !== "twcert") ? "還沒有資料，等第一次排程執行完成後就會出現。" : q ? "找不到符合的事件，換個關鍵字試試。" : "這個等級目前沒有事件。"}</div>`;
     paintVars($("#list"));
   }
 
+  let newsLimit = 8;
+  function renderNews() {
+    const all = DATA.events.filter((e) => e.kind === "twcert").sort((a, b) => new Date(b.published) - new Date(a.published));
+    const list = all.slice(0, newsLimit);
+    $("#news").innerHTML = list.length ? list.map((e) => {
+      const tags = e.products.filter((p) => p !== "其他");
+      return `<a class="nitem ${e.sev}" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">
+        <span class="nmeta"><span class="mono">${md(e.published)}</span>${e.sev === "high" ? '<span class="nlv">重要</span>' : ""}${Date.now() - new Date(e.first_seen) < DAY ? '<span class="nnew">新</span>' : ""}</span>
+        <strong>${esc(e.title)}</strong>
+        ${e.pts[0] ? `<p>${esc(e.pts[0].replace(/\*\*/g, ""))}</p>` : ""}
+        ${tags.length ? `<span class="ntags">${tags.map((p) => `<span data-pc="${esc(p)}"><i></i>${esc(p)}</span>`).join("")}</span>` : ""}
+      </a>`;
+    }).join("") : '<div class="hint">目前沒有 TWCERT/CC 新聞。</div>';
+    $("#newsMore").hidden = all.length <= newsLimit;
+    paintVars($("#news"));
+  }
+
   function renderAll() {
-    const base = DATA.events.filter((e) => recent(e, DAYS));
-    drawDonut(base); drawTrend(base); drawBars(base); renderQuick(base); renderTodo(); renderList();
+    const base = DATA.events.filter((e) => e.kind !== "twcert" && recent(e, DAYS));
+    drawDonut(base); drawTrend(base); drawBars(base); renderQuick(base); renderTodo(); renderList(); renderNews();
   }
 
   function bind() {
@@ -148,6 +166,7 @@
       renderList();
     }));
     $("#q").addEventListener("input", renderList);
+    $("#newsMore").addEventListener("click", () => { newsLimit += 8; renderNews(); });
     $("#qlist").addEventListener("click", (ev) => {
       const b = ev.target.closest(".qrow"); if (!b) return;
       let card = document.getElementById("ev-" + b.dataset.id);
