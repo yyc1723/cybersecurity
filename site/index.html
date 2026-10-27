@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>資安警訊雷達</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 12 19 5"/></svg></div>
+      <div><h1>資安警訊雷達</h1><div class="updated"><i></i>更新 <span class="mono" id="updated">載入中</span></div></div>
+    </div>
+
+    <div class="panel">
+      <h2>事件快覽<small>點選跳到該則</small></h2>
+      <div class="qlist" id="qlist"></div>
+    </div>
+
+    <div class="panel">
+      <h2>等級分布<small>近 14 天</small></h2>
+      <div class="donut-wrap"><svg class="donut" id="donut" viewBox="0 0 120 120" width="112" height="112" role="img" aria-label="等級分布圓環圖"></svg><div class="legend" id="legend"></div></div>
+    </div>
+
+    <div class="panel trend">
+      <h2>近 7 日新增事件</h2>
+      <svg id="trend" viewBox="0 0 258 110" role="img" aria-label="近七日事件長條圖"></svg>
+    </div>
+
+    <div class="panel">
+      <h2>受影響產品<small>近 14 天</small></h2>
+      <div class="bars" id="bars"></div>
+    </div>
+
+    <details class="panel" id="mineBox">
+      <summary>我負責的產品 <span class="cnt" id="mineCnt"></span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <div class="chips" id="chips"></div>
+      <p class="hint">勾選的產品事件會排在前面，設定只存在你的瀏覽器。</p>
+    </details>
+  </aside>
+
+  <main>
+    <div class="topbar">
+      <h2><small id="range">近 14 天 · 台灣時間</small>全球資安<span>事件更新</span></h2>
+      <div class="tools">
+        <label class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="搜尋產品、CVE（含歷史）" aria-label="搜尋"></label>
+        <div class="seg" role="group" aria-label="等級">
+          <button class="key" data-sev="all" aria-pressed="true">全部</button>
+          <button class="key" data-sev="crit" aria-pressed="false">緊急</button>
+          <button class="key" data-sev="high" aria-pressed="false">高</button>
+          <button class="key" data-sev="note" aria-pressed="false">注意</button>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h3 class="sec-title">本日應辦事項 <small id="todoNote">依今日緊急與高風險事件整理</small></h3>
+      <div class="todo" id="todo"></div>
+    </section>
+
+    <section>
+      <h3 class="sec-title">事件列表 <small id="count"></small></h3>
+      <div id="list"><div class="loading">資料載入中…</div></div>
+    </section>
+
+    <footer id="footer">摘要由 AI 產生，請以原始公告為準 · 資料來源：CISA KEV、NVD、Microsoft MSRC、TWCERT/CC</footer>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
