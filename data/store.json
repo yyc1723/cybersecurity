@@ -34,6 +34,459 @@
  },
  "events": [
   {
+   "id": "tw:9cfd6fa41ebd",
+   "kind": "news",
+   "title": "韓國SMB最大ERP業者Douzone Bizon兩週內接連傳出資安事件，當局展開調查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180030",
+   "pts": [
+    "韓國最大中小企業ERP業者Douzone Bizon於近2週內先後發布兩個系統的資安外洩事件，當局列為重大事件，已著手調查。 Douzone Bizon成立於1991年，是韓國鎖定中小企業的企業資訊通訊軟體供應商，也是ERP主要廠商。該公司稱其雲端輕量級企業資源規劃（Lite ERP）與稅務會計解決"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "韓國SMB最大ERP業者Douzone Bizon兩週內接連傳出資安事件，當局展開調查",
+    "desc": "韓國最大中小企業ERP業者Douzone Bizon於近2週內先後發布兩個系統的資安外洩事件，當局列為重大事件，已著手調查。 Douzone Bizon成立於1991年，是韓國鎖定中小企業的企業資訊通訊軟體供應商，也是ERP主要廠商。該公司稱其雲端輕量級企業資源規劃（Lite ERP）與稅務會計解決方案Smart A 10在韓國中小企業和會計事務所客戶超過11萬家，擁有超過90%的市佔率。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8a6cdb2163ef",
+   "kind": "news",
+   "title": "2026年資安技能金盾獎初賽登場，224隊爭奪決賽資格",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180027",
+   "pts": [
+    "數位發展部資通安全署偕同國家資通安全研究院，於10月17日在北、中、南三地舉辦第21屆（2026年）資安技能金盾獎初賽。本屆共有224隊報名，創歷屆新高，將選出大專院校組30隊及國高中職組10隊，合計40隊晉級決賽。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "2026年資安技能金盾獎初賽登場，224隊爭奪決賽資格",
+    "desc": "數位發展部資通安全署偕同國家資通安全研究院，於10月17日在北、中、南三地舉辦第21屆（2026年）資安技能金盾獎初賽。本屆共有224隊報名，創歷屆新高，將選出大專院校組30隊及國高中職組10隊，合計40隊晉級決賽。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:3efce2f11bb5",
+   "kind": "news",
+   "title": "Magento、Brotli漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180026",
+   "pts": [
+    "10月27日美國網路安全與基礎設施安全局（CISA）表示，他們根據掌握漏洞遭到積極利用的證據，將兩個新漏洞加入已遭利用的漏洞名單（KEV）。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Magento、Brotli漏洞遭積極利用",
+    "desc": "10月27日美國網路安全與基礎設施安全局（CISA）表示，他們根據掌握漏洞遭到積極利用的證據，將兩個新漏洞加入已遭利用的漏洞名單（KEV）。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e49a96d8a859",
+   "kind": "news",
+   "title": "Cloudflare AI服務快取出錯，155次GLM-5.3回答混入他人資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180015",
+   "pts": [
+    "Cloudflare公布旗下AI服務Workers AI的資料外洩調查結果，指出8月27日至9月9日期間，GLM-5.3模型共有155次回應混入其他客戶的資料。問題發生在處理特別長的輸入內容時，Cloudflare已於9月9日完成修復，確認其他Workers AI模型未受影響，也沒有發現有人蓄意利用"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Cloudflare AI服務快取出錯，155次GLM-5.3回答混入他人資料",
+    "desc": "Cloudflare公布旗下AI服務Workers AI的資料外洩調查結果，指出8月27日至9月9日期間，GLM-5.3模型共有155次回應混入其他客戶的資料。問題發生在處理特別長的輸入內容時，Cloudflare已於9月9日完成修復，確認其他Workers AI模型未受影響，也沒有發現有人蓄意利用漏洞的證據。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:28faa4cd0fb5",
+   "kind": "news",
+   "title": "Apple同步推出macOS與iOS/iPadOS 27.2版，修補286個漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180024",
+   "pts": [
+    "Apple於10月26日同步推出macOS Golden Gate與iOS/iPadOS的27.2版，兩份安全公告分別列出263個與163個漏洞，合計426個，由於約有140個漏洞同時影響兩組系統，扣除重複項目後，涉及的獨立漏洞共286個。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Apple同步推出macOS與iOS/iPadOS 27.2版，修補286個漏洞",
+    "desc": "Apple於10月26日同步推出macOS Golden Gate與iOS/iPadOS的27.2版，兩份安全公告分別列出263個與163個漏洞，合計426個，由於約有140個漏洞同時影響兩組系統，扣除重複項目後，涉及的獨立漏洞共286個。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:6ba55a11cb5f",
+   "kind": "news",
+   "title": "Mozilla發布Firefox大改版159，修補逾100個高風險漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180018",
+   "pts": [
+    "Mozilla基金會於10月27日正式推出Firefox 159大改版，揭露並修補167個資安漏洞，其中108個被評為高風險，影響範圍涵蓋JavaScript引擎、DOM、WebRTC、網路通訊，以及圖形處理等元件。此次修補的漏洞類型包括同源政策繞過、沙箱逃逸、權限提升、資訊洩露及記憶體安全問題。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Mozilla發布Firefox大改版159，修補逾100個高風險漏洞",
+    "desc": "Mozilla基金會於10月27日正式推出Firefox 159大改版，揭露並修補167個資安漏洞，其中108個被評為高風險，影響範圍涵蓋JavaScript引擎、DOM、WebRTC、網路通訊，以及圖形處理等元件。此次修補的漏洞類型包括同源政策繞過、沙箱逃逸、權限提升、資訊洩露及記憶體安全問題。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d43fd29f09cc",
+   "kind": "news",
+   "title": "Google發布Chrome 156更新，修補逾50個資安漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180016",
+   "pts": [
+    "10月27日Google發布穩定通道的Chrome更新，一共修補52個資安漏洞，從嚴重程度來看，4個為重大等級，46個為高風險等級。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Google發布Chrome 156更新，修補逾50個資安漏洞",
+    "desc": "10月27日Google發布穩定通道的Chrome更新，一共修補52個資安漏洞，從嚴重程度來看，4個為重大等級，46個為高風險等級。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ea56f2bc4647",
+   "kind": "news",
+   "title": "Veeam修補Backup & Replication、Backup for Microsoft 365與Veeam One重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180014",
+   "pts": [
+    "備份與資料保護軟體廠商Veeam於10月27日同步修補旗下3款產品資安漏洞，涵蓋主力備份產品Backup & Replication 13與Backup for Microsoft 365 8.5，以及監控管理平臺Veeam ONE 13.1。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Veeam修補Backup & Replication、Backup for Microsoft 365與Veeam One重大漏洞",
+    "desc": "備份與資料保護軟體廠商Veeam於10月27日同步修補旗下3款產品資安漏洞，涵蓋主力備份產品Backup & Replication 13與Backup for Microsoft 365 8.5，以及監控管理平臺Veeam ONE 13.1。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:7fe05f670ebb",
+   "kind": "news",
+   "title": "新光三越疑遭外部入侵，約2萬名顧客個資受影響，已通報主管機關",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180011",
+   "pts": [
+    "日前臺灣多家媒體報導新光三越發生資安事件，指出2萬名顧客個人資料受影響，引發外界關注。由於新光三越網站未發布相關公告，我們進一步向該公司詢問，取得其總公司發布的資訊系統異常事件說明，證實這家百貨發生資安事故，已通知受影響顧客，並通報主管機關。 新光三越在10月22日對外發布的聲明中表示，該公司日前透"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "新光三越疑遭外部入侵，約2萬名顧客個資受影響，已通報主管機關",
+    "desc": "日前臺灣多家媒體報導新光三越發生資安事件，指出2萬名顧客個人資料受影響，引發外界關注。由於新光三越網站未發布相關公告，我們進一步向該公司詢問，取得其總公司發布的資訊系統異常事件說明，證實這家百貨發生資安事故，已通知受影響顧客，並通報主管機關。 新光三越在10月22日對外發布的聲明中表示，該公司日前透過內部資安監測機制，發現資訊系統異常，疑似遭外部不法入侵。經初步清查，部分宅配訂單顧客的姓名、地址及聯絡電話受到影響。 新光三越指出，發現系統異常後，隨即啟動緊急應變機制，並向主管機關通報，同時協同警察機關展開事件調查及應變作業。聲明也指出，截至10月22日，警方尚未接獲顧客因本次事件遭詐騙的相關通報。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:497015242001",
+   "kind": "news",
+   "title": "天良接獲消費者反映個資疑似外洩，委外平臺資料庫遭自動化攻擊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180010",
+   "pts": [
+    "生技公司天良（4127）於10月27日，在股市公開資訊觀測站發布重大訊息，近日接獲消費者反映個資疑似外洩，調查結果顯示，公司委外服務平臺業者提供的資料庫發生自動化攻擊事件，部分資訊遭非法擷取。天良獲悉相關情事後，已立即聯繫委外服務平臺業者，要求對方釐清公司相關資料是否受到影響，以及實際涉及的資料範圍"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "天良接獲消費者反映個資疑似外洩，委外平臺資料庫遭自動化攻擊",
+    "desc": "生技公司天良（4127）於10月27日，在股市公開資訊觀測站發布重大訊息，近日接獲消費者反映個資疑似外洩，調查結果顯示，公司委外服務平臺業者提供的資料庫發生自動化攻擊事件，部分資訊遭非法擷取。天良獲悉相關情事後，已立即聯繫委外服務平臺業者，要求對方釐清公司相關資料是否受到影響，以及實際涉及的資料範圍。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ac97b7caaa68",
+   "kind": "news",
+   "title": "高林購物網站委由91APP建置的系統遭自動化攻擊，會員訂單資料恐被擷取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180007",
+   "pts": [
+    "服飾與紡織相關產品代理商高林（2906）於10月27日，在股市公開資訊觀測站發布資安事件重大訊息，該公司的購物網站的訂單系統委由電商技術服務公司91APP提供，該系統的資料庫遭到自動化攻擊，部分資訊遭非法擷取。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "高林購物網站委由91APP建置的系統遭自動化攻擊，會員訂單資料恐被擷取",
+    "desc": "服飾與紡織相關產品代理商高林（2906）於10月27日，在股市公開資訊觀測站發布資安事件重大訊息，該公司的購物網站的訂單系統委由電商技術服務公司91APP提供，該系統的資料庫遭到自動化攻擊，部分資訊遭非法擷取。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:51b06afc4839",
+   "kind": "news",
+   "title": "Google Brotli漏洞恐造成資訊洩漏及阻斷服務，.NET、PHP與Linux陸續修補",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    ".NET",
+    "Linux",
+    "PHP",
+    "Node.js"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:28+00:00",
+   "updated": "2026-10-28T05:44:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180003",
+   "pts": [
+    "Google開發的開源資料壓縮程式庫Brotli存在越界寫入漏洞CVE-2026-111497，攻擊者可透過特製壓縮資料觸發記憶體破壞，導致阻斷服務或資訊洩漏。資安業者Imperva先前公布名為Node2Shell的漏洞研究結果，證實攻擊者在特定條件下可利用受影響的Node.js版本遠端執行程式碼。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Google Brotli漏洞恐造成資訊洩漏及阻斷服務，.NET、PHP與Linux陸續修補",
+    "desc": "Google開發的開源資料壓縮程式庫Brotli存在越界寫入漏洞CVE-2026-111497，攻擊者可透過特製壓縮資料觸發記憶體破壞，導致阻斷服務或資訊洩漏。資安業者Imperva先前公布名為Node2Shell的漏洞研究結果，證實攻擊者在特定條件下可利用受影響的Node.js版本遠端執行程式碼。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8510c602a8ed",
+   "kind": "news",
+   "title": "AI代理為完成任務卻外洩企業資料，逾1.3萬個內部檔案遭公開至GitHub",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:35+00:00",
+   "updated": "2026-10-28T05:44:35+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179997",
+   "pts": [
+    "AI程式開發代理可能為了完成任務，自行採取不安全的操作方式，導致企業內部資料外洩。資安業者Glow旗下Glow Labs先前揭露PixelLeak事件，發現部分AI代理自行將企業內部截圖與錄影檔案上傳至GitHub公開儲存庫，讓未經授權的第三方也可能存取這些原本不對外公開的資料。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "AI代理為完成任務卻外洩企業資料，逾1.3萬個內部檔案遭公開至GitHub",
+    "desc": "AI程式開發代理可能為了完成任務，自行採取不安全的操作方式，導致企業內部資料外洩。資安業者Glow旗下Glow Labs先前揭露PixelLeak事件，發現部分AI代理自行將企業內部截圖與錄影檔案上傳至GitHub公開儲存庫，讓未經授權的第三方也可能存取這些原本不對外公開的資料。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c8b9f2b4248f",
+   "kind": "news",
+   "title": "Cloudflare推出後量子地理金鑰管理，限定私密金鑰使用地區",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:35+00:00",
+   "updated": "2026-10-28T05:44:35+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179963",
+   "pts": [
+    "網路服務與資安業者Cloudflare公布地理金鑰管理服務PQ GeoKey Manager，加入後量子密碼學（PQC）防護，讓企業指定哪些地區的伺服器可以解密及使用私密金鑰。目前這項服務已進入封閉測試階段，預計2027年第一季正式推出。新架構將先應用於Cloudflare One相關服務。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Cloudflare推出後量子地理金鑰管理，限定私密金鑰使用地區",
+    "desc": "網路服務與資安業者Cloudflare公布地理金鑰管理服務PQ GeoKey Manager，加入後量子密碼學（PQC）防護，讓企業指定哪些地區的伺服器可以解密及使用私密金鑰。目前這項服務已進入封閉測試階段，預計2027年第一季正式推出。新架構將先應用於Cloudflare One相關服務。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:13c5d9a8c7b4",
+   "kind": "news",
+   "title": "Linux基金會調查揭資料基礎架構風險，資安漏洞居首",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-28T05:44:28+00:00",
+   "first_seen": "2026-10-28T05:44:35+00:00",
+   "updated": "2026-10-28T05:44:35+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179922",
+   "pts": [
+    "Linux基金會（The Linux Foundation）公布2026年開放資料基礎架構調查，發現58%受訪者關注資料基礎架構的資安漏洞風險，在各項風險中比例最高；法規遵循，以及資料在不同工具或環境中的暴露風險，則各有33%受訪者關注。在選擇資料平臺時，79%受訪者認為資安與法規遵循非常重要，比例"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Linux基金會調查揭資料基礎架構風險，資安漏洞居首",
+    "desc": "Linux基金會（The Linux Foundation）公布2026年開放資料基礎架構調查，發現58%受訪者關注資料基礎架構的資安漏洞風險，在各項風險中比例最高；法規遵循，以及資料在不同工具或環境中的暴露風險，則各有33%受訪者關注。在選擇資料平臺時，79%受訪者認為資安與法規遵循非常重要，比例與重視總持有成本（Total Cost of Ownership，TCO）的80%相近。這項調查於2026年5月進行，共有294名來自不同產業及組織的受訪者參與。",
+    "summarize": true
+   }
+  },
+  {
    "id": "grp:Chrome:2026-10-28",
    "kind": "group",
    "title": "Chrome 多個高風險漏洞",
@@ -96,7 +549,7 @@
    "cvss": null,
    "published": "2026-10-27T23:16:58+00:00",
    "first_seen": "2026-10-27T23:47:47+00:00",
-   "updated": "2026-10-27T23:47:47+00:00",
+   "updated": "2026-10-28T05:44:26+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
@@ -108,6 +561,53 @@
    "ai_ver": 0,
    "raw": {
     "descs": [
+     "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Turbolev in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in FileSystem in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Paint in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in UI in Google Chrome on on Android prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Views in Google Chrome on on Windows prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Media in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Paint in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Video in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in UI in Google Chrome on on Android prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in V8 in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in HTML in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in V8 in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Core in Google Chrome on on Android prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Media in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in WebRTC in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in ANGLE in Google Chrome on on Mac prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Browser in Google Chrome on on Windows prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in FileAPI in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Improper input validation in Compositing in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in ImageCapture in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Metrics in Google Chrome on on Mac prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Headless in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Animation in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Animation in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Skia in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Modularization in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in Editing in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in ReadingList in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Layout in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in PDFium in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Compositing in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in FileSystem in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Skia in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Memory corruption in Payments in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Turbolev in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Skia in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Cache in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Paint in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Skia in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Command in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in WTF in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in FileSystem in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in WebAudio in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in V8 in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Memory corruption in Turbolev in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Memory corruption in FileSystem in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
@@ -1155,10 +1655,10 @@
    }
   },
   {
-   "id": "CVE-2026-76473",
-   "kind": "cve",
-   "title": "Cisco 漏洞 CVE-2026-76473",
-   "sub": "CVE-2026-76473 · CVSS 9.8",
+   "id": "grp:Cisco:2026-10-22",
+   "kind": "group",
+   "title": "Cisco 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1166,24 +1666,26 @@
     "Cisco"
    ],
    "cves": [
+    "CVE-2026-76301",
     "CVE-2026-76473"
    ],
    "cvss": 9.8,
    "published": "2026-10-21T17:19:06+00:00",
    "first_seen": "2026-10-27T20:07:11+00:00",
-   "updated": "2026-10-27T20:07:11+00:00",
+   "updated": "2026-10-28T05:44:26+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76473",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
    "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
    ],
    "fix": "",
    "ai": false,
    "ai_ver": 0,
    "raw": {
-    "desc": "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76473 are related to issues concerning improper neutralization of special elements in output used by a downstream component that are grouped under the Common Weakness Enumeration (CWE) Class CWE-74.",
-    "refs": [
-     "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-voice-hardening-twgbH9e3"
+    "descs": [
+     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76473 are related to issues concerning improper neutralization of special elements in output used by a downstream component that are grouped under the Common Weakness Enumeration (CWE) Class CWE-74.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76301 are related to protection mechanism failure and are grouped under the Common Weakness Enumeration (CWE) CWE-693."
     ]
    }
   },
@@ -1206,7 +1708,7 @@
    "cvss": 9.2,
    "published": "2026-10-21T14:17:09+00:00",
    "first_seen": "2026-10-27T14:33:51+00:00",
-   "updated": "2026-10-27T20:07:11+00:00",
+   "updated": "2026-10-28T05:44:26+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
@@ -1218,6 +1720,8 @@
    "ai_ver": 0,
    "raw": {
     "descs": [
+     "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+     "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
      "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
@@ -1266,7 +1770,7 @@
   {
    "id": "grp:Windows Server:2026-10-21",
    "kind": "group",
-   "title": "Windows 多個高風險漏洞",
+   "title": "Chrome Windows 遠端執行漏洞",
    "sub": "11 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1295,12 +1799,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113011",
    "pts": [
-    "同日公布 11 個漏洞，最高 CVSS 9.6。",
-    "Use after free in CredentialProvider in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary co"
+    "Windows 版 Google Chrome 156.0.8078.47 前版本存在漏洞，**攻擊者可經由特製 HTML 頁面執行任意程式碼**。",
+    "CVSS 評分為 9.6。目前尚未遭利用，亦無勒索軟體利用情形。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Use after free in CredentialProvider in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
@@ -1320,7 +1824,7 @@
   {
    "id": "grp:Chrome:2026-10-21",
    "kind": "group",
-   "title": "Chrome 多個高風險漏洞",
+   "title": "Chrome 遠端執行程式碼漏洞",
    "sub": "292 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1629,12 +2133,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "同日公布 292 個漏洞，最高 CVSS 9.6。",
-    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
+    "Google Chrome 156.0.8078.47 前版本存在多個漏洞，**攻擊者可透過特製 HTML 頁面執行任意程式碼**。",
+    "CVSS 評分為 9.6。目前尚未遭利用，亦無勒索軟體利用情形。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
@@ -1935,7 +2439,7 @@
   {
    "id": "grp:SQL Server:2026-10-21",
    "kind": "group",
-   "title": "SQL Server 多個高風險漏洞",
+   "title": "MySQL Server 安全漏洞",
    "sub": "12 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -1965,12 +2469,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101679",
    "pts": [
-    "同日公布 12 個漏洞，最高 CVSS 9.3。",
-    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs). Supported versions that are affected "
+    "Oracle MySQL Server 8.4.0-8.4.12 等及 MySQL Cluster 多個版本存在安全漏洞。",
+    "CVSS 評分為 9.3。**目前尚未遭利用**，亦無勒索軟體利用情形。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server, MySQL Cluster. CVSS 3.1 Base Score 7.5 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H).",
@@ -1991,7 +2495,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多個高風險漏洞",
+   "title": "Oracle 產品安全性漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -2224,12 +2728,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "Oracle PeopleSoft 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本存在漏洞，**攻擊者可透過 HTTP 網路入侵**。",
+    "CVSS 評分為 10.0。目前尚未遭利用，亦無勒索軟體利用情形。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink).  Supported versions that are affected are 8.61-8.63. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
@@ -2493,7 +2997,7 @@
   {
    "id": "grp:Apache:2026-10-20",
    "kind": "group",
-   "title": "Apache 多個高風險漏洞",
+   "title": "Apache Tomcat 安全漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -2513,12 +3017,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101296",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.1。",
-    "A missing critical step in authentication vulnerability in Apache Tomcat when the JNDI realm was configured with with a non GSSAPI SASL auth"
+    "Apache Tomcat 11.0.0-M1 至 11.0.26 等多個版本存在漏洞，**攻擊者可能未提供正確密碼即完成身份驗證**。",
+    "CVSS 評分為 9.1。目前尚未遭利用，亦無勒索軟體利用情形。"
    ],
-   "fix": "原文：A missing critical step in authentication vulnerability in Apache Tomcat when the JNDI realm was configured with with a non GSSAPI SASL authentication mechanism allowed attacker",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "A missing critical step in authentication vulnerability in Apache Tomcat when the JNDI realm was configured with with a non GSSAPI SASL authentication mechanism allowed attackers to authenticate without providing the correct password.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.26, from 10.1.0-M1 through 10.1.60, from 9.0.0.M1 through 9.0.122.\n\n\n\nThe following versions were EOL at the time the CVE was created but are known to be affected: from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109. Other unsupported versions may also be affected.\n\n\n\nUsers are recommended to upgrade to version 11.0.27, 10.1.61 or 9.0.123, which fix the issue.",
@@ -2530,7 +3034,7 @@
   {
    "id": "msrc:2026-Oct",
    "kind": "msrc",
-   "title": "Windows安全繞過漏洞",
+   "title": "Microsoft 10 月例行安全更新",
    "sub": "3228 個 CVE · 1 個已遭利用 · 228 個重大",
    "sev": "crit",
    "kev": true,
@@ -2553,9 +3057,8 @@
    "src": "Microsoft MSRC",
    "url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Oct",
    "pts": [
-    "影響 Windows Server、ASP.NET、.NET、SQL Server、Exchange 與 Office，包含安全繞過漏洞。",
-    "**CVE-2026-96951 已遭利用**，另有 .NET Framework 等漏洞已先行公開，未遭勒索軟體利用。",
-    "建議資安人員清查相關伺服器與產品，並追蹤官方公告以安排修補處理。"
+    "涵蓋 Windows Server 與 Office 等產品，共發布 3228 個漏洞修補，包含 228 個重大漏洞。",
+    "**CVE-2026-96951 已遭利用**；CVE-2026-108398、CVE-2026-111497 及 CVE-2026-92707 已先行公開。"
    ],
    "ai": true,
    "raw": {
@@ -2583,10 +3086,11 @@
      ]
     ]
    },
-   "fix": ""
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai_ver": 2
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-10-27T23:47:28+00:00",
- "kev_last": "2026-10-27T23:47:28+00:00"
+ "nvd_last": "2026-10-28T05:43:59+00:00",
+ "kev_last": "2026-10-28T05:43:59+00:00"
 }
