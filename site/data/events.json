@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T12:56:43+00:00",
+ "generated": "2026-10-28T18:52:37+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,83 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "CVE-2026-84725",
+   "kind": "cve",
+   "title": "Java EAP 遠端程式碼載入漏洞",
+   "sub": "CVE-2026-84725 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [
+    "CVE-2026-84725"
+   ],
+   "cvss": 8.1,
+   "published": "2026-10-28T18:17:20+00:00",
+   "first_seen": "2026-10-28T18:53:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84725",
+   "pts": [
+    "影響當 EAP 帶有 -secmgr 執行時的 openjdk-orb JDKBridge 元件，在物件反序列化時處理 CDR URL。",
+    "**未經身分驗證攻擊者可在 EJB 安全攔截器執行前載入並實例化遠端類別**，CVSS 評分 8.1，目前未遭利用。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-44179",
+   "kind": "cve",
+   "title": "Atlassian 漏洞 CVE-2026-44179",
+   "sub": "CVE-2026-44179 · CVSS 9.9",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Atlassian"
+   ],
+   "cves": [
+    "CVE-2026-44179"
+   ],
+   "cvss": 9.9,
+   "published": "2026-10-28T16:17:07+00:00",
+   "first_seen": "2026-10-28T18:53:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44179",
+   "pts": [
+    "XWiki Remote Macros provides XWiki rendering macros that are useful when migrating content from Confluence. From 1.13 until 1.14.5, the `exc"
+   ],
+   "fix": "原文：This issue is fixed in version 1.14.5.",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-112357",
+   "kind": "cve",
+   "title": "KerioConnect 權限提升漏洞",
+   "sub": "CVE-2026-112357 · CVSS 8.5",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [
+    "CVE-2026-112357"
+   ],
+   "cvss": 8.5,
+   "published": "2026-10-28T16:17:01+00:00",
+   "first_seen": "2026-10-28T18:53:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112357",
+   "pts": [
+    "影響 10.0.9 Patch 2 前的 GFI KerioConnect Outlook Connector，安裝權限過寬致目錄可被寫入。",
+    "本地非管理者可替換服務檔，**於下次啟動時以 NT AUTHORITY\\SYSTEM 權限執行程式碼**，目前未遭利用。"
+   ],
+   "fix": "升級至 10.0.9 Patch 2 或以上版本。",
+   "ai": true
+  },
   {
    "id": "tw:e9a31a71083a",
    "kind": "news",
@@ -904,8 +981,8 @@
    "id": "grp:Chrome:2026-10-28",
    "kind": "group",
    "title": "Chrome 瀏覽器多項重大漏洞",
-   "sub": "47 個 CVE",
-   "sev": "high",
+   "sub": "47 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -960,17 +1037,17 @@
     "CVE-2026-118358",
     "CVE-2026-118359"
    ],
-   "cvss": null,
+   "cvss": 9.6,
    "published": "2026-10-27T23:16:58+00:00",
    "first_seen": "2026-10-27T23:47:47+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
-    "影響 156.0.8078.73 以前的 Google Chrome，**可導致遠端執行程式碼**。",
-    "目前未遭利用，遠端攻擊者可透過特製 HTML 頁面觸發 SVG、Media 等組件漏洞。"
+    "同日公布 47 個漏洞，最高 CVSS 9.6。",
+    "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code ins"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Veeam:2026-10-28",
@@ -1354,10 +1431,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179962",
    "pts": [
-    "健身服務公司柏文（8462）於10月23日，在股市公開資訊觀測站發布重大訊息，電子商城平臺的委外服務廠商發生資安事件，並出現會員反映疑似有電子商城訂單資料外洩情形。"
+    "健身服務公司柏文（8462）公告其電子商城平臺委外服務廠商發生資安事件。",
+    "**已有會員反映疑似出現電子商城訂單資料外洩情形**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:eeea3de2f44a",
@@ -1377,10 +1455,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179959",
    "pts": [
-    "日本摩斯漢堡上週公告，因系統管理委外商遭未授權存取，導致旗下預付卡MOS卡（MOS Card）有113萬3,070筆卡片資料外洩，包括卡號、PIN碼及餘額資訊。"
+    "日本摩斯漢堡因系統管理委外商遭未授權存取，**導致 113 萬 3,070 筆 MOS 卡資料外洩**。",
+    "外洩資訊包含預付卡號、PIN 碼及餘額資訊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:2e3e6d041ca7",
@@ -1447,10 +1526,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179918",
    "pts": [
-    "加拿大多倫多匿名犯罪檢舉組織Toronto Crime Stoppers於日前宣布暫停服務。該組織使用的第三方檢舉管理系統P3今年3月遭駭，造成176,859筆檢舉紀錄外洩，部分內容可能透露原本匿名的檢舉人身分。Toronto Crime Stoppers目前已停止透過網站、電話及App接受新檢舉，"
+    "加拿大檢舉組織第三方系統 P3 遭駭，外洩 176,859 筆檢舉紀錄並可能揭露檢舉人身分。",
+    "**Toronto Crime Stoppers 與多倫多警察局已宣布暫停使用該服務**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:b62c119921f4",
@@ -1598,6 +1678,33 @@
    "ai": true
   },
   {
+   "id": "grp:AI 平台:2026-10-27",
+   "kind": "group",
+   "title": "AI 平台 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-115912",
+    "CVE-2026-115915"
+   ],
+   "cvss": 9.8,
+   "published": "2026-10-26T17:17:18+00:00",
+   "first_seen": "2026-10-28T18:53:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115912",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "vLLM is an inference and serving engine for large language models. Prior to 0.32.0, an authenticated caller can place forged shared-memory a"
+   ],
+   "fix": "原文：This issue is fixed in version 0.32.0.",
+   "ai": false
+  },
+  {
    "id": "kevgrp:PHP:2026-10-26",
    "kind": "group",
    "title": "PHP 多個已遭利用漏洞",
@@ -1625,6 +1732,39 @@
    "ai": false
   },
   {
+   "id": "grp:AI 平台:2026-10-25",
+   "kind": "group",
+   "title": "AI 平台 多個高風險漏洞",
+   "sub": "8 個 CVE · 最高 CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-116172",
+    "CVE-2026-116173",
+    "CVE-2026-116174",
+    "CVE-2026-116176",
+    "CVE-2026-116177",
+    "CVE-2026-116178",
+    "CVE-2026-116179",
+    "CVE-2026-116180"
+   ],
+   "cvss": 8.8,
+   "published": "2026-10-25T14:16:56+00:00",
+   "first_seen": "2026-10-28T18:53:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116172",
+   "pts": [
+    "同日公布 8 個漏洞，最高 CVSS 8.8。",
+    "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers t"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "CVE-2026-114625",
    "kind": "cve",
    "title": "VeloCloud SQL 隱碼注入漏洞",
@@ -1649,6 +1789,32 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-111497",
+   "kind": "cve",
+   "title": ".NET 漏洞 CVE-2026-111497",
+   "sub": "CVE-2026-111497 · CVSS 9.2",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    ".NET",
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "cvss": 9.2,
+   "published": "2026-10-22T14:17:37+00:00",
+   "first_seen": "2026-10-28T18:53:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
+   "pts": [
+    "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "tw:09854930ad06",
@@ -2221,11 +2387,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101679",
    "pts": [
-    "Oracle MySQL Server 8.4.0-8.4.12 等及 MySQL Cluster 多個版本存在安全漏洞。",
-    "CVSS 評分為 9.3。**目前尚未遭利用**，亦無勒索軟體利用情形。"
+    "同日公布 12 個漏洞，最高 CVSS 9.3。",
+    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs). Supported versions that are affected "
    ],
-   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:Oracle:2026-10-21",
@@ -2462,11 +2628,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft 8.61-8.63 與 Siebel CRM 17.0-26.9 等版本，**可致系統遭未授權存取與損害**。",
-    "目前未遭利用，未授權或低權限攻擊者可經由 HTTP 或實體網路進行攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-10-20",
@@ -2495,6 +2661,31 @@
    ],
    "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-96521",
+   "kind": "cve",
+   "title": "Windows 漏洞 CVE-2026-96521",
+   "sub": "CVE-2026-96521 · CVSS 7.8",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-96521"
+   ],
+   "cvss": 7.8,
+   "published": "2026-10-13T21:20:07+00:00",
+   "first_seen": "2026-10-28T18:53:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96521",
+   "pts": [
+    "Photoshop Desktop is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the cu"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2024-34324",
@@ -2551,6 +2742,32 @@
     "**CVE-2026-96951 已遭利用**；CVE-2026-108398、CVE-2026-111497 及 CVE-2026-92707 已先行公開。"
    ],
    "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-104286",
+   "kind": "cve",
+   "title": "FortiMail 路徑穿越漏洞",
+   "sub": "CVE-2026-104286 · CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Fortinet"
+   ],
+   "cves": [
+    "CVE-2026-104286"
+   ],
+   "cvss": 9.8,
+   "published": "2026-10-01T20:17:24+00:00",
+   "first_seen": "2026-10-28T18:53:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286",
+   "pts": [
+    "影響 FortiMail 8.0.0 至 8.0.1、7.6.0 至 7.6.6、7.4.0 至 7.4.8、7.2.0 至 7.2.9 及 7.0 所有版本。",
+    "**未經身分驗證攻擊者可透過特製 HTTP/HTTPS 請求於系統寫入任意檔案**，CVSS 為 9.8，目前未遭利用。"
+   ],
+   "fix": "",
    "ai": true
   }
  ]
