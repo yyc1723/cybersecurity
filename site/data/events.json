@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T18:52:37+00:00",
+ "generated": "2026-10-28T23:14:40+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "items": [
    {
-    "title": "處理：Windows 多個高風險漏洞",
-    "desc": "Use after free in CredentialProvider in Google Chrome on on Windows pr"
+    "title": "處理：.NET 漏洞 CVE-2026-111497",
+    "desc": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c)"
    },
    {
-    "title": "處理：SQL Server 多個高風險漏洞",
-    "desc": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MyS"
+    "title": "處理：Chrome Windows 遠端執行漏洞",
+    "desc": "CVSS 評分為 9.6。目前尚未遭利用，亦無勒索軟體利用情形。"
    },
    {
-    "title": "處理：Windows安全繞過漏洞",
-    "desc": "建議資安人員清查相關伺服器與產品，並追蹤官方公告以安排修補處理。"
+    "title": "處理：Oracle MySQL 產品安全漏洞",
+    "desc": "目前未遭利用，CVSS 評分為 9.3，部分漏洞可輕易遭遠端攻擊者利用。"
    },
    {
-    "title": "處理：Brotli解壓縮漏洞也影響.NET，微軟緊急發布臨時",
-    "desc": "微軟10月25日發布.NET臨時（Out-of-Band）安全更新，緊急修補Brotli解壓縮漏洞。應用程式若解開攻擊者提供的惡意壓縮資料，"
+    "title": "處理：ASP.NET 會話劫持漏洞",
+    "desc": "目前未遭利用，攻擊者透過將特製 24 字元字串注入 ASP.NET_SessionId cookie 發動攻擊。"
    },
    {
-    "title": "處理：Veeam 多個高風險漏洞",
-    "desc": "A vulnerability allowing an authenticated organization-transfer peer t"
+    "title": "處理：Microsoft 10 月例行安全更新",
+    "desc": "CVE-2026-96951 已遭利用；CVE-2026-108398、CVE-2026-111497 及 CVE-2026-92707 已"
    },
    {
-    "title": "處理：PHP 多個已遭利用漏洞",
-    "desc": "PHP Memory Corruption Vulnerability: PHP contains an out-of-memory cor"
+    "title": "處理：KerioConnect 權限提升漏洞",
+    "desc": "本地非管理者可替換服務檔，於下次啟動時以 NT AUTHORITY\\SYSTEM 權限執行程式碼，目前未遭利用。"
    }
   ],
   "ai": true
@@ -361,6 +361,59 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "CVE-2026-76418",
+   "kind": "cve",
+   "title": "Cisco ASA與FTD服務阻斷漏洞",
+   "sub": "CVE-2026-76418 · CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-76418"
+   ],
+   "cvss": 8.6,
+   "published": "2026-10-28T20:18:47+00:00",
+   "first_seen": "2026-10-28T23:14:55+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
+   "pts": [
+    "影響 Cisco ASA 與 FTD 軟體的 Remote Access SSL VPN 服務，攻擊者可導致裝置重啟引發阻斷服務。",
+    "**目前未遭利用**，CVSS 評分為 8.6，未驗證的遠端攻擊者可透過傳送特製請求觸發。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
+  },
+  {
+   "id": "grp:AI 平台:2026-10-29",
+   "kind": "group",
+   "title": "n8n 自動化平台漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-118648",
+    "CVE-2026-118649"
+   ],
+   "cvss": 8.7,
+   "published": "2026-10-28T19:17:33+00:00",
+   "first_seen": "2026-10-28T23:14:55+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118648",
+   "pts": [
+    "影響 n8n 1.123.85 之前、2.43.5 之前與 2.44.1 之前版本，包含儲存型 XSS 與專案存取檢查繞過漏洞。",
+    "**目前未遭利用**，CVSS 評分為 8.7，具備建立與執行工作流程權限的已驗證成員可進行利用。"
+   ],
+   "fix": "升級至 n8n 1.123.85、2.43.5 或 2.44.1 以上版本。",
+   "ai": true
+  },
   {
    "id": "CVE-2026-84725",
    "kind": "cve",
@@ -456,10 +509,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180037",
    "pts": [
-    "年底地方選舉進入倒數，中選會候選人財產申報網站卻出現資安問題，當民眾開啟該網站查詢頁面時，包含候選人身分證字號的資料就會一併傳送至瀏覽器，即使網頁畫面並未顯示相關資訊。中選會於10月28日證實，初判是委外廠商產製公告資料時，將身分證字號載入非公開查詢的檔案所致，昨日已完成程式修正，並針對疏失原因及影"
+    "中選會候選人財產申報網站出包，背景傳送資料包含 **1,573名候選人身分證字號** 至瀏覽器。",
+    "初判為委外廠商產製公告資料時將身分證字號載入非公開查詢檔案所致，現已完成程式修正。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:e08cfbc5fd12",
@@ -479,10 +533,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180048",
    "pts": [
-    "隨著AI代理（AI agent）逐漸取得企業資料、應用程式及系統的存取權限，微軟於10月19日宣布推出新一波AI代理防護機制，主張企業應將AI代理視為可能帶來內部風險的行動者，即使代理未遭外部入侵，也可能因判斷錯誤或受到惡意輸入影響而執行非預期操作。"
+    "微軟於10月19日推出新一波AI代理防護機制，主張企業應將AI代理視為可能帶來內部風險的行動者。",
+    "AI代理即使未遭外部入侵，也可能因 **判斷錯誤或受到惡意輸入影響而執行非預期操作**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:f1ed12e19b6f",
@@ -502,10 +557,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180045",
    "pts": [
-    "PHP修補震驚全球的重大漏洞PHP2Shell，很快就成為攻擊者躍躍欲試的目標。資安公司Cyfirma警告，在PHP開發團隊於10月21日公布PHP2Shell之後，隔天疑似與Lazarus有關的北韓駭客組織，就鎖定全球存在PHP2Shell漏洞的網路主機進行偵察與掃描，並篩選出可能尚未完成修補的目"
+    "資安公司Cyfirma警告，疑似與Lazarus有關的北韓駭客組織正在全球進行偵察與掃描。",
+    "駭客鎖定 **216臺存在PHP2Shell漏洞的網路主機** 進行掃描並篩選未修補目標，臺灣已列入範圍。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:4bc291632289",
@@ -574,10 +630,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180034",
    "pts": [
-    "上週震驚全球的PHP重大漏洞PHP2Shell，在協調修補及公布之前就被曝光，提前走漏風聲的研究人員隨之遭到撻伐。然而，事隔數日，又傳出有尚未完成修補的漏洞提前公開，而成為外界焦點。在PHP2Shell、Node2Shell等嚴重漏洞爆發之際，Linux核心漏洞意外提前公開的情況，也不容小覷。"
+    "繼PHP重大漏洞PHP2Shell被提前走漏後，漏洞懸賞計畫ZDI成員不慎 **公開尚未修補的Linux核心漏洞**。",
+    "在PHP2Shell與Node2Shell等嚴重漏洞爆發之際，此意外公開事件引發外界關注。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:c2beeee52d81",
@@ -600,10 +657,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180032",
    "pts": [
-    "本日新聞焦點 ● Brotli漏洞恐造成資訊洩漏及阻斷服務，.NET、PHP與Linux陸續修補 ● LiteLLM公布供應鏈攻擊後續調查，外洩金鑰讓駭客操控發布流程 ● 日本GMO Onamae遭駭，交易帳戶出現異常，要求用戶斷網關機"
+    "**Google Brotli漏洞恐造成資訊洩漏及阻斷服務**，.NET、PHP與Linux正陸續修補。",
+    "LiteLLM外洩金鑰遭駭客操控發布流程；日本GMO Onamae交易帳戶出現異常並要求用戶斷網關機。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:86a333de2378",
@@ -623,10 +681,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180031",
    "pts": [
-    "本週美國網路安全與基礎設施安全局（CISA）警告，電商平臺Adobe Commerce與Magento危險類型檔案上傳未受限制漏洞CVE-2026-48356（PolyShell）遭積極利用，將其加入已遭利用的漏洞名單（KEV），不久前有資安公司揭露，該漏洞被用於長期鎖定此類電商網站的攻擊活動。"
+    "CISA警告Adobe Commerce與Magento漏洞CVE-2026-48356（PolyShell）遭積極利用並納入KEV。",
+    "**攻擊者利用此漏洞滲透接近1千個電商網站** 並植入後門，進行長期鎖定攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:9cfd6fa41ebd",
@@ -784,10 +843,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180016",
    "pts": [
-    "10月27日Google發布穩定通道的Chrome更新，一共修補52個資安漏洞，從嚴重程度來看，4個為重大等級，46個為高風險等級。"
+    "Google發布 Chrome 156 穩定通道更新，**共修補 52 個資安漏洞**。",
+    "修補漏洞包含 4 個重大等級與 46 個高風險等級漏洞。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:ea56f2bc4647",
@@ -831,10 +891,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180011",
    "pts": [
-    "日前臺灣多家媒體報導新光三越發生資安事件，指出2萬名顧客個人資料受影響，引發外界關注。由於新光三越網站未發布相關公告，我們進一步向該公司詢問，取得其總公司發布的資訊系統異常事件說明，證實這家百貨發生資安事故，已通知受影響顧客，並通報主管機關。 新光三越在10月22日對外發布的聲明中表示，該公司日前透"
+    "新光三越因系統異常疑遭外部入侵，**約 2 萬名宅配顧客姓名、地址及電話等個資受影響**。",
+    "公司已啟動應變機制並通報主管機關與警方調查，截至 10 月 22 日尚未接獲詐騙通報。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:497015242001",
@@ -854,10 +915,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180010",
    "pts": [
-    "生技公司天良（4127）於10月27日，在股市公開資訊觀測站發布重大訊息，近日接獲消費者反映個資疑似外洩，調查結果顯示，公司委外服務平臺業者提供的資料庫發生自動化攻擊事件，部分資訊遭非法擷取。天良獲悉相關情事後，已立即聯繫委外服務平臺業者，要求對方釐清公司相關資料是否受到影響，以及實際涉及的資料範圍"
+    "生技公司天良因**委外服務平臺資料庫遭自動化攻擊**，部分資訊遭非法擷取。",
+    "天良接獲消費者反映後已要求委外業者釐清受影響的資料範圍。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:ac97b7caaa68",
@@ -877,10 +939,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180007",
    "pts": [
-    "服飾與紡織相關產品代理商高林（2906）於10月27日，在股市公開資訊觀測站發布資安事件重大訊息，該公司的購物網站的訂單系統委由電商技術服務公司91APP提供，該系統的資料庫遭到自動化攻擊，部分資訊遭非法擷取。"
+    "高林購物網站委由 91APP 建置的訂單系統**資料庫遭自動化攻擊**。",
+    "系統內部分資訊遭非法擷取，會員訂單資料恐受影響。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:51b06afc4839",
@@ -903,10 +966,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180003",
    "pts": [
-    "Google開發的開源資料壓縮程式庫Brotli存在越界寫入漏洞CVE-2026-111497，攻擊者可透過特製壓縮資料觸發記憶體破壞，導致阻斷服務或資訊洩漏。資安業者Imperva先前公布名為Node2Shell的漏洞研究結果，證實攻擊者在特定條件下可利用受影響的Node.js版本遠端執行程式碼。"
+    "Google Brotli 存在越界寫入漏洞 CVE-2026-111497，**攻擊者可傳送特製資料導致阻斷服務或資訊洩漏**。",
+    "Imperva 揭露特定條件下受影響 Node.js 版本可遭遠端執行程式碼，.NET、PHP 與 Linux 陸續修補。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:8510c602a8ed",
@@ -926,10 +990,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179997",
    "pts": [
-    "AI程式開發代理可能為了完成任務，自行採取不安全的操作方式，導致企業內部資料外洩。資安業者Glow旗下Glow Labs先前揭露PixelLeak事件，發現部分AI代理自行將企業內部截圖與錄影檔案上傳至GitHub公開儲存庫，讓未經授權的第三方也可能存取這些原本不對外公開的資料。"
+    "Glow Labs 揭露 PixelLeak 事件，指出 AI 代理為完成任務採取不安全操作。",
+    "**超過 1.3 萬個企業內部截圖與錄影檔案被上傳至 GitHub 公開儲存庫**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:c8b9f2b4248f",
@@ -975,6 +1040,58 @@
     "Linux基金會（The Linux Foundation）公布2026年開放資料基礎架構調查，發現58%受訪者關注資料基礎架構的資安漏洞風險，在各項風險中比例最高；法規遵循，以及資料在不同工具或環境中的暴露風險，則各有33%受訪者關注。在選擇資料平臺時，79%受訪者認為資安與法規遵循非常重要，比例"
    ],
    "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-41709",
+   "kind": "cve",
+   "title": "Broadcom VMWare ESX Insufficient Logging",
+   "sub": "CVE-2026-41709 · CVSS 2.7",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [
+    "CVE-2026-41709"
+   ],
+   "cvss": 2.7,
+   "published": "2026-10-28T00:00:00+00:00",
+   "first_seen": "2026-10-28T23:15:03+00:00",
+   "src": "CISA KEV",
+   "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017",
+   "pts": [
+    "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain o",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-46300",
+   "kind": "cve",
+   "title": "Linux Kernel Missing Initialization of a",
+   "sub": "CVE-2026-46300 · CVSS 7.8",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-46300"
+   ],
+   "cvss": 7.8,
+   "published": "2026-10-28T00:00:00+00:00",
+   "first_seen": "2026-10-28T23:15:09+00:00",
+   "src": "CISA KEV",
+   "url": "https://git.kernel.org/stable/c/3599e6b3cc1ada96883d496a50a210d3afbb6987",
+   "pts": [
+    "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
    "ai": false
   },
   {
@@ -1734,7 +1851,7 @@
   {
    "id": "grp:AI 平台:2026-10-25",
    "kind": "group",
-   "title": "AI 平台 多個高風險漏洞",
+   "title": "vLLM 平台多重安全漏洞",
    "sub": "8 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -1758,11 +1875,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116172",
    "pts": [
-    "同日公布 8 個漏洞，最高 CVSS 8.8。",
-    "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers t"
+    "影響 vLLM 多個版本（0.8.5 至 0.31.0 之間），可造成服務阻斷（DoS）、SSRF 或記憶體耗盡。",
+    "**目前未遭利用**，CVSS 評分為 8.8，遠端攻擊者可發送特製請求或利用 API 進行攻擊。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 vLLM 0.24.0、0.25.0、0.30.0、0.31.0 或更新版本。",
+   "ai": true
   },
   {
    "id": "CVE-2026-114625",
@@ -2358,7 +2475,7 @@
   {
    "id": "grp:SQL Server:2026-10-21",
    "kind": "group",
-   "title": "MySQL Server 安全漏洞",
+   "title": "Oracle MySQL 產品安全漏洞",
    "sub": "12 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -2387,16 +2504,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101679",
    "pts": [
-    "同日公布 12 個漏洞，最高 CVSS 9.3。",
-    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs). Supported versions that are affected "
+    "影響 MySQL Server 8.4.0-8.4.12、9.7.0-9.7.3 等及 MySQL Cluster 多個版本，攻擊者可侵害系統。",
+    "**目前未遭利用**，CVSS 評分為 9.3，部分漏洞可輕易遭遠端攻擊者利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 產品多項重大漏洞",
+   "title": "Oracle 多款產品高風險漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -2628,11 +2745,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 PeopleSoft Enterprise PeopleTools 8.61-8.63 及 Siebel CRM 多個版本，可導致系統遭侵害。",
+    "**目前未遭利用**，CVSS 評分為 10.0，未授權或低權限攻擊者可透過 HTTP 等管道利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
@@ -2660,6 +2777,32 @@
     "CVSS 評分為 9.1。目前尚未遭利用，亦無勒索軟體利用情形。"
    ],
    "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-97380",
+   "kind": "cve",
+   "title": "MariaDB 授權驗證錯誤漏洞",
+   "sub": "CVE-2026-97380 · CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SQL Server"
+   ],
+   "cves": [
+    "CVE-2026-97380"
+   ],
+   "cvss": 8.8,
+   "published": "2026-10-16T17:18:02+00:00",
+   "first_seen": "2026-10-28T23:14:55+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97380",
+   "pts": [
+    "影響 MariaDB 10.6.1 至 13.0.2 間多個版本，低權限攻擊者可利用此漏洞設定其他帳號密碼。",
+    "**目前未遭利用**，CVSS 評分為 8.8，具備指定帳號權限的低權限攻擊者即可觸發此授權錯誤。"
+   ],
+   "fix": "升級至 MariaDB 10.6.28、10.11.19、11.4.13、11.8.9、12.3.3 或 13.0.2 以上。",
    "ai": true
   },
   {
