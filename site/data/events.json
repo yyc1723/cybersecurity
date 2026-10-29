@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T02:29:11+00:00",
+ "generated": "2026-10-29T09:59:58+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,268 @@
  },
  "events": [
   {
+   "id": "tw:f550a7f24f08",
+   "kind": "news",
+   "title": "Tailscale釋出1.104.4安全更新，修補SSH與Serve功能共4項漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180071",
+   "pts": [
+    "Tailscale 發布 1.104.4 版更新，修補 4 項安全漏洞，涵蓋 SSH 權限提升、記憶體耗盡及 Serve 功能權限問題。",
+    "目前未遭利用。漏洞可能導致**一般使用者越權存取、主機遭接管**，或造成連線中斷。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:636a90a20c3c",
+   "kind": "news",
+   "title": "甫修補的Oracle E-Business Suite重大漏洞遭到利用",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Oracle"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180067",
+   "pts": [
+    "資安業者於誘捕系統偵測到**攻擊者正嘗試利用 Oracle EBS 的 CVE-2026-101767 漏洞**。",
+    "該漏洞屬於近期關鍵修補更新範疇，相關單位呼籲 EBS 用戶應加快修補速度。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:5f9b4353887a",
+   "kind": "news",
+   "title": "macOS 27.2未修補eMudhra憑證風險，Git與curl仍可能遭中間人攻擊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180061",
+   "pts": [
+    "macOS 27.2 內建之 Git、curl 及 Python 3，仍會接受印度業者 eMudhra 已撤銷的問題憑證。",
+    "**攻擊者若攔截連線可冒充 GitHub 等網站**，誘騙開發者下載遭竄改的程式碼。Apple 將透過後續更新修正。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:512c22f20917",
+   "kind": "news",
+   "title": "PHP2Shell漏洞影響多家IT與OT廠商的產品，相關公告陸續出爐",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180047",
+   "pts": [
+    "**PHP2Shell 漏洞（CVE-2026-109618與CVE-2026-109619）**波及全球 7 成網站伺服器，影響多家 IT 與 OT 廠商。",
+    "由於部分工業環境的 OT 系統採用 PHP 建置網頁介面，相關產品安全公告已陸續出爐。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:5b9685c2c5d1",
+   "kind": "news",
+   "title": "中國駭客Volt Typhoon綁架連網設備打造攻擊框架Silent Train，用於攻擊美國關鍵基礎設施",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180063",
+   "pts": [
+    "中國駭客組織 Volt Typhoon 在 KV Botnet 遭圍剿後，建置更隱密複雜的攻擊基礎設施 Silent Train。",
+    "該組織透過綁架多廠商網路設備打造攻擊框架，**持續隱密攻擊美國關鍵基礎設施**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:b3844267cfd4",
+   "kind": "news",
+   "title": "Adobe發布10月下半更新，修補8個Campaign Classic重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180059",
+   "pts": [
+    "Adobe 發布例行更新，其中 **Campaign Classic 修補了 8 個重大漏洞**。",
+    "修補優先順序列為第 2 級，官方呼籲相關用戶儘速採取因應行動。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:f01963b47177",
+   "kind": "news",
+   "title": "Sony日本ISP、保險業務系統被駭，外洩258萬會員、38.5萬保戶個資",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180057",
+   "pts": [
+    "Sony Network Communications 資料庫遭駭，導致 So-net 與 plala 外洩逾 258 萬筆會員個資及 5.4 萬筆帳密。",
+    "Sony 保險網站亦外洩 38.5 萬筆保戶個資；**官方已切斷存取通道並將伺服器下線**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:2a720aa41fb8",
+   "kind": "news",
+   "title": "Linux核心、VMware ESX漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux",
+    "VMware"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180055",
+   "pts": [
+    "10月28日美國網路安全與基礎設施安全局（CISA）發布公告，他們更新了已遭利用漏洞名單（KEV）內容，根據遭到積極利用的證據增列兩個新漏洞。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:37906e9c5bf4",
+   "kind": "news",
+   "title": "駭客宣稱竊走美國土安全部員工資料超過4萬筆",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180054",
+   "pts": [
+    "TechCrunch報導，一名駭客宣稱竊得超過4萬筆美國國土安全部（Department of Homeland Security）員工資料，包括和移民及邊境管制相關的探員個資。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:753e3ef962d9",
+   "kind": "news",
+   "title": "汽車零配件製造商橙的遭勒索軟體攻擊",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T10:00:19+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180053",
+   "pts": [
+    "汽車零配件製造商橙的部分區域網路儲存設備**遭受勒索軟體攻擊**，已啟動斷網隔離與應變機制。",
+    "根據業者初步評估，本次事件對公司整體營運不致產生重大影響。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:cb2af2067b57",
+   "kind": "news",
+   "title": "駭客利用AI滲透測試工具ARTEX竊取韓國金融業資料",
+   "sub": "TWCERT/CC 資安新聞",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T06:22:00+00:00",
+   "first_seen": "2026-10-29T10:00:19+00:00",
+   "src": "TWCERT/CC 資安新聞",
+   "url": "https://www.twcert.org.tw/tw/cp-104-11352-8c3dc-1.html",
+   "pts": [
+    "資安廠商CrowdStrike於2026年10月7日揭露一起涉及韓國金融機構的資料竊取事件，指出攻擊者疑似濫用名為ARTEX的AI輔助滲透測試工具發動攻擊。研究人員從攻擊者的公開目錄，取得ARTEX的相關設定檔與操作紀錄。發現攻擊活動涉及多種大型語言模型及代理伺服器(Proxy)，顯示攻擊者可能運用"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:ca31fe4b8e74",
    "kind": "news",
    "title": "Google發表Gemini 4 Carbon，綜合能力評測登頂、資安表現創新高",
@@ -402,10 +664,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180019",
    "pts": [
-    "法國超市冷藏設備日前遭到網路攻擊，網路安全業者Forescout指出，受影響的超市超過700家，攻擊者入侵冷藏管理系統，修改溫度及除霜設定，造成食品損失。該公司旗下Vedere Labs於10月22日公布全球冷藏控制系統調查結果，發現全球有12,976筆冷藏控制相關服務暴露於公開網路的觀測紀錄，來自"
+    "法國超市冷藏設備遭駭後，研究發現**全球近 1.3 萬筆冷藏管理服務暴露於公開網路**。",
+    "暴露服務涵蓋 99 個國家地區，且部分設備仍在使用存在已知漏洞的舊版韌體。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:b08a51df9504",
@@ -471,10 +734,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179945",
    "pts": [
-    "企業AI安全治理業者Harmonic Security近期宣布完成5,000萬美元B輪融資，累計募資金額達7,600萬美元。該公司已將原本以瀏覽器為主的AI使用監控與敏感資料防護，擴展至桌面AI工具及AI代理，協助企業控管員工及AI代理使用AI工具時的資安風險。"
+    "Harmonic Security完成5,000萬美元B輪融資，累計金額達7,600萬美元。",
+    "防護範圍由瀏覽器**擴展至桌面AI工具及AI代理**，協助控管AI資安風險。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-76418",
@@ -558,7 +822,7 @@
   {
    "id": "CVE-2026-44179",
    "kind": "cve",
-   "title": "Atlassian 漏洞 CVE-2026-44179",
+   "title": "XWiki 遠端執行程式碼漏洞",
    "sub": "CVE-2026-44179 · CVSS 9.9",
    "sev": "crit",
    "kev": false,
@@ -575,10 +839,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44179",
    "pts": [
-    "XWiki Remote Macros provides XWiki rendering macros that are useful when migrating content from Confluence. From 1.13 until 1.14.5, the `exc"
+    "XWiki Remote Macros 1.13 至 1.14.5 未適當跳脫標題，可遭注入語法並導致遠端執行程式碼，影響系統機密性、完整性與可用性。",
+    "目前未遭利用。具頁面編輯權限的使用者即使無腳本或程式設計權限亦可觸發。"
    ],
-   "fix": "原文：This issue is fixed in version 1.14.5.",
-   "ai": false
+   "fix": "**升級至 1.14.5 版本。**",
+   "ai": true
   },
   {
    "id": "CVE-2026-112357",
@@ -820,10 +1085,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180030",
    "pts": [
-    "韓國最大中小企業ERP業者Douzone Bizon於近2週內先後發布兩個系統的資安外洩事件，當局列為重大事件，已著手調查。 Douzone Bizon成立於1991年，是韓國鎖定中小企業的企業資訊通訊軟體供應商，也是ERP主要廠商。該公司稱其雲端輕量級企業資源規劃（Lite ERP）與稅務會計解決"
+    "韓國ERP業者Douzone Bizon於近2週內**接連發生兩個系統資安外洩事件**。",
+    "涉及系統包含Smart A 10等，當局已將其列為重大事件並展開調查。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:8a6cdb2163ef",
@@ -843,10 +1109,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180027",
    "pts": [
-    "數位發展部資通安全署偕同國家資通安全研究院，於10月17日在北、中、南三地舉辦第21屆（2026年）資安技能金盾獎初賽。本屆共有224隊報名，創歷屆新高，將選出大專院校組30隊及國高中職組10隊，合計40隊晉級決賽。"
+    "第21屆資安技能金盾獎初賽於10月17日舉行，**共有224隊報名創歷屆新高**。",
+    "初賽將選出大專院校組30隊與國高中職組10隊，合計40隊晉級決賽。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:3efce2f11bb5",
@@ -866,10 +1133,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180026",
    "pts": [
-    "10月27日美國網路安全與基礎設施安全局（CISA）表示，他們根據掌握漏洞遭到積極利用的證據，將兩個新漏洞加入已遭利用的漏洞名單（KEV）。"
+    "CISA於10月27日將Magento與Brotli漏洞**列入已遭利用名單（KEV）**。",
+    "CISA表示已掌握上述兩個漏洞遭到積極利用的相關證據。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:e49a96d8a859",
@@ -889,10 +1157,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180015",
    "pts": [
-    "Cloudflare公布旗下AI服務Workers AI的資料外洩調查結果，指出8月27日至9月9日期間，GLM-5.3模型共有155次回應混入其他客戶的資料。問題發生在處理特別長的輸入內容時，Cloudflare已於9月9日完成修復，確認其他Workers AI模型未受影響，也沒有發現有人蓄意利用"
+    "Workers AI的GLM-5.3模型在處理長內容時，**155次回應混入他人資料**。",
+    "Cloudflare已於9月9日修復，其他模型未受影響，無蓄意利用證據。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:28faa4cd0fb5",
@@ -912,10 +1181,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180024",
    "pts": [
-    "Apple於10月26日同步推出macOS Golden Gate與iOS/iPadOS的27.2版，兩份安全公告分別列出263個與163個漏洞，合計426個，由於約有140個漏洞同時影響兩組系統，扣除重複項目後，涉及的獨立漏洞共286個。"
+    "Apple推出macOS Golden Gate與iOS/iPadOS 27.2版，**修補286個漏洞**。",
+    "兩系統安全公告分別列出263個與163個漏洞，其中約140個漏洞重複。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:6ba55a11cb5f",
@@ -1160,7 +1430,7 @@
   {
    "id": "CVE-2026-41709",
    "kind": "cve",
-   "title": "Broadcom VMWare ESX Insufficient Logging",
+   "title": "VMware ESX 日誌不足漏洞",
    "sub": "CVE-2026-41709 · CVSS 2.7",
    "sev": "crit",
    "kev": true,
@@ -1177,16 +1447,16 @@
    "src": "CISA KEV",
    "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017",
    "pts": [
-    "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain o",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "Broadcom VMware ESX 存在日誌記錄不足漏洞，可讓具管理員權限的惡意人士執行特定操作而不留下日誌紀錄。",
+    "**此漏洞已遭利用**。攻擊條件為需要取得系統的管理員存取權限。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
+   "ai": true
   },
   {
    "id": "CVE-2026-46300",
    "kind": "cve",
-   "title": "Linux Kernel Missing Initialization of a",
+   "title": "Linux Kernel 未初始化漏洞",
    "sub": "CVE-2026-46300 · CVSS 7.8",
    "sev": "crit",
    "kev": true,
@@ -1203,16 +1473,16 @@
    "src": "CISA KEV",
    "url": "https://git.kernel.org/stable/c/3599e6b3cc1ada96883d496a50a210d3afbb6987",
    "pts": [
-    "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "Linux Kernel 存在變數未初始化漏洞，可修改快取資料，並結合其他漏洞植入 PHP webshell 以 root 權限執行指令。",
+    "**此漏洞已遭利用**。可串聯 CVE-2026-109618 及 CVE-2026-109619 進行攻擊。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
+   "ai": true
   },
   {
    "id": "grp:Chrome:2026-10-28",
    "kind": "group",
-   "title": "Chrome 瀏覽器多項重大漏洞",
+   "title": "Google Chrome 多項安全漏洞",
    "sub": "47 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1275,16 +1545,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
-    "同日公布 47 個漏洞，最高 CVSS 9.6。",
-    "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code ins"
+    "Google Chrome 156.0.8078.73 之前版本存在 SVG 與記憶體等漏洞，可透過特製 HTML 頁面執行任意程式碼。",
+    "目前未遭利用。遠端攻擊者可透過誘使使用者存取特製網頁進行攻擊。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "**升級至 156.0.8078.73 或以上版本。**",
+   "ai": true
   },
   {
    "id": "grp:Veeam:2026-10-28",
    "kind": "group",
-   "title": "Veeam 多個高風險漏洞",
+   "title": "Veeam 備份軟體多項安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.0",
    "sev": "crit",
    "kev": false,
@@ -1302,11 +1572,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106076",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.0。",
-    "A vulnerability allowing an authenticated organization-transfer peer to inject SQL into the configuration database of the source Veeam Backu"
+    "Veeam Backup for Microsoft 365 存在 SQL 注入與任意檔案讀取漏洞，可導致跨租戶資料讀寫、遠端執行程式碼或讀取檔案。",
+    "**目前未遭利用**。攻擊條件為經身分驗證的組織轉移同儕或具管理員權限之使用者。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:ad95fcbf0211",
@@ -1912,7 +2182,7 @@
   {
    "id": "grp:AI 平台:2026-10-27",
    "kind": "group",
-   "title": "AI 平台 多個高風險漏洞",
+   "title": "vLLM 推理引擎多項安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1930,11 +2200,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115912",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
-    "vLLM is an inference and serving engine for large language models. Prior to 0.32.0, an authenticated caller can place forged shared-memory a"
+    "vLLM 0.32.0 之前版本存在共享記憶體位址偽造與圖像解碼限制缺失漏洞，影響大型語言模型推理與服務引擎運作。",
+    "目前未遭利用。攻擊條件包含經身分驗證的呼叫者偽造資料，或傳送控管之圖像位元組。"
    ],
-   "fix": "原文：This issue is fixed in version 0.32.0.",
-   "ai": false
+   "fix": "**升級至 0.32.0 或以上版本。**",
+   "ai": true
   },
   {
    "id": "kevgrp:PHP:2026-10-26",
@@ -2021,6 +2291,57 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-115392",
+   "kind": "cve",
+   "title": "Wasmtime沙盒逃逸漏洞",
+   "sub": "CVE-2026-115392 · CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-115392"
+   ],
+   "cvss": 8.8,
+   "published": "2026-10-22T19:17:46+00:00",
+   "first_seen": "2026-10-29T10:00:15+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115392",
+   "pts": [
+    "Wasmtime 指定版本在缺少 openat2 的 macOS 與 Linux 上，因處理符號連結不當可導致**檔案系統沙盒逃逸**。",
+    "目前未遭利用。具寫入權限的訪客可讀寫主機檔案，唯讀訪客可透過既有符號連結讀取主機檔案。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2022-51026",
+   "kind": "cve",
+   "title": "GitLab 漏洞 CVE-2022-51026",
+   "sub": "CVE-2022-51026 · CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2022-51026"
+   ],
+   "cvss": 9.3,
+   "published": "2026-10-22T19:17:30+00:00",
+   "first_seen": "2026-10-29T10:00:15+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
+   "pts": [
+    "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. Th"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2026-111497",
@@ -2208,7 +2529,7 @@
   {
    "id": "grp:AI 平台:2026-10-21",
    "kind": "group",
-   "title": "AI 平台 多個高風險漏洞",
+   "title": "vLLM 多重安全漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -2227,11 +2548,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114052",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.2。",
-    "vLLM after 0.24.0 and before 0.31.0 contains a memory exhaustion vulnerability in MOSS-Audio model serving that caches a processor for every"
+    "影響 vLLM 0.24.0 至 0.31.0 前版本，可能導致記憶體耗盡及載入動態處理器程式碼。",
+    "**目前尚未發現漏洞遭惡意利用**，未經身分驗證的遠端攻擊者可發送特製請求引發資源消耗。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Windows Server:2026-10-21",
@@ -2628,7 +2949,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多款產品高風險漏洞",
+   "title": "Oracle 產品重大漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -2860,11 +3181,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 及 Siebel CRM 等版本，可導致系統遭妥協。",
+    "**目前漏洞尚未遭惡意利用**，攻擊者可透過 HTTP 網路存取進行攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
