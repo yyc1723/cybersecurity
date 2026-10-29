@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T16:56:59+00:00",
+ "generated": "2026-10-29T21:48:53+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -457,7 +457,7 @@
   {
    "id": "CVE-2026-119118",
    "kind": "cve",
-   "title": "Chrome 漏洞 CVE-2026-119118",
+   "title": "Crawl4AI 憑證驗證不當漏洞",
    "sub": "CVE-2026-119118 · CVSS 8.3",
    "sev": "high",
    "kev": false,
@@ -474,10 +474,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
    "pts": [
-    "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Ch"
+    "影響 Crawl4AI 0.9.5 前版本，中間人攻擊者可偽造內容給爬蟲並擷取 Cookie 與標頭。",
+    "**目前尚未遭利用**；原因為 Chromium 預設帶有 --ignore-certificate-errors 參數啟動。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-10-30",
@@ -910,8 +911,8 @@
    "kind": "cve",
    "title": "Cisco ASA與FTD服務阻斷漏洞",
    "sub": "CVE-2026-76418 · CVSS 8.6",
-   "sev": "high",
-   "kev": false,
+   "sev": "crit",
+   "kev": true,
    "ransomware": false,
    "products": [
     "Cisco"
@@ -925,16 +926,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
    "pts": [
-    "影響 Cisco ASA 與 FTD 軟體的 Remote Access SSL VPN 服務，攻擊者可導致裝置重啟引發阻斷服務。",
-    "**目前未遭利用**，CVSS 評分為 8.6，未驗證的遠端攻擊者可透過傳送特製請求觸發。"
+    "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Fi",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
-   "ai": true
+   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
+   "ai": false
   },
   {
    "id": "grp:AI 平台:2026-10-29",
    "kind": "group",
-   "title": "n8n 自動化平台漏洞",
+   "title": "n8n AI 平台多項安全性漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -952,10 +953,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118648",
    "pts": [
-    "影響 n8n 1.123.85 之前、2.43.5 之前與 2.44.1 之前版本，包含儲存型 XSS 與專案存取檢查繞過漏洞。",
-    "**目前未遭利用**，CVSS 評分為 8.7，具備建立與執行工作流程權限的已驗證成員可進行利用。"
+    "影響 n8n 1.123.85、2.43.5、2.44.1 前版本，可導致儲存型 XSS 或原型污染存取資料。",
+    "**目前尚未遭利用**；具備建立與執行工作流程權限的已驗證成員即可利用此漏洞。"
    ],
-   "fix": "升級至 n8n 1.123.85、2.43.5 或 2.44.1 以上版本。",
+   "fix": "",
    "ai": true
   },
   {
@@ -2457,11 +2458,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116172",
    "pts": [
-    "影響 vLLM 多個版本（0.8.5 至 0.31.0 之間），可造成服務阻斷（DoS）、SSRF 或記憶體耗盡。",
-    "**目前未遭利用**，CVSS 評分為 8.8，遠端攻擊者可發送特製請求或利用 API 進行攻擊。"
+    "同日公布 8 個漏洞，最高 CVSS 8.8。",
+    "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers t"
    ],
-   "fix": "升級至 vLLM 0.24.0、0.25.0、0.30.0、0.31.0 或更新版本。",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2026-114625",
@@ -2619,7 +2620,7 @@
    "id": "grp:GitLab:2026-10-22",
    "kind": "group",
    "title": "GitLab 多個高風險漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 10.0",
+   "sub": "3 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2628,6 +2629,7 @@
    ],
    "cves": [
     "CVE-2026-110264",
+    "CVE-2026-114489",
     "CVE-2026-15723"
    ],
    "cvss": 10.0,
@@ -2636,7 +2638,7 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "同日公布 3 個漏洞，最高 CVSS 10.0。",
     "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
    ],
    "fix": "",
@@ -2672,7 +2674,7 @@
    "id": "grp:Cisco:2026-10-22",
    "kind": "group",
    "title": "Cisco 多個高風險漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 9.8",
+   "sub": "3 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2681,7 +2683,8 @@
    ],
    "cves": [
     "CVE-2026-76301",
-    "CVE-2026-76473"
+    "CVE-2026-76473",
+    "CVE-2026-76527"
    ],
    "cvss": 9.8,
    "published": "2026-10-21T17:19:06+00:00",
@@ -2689,7 +2692,7 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "同日公布 3 個漏洞，最高 CVSS 9.8。",
     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
    ],
    "fix": "",
@@ -3146,7 +3149,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 產品重大漏洞",
+   "title": "Oracle 產品多項安全性漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -3378,17 +3381,17 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM Cloud 等產品，攻擊者可侵害系統。",
+    "**目前尚未遭利用**；未授權或低權限攻擊者可經由 HTTP 或特定網路路徑存取發動攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
    "kind": "group",
-   "title": "Apache Tomcat 安全漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 9.1",
+   "title": "Apache Tomcat 多項漏洞",
+   "sub": "4 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -3398,7 +3401,8 @@
    "cves": [
     "CVE-2026-101296",
     "CVE-2026-101356",
-    "CVE-2026-103119"
+    "CVE-2026-103119",
+    "CVE-2026-80353"
    ],
    "cvss": 9.1,
    "published": "2026-10-20T14:16:54+00:00",
@@ -3406,10 +3410,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101296",
    "pts": [
-    "Apache Tomcat 11.0.0-M1 至 11.0.26 等多個版本存在漏洞，**攻擊者可能未提供正確密碼即完成身份驗證**。",
-    "CVSS 評分為 9.1。目前尚未遭利用，亦無勒索軟體利用情形。"
+    "影響 Apache Tomcat 多個版本，漏洞可導致身份驗證繞過、請求與回應混淆或資料洩漏。",
+    "**目前尚未遭利用**；攻擊者可未經授權登入或由具備存取權限的本地使用者利用。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "fix": "",
    "ai": true
   },
   {
@@ -3522,9 +3526,35 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-97229",
+   "kind": "cve",
+   "title": "GitLab 遠端執行程式碼漏洞",
+   "sub": "CVE-2026-97229 · CVSS 10.0",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-97229"
+   ],
+   "cvss": 10.0,
+   "published": "2026-10-13T02:17:00+00:00",
+   "first_seen": "2026-10-29T21:49:12+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+   "pts": [
+    "影響 GitLab CE/EE 19.2.8、19.3.5、19.4.2 前版本，未授權使用者可執行任意程式碼。",
+    "**此漏洞目前已被發現遭利用**；攻擊者可利用 CI/CD 設定中特製的正則表達式觸發整數溢位發動攻擊。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
+  },
+  {
    "id": "CVE-2026-21589",
    "kind": "cve",
-   "title": "Atlassian 漏洞 CVE-2026-21589",
+   "title": "Atlassian 任意檔案存取漏洞",
    "sub": "CVE-2026-21589 · CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -3541,10 +3571,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
    "pts": [
-    "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Ba"
+    "影響 Bitbucket、Confluence、Jira 等 Data Center 產品，未授權攻擊者可存取 Web 根目錄特定檔案。",
+    "**目前尚未遭利用**；攻擊者發動攻擊前必須預先獲知目標檔案的精確名稱與路徑。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 Bitbucket 9.4.26、Confluence 9.2.26、Jira 9.12.40 等修補版本",
+   "ai": true
   },
   {
    "id": "CVE-2026-104286",
