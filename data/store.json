@@ -34,6 +34,156 @@
  },
  "events": [
   {
+   "id": "tw:ca31fe4b8e74",
+   "kind": "news",
+   "title": "Google發表Gemini 4 Carbon，綜合能力評測登頂、資安表現創新高",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T02:29:27+00:00",
+   "first_seen": "2026-10-29T02:29:27+00:00",
+   "updated": "2026-10-29T02:29:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180049",
+   "pts": [
+    "Google周三（10/28）發表新一代AI模型Gemini 4 Carbon，在第三方評測機構Artificial Analysis最新的綜合能力指數中，以59分排名第一，並在漏洞發現、利用驗證及修補等3項資安基準測試中創下最佳成績。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Google發表Gemini 4 Carbon，綜合能力評測登頂、資安表現創新高",
+    "desc": "Google周三（10/28）發表新一代AI模型Gemini 4 Carbon，在第三方評測機構Artificial Analysis最新的綜合能力指數中，以59分排名第一，並在漏洞發現、利用驗證及修補等3項資安基準測試中創下最佳成績。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:45be0a6be02e",
+   "kind": "news",
+   "title": "法國超市遭駭引發關注，研究人員發現全球99國近1.3萬筆冷藏管理服務暴露於公開網路",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T02:29:27+00:00",
+   "first_seen": "2026-10-29T02:29:27+00:00",
+   "updated": "2026-10-29T02:29:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180019",
+   "pts": [
+    "法國超市冷藏設備日前遭到網路攻擊，網路安全業者Forescout指出，受影響的超市超過700家，攻擊者入侵冷藏管理系統，修改溫度及除霜設定，造成食品損失。該公司旗下Vedere Labs於10月22日公布全球冷藏控制系統調查結果，發現全球有12,976筆冷藏控制相關服務暴露於公開網路的觀測紀錄，來自"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "法國超市遭駭引發關注，研究人員發現全球99國近1.3萬筆冷藏管理服務暴露於公開網路",
+    "desc": "法國超市冷藏設備日前遭到網路攻擊，網路安全業者Forescout指出，受影響的超市超過700家，攻擊者入侵冷藏管理系統，修改溫度及除霜設定，造成食品損失。該公司旗下Vedere Labs於10月22日公布全球冷藏控制系統調查結果，發現全球有12,976筆冷藏控制相關服務暴露於公開網路的觀測紀錄，來自99個國家與地區的6,017個公開IP位址。研究也發現，部分暴露服務對應的設備使用存在已知漏洞的舊版韌體。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b08a51df9504",
+   "kind": "news",
+   "title": "逾850個GitHub帳號遭入侵，駭客發動Gheist攻擊植入惡意工作流程企圖竊密",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T02:29:27+00:00",
+   "first_seen": "2026-10-29T02:29:27+00:00",
+   "updated": "2026-10-29T02:29:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179977",
+   "pts": [
+    "雲端資安業者Wiz近日揭露Gheist攻擊活動，駭客濫用遭竊的GitHub權杖，在儲存庫植入惡意GitHub Actions工作流程，企圖竊取機密資料。研究人員發現，這波攻擊影響超過850個遭入侵的GitHub帳號，相關儲存庫遭植入逾1.35萬個惡意分支。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "逾850個GitHub帳號遭入侵，駭客發動Gheist攻擊植入惡意工作流程企圖竊密",
+    "desc": "雲端資安業者Wiz近日揭露Gheist攻擊活動，駭客濫用遭竊的GitHub權杖，在儲存庫植入惡意GitHub Actions工作流程，企圖竊取機密資料。研究人員發現，這波攻擊影響超過850個遭入侵的GitHub帳號，相關儲存庫遭植入逾1.35萬個惡意分支。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:135fc86f8727",
+   "kind": "news",
+   "title": "美國CISA公布2030戰略，轉向積極防禦並優先保護關鍵基礎設施",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T02:29:27+00:00",
+   "first_seen": "2026-10-29T02:29:27+00:00",
+   "updated": "2026-10-29T02:29:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179974",
+   "pts": [
+    "美國網路安全暨基礎設施安全局（CISA）公布2030年資安戰略，將從被動防禦轉向更積極的威脅偵測與排除，並根據風險及事故可能造成的後果，決定關鍵基礎設施的防護優先順序，同時提升重大資安事件的應變與復原能力。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "美國CISA公布2030戰略，轉向積極防禦並優先保護關鍵基礎設施",
+    "desc": "美國網路安全暨基礎設施安全局（CISA）公布2030年資安戰略，將從被動防禦轉向更積極的威脅偵測與排除，並根據風險及事故可能造成的後果，決定關鍵基礎設施的防護優先順序，同時提升重大資安事件的應變與復原能力。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:0f9f9161cec2",
+   "kind": "news",
+   "title": "Harmonic Security募資5,000萬美元，擴大AI代理安全治理",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T02:29:27+00:00",
+   "first_seen": "2026-10-29T02:29:27+00:00",
+   "updated": "2026-10-29T02:29:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/179945",
+   "pts": [
+    "企業AI安全治理業者Harmonic Security近期宣布完成5,000萬美元B輪融資，累計募資金額達7,600萬美元。該公司已將原本以瀏覽器為主的AI使用監控與敏感資料防護，擴展至桌面AI工具及AI代理，協助企業控管員工及AI代理使用AI工具時的資安風險。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Harmonic Security募資5,000萬美元，擴大AI代理安全治理",
+    "desc": "企業AI安全治理業者Harmonic Security近期宣布完成5,000萬美元B輪融資，累計募資金額達7,600萬美元。該公司已將原本以瀏覽器為主的AI使用監控與敏感資料防護，擴展至桌面AI工具及AI代理，協助企業控管員工及AI代理使用AI工具時的資安風險。",
+    "summarize": true
+   }
+  },
+  {
    "id": "CVE-2026-76418",
    "kind": "cve",
    "title": "Cisco ASA與FTD服務阻斷漏洞",
@@ -3459,15 +3609,15 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-28T23:14:55+00:00",
+   "updated": "2026-10-29T02:29:25+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 PeopleSoft Enterprise PeopleTools 8.61-8.63 及 Siebel CRM 多個版本，可導致系統遭侵害。",
-    "**目前未遭利用**，CVSS 評分為 10.0，未授權或低權限攻擊者可透過 HTTP 等管道利用。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
-   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -3779,7 +3929,9 @@
      "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Outside In Technology.  While the vulnerability is in Oracle Outside In Technology, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Outside In Technology accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
      "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Outside In Technology.  While the vulnerability is in Oracle Outside In Technology, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Outside In Technology. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with logon to the infrastructure where Oracle Outside In Technology executes to compromise Oracle Outside In Technology.  Successful attacks of this vulnerability can result in takeover of Oracle Outside In Technology. CVSS 3.1 Base Score 8.4 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Case management  Service (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Process Management Suite.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Business Process Management Suite accessible data as well as  unauthorized update, insert or delete access to some of Oracle Business Process Management Suite accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N)."
+     "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Case management  Service (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Process Management Suite.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Business Process Management Suite accessible data as well as  unauthorized update, insert or delete access to some of Oracle Business Process Management Suite accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
+     "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel CRM Deployment.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Siebel CRM Deployment accessible data as well as  unauthorized access to critical data or complete access to all Siebel CRM Deployment accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Siebel CRM Deployment. CVSS 3.1 Base Score 8.3 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L).",
+     "Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Agile Product Lifecycle Management for Process.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Agile Product Lifecycle Management for Process accessible data as well as  unauthorized access to critical data or complete access to all Oracle Agile Product Lifecycle Management for Process accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Agile Product Lifecycle Management for Process. CVSS 3.1 Base Score 8.3 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L)."
     ]
    }
   },
@@ -4021,6 +4173,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-10-28T23:14:40+00:00",
- "kev_last": "2026-10-28T23:14:40+00:00"
+ "nvd_last": "2026-10-29T02:29:11+00:00",
+ "kev_last": "2026-10-29T02:29:11+00:00"
 }
