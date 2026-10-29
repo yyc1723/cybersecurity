@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T09:59:58+00:00",
+ "generated": "2026-10-29T16:56:59+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,165 @@
  },
  "events": [
   {
+   "id": "tw:e5552e35630d",
+   "kind": "news",
+   "title": "千家臺灣中小企業採用，老牌印度協作軟體業者主打企業級AI、擴大在臺布局",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T16:57:23+00:00",
+   "first_seen": "2026-10-29T16:57:23+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180077",
+   "pts": [
+    "老牌印度協作軟體公司Zoho今日來臺舉辦首次媒體說明會，要擴大在臺的產品推廣規模，主打企業級AI生產力與營運工具產品線，包括由大型語言模型（LLM）驅動的Zia Chat、可融入工作流程執行任務的Zia Agents，以及提供50多支應用程式的Zoho One一站式平臺。 Zoho亞太區董事總經理G"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:56e90812df90",
+   "kind": "news",
+   "title": "行動App安全規範與技術持續更新，執行環境防護與白箱加密成焦點",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T16:57:23+00:00",
+   "first_seen": "2026-10-29T16:57:23+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180072",
+   "pts": [
+    "行動應用安全雖是發展多年的成熟議題，但相關政策指引、國際標準與防護技術仍持續演進。近日，在臺代理Digital.ai應用程式防護解決方案的叡揚資訊，介紹這方面的政策與標準趨勢，以及白箱密碼學等技術進展，也讓我們進一步注意到行動應用安全領域的最新防護動向。 首先是政策與規範面的變化，叡揚資訊資安直屬事"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:fde2a3d22ec5",
+   "kind": "news",
+   "title": "AI降低App逆向分析門檻帶來資安挑戰，企業App安全策略須兼顧發布後防護",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T16:57:23+00:00",
+   "first_seen": "2026-10-29T16:57:23+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180070",
+   "pts": [
+    "過去需要耗費大量時間的部分App逆向分析工作，如今可透過AI與自動化工具大幅加速。逆向工程雖可用於合法的資安研究與安全驗證，但若被攻擊者利用，也可能更快掌握App內部運作邏輯，進一步尋找繞過安全機制、竄改程式碼或重新封裝App的機會，讓既有加殼與程式碼保護機制面臨考驗。專精於App安全的Digita"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:535a030a7005",
+   "kind": "news",
+   "title": "【資安日報】10月29日，北韓駭客鎖定216臺PHP主機掃描PHP2Shell漏洞，臺灣列入目標範圍",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP",
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-29T16:57:23+00:00",
+   "first_seen": "2026-10-29T16:57:23+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180068",
+   "pts": [
+    "本日新聞焦點 ● 北韓駭客鎖定216臺PHP主機掃描PHP2Shell漏洞，臺灣被列入目標 ● macOS 27.2仍未封鎖eMudhra問題憑證，Git與curl恐遭中間人攻擊 ● 中國駭客打造攻擊框架Silent Train，用於攻擊美國關鍵基礎設施"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-119118",
+   "kind": "cve",
+   "title": "Chrome 漏洞 CVE-2026-119118",
+   "sub": "CVE-2026-119118 · CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-119118"
+   ],
+   "cvss": 8.3,
+   "published": "2026-10-29T16:18:04+00:00",
+   "first_seen": "2026-10-29T16:57:19+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
+   "pts": [
+    "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Ch"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:AI 平台:2026-10-30",
+   "kind": "group",
+   "title": "AI 平台 多個高風險漏洞",
+   "sub": "16 個 CVE · 最高 CVSS 9.9",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-101288",
+    "CVE-2026-103092",
+    "CVE-2026-104317",
+    "CVE-2026-104324",
+    "CVE-2026-104328",
+    "CVE-2026-104339",
+    "CVE-2026-107326",
+    "CVE-2026-107327",
+    "CVE-2026-107328",
+    "CVE-2026-107329",
+    "CVE-2026-110186",
+    "CVE-2026-110193",
+    "CVE-2026-110196",
+    "CVE-2026-110244",
+    "CVE-2026-110309",
+    "CVE-2026-93680"
+   ],
+   "cvss": 9.9,
+   "published": "2026-10-29T16:17:35+00:00",
+   "first_seen": "2026-10-29T16:57:19+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101288",
+   "pts": [
+    "同日公布 16 個漏洞，最高 CVSS 9.9。",
+    "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization o"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:f550a7f24f08",
    "kind": "news",
    "title": "Tailscale釋出1.104.4安全更新，修補SSH與Serve功能共4項漏洞",
@@ -548,10 +707,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180055",
    "pts": [
-    "10月28日美國網路安全與基礎設施安全局（CISA）發布公告，他們更新了已遭利用漏洞名單（KEV）內容，根據遭到積極利用的證據增列兩個新漏洞。"
+    "美國 CISA 於 10 月 28 日更新已遭利用漏洞名單（KEV）。",
+    "**根據遭積極利用的證據，名單中增列 Linux 核心與 VMware ESX 的 2 個漏洞。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:37906e9c5bf4",
@@ -571,10 +731,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180054",
    "pts": [
-    "TechCrunch報導，一名駭客宣稱竊得超過4萬筆美國國土安全部（Department of Homeland Security）員工資料，包括和移民及邊境管制相關的探員個資。"
+    "**駭客宣稱竊取美國國土安全部超過 4 萬筆員工資料。**",
+    "外洩內容包含與移民及邊境管制相關的探員個人資料。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:753e3ef962d9",
@@ -618,10 +779,11 @@
    "src": "TWCERT/CC 資安新聞",
    "url": "https://www.twcert.org.tw/tw/cp-104-11352-8c3dc-1.html",
    "pts": [
-    "資安廠商CrowdStrike於2026年10月7日揭露一起涉及韓國金融機構的資料竊取事件，指出攻擊者疑似濫用名為ARTEX的AI輔助滲透測試工具發動攻擊。研究人員從攻擊者的公開目錄，取得ARTEX的相關設定檔與操作紀錄。發現攻擊活動涉及多種大型語言模型及代理伺服器(Proxy)，顯示攻擊者可能運用"
+    "駭客疑似濫用名為 ARTEX 的 AI 滲透測試工具對韓國金融機構發動攻擊。",
+    "**韓國共有 16 家金融企業發生資料外洩，影響約 10 萬筆客戶個人資料。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:ca31fe4b8e74",
@@ -641,10 +803,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180049",
    "pts": [
-    "Google周三（10/28）發表新一代AI模型Gemini 4 Carbon，在第三方評測機構Artificial Analysis最新的綜合能力指數中，以59分排名第一，並在漏洞發現、利用驗證及修補等3項資安基準測試中創下最佳成績。"
+    "**Google 發表新 AI 模型 Gemini 4 Carbon，於第三方綜合能力評測獲得第一名。**",
+    "該模型在漏洞發現、利用驗證及修補等 3 項資安基準測試中創下最佳成績。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:45be0a6be02e",
@@ -688,10 +851,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179977",
    "pts": [
-    "雲端資安業者Wiz近日揭露Gheist攻擊活動，駭客濫用遭竊的GitHub權杖，在儲存庫植入惡意GitHub Actions工作流程，企圖竊取機密資料。研究人員發現，這波攻擊影響超過850個遭入侵的GitHub帳號，相關儲存庫遭植入逾1.35萬個惡意分支。"
+    "駭客濫用遭竊的 GitHub 權杖，在儲存庫植入惡意 GitHub Actions 工作流程以竊密。",
+    "**Gheist 攻擊影響超過 850 個 GitHub 帳號，被植入逾 1.35 萬個惡意分支。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:135fc86f8727",
@@ -711,10 +875,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179974",
    "pts": [
-    "美國網路安全暨基礎設施安全局（CISA）公布2030年資安戰略，將從被動防禦轉向更積極的威脅偵測與排除，並根據風險及事故可能造成的後果，決定關鍵基礎設施的防護優先順序，同時提升重大資安事件的應變與復原能力。"
+    "**美國 CISA 公布 2030 年資安戰略，將從被動防禦轉向更積極的威脅偵測與排除。**",
+    "該戰略優先保護關鍵基礎設施，並提升重大資安事件的應變與復原能力。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:0f9f9161cec2",
@@ -1205,10 +1370,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180018",
    "pts": [
-    "Mozilla基金會於10月27日正式推出Firefox 159大改版，揭露並修補167個資安漏洞，其中108個被評為高風險，影響範圍涵蓋JavaScript引擎、DOM、WebRTC、網路通訊，以及圖形處理等元件。此次修補的漏洞類型包括同源政策繞過、沙箱逃逸、權限提升、資訊洩露及記憶體安全問題。"
+    "**Mozilla推出Firefox 159**，修補167個漏洞，其中108個評為高風險，影響範圍涵蓋JavaScript引擎與DOM等元件。",
+    "修補漏洞類型包含同源政策繞過、沙箱逃逸、權限提升、資訊洩露及記憶體安全問題。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:d43fd29f09cc",
@@ -1399,10 +1565,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179963",
    "pts": [
-    "網路服務與資安業者Cloudflare公布地理金鑰管理服務PQ GeoKey Manager，加入後量子密碼學（PQC）防護，讓企業指定哪些地區的伺服器可以解密及使用私密金鑰。目前這項服務已進入封閉測試階段，預計2027年第一季正式推出。新架構將先應用於Cloudflare One相關服務。"
+    "Cloudflare推出PQ GeoKey Manager服務，導入後量子密碼學防護，**可限定企業私密金鑰解密與使用的伺服器地區**。",
+    "該服務目前處於封閉測試階段，預計2027年第一季推出，將優先套用至Cloudflare One相關服務。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:13c5d9a8c7b4",
@@ -1422,10 +1589,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179922",
    "pts": [
-    "Linux基金會（The Linux Foundation）公布2026年開放資料基礎架構調查，發現58%受訪者關注資料基礎架構的資安漏洞風險，在各項風險中比例最高；法規遵循，以及資料在不同工具或環境中的暴露風險，則各有33%受訪者關注。在選擇資料平臺時，79%受訪者認為資安與法規遵循非常重要，比例"
+    "Linux基金會調查顯示，58%受訪者最關注資料基礎架構的資安漏洞風險，**資安與法規遵循成為選擇平臺關鍵**。",
+    "該調查於2026年5月進行，共有294名受訪者參與，79%受訪者認為資安與法規遵循非常重要。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-41709",
@@ -1478,6 +1646,34 @@
    ],
    "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
    "ai": true
+  },
+  {
+   "id": "grp:Windows Server:2026-10-28",
+   "kind": "group",
+   "title": "Windows 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-118310",
+    "CVE-2026-118330"
+   ],
+   "cvss": 9.6,
+   "published": "2026-10-27T23:16:59+00:00",
+   "first_seen": "2026-10-29T16:57:19+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118310",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.6。",
+    "Improper input validation in Views in Google Chrome on on Windows prior to 156.0.8078.73 allowed a remote attacker to potentially execute ar"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:Chrome:2026-10-28",
@@ -1545,11 +1741,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
-    "Google Chrome 156.0.8078.73 之前版本存在 SVG 與記憶體等漏洞，可透過特製 HTML 頁面執行任意程式碼。",
-    "目前未遭利用。遠端攻擊者可透過誘使使用者存取特製網頁進行攻擊。"
+    "同日公布 47 個漏洞，最高 CVSS 9.6。",
+    "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code ins"
    ],
-   "fix": "**升級至 156.0.8078.73 或以上版本。**",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:Veeam:2026-10-28",
@@ -1620,10 +1816,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/179996",
    "pts": [
-    "雲端應用程式部署平臺Railway公布資安事故初步調查結果，駭客入侵內部系統，部分客戶的機密環境變數已遭解密，約10萬個工作空間可能受到影響，最多占全體工作空間1.85%。Railway研判，攻擊者鎖定AI服務API金鑰，可能企圖用於模型蒸餾。"
+    "雲端平臺Railway遭駭客入侵內部系統，**部分客戶機密環境變數已遭解密**，約10萬個工作空間受影響。",
+    "官方研判攻擊者主要鎖定AI服務API金鑰，可能企圖用於模型蒸餾。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:62d48f39a0cc",
@@ -2902,11 +3099,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "Google Chrome 156.0.8078.47 前版本存在多個漏洞，**攻擊者可透過特製 HTML 頁面執行任意程式碼**。",
-    "CVSS 評分為 9.6。目前尚未遭利用，亦無勒索軟體利用情形。"
+    "同日公布 292 個漏洞，最高 CVSS 9.6。",
+    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
    ],
-   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:SQL Server:2026-10-21",
@@ -2940,11 +3137,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101679",
    "pts": [
-    "影響 MySQL Server 8.4.0-8.4.12、9.7.0-9.7.3 等及 MySQL Cluster 多個版本，攻擊者可侵害系統。",
-    "**目前未遭利用**，CVSS 評分為 9.3，部分漏洞可輕易遭遠端攻擊者利用。"
+    "同日公布 12 個漏洞，最高 CVSS 9.3。",
+    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs). Supported versions that are affected "
    ],
-   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:Oracle:2026-10-21",
@@ -3181,11 +3378,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 及 Siebel CRM 等版本，可導致系統遭妥協。",
-    "**目前漏洞尚未遭惡意利用**，攻擊者可透過 HTTP 網路存取進行攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-10-20",
@@ -3244,7 +3441,7 @@
   {
    "id": "CVE-2026-96521",
    "kind": "cve",
-   "title": "Windows 漏洞 CVE-2026-96521",
+   "title": "Photoshop越界寫入漏洞",
    "sub": "CVE-2026-96521 · CVSS 7.8",
    "sev": "note",
    "kev": false,
@@ -3261,10 +3458,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96521",
    "pts": [
-    "Photoshop Desktop is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the cu"
+    "Photoshop Desktop存在越界寫入漏洞（CVE-2026-96521），**可導致在當前使用者權限下遠端執行程式碼**。",
+    "利用此漏洞需使用者互動，受害者必須開啟惡意檔案；目前未發現遭利用跡象。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2024-34324",
@@ -3322,6 +3520,31 @@
    ],
    "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-21589",
+   "kind": "cve",
+   "title": "Atlassian 漏洞 CVE-2026-21589",
+   "sub": "CVE-2026-21589 · CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Atlassian"
+   ],
+   "cves": [
+    "CVE-2026-21589"
+   ],
+   "cvss": 9.3,
+   "published": "2026-10-05T22:16:58+00:00",
+   "first_seen": "2026-10-29T16:57:19+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+   "pts": [
+    "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Ba"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2026-104286",
