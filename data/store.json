@@ -3,36 +3,133 @@
   "2026-Oct"
  ],
  "todo": {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "items": [
    {
-    "title": "處理：.NET 漏洞 CVE-2026-111497",
-    "desc": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c)"
+    "title": "本單位：安裝 Microsoft 例行更新",
+    "desc": "**CVE-2026-96951 已遭利用**，涵蓋 Windows Server 與 Office 等修補。"
    },
    {
-    "title": "處理：Chrome Windows 遠端執行漏洞",
-    "desc": "CVSS 評分為 9.6。目前尚未遭利用，亦無勒索軟體利用情形。"
+    "title": "本單位：修補 .NET Brotli 漏洞",
+    "desc": "微軟已發布 .NET 臨時更新，防範記憶體破壞與權限提升。"
    },
    {
-    "title": "處理：Oracle MySQL 產品安全漏洞",
-    "desc": "目前未遭利用，CVSS 評分為 9.3，部分漏洞可輕易遭遠端攻擊者利用。"
+    "title": "本單位：修補 ASP.NET 會話劫持",
+    "desc": "防範注入 24 字元字串至 SessionId Cookie 發動攻擊。"
    },
    {
-    "title": "處理：ASP.NET 會話劫持漏洞",
-    "desc": "目前未遭利用，攻擊者透過將特製 24 字元字串注入 ASP.NET_SessionId cookie 發動攻擊。"
+    "title": "本單位：更新 Outlook 連接器",
+    "desc": "修補 KerioConnect 安裝權限過寬問題，防範權限提升。"
    },
    {
-    "title": "處理：Microsoft 10 月例行安全更新",
-    "desc": "CVE-2026-96951 已遭利用；CVE-2026-108398、CVE-2026-111497 及 CVE-2026-92707 已"
+    "title": "修補 Cisco VPN 服務阻斷漏洞",
+    "desc": "Cisco ASA 與 FTD 漏洞已列入已遭利用清單，請優先處理。"
    },
    {
-    "title": "處理：KerioConnect 權限提升漏洞",
-    "desc": "本地非管理者可替換服務檔，於下次啟動時以 NT AUTHORITY\\SYSTEM 權限執行程式碼，目前未遭利用。"
+    "title": "修補 Linux 與 ESX 漏洞",
+    "desc": "Linux Kernel 與 VMware ESX 漏洞已遭利用，請儘速處理。"
    }
   ],
   "ai": true
  },
  "events": [
+  {
+   "id": "tw:a443a1315b3f",
+   "kind": "news",
+   "title": "AI加快漏洞發現，CSA提出VulnOps模式改善企業漏洞管理",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T01:58:44+00:00",
+   "first_seen": "2026-10-30T01:58:44+00:00",
+   "updated": "2026-10-30T01:58:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180046",
+   "pts": [
+    "AI加快漏洞發現速度，但企業確認漏洞影響、測試修補程式及部署更新仍需要時間。雲端安全聯盟（Cloud Security Alliance，CSA）提出VulnOps漏洞管理模式，主張企業不應只依賴定期掃描及批次修補，而應持續追蹤並處理漏洞，避免新發現的安全問題不斷累積。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "AI加快漏洞發現，CSA提出VulnOps模式改善企業漏洞管理",
+    "desc": "AI加快漏洞發現速度，但企業確認漏洞影響、測試修補程式及部署更新仍需要時間。雲端安全聯盟（Cloud Security Alliance，CSA）提出VulnOps漏洞管理模式，主張企業不應只依賴定期掃描及批次修補，而應持續追蹤並處理漏洞，避免新發現的安全問題不斷累積。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4038b89c78ae",
+   "kind": "news",
+   "title": "惡意Markdown指引檔企圖誘使Codex安裝惡意套件，AI程式開發代理面臨攻擊風險",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T01:58:44+00:00",
+   "first_seen": "2026-10-30T01:58:44+00:00",
+   "updated": "2026-10-30T01:58:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180033",
+   "pts": [
+    "資安業者Forever Security近日揭露一起利用惡意Markdown檔案攻擊AI程式開發代理的事件。研究人員在客戶電腦的下載資料夾發現惡意AGENTS.md檔案，攻擊者企圖誘使OpenAI Codex修改設定並安裝名為function-color的惡意NPM套件，但資安防護系統阻止了套件安裝"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "惡意Markdown指引檔企圖誘使Codex安裝惡意套件，AI程式開發代理面臨攻擊風險",
+    "desc": "資安業者Forever Security近日揭露一起利用惡意Markdown檔案攻擊AI程式開發代理的事件。研究人員在客戶電腦的下載資料夾發現惡意AGENTS.md檔案，攻擊者企圖誘使OpenAI Codex修改設定並安裝名為function-color的惡意NPM套件，但資安防護系統阻止了套件安裝。AGENTS.md是供AI程式開發代理讀取的Markdown指引檔，攻擊者將惡意指令藏入其中。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "grp:Veeam:2026-10-30",
+   "kind": "group",
+   "title": "Veeam 多個高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Veeam"
+   ],
+   "cves": [
+    "CVE-2023-22793",
+    "CVE-2026-107238",
+    "CVE-2026-107239"
+   ],
+   "cvss": 9.3,
+   "published": "2026-10-29T23:16:54+00:00",
+   "first_seen": "2026-10-30T01:58:42+00:00",
+   "updated": "2026-10-30T01:58:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22793",
+   "pts": [
+    "同日公布 3 個漏洞，最高 CVSS 9.3。",
+    "A vulnerability allowing an unauthenticated attacker to perform remote code execution (RCE) on servers running the Veeam Virtualization Exte"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "A vulnerability allowing an unauthenticated attacker to perform remote code execution (RCE) on servers running the Veeam Virtualization Extensions service of Veeam Management Pack for Microsoft System Center.",
+     "A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) as the LocalSystem account on servers running the Veeam Management Pack for Microsoft System Center Collector service.",
+     "A vulnerability allowing a member of the Veeam Virtualization Extensions Users group to perform remote code execution (RCE) on servers running the Veeam Management Pack for Microsoft System Center Collector service."
+    ]
+   }
+  },
   {
    "id": "tw:e5552e35630d",
    "kind": "news",
@@ -155,10 +252,10 @@
    }
   },
   {
-   "id": "CVE-2026-119118",
-   "kind": "cve",
-   "title": "Crawl4AI 憑證驗證不當漏洞",
-   "sub": "CVE-2026-119118 · CVSS 8.3",
+   "id": "grp:Chrome:2026-10-30",
+   "kind": "group",
+   "title": "Chrome 多個高風險漏洞",
+   "sub": "19 個 CVE · 最高 CVSS 8.3",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -166,26 +263,60 @@
     "Chrome"
    ],
    "cves": [
-    "CVE-2026-119118"
+    "CVE-2026-119118",
+    "CVE-2026-119260",
+    "CVE-2026-119261",
+    "CVE-2026-119262",
+    "CVE-2026-119263",
+    "CVE-2026-119264",
+    "CVE-2026-119265",
+    "CVE-2026-119266",
+    "CVE-2026-119267",
+    "CVE-2026-119268",
+    "CVE-2026-119269",
+    "CVE-2026-119270",
+    "CVE-2026-119271",
+    "CVE-2026-76025",
+    "CVE-2026-76026",
+    "CVE-2026-76028",
+    "CVE-2026-76029",
+    "CVE-2026-76030",
+    "CVE-2026-76031"
    ],
    "cvss": 8.3,
    "published": "2026-10-29T16:18:04+00:00",
    "first_seen": "2026-10-29T16:57:19+00:00",
-   "updated": "2026-10-29T16:57:19+00:00",
+   "updated": "2026-10-30T01:58:42+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
    "pts": [
-    "影響 Crawl4AI 0.9.5 前版本，中間人攻擊者可偽造內容給爬蟲並擷取 Cookie 與標頭。",
-    "**目前尚未遭利用**；原因為 Chromium 預設帶有 --ignore-certificate-errors 參數啟動。"
+    "同日公布 19 個漏洞，最高 CVSS 8.3。",
+    "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Ch"
    ],
    "fix": "",
-   "ai": true,
-   "ai_ver": 2,
+   "ai": false,
+   "ai_ver": 0,
    "raw": {
-    "desc": "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Chromium always launches with --ignore-certificate-errors. Man-in-the-middle or DNS-controlling attackers can serve forged content to the crawler and read cookies and headers sent, while hard-coded --no-sandbox also overrides CRAWL4AI_CHROMIUM_SANDBOX.",
-    "refs": [
-     "https://github.com/unclecode/crawl4ai/security/advisories/GHSA-j2qh-f73r-mg3q",
-     "https://www.vulncheck.com/advisories/crawl4ai-before-0.9.5-improper-certificate-validation-via-hard-coded-chromium-flags"
+    "descs": [
+     "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Chromium always launches with --ignore-certificate-errors. Man-in-the-middle or DNS-controlling attackers can serve forged content to the crawler and read cookies and headers sent, while hard-coded --no-sandbox also overrides CRAWL4AI_CHROMIUM_SANDBOX.",
+     "Use after free in Frames in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in V8 in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in GarbageCollection in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Dawn in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in DOM in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Integer overflow in Editing in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Blink in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in CacheStorage in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Autofill in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Network in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Input in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
@@ -821,19 +952,20 @@
    "cvss": 8.7,
    "published": "2026-10-28T19:17:33+00:00",
    "first_seen": "2026-10-28T23:14:55+00:00",
-   "updated": "2026-10-29T21:49:12+00:00",
+   "updated": "2026-10-30T01:58:42+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118648",
    "pts": [
-    "影響 n8n 1.123.85、2.43.5、2.44.1 前版本，可導致儲存型 XSS 或原型污染存取資料。",
-    "**目前尚未遭利用**；具備建立與執行工作流程權限的已驗證成員即可利用此漏洞。"
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
+    "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a stored cross-site scripting vulnerability because some webhook r"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a stored cross-site scripting vulnerability because some webhook response paths, such as error responses and responses without headers, omit the sandbox Content-Security-Policy. Authenticated members who can create and activate workflows can serve HTML that runs on the n8n origin, letting scripts act with the session of users who open the webhook URL.",
+     "n8n before 2.43.5 and 2.44.x before 2.44.1 accepts a client-supplied workflow ID and caches each workflow's owner project in memory by that ID, so a crafted ID such as __proto__ makes the Data Table project check match every project. An authenticated member who can create and run workflows can list, read, modify, and delete Data Table rows in all projects of the instance.",
      "n8n before 2.43.5 and 2.44.x before 2.44.1 accepts a client-supplied workflow ID and caches each workflow's owner project in memory by that ID, so a crafted ID such as __proto__ makes the Data Table project check match every project. An authenticated member who can create and run workflows can list, read, modify, and delete Data Table rows in all projects of the instance.",
      "n8n before 2.43.5 and 2.44.x before 2.44.1 accepts a client-supplied workflow ID and caches each workflow's owner project in memory by that ID, so a crafted ID such as __proto__ makes the Data Table project check match every project. An authenticated member who can create and run workflows can list, read, modify, and delete Data Table rows in all projects of the instance."
     ]
@@ -3250,7 +3382,7 @@
    "cvss": 10.0,
    "published": "2026-10-22T01:16:57+00:00",
    "first_seen": "2026-10-27T14:33:51+00:00",
-   "updated": "2026-10-29T21:49:12+00:00",
+   "updated": "2026-10-30T01:58:42+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
    "pts": [
@@ -3266,6 +3398,7 @@
      "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.1 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, when OmniAuth SAML and LDAP auto-linking were both enabled, an authenticated user could have taken over an existing LDAP-backed account without any interaction from the targeted user, due to improper input sanitization in the LDAP email lookup path used during OmniAuth identity linking.",
      "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression.",
      "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.1 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, when OmniAuth SAML and LDAP auto-linking were both enabled, an authenticated user could have taken over an existing LDAP-backed account without any interaction from the targeted user, due to improper input sanitization in the LDAP email lookup path used during OmniAuth identity linking.",
+     "Missing authorization in the REST and COM administration APIs of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote authenticated user whose credential is confined to named domains to change mail routing and domain configuration beyond those domains on a multi-tenant server. A domain administrator, an account or API key given another role that manages accounts in named domains, or a full-scope API key issued for named domains could create a domain alias for any name (so that other tenants' mail for that name is diverted to an address the attacker controls, or denied), rename a domain to any name the server does not host, set a rule's bind-to-address, send-using-route or script-function action to reach one of the server's own addresses, a configured route's stored credentials or a function of the server's event script, and set the domain's relay host - which delivery then connects to with no address rule - to an address on the server's own network; and over the COM API any account could set the three rule actions on its own rules, where the script-function action runs at delivery. The authorization gate did not refuse these routes to a confined credential and the handlers were not given the caller; over COM the domain-alias save performed no authorization check at all, the domain rename required only a domain administrator, and a rule save required at most that the caller could change the rule's owner.",
      "Missing authorization in the REST and COM administration APIs of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote authenticated user whose credential is confined to named domains to change mail routing and domain configuration beyond those domains on a multi-tenant server. A domain administrator, an account or API key given another role that manages accounts in named domains, or a full-scope API key issued for named domains could create a domain alias for any name (so that other tenants' mail for that name is diverted to an address the attacker controls, or denied), rename a domain to any name the server does not host, set a rule's bind-to-address, send-using-route or script-function action to reach one of the server's own addresses, a configured route's stored credentials or a function of the server's event script, and set the domain's relay host - which delivery then connects to with no address rule - to an address on the server's own network; and over the COM API any account could set the three rule actions on its own rules, where the script-function action runs at delivery. The authorization gate did not refuse these routes to a confined credential and the handlers were not given the caller; over COM the domain-alias save performed no authorization check at all, the domain rename required only a domain administrator, and a rule save required at most that the caller could change the rule's owner."
     ]
    }
@@ -5066,6 +5199,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-10-29T21:48:53+00:00",
- "kev_last": "2026-10-29T21:48:53+00:00"
+ "nvd_last": "2026-10-30T01:58:10+00:00",
+ "kev_last": "2026-10-30T01:58:10+00:00"
 }
