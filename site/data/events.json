@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T08:40:37+00:00",
+ "generated": "2026-10-30T15:56:31+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,176 @@
  },
  "events": [
   {
+   "id": "tw:796541ef7301",
+   "kind": "news",
+   "title": "群暉NAS遭C3RB3R勒索軟體攻擊，原廠呼籲用戶盡速更新DSM系統",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180115",
+   "pts": [
+    "群暉（Synology）於10月29日公告說明近期發生針對旗下NAS設備的C3RB3R勒索攻擊事件，攻擊者利用2024年12月已修補的資安漏洞"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:e94e56018418",
+   "kind": "news",
+   "title": "【資安週報】1027～1030，PHP2Shell、Brotli2Shell衝擊擴大，91APP與Amadeus遭駭影響持續浮現",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP",
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180112",
+   "pts": [
+    "回顧本週資安動態，PHP2Shell與Brotli2Shell兩項重大漏洞的影響持續受到關注，由於兩者影響範圍廣泛，從下游軟體與產品陸續發布修補更新、產業界展開緊急應變，到實際攻擊活動相繼曝光，以及研究人員持續追查漏洞成因與利用手法，相關發展引發全球資安界高度關注。此外，印度數位憑證業者eMudhr"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:a7321be750b3",
+   "kind": "news",
+   "title": "GitLab、思科防火牆漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180113",
+   "pts": [
+    "10月29日美國網路安全與基礎設施安全局（CISA）警告，他們已掌握兩個漏洞遭到積極利用的證據，這些漏洞是GitLab整數溢位漏洞CVE-2026-97229，以及存在於思科ASA和FTD防火牆的阻斷服務漏洞"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:bde49397961a",
+   "kind": "news",
+   "title": "PHP2Shell與Linux核心漏洞被串連利用，中國駭客藉此取得25臺防火牆root權限",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux",
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180111",
+   "pts": [
+    "10月26日以色列資安新創Dream Security揭露一起不尋常的攻擊活動，使用簡體中文的駭客疑似借助AI的力量，串連統稱為PHP2Shell的重大漏洞CVE-2026-109618與CVE-2026-109619，以及Linux核心本機權限提升（LPE）漏洞Fragnesia（CVE-2026"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:2d2fe539419a",
+   "kind": "news",
+   "title": "【資安日報】10月30日，DEVCORE研究員公布在Pwn2Own競賽揭露的Edge攻擊鏈，串連5個弱點突破瀏覽器防護機制",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180104",
+   "pts": [
+    "本日新聞焦點 ● DEVCORE研究員串連5個弱點突破Edge瀏覽器防護機制 ● 微軟發布Windows緊急更新，移除eMudhra問題憑證的預設信任 ● Tailscale釋出1.104.4安全更新，修補SSH與Serve功能共4項漏洞"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:Office:2026-10-30",
+   "kind": "group",
+   "title": "Office 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.5",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [
+    "CVE-2026-119680",
+    "CVE-2026-119682"
+   ],
+   "cvss": 8.5,
+   "published": "2026-10-30T15:16:51+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119680",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.5。",
+    "A stored cross-site scripting (XSS) vulnerability exists in the chart feature of SharePoint Manager Plus (SPMP) due to improper sanitization"
+   ],
+   "fix": "原文：This vulnerability was fixed in client application build 4508.",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-59387",
+   "kind": "cve",
+   "title": "nginx 漏洞 CVE-2026-59387",
+   "sub": "CVE-2026-59387 · CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-59387"
+   ],
+   "cvss": 8.8,
+   "published": "2026-10-30T09:17:14+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59387",
+   "pts": [
+    "The Nginx routing configuration for Cloud Controller blocks unauthenticated access to /internal/v4/ and /internal/v5/ endpoints but omits an"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:9606f4736cb7",
    "kind": "news",
    "title": "全家行動購部分會員資料遭非法擷取，起因是委外廠商91APP資料庫遭自動化攻擊",
@@ -627,7 +797,7 @@
   {
    "id": "grp:Veeam:2026-10-30",
    "kind": "group",
-   "title": "Veeam 多個高風險漏洞",
+   "title": "Veeam 遠端執行程式碼漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -646,11 +816,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22793",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.3。",
-    "A vulnerability allowing an unauthenticated attacker to perform remote code execution (RCE) on servers running the Veeam Virtualization Exte"
+    "Veeam Management Pack for Microsoft System Center 存在漏洞，**攻擊者可於伺服器上遠端執行程式碼**。",
+    "目前未發現遭利用情形。攻擊條件包含未經驗證攻擊者、已驗證網域使用者或特定群組成員。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:e5552e35630d",
@@ -752,9 +922,9 @@
   {
    "id": "grp:Chrome:2026-10-30",
    "kind": "group",
-   "title": "Chrome 多個高風險漏洞",
-   "sub": "19 個 CVE · 最高 CVSS 8.3",
-   "sev": "high",
+   "title": "Chrome 遠端執行程式碼漏洞",
+   "sub": "19 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -781,23 +951,23 @@
     "CVE-2026-76030",
     "CVE-2026-76031"
    ],
-   "cvss": 8.3,
+   "cvss": 9.6,
    "published": "2026-10-29T16:18:04+00:00",
    "first_seen": "2026-10-29T16:57:19+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
    "pts": [
-    "同日公布 19 個漏洞，最高 CVSS 8.3。",
-    "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Ch"
+    "Crawl4AI 0.9.5 前與 Google Chrome 156.0.8078.79 前版本存在漏洞，**攻擊者可透過特製網頁遠端執行任意程式碼**。",
+    "目前未發現遭利用情形。遠端攻擊者可透過中間人攻擊、DNS 操控或誘導造訪特製 HTML 網頁觸發。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-10-30",
    "kind": "group",
-   "title": "AI 平台 多個高風險漏洞",
-   "sub": "16 個 CVE · 最高 CVSS 9.9",
+   "title": "IBM Langflow 遠端程式碼漏洞",
+   "sub": "19 個 CVE · 最高 CVSS 9.9",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -820,6 +990,9 @@
     "CVE-2026-110196",
     "CVE-2026-110244",
     "CVE-2026-110309",
+    "CVE-2026-119408",
+    "CVE-2026-119557",
+    "CVE-2026-18894",
     "CVE-2026-93680"
    ],
    "cvss": 9.9,
@@ -828,11 +1001,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101288",
    "pts": [
-    "同日公布 16 個漏洞，最高 CVSS 9.9。",
-    "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization o"
+    "IBM Langflow OSS 1.0.0 至 1.12.4 版本存在多項漏洞，**攻擊者可執行任意程式碼或 SQL 指令**。",
+    "目前未發現遭利用情形。攻擊者可為未經驗證之遠端使用者，或需具備驗證權限。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:f550a7f24f08",
@@ -1222,7 +1395,7 @@
   {
    "id": "CVE-2026-76418",
    "kind": "cve",
-   "title": "Cisco ASA與FTD服務阻斷漏洞",
+   "title": "Cisco 防火牆阻斷服務漏洞",
    "sub": "CVE-2026-76418 · CVSS 8.6",
    "sev": "crit",
    "kev": true,
@@ -1239,11 +1412,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
    "pts": [
-    "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Fi",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "Cisco ASA 與 FTD 軟體的 Remote Access SSL VPN 服務存在邏輯錯誤漏洞，可導致裝置異常重啟並造成阻斷服務。",
+    "**該漏洞目前已遭野生利用**。未經驗證的遠端攻擊者可在設定二次驗證的隧道群組連線時傳送特製請求。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-10-29",
@@ -1964,7 +2137,7 @@
   {
    "id": "grp:Windows Server:2026-10-28",
    "kind": "group",
-   "title": "Windows 多個高風險漏洞",
+   "title": "Chrome Windows 遠端執行漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1983,17 +2156,17 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118310",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.6。",
-    "Improper input validation in Views in Google Chrome on on Windows prior to 156.0.8078.73 allowed a remote attacker to potentially execute ar"
+    "Windows 版 Google Chrome 156.0.8078.73 前版本存在漏洞，**攻擊者可透過特製 HTML 頁面遠端執行任意程式碼**。",
+    "目前未發現遭利用情形。遠端攻擊者可誘使使用者造訪特製 HTML 頁面以觸發漏洞。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Chrome:2026-10-28",
    "kind": "group",
-   "title": "Google Chrome 多項安全漏洞",
-   "sub": "47 個 CVE · 最高 CVSS 9.6",
+   "title": "Chrome 遠端執行程式碼漏洞",
+   "sub": "49 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2023,9 +2196,11 @@
     "CVE-2026-118330",
     "CVE-2026-118331",
     "CVE-2026-118332",
+    "CVE-2026-118333",
     "CVE-2026-118334",
     "CVE-2026-118335",
     "CVE-2026-118336",
+    "CVE-2026-118337",
     "CVE-2026-118338",
     "CVE-2026-118339",
     "CVE-2026-118340",
@@ -2055,11 +2230,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
-    "同日公布 47 個漏洞，最高 CVSS 9.6。",
-    "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code ins"
+    "Google Chrome 156.0.8078.73 前版本多個元件存在漏洞，**攻擊者可透過特製網頁遠端執行任意程式碼**。",
+    "目前未發現遭利用情形。遠端攻擊者可誘使使用者開啟特製 HTML 網頁進行利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Veeam:2026-10-28",
@@ -2804,10 +2979,10 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-115392",
-   "kind": "cve",
-   "title": "Wasmtime沙盒逃逸漏洞",
-   "sub": "CVE-2026-115392 · CVSS 8.8",
+   "id": "grp:Linux:2026-10-23",
+   "kind": "group",
+   "title": "Linux 核心 多個高風險漏洞",
+   "sub": "5 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -2815,7 +2990,11 @@
     "Linux"
    ],
    "cves": [
-    "CVE-2026-115392"
+    "CVE-2026-115392",
+    "CVE-2026-98968",
+    "CVE-2026-98981",
+    "CVE-2026-99082",
+    "CVE-2026-99083"
    ],
    "cvss": 8.8,
    "published": "2026-10-22T19:17:46+00:00",
@@ -2823,11 +3002,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115392",
    "pts": [
-    "Wasmtime 指定版本在缺少 openat2 的 macOS 與 Linux 上，因處理符號連結不當可導致**檔案系統沙盒逃逸**。",
-    "目前未遭利用。具寫入權限的訪客可讀寫主機檔案，唯讀訪客可透過既有符號連結讀取主機檔案。"
+    "同日公布 5 個漏洞，最高 CVSS 8.8。",
+    "Wasmtime before 24.0.13, 25.0.0 before 36.0.14, 37.0.0 before 46.0.3, and 47.0.0 before 47.0.4 allows a filesystem sandbox escape in wasmtim"
    ],
-   "fix": "",
-   "ai": true
+   "fix": "原文：When commit 699023e23965 (\"KVM: x86: add SMM to the MMU role, support SMRAM address space\") added the SMM address space, these helpers were not converted to use the active memsl",
+   "ai": false
   },
   {
    "id": "CVE-2022-51026",
@@ -2989,7 +3168,7 @@
    "id": "grp:Cisco:2026-10-22",
    "kind": "group",
    "title": "Cisco 多款產品安全性漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 9.8",
+   "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2997,6 +3176,7 @@
     "Cisco"
    ],
    "cves": [
+    "CVE-2026-76298",
     "CVE-2026-76301",
     "CVE-2026-76473",
     "CVE-2026-76527"
@@ -3005,13 +3185,13 @@
    "published": "2026-10-21T17:19:06+00:00",
    "first_seen": "2026-10-27T20:07:11+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76298",
    "pts": [
-    "影響 Cisco Emergency Responder 與 Unified CM 等多款產品，包含內部檢測出之安全漏洞。",
-    "目前漏洞**未遭積極利用**，為 Cisco 內部進行安全性審查時發現。"
+    "同日公布 4 個漏洞，最高 CVSS 9.8。",
+    "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Palo Alto:2026-10-21",
@@ -3068,6 +3248,31 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-113812",
+   "kind": "cve",
+   "title": "OpenSSL 漏洞 CVE-2026-113812",
+   "sub": "CVE-2026-113812 · CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-113812"
+   ],
+   "cvss": 9.1,
+   "published": "2026-10-20T22:19:30+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113812",
+   "pts": [
+    "Mozilla::CA versions before 20261020 for Perl provide a CA certificate bundle containing a root linked to compromised intermediates. The bun"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:Windows Server:2026-10-21",
@@ -3417,11 +3622,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "影響 156.0.8078.47 以前版本之 Google Chrome，包含 Canvas 及 Input 等模組之記憶體損壞漏洞。",
-    "目前**未遭積極利用**，未經驗證遠端攻擊者可利用精心設計的 HTML 網頁執行任意程式碼。"
+    "同日公布 292 個漏洞，最高 CVSS 9.6。",
+    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
    ],
-   "fix": "更新至 156.0.8078.47 或以上版本。",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:SQL Server:2026-10-21",
@@ -3732,6 +3937,35 @@
    "ai": true
   },
   {
+   "id": "grp:Linux:2026-10-19",
+   "kind": "group",
+   "title": "Linux 核心 多個高風險漏洞",
+   "sub": "4 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-98451",
+    "CVE-2026-98454",
+    "CVE-2026-98490",
+    "CVE-2026-98549"
+   ],
+   "cvss": 9.8,
+   "published": "2026-10-18T16:16:55+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98451",
+   "pts": [
+    "同日公布 4 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: smb: client: use finish_no_open() for non-regular inodes An O_CREAT open"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "CVE-2026-97380",
    "kind": "cve",
    "title": "MariaDB 授權驗證錯誤漏洞",
@@ -3890,6 +4124,31 @@
    ],
    "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-98171",
+   "kind": "cve",
+   "title": "Linux 核心 漏洞 CVE-2026-98171",
+   "sub": "CVE-2026-98171 · CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-98171"
+   ],
+   "cvss": 8.8,
+   "published": "2026-10-06T09:17:58+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98171",
+   "pts": [
+    "In the Linux kernel, the following vulnerability has been resolved: smb: client: fix next_buffer UAF and NextCommand bounds in compound PDUs"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2026-21589",

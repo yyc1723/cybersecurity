@@ -34,6 +34,227 @@
  },
  "events": [
   {
+   "id": "tw:796541ef7301",
+   "kind": "news",
+   "title": "群暉NAS遭C3RB3R勒索軟體攻擊，原廠呼籲用戶盡速更新DSM系統",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "updated": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180115",
+   "pts": [
+    "群暉（Synology）於10月29日公告說明近期發生針對旗下NAS設備的C3RB3R勒索攻擊事件，攻擊者利用2024年12月已修補的資安漏洞"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "群暉NAS遭C3RB3R勒索軟體攻擊，原廠呼籲用戶盡速更新DSM系統",
+    "desc": "群暉（Synology）於10月29日公告說明近期發生針對旗下NAS設備的C3RB3R勒索攻擊事件，攻擊者利用2024年12月已修補的資安漏洞",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e94e56018418",
+   "kind": "news",
+   "title": "【資安週報】1027～1030，PHP2Shell、Brotli2Shell衝擊擴大，91APP與Amadeus遭駭影響持續浮現",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP",
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "updated": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180112",
+   "pts": [
+    "回顧本週資安動態，PHP2Shell與Brotli2Shell兩項重大漏洞的影響持續受到關注，由於兩者影響範圍廣泛，從下游軟體與產品陸續發布修補更新、產業界展開緊急應變，到實際攻擊活動相繼曝光，以及研究人員持續追查漏洞成因與利用手法，相關發展引發全球資安界高度關注。此外，印度數位憑證業者eMudhr"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安週報】1027～1030，PHP2Shell、Brotli2Shell衝擊擴大，91APP與Amadeus遭駭影響持續浮現",
+    "desc": "回顧本週資安動態，PHP2Shell與Brotli2Shell兩項重大漏洞的影響持續受到關注，由於兩者影響範圍廣泛，從下游軟體與產品陸續發布修補更新、產業界展開緊急應變，到實際攻擊活動相繼曝光，以及研究人員持續追查漏洞成因與利用手法，相關發展引發全球資安界高度關注。此外，印度數位憑證業者eMudhra爆出重大金鑰安全問題，也促使瀏覽器與軟體開發生態系陸續採取因應措施。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:a7321be750b3",
+   "kind": "news",
+   "title": "GitLab、思科防火牆漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "updated": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180113",
+   "pts": [
+    "10月29日美國網路安全與基礎設施安全局（CISA）警告，他們已掌握兩個漏洞遭到積極利用的證據，這些漏洞是GitLab整數溢位漏洞CVE-2026-97229，以及存在於思科ASA和FTD防火牆的阻斷服務漏洞"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "GitLab、思科防火牆漏洞遭積極利用",
+    "desc": "10月29日美國網路安全與基礎設施安全局（CISA）警告，他們已掌握兩個漏洞遭到積極利用的證據，這些漏洞是GitLab整數溢位漏洞CVE-2026-97229，以及存在於思科ASA和FTD防火牆的阻斷服務漏洞",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:bde49397961a",
+   "kind": "news",
+   "title": "PHP2Shell與Linux核心漏洞被串連利用，中國駭客藉此取得25臺防火牆root權限",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux",
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "updated": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180111",
+   "pts": [
+    "10月26日以色列資安新創Dream Security揭露一起不尋常的攻擊活動，使用簡體中文的駭客疑似借助AI的力量，串連統稱為PHP2Shell的重大漏洞CVE-2026-109618與CVE-2026-109619，以及Linux核心本機權限提升（LPE）漏洞Fragnesia（CVE-2026"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "PHP2Shell與Linux核心漏洞被串連利用，中國駭客藉此取得25臺防火牆root權限",
+    "desc": "10月26日以色列資安新創Dream Security揭露一起不尋常的攻擊活動，使用簡體中文的駭客疑似借助AI的力量，串連統稱為PHP2Shell的重大漏洞CVE-2026-109618與CVE-2026-109619，以及Linux核心本機權限提升（LPE）漏洞Fragnesia（CVE-2026-46300），入侵25臺伺服器並得到root權限，這些伺服器位於臺灣、日本、韓國，以及美國，其中3臺與美國政府環境有關的伺服器被鎖定並執行後續活動，駭客藉此深入受害組織內部的AD網域環境，",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2d2fe539419a",
+   "kind": "news",
+   "title": "【資安日報】10月30日，DEVCORE研究員公布在Pwn2Own競賽揭露的Edge攻擊鏈，串連5個弱點突破瀏覽器防護機制",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T15:57:11+00:00",
+   "first_seen": "2026-10-30T15:57:11+00:00",
+   "updated": "2026-10-30T15:57:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180104",
+   "pts": [
+    "本日新聞焦點 ● DEVCORE研究員串連5個弱點突破Edge瀏覽器防護機制 ● 微軟發布Windows緊急更新，移除eMudhra問題憑證的預設信任 ● Tailscale釋出1.104.4安全更新，修補SSH與Serve功能共4項漏洞"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】10月30日，DEVCORE研究員公布在Pwn2Own競賽揭露的Edge攻擊鏈，串連5個弱點突破瀏覽器防護機制",
+    "desc": "本日新聞焦點 ● DEVCORE研究員串連5個弱點突破Edge瀏覽器防護機制 ● 微軟發布Windows緊急更新，移除eMudhra問題憑證的預設信任 ● Tailscale釋出1.104.4安全更新，修補SSH與Serve功能共4項漏洞",
+    "summarize": true
+   }
+  },
+  {
+   "id": "grp:Office:2026-10-30",
+   "kind": "group",
+   "title": "Office 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.5",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [
+    "CVE-2026-119680",
+    "CVE-2026-119682"
+   ],
+   "cvss": 8.5,
+   "published": "2026-10-30T15:16:51+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119680",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.5。",
+    "A stored cross-site scripting (XSS) vulnerability exists in the chart feature of SharePoint Manager Plus (SPMP) due to improper sanitization"
+   ],
+   "fix": "原文：This vulnerability was fixed in client application build 4508.",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "A stored cross-site scripting (XSS) vulnerability exists in the chart feature of SharePoint Manager Plus (SPMP) due to improper sanitization and HTML encoding of user-controlled data. An attacker can inject malicious HTML or JavaScript into attributes used to generate charts, including users' full names, site names, or group names. The injected content is stored and subsequently executed in the context of other users' browsers when the affected charts are rendered. This vulnerability was fixed in client application build 4508.",
+     "An improper access control vulnerability exists in the multi-factor authentication (MFA) functionality of ManageEngine SharePoint Manager Plus (SPMP). A low-privileged authenticated user can bypass authorization checks to read and modify MFA configuration settings, enable or disable MFA for the application, enumerate MFA-enrolled users, and delete MFA-enrolled accounts. Successful exploitation could allow an attacker to weaken authentication protections or cause a denial of service by configuring invalid MFA settings, potentially locking legitimate users out of the application. This vulnerability was fixed in build 4507. The reproduction explicitly uses build 4506."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-59387",
+   "kind": "cve",
+   "title": "nginx 漏洞 CVE-2026-59387",
+   "sub": "CVE-2026-59387 · CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-59387"
+   ],
+   "cvss": 8.8,
+   "published": "2026-10-30T09:17:14+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59387",
+   "pts": [
+    "The Nginx routing configuration for Cloud Controller blocks unauthenticated access to /internal/v4/ and /internal/v5/ endpoints but omits an"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "The Nginx routing configuration for Cloud Controller blocks unauthenticated access to /internal/v4/ and /internal/v5/ endpoints but omits an equivalent deny rule for /internal/v3/. As a result, the staging callback endpoints /internal/v3/staging/:guid/droplet_completed and /internal/v3/staging/:guid/build_completed are reachable from the public API listener without OAuth or mutual TLS.\n\n\n\n \n\n\n\nAn attacker with a valid build or droplet GUID can submit a forged staging callback, transition a droplet to STAGED, and persist arbitrary process metadata and sidecar data with no associated package or actor. A SpaceAuditor can enumerate GUIDs without write permissions, making this an effective privilege escalation beyond the intended role boundary.",
+    "refs": [
+     "https://www.cloudfoundry.org/blog/cve-2026-59387-broken-access-control-restriction-in-cloud-controller-api/"
+    ]
+   }
+  },
+  {
    "id": "tw:9606f4736cb7",
    "kind": "news",
    "title": "全家行動購部分會員資料遭非法擷取，起因是委外廠商91APP資料庫遭自動化攻擊",
@@ -376,7 +597,7 @@
   {
    "id": "grp:Veeam:2026-10-30",
    "kind": "group",
-   "title": "Veeam 多個高風險漏洞",
+   "title": "Veeam 遠端執行程式碼漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -396,12 +617,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22793",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.3。",
-    "A vulnerability allowing an unauthenticated attacker to perform remote code execution (RCE) on servers running the Veeam Virtualization Exte"
+    "Veeam Management Pack for Microsoft System Center 存在漏洞，**攻擊者可於伺服器上遠端執行程式碼**。",
+    "目前未發現遭利用情形。攻擊條件包含未經驗證攻擊者、已驗證網域使用者或特定群組成員。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "A vulnerability allowing an unauthenticated attacker to perform remote code execution (RCE) on servers running the Veeam Virtualization Extensions service of Veeam Management Pack for Microsoft System Center.",
@@ -538,9 +759,9 @@
   {
    "id": "grp:Chrome:2026-10-30",
    "kind": "group",
-   "title": "Chrome 多個高風險漏洞",
-   "sub": "19 個 CVE · 最高 CVSS 8.3",
-   "sev": "high",
+   "title": "Chrome 遠端執行程式碼漏洞",
+   "sub": "19 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -567,22 +788,40 @@
     "CVE-2026-76030",
     "CVE-2026-76031"
    ],
-   "cvss": 8.3,
+   "cvss": 9.6,
    "published": "2026-10-29T16:18:04+00:00",
    "first_seen": "2026-10-29T16:57:19+00:00",
-   "updated": "2026-10-30T08:40:54+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
    "pts": [
-    "同日公布 19 個漏洞，最高 CVSS 8.3。",
-    "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Ch"
+    "Crawl4AI 0.9.5 前與 Google Chrome 156.0.8078.79 前版本存在漏洞，**攻擊者可透過特製網頁遠端執行任意程式碼**。",
+    "目前未發現遭利用情形。遠端攻擊者可透過中間人攻擊、DNS 操控或誘導造訪特製 HTML 網頁觸發。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Chromium always launches with --ignore-certificate-errors. Man-in-the-middle or DNS-controlling attackers can serve forged content to the crawler and read cookies and headers sent, while hard-coded --no-sandbox also overrides CRAWL4AI_CHROMIUM_SANDBOX.",
+     "Use after free in Frames in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in V8 in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in GarbageCollection in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Dawn in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in DOM in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Integer overflow in Editing in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Blink in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in CacheStorage in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Autofill in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Network in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Input in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in Frames in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Improper input validation in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Improper input validation in V8 in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
@@ -625,8 +864,8 @@
   {
    "id": "grp:AI 平台:2026-10-30",
    "kind": "group",
-   "title": "AI 平台 多個高風險漏洞",
-   "sub": "16 個 CVE · 最高 CVSS 9.9",
+   "title": "IBM Langflow 遠端程式碼漏洞",
+   "sub": "19 個 CVE · 最高 CVSS 9.9",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -649,21 +888,24 @@
     "CVE-2026-110196",
     "CVE-2026-110244",
     "CVE-2026-110309",
+    "CVE-2026-119408",
+    "CVE-2026-119557",
+    "CVE-2026-18894",
     "CVE-2026-93680"
    ],
    "cvss": 9.9,
    "published": "2026-10-29T16:17:35+00:00",
    "first_seen": "2026-10-29T16:57:19+00:00",
-   "updated": "2026-10-30T08:40:54+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101288",
    "pts": [
-    "同日公布 16 個漏洞，最高 CVSS 9.9。",
-    "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization o"
+    "IBM Langflow OSS 1.0.0 至 1.12.4 版本存在多項漏洞，**攻擊者可執行任意程式碼或 SQL 指令**。",
+    "目前未發現遭利用情形。攻擊者可為未經驗證之遠端使用者，或需具備驗證權限。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code.",
@@ -711,6 +953,24 @@
      "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker with a low-privileged authenticated account to cause the Agentic Assistant to generate or submit component code using these unblocked patterns, resulting in arbitrary operating system command execution on the server.",
      "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote attacker with a low-privileged authenticated account to bypass the administrator-only restriction and execute arbitrary code on the server by configuring a built-in code-execution component with attacker-supplied inputs.",
      "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary commands due to improper control of code generation.",
+     "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to bypass security restrictions due to improper authentication.",
+     "n8n before 2.42.6, 2.43.x before 2.43.3, and 3.x before 3.0.1 contains a remote code execution vulnerability via deprecated Function, Function Item, and LangChain Code nodes running outside task runner isolation. Authenticated users who can create, modify, or import workflows naming these hidden node types can execute JavaScript in the n8n main process.",
+     "n8n from 2.14.0 through 2.46.3 contains a path traversal vulnerability in the Databricks node that allows unauthenticated attackers to reach arbitrary Databricks API endpoints by injecting unencoded resource identifiers. Attackers can supply ../ sequences and query strings via webhook, chat, or form inputs mapped to spaceId, indexName, or filePath to read secrets using the stored credential.",
+     "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code.",
+     "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary SQL commands due to improper access control.",
+     "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote attacker who could reach the message broker to execute arbitrary code on the system due to the deserialization of untrusted data.",
+     "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to deserialization of untrusted data.",
+     "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+     "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+     "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+     "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to missing authorization.",
+     "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of code in eval/exec.",
+     "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+     "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+     "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker with a low-privileged authenticated account to cause the Agentic Assistant to generate or submit component code using these unblocked patterns, resulting in arbitrary operating system command execution on the server.",
+     "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote attacker with a low-privileged authenticated account to bypass the administrator-only restriction and execute arbitrary code on the server by configuring a built-in code-execution component with attacker-supplied inputs.",
+     "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary commands due to improper control of code generation.",
+     "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote attacker to trigger pre-existing stored Python component code in a public workflow, executing it under the flow owner's runtime context within the server process. This bypasses the intended trust boundary where public execution paths are restricted to server-trusted component code.",
      "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to bypass security restrictions due to improper authentication."
     ]
    }
@@ -1215,7 +1475,7 @@
   {
    "id": "CVE-2026-76418",
    "kind": "cve",
-   "title": "Cisco ASA與FTD服務阻斷漏洞",
+   "title": "Cisco 防火牆阻斷服務漏洞",
    "sub": "CVE-2026-76418 · CVSS 8.6",
    "sev": "crit",
    "kev": true,
@@ -1233,11 +1493,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
    "pts": [
-    "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Fi",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "Cisco ASA 與 FTD 軟體的 Remote Access SSL VPN 服務存在邏輯錯誤漏洞，可導致裝置異常重啟並造成阻斷服務。",
+    "**該漏洞目前已遭野生利用**。未經驗證的遠端攻擊者可在設定二次驗證的隧道群組連線時傳送特製請求。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "desc": "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition. This vulnerability is due to logic errors when secondary authentication is configured on a tunnel group. An attacker could exploit this vulnerability by sending a crafted request when connecting to the SSL remote access VPN. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition.",
@@ -2186,7 +2446,7 @@
   {
    "id": "grp:Windows Server:2026-10-28",
    "kind": "group",
-   "title": "Windows 多個高風險漏洞",
+   "title": "Chrome Windows 遠端執行漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -2206,12 +2466,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118310",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.6。",
-    "Improper input validation in Views in Google Chrome on on Windows prior to 156.0.8078.73 allowed a remote attacker to potentially execute ar"
+    "Windows 版 Google Chrome 156.0.8078.73 前版本存在漏洞，**攻擊者可透過特製 HTML 頁面遠端執行任意程式碼**。",
+    "目前未發現遭利用情形。遠端攻擊者可誘使使用者造訪特製 HTML 頁面以觸發漏洞。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Improper input validation in Views in Google Chrome on on Windows prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
@@ -2223,8 +2483,8 @@
   {
    "id": "grp:Chrome:2026-10-28",
    "kind": "group",
-   "title": "Google Chrome 多項安全漏洞",
-   "sub": "47 個 CVE · 最高 CVSS 9.6",
+   "title": "Chrome 遠端執行程式碼漏洞",
+   "sub": "49 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2254,9 +2514,11 @@
     "CVE-2026-118330",
     "CVE-2026-118331",
     "CVE-2026-118332",
+    "CVE-2026-118333",
     "CVE-2026-118334",
     "CVE-2026-118335",
     "CVE-2026-118336",
+    "CVE-2026-118337",
     "CVE-2026-118338",
     "CVE-2026-118339",
     "CVE-2026-118340",
@@ -2283,15 +2545,15 @@
    "cvss": 9.6,
    "published": "2026-10-27T23:16:58+00:00",
    "first_seen": "2026-10-27T23:47:47+00:00",
-   "updated": "2026-10-29T21:49:12+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
-    "同日公布 47 個漏洞，最高 CVSS 9.6。",
-    "Improper input validation in SVG in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code ins"
+    "Google Chrome 156.0.8078.73 前版本多個元件存在漏洞，**攻擊者可透過特製網頁遠端執行任意程式碼**。",
+    "目前未發現遭利用情形。遠端攻擊者可誘使使用者開啟特製 HTML 網頁進行利用。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2535,7 +2797,9 @@
      "Improper input validation in Compositing in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Memory corruption in Skia in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Out of bounds write in Editing in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-     "Improper input validation in Command in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)"
+     "Improper input validation in Command in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Missing authorization in Video in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Improper access control in Forms in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
@@ -3509,10 +3773,10 @@
    "ai_ver": 2
   },
   {
-   "id": "CVE-2026-115392",
-   "kind": "cve",
-   "title": "Wasmtime沙盒逃逸漏洞",
-   "sub": "CVE-2026-115392 · CVSS 8.8",
+   "id": "grp:Linux:2026-10-23",
+   "kind": "group",
+   "title": "Linux 核心 多個高風險漏洞",
+   "sub": "5 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -3520,26 +3784,32 @@
     "Linux"
    ],
    "cves": [
-    "CVE-2026-115392"
+    "CVE-2026-115392",
+    "CVE-2026-98968",
+    "CVE-2026-98981",
+    "CVE-2026-99082",
+    "CVE-2026-99083"
    ],
    "cvss": 8.8,
    "published": "2026-10-22T19:17:46+00:00",
    "first_seen": "2026-10-29T10:00:15+00:00",
-   "updated": "2026-10-29T10:00:15+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115392",
    "pts": [
-    "Wasmtime 指定版本在缺少 openat2 的 macOS 與 Linux 上，因處理符號連結不當可導致**檔案系統沙盒逃逸**。",
-    "目前未遭利用。具寫入權限的訪客可讀寫主機檔案，唯讀訪客可透過既有符號連結讀取主機檔案。"
+    "同日公布 5 個漏洞，最高 CVSS 8.8。",
+    "Wasmtime before 24.0.13, 25.0.0 before 36.0.14, 37.0.0 before 46.0.3, and 47.0.0 before 47.0.4 allows a filesystem sandbox escape in wasmtim"
    ],
-   "fix": "",
-   "ai": true,
-   "ai_ver": 2,
+   "fix": "原文：When commit 699023e23965 (\"KVM: x86: add SMM to the MMU role, support SMRAM address space\") added the SMM address space, these helpers were not converted to use the active memsl",
+   "ai": false,
+   "ai_ver": 0,
    "raw": {
-    "desc": "Wasmtime before 24.0.13, 25.0.0 before 36.0.14, 37.0.0 before 46.0.3, and 47.0.0 before 47.0.4 allows a filesystem sandbox escape in wasmtime-wasi because its cap-std dependency mishandles symlinks with trailing slashes on macOS and Linux kernels lacking openat2. A guest with write access to any sandboxed directory can read and write any host-accessible file, and read-only guests may read host files via preexisting symlinks.",
-    "refs": [
-     "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-vqjp-4c8c-hfgg",
-     "https://www.vulncheck.com/advisories/wasmtime-before-24.0.13-25.0.0-before-36.0.14-37.0.0-before-46.0.3-and-47.0.0-before-47.0.4-sandbox-escape-via-trailing-slashes"
+    "descs": [
+     "Wasmtime before 24.0.13, 25.0.0 before 36.0.14, 37.0.0 before 46.0.3, and 47.0.0 before 47.0.4 allows a filesystem sandbox escape in wasmtime-wasi because its cap-std dependency mishandles symlinks with trailing slashes on macOS and Linux kernels lacking openat2. A guest with write access to any sandboxed directory can read and write any host-accessible file, and read-only guests may read host files via preexisting symlinks.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\namt: send the relay's General Query directly from the receive path\n\nAn skb queued in a qdisc can outlive the tunnel it references\nthrough a raw pointer in skb->cb. For example, with igmp_qrv set\nto 1 on the relay a tunnel lives for 135s, so a netem delay of\n180s on the amt device outlives it; when the tunnel expires and is\nfreed, the subsequent dequeue triggers a use-after-free in\namt_dev_xmit().\n\n  BUG: KASAN: slab-use-after-free in amt_dev_xmit+0x2763/0x2e20\n  Call Trace:\n   amt_dev_xmit+0x2763/0x2e20 [drivers/net/amt.c:1262]\n   dev_hard_start_xmit+0x22f/0x620\n   sch_direct_xmit+0x12e/0xac0\n   netem_dequeue+0x333/0xc50\n   net_tx_action+0x35c/0xa60\n\namt_send_igmp_gq() and amt_send_mld_gq() are only called from\namt_request_handler(), inside the rcu_read_lock_bh() section of\namt_rcv(). amt_request_handler() already has the tunnel the query is\nfor: it found or created it inside that section. Queuing the query with\ndev_queue_xmit() only leads back into amt_dev_xmit(), which strips the\nEthernet header and calls amt_send_membership_query() for that tunnel.\n\nMake that call directly from the two senders instead, the same way\namt_send_advertisement() transmits from the receive path. The query\nnever waits in a qdisc, the tunnel is only dereferenced inside the\nRCU section that found or created it, and nothing is stored in\nskb->cb, so no lookup or refcount is needed. Remove the query branch\nof amt_dev_xmit(), amt_skb_cb() and struct amt_skb_cb, which have no\nusers left.\n\nBehaviour changes:\n - The relay's own General Queries no longer pass through the amt\n   device's egress path: its qdisc, tc egress (clsact/tcx), the\n   netfilter egress hook and packet taps. They are still visible as\n   UDP on the underlay.\n - A query that is sent successfully is no longer counted as\n   tx_dropped. The old query branch left through the unlock label,\n   which counted every sent query as dropped.\n - A query that reaches amt_dev_xmit() on a relay from elsewhere,\n   such as a userspace querier, is now dropped at the IGMP/MLD type\n   switch. Before, it trusted whatever skb->cb held, and a NULL\n   tunnel hit the WARN_ON(1).",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nnamespace: unhash a dentry before detaching the mounts on it\n\nunlink(), rmdir() and rename() remove the entry from the filesystem,\ncall detach_mounts() on the entry with the inode locked and then call\nd_delete() once the inode is unlocked.\n\nThe thing is that between detach_mounts() and d_delete() the dentry is\nstill hashed and positive. But after detach_mounts() nothing covers the\ndentry anymore. A lookup that finds this dentry in the dcache can\nuncover what the mounts hid.\n\nThat's a problem when unlinking files or directories that are\nmountpoints in other mount namespaces. Everybody who had the underlying\nentry covered can race the detach_mount() call until d_delete() has run.\n\nThe race window isn't all that small. It encompasses namespace_unlock()\nwith a full synchronize_rcu_expedited() grace period and the\ninode_unlock() of the entry.\n\nIn my experiments three walkers that kept trying read an overmounted\nfile in 11938 of the 16140 unlinks that removed its mountpoint from a\nbind mount of the filesystem within a minute.\n\nFun fact, d_invalidate() has the same ordering problem but gets it\nright. It unhashes the dentry first and detaches the mounts afterwards.\nLet's do the same in __detach_mounts():\n\n- A lookup that hasn't found the dentry yet misses it in the dcache and\n  waits for the directory lock that the caller holds until the name is\n  gone for good.\n\n- A lockless lookup that found it already fails the mount_lock check\n  while the dentry still counts as a mountpoint and the d_seq check once\n  it doesn't, and retries.\n\nThis fixes the lockless path. We still need to fix the reference count\nlookup in a follow-up patch.\n\nSo d_drop() the dentry. The dentry stays positive and held but can't be\nfound anymore. Then proceed with the detach and unlink.\n\nReproducer:\n\nThe reads were counted with the program below, three walkers for 60 s\nin a VM with 4 CPUs. The race window is stretched with the debug patch\npasted here. fs.detach_race_walk_us sleeps in lookup_fast() once it\nfound a mountpoint dentry and before its mounts are crossed.\nfs.detach_race_unlink_us sleeps in vfs_unlink() between detach_mounts()\nand d_delete().\n\n  // SPDX-License-Identifier: GPL-2.0\n  /*\n   * unlink_covered: unlink a file that is a mountpoint in a detached copy of\n   * its mount, against lookups that open it through that copy.\n   *\n   * A is a tmpfs with the file f1 (content SECRET_F) and the plain file\n   * MARK_A. A' is an open_tree(OPEN_TREE_CLONE) copy of A with MARK_A bound\n   * on A'/f1, held through an O_PATH fd on its root once the tree fd is\n   * closed. Walkers open f1 through that fd while the driver unlinks A/f1,\n   * where nothing is mounted on it. A walker may read MARK_A or get ENOENT.\n   * A read of SECRET_F is a hit: the name was found after its mount was\n   * gone. The lockless walks use openat2(RESOLVE_CACHED).\n   *\n   * usage: unlink_covered [-t seconds] [-w walkers]\n   */\n  #ifndef _GNU_SOURCE\n  #define _GNU_SOURCE\n  #endif\n  #include <errno.h>\n  #include <fcntl.h>\n  #include <pthread.h>\n  #include <stdatomic.h>\n  #include <stdio.h>\n  #include <stdlib.h>\n  #include <string.h>\n  #include <unistd.h>\n  #include <sys/mount.h>\n  #include <sys/stat.h>\n  #include <sys/syscall.h>\n  #include <linux/openat2.h>\n\n  #ifndef __NR_open_tree\n  #define __NR_open_tree 428\n  #endif\n  #ifndef __NR_move_mount\n  #define __NR_move_mount 429\n  #endif\n  #ifndef __NR_openat2\n  #define __NR_openat2 437\n  #endif\n  #ifndef OPEN_TREE_CLONE\n  #define OPEN_TREE_CLONE 1\n  #endif\n  #ifndef OPEN_TREE_CLOEXEC\n  #define OPEN_TREE_CLOEXEC O_CLOEXEC\n  #endif\n  #ifndef MOVE_MOUNT_F_EMPTY_PATH\n  #define MOVE_MOUNT_F_EMPTY_PATH 0x00000004\n  #endif\n\n  #define WORK \"/tmp/uc\"\n  #define ADIR WORK \"/A\"\n\n  static int duration = 60, nwalkers = 3;\n  static atomic_int stop, writer_waiting;\n  static pthread_rwlock_t cur_lock = PTHREAD_RWLOCK_INITIALIZER;\n  static int cur_fd = -1;\t\t/* the root of A', -1 wh\n---truncated---",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Use active memslots for the per-vCPU MMIO cache\n\nKVM tags the per-vCPU MMIO cache with a memslot generation so that a\nmemslot update invalidates cached MMIO information.  Both the fill and\nvalidation paths use kvm_memslots(), which unconditionally selects address\nspace 0, even when the vCPU is running in SMM and using address space 1.\n\nCommit 56f17dd3fbc4 (\"kvm: x86: fix stale mmio cache bug\") added the\nmemslot generation to the cache key so that a memslot update could not\nleave a stale entry valid.  When commit 699023e23965 (\"KVM: x86: add SMM\nto the MMU role, support SMRAM address space\") added the SMM address space,\nthese helpers were not converted to use the active memslots.\n\nConsequently, an update to the SMM memslots can leave an entry from the old\nSMM address space apparently valid after the vCPU returns to the normal\naddress space.  A guest can then cause an access to valid RAM at the same\nGFN to be returned to userspace as KVM_EXIT_MMIO.\n\nCompleting that exit through the VMM's RAM address space writes the backing\npage without going through KVM's write-tracking path.  If the page backs a\nnested EPT table, KVM can continue using shadow translations derived from\nthe old contents.  The WARN_ON_ONCE() in kvm_mmu_write_protect_fault()\ncatches this invalid cache and memslot combination.\n\nUse the vCPU's active memslots when caching and validating the entry.\nMemslot generations are unique across address spaces, so the generation\nalso distinguishes the normal and SMM views.  This matches the MMIO SPTE\ncache, which already uses kvm_vcpu_memslots().\n\nOn an unpatched current-mainline kernel, a regression test that fills the\ncache in SMM and updates only the SMM memslots fails the intended RAM write\nand triggers the kvm_mmu_write_protect_fault() warning.  With this change,\nthe same test completes the RAM write without a warning.  The x86/smm_test,\nset_memory_region_test, and memslot_modification_stress_test selftests also\npass.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix heap out-of-bounds write in krb5_authenticate()\n\nIn krb5_authenticate(), out_len is calculated to determine available\nheadroom in response_buf for the incoming Kerberos AP-REP token. However,\nwhen SMB2_SESSION_SETUP is processed as a non-first element of a compounded\nSMB2 request, the calculation omits work->next_smb2_rsp_hdr_off.\n\nThis causes out_len to overstate remaining buffer headroom by\nthe cumulative size of prior responses in the compound chain. Consequently,\nthe length check in ksmbd_krb5_authenticate()\n(*out_len <= resp->spnego_blob_len) passes erroneously, allowing memcpy()\nto write the AP-REP blob past the end of response_buf into adjacent kernel\nheap memory.\n\nFix this by subtracting work->next_smb2_rsp_hdr_off when computing out_len,\nensuring it accurately reflects physical remaining buffer space."
     ]
    }
   },
@@ -3762,7 +4032,7 @@
    "id": "grp:Cisco:2026-10-22",
    "kind": "group",
    "title": "Cisco 多款產品安全性漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 9.8",
+   "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -3770,6 +4040,7 @@
     "Cisco"
    ],
    "cves": [
+    "CVE-2026-76298",
     "CVE-2026-76301",
     "CVE-2026-76473",
     "CVE-2026-76527"
@@ -3777,21 +4048,22 @@
    "cvss": 9.8,
    "published": "2026-10-21T17:19:06+00:00",
    "first_seen": "2026-10-27T20:07:11+00:00",
-   "updated": "2026-10-29T21:49:12+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76298",
    "pts": [
-    "影響 Cisco Emergency Responder 與 Unified CM 等多款產品，包含內部檢測出之安全漏洞。",
-    "目前漏洞**未遭積極利用**，為 Cisco 內部進行安全性審查時發現。"
+    "同日公布 4 個漏洞，最高 CVSS 9.8。",
+    "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76473 are related to issues concerning improper neutralization of special elements in output used by a downstream component that are grouped under the Common Weakness Enumeration (CWE) Class CWE-74.",
      "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76301 are related to protection mechanism failure and are grouped under the Common Weakness Enumeration (CWE) CWE-693.",
-     "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76527 are related to improper check or handling of exceptional conditions and are grouped under the Common Weakness Enumeration (CWE) CWE-703."
+     "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76527 are related to improper check or handling of exceptional conditions and are grouped under the Common Weakness Enumeration (CWE) CWE-703.",
+     "In Splunk Enterprise versions below 10.4.4 and 10.2.8, a user who does not hold the \"admin\" or \"power\" Splunk roles could derive the PostgreSQL sidecar database superuser password and run arbitrary operating system commands as the user account running Splunk Enterprise on search head cluster members.\nThe vulnerability is possible because the PostgreSQL sidecar service derives a privileged database password from the search head cluster identifier that appears in search job logs.\nFor more information see About configuring role-based user access (https://help.splunk.com/en/splunk-enterprise/administer/manage-users-and-security/10.2/manage-splunk-platform-users-and-roles/about-configuring-role-based-user-access), server.conf (https://help.splunk.com/en/splunk-enterprise/administer/admin-manual/10.2/configuration-file-reference/10.2.0-configuration-file-reference/server.conf), and Sidecar configuration settings (https://help.splunk.com/en/splunk-enterprise/administer/admin-manual/10.4/splunk-sidecars/sidecar-configuration-settings) in the Splunk documentation."
     ]
    }
   },
@@ -3872,6 +4144,42 @@
      "vLLM from 0.7.3 before 0.31.0 forwards the request-supplied mm_processor_kwargs.code_revision to Transformers AutoProcessor.from_pretrained, letting clients select which revision of a model's dynamic processor code is imported when trust_remote_code is enabled. An attacker controlling a revision in the served model repository can send a multimodal request to the unauthenticated /tokenize endpoint to execute arbitrary Python in the vLLM API process.",
      "vLLM from 0.7.3 before 0.31.0 contains an uncontrolled resource consumption vulnerability that allows remote clients to control multimodal processor parameters by supplying per-request mm_processor_kwargs. Attackers can set large image size, patch count, crop count, or frame count values in Isaac, InternVL, H2OVL, and other processors to exhaust memory and terminate the shared server.",
      "vLLM from 0.7.3 before 0.31.0 forwards the request-supplied mm_processor_kwargs.code_revision to Transformers AutoProcessor.from_pretrained, letting clients select which revision of a model's dynamic processor code is imported when trust_remote_code is enabled. An attacker controlling a revision in the served model repository can send a multimodal request to the unauthenticated /tokenize endpoint to execute arbitrary Python in the vLLM API process."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-113812",
+   "kind": "cve",
+   "title": "OpenSSL 漏洞 CVE-2026-113812",
+   "sub": "CVE-2026-113812 · CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-113812"
+   ],
+   "cvss": 9.1,
+   "published": "2026-10-20T22:19:30+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113812",
+   "pts": [
+    "Mozilla::CA versions before 20261020 for Perl provide a CA certificate bundle containing a root linked to compromised intermediates. The bun"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "Mozilla::CA versions before 20261020 for Perl provide a CA certificate bundle containing a root linked to compromised intermediates.\n\nThe bundle includes \"emSign ECC Root CA - G3\", which provides a trust path for intermediate certificates whose private keys are publicly available.\n\nAn attacker able to intercept or redirect client traffic may use these keys to impersonate a TLS server.\n\nLWP, HTTP::Tiny and other clients normally use IO::Socket::SSL, which looks for CA certificates in OpenSSL's default locations before falling back to Mozilla::CA.\n\nConfiguration and environment variables can override this selection. Users should check which CA store their client uses. If it uses the system store, check for and install the operating system vendor's updates for this incident.",
+    "refs": [
+     "https://bugzilla.mozilla.org/show_bug.cgi?id=2083449",
+     "https://emudhra.we-have-a-problem.com/",
+     "https://metacpan.org/release/LWP/Mozilla-CA-20261020/changes",
+     "https://www.openwall.com/lists/oss-security/2026/10/20/1"
     ]
    }
   },
@@ -4237,15 +4545,15 @@
    "cvss": 9.6,
    "published": "2026-10-20T22:18:48+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-29T16:57:19+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "影響 156.0.8078.47 以前版本之 Google Chrome，包含 Canvas 及 Input 等模組之記憶體損壞漏洞。",
-    "目前**未遭積極利用**，未經驗證遠端攻擊者可利用精心設計的 HTML 網頁執行任意程式碼。"
+    "同日公布 292 個漏洞，最高 CVSS 9.6。",
+    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
    ],
-   "fix": "更新至 156.0.8078.47 或以上版本。",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -4543,7 +4851,10 @@
      "Use after free in Performance in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
      "Memory corruption in ANGLE in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to read memory via a crafted HTML page. (Chromium security severity: Medium)",
      "Use after free in Autofill in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-     "Memory corruption in ContentCapture in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)"
+     "Memory corruption in ContentCapture in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Improper access control in V8 in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper access control in ComputePressure in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Missing authorization in Animation in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)"
     ]
    }
   },
@@ -4576,7 +4887,7 @@
    "cvss": 9.3,
    "published": "2026-10-20T22:18:22+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-29T21:49:12+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101679",
    "pts": [
@@ -4604,7 +4915,11 @@
      "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in takeover of MySQL Server, MySQL Cluster. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Group Replication Plugin).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Easily exploitable vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the MySQL Server, MySQL Cluster executes to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server, MySQL Cluster as well as  unauthorized update, insert or delete access to some of MySQL Server, MySQL Cluster accessible data. CVSS 3.1 Base Score 7.1 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H).",
      "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in takeover of MySQL Server, MySQL Cluster. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Group Replication Plugin).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Easily exploitable vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the MySQL Server, MySQL Cluster executes to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server, MySQL Cluster as well as  unauthorized update, insert or delete access to some of MySQL Server, MySQL Cluster accessible data. CVSS 3.1 Base Score 7.1 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H)."
+     "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Group Replication Plugin).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Easily exploitable vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the MySQL Server, MySQL Cluster executes to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server, MySQL Cluster as well as  unauthorized update, insert or delete access to some of MySQL Server, MySQL Cluster accessible data. CVSS 3.1 Base Score 7.1 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H).",
+     "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in takeover of MySQL Server, MySQL Cluster. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in takeover of MySQL Server, MySQL Cluster. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Replication).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all MySQL Server, MySQL Cluster accessible data and unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server, MySQL Cluster. CVSS 3.1 Base Score 7.4 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H).",
+     "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Group Replication GCS).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Easily exploitable vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the MySQL Server, MySQL Cluster executes to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in takeover of MySQL Server, MySQL Cluster. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)."
     ]
    }
   },
@@ -4840,7 +5155,7 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-30T08:40:54+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
@@ -5193,7 +5508,19 @@
      "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle SOA Suite accessible data as well as  unauthorized update, insert or delete access to some of Oracle SOA Suite accessible data. CVSS 3.1 Base Score 9.3 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N).",
      "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
      "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
-     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle WebLogic Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N)."
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle WebLogic Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle SOA Suite accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle SOA Suite accessible data as well as  unauthorized access to critical data or complete access to all Oracle SOA Suite accessible data. CVSS 3.1 Base Score 9.6 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle SOA Suite accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle SOA Suite accessible data and unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle SOA Suite. CVSS 3.1 Base Score 9.1 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle SOA Suite accessible data as well as  unauthorized update, insert or delete access to some of Oracle SOA Suite accessible data. CVSS 3.1 Base Score 9.3 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Enterprise Scheduling System).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via SOAP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)."
     ]
    }
   },
@@ -5233,6 +5560,45 @@
      "Incorrect object recycling and re-use vulnerability in Apache Tomcat affecting HTTP/2 processing of asynchronous servlets can trigger request and/or response mix-up between users.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.22 through 11.0.26, from 10.1.55 through 10.1.60, from 9.0.118 through 9.0.122.\n\n\n\nUsers are recommended to upgrade to version 11.0.27, 10.1.61 or 9.0.123, which fixes the issue.",
      "Buffer under-read vulnerability in Apache Tomcat meant that a large non-blocking write could result in the response body being split between the current request and the next request received on that connection leading most likely to failure of the second request and possibly leakage of data from the first response to the second.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M25 through 11.0.26.\n\n\n\nUsers are recommended to upgrade to version 11.0.27, which fixes the issue.",
      "Time-of-check time-of-use (TOCTOU) race condition vulnerability in Apache Tomcat when creating unix domain sockets for the APR/Native connector allows an unauthorised local user to access the unix domain socket. The fix for CVE-2026-65183 only addressed the NIO connector. It did not address the same issue in the APR/Native connector.\n\n\n\nThis issue affects Apache Tomcat: from 9.0.47 through 9.0.122.\n\n\n\nUsers are recommended to upgrade to version 9.0.123, which fixes the issue."
+    ]
+   }
+  },
+  {
+   "id": "grp:Linux:2026-10-19",
+   "kind": "group",
+   "title": "Linux 核心 多個高風險漏洞",
+   "sub": "4 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-98451",
+    "CVE-2026-98454",
+    "CVE-2026-98490",
+    "CVE-2026-98549"
+   ],
+   "cvss": 9.8,
+   "published": "2026-10-18T16:16:55+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98451",
+   "pts": [
+    "同日公布 4 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: smb: client: use finish_no_open() for non-regular inodes An O_CREAT open"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: use finish_no_open() for non-regular inodes\n\nAn O_CREAT open can find an existing symlink or another non-regular\ninode. cifs_atomic_open() calls finish_open() on it and attaches a\ncifsFileInfo. Symlink inodes have no CIFS release operation, so the\ndentry reference held by cifsFileInfo is leaked. FMODE_OPENED also\nprevents the VFS from following the symlink.\n\nTrack whether cifs_do_create() returned an open server handle. For\nnon-regular inodes, close the handle if present, remove the pending\nopen, and call finish_no_open() so the VFS can continue the lookup.\nDo not set FMODE_CREATED unless a regular file was opened. For\nO_NOFOLLOW with __O_REGULAR, return -ELOOP before the VFS's\n-EFTYPE check.\n\nDefer closing a legacy POSIX handle on a non-regular inode until\nafter inode lookup. This avoids closing it again if lookup fails.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix create context out-of-bounds reads\n\nsmb2_parse_contexts() validates the complete create-context area but\ndoes not limit each record to its Next field before dispatching it.  A\nmalformed chain can therefore expose bytes beyond the current context to\na handler.  The QFid handler also used a full response-structure cast\nalthough it only reads DiskFileId.\n\nThe SMB2/SMB3 lease parsers made the same layout assumption: they read\nLeaseState and LeaseFlags at canonical offsets rather than at\nDataOffset.  A valid non-canonical DataOffset could therefore yield\nunrelated in-bounds data, while a short DataLength was still accepted.\n\nLimit each context to its Next value, reject offsets before the context\nheader, and reject malformed chains.  Bound the name range by the current\ncontext and do not dispatch a known handler when DataLength is zero.  Read\nthe QFid DiskFileId only when the context data covers that field.  Parse the\nlease context from DataOffset and require DataLength to match the v1 or v2\nlease_context size used by ksmbd.  A size mismatch skips lease parsing\nwithout failing the open.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: openvswitch: conntrack: fix helper UAF due to extensions realloc\n\nWhile calling the helpers, a raw pointer to the extensions area is\nwired into expectations list:\n\n  -> nf_ct_helper()\n   -> helper->help()\n    -> nf_ct_expect_related_report()\n     -> nf_ct_expect_insert()\n      -> hlist_add_head_rcu(&exp->lnode, &master_help->expectations)\n\nIn case the connection is not confirmed yet, more extensions can be\nadded afterwards with *_ext_add() calls reallocating the extension\nspace and leaving the now invalid pointer in the expectations list\nthat is later accessed while removing the expectation.\n\nMake sure that helpers are called at the end after all the other\nextensions are already added.\n\nNote that the helper rejection now leaves the mark and labels set,\nbut that's not different from how the NAT was handled before or how\nthe mark and the labels were handled on confirmation failure.  And\nthere are no atomicity guarantees provided by the API anyway.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: prevent collapsing skbs across boundary in rtx queue\n\ntcp_write_collapse_fence() sets TCP_SKB_CB(skb)->eor = 1 on\ntcp_write_queue_tail(sk) to prevent skbs queued after a switch to\ndevice encryption from being collapsed into earlier skbs.\n\nThe fence is a no-op if all earlier data has already been transmitted\nwhen the switch happens: sk->sk_write_queue is empty. The not yet\nacknowledged earlier skbs wait in sk->tcp_rtx_queue with eor 0.\n\nOn a subsequent retransmit or SACK shift, tcp_retrans_try_collapse() or\ntcp_shift_skb_data() can then merge an skb queued after the switch into\none queued before it.\n\nBoth users of the fence are affected:\n\n- psp: devices only encrypt skbs with skb->decrypted set. The merged skb\n  keeps decrypted = 0 from the earlier skb, so merged data sent after\n  psp_sock_assoc_set_tx() is retransmitted in cleartext.\n\n- tls device offload: the merged skb straddles the start marker set in\n  tls_set_device_offload(). The software fallback (fill_sg_in() returns\n  -EINVAL) and the mlx5, nfp and funeth drivers cannot handle such an\n  skb and drop it. Every retransmit rebuilds the same skb, so the\n  connection stalls.\n\nFix this in two places, for defense in depth:\n\n1. Fall back to tcp_rtx_queue_tail(sk) in tcp_write_collapse_fence()\n   when tcp_write_queue_tail(sk) is NULL.\n\n2. Check !skb_cmp_decrypted(to, from) in tcp_skb_can_collapse(), as\n   tcp_skb_can_collapse_rx() does on receive. skb_shift(), which both\n   collapse paths call, already has a DEBUG_NET_WARN_ON_ONCE() for this\n   condition."
     ]
    }
   },
@@ -5481,6 +5847,43 @@
    }
   },
   {
+   "id": "CVE-2026-98171",
+   "kind": "cve",
+   "title": "Linux 核心 漏洞 CVE-2026-98171",
+   "sub": "CVE-2026-98171 · CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-98171"
+   ],
+   "cvss": 8.8,
+   "published": "2026-10-06T09:17:58+00:00",
+   "first_seen": "2026-10-30T15:57:08+00:00",
+   "updated": "2026-10-30T15:57:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98171",
+   "pts": [
+    "In the Linux kernel, the following vulnerability has been resolved: smb: client: fix next_buffer UAF and NextCommand bounds in compound PDUs"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix next_buffer UAF and NextCommand bounds in compound PDUs\n\nFix several related bounds checking and pointer lifecycle issues in\nreceive_encrypted_standard()'s handling of compound encrypted frames:\n\n- Clear next_buffer after assigning it to server->bigbuf. A stale\n  next_buffer pointer can lead to a use-after-free on subsequent\n  error paths.\n- Update pdu_length to the decrypted plaintext size (buf_size). Using\n  the pre-decryption length allows NextCommand to point into stale\n  ciphertext residue.\n- Reject next_cmd values smaller than MID_HEADER_SIZE(server).\n- Fix an integer overflow in the upper bound check by verifying\n  pdu_length - next_cmd < MID_HEADER_SIZE(server), ensuring the\n  trailing slice is large enough for a header.",
+    "refs": [
+     "https://git.kernel.org/stable/c/05762c5bc1cfdcac36747994fde2c04387a457f1",
+     "https://git.kernel.org/stable/c/1ed29f7a03417b405f38c09cfe04124883127b53",
+     "https://git.kernel.org/stable/c/491e33144dee872cffda207f6fcb09260728f803",
+     "https://git.kernel.org/stable/c/72eaef1f37a3b6bec11c342736834dc3707be3e4",
+     "https://git.kernel.org/stable/c/7f022867ec9f0166a0b4400385bb601b1c6b2c75"
+    ]
+   }
+  },
+  {
    "id": "CVE-2026-21589",
    "kind": "cve",
    "title": "Atlassian 任意檔案存取漏洞",
@@ -5555,6 +5958,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-10-30T08:40:37+00:00",
- "kev_last": "2026-10-30T08:40:37+00:00"
+ "nvd_last": "2026-10-30T15:56:31+00:00",
+ "kev_last": "2026-10-30T15:56:31+00:00"
 }
