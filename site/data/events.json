@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T01:58:10+00:00",
+ "generated": "2026-10-30T08:40:37+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,221 @@
  },
  "events": [
   {
+   "id": "tw:9606f4736cb7",
+   "kind": "news",
+   "title": "全家行動購部分會員資料遭非法擷取，起因是委外廠商91APP資料庫遭自動化攻擊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180105",
+   "pts": [
+    "全家便利商店委外廠商 91APP 資料庫遭自動化攻擊，導致「行動購」部分會員資料遭非法擷取。",
+    "**全家已啟動個資事故通報及處理流程**，並依法通報相關主管機關。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:e90ca9c02792",
+   "kind": "news",
+   "title": "Linux TCP漏洞可被用來遠端取得root權限，部分發行版尚未修補",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180101",
+   "pts": [
+    "Linux 核心 IPv4 TCP 連線處理存在漏洞 CVE-2026-98432，可被用於遠端取得 root 權限。",
+    "**Anthropic 已公開 POC 成功驗證**，Linux 上游已修補，但部分發行版仍待更新。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:d87ad6f7efaf",
+   "kind": "news",
+   "title": "思科修補防火牆已遭積極利用的阻斷服務漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180102",
+   "pts": [
+    "思科 Secure Firewall ASA 與 FTD 之 SSL VPN 服務存在 DoS 漏洞 CVE-2026-76418。",
+    "**該漏洞已遭實際利用**，未授權攻擊者可導致防火牆重啟中斷服務，原廠呼籲儘速升級。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:eedac9bb2b5d",
+   "kind": "news",
+   "title": "Hive與Nefilim勒索軟體集團成員遭美國判刑，將入獄70個月",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180099",
+   "pts": [
+    "美國司法部於10月27日宣布，36歲烏克蘭籍男子Artem Stryzhak因參與Nefilim與Hive勒索軟體攻擊行動，遭美國法院判處70個月徒刑，他於2021年6月加入Nefilim集團成為附屬成員，使用該集團的勒索軟體發動攻擊，並將所獲贖金的20%交給該集團管理者。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:a585c3174049",
+   "kind": "news",
+   "title": "Google修補Chrome 156，公布21個資安漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180097",
+   "pts": [
+    "Google 發布 Chrome 156 更新，修補 21 個資安漏洞，涵蓋重大與高風險等級弱點。",
+    "**Windows 與 macOS 用戶應更新至 156.0.8078.79/.80**，Linux 版本亦同步發布。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:786204bffa4d",
+   "kind": "news",
+   "title": "日本航空第三方訂位系統遭入侵，約9.2萬名旅客資料受影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180096",
+   "pts": [
+    "日本航空與日本越洋航空採用的第三方旅客服務系統遭外部擅自存取，**影響約9.2萬名旅客的訂位資料**。",
+    "受影響資料包含訂位代號、姓名與航班資訊，其中約2,000名旅客資料另涵蓋護照號碼與電子郵件。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:e93570dbcdd7",
+   "kind": "news",
+   "title": "年末購物旺季將至，Palo Alto Networks示警零售業面臨多重網路威脅",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Palo Alto"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180095",
+   "pts": [
+    "Palo Alto Networks發布報告指出，**零售業者於年底購物旺季面臨升高的網路攻擊風險**。",
+    "攻擊者可能趁業者忙於應付交易高峰，以及系統更新與調整受限之際發動攻擊。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:80456a4e17a5",
+   "kind": "news",
+   "title": "DEVCORE研究員公布在Pwn2Own競賽揭露的Edge攻擊鏈，串連5個弱點突破瀏覽器防護機制",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180088",
+   "pts": [
+    "DEVCORE研究員公開Pwn2Own競賽中的Edge攻擊鏈，串連5個邏輯漏洞突破瀏覽器防護。",
+    "**攻擊過程不依賴記憶體損毀，最終成功於作業系統執行任意程式碼**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:02170c7e84f5",
+   "kind": "news",
+   "title": "日本樂天兩個旅遊網站遭駭外洩用戶個資354萬，臺灣網站不受影響",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-10-30T08:40:58+00:00",
+   "first_seen": "2026-10-30T08:40:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180087",
+   "pts": [
+    "樂天集團（Rakuten Group）上週（10月26日）公布母公司和旅遊子公司營運的兩個網站遭到不明人士非授權存取，導致超過354萬客戶及旅遊從業人員個資外流，但臺灣網站未受到波及。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:a443a1315b3f",
    "kind": "news",
    "title": "AI加快漏洞發現，CSA提出VulnOps模式改善企業漏洞管理",
@@ -379,10 +594,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180046",
    "pts": [
-    "AI加快漏洞發現速度，但企業確認漏洞影響、測試修補程式及部署更新仍需要時間。雲端安全聯盟（Cloud Security Alliance，CSA）提出VulnOps漏洞管理模式，主張企業不應只依賴定期掃描及批次修補，而應持續追蹤並處理漏洞，避免新發現的安全問題不斷累積。"
+    "因應AI加速漏洞發現，雲端安全聯盟（CSA）提出VulnOps模式以改善企業漏洞管理。",
+    "**主張企業應持續追蹤並處理漏洞而非僅靠批次修補**，避免新發生的安全問題持續累積。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:4038b89c78ae",
@@ -402,10 +618,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180033",
    "pts": [
-    "資安業者Forever Security近日揭露一起利用惡意Markdown檔案攻擊AI程式開發代理的事件。研究人員在客戶電腦的下載資料夾發現惡意AGENTS.md檔案，攻擊者企圖誘使OpenAI Codex修改設定並安裝名為function-color的惡意NPM套件，但資安防護系統阻止了套件安裝"
+    "研究人員發現惡意AGENTS.md檔案，**企圖誘使OpenAI Codex修改設定並安裝惡意NPM套件**。",
+    "此事件顯示攻擊者可將惡意指令藏入供AI程式開發代理讀取的Markdown指引檔中。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Veeam:2026-10-30",
@@ -453,10 +670,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180077",
    "pts": [
-    "老牌印度協作軟體公司Zoho今日來臺舉辦首次媒體說明會，要擴大在臺的產品推廣規模，主打企業級AI生產力與營運工具產品線，包括由大型語言模型（LLM）驅動的Zia Chat、可融入工作流程執行任務的Zia Agents，以及提供50多支應用程式的Zoho One一站式平臺。 Zoho亞太區董事總經理G"
+    "印度協作軟體業者Zoho宣佈擴大在臺布局，主打由大型語言模型驅動的Zia Chat等企業級AI工具。",
+    "目前**已有逾千家臺灣中小企業導入**，業者強調軟體均為自行開發維運以降低資安風險。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:56e90812df90",
@@ -476,10 +694,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180072",
    "pts": [
-    "行動應用安全雖是發展多年的成熟議題，但相關政策指引、國際標準與防護技術仍持續演進。近日，在臺代理Digital.ai應用程式防護解決方案的叡揚資訊，介紹這方面的政策與標準趨勢，以及白箱密碼學等技術進展，也讓我們進一步注意到行動應用安全領域的最新防護動向。 首先是政策與規範面的變化，叡揚資訊資安直屬事"
+    "行動App安全規範與防護技術持續演進，業界介紹政策趨勢與白箱密碼學等技術進展。",
+    "**越南自今年3月起將Bootloader等檢查納入行動銀行App法規，顯示對執行環境提出具體安全要求。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:fde2a3d22ec5",
@@ -499,10 +718,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180070",
    "pts": [
-    "過去需要耗費大量時間的部分App逆向分析工作，如今可透過AI與自動化工具大幅加速。逆向工程雖可用於合法的資安研究與安全驗證，但若被攻擊者利用，也可能更快掌握App內部運作邏輯，進一步尋找繞過安全機制、竄改程式碼或重新封裝App的機會，讓既有加殼與程式碼保護機制面臨考驗。專精於App安全的Digita"
+    "AI與自動化工具加速App逆向分析，攻擊者能更快掌握邏輯以繞過機制、竄改或重新封裝程式碼。",
+    "**業者建議強化程式碼混淆，並結合伺服器端動態風險回應以因應App安全威脅。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:535a030a7005",
@@ -523,10 +743,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180068",
    "pts": [
-    "本日新聞焦點 ● 北韓駭客鎖定216臺PHP主機掃描PHP2Shell漏洞，臺灣被列入目標 ● macOS 27.2仍未封鎖eMudhra問題憑證，Git與curl恐遭中間人攻擊 ● 中國駭客打造攻擊框架Silent Train，用於攻擊美國關鍵基礎設施"
+    "**北韓駭客鎖定216臺PHP主機掃描PHP2Shell漏洞，臺灣亦被列入目標範圍。**",
+    "macOS 27.2未封鎖eMudhra問題憑證；中國駭客打造Silent Train框架攻擊美國關鍵基礎設施。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Chrome:2026-10-30",
@@ -1027,7 +1248,7 @@
   {
    "id": "grp:AI 平台:2026-10-29",
    "kind": "group",
-   "title": "n8n AI 平台多項安全性漏洞",
+   "title": "n8n 跨網站指令碼與邏輯漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -1045,11 +1266,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118648",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.7。",
-    "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a stored cross-site scripting vulnerability because some webhook r"
+    "影響 n8n 1.123.85、2.43.5 及 2.44.1 以前版本，包含儲存型 XSS 與專案存取檢查繞過漏洞。",
+    "**目前尚未發現遭實際利用**，需具備建立或執行工作流權限的驗證使用者方可觸發。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 n8n 1.123.85、2.43.5、2.44.1 或以上版本。",
+   "ai": true
   },
   {
    "id": "CVE-2026-84725",
@@ -2526,7 +2747,7 @@
   {
    "id": "grp:AI 平台:2026-10-25",
    "kind": "group",
-   "title": "vLLM 平台多重安全漏洞",
+   "title": "vLLM 多重服務中斷漏洞",
    "sub": "8 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -2550,11 +2771,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116172",
    "pts": [
-    "同日公布 8 個漏洞，最高 CVSS 8.8。",
-    "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers t"
+    "影響 vLLM 多個版本（0.8.5 至 0.31.0 以前），包含輸入驗證不當、SSRF 與資源耗盡漏洞。",
+    "**目前尚未發現漏洞遭實際利用**，遠端攻擊者可發送特製請求導致引擎崩潰或記憶體耗盡。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 vLLM 0.24.0、0.25.0、0.30.0、0.31.0 或以上版本。",
+   "ai": true
   },
   {
    "id": "CVE-2026-114625",
@@ -2611,7 +2832,7 @@
   {
    "id": "CVE-2022-51026",
    "kind": "cve",
-   "title": "GitLab 漏洞 CVE-2022-51026",
+   "title": "Bytebase 驗證繞過漏洞",
    "sub": "CVE-2022-51026 · CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -2628,15 +2849,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
    "pts": [
-    "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. Th"
+    "Bytebase 0.12.0 至 1.0.1 未滿版本存在身分驗證繞過漏洞，未經驗證攻擊者可冒用既有使用者或建立新成員。",
+    "目前**未遭積極利用**，攻擊者可透過 POST /api/auth/login/GITLAB_SELF_HOST 端點發送偽造設定。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-111497",
    "kind": "cve",
-   "title": ".NET 漏洞 CVE-2026-111497",
+   "title": "Brotli 緩衝區溢位漏洞",
    "sub": "CVE-2026-111497 · CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -2654,10 +2876,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
    "pts": [
-    "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows"
+    "Google Brotli 1.0.3 至 1.2.0 版本存在緩衝區溢位漏洞，未經驗證的遠端攻擊者可損壞記憶體或執行程式碼。",
+    "目前**未遭積極利用**，攻擊者可透過精心設計的 Brotli 壓縮串流發動攻擊。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "更新至 1.0.10、1.1.1 或 1.2.1 版本。",
+   "ai": true
   },
   {
    "id": "tw:09854930ad06",
@@ -2711,7 +2934,7 @@
   {
    "id": "grp:GitLab:2026-10-22",
    "kind": "group",
-   "title": "GitLab 多個高風險漏洞",
+   "title": "GitLab 多項安全性漏洞",
    "sub": "3 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -2730,11 +2953,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 10.0。",
-    "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
+    "影響 GitLab CE/EE 多個版本，漏洞可導致未經驗證使用者執行程式碼，或使已驗證使用者接管 LDAP 帳戶。",
+    "目前**未遭積極利用**，漏洞需在特定條件下或啟用 OmniAuth SAML 及 LDAP 時觸發。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 18.11.13、19.0.10、19.1.9、19.2.9、19.3.6、19.4.3、19.5.1 以上版本。",
+   "ai": true
   },
   {
    "id": "CVE-2026-96644",
@@ -2765,7 +2988,7 @@
   {
    "id": "grp:Cisco:2026-10-22",
    "kind": "group",
-   "title": "Cisco 多個高風險漏洞",
+   "title": "Cisco 多款產品安全性漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -2784,16 +3007,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.8。",
-    "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
+    "影響 Cisco Emergency Responder 與 Unified CM 等多款產品，包含內部檢測出之安全漏洞。",
+    "目前漏洞**未遭積極利用**，為 Cisco 內部進行安全性審查時發現。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Palo Alto:2026-10-21",
    "kind": "group",
-   "title": "Palo Alto 多個高風險漏洞",
+   "title": "PHP 記憶體處理安全性漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -2812,11 +3035,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.2。",
-    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
+    "影響 PHP 記憶體管理機制，在記憶體不足或全域狀態未正確重置時，可能存取未初始化記憶體。",
+    "目前漏洞**未遭積極利用**，相關問題可能引發記憶體損壞或存取錯誤。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-10-21",
@@ -2886,7 +3109,7 @@
   {
    "id": "grp:Chrome:2026-10-21",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Chrome 程式碼執行漏洞",
    "sub": "292 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -3194,11 +3417,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "同日公布 292 個漏洞，最高 CVSS 9.6。",
-    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
+    "影響 156.0.8078.47 以前版本之 Google Chrome，包含 Canvas 及 Input 等模組之記憶體損壞漏洞。",
+    "目前**未遭積極利用**，未經驗證遠端攻擊者可利用精心設計的 HTML 網頁執行任意程式碼。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "更新至 156.0.8078.47 或以上版本。",
+   "ai": true
   },
   {
    "id": "grp:SQL Server:2026-10-21",
@@ -3473,11 +3696,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM Cloud 等產品，攻擊者可侵害系統。",
-    "**目前尚未遭利用**；未授權或低權限攻擊者可經由 HTTP 或特定網路路徑存取發動攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-10-20",
@@ -3533,6 +3756,31 @@
    ],
    "fix": "升級至 MariaDB 10.6.28、10.11.19、11.4.13、11.8.9、12.3.3 或 13.0.2 以上。",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-98432",
+   "kind": "cve",
+   "title": "Linux 核心 漏洞 CVE-2026-98432",
+   "sub": "CVE-2026-98432 · CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-98432"
+   ],
+   "cvss": 9.8,
+   "published": "2026-10-15T13:17:13+00:00",
+   "first_seen": "2026-10-30T08:40:54+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98432",
+   "pts": [
+    "In the Linux kernel, the following vulnerability has been resolved: ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_re"
+   ],
+   "fix": "原文：This will be addressed in a separate patch.",
+   "ai": false
   },
   {
    "id": "CVE-2026-96521",
