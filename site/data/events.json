@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T15:56:31+00:00",
+ "generated": "2026-10-30T20:48:30+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,33 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "grp:Windows Server:2026-10-31",
+   "kind": "group",
+   "title": "Windows 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.5",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-116243",
+    "CVE-2026-119719"
+   ],
+   "cvss": 8.5,
+   "published": "2026-10-30T16:17:55+00:00",
+   "first_seen": "2026-10-30T20:48:44+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.5。",
+    "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:796541ef7301",
    "kind": "news",
@@ -795,6 +822,33 @@
    "ai": true
   },
   {
+   "id": "kevgrp:Ivanti:2026-10-30",
+   "kind": "group",
+   "title": "Ivanti 多個已遭利用漏洞",
+   "sub": "2 個 CVE",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Ivanti"
+   ],
+   "cves": [
+    "CVE-2026-111357",
+    "CVE-2026-118527"
+   ],
+   "cvss": null,
+   "published": "2026-10-30T00:00:00+00:00",
+   "first_seen": "2026-10-30T20:48:45+00:00",
+   "src": "CISA KEV",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "pts": [
+    "**同日有 2 個漏洞列入 CISA KEV 已遭利用清單**。",
+    "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability: Ivanti Connect Secure contains a generation of predict"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
+   "ai": false
+  },
+  {
    "id": "grp:Veeam:2026-10-30",
    "kind": "group",
    "title": "Veeam 遠端執行程式碼漏洞",
@@ -816,11 +870,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22793",
    "pts": [
-    "Veeam Management Pack for Microsoft System Center 存在漏洞，**攻擊者可於伺服器上遠端執行程式碼**。",
-    "目前未發現遭利用情形。攻擊條件包含未經驗證攻擊者、已驗證網域使用者或特定群組成員。"
+    "同日公布 3 個漏洞，最高 CVSS 9.3。",
+    "A vulnerability allowing an unauthenticated attacker to perform remote code execution (RCE) on servers running the Veeam Virtualization Exte"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:e5552e35630d",
@@ -957,11 +1011,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
    "pts": [
-    "Crawl4AI 0.9.5 前與 Google Chrome 156.0.8078.79 前版本存在漏洞，**攻擊者可透過特製網頁遠端執行任意程式碼**。",
-    "目前未發現遭利用情形。遠端攻擊者可透過中間人攻擊、DNS 操控或誘導造訪特製 HTML 網頁觸發。"
+    "同日公布 19 個漏洞，最高 CVSS 9.6。",
+    "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Ch"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:AI 平台:2026-10-30",
@@ -1001,11 +1055,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101288",
    "pts": [
-    "IBM Langflow OSS 1.0.0 至 1.12.4 版本存在多項漏洞，**攻擊者可執行任意程式碼或 SQL 指令**。",
-    "目前未發現遭利用情形。攻擊者可為未經驗證之遠端使用者，或需具備驗證權限。"
+    "同日公布 19 個漏洞，最高 CVSS 9.9。",
+    "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization o"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:f550a7f24f08",
@@ -2953,6 +3007,31 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-46652",
+   "kind": "cve",
+   "title": "Apache 漏洞 CVE-2026-46652",
+   "sub": "CVE-2026-46652 · CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [
+    "CVE-2026-46652"
+   ],
+   "cvss": 9.8,
+   "published": "2026-10-23T15:17:31+00:00",
+   "first_seen": "2026-10-30T20:48:44+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46652",
+   "pts": [
+    "The Goobi viewer is a web application that allows digitised material to be displayed in a web browser. From version 24.03 to before version "
+   ],
+   "fix": "原文：This issue has been patched in version 26.05.",
+   "ai": false
+  },
+  {
    "id": "CVE-2026-114625",
    "kind": "cve",
    "title": "VeloCloud SQL 隱碼注入漏洞",
@@ -3007,6 +3086,32 @@
    ],
    "fix": "原文：When commit 699023e23965 (\"KVM: x86: add SMM to the MMU role, support SMRAM address space\") added the SMM address space, these helpers were not converted to use the active memsl",
    "ai": false
+  },
+  {
+   "id": "CVE-2026-114612",
+   "kind": "cve",
+   "title": "LiteLLM 權限提升漏洞",
+   "sub": "CVE-2026-114612 · CVSS 9.9",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-114612"
+   ],
+   "cvss": 9.9,
+   "published": "2026-10-22T19:17:37+00:00",
+   "first_seen": "2026-10-30T20:48:44+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114612",
+   "pts": [
+    "影響 LiteLLM 1.87.0 至 1.100.4、1.101.3、1.102.2、1.103.1 等版本，驗證使用者可偽造管理者身份並執行任意指令。",
+    "1.87.0 至 1.90.x 需啟用特定登入設定，1.91.0 後預設組態即可利用；目前未遭利用。"
+   ],
+   "fix": "**升級至 LiteLLM 1.100.4、1.101.3、1.102.2、1.103.1 或 1.104.0-rc.2 以上版本**",
+   "ai": true
   },
   {
    "id": "CVE-2022-51026",
@@ -3139,6 +3244,32 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-94140",
+   "kind": "cve",
+   "title": "Rex 主機金鑰驗證缺失漏洞",
+   "sub": "CVE-2026-94140 · CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSH"
+   ],
+   "cves": [
+    "CVE-2026-94140"
+   ],
+   "cvss": 9.1,
+   "published": "2026-10-21T22:16:50+00:00",
+   "first_seen": "2026-10-30T20:48:44+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94140",
+   "pts": [
+    "影響 Perl 的 Rex 1.16.1（含）以前版本，因寫死設定會接受未知 SSH 金鑰，**攻擊者重導連線即可竊取密碼或竄改傳輸檔案**。",
+    "此問題無法透過設定修復，所有遠端 rsync 傳輸分支皆受影響；目前未遭利用。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "CVE-2026-96644",
    "kind": "cve",
    "title": "Pillow堆疊越界讀取漏洞",
@@ -3165,10 +3296,35 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-92203",
+   "kind": "cve",
+   "title": "Office 漏洞 CVE-2026-92203",
+   "sub": "CVE-2026-92203 · CVSS 7.7",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [
+    "CVE-2026-92203"
+   ],
+   "cvss": 7.7,
+   "published": "2026-10-21T18:17:30+00:00",
+   "first_seen": "2026-10-30T20:48:44+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92203",
+   "pts": [
+    "Airbyte SharePoint Connector _get_shared_drive_object Server-Side Request Forgery Information Disclosure Vulnerability. This vulnerability a"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "grp:Cisco:2026-10-22",
    "kind": "group",
-   "title": "Cisco 多款產品安全性漏洞",
-   "sub": "4 個 CVE · 最高 CVSS 9.8",
+   "title": "Cisco 與 Splunk 安全漏洞",
+   "sub": "7 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -3176,27 +3332,30 @@
     "Cisco"
    ],
    "cves": [
+    "CVE-2026-76291",
     "CVE-2026-76298",
     "CVE-2026-76301",
+    "CVE-2026-76408",
     "CVE-2026-76473",
-    "CVE-2026-76527"
+    "CVE-2026-76527",
+    "CVE-2026-76529"
    ],
    "cvss": 9.8,
    "published": "2026-10-21T17:19:06+00:00",
    "first_seen": "2026-10-27T20:07:11+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76298",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76291",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 9.8。",
-    "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
+    "影響 Cisco 多款通訊產品及 Splunk Enterprise 部分舊版本，**低權限使用者可推導資料庫密碼並執行任意指令**。",
+    "亦有漏洞可繞過排程搜尋安全機制以執行風險指令；目前未遭利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "Splunk Enterprise 升級至 10.4.4、10.2.8、10.0.11、9.4.16 以上版本；Cisco 套用軟體強化版本。",
+   "ai": true
   },
   {
    "id": "grp:Palo Alto:2026-10-21",
    "kind": "group",
-   "title": "PHP 記憶體處理安全性漏洞",
+   "title": "PHP 記憶體管理安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -3215,8 +3374,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響 PHP 記憶體管理機制，在記憶體不足或全域狀態未正確重置時，可能存取未初始化記憶體。",
-    "目前漏洞**未遭積極利用**，相關問題可能引發記憶體損壞或存取錯誤。"
+    "影響 PHP 記憶體處理機制，在記憶體耗盡或全域狀態未正確重設時，**可能導致存取未初始化或已釋放的記憶體**。",
+    "後續請求可能讀取或依據該記憶體進行分支操作；目前未遭利用。"
    ],
    "fix": "",
    "ai": true
@@ -3252,7 +3411,7 @@
   {
    "id": "CVE-2026-113812",
    "kind": "cve",
-   "title": "OpenSSL 漏洞 CVE-2026-113812",
+   "title": "Mozilla::CA 憑證包安全漏洞",
    "sub": "CVE-2026-113812 · CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -3269,10 +3428,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113812",
    "pts": [
-    "Mozilla::CA versions before 20261020 for Perl provide a CA certificate bundle containing a root linked to compromised intermediates. The bun"
+    "影響 Perl 的 Mozilla::CA 20261020 前版本，包內包含私鑰已外洩的中繼憑證，**中間人攻擊者可利用此漏洞偽冒 TLS 伺服器**。",
+    "LWP 及 HTTP::Tiny 等用戶端可能受影響；目前未遭利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "檢查用戶端使用的 CA 儲存庫，若使用系統儲存庫，請安裝作業系統廠商提供的更新。",
+   "ai": true
   },
   {
    "id": "grp:Windows Server:2026-10-21",
@@ -3314,7 +3474,7 @@
   {
    "id": "grp:Chrome:2026-10-21",
    "kind": "group",
-   "title": "Chrome 程式碼執行漏洞",
+   "title": "Chrome 遠端執行程式碼漏洞",
    "sub": "292 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -3622,11 +3782,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "同日公布 292 個漏洞，最高 CVSS 9.6。",
-    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
+    "影響 Google Chrome 156.0.8078.47 之前版本，包含 Canvas、Input、Animation 等模組之記憶體損壞與 Use-after-free 漏洞。",
+    "遠端攻擊者可透過精心製作的 HTML 網頁，在沙盒內或沙盒外執行任意程式碼；目前未遭利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "**升級至 Google Chrome 156.0.8078.47 或以上版本**",
+   "ai": true
   },
   {
    "id": "grp:SQL Server:2026-10-21",
