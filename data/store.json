@@ -34,6 +34,40 @@
  },
  "events": [
   {
+   "id": "CVE-2026-117681",
+   "kind": "cve",
+   "title": "憑證機構 漏洞 CVE-2026-117681",
+   "sub": "CVE-2026-117681 · CVSS 8.0",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [
+    "CVE-2026-117681"
+   ],
+   "cvss": 8.0,
+   "published": "2026-10-31T09:16:33+00:00",
+   "first_seen": "2026-10-31T13:39:54+00:00",
+   "updated": "2026-10-31T13:39:54+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117681",
+   "pts": [
+    "A flaw was found in konflux-ci. This vulnerability allows privilege escalation when the user interface proxy automatically disables Transpor"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "A flaw was found in konflux-ci. This vulnerability allows privilege escalation when the user interface proxy automatically disables Transport Layer Security (TLS) certificate verification for connections to internal backend services in environments lacking a default service certificate authority. Because the proxy attaches a cluster-scoped authentication token with user impersonation rights to these requests, an adjacent network attacker capable of intercepting traffic can capture the credentials to gain full administrative control of the cluster.",
+    "refs": [
+     "https://access.redhat.com/security/cve/CVE-2026-117681",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2563233"
+    ]
+   }
+  },
+  {
    "id": "grp:.NET:2026-10-31",
    "kind": "group",
    "title": ".NET 多個高風險漏洞",
@@ -2070,6 +2104,49 @@
     "title": "接近1千個電商網站被滲透，攻擊者利用Magento資安漏洞植入後門",
     "desc": "本週美國網路安全與基礎設施安全局（CISA）警告，電商平臺Adobe Commerce與Magento危險類型檔案上傳未受限制漏洞CVE-2026-48356（PolyShell）遭積極利用，將其加入已遭利用的漏洞名單（KEV），不久前有資安公司揭露，該漏洞被用於長期鎖定此類電商網站的攻擊活動。",
     "summarize": true
+   }
+  },
+  {
+   "id": "grp:Linux:2026-10-28",
+   "kind": "group",
+   "title": "Linux 核心 多個高風險漏洞",
+   "sub": "6 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-99131",
+    "CVE-2026-99153",
+    "CVE-2026-99154",
+    "CVE-2026-99170",
+    "CVE-2026-99185",
+    "CVE-2026-99216"
+   ],
+   "cvss": 9.8,
+   "published": "2026-10-28T11:17:32+00:00",
+   "first_seen": "2026-10-31T13:39:54+00:00",
+   "updated": "2026-10-31T13:39:54+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99131",
+   "pts": [
+    "同日公布 6 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: xfs: fix capability check in xfs An user reported a bug where he managed"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: fix capability check in xfs\n\nAn user reported a bug where he managed to evade group's quota\nby changing a file's gid to a different group id the same user\nbelonged to, even though quotas were enforced on both gids and the\nfile's size was big enough to exceed the quota's hardlimit.\n\nCommit eba0549bc7d1 replaced a capable() call by a\nhas_capability_noaudit() to prevent unnecessary selinux audit messages.\nTurns out that both calls have slightly different semantics even though\ntheir documentation seems similar. Where in a nutshell:\n\ncapable() - Tests the task's effective credentials\nhas_ns_capability_noaudit() - Tests the task's real credentials\n\nThis most of the time has no practical difference but in some cases like\nchanging attrs (specifically group id in this case) through a NFS client\nthis will allow the quota code to use XFS_QMOPT_FORCE_RES, effectively\nbypassing quota accounting checks.\n\nUsing instead ns_capable_noaudit() should fix this issue and prevent\nselinux audit messages.\n\nThis also fix the remaining calls to has_capability_noaudit()",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: libiscsi: Validate the ITT reflected in a Reject PDU\n\nA Reject PDU carries a copy of the header it rejects, and\niscsi_handle_reject() takes the ITT out of that copy to find the task to\nclean up:\n\n      memcpy(&rejected_pdu, data, sizeof(struct iscsi_hdr));\n      ...\n      task = iscsi_itt_to_task(conn, rejected_pdu.itt);\n\nThat value is whatever the target put there. iscsi_itt_to_task() bounds\nthe index against cmds_max and checks nothing else, so any task in the\npool can be named, and iscsi_nop_out_rsp() then completes it.\n\nAn index that has never been used gives a NULL task->conn: the pool is\nzeroed at session setup and conn is assigned only when a task is\nallocated. If the task was used and returned, iscsi_complete_task() hits\nits WARN_ON_ONCE(task->state == ISCSI_TASK_FREE) and the refcount\nunderflows. An in-flight SCSI command is completed as successful - a 1\nMiB read returned 1048576 with none of its buffer written and no\nwarning.\n\nValidate the reflected ITT the way iscsi_itt_to_ctask() validates a\ncommand ITT, and require the task to be in flight and not a SCSI\ncommand.\n\n[    6.248477] Oops: general protection fault, probably for non-canonical address 0xdffffc000000000c: 0000 [#1] SMP KASAN NOPTI\n[    6.249357] KASAN: null-ptr-deref in range [0x0000000000000060-0x0000000000000067]\n[    6.249951] CPU: 1 UID: 0 PID: 0 Comm: swapper/1 Not tainted 7.2.0-rc5-ISCSI1-gf5098b6bae76 #1 PREEMPT(lazy)\n[    6.250718] Hardware name: QEMU Ubuntu 24.04 PC v2 (i440FX + PIIX, arch_caps fix, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014\n[    6.251616] RIP: 0010:iscsi_nop_out_rsp.constprop.0+0x46/0x160\n[    6.252043] Code: c1 ea 03 48 83 ec 08 80 3c 02 00 0f 85 f5 00 00 00 48 b8 00 00 00 00 00 fc ff df 48 8b 6b 58 48 8d 7d 60 48 89 fa 48 c1 ea 03 <80> 3c 02 00 0f 85 c0 00 00 00 48 8b 45 60 48 39 c3 74 50 48 b8 00\n[    6.252813] RSP: 0018:ffff88806c907b80 EFLAGS: 00010206\n[    6.253042] RAX: dffffc0000000000 RBX: ffff88800607e000 RCX: ffffffff8d571a25\n[    6.253345] RDX: 000000000000000c RSI: ffff88806c907c38 RDI: 0000000000000060\n[    6.253642] RBP: 0000000000000000 R08: 0000000000000000 R09: fffffbfff235a504\n[    6.253947] R10: 0000000000000003 R11: 7463656e6e6f6320 R12: 0000000000000000\n[    6.254251] R13: 0000000000000000 R14: ffff88806c907c38 R15: 0000000000000000\n[    6.254549] FS:  0000000000000000(0000) GS:ffff8880d95bc000(0000) knlGS:0000000000000000\n[    6.254887] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033\n[    6.255140] CR2: 00007fc393e8ffc0 CR3: 0000000005252006 CR4: 0000000000770ef0\n[    6.255439] PKRU: 55555554\n[    6.255564] Call Trace:\n[    6.255674]  <IRQ>\n[    6.255768]  __iscsi_complete_pdu+0x18bf/0x22a0\n[    6.256733]  iscsi_complete_pdu+0x54/0xa0\n[    6.256905]  iscsi_tcp_data_recv_done+0xf4/0x250\n[    6.257103]  iscsi_tcp_recv_skb+0x31e/0xec0\n[    6.257680]  iscsi_sw_tcp_recv+0x12f/0x390\n[    6.258061]  __tcp_read_sock+0x1ab/0x810\n[    6.258853]  iscsi_sw_tcp_data_ready+0x18b/0x510\n[    6.259808]  tcp_data_queue+0x1f13/0x4cd0\n[    6.260567]  tcp_rcv_established+0x8a5/0x3a00\n[    6.261931]  tcp_v4_do_rcv+0x449/0x960\n[    6.262269]  tcp_v4_rcv+0x2245/0x3bc0",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: libiscsi: Reject a negative task index from parse_pdu_itt\n\nA transport that implements parse_pdu_itt hands libiscsi an index taken\nfrom the PDU, and both lookups bound it from above only:\n\n      if (i >= session->cmds_max)\n\ni and cmds_max are both int, so a negative index passes and\nsession->cmds[i] is read from before the array.\n\nbe2iscsi produces one. beiscsi_parse_pdu() assigns the raw tag,\n\n      *index = (int)itt;\n\nand beiscsi_complete_pdu() forwards an unsolicited NOP-In from the\nhardware async ring without replacing its ITT, so the value is the\ntarget's. It also reports the session's own age rather than the one in\nthe tag, which leaves the age comparison in iscsi_verify_itt() with\nnothing to reject.\n\nBound the index from below in both lookups.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nnamespace: a mount that copy_tree() leaves out can't take over a lock\n\nSince commit c62a4766937e (\"move_mount: transfer MNT_LOCKED\") a mount\ncan be moved beneath a locked mount. The lock moves from the old cover\nto the new mount which takes over the job of hiding what's under it and\nthe old cover can be unmounted. That works as long as the new mount\nstays. But the caller picks the new mount and copy_tree() leaves a\nmount of a mount namespace file out of every copy made without\nCL_COPY_MNT_NS_FILE, together with everything mounted on it, and never\nlooks at MNT_LOCKED. unshare(CLONE_NEWNS) and mount propagation make\nsuch copies.\n\nSo a task that is root in its own user namespace gets rid of a locked\ncover on a file without a race and without touching the filesystem\nbelow it. It makes a child with a mount namespace of its own, binds the\nchild's /proc/<pid>/ns/mnt beneath the cover with MOVE_MOUNT_BENEATH,\nwhich hands the lock to that bind, and calls unshare(CLONE_NEWNS). The\nnew mount namespace has nothing on the file. That's the usual way to\nmask a single file, a bind of /dev/null or of an empty file. With a\nbind of an ordinary file the file stays covered.\n\ncopy_tree() already refuses to leave out a locked unbindable mount with\n-EPERM since commit df7342b24018 (\"mount: Don't allow copying\nMNT_UNBINDABLE|MNT_LOCKED mounts\"). Do the same for a locked mount of a\nmount namespace file. That also covers a tree copied with\nCL_COPY_MNT_NS_FILE and attached into a mount namespace of another user\nnamespace where lock_mnt_tree() locks it. Note that unshare(CLONE_NEWNS)\nand clone(CLONE_NEWNS) fail with EPERM from such a mount namespace from\nthen on. The mount can't be left out and it can't be unmounted.\n\nAnd refuse to move a mount of a mount namespace file beneath a locked\nmount in the first place. Otherwise the task ends up with a mount it\ncan't unmount and an unshare() that fails for good.\n\nChris also found a second mount that goes away by itself, a clone of an\nautomounted mount that shrink_submounts() took along with its parent.\nCommit f78ddcc87224 (\"namespace: never expire a locked mount\") took\ncare of that one.\n\nChris's reproducer is appended. Mode nsfile reads SECRET after the\nunshare() on 7.3-rc7, with this patch the move_mount() fails with\nEINVAL and the file stays covered. nsfile-control uses an ordinary file\nand reads MASK both ways.\n\n  // SPDX-License-Identifier: GPL-2.0\n  /*\n   * Get rid of a locked cover with MOVE_MOUNT_BENEATH.\n   *\n   * The \"admin\" (root) makes a tmpfs W:\n   *     W/D         file, holds SECRET, covered by a bind of a file with MASK\n   *     W/Dd/inner  file, holds SECRET, Dd is covered by a bind of a directory\n   *                 whose \"inner\" holds MASK\n   *     W/own       directory of uid 1000 with the file \"mine\" and the\n   *                 directory \"minedir\", whose \"inner\" holds MINE\n   *     W/dbg       debugfs, mode 755. dbg/tracing is an automount point\n   * The \"attacker\" is uid 1000. It enters a new user namespace with a new mount\n   * namespace, so W and both covers are locked there.\n   *\n   * usage: prog MODE\n   *   plain      put a bind of own/mine beneath the cover of D, unmount the cover\n   *   nsfile     put a bind of the mount namespace file of a child beneath the\n   *              cover of D, then unshare(CLONE_NEWNS)\n   *   nsfile-control    the same with a bind of own/mine\n   *   shrink     put a bind of the automounted tracefs beneath the cover of Dd,\n   *              unmount the cover, put a tmpfs beneath W, call umount(W), which fails\n   *   shrink-control    the same with a bind of own/minedir\n   * The environment variable AUTOMOUNT_DIR names another automount point for \"shrink\".\n   */\n  #define _GNU_SOURCE\n  #include <errno.h>\n  #include <fcntl.h>\n  #include <grp.h>\n  #include <sched.h>\n  #include <signal.h>\n  #include <stdio.h>\n  #include <stdlib.h>\n  #include <string.h>\n  #include <unistd.h>\n \n---truncated---",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nfirewire: core: fix race condition in split transaction handling\n\nFor a split transaction, either fw_core_handle_response() or\nsplit_transaction_timeout_callback() may manipulate the same transaction\nentry in the pending transaction list. The return value of timer_delete()\nis used to determine which function handles the entry. If the transaction\nis a split transaction and timer_delete() returns zero, the timeout\ncallback may already be running. In this case, the response handler must\nleave the entry in the list for the timeout callback to remove.\n\nA previous code refactoring broke this behavior, introducing a race\ncondition in which both functions could process the same transaction.\nThis could lead to a use-after-free on the transaction initiator side.\n\nFix the regression by ensuring that the response handler does not process\nthe transaction when timer_delete() returns zero. The timeout callback is\nresponsible for removing the entry from the pending transaction list.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nDrivers: hv: Don't reset VMBus connection state on error/exit paths\n\nIn two places, current code forces vmbus_connection.conn_state to\nDISCONNECTED prior to calling vmbus_disconnect(). But vmbus_disconnect()\ncalls vmbus_initiate_unload(), which unloads the VMBus connection\nonly if the conn_state is CONNECTED. Consequently, the connection\nremains and the Hyper-V host might continue to send messages or post\nVMBus interrupts.\n\nThe problem was introduced in commit 74347a99e73ae (\"x86/Hyper-V:\nUnload vmbus channel in hv panic callback\"), in that\nvmbus_initiate_unload() started checking the current connection\nstate before doing the unload. This commit removed some occurrences\nwhere conn_state was forced to DISCONNECTED, but these two remained,\napparently due to an oversight at the time.\n\nFix this by not forcing conn_state to DISCONNECTED during VMBus exit,\nor if a failure occurs when establishing the connection in the first\nplace. Whatever value conn_state has at the time is then read by\nvmbus_initiate_unload() to determine if there is a connection to\nbe unloaded."
+    ]
    }
   },
   {
@@ -6324,6 +6401,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-10-31T07:00:15+00:00",
- "kev_last": "2026-10-31T07:00:15+00:00"
+ "nvd_last": "2026-10-31T13:39:40+00:00",
+ "kev_last": "2026-10-31T13:39:40+00:00"
 }
