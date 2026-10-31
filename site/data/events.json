@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T00:48:20+00:00",
+ "generated": "2026-10-31T07:00:15+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -540,7 +540,7 @@
   {
    "id": "grp:Office:2026-10-30",
    "kind": "group",
-   "title": "Office 多個高風險漏洞",
+   "title": "SPMP 權限繞過與 XSS 漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.5",
    "sev": "high",
    "kev": false,
@@ -558,16 +558,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119680",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.5。",
-    "A stored cross-site scripting (XSS) vulnerability exists in the chart feature of SharePoint Manager Plus (SPMP) due to improper sanitization"
+    "影響 ManageEngine SharePoint Manager Plus (SPMP)。圖表功能存在儲存型跨網站指令碼漏洞，且 MFA 功能存在不當存取控制漏洞。",
+    "CVSS 評分為 8.5，目前尚無遭利用跡象。**低權限驗證使用者可繞過授權檢查並修改 MFA 設定**。"
    ],
-   "fix": "原文：This vulnerability was fixed in client application build 4508.",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "CVE-2026-59387",
    "kind": "cve",
-   "title": "nginx 漏洞 CVE-2026-59387",
+   "title": "Nginx 權限提升漏洞",
    "sub": "CVE-2026-59387 · CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -584,10 +584,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59387",
    "pts": [
-    "The Nginx routing configuration for Cloud Controller blocks unauthenticated access to /internal/v4/ and /internal/v5/ endpoints but omits an"
+    "影響 Cloud Controller 的 Nginx 路由設定。未限制 /internal/v3/ 端點，導致回呼端點無需 OAuth 或雙向 TLS 認證即可存取。",
+    "CVSS 評分為 8.8，目前尚無遭利用跡象。**攻擊者取得 GUID 後可提交偽造回呼以進行權限提升**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:9606f4736cb7",
@@ -1009,7 +1010,7 @@
   {
    "id": "grp:Chrome:2026-10-30",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Chrome 與套件安全漏洞",
    "sub": "19 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1044,10 +1045,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
    "pts": [
-    "影響 156.0.8078.79 之前的 Google Chrome 等產品，可導致遠端執行任意程式碼。",
-    "目前未遭利用。**遠端攻擊者可透過特製 HTML 頁面於沙盒內外執行任意程式碼**。"
+    "影響 156.0.8078.79 前之 Google Chrome 及 0.9.5 前之 Crawl4AI，攻擊者可藉特製頁面**執行任意程式碼**或讀取 Cookie。",
+    "目前未發現遭利用情形。"
    ],
-   "fix": "",
+   "fix": "升級至 Google Chrome 156.0.8078.79 以上版本與 Crawl4AI 0.9.5 以上版本。",
    "ai": true
   },
   {
@@ -2953,6 +2954,32 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-102649",
+   "kind": "cve",
+   "title": "Burrito Webhook 驗證漏洞",
+   "sub": "CVE-2026-102649 · CVSS 9.9",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-102649"
+   ],
+   "cvss": 9.9,
+   "published": "2026-10-26T18:17:21+00:00",
+   "first_seen": "2026-10-31T07:00:41+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102649",
+   "pts": [
+    "影響 0.13.0 前之 Burrito，攻擊者可偽造事件觸發未授權的 **`terraform plan` 並可能洩露變更內容**。",
+    "目前未發現遭利用情形，攻擊者需能存取服務端點並得知追蹤儲存庫之 URL。"
+   ],
+   "fix": "升級至 Burrito 0.13.0 以上版本。",
+   "ai": true
+  },
+  {
    "id": "grp:AI 平台:2026-10-27",
    "kind": "group",
    "title": "vLLM 推理引擎多項安全漏洞",
@@ -3252,7 +3279,7 @@
   {
    "id": "grp:GitLab:2026-10-22",
    "kind": "group",
-   "title": "GitLab 多項安全性漏洞",
+   "title": "GitLab 與相關產品漏洞",
    "sub": "3 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -3271,11 +3298,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 10.0。",
-    "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
+    "影響 GitLab CE/EE 多個指定版本與 hMailServer 6.0.0 至 6.3.6，可能導致未身分驗證執行操作或**接管 LDAP 帳號**。",
+    "目前未發現遭利用情形。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 GitLab CE/EE 18.11.13、19.0.10、19.1.9、19.2.9、19.3.6、19.4.3、19.5.1 以上版本。",
+   "ai": true
   },
   {
    "id": "CVE-2026-94140",
@@ -3817,16 +3844,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "同日公布 292 個漏洞，最高 CVSS 9.6。",
-    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
+    "影響 156.0.8078.47 前之 Google Chrome，遠端攻擊者可透過特製 HTML 頁面**執行任意程式碼**。",
+    "目前未發現遭利用情形。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 Google Chrome 156.0.8078.47 以上版本。",
+   "ai": true
   },
   {
    "id": "grp:SQL Server:2026-10-21",
    "kind": "group",
-   "title": "Oracle MySQL 產品安全漏洞",
+   "title": "Oracle MySQL 多項安全漏洞",
    "sub": "12 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -3855,16 +3882,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101679",
    "pts": [
-    "同日公布 12 個漏洞，最高 CVSS 9.3。",
-    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs). Supported versions that are affected "
+    "影響指定版本之 Oracle MySQL Server 與 MySQL Cluster，相關元件漏洞**可能危害資料庫系統安全**。",
+    "目前未發現遭利用情形。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 產品多項安全性漏洞",
+   "title": "Oracle 企業軟體安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -4096,11 +4123,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 與 Siebel CRM 指定版本，攻擊者可經由 HTTP **危害系統安全**。",
+    "目前未發現遭利用情形，攻擊者可經由網路發動攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
