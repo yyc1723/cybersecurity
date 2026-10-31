@@ -3,36 +3,75 @@
   "2026-Oct"
  ],
  "todo": {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "items": [
    {
-    "title": "本單位：安裝 Microsoft 例行更新",
-    "desc": "**CVE-2026-96951 已遭利用**，涵蓋 Windows Server 與 Office 等修補。"
+    "title": "本單位：修補 Chrome 遠端漏洞",
+    "desc": "**攻擊者可透過特製 HTML 頁面遠端執行任意程式碼**，影響 Windows 版 Chrome。"
    },
    {
-    "title": "本單位：修補 .NET Brotli 漏洞",
-    "desc": "微軟已發布 .NET 臨時更新，防範記憶體破壞與權限提升。"
+    "title": "本單位：修補 .NET 與 Brotli",
+    "desc": "Brotli 緩衝區溢位可致記憶體損壞或執行程式碼，影響 .NET。"
    },
    {
-    "title": "本單位：修補 ASP.NET 會話劫持",
-    "desc": "防範注入 24 字元字串至 SessionId Cookie 發動攻擊。"
+    "title": "本單位：修補 ASP.NET 劫持漏洞",
+    "desc": "ProPhoenix Law RMS 存在漏洞，攻擊者可注入字串執行會話劫持。"
    },
    {
-    "title": "本單位：更新 Outlook 連接器",
-    "desc": "修補 KerioConnect 安裝權限過寬問題，防範權限提升。"
+    "title": "本單位：修補 Windows 與 Office",
+    "desc": "Windows Server 與 Office 公布多個漏洞，最高 CVSS 8.5。"
    },
    {
-    "title": "修補 Cisco VPN 服務阻斷漏洞",
-    "desc": "Cisco ASA 與 FTD 漏洞已列入已遭利用清單，請優先處理。"
+    "title": "防範 Ivanti 權限提升漏洞",
+    "desc": "影響 Ivanti Connect Secure，漏洞目前已被證實遭利用。"
    },
    {
-    "title": "修補 Linux 與 ESX 漏洞",
-    "desc": "Linux Kernel 與 VMware ESX 漏洞已遭利用，請儘速處理。"
+    "title": "防範 Cisco 阻斷服務漏洞",
+    "desc": "Cisco ASA 與 FTD 軟體存在漏洞，該漏洞目前已遭野生利用。"
    }
   ],
   "ai": true
  },
  "events": [
+  {
+   "id": "grp:.NET:2026-10-31",
+   "kind": "group",
+   "title": ".NET 多個高風險漏洞",
+   "sub": "4 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-63184",
+    "CVE-2026-63344",
+    "CVE-2026-63345",
+    "CVE-2026-63346"
+   ],
+   "cvss": 8.6,
+   "published": "2026-10-30T22:16:58+00:00",
+   "first_seen": "2026-10-31T00:48:46+00:00",
+   "updated": "2026-10-31T00:48:46+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63184",
+   "pts": [
+    "同日公布 4 個漏洞，最高 CVSS 8.6。",
+    "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.1, the `refitter` dotnet tool invokes `NJsonSch"
+   ],
+   "fix": "原文：This issue is fixed in version 2.1.1.",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.1, the `refitter` dotnet tool invokes `NJsonSchema` with unsafe defaults for `$ref` resolution when generating Refit interfaces and contracts from attacker-controlled or attacker-influenced OpenAPI descriptions. Remote `http(s)` references cause requests from the developer or CI host and inline untrusted remote schema content into generated output. Absolute local file paths and relative `../` traversal outside the input directory also resolve and inline local content, permitting arbitrary local-file disclosure. The demonstrated chain stops at server-side request forgery, remote file inclusion, and local file inclusion, not code execution: Refit sets the base URL at runtime, enum values use verbatim-string doubling, and string defaults are escaped. This issue is fixed in version 2.1.1.",
+     "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.2, content-type keys in the content maps of `requestBody/responses` are emitted verbatim into a Refit `[Headers(\"Accept: <ct>\", \"Content-Type: <ct>\")]` attribute string without escaping quotation marks. A crafted content-type key in an attacker-influenced OpenAPI description survives default validation without `--skip-validation`, breaks out of the attribute string and enclosing interface and namespace, and can introduce a top-level file class while leaving valid generated C#. A `[ModuleInitializer]` method in that class executes attacker code when the generated assembly is loaded at application startup, without requiring a call to the client. The behavior was verified with Refitter 2.0.0 and .NET 8. This issue is fixed in version 2.1.2.",
+     "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.2, OpenAPI `paths`-object keys are emitted verbatim into Refit route attributes such as `[Get(\"<path>\")]` without escaping quotation marks or restricting characters. An attacker-influenced single-line, slash-prefixed path survives default validation without `--skip-validation` and can close the attribute string, interface, and namespace while introducing a top-level file class and reopening the generated structure to keep valid C#. A `[ModuleInitializer]` method executes attacker code when an application compiles and loads the generated assembly at startup, even without calling the generated client. The enum and default value sinks are escaped and are not the vulnerable path-emission sink. The behavior was verified on Refitter 2.0.0 with .NET 8. This issue is fixed in version 2.1.2.",
+     "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.2, the header parameter name in `parameters[].name` with `in: header` is emitted verbatim into a Refit `[Header(\"<name>\")]` attribute string without escaping quotation marks. An attacker-influenced OpenAPI description can pass default validation without `--skip-validation` and break out from the parameter-list position by closing the parameter and method syntax, attribute, interface, and namespace. The generated file can remain valid C# while containing a top-level file class with a `[ModuleInitializer]` method, which executes attacker code when the compiled assembly is loaded at application startup, even if the client is never called. Query `AliasAs` and enum/default value sinks are escaped; this flaw is in header-name attribute-string emission. The behavior was verified with Refitter 2.0.0 and .NET 8. This issue is fixed in version 2.1.2."
+    ]
+   }
+  },
   {
    "id": "grp:Windows Server:2026-10-31",
    "kind": "group",
@@ -51,7 +90,7 @@
    "cvss": 8.5,
    "published": "2026-10-30T16:17:55+00:00",
    "first_seen": "2026-10-30T20:48:44+00:00",
-   "updated": "2026-10-30T20:48:44+00:00",
+   "updated": "2026-10-31T00:48:46+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
@@ -64,6 +103,7 @@
    "raw": {
     "descs": [
      "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-bit integer overflow in thumb_data_vertical_flip(). Attackers can craft a .blend file with malicious TEST block dimensions that trigger an out-of-bounds write when blender-thumbnailer or the Windows shell extension previews it, causing crashes or code execution.",
+     "pgAdmin 4 runs pg_dump, pg_restore, pg_dumpall and psql from the binary path a user sets in their preferences. In server mode the binary path was refused only when it lay under the per-user storage directory (STORAGE_DIR), not under a SHARED_STORAGE directory, which ordinary users can upload files to. A user could therefore upload an executable to shared storage, point their binary path at it, and have pgAdmin run it as the operating-system account running pgAdmin. On POSIX, files created through pgAdmin are not executable, so this is exploitable where any file with an executable name can run, such as Windows server mode.\n\nThe fix checks the binary path against every SHARED_STORAGE directory as well, after expanding $DIR, collapsing \"..\" and resolving symbolic links, compares directories in a way a different spelling on a case-insensitive filesystem cannot bypass, refuses a path containing a NUL, and enforces the check wherever binary paths are resolved, including for the PSQL tool.\n\nThis issue affects pgAdmin 4: before 9.19.",
      "pgAdmin 4 runs pg_dump, pg_restore, pg_dumpall and psql from the binary path a user sets in their preferences. In server mode the binary path was refused only when it lay under the per-user storage directory (STORAGE_DIR), not under a SHARED_STORAGE directory, which ordinary users can upload files to. A user could therefore upload an executable to shared storage, point their binary path at it, and have pgAdmin run it as the operating-system account running pgAdmin. On POSIX, files created through pgAdmin are not executable, so this is exploitable where any file with an executable name can run, such as Windows server mode.\n\nThe fix checks the binary path against every SHARED_STORAGE directory as well, after expanding $DIR, collapsing \"..\" and resolving symbolic links, compares directories in a way a different spelling on a case-insensitive filesystem cannot bypass, refuses a path containing a NUL, and enforces the check wherever binary paths are resolved, including for the PSQL tool.\n\nThis issue affects pgAdmin 4: before 9.19."
     ]
    }
@@ -148,11 +188,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180113",
    "pts": [
-    "10月29日美國網路安全與基礎設施安全局（CISA）警告，他們已掌握兩個漏洞遭到積極利用的證據，這些漏洞是GitLab整數溢位漏洞CVE-2026-97229，以及存在於思科ASA和FTD防火牆的阻斷服務漏洞"
+    "CISA 警告 GitLab 整數溢位漏洞 CVE-2026-97229 與思科 ASA 和 FTD 防火牆阻斷服務漏洞**已遭積極利用**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "GitLab、思科防火牆漏洞遭積極利用",
     "desc": "10月29日美國網路安全與基礎設施安全局（CISA）警告，他們已掌握兩個漏洞遭到積極利用的證據，這些漏洞是GitLab整數溢位漏洞CVE-2026-97229，以及存在於思科ASA和FTD防火牆的阻斷服務漏洞",
@@ -179,11 +219,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180111",
    "pts": [
-    "10月26日以色列資安新創Dream Security揭露一起不尋常的攻擊活動，使用簡體中文的駭客疑似借助AI的力量，串連統稱為PHP2Shell的重大漏洞CVE-2026-109618與CVE-2026-109619，以及Linux核心本機權限提升（LPE）漏洞Fragnesia（CVE-2026"
+    "駭客串連 PHP2Shell 漏洞（CVE-2026-109618、CVE-2026-109619）與 Linux 核心本機權限提升漏洞 Fragnesia（CVE-2026-46300）。",
+    "入侵臺灣、日本、韓國與美國共 25 臺伺服器，**取得 root 權限並深入內部 AD 網域環境**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "PHP2Shell與Linux核心漏洞被串連利用，中國駭客藉此取得25臺防火牆root權限",
     "desc": "10月26日以色列資安新創Dream Security揭露一起不尋常的攻擊活動，使用簡體中文的駭客疑似借助AI的力量，串連統稱為PHP2Shell的重大漏洞CVE-2026-109618與CVE-2026-109619，以及Linux核心本機權限提升（LPE）漏洞Fragnesia（CVE-2026-46300），入侵25臺伺服器並得到root權限，這些伺服器位於臺灣、日本、韓國，以及美國，其中3臺與美國政府環境有關的伺服器被鎖定並執行後續活動，駭客藉此深入受害組織內部的AD網域環境，",
@@ -210,11 +251,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180104",
    "pts": [
-    "本日新聞焦點 ● DEVCORE研究員串連5個弱點突破Edge瀏覽器防護機制 ● 微軟發布Windows緊急更新，移除eMudhra問題憑證的預設信任 ● Tailscale釋出1.104.4安全更新，修補SSH與Serve功能共4項漏洞"
+    "DEVCORE研究員於Pwn2Own競賽串連5個弱點，**成功突破Edge瀏覽器防護機制**。",
+    "微軟發布Windows緊急更新移除問題憑證預設信任，Tailscale亦釋出1.104.4版修補4項漏洞。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "【資安日報】10月30日，DEVCORE研究員公布在Pwn2Own競賽揭露的Edge攻擊鏈，串連5個弱點突破瀏覽器防護機制",
     "desc": "本日新聞焦點 ● DEVCORE研究員串連5個弱點突破Edge瀏覽器防護機制 ● 微軟發布Windows緊急更新，移除eMudhra問題憑證的預設信任 ● Tailscale釋出1.104.4安全更新，修補SSH與Serve功能共4項漏洞",
@@ -403,11 +445,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180099",
    "pts": [
-    "美國司法部於10月27日宣布，36歲烏克蘭籍男子Artem Stryzhak因參與Nefilim與Hive勒索軟體攻擊行動，遭美國法院判處70個月徒刑，他於2021年6月加入Nefilim集團成為附屬成員，使用該集團的勒索軟體發動攻擊，並將所獲贖金的20%交給該集團管理者。"
+    "美國司法部宣布烏克蘭籍男子因參與 Nefilim 與 Hive 勒索軟體攻擊行動，遭法院判處 70 個月徒刑。",
+    "**該名成員於 2021 年 6 月加入並將獲取贖金的 20% 交給集團管理者**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Hive與Nefilim勒索軟體集團成員遭美國判刑，將入獄70個月",
     "desc": "美國司法部於10月27日宣布，36歲烏克蘭籍男子Artem Stryzhak因參與Nefilim與Hive勒索軟體攻擊行動，遭美國法院判處70個月徒刑，他於2021年6月加入Nefilim集團成為附屬成員，使用該集團的勒索軟體發動攻擊，並將所獲贖金的20%交給該集團管理者。",
@@ -558,11 +601,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180087",
    "pts": [
-    "樂天集團（Rakuten Group）上週（10月26日）公布母公司和旅遊子公司營運的兩個網站遭到不明人士非授權存取，導致超過354萬客戶及旅遊從業人員個資外流，但臺灣網站未受到波及。"
+    "樂天集團公布母公司及子公司兩個旅遊網站遭非授權存取，**導致超過 354 萬客戶及旅遊從業人員個資外流**。",
+    "臺灣網站未受到波及。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "日本樂天兩個旅遊網站遭駭外洩用戶個資354萬，臺灣網站不受影響",
     "desc": "樂天集團（Rakuten Group）上週（10月26日）公布母公司和旅遊子公司營運的兩個網站遭到不明人士非授權存取，導致超過354萬客戶及旅遊從業人員個資外流，但臺灣網站未受到波及。",
@@ -634,7 +678,7 @@
   {
    "id": "kevgrp:Ivanti:2026-10-30",
    "kind": "group",
-   "title": "Ivanti 多個已遭利用漏洞",
+   "title": "Ivanti 權限提升漏洞",
    "sub": "2 個 CVE",
    "sev": "crit",
    "kev": true,
@@ -653,12 +697,12 @@
    "src": "CISA KEV",
    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "pts": [
-    "**同日有 2 個漏洞列入 CISA KEV 已遭利用清單**。",
-    "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability: Ivanti Connect Secure contains a generation of predict"
+    "影響 Ivanti Connect Secure，包含可預測識別碼與驗證缺失漏洞，可導致檔案上傳或權限提升。",
+    "**此漏洞目前已被證實遭利用**，遠端或本地已驗證攻擊者可利用或串聯漏洞。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability: Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
@@ -690,11 +734,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22793",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.3。",
-    "A vulnerability allowing an unauthenticated attacker to perform remote code execution (RCE) on servers running the Veeam Virtualization Exte"
+    "影響執行 Veeam Management Pack 相關服務的伺服器，漏洞可能導致執行遠端執行程式碼。",
+    "目前未遭利用。**未經身份驗證攻擊者或已驗證網域使用者皆可執行遠端程式碼**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -867,15 +911,15 @@
    "cvss": 9.6,
    "published": "2026-10-29T16:18:04+00:00",
    "first_seen": "2026-10-29T16:57:19+00:00",
-   "updated": "2026-10-30T20:48:44+00:00",
+   "updated": "2026-10-31T00:48:46+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
    "pts": [
-    "同日公布 19 個漏洞，最高 CVSS 9.6。",
-    "Crawl4AI before 0.9.5 contains an improper certificate validation vulnerability that allows network attackers to intercept crawls because Ch"
+    "影響 156.0.8078.79 之前的 Google Chrome 等產品，可導致遠端執行任意程式碼。",
+    "目前未遭利用。**遠端攻擊者可透過特製 HTML 頁面於沙盒內外執行任意程式碼**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -940,14 +984,25 @@
      "Use after free in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Memory corruption in Network in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Memory corruption in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-     "Use after free in Input in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
+     "Use after free in Input in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Frames in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in V8 in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in GarbageCollection in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Dawn in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in DOM in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Integer overflow in Editing in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Blink in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in CacheStorage in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
   {
    "id": "grp:AI 平台:2026-10-30",
    "kind": "group",
-   "title": "IBM Langflow 遠端程式碼漏洞",
+   "title": "AI 平台遠端執行程式碼漏洞",
    "sub": "19 個 CVE · 最高 CVSS 9.9",
    "sev": "crit",
    "kev": false,
@@ -983,11 +1038,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101288",
    "pts": [
-    "同日公布 19 個漏洞，最高 CVSS 9.9。",
-    "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization o"
+    "影響 IBM Langflow OSS 1.0.0 至 1.12.4，可致執行任意程式碼、OS 命令或 SQL 指令。",
+    "目前未遭利用。**遠端或已驗證攻擊者可藉由反序列化與權限缺失進行攻擊**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -3748,7 +3803,7 @@
   {
    "id": "kevgrp:PHP:2026-10-26",
    "kind": "group",
-   "title": "PHP 多個已遭利用漏洞",
+   "title": "PHP 遠端執行程式碼漏洞",
    "sub": "2 個 CVE",
    "sev": "crit",
    "kev": true,
@@ -3767,12 +3822,12 @@
    "src": "CISA KEV",
    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "pts": [
-    "**同日有 2 個漏洞列入 CISA KEV 已遭利用清單**。",
-    "PHP Memory Corruption Vulnerability: PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code exec"
+    "影響 PHP 產品，存在記憶體損毀與請求狀態漏洞，可導致未經身份驗證遠端執行程式碼。",
+    "**此漏洞目前已被證實遭利用**，未經身份驗證的遠端攻擊者可直接發動攻擊。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "PHP Memory Corruption Vulnerability: PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
@@ -3833,7 +3888,7 @@
   {
    "id": "CVE-2026-46652",
    "kind": "cve",
-   "title": "Apache 漏洞 CVE-2026-46652",
+   "title": "Apache 遠端執行程式碼漏洞",
    "sub": "CVE-2026-46652 · CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -3851,11 +3906,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46652",
    "pts": [
-    "The Goobi viewer is a web application that allows digitised material to be displayed in a web browser. From version 24.03 to before version "
+    "影響 Goobi viewer 24.03 至 26.05 之前版本，檔名處理不當可致路徑穿越與遠端執行程式碼。",
+    "目前未遭利用。**惡意 HTTP 伺服器可傳送穿越序列並以 tomcat 權限執行程式碼**。"
    ],
-   "fix": "原文：This issue has been patched in version 26.05.",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 26.05 以上版本。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "The Goobi viewer is a web application that allows digitised material to be displayed in a web browser. From version 24.03 to before version 26.05, ExternalFilesDownloader.getFilename() extracts the destination filename from a server-supplied Content-Disposition response header and passes it directly to Path.resolve() without stripping directory components. This allows for a malicious HTTP server that the viewer fetches from to supply an absolute path or ../ traversal sequences as the filename, writing attacker-controlled content to an arbitrary path writable by the Tomcat process. When targeting the deployed web-application directory, this yields remote code execution as the tomcat OS user. This issue has been patched in version 26.05.",
     "refs": [
@@ -3903,7 +3959,7 @@
   {
    "id": "grp:Linux:2026-10-23",
    "kind": "group",
-   "title": "Linux 核心 多個高風險漏洞",
+   "title": "Linux與Wasmtime多項漏洞",
    "sub": "5 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -3925,12 +3981,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115392",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 8.8。",
-    "Wasmtime before 24.0.13, 25.0.0 before 36.0.14, 37.0.0 before 46.0.3, and 47.0.0 before 47.0.4 allows a filesystem sandbox escape in wasmtim"
+    "Wasmtime 24.0.13、25.0.0 至 36.0.14、37.0.0 至 46.0.3 及 47.0.0 至 47.0.4 前版本存在沙盒逃脫漏洞，Linux 核心亦有多項缺陷。",
+    "**目前未遭利用**。沙盒逃脫需具備寫入權限的訪客在 macOS 或缺乏 openat2 的 Linux 核心觸發。"
    ],
-   "fix": "原文：When commit 699023e23965 (\"KVM: x86: add SMM to the MMU role, support SMRAM address space\") added the SMM address space, these helpers were not converted to use the active memsl",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Wasmtime before 24.0.13, 25.0.0 before 36.0.14, 37.0.0 before 46.0.3, and 47.0.0 before 47.0.4 allows a filesystem sandbox escape in wasmtime-wasi because its cap-std dependency mishandles symlinks with trailing slashes on macOS and Linux kernels lacking openat2. A guest with write access to any sandboxed directory can read and write any host-accessible file, and read-only guests may read host files via preexisting symlinks.",
@@ -4136,15 +4192,15 @@
    "cvss": 10.0,
    "published": "2026-10-22T01:16:57+00:00",
    "first_seen": "2026-10-27T14:33:51+00:00",
-   "updated": "2026-10-30T01:58:42+00:00",
+   "updated": "2026-10-31T00:48:46+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
    "pts": [
-    "影響 GitLab CE/EE 多個版本，漏洞可導致未經驗證使用者執行程式碼，或使已驗證使用者接管 LDAP 帳戶。",
-    "目前**未遭積極利用**，漏洞需在特定條件下或啟用 OmniAuth SAML 及 LDAP 時觸發。"
+    "同日公布 3 個漏洞，最高 CVSS 10.0。",
+    "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
    ],
-   "fix": "升級至 18.11.13、19.0.10、19.1.9、19.2.9、19.3.6、19.4.3、19.5.1 以上版本。",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -4153,7 +4209,8 @@
      "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression.",
      "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.1 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, when OmniAuth SAML and LDAP auto-linking were both enabled, an authenticated user could have taken over an existing LDAP-backed account without any interaction from the targeted user, due to improper input sanitization in the LDAP email lookup path used during OmniAuth identity linking.",
      "Missing authorization in the REST and COM administration APIs of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote authenticated user whose credential is confined to named domains to change mail routing and domain configuration beyond those domains on a multi-tenant server. A domain administrator, an account or API key given another role that manages accounts in named domains, or a full-scope API key issued for named domains could create a domain alias for any name (so that other tenants' mail for that name is diverted to an address the attacker controls, or denied), rename a domain to any name the server does not host, set a rule's bind-to-address, send-using-route or script-function action to reach one of the server's own addresses, a configured route's stored credentials or a function of the server's event script, and set the domain's relay host - which delivery then connects to with no address rule - to an address on the server's own network; and over the COM API any account could set the three rule actions on its own rules, where the script-function action runs at delivery. The authorization gate did not refuse these routes to a confined credential and the handlers were not given the caller; over COM the domain-alias save performed no authorization check at all, the domain rename required only a domain administrator, and a rule save required at most that the caller could change the rule's owner.",
-     "Missing authorization in the REST and COM administration APIs of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote authenticated user whose credential is confined to named domains to change mail routing and domain configuration beyond those domains on a multi-tenant server. A domain administrator, an account or API key given another role that manages accounts in named domains, or a full-scope API key issued for named domains could create a domain alias for any name (so that other tenants' mail for that name is diverted to an address the attacker controls, or denied), rename a domain to any name the server does not host, set a rule's bind-to-address, send-using-route or script-function action to reach one of the server's own addresses, a configured route's stored credentials or a function of the server's event script, and set the domain's relay host - which delivery then connects to with no address rule - to an address on the server's own network; and over the COM API any account could set the three rule actions on its own rules, where the script-function action runs at delivery. The authorization gate did not refuse these routes to a confined credential and the handlers were not given the caller; over COM the domain-alias save performed no authorization check at all, the domain rename required only a domain administrator, and a rule save required at most that the caller could change the rule's owner."
+     "Missing authorization in the REST and COM administration APIs of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote authenticated user whose credential is confined to named domains to change mail routing and domain configuration beyond those domains on a multi-tenant server. A domain administrator, an account or API key given another role that manages accounts in named domains, or a full-scope API key issued for named domains could create a domain alias for any name (so that other tenants' mail for that name is diverted to an address the attacker controls, or denied), rename a domain to any name the server does not host, set a rule's bind-to-address, send-using-route or script-function action to reach one of the server's own addresses, a configured route's stored credentials or a function of the server's event script, and set the domain's relay host - which delivery then connects to with no address rule - to an address on the server's own network; and over the COM API any account could set the three rule actions on its own rules, where the script-function action runs at delivery. The authorization gate did not refuse these routes to a confined credential and the handlers were not given the caller; over COM the domain-alias save performed no authorization check at all, the domain rename required only a domain administrator, and a rule save required at most that the caller could change the rule's owner.",
+     "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression."
     ]
    }
   },
@@ -4231,7 +4288,7 @@
   {
    "id": "CVE-2026-92203",
    "kind": "cve",
-   "title": "Office 漏洞 CVE-2026-92203",
+   "title": "Airbyte伺服器端請求偽造漏洞",
    "sub": "CVE-2026-92203 · CVSS 7.7",
    "sev": "note",
    "kev": false,
@@ -4249,11 +4306,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92203",
    "pts": [
-    "Airbyte SharePoint Connector _get_shared_drive_object Server-Side Request Forgery Information Disclosure Vulnerability. This vulnerability a"
+    "Airbyte SharePoint Connector未妥善驗證URI，存在伺服器端請求偽造漏洞，**可能導致服務帳號權限洩漏資訊**。",
+    "遠端攻擊者需通過身份驗證方可發起任意伺服器端請求以利用此漏洞，目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "Airbyte SharePoint Connector _get_shared_drive_object Server-Side Request Forgery Information Disclosure Vulnerability. This vulnerability allows remote attackers to initiate arbitrary server-side requests on affected installations of Airbyte. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the implementation of the _get_shared_drive_object method. The issue results from the lack of proper validation of a URI prior to accessing resources. An attacker can leverage this vulnerability to disclose information in the context of the service account. Was ZDI-CAN-28215.",
     "refs": [
@@ -4788,15 +4846,15 @@
    "cvss": 9.6,
    "published": "2026-10-20T22:18:48+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-30T20:48:44+00:00",
+   "updated": "2026-10-31T00:48:46+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "影響 Google Chrome 156.0.8078.47 之前版本，包含 Canvas、Input、Animation 等模組之記憶體損壞與 Use-after-free 漏洞。",
-    "遠端攻擊者可透過精心製作的 HTML 網頁，在沙盒內或沙盒外執行任意程式碼；目前未遭利用。"
+    "同日公布 292 個漏洞，最高 CVSS 9.6。",
+    "Memory corruption in Canvas in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside "
    ],
-   "fix": "**升級至 Google Chrome 156.0.8078.47 或以上版本**",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -5098,6 +5156,7 @@
      "Improper access control in V8 in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
      "Improper access control in ComputePressure in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
      "Missing authorization in Animation in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper input validation in Extensions in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
      "Improper input validation in Extensions in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)"
     ]
    }
@@ -5400,7 +5459,7 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-30T20:48:44+00:00",
+   "updated": "2026-10-31T00:48:46+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
@@ -5767,6 +5826,8 @@
      "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Test Framework).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in PeopleSoft Enterprise PeopleTools, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all PeopleSoft Enterprise PeopleTools accessible data as well as  unauthorized access to critical data or complete access to all PeopleSoft Enterprise PeopleTools accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: Oracle Weblogic Server Proxy Plug-in for Oracle HTTP Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle HTTP Server.  While the vulnerability is in Oracle HTTP Server, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle HTTP Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle HTTP Server accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Test Framework).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in PeopleSoft Enterprise PeopleTools, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all PeopleSoft Enterprise PeopleTools accessible data as well as  unauthorized access to critical data or complete access to all PeopleSoft Enterprise PeopleTools accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N).",
      "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: Oracle Weblogic Server Proxy Plug-in for Oracle HTTP Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle HTTP Server.  While the vulnerability is in Oracle HTTP Server, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle HTTP Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle HTTP Server accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N)."
     ]
    }
@@ -6096,7 +6157,7 @@
   {
    "id": "CVE-2026-98171",
    "kind": "cve",
-   "title": "Linux 核心 漏洞 CVE-2026-98171",
+   "title": "Linux核心SMB用戶端漏洞",
    "sub": "CVE-2026-98171 · CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -6114,11 +6175,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98171",
    "pts": [
-    "In the Linux kernel, the following vulnerability has been resolved: smb: client: fix next_buffer UAF and NextCommand bounds in compound PDUs"
+    "Linux 核心 SMB 用戶端在處理複合加密框架時存在釋放後使用（UAF）與邊界檢查問題。",
+    "**目前未遭利用**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix next_buffer UAF and NextCommand bounds in compound PDUs\n\nFix several related bounds checking and pointer lifecycle issues in\nreceive_encrypted_standard()'s handling of compound encrypted frames:\n\n- Clear next_buffer after assigning it to server->bigbuf. A stale\n  next_buffer pointer can lead to a use-after-free on subsequent\n  error paths.\n- Update pdu_length to the decrypted plaintext size (buf_size). Using\n  the pre-decryption length allows NextCommand to point into stale\n  ciphertext residue.\n- Reject next_cmd values smaller than MID_HEADER_SIZE(server).\n- Fix an integer overflow in the upper bound check by verifying\n  pdu_length - next_cmd < MID_HEADER_SIZE(server), ensuring the\n  trailing slice is large enough for a header.",
     "refs": [
@@ -6205,6 +6267,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-10-30T20:48:30+00:00",
- "kev_last": "2026-10-30T20:48:30+00:00"
+ "nvd_last": "2026-10-31T00:48:20+00:00",
+ "kev_last": "2026-10-31T00:48:20+00:00"
 }
