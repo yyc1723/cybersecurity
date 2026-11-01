@@ -3,31 +3,31 @@
   "2026-Oct"
  ],
  "todo": {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "items": [
    {
-    "title": "本單位：修補 Chrome 遠端漏洞",
-    "desc": "**攻擊者可透過特製 HTML 頁面遠端執行任意程式碼**，影響 Windows 版 Chrome。"
+    "title": "處理：Chrome Windows 遠端執行漏洞",
+    "desc": "目前未發現遭利用情形。遠端攻擊者可誘使使用者造訪特製 HTML 頁面以觸發漏洞。"
    },
    {
-    "title": "本單位：修補 .NET 與 Brotli",
-    "desc": "Brotli 緩衝區溢位可致記憶體損壞或執行程式碼，影響 .NET。"
+    "title": "處理：.NET 多個高風險漏洞",
+    "desc": "Refitter is a tool for generating a C# REST API client using the Refit"
    },
    {
-    "title": "本單位：修補 ASP.NET 劫持漏洞",
-    "desc": "ProPhoenix Law RMS 存在漏洞，攻擊者可注入字串執行會話劫持。"
+    "title": "處理：Windows 多個高風險漏洞",
+    "desc": "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer over"
    },
    {
-    "title": "本單位：修補 Windows 與 Office",
-    "desc": "Windows Server 與 Office 公布多個漏洞，最高 CVSS 8.5。"
+    "title": "處理：SPMP 權限繞過與 XSS 漏洞",
+    "desc": "CVSS 評分為 8.5，目前尚無遭利用跡象。低權限驗證使用者可繞過授權檢查並修改 MFA 設定。"
    },
    {
-    "title": "防範 Ivanti 權限提升漏洞",
-    "desc": "影響 Ivanti Connect Secure，漏洞目前已被證實遭利用。"
+    "title": "處理：Ivanti 權限提升漏洞",
+    "desc": "此漏洞目前已被證實遭利用，遠端或本地已驗證攻擊者可利用或串聯漏洞。"
    },
    {
-    "title": "防範 Cisco 阻斷服務漏洞",
-    "desc": "Cisco ASA 與 FTD 軟體存在漏洞，該漏洞目前已遭野生利用。"
+    "title": "處理：Veeam 遠端執行程式碼漏洞",
+    "desc": "目前未遭利用。未經身份驗證攻擊者或已驗證網域使用者皆可執行遠端程式碼。"
    }
   ],
   "ai": true
@@ -6409,6 +6409,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-10-31T18:34:53+00:00",
- "kev_last": "2026-10-31T18:34:53+00:00"
+ "nvd_last": "2026-11-01T02:14:51+00:00",
+ "kev_last": "2026-11-01T02:14:51+00:00"
 }
