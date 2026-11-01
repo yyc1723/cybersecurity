@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T02:14:51+00:00",
+ "generated": "2026-11-01T16:49:36+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,9 +362,33 @@
  },
  "events": [
   {
+   "id": "tw:d861d23133d6",
+   "kind": "news",
+   "title": "持續推動網路自主營運、資安強化與AI原生支援，HPE揭示旗下三大雲端網路管理平臺最新整合時程",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-01T16:49:52+00:00",
+   "first_seen": "2026-11-01T16:49:52+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180118",
+   "pts": [
+    "HPE宣布整合旗下三大網路解決方案，涵蓋併購Aruba Networks發展的Aruba Central與Silver Peak技術。",
+    "**將持續推動網路自主營運、資安強化與AI原生支援**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "CVE-2026-117681",
    "kind": "cve",
-   "title": "憑證機構 漏洞 CVE-2026-117681",
+   "title": "konflux-ci 權限提升漏洞",
    "sub": "CVE-2026-117681 · CVSS 8.0",
    "sev": "high",
    "kev": false,
@@ -381,15 +405,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117681",
    "pts": [
-    "A flaw was found in konflux-ci. This vulnerability allows privilege escalation when the user interface proxy automatically disables Transpor"
+    "konflux-ci 的 UI 代理伺服器自動停用 TLS 驗證，**相鄰網路攻擊者可擷取憑證並取得叢集完整控制權**。",
+    "漏洞發布於 2026 年 10 月 31 日，目前尚未遭惡意利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:.NET:2026-10-31",
    "kind": "group",
-   "title": ".NET 多個高風險漏洞",
+   "title": "Refitter 工具多重資安漏洞",
    "sub": "4 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -409,16 +434,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63184",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 8.6。",
-    "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.1, the `refitter` dotnet tool invokes `NJsonSch"
+    ".NET 工具 Refitter 在處理 OpenAPI 時缺乏不安全預設值與字元跳脫保護。",
+    "**影響 2.1.1 與 2.1.2 前版本**，目前尚未發現遭惡意利用的情形。"
    ],
-   "fix": "原文：This issue is fixed in version 2.1.1.",
-   "ai": false
+   "fix": "升級至 Refitter 2.1.2 以上版本。",
+   "ai": true
   },
   {
    "id": "grp:Windows Server:2026-10-31",
    "kind": "group",
-   "title": "Windows 多個高風險漏洞",
+   "title": "Blender 與 pgAdmin 漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.5",
    "sev": "high",
    "kev": false,
@@ -436,11 +461,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.5。",
-    "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-"
+    "Blender 存在堆積緩衝區溢位漏洞，**攻擊者可透過特製 .blend 檔進行跨界寫入**；pgAdmin 亦含路徑驗證瑕疵。",
+    "漏洞影響 Blender 與 pgAdmin 4，目前尚未發現遭惡意利用的情形。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "Blender 升級至 4.5.15、5.2.3 以上版本。",
+   "ai": true
   },
   {
    "id": "tw:796541ef7301",
@@ -1837,7 +1862,7 @@
   {
    "id": "grp:Linux:2026-10-28",
    "kind": "group",
-   "title": "Linux 核心 多個高風險漏洞",
+   "title": "Linux 核心多重資安漏洞",
    "sub": "6 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1859,11 +1884,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99131",
    "pts": [
-    "同日公布 6 個漏洞，最高 CVSS 9.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: xfs: fix capability check in xfs An user reported a bug where he managed"
+    "Linux 核心修復 XFS 配額繞過、SCSI libiscsi 驗證與 Firewire 競爭條件等多項漏洞。",
+    "**目前相關漏洞尚未發現遭惡意利用的情形。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:9cfd6fa41ebd",
@@ -4219,7 +4244,7 @@
   {
    "id": "grp:Linux:2026-10-19",
    "kind": "group",
-   "title": "Linux 核心 多個高風險漏洞",
+   "title": "Linux 核心多重資安漏洞",
    "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -4239,11 +4264,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98451",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 9.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: smb: client: use finish_no_open() for non-regular inodes An O_CREAT open"
+    "Linux 核心存在 SMB 用戶端越界讀取與 OpenvSwitch 記憶體釋放後使用等多項瑕疵。",
+    "**漏洞可能造成系統異常，目前尚未遭惡意利用。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-97380",
@@ -4274,7 +4299,7 @@
   {
    "id": "CVE-2026-98432",
    "kind": "cve",
-   "title": "Linux 核心 漏洞 CVE-2026-98432",
+   "title": "Linux 核心釋放後使用漏洞",
    "sub": "CVE-2026-98432 · CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -4291,10 +4316,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98432",
    "pts": [
-    "In the Linux kernel, the following vulnerability has been resolved: ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_re"
+    "Linux 核心 IPv4 模組在處理 SYNACK 時存在瑕疵，**可能導致記憶體釋放後使用（UAF）漏洞**。",
+    "漏洞影響 Linux 核心 IPv4 網路元件，目前尚未發現遭惡意利用的情形。"
    ],
-   "fix": "原文：This will be addressed in a separate patch.",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "CVE-2026-96521",
