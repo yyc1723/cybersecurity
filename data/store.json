@@ -34,6 +34,129 @@
  },
  "events": [
   {
+   "id": "tw:3309da34425f",
+   "kind": "news",
+   "title": "全球仍有逾萬臺GitLab執行個體暴露於兩個滿分漏洞威脅，臺灣也有46臺",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-02T18:24:19+00:00",
+   "first_seen": "2026-11-02T18:24:19+00:00",
+   "updated": "2026-11-02T18:24:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180145",
+   "pts": [
+    "**全球逾1.1萬台GitLab執行個體受CVE-2026-110264影響，逾1,000台面臨CVE-2026-97229風險**。",
+    "資安監測指出臺灣有46台暴露於風險中，每日全球約3.9萬台可直接從網際網路觀測。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "全球仍有逾萬臺GitLab執行個體暴露於兩個滿分漏洞威脅，臺灣也有46臺",
+    "desc": "在GitLab於10月中、下旬，先後揭露與修補兩個CVSS滿分重大漏洞後，資安監測組織Shadowserver於11月2日示警，全球仍有大量GitLab執行個體暴露於這兩個漏洞的風險下，根據其掃描資料，全球每日約有3.9萬臺GitLab執行個體可直接從網際網路觀測，其中逾1.1萬臺仍受CVE-2026-110264影響，另有超過1,000臺面臨CVE-2026-97229的風險。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4502bfe36bdd",
+   "kind": "news",
+   "title": "日本防衛研究所分析AI網攻新威脅，從鎖定特定目標到跨系統、多手法攻擊，傳統政府資安應變通報面臨挑戰",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-02T18:24:19+00:00",
+   "first_seen": "2026-11-02T18:24:19+00:00",
+   "updated": "2026-11-02T18:24:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180143",
+   "pts": [
+    "**日本防衛省防衛研究所分析指出，AI網攻能在短時間擴大攻擊規模並加快節奏，挑戰傳統應變機制**。",
+    "研究指出AI主要變化並非攻擊技術突然大幅提升，而是能跨系統與多手法快速擴大攻擊規模。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "日本防衛研究所分析AI網攻新威脅，從鎖定特定目標到跨系統、多手法攻擊，傳統政府資安應變通報面臨挑戰",
+    "desc": "日本自今年9月以來接連發生未經授權存取及資料外洩事件，日本防衛省防衛研究所（NIDS）10月30日發布最新研究分析，指出AI帶來的主要變化並非攻擊技術突然大幅提升，而是能在短時間內擴大攻擊規模、加快攻擊節奏，也使既有資安通報與應變機制面臨挑戰。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2f74e873a7dc",
+   "kind": "news",
+   "title": "駭客竄改第三方監控業者DNS紀錄，竊走Polymarket用戶270萬美元資產",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-02T18:24:19+00:00",
+   "first_seen": "2026-11-02T18:24:19+00:00",
+   "updated": "2026-11-02T18:24:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180139",
+   "pts": [
+    "加密貨幣預測市場平臺Polymarket於10月29日再遭供應鏈攻擊，網站使用的第三方效能監控JavaScript遭惡意程式置換，攻擊者利用使用者已登入的交易工作階段出售交易部位、轉走資產。Polymarket在10月30日公布事故報告，確認遭竊金額為270萬美元，另將賠償120萬美元交易暫停造成的"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "駭客竄改第三方監控業者DNS紀錄，竊走Polymarket用戶270萬美元資產",
+    "desc": "加密貨幣預測市場平臺Polymarket於10月29日再遭供應鏈攻擊，網站使用的第三方效能監控JavaScript遭惡意程式置換，攻擊者利用使用者已登入的交易工作階段出售交易部位、轉走資產。Polymarket在10月30日公布事故報告，確認遭竊金額為270萬美元，另將賠償120萬美元交易暫停造成的損失。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5d890917ea7f",
+   "kind": "news",
+   "title": "【資安日報】11月2日，Binance遭竊約63億美元加密貨幣，創史上最大竊案，調查指向北韓駭客",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux",
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-02T18:24:19+00:00",
+   "first_seen": "2026-11-02T18:24:19+00:00",
+   "updated": "2026-11-02T18:24:19+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180134",
+   "pts": [
+    "本日新聞焦點 ● Binance遭竊63億美元加密貨幣，創最大竊案，調查指向北韓駭客 ● 串連PHP2Shell與Linux核心漏洞，中國駭客取得24臺防火牆root權限 ● Alpine Linux遭GitLab重大漏洞攻擊，重建基礎設施防範供應鏈風險"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月2日，Binance遭竊約63億美元加密貨幣，創史上最大竊案，調查指向北韓駭客",
+    "desc": "本日新聞焦點 ● Binance遭竊63億美元加密貨幣，創最大竊案，調查指向北韓駭客 ● 串連PHP2Shell與Linux核心漏洞，中國駭客取得24臺防火牆root權限 ● Alpine Linux遭GitLab重大漏洞攻擊，重建基礎設施防範供應鏈風險",
+    "summarize": true
+   }
+  },
+  {
    "id": "tw:025d73ec420d",
    "kind": "news",
    "title": "鑫傳及子公司遭駭客攻擊，部分檔案無法解密，影響內部作業系統運作",
@@ -52,11 +175,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180138",
    "pts": [
-    "10月30日有線電視及寬頻服務廠商台灣數位光訊科技（台數科）發布資安重訊，透露該公司與子公司的部分資訊系統檔案遭到加密，影響內部系統運作；同一天台數科旗下的上櫃公司鑫傳國際多媒體科技（6856）也"
+    "**鑫傳與子公司部分資訊系統檔案遭駭客加密無法解密，影響內部作業系統運作。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "鑫傳及子公司遭駭客攻擊，部分檔案無法解密，影響內部作業系統運作",
     "desc": "10月30日有線電視及寬頻服務廠商台灣數位光訊科技（台數科）發布資安重訊，透露該公司與子公司的部分資訊系統檔案遭到加密，影響內部系統運作；同一天台數科旗下的上櫃公司鑫傳國際多媒體科技（6856）也",
@@ -82,11 +205,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180137",
    "pts": [
-    "有線電視及寬頻服務廠商台灣數位光訊科技（台數科，股票代號6464）於10月30日，在股市公開資訊觀測站發布重大訊息，外部不明駭客對其與子公司的資訊系統發動網路攻擊，導致部分伺服器檔案遭惡意加密，內部作業的系統部分運作受到影響，初步評估沒有個資外洩，也沒有核心機密或重要文件外流，對公司營運及財務無重大"
+    "**台數科及子公司部分伺服器檔案遭駭客加密影響內部運作，初步評估無個資與機密外流。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "台數科及子公司遭駭客攻擊，部分伺服器檔案遭加密",
     "desc": "有線電視及寬頻服務廠商台灣數位光訊科技（台數科，股票代號6464）於10月30日，在股市公開資訊觀測站發布重大訊息，外部不明駭客對其與子公司的資訊系統發動網路攻擊，導致部分伺服器檔案遭惡意加密，內部作業的系統部分運作受到影響，初步評估沒有個資外洩，也沒有核心機密或重要文件外流，對公司營運及財務無重大影響",
@@ -112,11 +235,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180135",
    "pts": [
-    "10月30日衛生用品廠商康那香（9919）於股市公開資訊觀測站發布重大訊息，其線上服務平臺的委外服務廠商91APP的資料庫遭受自動化攻擊，部分資料遭未經授權存取，其中包含康那香電子商城的訂單資料。康那香接獲通知後立即依據個資事故通報，並處理流程啟動應變機制，已依法向相關主管機關通報因應。"
+    "**康那香線上平臺委外服務廠商 91APP 資料庫遭自動化攻擊，導致電商平臺訂單資料恐外洩。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "康那香線上平臺委外服務廠商91APP遭駭，電商平臺訂單資料恐外洩",
     "desc": "10月30日衛生用品廠商康那香（9919）於股市公開資訊觀測站發布重大訊息，其線上服務平臺的委外服務廠商91APP的資料庫遭受自動化攻擊，部分資料遭未經授權存取，其中包含康那香電子商城的訂單資料。康那香接獲通知後立即依據個資事故通報，並處理流程啟動應變機制，已依法向相關主管機關通報因應。",
@@ -173,11 +296,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180124",
    "pts": [
-    "91APP遭駭事件波及眾多品牌客戶，該公司10月29日召開重大訊息記者會，公布最新調查結果，指出事件可能影響範圍最多達1,329家品牌。臺灣無印良品也於10月30日發表聲明，指出29日接獲第三方雲端服務商91APP通知，其訂單資料庫遭駭。由於MUJI無印良品官網購物的部分訂單資料存放於該資料庫，相關"
+    "第三方雲端服務商91APP資料庫遭駭，可能影響範圍最多達1,329家品牌客戶。",
+    "**臺灣無印良品官網購物部分訂單資料存放於該資料庫，相關顧客個資恐受影響**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "91APP遭駭波及臺灣無印良品，官網購物訂單資料恐外洩，日本MUJI App也傳不同資安事件",
     "desc": "91APP遭駭事件波及眾多品牌客戶，該公司10月29日召開重大訊息記者會，公布最新調查結果，指出事件可能影響範圍最多達1,329家品牌。臺灣無印良品也於10月30日發表聲明，指出29日接獲第三方雲端服務商91APP通知，其訂單資料庫遭駭。由於MUJI無印良品官網購物的部分訂單資料存放於該資料庫，相關顧客個資可能受到影響。",
@@ -203,11 +327,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180130",
    "pts": [
-    "日本模型公仔業者Good Smile Company線上商店遭駭，逾40萬張信用卡的部分資訊可能外洩，更嚴重的是，付款頁面還遭到植入惡意程式，受此事件影響期間曾進行付款操作或將商品加入購物車的2,800名顧客，被列為完整信用卡資料可能外洩的對象。值得注意的是，收件地址位於臺灣的顧客雖不在完整信用卡資"
+    "**Good Smile線上商店付款頁面遭植入惡意程式，逾40萬張信用卡部分資訊恐外洩**。",
+    "受影響期間付款或加入購物車之2,800名顧客信用卡資料恐完全外洩，臺灣顧客卡號末4碼恐外洩。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "日本公仔業者Good Smile Company遭駭，逾40萬張信用卡部分資料恐外洩，臺灣顧客也可能受影響",
     "desc": "日本模型公仔業者Good Smile Company線上商店遭駭，逾40萬張信用卡的部分資訊可能外洩，更嚴重的是，付款頁面還遭到植入惡意程式，受此事件影響期間曾進行付款操作或將商品加入購物車的2,800名顧客，被列為完整信用卡資料可能外洩的對象。值得注意的是，收件地址位於臺灣的顧客雖不在完整信用卡資料可能外洩的對象，但同樣可能有卡號末4碼外洩。",
@@ -233,11 +358,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180128",
    "pts": [
-    "Alpine Linux專案於10月28日揭露其GitLab伺服器遭遇攻擊，迫使其關閉GitLab服務並重建伺服器。問題源自該專案未及時修補CVSS嚴重性達10.0分的GitLab漏洞CVE-2026-97229，導致攻擊者利用此漏洞發動攻擊。"
+    "**Alpine Linux因未及時修補CVSS 10.0分的GitLab漏洞CVE-2026-97229而遭攻擊**。",
+    "該專案已迫使其關閉GitLab服務並重建伺服器，以防範供應鏈風險。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Alpine Linux遭GitLab重大漏洞攻擊，重建開發基礎設施防範供應鏈風險",
     "desc": "Alpine Linux專案於10月28日揭露其GitLab伺服器遭遇攻擊，迫使其關閉GitLab服務並重建伺服器。問題源自該專案未及時修補CVSS嚴重性達10.0分的GitLab漏洞CVE-2026-97229，導致攻擊者利用此漏洞發動攻擊。",
@@ -499,7 +625,7 @@
   {
    "id": "grp:.NET:2026-10-31",
    "kind": "group",
-   "title": "Refitter 工具多重資安漏洞",
+   "title": "Refitter工具屬性解析漏洞",
    "sub": "4 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -516,20 +642,23 @@
    "cvss": 8.6,
    "published": "2026-10-30T22:16:58+00:00",
    "first_seen": "2026-10-31T00:48:46+00:00",
-   "updated": "2026-10-31T00:48:46+00:00",
+   "updated": "2026-11-02T18:24:15+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63184",
    "pts": [
-    ".NET 工具 Refitter 在處理 OpenAPI 時缺乏不安全預設值與字元跳脫保護。",
-    "**影響 2.1.1 與 2.1.2 前版本**，目前尚未發現遭惡意利用的情形。"
+    "**Refitter 2.1.1與2.1.2以前版本處理OpenAPI描述檔及標頭引數未妥善轉義引號，存在安全性漏洞**。",
+    "影響漏洞包含CVE-2026-63184、CVE-2026-63344、CVE-2026-63345與CVE-2026-63346，目前未遭利用。"
    ],
-   "fix": "升級至 Refitter 2.1.2 以上版本。",
+   "fix": "",
    "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.1, the `refitter` dotnet tool invokes `NJsonSchema` with unsafe defaults for `$ref` resolution when generating Refit interfaces and contracts from attacker-controlled or attacker-influenced OpenAPI descriptions. Remote `http(s)` references cause requests from the developer or CI host and inline untrusted remote schema content into generated output. Absolute local file paths and relative `../` traversal outside the input directory also resolve and inline local content, permitting arbitrary local-file disclosure. The demonstrated chain stops at server-side request forgery, remote file inclusion, and local file inclusion, not code execution: Refit sets the base URL at runtime, enum values use verbatim-string doubling, and string defaults are escaped. This issue is fixed in version 2.1.1.",
      "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.2, content-type keys in the content maps of `requestBody/responses` are emitted verbatim into a Refit `[Headers(\"Accept: <ct>\", \"Content-Type: <ct>\")]` attribute string without escaping quotation marks. A crafted content-type key in an attacker-influenced OpenAPI description survives default validation without `--skip-validation`, breaks out of the attribute string and enclosing interface and namespace, and can introduce a top-level file class while leaving valid generated C#. A `[ModuleInitializer]` method in that class executes attacker code when the generated assembly is loaded at application startup, without requiring a call to the client. The behavior was verified with Refitter 2.0.0 and .NET 8. This issue is fixed in version 2.1.2.",
+     "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.2, OpenAPI `paths`-object keys are emitted verbatim into Refit route attributes such as `[Get(\"<path>\")]` without escaping quotation marks or restricting characters. An attacker-influenced single-line, slash-prefixed path survives default validation without `--skip-validation` and can close the attribute string, interface, and namespace while introducing a top-level file class and reopening the generated structure to keep valid C#. A `[ModuleInitializer]` method executes attacker code when an application compiles and loads the generated assembly at startup, even without calling the generated client. The enum and default value sinks are escaped and are not the vulnerable path-emission sink. The behavior was verified on Refitter 2.0.0 with .NET 8. This issue is fixed in version 2.1.2.",
+     "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.2, the header parameter name in `parameters[].name` with `in: header` is emitted verbatim into a Refit `[Header(\"<name>\")]` attribute string without escaping quotation marks. An attacker-influenced OpenAPI description can pass default validation without `--skip-validation` and break out from the parameter-list position by closing the parameter and method syntax, attribute, interface, and namespace. The generated file can remain valid C# while containing a top-level file class with a `[ModuleInitializer]` method, which executes attacker code when the compiled assembly is loaded at application startup, even if the client is never called. Query `AliasAs` and enum/default value sinks are escaped; this flaw is in header-name attribute-string emission. The behavior was verified with Refitter 2.0.0 and .NET 8. This issue is fixed in version 2.1.2.",
+     "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.1, the `refitter` dotnet tool invokes `NJsonSchema` with unsafe defaults for `$ref` resolution when generating Refit interfaces and contracts from attacker-controlled or attacker-influenced OpenAPI descriptions. Remote `http(s)` references cause requests from the developer or CI host and inline untrusted remote schema content into generated output. Absolute local file paths and relative `../` traversal outside the input directory also resolve and inline local content, permitting arbitrary local-file disclosure. The demonstrated chain stops at server-side request forgery, remote file inclusion, and local file inclusion, not code execution: Refit sets the base URL at runtime, enum values use verbatim-string doubling, and string defaults are escaped. This issue is fixed in version 2.1.1.",
      "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.2, OpenAPI `paths`-object keys are emitted verbatim into Refit route attributes such as `[Get(\"<path>\")]` without escaping quotation marks or restricting characters. An attacker-influenced single-line, slash-prefixed path survives default validation without `--skip-validation` and can close the attribute string, interface, and namespace while introducing a top-level file class and reopening the generated structure to keep valid C#. A `[ModuleInitializer]` method executes attacker code when an application compiles and loads the generated assembly at startup, even without calling the generated client. The enum and default value sinks are escaped and are not the vulnerable path-emission sink. The behavior was verified on Refitter 2.0.0 with .NET 8. This issue is fixed in version 2.1.2.",
      "Refitter is a tool for generating a C# REST API client using the Refit library. Prior to 2.1.2, the header parameter name in `parameters[].name` with `in: header` is emitted verbatim into a Refit `[Header(\"<name>\")]` attribute string without escaping quotation marks. An attacker-influenced OpenAPI description can pass default validation without `--skip-validation` and break out from the parameter-list position by closing the parameter and method syntax, attribute, interface, and namespace. The generated file can remain valid C# while containing a top-level file class with a `[ModuleInitializer]` method, which executes attacker code when the compiled assembly is loaded at application startup, even if the client is never called. Query `AliasAs` and enum/default value sinks are escaped; this flaw is in header-name attribute-string emission. The behavior was verified with Refitter 2.0.0 and .NET 8. This issue is fixed in version 2.1.2."
     ]
@@ -3164,7 +3293,7 @@
   {
    "id": "grp:Chrome:2026-10-28",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Google Chrome遠端執行漏洞",
    "sub": "49 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -3226,12 +3355,12 @@
    "cvss": 9.6,
    "published": "2026-10-27T23:16:58+00:00",
    "first_seen": "2026-10-27T23:47:47+00:00",
-   "updated": "2026-10-30T15:57:08+00:00",
+   "updated": "2026-11-02T18:24:15+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
-    "Google Chrome 156.0.8078.73 前版本多個元件存在漏洞，**攻擊者可透過特製網頁遠端執行任意程式碼**。",
-    "目前未發現遭利用情形。遠端攻擊者可誘使使用者開啟特製 HTML 網頁進行利用。"
+    "影響 156.0.8078.73 之前的 Google Chrome，遠端攻擊者可透過造假 HTML 頁面執行任意程式碼。",
+    "**目前漏洞尚未發現遭惡意利用或用於勒索軟體攻擊。**"
    ],
    "fix": "",
    "ai": true,
@@ -3480,7 +3609,8 @@
      "Out of bounds write in Editing in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Improper input validation in Command in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Missing authorization in Video in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
-     "Improper access control in Forms in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)"
+     "Improper access control in Forms in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Metrics in Google Chrome on on Mac prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
@@ -4939,7 +5069,7 @@
   {
    "id": "grp:Palo Alto:2026-10-21",
    "kind": "group",
-   "title": "PHP 記憶體管理安全漏洞",
+   "title": "PHP記憶體處理安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -4955,12 +5085,12 @@
    "cvss": 9.2,
    "published": "2026-10-21T14:17:09+00:00",
    "first_seen": "2026-10-27T14:33:51+00:00",
-   "updated": "2026-10-30T20:48:44+00:00",
+   "updated": "2026-11-02T18:24:15+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響 PHP 記憶體處理機制，在記憶體耗盡或全域狀態未正確重設時，**可能導致存取未初始化或已釋放的記憶體**。",
-    "後續請求可能讀取或依據該記憶體進行分支操作；目前未遭利用。"
+    "影響 PHP 相關產品，在記憶體不足處理或全域狀態重設異常時，可能讀取或存取未初始化或已釋放的記憶體。",
+    "**目前漏洞尚未發現遭惡意利用或用於勒索軟體攻擊。**"
    ],
    "fix": "",
    "ai": true,
@@ -4975,6 +5105,8 @@
      "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+     "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+     "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
      "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE)."
     ]
@@ -5801,7 +5933,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 企業軟體安全漏洞",
+   "title": "Oracle多款產品安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -6030,12 +6162,12 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-31T00:48:46+00:00",
+   "updated": "2026-11-02T18:24:15+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 與 Siebel CRM 指定版本，攻擊者可經由 HTTP **危害系統安全**。",
-    "目前未發現遭利用情形，攻擊者可經由網路發動攻擊。"
+    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 與 Siebel CRM 17.0-26.9 等版本，可遭未授權或低權限攻擊者入侵系統。",
+    "**目前漏洞尚未發現遭惡意利用或用於勒索軟體攻擊。**"
    ],
    "fix": "",
    "ai": true,
@@ -6399,7 +6531,18 @@
      "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Test Framework).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in PeopleSoft Enterprise PeopleTools, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all PeopleSoft Enterprise PeopleTools accessible data as well as  unauthorized access to critical data or complete access to all PeopleSoft Enterprise PeopleTools accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N).",
      "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: Oracle Weblogic Server Proxy Plug-in for Oracle HTTP Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle HTTP Server.  While the vulnerability is in Oracle HTTP Server, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle HTTP Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle HTTP Server accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N).",
      "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Test Framework).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in PeopleSoft Enterprise PeopleTools, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all PeopleSoft Enterprise PeopleTools accessible data as well as  unauthorized access to critical data or complete access to all PeopleSoft Enterprise PeopleTools accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N).",
-     "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: Oracle Weblogic Server Proxy Plug-in for Oracle HTTP Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle HTTP Server.  While the vulnerability is in Oracle HTTP Server, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle HTTP Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle HTTP Server accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N)."
+     "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: Oracle Weblogic Server Proxy Plug-in for Oracle HTTP Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle HTTP Server.  While the vulnerability is in Oracle HTTP Server, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle HTTP Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle HTTP Server accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Test Framework).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in PeopleSoft Enterprise PeopleTools, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all PeopleSoft Enterprise PeopleTools accessible data as well as  unauthorized access to critical data or complete access to all PeopleSoft Enterprise PeopleTools accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise JD Edwards EnterpriseOne Tools.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all JD Edwards EnterpriseOne Tools accessible data as well as  unauthorized access to critical data or complete access to all JD Edwards EnterpriseOne Tools accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Monitoring and Diagnostics SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where JD Edwards EnterpriseOne Tools executes to compromise JD Edwards EnterpriseOne Tools.  While the vulnerability is in JD Edwards EnterpriseOne Tools, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all JD Edwards EnterpriseOne Tools accessible data as well as  unauthorized access to critical data or complete access to all JD Edwards EnterpriseOne Tools accessible data. CVSS 3.1 Base Score 8.4 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows unauthenticated attacker with network access via SOAP to compromise JD Edwards EnterpriseOne Tools.  While the vulnerability is in JD Edwards EnterpriseOne Tools, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all JD Edwards EnterpriseOne Tools accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Web Runtime SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise JD Edwards EnterpriseOne Tools.  Successful attacks of this vulnerability can result in takeover of JD Edwards EnterpriseOne Tools. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise JD Edwards EnterpriseOne Tools.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all JD Edwards EnterpriseOne Tools accessible data as well as  unauthorized access to critical data or complete access to all JD Edwards EnterpriseOne Tools accessible data. CVSS 3.1 Base Score 8.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Monitoring and Diagnostics SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise JD Edwards EnterpriseOne Tools.  Successful attacks of this vulnerability can result in takeover of JD Edwards EnterpriseOne Tools. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Monitoring and Diagnostics SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise JD Edwards EnterpriseOne Tools.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all JD Edwards EnterpriseOne Tools accessible data as well as  unauthorized access to critical data or complete access to all JD Edwards EnterpriseOne Tools accessible data. CVSS 3.1 Base Score 8.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Object and Env Tech SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise JD Edwards EnterpriseOne Tools.  While the vulnerability is in JD Edwards EnterpriseOne Tools, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all JD Edwards EnterpriseOne Tools accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Monitoring and Diagnostics SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the JD Edwards EnterpriseOne Tools executes to compromise JD Edwards EnterpriseOne Tools.  While the vulnerability is in JD Edwards EnterpriseOne Tools, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all JD Edwards EnterpriseOne Tools accessible data as well as  unauthorized update, insert or delete access to some of JD Edwards EnterpriseOne Tools accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the JD Edwards EnterpriseOne Tools executes to compromise JD Edwards EnterpriseOne Tools.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all JD Edwards EnterpriseOne Tools accessible data as well as  unauthorized access to critical data or complete access to all JD Edwards EnterpriseOne Tools accessible data. CVSS 3.1 Base Score 8.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N)."
     ]
    }
   },
@@ -6839,6 +6982,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-02T07:41:10+00:00",
- "kev_last": "2026-11-02T07:41:10+00:00"
+ "nvd_last": "2026-11-02T18:23:54+00:00",
+ "kev_last": "2026-11-02T18:23:54+00:00"
 }
