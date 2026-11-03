@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T18:23:54+00:00",
+ "generated": "2026-11-03T01:36:08+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "items": [
    {
-    "title": "本單位：修補 SPMP 權限繞過漏洞",
-    "desc": "SPMP 存在 XSS 與存取控制瑕疵，低權限使用者可繞過授權並修改 MFA 設定。"
+    "title": "修補 Linux 核心漏洞",
+    "desc": "修復 XFS 配額與 SCSI 等漏洞，目前尚未發現遭惡意利用。"
    },
    {
-    "title": "本單位：修補 Blender 及 pgAdmin",
-    "desc": "Blender 存在堆積緩衝區溢位漏洞，pgAdmin 含路徑驗證瑕疵，目前未遭利用。"
+    "title": "升級 Burrito 工具",
+    "desc": "0.13.0 前版本具驗證漏洞，攻擊者可能觸發並洩露變更內容。"
    },
    {
-    "title": "本單位：更新 Refitter 至安全版本",
-    "desc": ".NET 工具 Refitter 處理 OpenAPI 缺乏跳脫保護，影響 2.1.1 與 2.1.2 前版本。"
+    "title": "修補 hackney 憑證漏洞",
+    "desc": "1.24.0 至 4.9.0 以前版本存在憑證驗證漏洞，目前未發現遭利用。"
    },
    {
-    "title": "修補 Ivanti Connect Secure 漏洞",
-    "desc": "**此漏洞目前已被證實遭利用**，遠端或本地攻擊者可上傳檔案或提升權限。"
+    "title": "修補 GitLab 重大漏洞",
+    "desc": "Alpine Linux 未修補 CVE-2026-97229 遭攻擊並重建伺服器。"
    },
    {
-    "title": "更新 Synology DSM 系統",
-    "desc": "群暉 NAS 設備遭 C3RB3R 勒索軟體利用舊漏洞攻擊，原廠呼籲用戶盡速更新 DSM。"
+    "title": "修補 konflux-ci 漏洞",
+    "desc": "UI 代理停用 TLS 驗證，**相鄰網路攻擊者可擷取憑證並取得叢集完整控制權**。"
    },
    {
-    "title": "修補 Veeam 遠端執行程式碼漏洞",
-    "desc": "Veeam Management Pack 服務伺服器存在漏洞，未授權者可遠端執行程式碼。"
+    "title": "因應第三方廠商資安事件",
+    "desc": "91APP與Good Smile資料庫遭駭個資恐外洩，鑫傳與台數科系統遭加密。"
    }
   ],
   "ai": true
@@ -361,6 +361,99 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:da03ee2a5039",
+   "kind": "news",
+   "title": "荷蘭資安業者Hadrian獲4,000萬美元投資，擴展AI代理滲透測試業務",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-03T01:36:28+00:00",
+   "first_seen": "2026-11-03T01:36:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180136",
+   "pts": [
+    "**荷蘭資安業者 Hadrian 宣布完成 4,000 萬美元 B 輪募資**，累計募資金額達 6,500 萬美元。",
+    "資金將投入歐洲、中東、非洲及美國的業務擴展，並增加工程與研究投入發展 AI 代理滲透測試。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:76baf2a5ecfe",
+   "kind": "news",
+   "title": "PQC導入TLS面臨效能挑戰，交握延遲增加、防火牆相容性問題浮現",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-03T01:36:28+00:00",
+   "first_seen": "2026-11-03T01:36:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180121",
+   "pts": [
+    "隨著後量子密碼學（Post-Quantum Cryptography，PQC）逐步應用於TLS連線，交握期間需要傳輸的資料量也可能增加，進而延長連線建立時間，甚至影響既有網路設備的正常運作。資安業者Red Sift近期彙整Google、Cloudflare及多項學術研究，分析PQC在實際網路環境中的"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:186dd0a90926",
+   "kind": "news",
+   "title": "2026年第3季DDoS攻擊次數年增208%，短時間攻擊考驗企業防禦能力",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-03T01:36:28+00:00",
+   "first_seen": "2026-11-03T01:36:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180103",
+   "pts": [
+    "網路服務與資安業者Cloudflare公布2026年第3季分散式阻斷服務（DDoS）攻擊趨勢，該公司在旗下全球網路攔截1,820萬次網路層DDoS攻擊，較去年同期增加208%，平均每小時約8,226次。其中96%的攻擊持續不到10分鐘，98%的攻擊流量速率低於1Gbps。不過，超過1Tbps的超大流"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:ce6ebc13fc13",
+   "kind": "news",
+   "title": "思科開源AI代理偵測工具Quarry，可分析多步驟操作找出可疑行為",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-03T01:36:28+00:00",
+   "first_seen": "2026-11-03T01:36:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180074",
+   "pts": [
+    "網路設備與資安業者思科（Cisco）開源AI代理行為偵測工具Project Quarry，可分析AI代理執行任務期間的工具呼叫、工具執行結果及各項操作的先後順序，協助資安團隊辨識可疑行為。"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:3309da34425f",
    "kind": "news",
@@ -818,7 +911,7 @@
   {
    "id": "grp:.NET:2026-10-31",
    "kind": "group",
-   "title": "Refitter工具屬性解析漏洞",
+   "title": "Refitter工具安全漏洞",
    "sub": "4 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -838,16 +931,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63184",
    "pts": [
-    "**Refitter 2.1.1與2.1.2以前版本處理OpenAPI描述檔及標頭引數未妥善轉義引號，存在安全性漏洞**。",
-    "影響漏洞包含CVE-2026-63184、CVE-2026-63344、CVE-2026-63345與CVE-2026-63346，目前未遭利用。"
+    "影響 Refitter 2.1.1 及 2.1.2 以前版本。解析 OpenAPI 時因不安全預設值或引號未轉義，可能導致安全漏洞與屬性注入。",
+    "**目前尚未發現漏洞遭利用**。攻擊者需透過可控制或影響的 OpenAPI 描述檔誘發漏洞。"
    ],
-   "fix": "",
+   "fix": "升級至 Refitter 2.1.2 以上版本",
    "ai": true
   },
   {
    "id": "grp:Windows Server:2026-10-31",
    "kind": "group",
-   "title": "Blender 與 pgAdmin 漏洞",
+   "title": "Blender與pgAdmin漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.5",
    "sev": "high",
    "kev": false,
@@ -865,10 +958,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
-    "Blender 存在堆積緩衝區溢位漏洞，**攻擊者可透過特製 .blend 檔進行跨界寫入**；pgAdmin 亦含路徑驗證瑕疵。",
-    "漏洞影響 Blender 與 pgAdmin 4，目前尚未發現遭惡意利用的情形。"
+    "影響 Blender 4.5.15 與 5.2.3 以前版本及 pgAdmin 4。包含堆疊緩衝區溢位與二進位路徑驗證缺陷。",
+    "**目前尚未發現漏洞遭利用**。攻擊者可利用特製 .blend 檔案引發越界寫入，或於 pgAdmin 4 伺服器模式利用共享路徑。"
    ],
-   "fix": "Blender 升級至 4.5.15、5.2.3 以上版本。",
+   "fix": "升級至 Blender 4.5.15、5.2.3 以上版本",
    "ai": true
   },
   {
@@ -3494,6 +3587,32 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-115693",
+   "kind": "cve",
+   "title": "hackney憑證驗證漏洞",
+   "sub": "CVE-2026-115693 · CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [
+    "CVE-2026-115693"
+   ],
+   "cvss": 9.1,
+   "published": "2026-10-26T14:16:31+00:00",
+   "first_seen": "2026-11-03T01:36:25+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115693",
+   "pts": [
+    "影響 hackney 1.24.0 至 4.9.0 以前版本。hackney_ssl 存在憑證驗證漏洞，攻擊者可藉由公開信任根憑證冒充伺服器。",
+    "**目前尚未發現漏洞遭利用**。攻擊條件為攻擊者需擁有經固定主機名稱的公開信任憑證。"
+   ],
+   "fix": "升級至 4.9.0 以上版本",
+   "ai": true
+  },
+  {
    "id": "kevgrp:PHP:2026-10-26",
    "kind": "group",
    "title": "PHP 遠端執行程式碼漏洞",
@@ -3872,8 +3991,8 @@
   {
    "id": "grp:Cisco:2026-10-22",
    "kind": "group",
-   "title": "Cisco 與 Splunk 安全漏洞",
-   "sub": "7 個 CVE · 最高 CVSS 9.8",
+   "title": "Cisco與Splunk安全漏洞",
+   "sub": "9 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -3884,9 +4003,11 @@
     "CVE-2026-76291",
     "CVE-2026-76298",
     "CVE-2026-76301",
+    "CVE-2026-76407",
     "CVE-2026-76408",
     "CVE-2026-76473",
     "CVE-2026-76527",
+    "CVE-2026-76528",
     "CVE-2026-76529"
    ],
    "cvss": 9.8,
@@ -3895,10 +4016,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76291",
    "pts": [
-    "影響 Cisco 多款通訊產品及 Splunk Enterprise 部分舊版本，**低權限使用者可推導資料庫密碼並執行任意指令**。",
-    "亦有漏洞可繞過排程搜尋安全機制以執行風險指令；目前未遭利用。"
+    "影響 Cisco 相關產品與 Splunk Enterprise 10.4.4、10.2.8、10.0.11、9.4.16 以前版本，可能導致執行任意指令。",
+    "**目前尚未發現漏洞遭利用**。原廠已進行內部安全審查並推出軟體強化版本修補漏洞。"
    ],
-   "fix": "Splunk Enterprise 升級至 10.4.4、10.2.8、10.0.11、9.4.16 以上版本；Cisco 套用軟體強化版本。",
+   "fix": "升級至 Splunk Enterprise 10.4.4、10.2.8、10.0.11、9.4.16 以上版本",
    "ai": true
   },
   {
@@ -4610,8 +4731,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 與 Siebel CRM 17.0-26.9 等版本，可遭未授權或低權限攻擊者入侵系統。",
-    "**目前漏洞尚未發現遭惡意利用或用於勒索軟體攻擊。**"
+    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9，攻擊者可經由 HTTP 存取入侵系統。",
+    "**CVSS 評分為 10.0 且目前未遭利用**。部分漏洞可被未經身份驗證或低權限攻擊者輕易利用。"
    ],
    "fix": "",
    "ai": true
