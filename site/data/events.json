@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T09:34:16+00:00",
+ "generated": "2026-11-03T17:51:22+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,125 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:b4860537c65e",
+   "kind": "news",
+   "title": "AI應用開發平臺Langflow修補2項重大漏洞，攻擊者可繞過身分驗證或遠端執行程式碼",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-03T17:51:47+00:00",
+   "first_seen": "2026-11-03T17:51:47+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180183",
+   "pts": [
+    "IBM指出開源AI工作流程開發平臺Langflow存在多項安全漏洞，其中兩項重大漏洞的CVSS風險評分均達9.8分，攻擊者可能從遠端繞過身分驗證，或在不需登入的情況下執行任意程式碼。受影響版本為Langflow OSS 1.0.0至1.12.8，官方已推出1.13.0修補。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:939c9d40d7ac",
+   "kind": "news",
+   "title": "Hugging Face遭惡意模型濫用，31個儲存庫散布挖礦程式與後門",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-03T17:51:47+00:00",
+   "first_seen": "2026-11-03T17:51:47+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180184",
+   "pts": [
+    "資安公司Pluto Security揭露名為Load/Mine的惡意軟體活動，攻擊者利用AI模型分享平臺Hugging Face散布偽裝成Qwen2測試模型的惡意程式。研究人員追蹤到分布於7個Hugging Face帳號的31個惡意模型儲存庫，另有13個相關模型，累計下載次數達32,376次。這波攻"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:7cae55cef407",
+   "kind": "news",
+   "title": "【資安日報】11月3日，歐洲7國逾115家超市冷凍設備遭駭客操控，遠端調高溫度導致食品損失",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-03T17:51:47+00:00",
+   "first_seen": "2026-11-03T17:51:53+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180175",
+   "pts": [
+    "本日新聞焦點 ● 歐洲7國逾115家超市冷藏冷凍設備遭駭，食品因溫控異常受損 ● 西班牙Amadeus遭駭波及日本、韓國、馬來西亞至少12家航空公司 ● 駭客竄改第三方監控業者DNS紀錄，竊走Polymarket用戶270萬美元"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-109593",
+   "kind": "cve",
+   "title": "SonicWall 漏洞 CVE-2026-109593",
+   "sub": "CVE-2026-109593 · CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SonicWall"
+   ],
+   "cves": [
+    "CVE-2026-109593"
+   ],
+   "cvss": 9.1,
+   "published": "2026-11-03T17:17:53+00:00",
+   "first_seen": "2026-11-03T17:51:44+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109593",
+   "pts": [
+    "An unauthenticated attacker with network access to the SonicWall GMS 9.5.2 and earlier versions may be able to read internal GMS files, pote"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-119179",
+   "kind": "cve",
+   "title": "Node.js 漏洞 CVE-2026-119179",
+   "sub": "CVE-2026-119179 · CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-119179"
+   ],
+   "cvss": 8.3,
+   "published": "2026-11-03T14:17:33+00:00",
+   "first_seen": "2026-11-03T17:51:44+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119179",
+   "pts": [
+    "A flaw in the connection management layer of the MongoDB Node.js driver can leave a pooled network connection in the pool for reuse while da"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:eba49409be7f",
    "kind": "news",
@@ -800,10 +919,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180134",
    "pts": [
-    "本日新聞焦點 ● Binance遭竊63億美元加密貨幣，創最大竊案，調查指向北韓駭客 ● 串連PHP2Shell與Linux核心漏洞，中國駭客取得24臺防火牆root權限 ● Alpine Linux遭GitLab重大漏洞攻擊，重建基礎設施防範供應鏈風險"
+    "**Binance遭竊約63億美元加密貨幣**創史上最大竊案，調查指向北韓駭客。",
+    "中國駭客串連PHP2Shell與Linux核心漏洞取得24臺防火牆root權限，Alpine Linux亦因GitLab漏洞重建基礎設施。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:025d73ec420d",
@@ -1214,11 +1334,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
-    "影響 Blender 4.5.15 與 5.2.3 以前版本及 pgAdmin 4。包含堆疊緩衝區溢位與二進位路徑驗證缺陷。",
-    "**目前尚未發現漏洞遭利用**。攻擊者可利用特製 .blend 檔案引發越界寫入，或於 pgAdmin 4 伺服器模式利用共享路徑。"
+    "同日公布 2 個漏洞，最高 CVSS 8.5。",
+    "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-"
    ],
-   "fix": "升級至 Blender 4.5.15、5.2.3 以上版本",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "tw:796541ef7301",
@@ -2332,11 +2452,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118648",
    "pts": [
-    "影響 n8n 1.123.85、2.43.5 及 2.44.1 以前版本，包含儲存型 XSS 與專案存取檢查繞過漏洞。",
-    "**目前尚未發現遭實際利用**，需具備建立或執行工作流權限的驗證使用者方可觸發。"
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
+    "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a stored cross-site scripting vulnerability because some webhook r"
    ],
-   "fix": "升級至 n8n 1.123.85、2.43.5、2.44.1 或以上版本。",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2026-84725",
@@ -4987,11 +5107,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9，攻擊者可經由 HTTP 存取入侵系統。",
-    "**CVSS 評分為 10.0 且目前未遭利用**。部分漏洞可被未經身份驗證或低權限攻擊者輕易利用。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-10-20",
@@ -5021,6 +5141,31 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-107366",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-107366",
+   "sub": "CVE-2026-107366 · CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-107366"
+   ],
+   "cvss": 8.3,
+   "published": "2026-10-20T00:17:25+00:00",
+   "first_seen": "2026-11-03T17:51:44+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107366",
+   "pts": [
+    "IBM Langflow OSS 1.0.0 through 1.12.4 contains three message endpoints that perform no ownership verification. Any authenticated user can bu"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:Linux:2026-10-19",
