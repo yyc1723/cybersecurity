@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T17:51:22+00:00",
+ "generated": "2026-11-03T23:24:36+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "items": [
    {
-    "title": "修補 Linux 核心漏洞",
-    "desc": "修復 XFS 配額與 SCSI 等漏洞，目前尚未發現遭惡意利用。"
+    "title": "處理：SonicWall GMS 資訊洩漏漏洞",
+    "desc": "目前未遭利用。具備網路存取權限的未驗證攻擊者即可遠端存取 GMS 內部檔案。"
    },
    {
-    "title": "升級 Burrito 工具",
-    "desc": "0.13.0 前版本具驗證漏洞，攻擊者可能觸發並洩露變更內容。"
+    "title": "處理：WordPress 外掛程式碼注入漏洞",
+    "desc": "目前未遭利用。觸發條件需管理員啟用特定設定，或伺服器環境缺乏 OpenSSL 函式導致降級解密。"
    },
    {
-    "title": "修補 hackney 憑證漏洞",
-    "desc": "1.24.0 至 4.9.0 以前版本存在憑證驗證漏洞，目前未發現遭利用。"
+    "title": "處理：hackney憑證驗證漏洞",
+    "desc": "目前尚未發現漏洞遭利用。攻擊條件為攻擊者需擁有經固定主機名稱的公開信任憑證。"
    },
    {
-    "title": "修補 GitLab 重大漏洞",
-    "desc": "Alpine Linux 未修補 CVE-2026-97229 遭攻擊並重建伺服器。"
+    "title": "處理：Puppet Server 安全漏洞",
+    "desc": "目前未遭利用。攻擊者需持有 CA 簽署之憑證，透過提交特製報告或利用憑證名稱比對漏洞進行冒充。"
    },
    {
-    "title": "修補 konflux-ci 漏洞",
-    "desc": "UI 代理停用 TLS 驗證，**相鄰網路攻擊者可擷取憑證並取得叢集完整控制權**。"
+    "title": "處理：Chrome 遠端執行程式碼漏洞",
+    "desc": "目前未遭利用。遠端攻擊者可透過社交工程或誘導使用者存取特製網頁觸發漏洞。"
    },
    {
-    "title": "因應第三方廠商資安事件",
-    "desc": "91APP與Good Smile資料庫遭駭個資恐外洩，鑫傳與台數科系統遭加密。"
+    "title": "處理：AI應用開發平臺Langflow修補2項重大漏洞，攻擊",
+    "desc": "官方已推出 1.13.0 版本修補相關漏洞。"
    }
   ],
   "ai": true
@@ -361,6 +361,152 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "grp:Chrome:2026-11-04",
+   "kind": "group",
+   "title": "Chrome 遠端執行程式碼漏洞",
+   "sub": "94 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-120931",
+    "CVE-2026-121030",
+    "CVE-2026-121034",
+    "CVE-2026-121035",
+    "CVE-2026-121036",
+    "CVE-2026-121037",
+    "CVE-2026-121044",
+    "CVE-2026-121047",
+    "CVE-2026-121048",
+    "CVE-2026-121052",
+    "CVE-2026-121057",
+    "CVE-2026-121060",
+    "CVE-2026-121061",
+    "CVE-2026-121064",
+    "CVE-2026-121068",
+    "CVE-2026-121069",
+    "CVE-2026-121070",
+    "CVE-2026-121071",
+    "CVE-2026-121073",
+    "CVE-2026-121074",
+    "CVE-2026-121076",
+    "CVE-2026-121077",
+    "CVE-2026-121078",
+    "CVE-2026-121079",
+    "CVE-2026-121082",
+    "CVE-2026-121083",
+    "CVE-2026-121084",
+    "CVE-2026-121086",
+    "CVE-2026-121089",
+    "CVE-2026-121090",
+    "CVE-2026-121092",
+    "CVE-2026-121094",
+    "CVE-2026-121097",
+    "CVE-2026-121098",
+    "CVE-2026-121100",
+    "CVE-2026-121104",
+    "CVE-2026-121112",
+    "CVE-2026-121113",
+    "CVE-2026-121114",
+    "CVE-2026-121117",
+    "CVE-2026-121118",
+    "CVE-2026-121119",
+    "CVE-2026-121123",
+    "CVE-2026-121124",
+    "CVE-2026-121126",
+    "CVE-2026-121127",
+    "CVE-2026-121128",
+    "CVE-2026-121129",
+    "CVE-2026-121131",
+    "CVE-2026-121133",
+    "CVE-2026-121137",
+    "CVE-2026-121140",
+    "CVE-2026-121148",
+    "CVE-2026-121156",
+    "CVE-2026-121163",
+    "CVE-2026-121166",
+    "CVE-2026-121168",
+    "CVE-2026-121178",
+    "CVE-2026-121179",
+    "CVE-2026-121180",
+    "CVE-2026-121181",
+    "CVE-2026-121182",
+    "CVE-2026-121183",
+    "CVE-2026-121184",
+    "CVE-2026-121185",
+    "CVE-2026-121188",
+    "CVE-2026-121189",
+    "CVE-2026-121200",
+    "CVE-2026-121201",
+    "CVE-2026-121202",
+    "CVE-2026-121203",
+    "CVE-2026-121208",
+    "CVE-2026-121210",
+    "CVE-2026-121211",
+    "CVE-2026-121214",
+    "CVE-2026-121217",
+    "CVE-2026-121218",
+    "CVE-2026-121219",
+    "CVE-2026-121221",
+    "CVE-2026-121224",
+    "CVE-2026-121226",
+    "CVE-2026-121228",
+    "CVE-2026-121229",
+    "CVE-2026-121230",
+    "CVE-2026-121233",
+    "CVE-2026-121234",
+    "CVE-2026-121238",
+    "CVE-2026-121241",
+    "CVE-2026-121246",
+    "CVE-2026-121247",
+    "CVE-2026-121249",
+    "CVE-2026-121250",
+    "CVE-2026-121256",
+    "CVE-2026-121257"
+   ],
+   "cvss": 9.6,
+   "published": "2026-11-03T21:17:06+00:00",
+   "first_seen": "2026-11-03T23:25:01+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
+   "pts": [
+    "影響 157.0.8103.38 之前的 Google Chrome。遠端攻擊者可經由特製 HTML 網頁**執行任意程式碼**。",
+    "目前未遭利用。遠端攻擊者可透過社交工程或誘導使用者存取特製網頁觸發漏洞。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:憑證/CA:2026-11-04",
+   "kind": "group",
+   "title": "Puppet Server 安全漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.4",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [
+    "CVE-2026-115731",
+    "CVE-2026-115732"
+   ],
+   "cvss": 9.4,
+   "published": "2026-11-03T21:17:01+00:00",
+   "first_seen": "2026-11-03T23:25:01+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
+   "pts": [
+    "影響受影響版本中由 Puppet Server 使用的 Puppet 及 trapperkeeper-authorization。持有憑證者可**在伺服器執行任意程式碼**。",
+    "目前未遭利用。攻擊者需持有 CA 簽署之憑證，透過提交特製報告或利用憑證名稱比對漏洞進行冒充。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:b4860537c65e",
    "kind": "news",
@@ -379,10 +525,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180183",
    "pts": [
-    "IBM指出開源AI工作流程開發平臺Langflow存在多項安全漏洞，其中兩項重大漏洞的CVSS風險評分均達9.8分，攻擊者可能從遠端繞過身分驗證，或在不需登入的情況下執行任意程式碼。受影響版本為Langflow OSS 1.0.0至1.12.8，官方已推出1.13.0修補。"
+    "Langflow OSS 1.0.0 至 1.12.8 存在兩項 CVSS 9.8 重大漏洞，**攻擊者可遠端繞過身分驗證或未登入執行任意程式碼**。",
+    "官方已推出 1.13.0 版本修補相關漏洞。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:939c9d40d7ac",
@@ -402,10 +549,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180184",
    "pts": [
-    "資安公司Pluto Security揭露名為Load/Mine的惡意軟體活動，攻擊者利用AI模型分享平臺Hugging Face散布偽裝成Qwen2測試模型的惡意程式。研究人員追蹤到分布於7個Hugging Face帳號的31個惡意模型儲存庫，另有13個相關模型，累計下載次數達32,376次。這波攻"
+    "駭客利用 Hugging Face 平臺上 31 個儲存庫散布偽裝成 Qwen2 測試模型的 Load/Mine 惡意程式。",
+    "攻擊濫用 **trust_remote_code=True** 設定，累計下載達 32,376 次。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:7cae55cef407",
@@ -433,7 +581,7 @@
   {
    "id": "CVE-2026-109593",
    "kind": "cve",
-   "title": "SonicWall 漏洞 CVE-2026-109593",
+   "title": "SonicWall GMS 資訊洩漏漏洞",
    "sub": "CVE-2026-109593 · CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -450,10 +598,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109593",
    "pts": [
-    "An unauthenticated attacker with network access to the SonicWall GMS 9.5.2 and earlier versions may be able to read internal GMS files, pote"
+    "影響 SonicWall GMS 9.5.2 及先前版本。未經身份驗證的遠端攻擊者可讀取內部檔案並**存取敏感資訊**。",
+    "目前未遭利用。具備網路存取權限的未驗證攻擊者即可遠端存取 GMS 內部檔案。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-119179",
@@ -481,6 +630,33 @@
    "ai": false
   },
   {
+   "id": "grp:Linux:2026-11-03",
+   "kind": "group",
+   "title": "Linux 核心 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-99246",
+    "CVE-2026-99270"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-03T12:17:31+00:00",
+   "first_seen": "2026-11-03T23:25:01+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99246",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.1。",
+    "In the Linux kernel, the following vulnerability has been resolved: tipc: protect node reset trace dump with node lock The tipc_node_reset_l"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:eba49409be7f",
    "kind": "news",
    "title": "甫修補的WordPress漏洞9分鐘後即出現嘗試利用活動",
@@ -498,10 +674,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180182",
    "pts": [
-    "上週WordPress開發團隊發布7.1.4版安全更新，總共修補22個資安弱點，然而有資安公司發現，駭客在開發團隊公布相關資訊後，不到10分鐘就試圖利用其中部分的弱點。"
+    "WordPress 發布 7.1.4 版安全更新修補 22 個弱點，**公告後 9 分鐘內即遭嘗試利用**。",
+    "資安公司發現駭客在開發團隊公布資訊後，快速針對部分弱點展開攻擊活動。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:9ace1568c4f6",
@@ -683,10 +860,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180165",
    "pts": [
-    "10月上旬法國數百家超市冷凍冷藏控制系統遭網路攻擊，駭客鎖定Danfoss控制系統遠端啟動除霜功能，造成大量食品報廢，如今類似的攻擊事故在其他歐洲國家蔓延。"
+    "法國與歐洲 7 國逾 115 家超市冷凍冷藏控制系統遭網路攻擊，駭客鎖定 Danfoss 控制系統遠端啟動除霜。",
+    "攻擊者**遠端調高溫度導致大量食品報廢**，類似事故正於其他歐洲國家蔓延。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:63ab03093362",
@@ -714,7 +892,7 @@
   {
    "id": "CVE-2026-120534",
    "kind": "cve",
-   "title": "OpenSSL 漏洞 CVE-2026-120534",
+   "title": "WordPress 外掛程式碼注入漏洞",
    "sub": "CVE-2026-120534 · CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -731,10 +909,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120534",
    "pts": [
-    "The Advanced Custom Fields: Extended PRO plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, "
+    "影響 0.9.2.6 及先前版本的 Advanced Custom Fields: Extended PRO 外掛。未驗證攻擊者可**呼叫任意 WordPress 函式**。",
+    "目前未遭利用。觸發條件需管理員啟用特定設定，或伺服器環境缺乏 OpenSSL 函式導致降級解密。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:da03ee2a5039",
@@ -1316,7 +1495,7 @@
   {
    "id": "grp:Windows Server:2026-10-31",
    "kind": "group",
-   "title": "Blender與pgAdmin漏洞",
+   "title": "Blender與pgAdmin資安漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.5",
    "sev": "high",
    "kev": false,
@@ -1334,11 +1513,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.5。",
-    "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-"
+    "Blender 4.5.15 與 5.2.3 以前版本存在堆疊緩衝區溢位漏洞；pgAdmin 4 存在二進位路徑驗證缺乏限制之弱點。",
+    "特製檔案或已驗證使用者可觸發越界寫入或存取共享目錄。**目前未遭利用**。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級 Blender 至 4.5.15 或 5.2.3 以上版本。",
+   "ai": true
   },
   {
    "id": "tw:796541ef7301",
@@ -1935,7 +2114,7 @@
   {
    "id": "grp:Chrome:2026-10-30",
    "kind": "group",
-   "title": "Chrome 與套件安全漏洞",
+   "title": "Chrome 與組件遠端執行漏洞",
    "sub": "19 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1970,10 +2149,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119118",
    "pts": [
-    "影響 156.0.8078.79 前之 Google Chrome 及 0.9.5 前之 Crawl4AI，攻擊者可藉特製頁面**執行任意程式碼**或讀取 Cookie。",
-    "目前未發現遭利用情形。"
+    "影響 156.0.8078.79 前的 Chrome 與 0.9.5 前的 Crawl4AI。攻擊者可**執行任意程式碼**或攔截爬蟲流量。",
+    "目前未遭利用。攻擊者可透過中間人攻擊、DNS 控制或誘導使用者存取特製 HTML 網頁發動攻擊。"
    ],
-   "fix": "升級至 Google Chrome 156.0.8078.79 以上版本與 Crawl4AI 0.9.5 以上版本。",
+   "fix": "",
    "ai": true
   },
   {
@@ -2434,7 +2613,7 @@
   {
    "id": "grp:AI 平台:2026-10-29",
    "kind": "group",
-   "title": "n8n 跨網站指令碼與邏輯漏洞",
+   "title": "n8n 跨站腳本與權限繞過漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -2452,11 +2631,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118648",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.7。",
-    "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a stored cross-site scripting vulnerability because some webhook r"
+    "n8n 1.123.85、2.43.5 及 2.44.1 以前版本存在儲存型 XSS 漏洞，且工作流 ID 快取邏輯可被繞過。",
+    "具權限之已驗證使用者可**利用特製 ID 繞過檢查並列出資料表**。目前未遭利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級 n8n 至 1.123.85、2.43.5、2.44.1 以上版本。",
+   "ai": true
   },
   {
    "id": "CVE-2026-84725",
@@ -3181,7 +3360,7 @@
   {
    "id": "grp:Windows Server:2026-10-28",
    "kind": "group",
-   "title": "Chrome Windows 遠端執行漏洞",
+   "title": "Win 版 Chrome 遠端執行漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -3200,8 +3379,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118310",
    "pts": [
-    "Windows 版 Google Chrome 156.0.8078.73 前版本存在漏洞，**攻擊者可透過特製 HTML 頁面遠端執行任意程式碼**。",
-    "目前未發現遭利用情形。遠端攻擊者可誘使使用者造訪特製 HTML 頁面以觸發漏洞。"
+    "影響 Windows 平台上 156.0.8078.73 之前的 Google Chrome。遠端攻擊者可**執行任意程式碼**。",
+    "目前未遭利用。攻擊者需透過社交工程誘導使用者存取特製 HTML 網頁以觸發漏洞。"
    ],
    "fix": "",
    "ai": true
@@ -3209,7 +3388,7 @@
   {
    "id": "grp:Chrome:2026-10-28",
    "kind": "group",
-   "title": "Google Chrome遠端執行漏洞",
+   "title": "Chrome 遠端執行程式碼漏洞",
    "sub": "49 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -3274,10 +3453,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
-    "影響 156.0.8078.73 之前的 Google Chrome，遠端攻擊者可透過造假 HTML 頁面執行任意程式碼。",
-    "**目前漏洞尚未發現遭惡意利用或用於勒索軟體攻擊。**"
+    "影響 156.0.8078.73 之前的 Google Chrome（含 Android 與 Windows），攻擊者可經由造假 HTML 頁面執行任意程式碼。",
+    "**目前尚未遭攻擊利用**，遠端攻擊者需誘使使用者開啟精心製作的 HTML 頁面發動攻擊。"
    ],
-   "fix": "",
+   "fix": "升級至 156.0.8078.73 或更新版本。",
    "ai": true
   },
   {
@@ -4429,7 +4608,7 @@
   {
    "id": "grp:AI 平台:2026-10-21",
    "kind": "group",
-   "title": "vLLM 多重安全漏洞",
+   "title": "vLLM 平台資源消耗漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -4448,10 +4627,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114052",
    "pts": [
-    "影響 vLLM 0.24.0 至 0.31.0 前版本，可能導致記憶體耗盡及載入動態處理器程式碼。",
-    "**目前尚未發現漏洞遭惡意利用**，未經身分驗證的遠端攻擊者可發送特製請求引發資源消耗。"
+    "影響 vLLM 0.24.0 至 0.31.0 之間等版本，遠端攻擊者可造成記憶體耗盡、資源過度消耗或控制動態處理器程式碼修訂版本。",
+    "**目前尚未遭攻擊利用**，未經身分驗證的遠端使用者可透過傳送特定 mm_processor_kwargs 參數發動攻擊。"
    ],
-   "fix": "",
+   "fix": "升級至 0.31.0 或更新版本。",
    "ai": true
   },
   {
@@ -4483,7 +4662,7 @@
   {
    "id": "grp:Windows Server:2026-10-21",
    "kind": "group",
-   "title": "Chrome Windows 遠端執行漏洞",
+   "title": "Chrome Windows遠端執行漏洞",
    "sub": "11 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -4511,17 +4690,17 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113011",
    "pts": [
-    "Windows 版 Google Chrome 156.0.8078.47 前版本存在漏洞，**攻擊者可經由特製 HTML 頁面執行任意程式碼**。",
-    "CVSS 評分為 9.6。目前尚未遭利用，亦無勒索軟體利用情形。"
+    "影響 156.0.8078.47 之前的 Windows 版 Google Chrome，攻擊者可經由精心製作的 HTML 頁面於沙盒內外執行任意程式碼。",
+    "**目前尚未遭攻擊利用**，需要遠端攻擊者誘使使用者存取特定的 HTML 網頁。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "fix": "升級至 156.0.8078.47 或更新版本。",
    "ai": true
   },
   {
    "id": "grp:Chrome:2026-10-21",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
-   "sub": "292 個 CVE · 最高 CVSS 9.6",
+   "title": "Chrome 記憶體損壞漏洞",
+   "sub": "293 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -4714,6 +4893,7 @@
     "CVE-2026-113207",
     "CVE-2026-113208",
     "CVE-2026-113211",
+    "CVE-2026-113212",
     "CVE-2026-113213",
     "CVE-2026-113214",
     "CVE-2026-113215",
@@ -4828,10 +5008,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112992",
    "pts": [
-    "影響 156.0.8078.47 前之 Google Chrome，遠端攻擊者可透過特製 HTML 頁面**執行任意程式碼**。",
-    "目前未發現遭利用情形。"
+    "影響 156.0.8078.47 之前的 Google Chrome，攻擊者可利用 Canvas、Input 等元件漏洞於沙盒內外執行任意程式碼。",
+    "**目前尚未遭攻擊利用**，攻擊者可透過誘使使用者瀏覽惡意 HTML 頁面進行遠端攻擊。"
    ],
-   "fix": "升級至 Google Chrome 156.0.8078.47 以上版本。",
+   "fix": "升級至 156.0.8078.47 或更新版本。",
    "ai": true
   },
   {
@@ -4875,7 +5055,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle多款產品安全漏洞",
+   "title": "Oracle PeopleSoft多項漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -5107,11 +5287,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 Oracle PeopleSoft (8.61-8.63) 與 Siebel CRM (17.0-26.9 等)，攻擊者可透過 HTTP 或實體網路區段危害系統。",
+    "**目前尚未遭攻擊利用**，部分漏洞可由未經身分驗證或低權限攻擊者發動遠端攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
@@ -5145,7 +5325,7 @@
   {
    "id": "CVE-2026-107366",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-107366",
+   "title": "IBM Langflow 存取控制漏洞",
    "sub": "CVE-2026-107366 · CVSS 8.3",
    "sev": "high",
    "kev": false,
@@ -5162,10 +5342,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107366",
    "pts": [
-    "IBM Langflow OSS 1.0.0 through 1.12.4 contains three message endpoints that perform no ownership verification. Any authenticated user can bu"
+    "IBM Langflow OSS 1.0.0 至 1.12.4 版訊息端點缺乏擁有權驗證，已驗證使用者可刪除他人訊息或注入惡意提示。",
+    "攻擊者可重新指定 Session ID 以**挾持整個對話階段**。目前未遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Linux:2026-10-19",
