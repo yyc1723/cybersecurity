@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T15:27:12+00:00",
+ "generated": "2026-11-04T21:53:37+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,32 @@
  },
  "events": [
   {
+   "id": "CVE-2026-92704",
+   "kind": "cve",
+   "title": "SharpEmu 跨站請求漏洞",
+   "sub": "CVE-2026-92704 · CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-92704"
+   ],
+   "cvss": 8.3,
+   "published": "2026-11-04T16:17:55+00:00",
+   "first_seen": "2026-11-04T21:53:52+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92704",
+   "pts": [
+    "影響 SharpEmu 0.0.3-release.3 及更早版本，攻擊者可發送跨站請求**以受害者權限執行任意程式碼**。",
+    "目前未遭利用。惡意網頁可發送跨站請求至本地 API 端點以控制偵錯或發起連線。"
+   ],
+   "fix": "**升級至 0.0.3-release.3-patch.1 版本**",
+   "ai": true
+  },
+  {
    "id": "tw:2b5731ee5983",
    "kind": "news",
    "title": "永豐銀行異常轉帳確認為駭客攻擊，供應商安全設定漏洞遭利用",
@@ -379,10 +405,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180233",
    "pts": [
-    "永豐銀行今日（11月4日）晚間6時召開緊急記者會，說明日前發生的客戶帳戶異常轉帳事件，是遭駭客利用供應商安全設定漏洞的資安事件。先前傳出這起事件初步影響400名客戶且每筆轉出金額約10萬元，永豐銀行在昨日表示是新網銀交易系統發生程式異常，但隨著調查進一步釐清，今日則表示確認事件起因是外部駭客利用新網"
+    "永豐銀行說明新網銀交易系統異常轉帳事件，確認為**外部駭客利用供應商安全設定漏洞**所致。",
+    "該交易系統目前在臺灣尚無其他金融業者導入。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:06d84e053b07",
@@ -591,6 +618,30 @@
     "2026 年 10 月起，歐洲超市的冷凍及冷藏設備接連遭到網路攻擊。攻擊者遠端修改設備的溫度與除霜設定，導致大量食品報廢。事件先發生在法國，11 月初再擴及比利時、荷蘭、瑞典、愛爾蘭等國。法國、荷蘭等國的資安機關已陸續發布警示，提醒業者檢視冷凍設備遠端監控系統的連網與存取管理。 法國約 700 家超"
    ],
    "fix": "",
+   "ai": false
+  },
+  {
+   "id": "msrc:2026-Nov",
+   "kind": "msrc",
+   "title": "Microsoft 11 月例行安全更新",
+   "sub": "0 個 CVE · 0 個已遭利用 · 0 個重大",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T08:00:00+00:00",
+   "first_seen": "2026-11-04T21:53:53+00:00",
+   "src": "Microsoft MSRC",
+   "url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Nov",
+   "pts": [
+    "本月共修補 0 個漏洞，其中 0 個為重大等級。",
+    "目前未標示已遭利用的漏洞。"
+   ],
+   "fix": "安裝 11 月累積更新（Windows Update／WSUS），並確認 Exchange、Office 等產品的個別更新。",
    "ai": false
   },
   {
@@ -924,8 +975,8 @@
   {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Google Chrome 遠端執行漏洞",
-   "sub": "94 個 CVE · 最高 CVSS 9.6",
+   "title": "Chrome 遠端執行程式碼漏洞",
+   "sub": "116 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -942,11 +993,14 @@
     "CVE-2026-121044",
     "CVE-2026-121047",
     "CVE-2026-121048",
+    "CVE-2026-121050",
     "CVE-2026-121052",
+    "CVE-2026-121054",
     "CVE-2026-121057",
     "CVE-2026-121060",
     "CVE-2026-121061",
     "CVE-2026-121064",
+    "CVE-2026-121065",
     "CVE-2026-121068",
     "CVE-2026-121069",
     "CVE-2026-121070",
@@ -961,6 +1015,7 @@
     "CVE-2026-121083",
     "CVE-2026-121084",
     "CVE-2026-121086",
+    "CVE-2026-121087",
     "CVE-2026-121089",
     "CVE-2026-121090",
     "CVE-2026-121092",
@@ -968,13 +1023,17 @@
     "CVE-2026-121097",
     "CVE-2026-121098",
     "CVE-2026-121100",
+    "CVE-2026-121102",
     "CVE-2026-121104",
+    "CVE-2026-121107",
+    "CVE-2026-121108",
     "CVE-2026-121112",
     "CVE-2026-121113",
     "CVE-2026-121114",
     "CVE-2026-121117",
     "CVE-2026-121118",
     "CVE-2026-121119",
+    "CVE-2026-121120",
     "CVE-2026-121123",
     "CVE-2026-121124",
     "CVE-2026-121126",
@@ -983,6 +1042,8 @@
     "CVE-2026-121129",
     "CVE-2026-121131",
     "CVE-2026-121133",
+    "CVE-2026-121134",
+    "CVE-2026-121135",
     "CVE-2026-121137",
     "CVE-2026-121140",
     "CVE-2026-121148",
@@ -990,6 +1051,9 @@
     "CVE-2026-121163",
     "CVE-2026-121166",
     "CVE-2026-121168",
+    "CVE-2026-121170",
+    "CVE-2026-121171",
+    "CVE-2026-121174",
     "CVE-2026-121178",
     "CVE-2026-121179",
     "CVE-2026-121180",
@@ -1000,18 +1064,24 @@
     "CVE-2026-121185",
     "CVE-2026-121188",
     "CVE-2026-121189",
+    "CVE-2026-121195",
+    "CVE-2026-121198",
     "CVE-2026-121200",
     "CVE-2026-121201",
     "CVE-2026-121202",
     "CVE-2026-121203",
+    "CVE-2026-121204",
+    "CVE-2026-121205",
     "CVE-2026-121208",
     "CVE-2026-121210",
     "CVE-2026-121211",
+    "CVE-2026-121212",
     "CVE-2026-121214",
     "CVE-2026-121217",
     "CVE-2026-121218",
     "CVE-2026-121219",
     "CVE-2026-121221",
+    "CVE-2026-121222",
     "CVE-2026-121224",
     "CVE-2026-121226",
     "CVE-2026-121228",
@@ -1019,12 +1089,15 @@
     "CVE-2026-121230",
     "CVE-2026-121233",
     "CVE-2026-121234",
+    "CVE-2026-121236",
     "CVE-2026-121238",
     "CVE-2026-121241",
     "CVE-2026-121246",
     "CVE-2026-121247",
     "CVE-2026-121249",
     "CVE-2026-121250",
+    "CVE-2026-121251",
+    "CVE-2026-121252",
     "CVE-2026-121256",
     "CVE-2026-121257"
    ],
@@ -1034,11 +1107,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "同日公布 94 個漏洞，最高 CVSS 9.6。",
-    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
+    "影響 157.0.8103.38 前的 Google Chrome，攻擊者可透過特製 HTML 頁面**遠端執行任意程式碼**。",
+    "目前未遭利用。部分漏洞需透過社交工程誘使使用者開啟網頁觸發。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:憑證/CA:2026-11-04",
@@ -2079,11 +2152,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
-    "Blender 4.5.15 與 5.2.3 以前版本存在堆疊緩衝區溢位漏洞；pgAdmin 4 存在二進位路徑驗證缺乏限制之弱點。",
-    "特製檔案或已驗證使用者可觸發越界寫入或存取共享目錄。**目前未遭利用**。"
+    "同日公布 2 個漏洞，最高 CVSS 8.5。",
+    "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-"
    ],
-   "fix": "升級 Blender 至 4.5.15 或 5.2.3 以上版本。",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "tw:796541ef7301",
@@ -4028,7 +4101,7 @@
   {
    "id": "grp:Veeam:2026-10-28",
    "kind": "group",
-   "title": "Veeam 備份軟體多項安全漏洞",
+   "title": "Veeam 遠端執行與讀檔漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.0",
    "sev": "crit",
    "kev": false,
@@ -4046,8 +4119,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106076",
    "pts": [
-    "Veeam Backup for Microsoft 365 存在 SQL 注入與任意檔案讀取漏洞，可導致跨租戶資料讀寫、遠端執行程式碼或讀取檔案。",
-    "**目前未遭利用**。攻擊條件為經身分驗證的組織轉移同儕或具管理員權限之使用者。"
+    "影響 Veeam Backup for Microsoft 365，可進行 SQL 注入以**遠端執行任意程式碼**，或讀取伺服器任意檔案。",
+    "目前未遭利用。需要具備驗證身份的組織轉移對等端或系統管理員權限。"
    ],
    "fix": "",
    "ai": true
@@ -4787,11 +4860,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116172",
    "pts": [
-    "影響 vLLM 多個版本（0.8.5 至 0.31.0 以前），包含輸入驗證不當、SSRF 與資源耗盡漏洞。",
-    "**目前尚未發現漏洞遭實際利用**，遠端攻擊者可發送特製請求導致引擎崩潰或記憶體耗盡。"
+    "同日公布 8 個漏洞，最高 CVSS 8.8。",
+    "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers t"
    ],
-   "fix": "升級至 vLLM 0.24.0、0.25.0、0.30.0、0.31.0 或以上版本。",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2026-46652",
@@ -5146,7 +5219,7 @@
   {
    "id": "grp:Palo Alto:2026-10-21",
    "kind": "group",
-   "title": "PHP記憶體處理安全漏洞",
+   "title": "PHP 記憶體存取安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -5165,8 +5238,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響 PHP 相關產品，在記憶體不足處理或全域狀態重設異常時，可能讀取或存取未初始化或已釋放的記憶體。",
-    "**目前漏洞尚未發現遭惡意利用或用於勒索軟體攻擊。**"
+    "影響包含 PHP 元件之系統，因記憶體不足與全域狀態處理不當，可能導致**未初始化記憶體讀取或釋放後重用**。",
+    "目前未遭利用。漏洞源於 PHP 內部記憶體與請求清理機制異常。"
    ],
    "fix": "",
    "ai": true
@@ -5621,7 +5694,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多款產品安全漏洞",
+   "title": "Oracle 產品多項安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -5853,11 +5926,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 PeopleSoft Enterprise PeopleTools (8.61-8.63) 與 Siebel CRM (17.0-26.9)，可遭未授權或低權限攻擊者**危害系統安全**。",
+    "目前未遭利用。攻擊者可透過網路以 HTTP 存取發動攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
