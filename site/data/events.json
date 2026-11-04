@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T06:24:46+00:00",
+ "generated": "2026-11-04T15:27:12+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,238 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:2b5731ee5983",
+   "kind": "news",
+   "title": "永豐銀行異常轉帳確認為駭客攻擊，供應商安全設定漏洞遭利用",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180233",
+   "pts": [
+    "永豐銀行今日（11月4日）晚間6時召開緊急記者會，說明日前發生的客戶帳戶異常轉帳事件，是遭駭客利用供應商安全設定漏洞的資安事件。先前傳出這起事件初步影響400名客戶且每筆轉出金額約10萬元，永豐銀行在昨日表示是新網銀交易系統發生程式異常，但隨著調查進一步釐清，今日則表示確認事件起因是外部駭客利用新網"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:06d84e053b07",
+   "kind": "news",
+   "title": "Mozilla發布Firefox 159.0.1，修補高風險漏洞CVE-2026-120572",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180223",
+   "pts": [
+    "Mozilla於11月3日發布Firefox 159.0.1，修補一個高風險漏洞CVE-2026-120572。該漏洞存在於瀏覽器版面配置引擎的Block與Inline元件，源於邊界條件檢查錯誤，可能導致記憶體緩衝區操作超出範圍，進而影響瀏覽器安全，Mozilla將其嚴重性列為High，Tenabl"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:3de660a19302",
+   "kind": "news",
+   "title": "電商ERP業者莫筆克科技遭駭，Shopline更換相關API金鑰，商家匯入ERP的資料恐受影響",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180213",
+   "pts": [
+    "繼91APP、1shop、Cyberbiz及meepShop等臺灣電商技術服務業者接連傳出資安事件與疑慮後，我們同時追蹤另一家電商開店平臺Shopline的資安動態，進一步發現該公司於11月3日公告，第三方雲端ERP服務商莫筆克科技（Mallbic雲端小幫手）發生資安事件，Shopline也對此事件"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:b62b29cd3c5a",
+   "kind": "news",
+   "title": "cPGuard更新通道遭到入侵，近3千臺伺服器被植入惡意程式",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180217",
+   "pts": [
+    "伺服器資安防護軟體cPGuard發生供應鏈攻擊事件，駭客滲透其更新基礎設施，導致用戶主機被植入惡意軟體。軟體開發商OpsShield於11月3日指出，攻擊者入侵其帳務及授權伺服器，取得軟體更新所需的存取金鑰，進而竄改cPGuard更新內容，透過軟體更新通道向客戶伺服器散布惡意程式，約有2,950臺伺"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:33c4db4e1b87",
+   "kind": "news",
+   "title": "繼91APP遭駭後，1shop、Cyberbiz與meepShop等電商技術服務業者接連傳出資安警訊",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180209",
+   "pts": [
+    "臺灣多家電商技術服務業者接連傳出資安事件，繼10月中旬91APP公布遭駭事件後，又有多家業者傳出資安事件與相關疑慮，1shop公告其研判「訂單成立通知信」遭竊取，進入11月後，多家使用Cyberbiz及meepShop服務的品牌也陸續發布資安及防詐公告，提及訂單異常讀取或可能遭未經授權取得，實際事件"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:a32953e9a917",
+   "kind": "news",
+   "title": "【資安日報】11月4日，XCPE殭屍網路波及臺灣近9萬臺Android設備，感染數量排名全球第5",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180216",
+   "pts": [
+    "本日新聞焦點 ● XCPE殭屍網路波及臺灣近9萬臺Android設備，感染數量排名全球第5 ● 永豐銀行不明轉帳事件涉及網銀程式異常，初步清查影響419名客戶 ● Hugging Face遭惡意模型濫用，31個儲存庫散布挖礦程式與後門"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:7c3bff375683",
+   "kind": "news",
+   "title": "身分驗證服務公司WorkOS資料外洩，攻擊者透過AI滲透測試框架ARTEX得逞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180215",
+   "pts": [
+    "提供身分驗證與使用者管理服務的WorkOS於11月2日指出，該公司在10月30日發現內部銷售團隊使用的應用程式遭到未經授權存取，攻擊者取得部分客戶關係管理系統（CRM）及客戶支援資料。WorkOS表示，目前尚未發現WorkOS應用程式資料遭到存取的跡象，也沒有證據顯示正式環境服務遭到入侵或受到影響。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:3b42b8c5a628",
+   "kind": "news",
+   "title": "11月Android例行安全更新修補216個漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180207",
+   "pts": [
+    "11月2日Google發布每月Android例行更新，一口氣修補216個資安漏洞，這些弱點有119個存在於安卓核心元件，其餘97個存在於第三方元件，用戶應留意裝置製造商的公告，以便新版韌體推出後即時套用。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-59268",
+   "kind": "cve",
+   "title": "Office 漏洞 CVE-2026-59268",
+   "sub": "CVE-2026-59268 · CVSS 7.3",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [
+    "CVE-2026-59268"
+   ],
+   "cvss": 7.3,
+   "published": "2026-11-04T11:17:16+00:00",
+   "first_seen": "2026-11-04T15:27:27+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59268",
+   "pts": [
+    "An out-of-bounds Write vulnerability in Apache OpenOffice versions through 4.1.16 could allow an attacker to craft a Microsoft Word document"
+   ],
+   "fix": "原文：An out-of-bounds Write vulnerability in Apache OpenOffice versions through 4.1.16 could allow an attacker to craft a Microsoft Word document that would crash the program, or oth",
+   "ai": false
+  },
+  {
+   "id": "tw:38318aa3d88d",
+   "kind": "news",
+   "title": "歐洲超市冷凍設備遭駭，凸顯連網設備對外暴露與預設密碼風險",
+   "sub": "TWCERT/CC 資安新聞",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T08:40:00+00:00",
+   "first_seen": "2026-11-04T15:27:30+00:00",
+   "src": "TWCERT/CC 資安新聞",
+   "url": "https://www.twcert.org.tw/tw/cp-104-11367-06bed-1.html",
+   "pts": [
+    "2026 年 10 月起，歐洲超市的冷凍及冷藏設備接連遭到網路攻擊。攻擊者遠端修改設備的溫度與除霜設定，導致大量食品報廢。事件先發生在法國，11 月初再擴及比利時、荷蘭、瑞典、愛爾蘭等國。法國、荷蘭等國的資安機關已陸續發布警示，提醒業者檢視冷凍設備遠端監控系統的連網與存取管理。 法國約 700 家超"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:5d14b0ccdb55",
    "kind": "news",
@@ -802,11 +1034,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 以前版本的 Google Chrome，攻擊者可透過特製網頁**遠端執行任意程式碼**。",
-    "目前尚未遭利用；攻擊者可結合社交工程或特製 HTML 頁面於沙盒內外執行程式碼。"
+    "同日公布 94 個漏洞，最高 CVSS 9.6。",
+    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:憑證/CA:2026-11-04",
@@ -5621,11 +5853,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft 8.61-8.63 與 Siebel CRM 多個版本，**攻擊者可經由網路存取並損害系統**。",
-    "目前尚未遭利用；未授權或低權限攻擊者可透過 HTTP 或特定網路區段發動攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-10-20",

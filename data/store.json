@@ -34,6 +34,309 @@
  },
  "events": [
   {
+   "id": "tw:2b5731ee5983",
+   "kind": "news",
+   "title": "永豐銀行異常轉帳確認為駭客攻擊，供應商安全設定漏洞遭利用",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:30+00:00",
+   "updated": "2026-11-04T15:27:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180233",
+   "pts": [
+    "永豐銀行今日（11月4日）晚間6時召開緊急記者會，說明日前發生的客戶帳戶異常轉帳事件，是遭駭客利用供應商安全設定漏洞的資安事件。先前傳出這起事件初步影響400名客戶且每筆轉出金額約10萬元，永豐銀行在昨日表示是新網銀交易系統發生程式異常，但隨著調查進一步釐清，今日則表示確認事件起因是外部駭客利用新網"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "永豐銀行異常轉帳確認為駭客攻擊，供應商安全設定漏洞遭利用",
+    "desc": "永豐銀行今日（11月4日）晚間6時召開緊急記者會，說明日前發生的客戶帳戶異常轉帳事件，是遭駭客利用供應商安全設定漏洞的資安事件。先前傳出這起事件初步影響400名客戶且每筆轉出金額約10萬元，永豐銀行在昨日表示是新網銀交易系統發生程式異常，但隨著調查進一步釐清，今日則表示確認事件起因是外部駭客利用新網銀交易系統供應商的安全設定漏洞，另也強調該交易系統目前在臺灣尚無其他金融業者導入。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:06d84e053b07",
+   "kind": "news",
+   "title": "Mozilla發布Firefox 159.0.1，修補高風險漏洞CVE-2026-120572",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:30+00:00",
+   "updated": "2026-11-04T15:27:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180223",
+   "pts": [
+    "Mozilla於11月3日發布Firefox 159.0.1，修補一個高風險漏洞CVE-2026-120572。該漏洞存在於瀏覽器版面配置引擎的Block與Inline元件，源於邊界條件檢查錯誤，可能導致記憶體緩衝區操作超出範圍，進而影響瀏覽器安全，Mozilla將其嚴重性列為High，Tenabl"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Mozilla發布Firefox 159.0.1，修補高風險漏洞CVE-2026-120572",
+    "desc": "Mozilla於11月3日發布Firefox 159.0.1，修補一個高風險漏洞CVE-2026-120572。該漏洞存在於瀏覽器版面配置引擎的Block與Inline元件，源於邊界條件檢查錯誤，可能導致記憶體緩衝區操作超出範圍，進而影響瀏覽器安全，Mozilla將其嚴重性列為High，Tenable漏洞資料庫列出的CVSS嚴重性評分為8.8分。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:3de660a19302",
+   "kind": "news",
+   "title": "電商ERP業者莫筆克科技遭駭，Shopline更換相關API金鑰，商家匯入ERP的資料恐受影響",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "updated": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180213",
+   "pts": [
+    "繼91APP、1shop、Cyberbiz及meepShop等臺灣電商技術服務業者接連傳出資安事件與疑慮後，我們同時追蹤另一家電商開店平臺Shopline的資安動態，進一步發現該公司於11月3日公告，第三方雲端ERP服務商莫筆克科技（Mallbic雲端小幫手）發生資安事件，Shopline也對此事件"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "電商ERP業者莫筆克科技遭駭，Shopline更換相關API金鑰，商家匯入ERP的資料恐受影響",
+    "desc": "繼91APP、1shop、Cyberbiz及meepShop等臺灣電商技術服務業者接連傳出資安事件與疑慮後，我們同時追蹤另一家電商開店平臺Shopline的資安動態，進一步發現該公司於11月3日公告，第三方雲端ERP服務商莫筆克科技（Mallbic雲端小幫手）發生資安事件，Shopline也對此事件進行因應。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b62b29cd3c5a",
+   "kind": "news",
+   "title": "cPGuard更新通道遭到入侵，近3千臺伺服器被植入惡意程式",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "updated": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180217",
+   "pts": [
+    "伺服器資安防護軟體cPGuard發生供應鏈攻擊事件，駭客滲透其更新基礎設施，導致用戶主機被植入惡意軟體。軟體開發商OpsShield於11月3日指出，攻擊者入侵其帳務及授權伺服器，取得軟體更新所需的存取金鑰，進而竄改cPGuard更新內容，透過軟體更新通道向客戶伺服器散布惡意程式，約有2,950臺伺"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "cPGuard更新通道遭到入侵，近3千臺伺服器被植入惡意程式",
+    "desc": "伺服器資安防護軟體cPGuard發生供應鏈攻擊事件，駭客滲透其更新基礎設施，導致用戶主機被植入惡意軟體。軟體開發商OpsShield於11月3日指出，攻擊者入侵其帳務及授權伺服器，取得軟體更新所需的存取金鑰，進而竄改cPGuard更新內容，透過軟體更新通道向客戶伺服器散布惡意程式，約有2,950臺伺服器下載遭竄改的更新檔並執行而中招。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:33c4db4e1b87",
+   "kind": "news",
+   "title": "繼91APP遭駭後，1shop、Cyberbiz與meepShop等電商技術服務業者接連傳出資安警訊",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "updated": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180209",
+   "pts": [
+    "臺灣多家電商技術服務業者接連傳出資安事件，繼10月中旬91APP公布遭駭事件後，又有多家業者傳出資安事件與相關疑慮，1shop公告其研判「訂單成立通知信」遭竊取，進入11月後，多家使用Cyberbiz及meepShop服務的品牌也陸續發布資安及防詐公告，提及訂單異常讀取或可能遭未經授權取得，實際事件"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "繼91APP遭駭後，1shop、Cyberbiz與meepShop等電商技術服務業者接連傳出資安警訊",
+    "desc": "臺灣多家電商技術服務業者接連傳出資安事件，繼10月中旬91APP公布遭駭事件後，又有多家業者傳出資安事件與相關疑慮，1shop公告其研判「訂單成立通知信」遭竊取，進入11月後，多家使用Cyberbiz及meepShop服務的品牌也陸續發布資安及防詐公告，提及訂單異常讀取或可能遭未經授權取得，實際事件情況與影響範圍仍待釐清。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:a32953e9a917",
+   "kind": "news",
+   "title": "【資安日報】11月4日，XCPE殭屍網路波及臺灣近9萬臺Android設備，感染數量排名全球第5",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "updated": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180216",
+   "pts": [
+    "本日新聞焦點 ● XCPE殭屍網路波及臺灣近9萬臺Android設備，感染數量排名全球第5 ● 永豐銀行不明轉帳事件涉及網銀程式異常，初步清查影響419名客戶 ● Hugging Face遭惡意模型濫用，31個儲存庫散布挖礦程式與後門"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月4日，XCPE殭屍網路波及臺灣近9萬臺Android設備，感染數量排名全球第5",
+    "desc": "本日新聞焦點 ● XCPE殭屍網路波及臺灣近9萬臺Android設備，感染數量排名全球第5 ● 永豐銀行不明轉帳事件涉及網銀程式異常，初步清查影響419名客戶 ● Hugging Face遭惡意模型濫用，31個儲存庫散布挖礦程式與後門",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:7c3bff375683",
+   "kind": "news",
+   "title": "身分驗證服務公司WorkOS資料外洩，攻擊者透過AI滲透測試框架ARTEX得逞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "updated": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180215",
+   "pts": [
+    "提供身分驗證與使用者管理服務的WorkOS於11月2日指出，該公司在10月30日發現內部銷售團隊使用的應用程式遭到未經授權存取，攻擊者取得部分客戶關係管理系統（CRM）及客戶支援資料。WorkOS表示，目前尚未發現WorkOS應用程式資料遭到存取的跡象，也沒有證據顯示正式環境服務遭到入侵或受到影響。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "身分驗證服務公司WorkOS資料外洩，攻擊者透過AI滲透測試框架ARTEX得逞",
+    "desc": "提供身分驗證與使用者管理服務的WorkOS於11月2日指出，該公司在10月30日發現內部銷售團隊使用的應用程式遭到未經授權存取，攻擊者取得部分客戶關係管理系統（CRM）及客戶支援資料。WorkOS表示，目前尚未發現WorkOS應用程式資料遭到存取的跡象，也沒有證據顯示正式環境服務遭到入侵或受到影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:3b42b8c5a628",
+   "kind": "news",
+   "title": "11月Android例行安全更新修補216個漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T15:27:30+00:00",
+   "first_seen": "2026-11-04T15:27:37+00:00",
+   "updated": "2026-11-04T15:27:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180207",
+   "pts": [
+    "11月2日Google發布每月Android例行更新，一口氣修補216個資安漏洞，這些弱點有119個存在於安卓核心元件，其餘97個存在於第三方元件，用戶應留意裝置製造商的公告，以便新版韌體推出後即時套用。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "11月Android例行安全更新修補216個漏洞",
+    "desc": "11月2日Google發布每月Android例行更新，一口氣修補216個資安漏洞，這些弱點有119個存在於安卓核心元件，其餘97個存在於第三方元件，用戶應留意裝置製造商的公告，以便新版韌體推出後即時套用。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-59268",
+   "kind": "cve",
+   "title": "Office 漏洞 CVE-2026-59268",
+   "sub": "CVE-2026-59268 · CVSS 7.3",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [
+    "CVE-2026-59268"
+   ],
+   "cvss": 7.3,
+   "published": "2026-11-04T11:17:16+00:00",
+   "first_seen": "2026-11-04T15:27:27+00:00",
+   "updated": "2026-11-04T15:27:27+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59268",
+   "pts": [
+    "An out-of-bounds Write vulnerability in Apache OpenOffice versions through 4.1.16 could allow an attacker to craft a Microsoft Word document"
+   ],
+   "fix": "原文：An out-of-bounds Write vulnerability in Apache OpenOffice versions through 4.1.16 could allow an attacker to craft a Microsoft Word document that would crash the program, or oth",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "An out-of-bounds Write vulnerability in Apache OpenOffice versions through 4.1.16 could allow an attacker to craft a Microsoft Word document that would crash the program, or otherwise corrupt other memory areas.\n\nUsers are recommended to upgrade to version 4.1.17, which fixes this issue.",
+    "refs": [
+     "https://lists.apache.org/thread.html/xw6x0y35f3qlk4pqsc1pf0sv7481yvlk"
+    ]
+   }
+  },
+  {
+   "id": "tw:38318aa3d88d",
+   "kind": "news",
+   "title": "歐洲超市冷凍設備遭駭，凸顯連網設備對外暴露與預設密碼風險",
+   "sub": "TWCERT/CC 資安新聞",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T08:40:00+00:00",
+   "first_seen": "2026-11-04T15:27:30+00:00",
+   "updated": "2026-11-04T15:27:30+00:00",
+   "src": "TWCERT/CC 資安新聞",
+   "url": "https://www.twcert.org.tw/tw/cp-104-11367-06bed-1.html",
+   "pts": [
+    "2026 年 10 月起，歐洲超市的冷凍及冷藏設備接連遭到網路攻擊。攻擊者遠端修改設備的溫度與除霜設定，導致大量食品報廢。事件先發生在法國，11 月初再擴及比利時、荷蘭、瑞典、愛爾蘭等國。法國、荷蘭等國的資安機關已陸續發布警示，提醒業者檢視冷凍設備遠端監控系統的連網與存取管理。 法國約 700 家超"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "歐洲超市冷凍設備遭駭，凸顯連網設備對外暴露與預設密碼風險",
+    "desc": "2026 年 10 月起，歐洲超市的冷凍及冷藏設備接連遭到網路攻擊。攻擊者遠端修改設備的溫度與除霜設定，導致大量食品報廢。事件先發生在法國，11 月初再擴及比利時、荷蘭、瑞典、愛爾蘭等國。法國、荷蘭等國的資安機關已陸續發布警示，提醒業者檢視冷凍設備遠端監控系統的連網與存取管理。 法國約 700 家超市受害，CERT-FR 發布警報 第一波攻擊發生在 10 月 11 日夜間，法國數百家超市的冷藏設備遭遠端調高溫度，部分門市還傳出火災。法國財政部長 Roland Lescure 在國會表示，全國約 1 萬家超市中約 700 家受到影響，但糧食供應沒有風險。巴黎檢察署指出這是一起大規模攻擊，已交由網路犯罪單位偵辦，而法國總理 Sébastien Lecornu 也下令國家資訊系統安全局（ANSSI）調查，並與歐洲各國協調。 法國政府電腦緊急應變中心（CERT-FR）於 10 月 12 日發布警報 CERTFR-2026-ALE-012，之後兩度更新。警報列出的受影響設備包括 Danfoss AK-SM、AK-SC 系列控制器，以及 Copeland XWEB、Dixell XWEB 監控系統。CERT-FR 特別警告，已停止支援（EOL）的設備若持續暴露於網際網路，遭入侵的機率極高，單純恢復原廠設定，也無法消除再次遭入侵的風險。 11 月第二波攻擊，擴及歐洲多國 第二波攻擊發生在 11 月 1 日深夜至 2 日凌晨，比利時、荷蘭、瑞典、愛爾蘭等國的超市及食品業者陸續傳出冷凍設備溫度異常。根據 Euronews 11 月 3 日的報導，受影響範圍已擴及至少 10 個歐盟國家及英國，包括德國、義大利、羅馬尼亞等國。 冷凍設備為何能被遠端操控 大型超市的冷凍櫃並非各自獨立運作，而是由一台系統管理器集中控制各設備的溫度、除霜時段與警報。為了方便維護廠商遠端監看與調整，這類管理器多半內建網頁管理介面，並透過網路或行動網路路由器對外連線。 依目前官方與原廠的說明，攻擊者連上直接暴露於網際網路的管理介面，遠端調高溫度設定，或強制啟動除霜模式讓設備升溫，部分櫃內溫度最高達攝氏 50 度。荷蘭國家網路安全中心（NCSC-NL）指出，攻擊者利用弱密碼與預設密碼等方式取得遠端存取。Danfoss 也表示，荷蘭受害系統未置於安全網路，且仍使用預設密碼。Danfoss 表示，受影響的多為不再獲得更新的舊產品，原廠長期建議客戶更新或汰換，並建議系統不要能直接從網際網路連入。 各國官方防護建議 CERT-FR 與荷蘭 NCSC 建議使用相關設備的單位： 移除控制器與管理介面不必要的網際網路暴露。 確實需要遠端維運時，改用安全的 VPN 或受保護網路。 更換預設帳密、使用強密碼，並依原廠建議更新韌體；無法修補的停止支援設備應規劃汰換。 定期檢查溫度、除霜週期與警報設定；設備若已遭入侵，應先切斷對",
+    "summarize": true
+   }
+  },
+  {
    "id": "tw:5d14b0ccdb55",
    "kind": "news",
    "title": "新航受Amadeus資安事件波及，約4.6萬筆訂位紀錄可能外洩",
@@ -570,15 +873,15 @@
    "cvss": 9.6,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-04T06:25:24+00:00",
+   "updated": "2026-11-04T15:27:27+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 以前版本的 Google Chrome，攻擊者可透過特製網頁**遠端執行任意程式碼**。",
-    "目前尚未遭利用；攻擊者可結合社交工程或特製 HTML 頁面於沙盒內外執行程式碼。"
+    "同日公布 94 個漏洞，最高 CVSS 9.6。",
+    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -708,7 +1011,75 @@
      "Memory corruption in ANGLE in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
      "Type confusion in CacheStorage in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in WebGL in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-     "Buffer overflow in Dawn in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)"
+     "Buffer overflow in Dawn in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Prerender in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Out of bounds write in ANGLE in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Race condition in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Compositing in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Skia in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Skia in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in WebGPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper privilege management in Navigation in Google Chrome on on iOS prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Uncontrolled recursion in SVG in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Printing in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper state validation in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DOM in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Permissions in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Paint in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in SVG in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Controls in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Canvas in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper adherence to coding standards in XML in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in WebAudio in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Scheduling in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in WebRTC in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Mobile in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Type confusion in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Internals in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Dawn in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in PDFium in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted PDF file. (Chromium security severity: High)",
+     "Improper resource exposure in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in Aura in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in PDFium in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Editing in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DOM in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in Extensions in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Out of bounds read in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in PictureInPicture in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in PerformanceAPIs in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Browser in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Incorrect reference resolution in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Animation in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Autofill in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Geometry in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Out of bounds read in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Passwords in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Integer overflow in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in ANGLE in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Race condition in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Type confusion in CacheStorage in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Privilege elevation in Contacts in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Source in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Navigation in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in WebGL in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Buffer overflow in Dawn in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Buffer overflow in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Out of bounds write in WebGL in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)"
     ]
    }
   },
@@ -7949,15 +8320,15 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-04T06:25:24+00:00",
+   "updated": "2026-11-04T15:27:27+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft 8.61-8.63 與 Siebel CRM 多個版本，**攻擊者可經由網路存取並損害系統**。",
-    "目前尚未遭利用；未授權或低權限攻擊者可透過 HTTP 或特定網路區段發動攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -8352,7 +8723,25 @@
      "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM Deployment.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Siebel CRM Deployment accessible data as well as  unauthorized update, insert or delete access to some of Siebel CRM Deployment accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
      "Vulnerability in the Oracle WebCenter Content product of Oracle Fusion Middleware (component: Content Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Content.  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Content. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Dictionary Repository).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via SQL to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Siebel CRM Deployment.  While the vulnerability is in Siebel CRM Deployment, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Siebel CRM Deployment accessible data as well as  unauthorized access to critical data or complete access to all Siebel CRM Deployment accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N)."
+     "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Siebel CRM Deployment.  While the vulnerability is in Siebel CRM Deployment, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Siebel CRM Deployment accessible data as well as  unauthorized access to critical data or complete access to all Siebel CRM Deployment accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM Deployment.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Siebel CRM Deployment accessible data as well as  unauthorized update, insert or delete access to some of Siebel CRM Deployment accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
+     "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel CRM Deployment.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Siebel CRM Deployment accessible data as well as  unauthorized access to critical data or complete access to all Siebel CRM Deployment accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Siebel CRM Deployment. CVSS 3.1 Base Score 8.3 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L).",
+     "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Console / Repository Explorer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via RMI to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Console / Repository Explorer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Data Transforms).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Data Integrator accessible data as well as  unauthorized update, insert or delete access to some of Oracle Data Integrator accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Access Manager accessible data as well as  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via SAML to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Access Manager. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Outside In Technology.  While the vulnerability is in Oracle Outside In Technology, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Outside In Technology accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Access Manager accessible data as well as  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data. CVSS 3.1 Base Score 10.0 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Outside In Technology.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Outside In Technology accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Outside In Technology. CVSS 3.1 Base Score 8.2 (Confidentiality and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:L).",
+     "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Outside In Technology.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of Oracle Outside In Technology. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel CRM Deployment.  Successful attacks of this vulnerability can result in takeover of Siebel CRM Deployment. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)."
     ]
    }
   },
@@ -8826,6 +9215,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-04T06:24:46+00:00",
- "kev_last": "2026-11-04T06:24:46+00:00"
+ "nvd_last": "2026-11-04T15:27:12+00:00",
+ "kev_last": "2026-11-04T15:27:12+00:00"
 }
