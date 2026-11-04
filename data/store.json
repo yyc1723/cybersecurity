@@ -34,9 +34,436 @@
  },
  "events": [
   {
+   "id": "tw:5d14b0ccdb55",
+   "kind": "news",
+   "title": "新航受Amadeus資安事件波及，約4.6萬筆訂位紀錄可能外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:26+00:00",
+   "updated": "2026-11-04T06:25:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180212",
+   "pts": [
+    "新加坡航空因第三方 Amadeus 訂位系統資安事件，**約 4.6 萬筆旅客訂位紀錄可能外洩**。",
+    "外洩資料包含姓名、訂位代號等，其中 620 筆另包含電郵、電話、旅行文件與常客會員編號。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "新航受Amadeus資安事件波及，約4.6萬筆訂位紀錄可能外洩",
+    "desc": "新加坡航空向媒體證實，受到Amadeus訂位系統資安事件影響，約4.6萬筆旅客訂位紀錄可能外洩，包括姓名、訂位代號等資料。 新航表示，遭到第三方未授權存取的資料主要是搭乘新航的旅客姓名、訂位代號、飛行段及艙等等資訊。其中有620筆資料還另外包含電子郵件、電話號碼、旅行文件和KrisFlyer常客計畫會員編號。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2d1012f0d664",
+   "kind": "news",
+   "title": "XCPE殭屍網路波及臺灣近9萬臺Android設備，全球排名第5",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:26+00:00",
+   "updated": "2026-11-04T06:25:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180211",
+   "pts": [
+    "透過漏洞、弱密碼或惡意程式感染大量設備，進而建立殭屍網路，是駭客常見的攻擊手法，但由設備供應商在產品出廠前便主動植入惡意程式，則是相當特殊的案例。Google近期揭露的XCPE殭屍網路便屬於此類，後門直接預載於Android設備韌體，使設備從交付使用者時便已遭到控制，也讓一般使用者難以透過更新或移除"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "XCPE殭屍網路波及臺灣近9萬臺Android設備，全球排名第5",
+    "desc": "透過漏洞、弱密碼或惡意程式感染大量設備，進而建立殭屍網路，是駭客常見的攻擊手法，但由設備供應商在產品出廠前便主動植入惡意程式，則是相當特殊的案例。Google近期揭露的XCPE殭屍網路便屬於此類，後門直接預載於Android設備韌體，使設備從交付使用者時便已遭到控制，也讓一般使用者難以透過更新或移除應用程式自行清除。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:06654885c567",
+   "kind": "news",
+   "title": "日本三得利集團雲端服務遭駭，員工、合作夥伴及客戶等逾10萬人個資外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:26+00:00",
+   "updated": "2026-11-04T06:25:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180210",
+   "pts": [
+    "三得利外部雲端服務遭未授權存取，**導致逾10萬名員工、合作夥伴及客戶個資外洩**。",
+    "業者於10月28日偵測異常後即時阻斷存取，並採取措施防止損害擴大。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "日本三得利集團雲端服務遭駭，員工、合作夥伴及客戶等逾10萬人個資外洩",
+    "desc": "日本飲料製造商三得利（Suntory）的母公司三得利控股，以及三得利健康本週公告，集團使用的外部雲端服務遭第三方未授權存取，攻擊者下載了部分包含員工、合作夥伴及客戶個資的檔案，逾10萬人的個資因此外洩。 三得利是在10月28日偵測到外部雲端服務異常活動，第一時間將該未授權存取阻斷，採取必要措施防止損害擴大，並著手調查。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:209588c95454",
+   "kind": "news",
+   "title": "NetApp揭露旗下多款儲存產品受Linux核心TCP漏洞影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:26+00:00",
+   "updated": "2026-11-04T06:25:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180208",
+   "pts": [
+    "日前揭露的Linux核心TCP漏洞CVE-2026-98432，不僅影響各Linux發行版，也涵蓋基於Linux平臺的其他產品，儲存廠商NetApp便於11月2日發布公告，指出旗下多款儲存產品受此漏洞影響，包括AFF、ASA及FAS系列儲存設備的BMC控制器與Service Processor處理器"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "NetApp揭露旗下多款儲存產品受Linux核心TCP漏洞影響",
+    "desc": "日前揭露的Linux核心TCP漏洞CVE-2026-98432，不僅影響各Linux發行版，也涵蓋基於Linux平臺的其他產品，儲存廠商NetApp便於11月2日發布公告，指出旗下多款儲存產品受此漏洞影響，包括AFF、ASA及FAS系列儲存設備的BMC控制器與Service Processor處理器，E系列儲存設備的SANtricity OS，StorageGRID系列儲存設備，",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:206b59ee09f5",
+   "kind": "news",
+   "title": "Binance揭露63億美元竊案攻擊鏈，駭客以假面試誘使工程師執行惡意程式",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:26+00:00",
+   "updated": "2026-11-04T06:25:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180203",
+   "pts": [
+    "全球最大加密貨幣交易平臺Binance公開約63.4億美元加密資產遭竊事件的初步調查，揭露駭客透過假求職面試植入惡意程式，再利用內部AI工具控制其他工程師電腦，取得容器部署權限，進而入侵錢包簽章服務轉走加密資產。 攻擊最早可追溯至今年6月，一名錢包維運工程師為了安裝AI程式開發工具，從搜尋結果下載遭"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Binance揭露63億美元竊案攻擊鏈，駭客以假面試誘使工程師執行惡意程式",
+    "desc": "全球最大加密貨幣交易平臺Binance公開約63.4億美元加密資產遭竊事件的初步調查，揭露駭客透過假求職面試植入惡意程式，再利用內部AI工具控制其他工程師電腦，取得容器部署權限，進而入侵錢包簽章服務轉走加密資產。 攻擊最早可追溯至今年6月，一名錢包維運工程師為了安裝AI程式開發工具，從搜尋結果下載遭變造的Homebrew安裝程式。Binance資安團隊雖然偵測異常，更換裝置並重設相關憑證，但該名工程師的職務及同事資訊已遭駭客取得。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:fa9577f19967",
+   "kind": "news",
+   "title": "Anthropic開源FlashProve，以密碼學驗證AI模型未遭掉包",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:26+00:00",
+   "updated": "2026-11-04T06:25:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180205",
+   "pts": [
+    "AI新創Anthropic周一（11/2）發表FlashProve，這是一套利用零知識證明（Zero-Knowledge Proof）技術開發的開源系統，可透過密碼學驗證AI回答是否確實來自指定模型，以偵測服務供應商是否私下替換模型，或遭駭客竄改輸出內容，同時不必公開模型權重等商業機密。Anthro"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Anthropic開源FlashProve，以密碼學驗證AI模型未遭掉包",
+    "desc": "AI新創Anthropic周一（11/2）發表FlashProve，這是一套利用零知識證明（Zero-Knowledge Proof）技術開發的開源系統，可透過密碼學驗證AI回答是否確實來自指定模型，以偵測服務供應商是否私下替換模型，或遭駭客竄改輸出內容，同時不必公開模型權重等商業機密。Anthropic已公開相關技術報告、程式碼及形式化驗證工具，供外界研究與改進。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:bd5d14c603ca",
+   "kind": "news",
+   "title": "TeamViewer修補反向攻擊漏洞，受控端可藉遠端連線攻擊控制端",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:26+00:00",
+   "updated": "2026-11-04T06:25:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180204",
+   "pts": [
+    "廣獲使用的遠端桌面存取軟體TeamViewer於10月27日修補可能導致反向攻擊的高風險漏洞，漏洞編號CVE-2026-111585，CVSS嚴重性評分達8.8分。不同於一般遠端存取工具漏洞多是造成控制端攻擊受控端的情境，這個漏洞允許受控端反過來攻擊發起連線的控制端電腦，問題源自遠端畫面解壓縮處理程"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "TeamViewer修補反向攻擊漏洞，受控端可藉遠端連線攻擊控制端",
+    "desc": "廣獲使用的遠端桌面存取軟體TeamViewer於10月27日修補可能導致反向攻擊的高風險漏洞，漏洞編號CVE-2026-111585，CVSS嚴重性評分達8.8分。不同於一般遠端存取工具漏洞多是造成控制端攻擊受控端的情境，這個漏洞允許受控端反過來攻擊發起連線的控制端電腦，問題源自遠端畫面解壓縮處理程序的整數溢位，攻擊者可利用受控端傳送特製畫面資料，使控制端配置的記憶體緩衝區不足，進而造成堆積緩衝區溢位。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:89bd8c4f52e4",
+   "kind": "news",
+   "title": "美國CISA警告WordPress資安漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:33+00:00",
+   "updated": "2026-11-04T06:25:33+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180202",
+   "pts": [
+    "11月3日美國網路安全與基礎設施安全局（CISA）更新已遭利用的漏洞名單（KEV），原因是他們已掌握新漏洞遭積極利用的證據，該漏洞就是上週公布的CVE-2026-119977，此為檢查時間與使用時間（TOCTOU）競爭條件漏洞，存在於WordPress核心，美"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "美國CISA警告WordPress資安漏洞遭積極利用",
+    "desc": "11月3日美國網路安全與基礎設施安全局（CISA）更新已遭利用的漏洞名單（KEV），原因是他們已掌握新漏洞遭積極利用的證據，該漏洞就是上週公布的CVE-2026-119977，此為檢查時間與使用時間（TOCTOU）競爭條件漏洞，存在於WordPress核心，美",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:7830f41d755e",
+   "kind": "news",
+   "title": "Google釋出Chrome 157修補213個資安漏洞，其中7個為重大等級",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:39+00:00",
+   "updated": "2026-11-04T06:25:39+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180201",
+   "pts": [
+    "Google於11月3日發布Chrome 157大改版，針對電腦版與Android版總計修復213個資安弱點，其中有7個被評為重大等級，涉及Dawn、ANGLE、WebGL、Prerender、Geometry及Core等元件。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Google釋出Chrome 157修補213個資安漏洞，其中7個為重大等級",
+    "desc": "Google於11月3日發布Chrome 157大改版，針對電腦版與Android版總計修復213個資安弱點，其中有7個被評為重大等級，涉及Dawn、ANGLE、WebGL、Prerender、Geometry及Core等元件。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:865732b03f90",
+   "kind": "news",
+   "title": "Node-RED重大漏洞出現攻擊嘗試，駭客企圖執行Linux惡意程式並部署網頁後門",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:39+00:00",
+   "updated": "2026-11-04T06:25:39+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180178",
+   "pts": [
+    "駭客試圖利用 Node-RED 漏洞 CVE-2026-58115，於 Linux 系統下載並執行惡意程式。",
+    "**資安業者觀察到攻擊者試圖部署網頁後門**，以便後續持續執行遠端命令。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "Node-RED重大漏洞出現攻擊嘗試，駭客企圖執行Linux惡意程式並部署網頁後門",
+    "desc": "資安漏洞情報業者VulnCheck近日揭露針對Node-RED重大漏洞CVE-2026-58115的攻擊活動。研究人員透過誘捕系統發現，攻擊者利用這項漏洞嘗試下載並執行Linux惡意程式，後續還觀測到試圖部署網頁後門、以便持續執行遠端命令的攻擊手法。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:dfe8206f5b75",
+   "kind": "news",
+   "title": "XCPE殭屍網路控制逾130萬臺機上盒，Google指控Android裝置製造商刻意預載後門",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:46+00:00",
+   "updated": "2026-11-04T06:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180161",
+   "pts": [
+    "Google威脅情報團隊（GTIG）近日揭露XCPE殭屍網路瓦解行動，這個殭屍網路控制全球超過130萬臺機上盒。Google調查發現，Android裝置製造商Videostrong Technology Co.涉嫌刻意在裝置韌體預載後門程式，並向犯罪合作夥伴販售裝置存取權限，協助部署對方開發的惡意模"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "XCPE殭屍網路控制逾130萬臺機上盒，Google指控Android裝置製造商刻意預載後門",
+    "desc": "Google威脅情報團隊（GTIG）近日揭露XCPE殭屍網路瓦解行動，這個殭屍網路控制全球超過130萬臺機上盒。Google調查發現，Android裝置製造商Videostrong Technology Co.涉嫌刻意在裝置韌體預載後門程式，並向犯罪合作夥伴販售裝置存取權限，協助部署對方開發的惡意模組。這些合作夥伴利用受感染裝置從事廣告詐欺，或將裝置變成常駐代理網路節點，替第三方轉送流量。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4f6b3772c606",
+   "kind": "news",
+   "title": "Aikido併購Cyberly及OutKept推出Noon資安平臺，整合AI工具管理與員工安全防護",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:46+00:00",
+   "updated": "2026-11-04T06:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180159",
+   "pts": [
+    "比利時資安業者Aikido Security今年9月先後併購波蘭資安業者Cyberly及比利時資安業者OutKept，並整合兩家公司的技術，於10月20日宣布推出員工資安平臺Noon，將原本以應用程式、程式碼及雲端安全為主的業務擴展至企業員工防護。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Aikido併購Cyberly及OutKept推出Noon資安平臺，整合AI工具管理與員工安全防護",
+    "desc": "比利時資安業者Aikido Security今年9月先後併購波蘭資安業者Cyberly及比利時資安業者OutKept，並整合兩家公司的技術，於10月20日宣布推出員工資安平臺Noon，將原本以應用程式、程式碼及雲端安全為主的業務擴展至企業員工防護。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8f730cf18e44",
+   "kind": "news",
+   "title": "雲端憑證遭竊成LLMJacking攻擊入口，企業AI模型資源被盜用牟利",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-04T06:25:26+00:00",
+   "first_seen": "2026-11-04T06:25:46+00:00",
+   "updated": "2026-11-04T06:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180158",
+   "pts": [
+    "Google旗下Mandiant公布2026年多起大型語言模型（LLM）資源遭盜用事件的調查結果，這類攻擊稱為LLMJacking。部分攻擊者利用遭竊的雲端存取憑證及API金鑰，未經授權大量使用企業的AI模型服務，部分受害企業因此單日產生超過10萬美元的雲端使用費用。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "雲端憑證遭竊成LLMJacking攻擊入口，企業AI模型資源被盜用牟利",
+    "desc": "Google旗下Mandiant公布2026年多起大型語言模型（LLM）資源遭盜用事件的調查結果，這類攻擊稱為LLMJacking。部分攻擊者利用遭竊的雲端存取憑證及API金鑰，未經授權大量使用企業的AI模型服務，部分受害企業因此單日產生超過10萬美元的雲端使用費用。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-111962",
+   "kind": "cve",
+   "title": "WP 外掛未妥善限制存取漏洞",
+   "sub": "CVE-2026-111962 · 尚未評分",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-111962"
+   ],
+   "cvss": null,
+   "published": "2026-11-04T06:16:58+00:00",
+   "first_seen": "2026-11-04T06:25:24+00:00",
+   "updated": "2026-11-04T06:25:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111962",
+   "pts": [
+    "影響 2.2.0 之前的 WP Remote Users Sync 外掛，使用 Nginx 伺服器會忽視 Apache 控制檔，**導致未授權存取匯出的個資**。",
+    "目前尚未遭利用；未授權攻擊者可預測匯出檔案名稱以取得使用者個人資料。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "The WP Remote Users Sync WordPress plugin before 2.2.0 does not adequately restrict access to the user export files it writes beneath the public web root, relying on an Apache access-control file that other web servers such as Nginx ignore, which allows an unauthenticated attacker who requests the export's predictable file name while it is present to retrieve the exported users' personal data.",
+    "refs": [
+     "https://wpscan.com/vulnerability/52800086-7013-4bd0-85f9-a2d94d3b6ab7/"
+    ]
+   }
+  },
+  {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Google Chrome 遠端執行漏洞",
    "sub": "94 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -143,12 +570,12 @@
    "cvss": 9.6,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-03T23:25:01+00:00",
+   "updated": "2026-11-04T06:25:24+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 之前的 Google Chrome。遠端攻擊者可經由特製 HTML 網頁**執行任意程式碼**。",
-    "目前未遭利用。遠端攻擊者可透過社交工程或誘導使用者存取特製網頁觸發漏洞。"
+    "影響 157.0.8103.38 以前版本的 Google Chrome，攻擊者可透過特製網頁**遠端執行任意程式碼**。",
+    "目前尚未遭利用；攻擊者可結合社交工程或特製 HTML 頁面於沙盒內外執行程式碼。"
    ],
    "fix": "",
    "ai": true,
@@ -248,7 +675,40 @@
      "Use after free in Extensions in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
      "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
      "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
-     "Out of bounds write in WebGL in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)"
+     "Out of bounds write in WebGL in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Prerender in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Out of bounds write in ANGLE in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Layout in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in GPU in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Compositing in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in WebGPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper state validation in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DOM in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Permissions in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in SVG in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper adherence to coding standards in XML in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Mobile in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Out of bounds read in Internals in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Dawn in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in PDFium in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted PDF file. (Chromium security severity: High)",
+     "Use after free in Aura in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in PDFium in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Editing in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in PictureInPicture in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in PerformanceAPIs in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Geometry in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in ANGLE in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in CacheStorage in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in WebGL in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Buffer overflow in Dawn in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)"
     ]
    }
   },
@@ -368,11 +828,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180175",
    "pts": [
-    "本日新聞焦點 ● 歐洲7國逾115家超市冷藏冷凍設備遭駭，食品因溫控異常受損 ● 西班牙Amadeus遭駭波及日本、韓國、馬來西亞至少12家航空公司 ● 駭客竄改第三方監控業者DNS紀錄，竊走Polymarket用戶270萬美元"
+    "**歐洲7國逾115家超市冷藏冷凍設備遭駭**，遠端調高溫度導致食品損害。",
+    "西班牙 Amadeus 遭駭波及多國航空公司，第三方監控業者 DNS 遭竄改致損 270 萬美元。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "【資安日報】11月3日，歐洲7國逾115家超市冷凍設備遭駭客操控，遠端調高溫度導致食品損失",
     "desc": "本日新聞焦點 ● 歐洲7國逾115家超市冷藏冷凍設備遭駭，食品因溫控異常受損 ● 西班牙Amadeus遭駭波及日本、韓國、馬來西亞至少12家航空公司 ● 駭客竄改第三方監控業者DNS紀錄，竊走Polymarket用戶270萬美元",
@@ -416,7 +877,7 @@
   {
    "id": "CVE-2026-119179",
    "kind": "cve",
-   "title": "Node.js 漏洞 CVE-2026-119179",
+   "title": "MongoDB 驅動程式資訊洩漏漏洞",
    "sub": "CVE-2026-119179 · CVSS 8.3",
    "sev": "high",
    "kev": false,
@@ -434,11 +895,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119179",
    "pts": [
-    "A flaw in the connection management layer of the MongoDB Node.js driver can leave a pooled network connection in the pool for reuse while da"
+    "MongoDB Node.js 驅動程式連線管理層存在漏洞，**可能導致資料庫回應配對錯誤並意外洩漏其他使用者紀錄**。",
+    "目前尚未遭惡意利用。當應用程式啟用用戶端操作逾時設定，未經身分驗證者傳送一般請求即可觸發。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "A flaw in the connection management layer of the MongoDB Node.js driver can leave a pooled network connection in the pool for reuse while data from an earlier operation is still outstanding on it. In applications that enable an optional client-side operation timeout, an unauthenticated party that can send ordinary requests to the application may cause database replies to be paired with the wrong requests. This may result in unintended disclosure of other users' records, incorrect operation results being returned, and failures of legitimate requests.",
     "refs": [
@@ -449,7 +911,7 @@
   {
    "id": "grp:Linux:2026-11-03",
    "kind": "group",
-   "title": "Linux 核心 多個高風險漏洞",
+   "title": "Linux 核心釋放後重用漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -468,12 +930,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99246",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.1。",
-    "In the Linux kernel, the following vulnerability has been resolved: tipc: protect node reset trace dump with node lock The tipc_node_reset_l"
+    "Linux 核心存在 TIPC 重置追蹤與 TCP reqsk_timer_handler() 釋放後重用（UAF）漏洞。",
+    "**目前尚未發現漏洞遭惡意利用**，包含 CVE-2026-99246 與 CVE-2026-99270。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "In the Linux kernel, the following vulnerability has been resolved:\n\ntipc: protect node reset trace dump with node lock\n\nThe tipc_node_reset_links trace event asks tipc_node_dump() to walk the\nnode's link entries. Unlike the other node events that request link data,\nthis event runs without the node lock.\n\nThis permits bearer teardown to free a link while the trace callback is\ndumping it:\n\n  CPU 0                                CPU 1\n  trace_tipc_node_reset_links()\n    tipc_node_dump()\n      l = n->links[0].link\n                                       tipc_node_write_lock()\n                                       kfree(l)\n                                       n->links[0].link = NULL\n                                       tipc_node_write_unlock()\n      tipc_link_dump(l)\n\ntipc_link_dump() then dereferences the stale pointer. KASAN reported:\n\n  BUG: KASAN: slab-use-after-free in tipc_link_dump\n  Read of size 4 by task poc/115\n  Call Trace:\n   tipc_link_dump+0x10cb/0x16b0\n   tipc_node_dump+0x4bb/0x740\n   trace_event_raw_event_tipc_node_class+0x258/0x360\n   tipc_node_reset_links+0x14d/0x1a0\n   tipc_rcv+0x13f5/0x3030\n   tipc_udp_recv+0x4e3/0x670\n  Allocated by task 0:\n   tipc_link_create+0x1e1/0x1020\n   tipc_node_check_dest+0x7d2/0x11a0\n   tipc_disc_rcv+0xdbf/0x1430\n  Freed by task 89:\n   kfree+0x131/0x3c0\n   tipc_node_link_down+0x267/0x4b0\n   tipc_node_delete_links+0xec/0x160\n   bearer_disable+0x107/0x260\n\nTake the node write lock around the trace event. This serializes the\ndump against tipc_node_link_down(delete=true), which frees the link\nunder the same write lock.",
@@ -531,11 +993,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180180",
    "pts": [
-    "10月28日開源內容管理系統Drupal開發團隊提出警告，電商模組Commerce Core存在已遭利用的存取控制繞過漏洞CVE-2026-118539，攻擊者可利用此漏洞存取原本受到限制的路徑及欄位，進而對電商網站的財務造成影響，在Drupal的嚴重程度評分裡，被評為21分（滿分25分），認定為高"
+    "Drupal 警告電商模組 Commerce Core 存在存取控制繞過漏洞 CVE-2026-118539，**此漏洞已遭惡意利用**。",
+    "攻擊者可存取受限路徑及欄位並影響財務，已被 Drupal 評為高度重大等級風險，呼籲用戶儘速套用新版程式修補。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Drupal揭露已遭利用的Commerce Core模組重大漏洞",
     "desc": "10月28日開源內容管理系統Drupal開發團隊提出警告，電商模組Commerce Core存在已遭利用的存取控制繞過漏洞CVE-2026-118539，攻擊者可利用此漏洞存取原本受到限制的路徑及欄位，進而對電商網站的財務造成影響，在Drupal的嚴重程度評分裡，被評為21分（滿分25分），認定為高度重大等級風險（Highly Critical），呼籲用戶應儘速套用新版程式修補。",
@@ -622,11 +1085,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180172",
    "pts": [
-    "AI工作流程平臺Trigger.dev於11月1日公布資安事件，證實攻擊者未經授權存取部分客戶組織的環境變數。該公司表示已封堵攻擊途徑，並通知受影響客戶採取補救措施，但沒有公開攻擊方式、受影響組織數量及遭存取的環境變數內容。 Trigger.dev是一套開源的工作流程執行平臺，讓開發者使用TypeS"
+    "AI 工作流程平臺 Trigger.dev 證實遭未經授權存取部分客戶組織的環境變數，目前已封堵攻擊途徑。",
+    "**平臺已通知受影響客戶採取補救措施**，但未公開攻擊方式、受影響組織數量與具體環境變數內容。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "AI工作流程平臺Trigger.dev遭駭，攻擊者未經授權存取部分客戶環境變數",
     "desc": "AI工作流程平臺Trigger.dev於11月1日公布資安事件，證實攻擊者未經授權存取部分客戶組織的環境變數。該公司表示已封堵攻擊途徑，並通知受影響客戶採取補救措施，但沒有公開攻擊方式、受影響組織數量及遭存取的環境變數內容。 Trigger.dev是一套開源的工作流程執行平臺，讓開發者使用TypeScript建立背景工作、排程任務及AI代理，並提供工作佇列、自動重試和執行監控等功能。開發者可將長時間執行的工作交由平臺處理，透過環境變數提供程式執行時所需的設定。",
@@ -652,11 +1116,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180170",
    "pts": [
-    "法國能源集團ENGIE於10月下旬證實發生資料外洩事件，該公司合作夥伴使用的客戶開發與能源方案行銷工具出現異常資料存取活動，調查後確認遭未經授權者入侵，部分法國客戶資料因此外洩。ENGIE已切斷攻擊者的存取權限並展開調查，但尚未公布受影響客戶人數，以及遭入侵的合作夥伴名稱。"
+    "法國能源集團 ENGIE 合作夥伴行銷工具遭未經授權入侵，**導致部分法國客戶資料外洩**。",
+    "ENGIE 已切斷攻擊者存取權限並展開調查，目前尚未公布受影響客戶人數及合作夥伴名稱。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "歐洲能源巨擘ENGIE合作夥伴平臺遭駭，部分法國客戶資料外洩",
     "desc": "法國能源集團ENGIE於10月下旬證實發生資料外洩事件，該公司合作夥伴使用的客戶開發與能源方案行銷工具出現異常資料存取活動，調查後確認遭未經授權者入侵，部分法國客戶資料因此外洩。ENGIE已切斷攻擊者的存取權限並展開調查，但尚未公布受影響客戶人數，以及遭入侵的合作夥伴名稱。",
@@ -1021,11 +1486,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180139",
    "pts": [
-    "加密貨幣預測市場平臺Polymarket於10月29日再遭供應鏈攻擊，網站使用的第三方效能監控JavaScript遭惡意程式置換，攻擊者利用使用者已登入的交易工作階段出售交易部位、轉走資產。Polymarket在10月30日公布事故報告，確認遭竊金額為270萬美元，另將賠償120萬美元交易暫停造成的"
+    "駭客竄改第三方效能監控業者的DNS紀錄並置換JavaScript惡意程式，利用已登入的工作階段轉走用戶資產。",
+    "**Polymarket確認遭竊270萬美元，另將賠償120萬美元交易暫停之損失。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "駭客竄改第三方監控業者DNS紀錄，竊走Polymarket用戶270萬美元資產",
     "desc": "加密貨幣預測市場平臺Polymarket於10月29日再遭供應鏈攻擊，網站使用的第三方效能監控JavaScript遭惡意程式置換，攻擊者利用使用者已登入的交易工作階段出售交易部位、轉走資產。Polymarket在10月30日公布事故報告，確認遭竊金額為270萬美元，另將賠償120萬美元交易暫停造成的損失。",
@@ -7254,7 +7720,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle PeopleSoft多項漏洞",
+   "title": "Oracle 多款產品安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -7483,12 +7949,12 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-03T23:25:01+00:00",
+   "updated": "2026-11-04T06:25:24+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft (8.61-8.63) 與 Siebel CRM (17.0-26.9 等)，攻擊者可透過 HTTP 或實體網路區段危害系統。",
-    "**目前尚未遭攻擊利用**，部分漏洞可由未經身分驗證或低權限攻擊者發動遠端攻擊。"
+    "影響 Oracle PeopleSoft 8.61-8.63 與 Siebel CRM 多個版本，**攻擊者可經由網路存取並損害系統**。",
+    "目前尚未遭利用；未授權或低權限攻擊者可透過 HTTP 或特定網路區段發動攻擊。"
    ],
    "fix": "",
    "ai": true,
@@ -7885,7 +8351,8 @@
      "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel CRM Cloud Applications.  While the vulnerability is in Siebel CRM Cloud Applications, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Siebel CRM Cloud Applications. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
      "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM Deployment.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Siebel CRM Deployment accessible data as well as  unauthorized update, insert or delete access to some of Siebel CRM Deployment accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
      "Vulnerability in the Oracle WebCenter Content product of Oracle Fusion Middleware (component: Content Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Content.  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Content. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Dictionary Repository).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via SQL to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)."
+     "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Dictionary Repository).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via SQL to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Siebel CRM Deployment.  While the vulnerability is in Siebel CRM Deployment, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Siebel CRM Deployment accessible data as well as  unauthorized access to critical data or complete access to all Siebel CRM Deployment accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N)."
     ]
    }
   },
@@ -8359,6 +8826,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-03T23:24:36+00:00",
- "kev_last": "2026-11-03T23:24:36+00:00"
+ "nvd_last": "2026-11-04T06:24:46+00:00",
+ "kev_last": "2026-11-04T06:24:46+00:00"
 }
