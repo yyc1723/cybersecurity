@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T10:57:34+00:00",
+ "generated": "2026-11-05T18:46:16+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,85 @@
  },
  "events": [
   {
+   "id": "CVE-2026-123158",
+   "kind": "cve",
+   "title": "OpenSSH 密碼驗證繞過漏洞",
+   "sub": "CVE-2026-123158 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSH"
+   ],
+   "cves": [
+    "CVE-2026-123158"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-05T16:17:47+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+   "pts": [
+    "影響 Linux 上使用 musl libc 且未啟用 PAM 的 OpenSSH 10.6p2 前版本（例如 Alpine Linux），特定密碼長度可繞過驗證。",
+    "CVSS 評分為 8.1，**目前尚未發現漏洞遭實際利用或用於勒索軟體**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:IIS:2026-11-06",
+   "kind": "group",
+   "title": "IIS 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "IIS",
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-104269",
+    "CVE-2026-73856"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-05T16:17:29+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104269",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.6。",
+    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModS"
+   ],
+   "fix": "原文：This issue is fixed in version 3.0.17.",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-102523",
+   "kind": "cve",
+   "title": "SQL Server 漏洞 CVE-2026-102523",
+   "sub": "CVE-2026-102523 · CVSS 8.0",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SQL Server"
+   ],
+   "cves": [
+    "CVE-2026-102523"
+   ],
+   "cvss": 8.0,
+   "published": "2026-11-05T16:17:23+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102523",
+   "pts": [
+    "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE "
+   ],
+   "fix": "原文：This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+   "ai": false
+  },
+  {
    "id": "tw:e46fd02e2527",
    "kind": "news",
    "title": "Debian、Ubuntu修補高風險APT套件漏洞，中間人可替換套件取得root權限",
@@ -425,10 +504,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180259",
    "pts": [
-    "根據資安新聞網站Bleeping Computer報導，韓國遊戲公司Shift Up開發的《勝利女神：妮姬》電腦版遊戲啟動器，於11月4日傳出發生供應鏈攻擊，駭客竄改遊戲啟動器使用的JavaScript檔案，藉此散布具備遠端控制及資料竊取能力的惡意程式。攻擊者可利用植入的後門執行遠端命令、瀏覽及下載"
+    "韓國遊戲公司Shift Up開發的《勝利女神：妮姬》電腦版啟動器於11月4日遭竄改JavaScript檔案並散布惡意程式。",
+    "**攻擊者可利用植入的後門執行遠端命令、瀏覽及下載本機檔案，並竊取遊戲帳號與敏感資訊。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:0b1616dadde9",
@@ -448,10 +528,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180256",
    "pts": [
-    "Apple WebKit團隊公布瀏覽器Safari 27.3測試版新功能自適應深色模式（Adaptive Dark Mode），可將未支援深色模式的淺色網站轉成深色顯示。使用者將系統外觀切換為深色，開啟背景明亮的網站時，Safari便會提供轉換效果預覽，點選試用後即可啟用。"
+    "Apple WebKit團隊公布Safari 27.3測試版新功能自適應深色模式，可將未支援深色模式的淺色網站轉為深色顯示。",
+    "**使用者切換系統外觀為深色並開啟明亮網站時，Safari會提供轉換效果預覽供選擇啟用。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:b720c3259e4b",
@@ -471,10 +552,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180255",
    "pts": [
-    "法國合作銀行集團Crédit Mutuel Arkéa於11月4日證實遭遇網路攻擊，攻擊者透過一家外部服務商的平臺取得銀行系統存取管道，並利用該銀行行方的帳戶向其他金融機構進行未授權轉帳。"
+    "法國合作銀行集團Crédit Mutuel Arkéa於11月4日證實遭遇網路攻擊。",
+    "**攻擊者透過外部服務商平臺取得系統存取權限，利用銀行帳號進行未授權轉帳，傳遭轉走逾1.18億歐元。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:78a4483acee4",
@@ -517,10 +599,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180253",
    "pts": [
-    "近期歐洲冷凍冷藏設備遭網路攻擊的事件，已從超市與零售業蔓延至醫療機構。法國國家血液機構（EFS）於11月3日證實旗下3處設施的冷藏設備控制系統遭遇網路攻擊，攻擊者竄改溫度及除霜設定，企圖將冷藏設備調高至極端溫度。"
+    "法國國家血液機構（EFS）於11月3日證實旗下3處設施的冷藏設備控制系統遭遇網路攻擊。",
+    "**攻擊者竄改溫度及除霜設定，企圖將冷藏設備調高至極端溫度。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:91431e589459",
@@ -540,10 +623,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180252",
    "pts": [
-    "11月3日網通設備製造商兆勤（Zyxel）發布資安公告，GS1900系列交換器存在越界寫入漏洞CVE-2026-107441，該漏洞存在於交換器韌體的CGI程式，位於區域網路（LAN）內的攻擊者，可透過傳送特製HTTP請求觸發漏洞，進而在不需通過身分驗證的情況下執行作業系統命令，該公司已為10款GS"
+    "兆勤發布資安公告，Zyxel GS1900系列交換器韌體CGI程式存在越界寫入漏洞CVE-2026-107441。",
+    "**區域網路內的攻擊者可傳送特製HTTP請求，在未經身分驗證下執行作業系統命令。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:d265ba30827f",
@@ -563,10 +647,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180251",
    "pts": [
-    "日本外務省上週公布，其可與外部通訊的網路遭第三方未授權存取，可能導致約3,600筆個資外洩，包括姓名、電子郵件地址等。外務省強調，這起事件未涉及處理高度機密資訊的封閉網路。"
+    "**日本外務省與外部通訊之網路遭第三方未授權存取，恐導致約3,600筆姓名與電子郵件等個資外洩。**",
+    "外務省強調本次事件未涉及處理高度機密資訊的封閉網路。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:49e5d503cb56",
@@ -1499,9 +1584,36 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-121037",
+   "kind": "cve",
+   "title": "Chrome 遠端執行程式碼漏洞",
+   "sub": "CVE-2026-121037 · CVSS 9.6",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-121037"
+   ],
+   "cvss": 9.6,
+   "published": "2026-11-03T21:17:07+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121037",
+   "pts": [
+    "影響 157.0.8103.38 前版本在 Windows 上的 Google Chrome，ANGLE 組件存在越界寫入漏洞，遠端攻擊者可透過特製 HTML 頁面於沙盒外執行程式碼。",
+    "CVSS 評分為 9.6，**目前尚未發現漏洞遭實際利用或用於勒索軟體**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Chrome 多項安全漏洞",
    "sub": "116 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1633,11 +1745,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "同日公布 116 個漏洞，最高 CVSS 9.6。",
-    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
+    "影響 157.0.8103.38 前版本 Google Chrome，包含 DevTools、Views、Prerender 等組件漏洞，攻擊者可透過特製 HTML 頁面執行任意程式碼。",
+    "此漏洞群組最高 CVSS 評分為 9.6，**目前尚未發現遭到實際利用或勒索軟體利用**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:憑證/CA:2026-11-04",
@@ -4633,7 +4745,7 @@
   {
    "id": "grp:Veeam:2026-10-28",
    "kind": "group",
-   "title": "Veeam 遠端執行與讀檔漏洞",
+   "title": "Veeam 遠端執行程式碼漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.0",
    "sev": "crit",
    "kev": false,
@@ -4651,11 +4763,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106076",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.0。",
-    "A vulnerability allowing an authenticated organization-transfer peer to inject SQL into the configuration database of the source Veeam Backu"
+    "影響 Veeam Backup for Microsoft 365，漏洞可導致 SQL 注入以執行遠端程式碼與跨租戶讀寫設定，或以高權限讀取伺服器任意檔案。",
+    "最高 CVSS 評分為 9.0，**目前尚未發現漏洞遭實際利用或用於勒索軟體**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:ad95fcbf0211",
@@ -5611,7 +5723,7 @@
   {
    "id": "grp:GitLab:2026-10-22",
    "kind": "group",
-   "title": "GitLab 與相關產品漏洞",
+   "title": "GitLab 嚴重安全漏洞",
    "sub": "3 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -5630,11 +5742,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 10.0。",
-    "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
+    "影響 GitLab CE/EE 7.0 至 19.5.1 間多個指定版本，漏洞可允許未驗證使用者執行動作，或在特定設定下接管既有 LDAP 帳號。",
+    "最高 CVSS 評分為 10.0，**目前尚未發現漏洞遭到實際利用或勒索軟體利用**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-94140",
@@ -6226,7 +6338,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 產品多項安全漏洞",
+   "title": "Oracle 多款產品安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -6458,11 +6570,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，遠端攻擊者可透過網路連線入侵系統。",
+    "最高 CVSS 評分為 10.0，**目前尚未發現漏洞遭到實際利用或勒索軟體利用**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",

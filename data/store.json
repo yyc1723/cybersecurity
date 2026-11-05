@@ -35,6 +35,117 @@
  },
  "events": [
   {
+   "id": "CVE-2026-123158",
+   "kind": "cve",
+   "title": "OpenSSH 密碼驗證繞過漏洞",
+   "sub": "CVE-2026-123158 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSH"
+   ],
+   "cves": [
+    "CVE-2026-123158"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-05T16:17:47+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-05T18:48:29+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+   "pts": [
+    "影響 Linux 上使用 musl libc 且未啟用 PAM 的 OpenSSH 10.6p2 前版本（例如 Alpine Linux），特定密碼長度可繞過驗證。",
+    "CVSS 評分為 8.1，**目前尚未發現漏洞遭實際利用或用於勒索軟體**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+    "refs": [
+     "https://github.com/leonjza/sshhole-lab",
+     "https://github.com/openssh/openssh-portable/commit/4353fdc43ef646c43a8dda7025cc1a898caf1482",
+     "https://github.com/predkambrij/sshhole-repro",
+     "https://hachyderm.io/@damienmiller/117563026759098135",
+     "https://marc.info/?l=openssh-unix-dev&m=179388064263131&w=2"
+    ]
+   }
+  },
+  {
+   "id": "grp:IIS:2026-11-06",
+   "kind": "group",
+   "title": "IIS 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "IIS",
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-104269",
+    "CVE-2026-73856"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-05T16:17:29+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-05T18:48:29+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104269",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.6。",
+    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModS"
+   ],
+   "fix": "原文：This issue is fixed in version 3.0.17.",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModSecurity's multipart parser does not apply the RFC 2231 filename* parameter precedence used by common Go, Python, Node.js, and Java application parsers. A Content-Disposition header can provide a benign filename parameter for ModSecurity and a different encoded filename* value that the backend prefers, causing MULTIPART_FILENAME rules and the application to make security decisions on different names. Applications that use the backend-selected name for storage, extension checks, or content-type inference can therefore receive a filename that bypassed WAF inspection. PHP's native multipart parser is not affected by this discrepancy. This issue is fixed in version 3.0.17.",
+     "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, src/transaction.cc compares a response Content-Type value against SecResponseBodyMimeType entries case-sensitively. A mixed-case response media type that is semantically equivalent to a configured lowercase type can therefore be treated as unconfigured, causing ModSecurity to skip RESPONSE_BODY inspection. An unauthenticated requester can then receive response content that a phase 4 rule would otherwise block, including sensitive error or debug data. This issue is fixed in version 3.0.17."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-102523",
+   "kind": "cve",
+   "title": "SQL Server 漏洞 CVE-2026-102523",
+   "sub": "CVE-2026-102523 · CVSS 8.0",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SQL Server"
+   ],
+   "cves": [
+    "CVE-2026-102523"
+   ],
+   "cvss": 8.0,
+   "published": "2026-11-05T16:17:23+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-05T18:48:29+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102523",
+   "pts": [
+    "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE "
+   ],
+   "fix": "原文：This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE ... CONVERT ... PARTITION does not apply filename encoding to user-specified partition names before using them in filesystem path construction. An authenticated database user can use a partition name requiring filename escaping to make the conversion operate on table files the user is not authorized to access, allowing unauthorized table reads or modifications. This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+    "refs": [
+     "https://github.com/MariaDB/server/commit/98437c30ae52ed709f266e5f8095d779261a5879",
+     "https://github.com/MariaDB/server/releases/tag/mariadb-10.11.19",
+     "https://github.com/MariaDB/server/releases/tag/mariadb-11.4.13",
+     "https://github.com/MariaDB/server/releases/tag/mariadb-11.8.9",
+     "https://github.com/MariaDB/server/releases/tag/mariadb-12.3.3"
+    ]
+   }
+  },
+  {
    "id": "tw:e46fd02e2527",
    "kind": "news",
    "title": "Debian、Ubuntu修補高風險APT套件漏洞，中間人可替換套件取得root權限",
@@ -113,11 +224,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180259",
    "pts": [
-    "根據資安新聞網站Bleeping Computer報導，韓國遊戲公司Shift Up開發的《勝利女神：妮姬》電腦版遊戲啟動器，於11月4日傳出發生供應鏈攻擊，駭客竄改遊戲啟動器使用的JavaScript檔案，藉此散布具備遠端控制及資料竊取能力的惡意程式。攻擊者可利用植入的後門執行遠端命令、瀏覽及下載"
+    "韓國遊戲公司Shift Up開發的《勝利女神：妮姬》電腦版啟動器於11月4日遭竄改JavaScript檔案並散布惡意程式。",
+    "**攻擊者可利用植入的後門執行遠端命令、瀏覽及下載本機檔案，並竊取遊戲帳號與敏感資訊。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "熱門遊戲《勝利女神：妮姬》遭遇供應鏈攻擊，玩家電腦恐被植入竊資軟體",
     "desc": "根據資安新聞網站Bleeping Computer報導，韓國遊戲公司Shift Up開發的《勝利女神：妮姬》電腦版遊戲啟動器，於11月4日傳出發生供應鏈攻擊，駭客竄改遊戲啟動器使用的JavaScript檔案，藉此散布具備遠端控制及資料竊取能力的惡意程式。攻擊者可利用植入的後門執行遠端命令、瀏覽及下載本機檔案，並竊取遊戲帳號與瀏覽器儲存的敏感資訊。",
@@ -143,11 +255,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180256",
    "pts": [
-    "Apple WebKit團隊公布瀏覽器Safari 27.3測試版新功能自適應深色模式（Adaptive Dark Mode），可將未支援深色模式的淺色網站轉成深色顯示。使用者將系統外觀切換為深色，開啟背景明亮的網站時，Safari便會提供轉換效果預覽，點選試用後即可啟用。"
+    "Apple WebKit團隊公布Safari 27.3測試版新功能自適應深色模式，可將未支援深色模式的淺色網站轉為深色顯示。",
+    "**使用者切換系統外觀為深色並開啟明亮網站時，Safari會提供轉換效果預覽供選擇啟用。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Safari 27.3測試網頁自動轉暗，WebKit引擎可依內容調整文字與圖示配色",
     "desc": "Apple WebKit團隊公布瀏覽器Safari 27.3測試版新功能自適應深色模式（Adaptive Dark Mode），可將未支援深色模式的淺色網站轉成深色顯示。使用者將系統外觀切換為深色，開啟背景明亮的網站時，Safari便會提供轉換效果預覽，點選試用後即可啟用。",
@@ -173,11 +286,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180255",
    "pts": [
-    "法國合作銀行集團Crédit Mutuel Arkéa於11月4日證實遭遇網路攻擊，攻擊者透過一家外部服務商的平臺取得銀行系統存取管道，並利用該銀行行方的帳戶向其他金融機構進行未授權轉帳。"
+    "法國合作銀行集團Crédit Mutuel Arkéa於11月4日證實遭遇網路攻擊。",
+    "**攻擊者透過外部服務商平臺取得系統存取權限，利用銀行帳號進行未授權轉帳，傳遭轉走逾1.18億歐元。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "法國銀行Crédit Mutuel Arkéa遭網攻，傳逾1.18億歐元遭攻擊者轉走",
     "desc": "法國合作銀行集團Crédit Mutuel Arkéa於11月4日證實遭遇網路攻擊，攻擊者透過一家外部服務商的平臺取得銀行系統存取管道，並利用該銀行行方的帳戶向其他金融機構進行未授權轉帳。",
@@ -233,11 +347,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180253",
    "pts": [
-    "近期歐洲冷凍冷藏設備遭網路攻擊的事件，已從超市與零售業蔓延至醫療機構。法國國家血液機構（EFS）於11月3日證實旗下3處設施的冷藏設備控制系統遭遇網路攻擊，攻擊者竄改溫度及除霜設定，企圖將冷藏設備調高至極端溫度。"
+    "法國國家血液機構（EFS）於11月3日證實旗下3處設施的冷藏設備控制系統遭遇網路攻擊。",
+    "**攻擊者竄改溫度及除霜設定，企圖將冷藏設備調高至極端溫度。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "法國國家血液機構冷藏設備遭網路攻擊，3處設施溫度控制遭竄改",
     "desc": "近期歐洲冷凍冷藏設備遭網路攻擊的事件，已從超市與零售業蔓延至醫療機構。法國國家血液機構（EFS）於11月3日證實旗下3處設施的冷藏設備控制系統遭遇網路攻擊，攻擊者竄改溫度及除霜設定，企圖將冷藏設備調高至極端溫度。",
@@ -263,11 +378,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180252",
    "pts": [
-    "11月3日網通設備製造商兆勤（Zyxel）發布資安公告，GS1900系列交換器存在越界寫入漏洞CVE-2026-107441，該漏洞存在於交換器韌體的CGI程式，位於區域網路（LAN）內的攻擊者，可透過傳送特製HTTP請求觸發漏洞，進而在不需通過身分驗證的情況下執行作業系統命令，該公司已為10款GS"
+    "兆勤發布資安公告，Zyxel GS1900系列交換器韌體CGI程式存在越界寫入漏洞CVE-2026-107441。",
+    "**區域網路內的攻擊者可傳送特製HTTP請求，在未經身分驗證下執行作業系統命令。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Zyxel GS1900系列交換器存在越界寫入漏洞，攻擊者不需通過身分驗證就能執行作業系統命令",
     "desc": "11月3日網通設備製造商兆勤（Zyxel）發布資安公告，GS1900系列交換器存在越界寫入漏洞CVE-2026-107441，該漏洞存在於交換器韌體的CGI程式，位於區域網路（LAN）內的攻擊者，可透過傳送特製HTTP請求觸發漏洞，進而在不需通過身分驗證的情況下執行作業系統命令，該公司已為10款GS1900交換器推出新版",
@@ -293,11 +409,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180251",
    "pts": [
-    "日本外務省上週公布，其可與外部通訊的網路遭第三方未授權存取，可能導致約3,600筆個資外洩，包括姓名、電子郵件地址等。外務省強調，這起事件未涉及處理高度機密資訊的封閉網路。"
+    "**日本外務省與外部通訊之網路遭第三方未授權存取，恐導致約3,600筆姓名與電子郵件等個資外洩。**",
+    "外務省強調本次事件未涉及處理高度機密資訊的封閉網路。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "日本外務省網站被駭3,600筆個資恐外洩，但強調非機要外交通訊",
     "desc": "日本外務省上週公布，其可與外部通訊的網路遭第三方未授權存取，可能導致約3,600筆個資外洩，包括姓名、電子郵件地址等。外務省強調，這起事件未涉及處理高度機密資訊的封閉網路。",
@@ -1516,9 +1633,45 @@
    }
   },
   {
+   "id": "CVE-2026-121037",
+   "kind": "cve",
+   "title": "Chrome 遠端執行程式碼漏洞",
+   "sub": "CVE-2026-121037 · CVSS 9.6",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-121037"
+   ],
+   "cvss": 9.6,
+   "published": "2026-11-03T21:17:07+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-05T18:48:29+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121037",
+   "pts": [
+    "影響 157.0.8103.38 前版本在 Windows 上的 Google Chrome，ANGLE 組件存在越界寫入漏洞，遠端攻擊者可透過特製 HTML 頁面於沙盒外執行程式碼。",
+    "CVSS 評分為 9.6，**目前尚未發現漏洞遭實際利用或用於勒索軟體**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "Out of bounds write in ANGLE in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+    "refs": [
+     "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
+     "https://issues.chromium.org/issues/569415790"
+    ]
+   }
+  },
+  {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Chrome 多項安全漏洞",
    "sub": "116 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1647,15 +1800,15 @@
    "cvss": 9.6,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-05T10:58:01+00:00",
+   "updated": "2026-11-05T18:48:29+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "同日公布 116 個漏洞，最高 CVSS 9.6。",
-    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
+    "影響 157.0.8103.38 前版本 Google Chrome，包含 DevTools、Views、Prerender 等組件漏洞，攻擊者可透過特製 HTML 頁面執行任意程式碼。",
+    "此漏洞群組最高 CVSS 評分為 9.6，**目前尚未發現遭到實際利用或勒索軟體利用**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2011,7 +2164,44 @@
      "Buffer overflow in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
      "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
-     "Out of bounds write in WebGL in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)"
+     "Out of bounds write in WebGL in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Race condition in Mobile in Google Chrome on on iOS prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Improper state validation in XML in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Network in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Low)",
+     "Use after free in Mobile in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Mobile in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Missing authorization in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Confused deputy in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Paint in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Prerender in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Scheduling in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect reference resolution in Images in Google Chrome on on Mac prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: High)",
+     "Information loss in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Security issue in Platform in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper input validation in Browser in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+     "Missing authorization in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in TrustedTypes in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Confused deputy in WebUI in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in Animation in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incomplete cleanup in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Incorrect authorization in CORS in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in PowerBookmarks in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in Forms in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Security issue in Desktop in Google Chrome on on Mac prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Privilege elevation in Contacts in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper input validation in Network in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in Extensions in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Missing authorization in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)"
     ]
    }
   },
@@ -6371,7 +6561,7 @@
   {
    "id": "grp:Veeam:2026-10-28",
    "kind": "group",
-   "title": "Veeam 遠端執行與讀檔漏洞",
+   "title": "Veeam 遠端執行程式碼漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.0",
    "sev": "crit",
    "kev": false,
@@ -6390,11 +6580,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106076",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.0。",
-    "A vulnerability allowing an authenticated organization-transfer peer to inject SQL into the configuration database of the source Veeam Backu"
+    "影響 Veeam Backup for Microsoft 365，漏洞可導致 SQL 注入以執行遠端程式碼與跨租戶讀寫設定，或以高權限讀取伺服器任意檔案。",
+    "最高 CVSS 評分為 9.0，**目前尚未發現漏洞遭實際利用或用於勒索軟體**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -7674,7 +7864,7 @@
   {
    "id": "grp:GitLab:2026-10-22",
    "kind": "group",
-   "title": "GitLab 與相關產品漏洞",
+   "title": "GitLab 嚴重安全漏洞",
    "sub": "3 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -7694,11 +7884,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 10.0。",
-    "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
+    "影響 GitLab CE/EE 7.0 至 19.5.1 間多個指定版本，漏洞可允許未驗證使用者執行動作，或在特定設定下接管既有 LDAP 帳號。",
+    "最高 CVSS 評分為 10.0，**目前尚未發現漏洞遭到實際利用或勒索軟體利用**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -9041,7 +9231,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 產品多項安全漏洞",
+   "title": "Oracle 多款產品安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -9270,15 +9460,15 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-05T02:29:43+00:00",
+   "updated": "2026-11-05T18:48:29+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，遠端攻擊者可透過網路連線入侵系統。",
+    "最高 CVSS 評分為 10.0，**目前尚未發現漏洞遭到實際利用或勒索軟體利用**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -9704,7 +9894,18 @@
      "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
      "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel CRM Deployment.  Successful attacks of this vulnerability can result in takeover of Siebel CRM Deployment. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Applications Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Manager. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Applications Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Manager. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)."
+     "Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Applications Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Manager. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Report Distribution).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all PeopleSoft Enterprise PeopleTools accessible data and unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 8.1 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H).",
+     "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Report Distribution).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all PeopleSoft Enterprise PeopleTools accessible data and unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 8.1 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H).",
+     "Vulnerability in Oracle Secure Backup (component: Backup and Restore).  Supported versions that are affected are 19.1.0.0.0 and   19.1.0.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Secure Backup.  While the vulnerability is in Oracle Secure Backup, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Secure Backup. CVSS 3.1 Base Score 8.6 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H).",
+     "Vulnerability in the Siebel CRM Development product of Oracle Siebel CRM (component: Siebel Approval Manager).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM Development.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of Siebel CRM Development. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Sites.  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Sites. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via Oracle Net to compromise Oracle Trusted Answer Search.  While the vulnerability is in Oracle Trusted Answer Search, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Trusted Answer Search accessible data as well as  unauthorized read access to a subset of Oracle Trusted Answer Search accessible data and unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Trusted Answer Search. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Purchasing product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Purchasing.  Successful attacks of this vulnerability can result in takeover of Oracle Purchasing. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Partner Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Partner Management.  While the vulnerability is in Oracle Partner Management, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Partner Management accessible data as well as  unauthorized access to critical data or complete access to all Oracle Partner Management accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Partner Management. CVSS 3.1 Base Score 8.4 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:L).",
+     "Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Diagnostics).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Applications Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Manager. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Siebel CRM End User product of Oracle Siebel CRM (component: Communications Panel/Dashboard).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM End User.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Siebel CRM End User accessible data as well as  unauthorized update, insert or delete access to some of Siebel CRM End User accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N)."
     ]
    }
   },
@@ -10178,6 +10379,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-05T10:57:34+00:00",
- "kev_last": "2026-11-05T10:57:34+00:00"
+ "nvd_last": "2026-11-05T18:46:16+00:00",
+ "kev_last": "2026-11-05T18:46:16+00:00"
 }
