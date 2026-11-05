@@ -4,8 +4,20 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "items": [
+   {
+    "title": "處理：Microsoft 11 月例行安全更新",
+    "desc": "目前未標示已遭利用的漏洞。"
+   },
+   {
+    "title": "處理：Chrome 遠端執行程式碼漏洞",
+    "desc": "Incorrect authorization in DevTools in Google Chrome prior to 157.0.81"
+   },
+   {
+    "title": "處理：Puppet Server 安全漏洞",
+    "desc": "目前未遭利用。攻擊者需持有 CA 簽署之憑證，透過提交特製報告或利用憑證名稱比對漏洞進行冒充。"
+   },
    {
     "title": "處理：SonicWall GMS 資訊洩漏漏洞",
     "desc": "目前未遭利用。具備網路存取權限的未驗證攻擊者即可遠端存取 GMS 內部檔案。"
@@ -17,23 +29,131 @@
    {
     "title": "處理：hackney憑證驗證漏洞",
     "desc": "目前尚未發現漏洞遭利用。攻擊條件為攻擊者需擁有經固定主機名稱的公開信任憑證。"
-   },
-   {
-    "title": "處理：Puppet Server 安全漏洞",
-    "desc": "目前未遭利用。攻擊者需持有 CA 簽署之憑證，透過提交特製報告或利用憑證名稱比對漏洞進行冒充。"
-   },
-   {
-    "title": "處理：Chrome 遠端執行程式碼漏洞",
-    "desc": "目前未遭利用。遠端攻擊者可透過社交工程或誘導使用者存取特製網頁觸發漏洞。"
-   },
-   {
-    "title": "處理：AI應用開發平臺Langflow修補2項重大漏洞，攻擊",
-    "desc": "官方已推出 1.13.0 版本修補相關漏洞。"
    }
   ],
   "ai": true
  },
  "events": [
+  {
+   "id": "tw:13f451d80f32",
+   "kind": "news",
+   "title": "歐洲冷凍冷藏系統接連遭駭，法國血庫也遭攻擊，歐盟網路安全局呼籲加強防護",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T02:29:45+00:00",
+   "first_seen": "2026-11-05T02:29:45+00:00",
+   "updated": "2026-11-05T02:29:45+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180236",
+   "pts": [
+    "歐洲多國冷凍冷藏系統接連遭到網路攻擊，歐盟網路安全局（ENISA）與歐盟執委會及相關機關11月4日發布聯合聲明，呼籲相關組織立即採取安全措施，降低冷凍冷藏系統遭到攻擊的風險。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "歐洲冷凍冷藏系統接連遭駭，法國血庫也遭攻擊，歐盟網路安全局呼籲加強防護",
+    "desc": "歐洲多國冷凍冷藏系統接連遭到網路攻擊，歐盟網路安全局（ENISA）與歐盟執委會及相關機關11月4日發布聯合聲明，呼籲相關組織立即採取安全措施，降低冷凍冷藏系統遭到攻擊的風險。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e30de31d6f5b",
+   "kind": "news",
+   "title": "區塊鏈分析業者Chainalysis遭入侵波及客戶使用者資料，部分產品暫停服務",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T02:29:45+00:00",
+   "first_seen": "2026-11-05T02:29:45+00:00",
+   "updated": "2026-11-05T02:29:45+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180206",
+   "pts": [
+    "區塊鏈分析業者Chainalysis於10月30日揭露一起資安事件，外部攻擊者利用該公司所稱的「攻擊性代理技術」（Offensive Agentic Techniques），未經授權存取內部系統及工具，並存取部分客戶使用者資料。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "區塊鏈分析業者Chainalysis遭入侵波及客戶使用者資料，部分產品暫停服務",
+    "desc": "區塊鏈分析業者Chainalysis於10月30日揭露一起資安事件，外部攻擊者利用該公司所稱的「攻擊性代理技術」（Offensive Agentic Techniques），未經授權存取內部系統及工具，並存取部分客戶使用者資料。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:0f147fa95c9a",
+   "kind": "news",
+   "title": "多家AI開發平臺接連發生資安事件，遭竊金鑰被用來大量呼叫AI模型",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T02:29:45+00:00",
+   "first_seen": "2026-11-05T02:29:45+00:00",
+   "updated": "2026-11-05T02:29:45+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180198",
+   "pts": [
+    "雲端資安業者Wiz近日調查10月接連發生的AI程式開發及部署平臺資安事件，發現其中部分事件的攻擊者曾存取客戶儲存在平臺的環境變數及敏感憑證。由於這些環境變數可能包含AI服務API金鑰等敏感資訊，一旦平臺遭入侵，攻擊者便可能利用遭竊金鑰，未經授權使用客戶的AI服務。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "多家AI開發平臺接連發生資安事件，遭竊金鑰被用來大量呼叫AI模型",
+    "desc": "雲端資安業者Wiz近日調查10月接連發生的AI程式開發及部署平臺資安事件，發現其中部分事件的攻擊者曾存取客戶儲存在平臺的環境變數及敏感憑證。由於這些環境變數可能包含AI服務API金鑰等敏感資訊，一旦平臺遭入侵，攻擊者便可能利用遭竊金鑰，未經授權使用客戶的AI服務。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:21a96f3b5e0f",
+   "kind": "news",
+   "title": "CrowdStrike擬以4億美元併購Fiddler AI，強化AI代理行為追蹤與稽核",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T02:29:45+00:00",
+   "first_seen": "2026-11-05T02:29:45+00:00",
+   "updated": "2026-11-05T02:29:45+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180197",
+   "pts": [
+    "資安業者CrowdStrike於11月3日宣布，已簽署協議將併購AI代理可觀測性業者Fiddler AI，計畫將其技術整合至旗下Falcon資安平臺。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "CrowdStrike擬以4億美元併購Fiddler AI，強化AI代理行為追蹤與稽核",
+    "desc": "資安業者CrowdStrike於11月3日宣布，已簽署協議將併購AI代理可觀測性業者Fiddler AI，計畫將其技術整合至旗下Falcon資安平臺。",
+    "summarize": true
+   }
+  },
   {
    "id": "CVE-2026-92704",
    "kind": "cve",
@@ -609,11 +729,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180204",
    "pts": [
-    "廣獲使用的遠端桌面存取軟體TeamViewer於10月27日修補可能導致反向攻擊的高風險漏洞，漏洞編號CVE-2026-111585，CVSS嚴重性評分達8.8分。不同於一般遠端存取工具漏洞多是造成控制端攻擊受控端的情境，這個漏洞允許受控端反過來攻擊發起連線的控制端電腦，問題源自遠端畫面解壓縮處理程"
+    "**TeamViewer已修補高風險漏洞CVE-2026-111585，允許受控端反向攻擊控制端電腦。**",
+    "漏洞源於遠端畫面解壓縮處理程序的整數溢位，攻擊者可傳送特製畫面資料引發堆積緩衝區溢位。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "TeamViewer修補反向攻擊漏洞，受控端可藉遠端連線攻擊控制端",
     "desc": "廣獲使用的遠端桌面存取軟體TeamViewer於10月27日修補可能導致反向攻擊的高風險漏洞，漏洞編號CVE-2026-111585，CVSS嚴重性評分達8.8分。不同於一般遠端存取工具漏洞多是造成控制端攻擊受控端的情境，這個漏洞允許受控端反過來攻擊發起連線的控制端電腦，問題源自遠端畫面解壓縮處理程序的整數溢位，攻擊者可利用受控端傳送特製畫面資料，使控制端配置的記憶體緩衝區不足，進而造成堆積緩衝區溢位。",
@@ -639,11 +760,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180202",
    "pts": [
-    "11月3日美國網路安全與基礎設施安全局（CISA）更新已遭利用的漏洞名單（KEV），原因是他們已掌握新漏洞遭積極利用的證據，該漏洞就是上週公布的CVE-2026-119977，此為檢查時間與使用時間（TOCTOU）競爭條件漏洞，存在於WordPress核心，美"
+    "**美國CISA警告WordPress核心漏洞CVE-2026-119977已遭積極利用，並列入KEV清單。**",
+    "該漏洞屬於檢查時間與使用時間（TOCTOU）競爭條件漏洞。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "美國CISA警告WordPress資安漏洞遭積極利用",
     "desc": "11月3日美國網路安全與基礎設施安全局（CISA）更新已遭利用的漏洞名單（KEV），原因是他們已掌握新漏洞遭積極利用的證據，該漏洞就是上週公布的CVE-2026-119977，此為檢查時間與使用時間（TOCTOU）競爭條件漏洞，存在於WordPress核心，美",
@@ -669,11 +791,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180201",
    "pts": [
-    "Google於11月3日發布Chrome 157大改版，針對電腦版與Android版總計修復213個資安弱點，其中有7個被評為重大等級，涉及Dawn、ANGLE、WebGL、Prerender、Geometry及Core等元件。"
+    "**Google發布Chrome 157修復電腦版與Android版共213個資安漏洞。**",
+    "其中包含7個重大等級漏洞，影響Dawn、ANGLE與WebGL等元件。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Google釋出Chrome 157修補213個資安漏洞，其中7個為重大等級",
     "desc": "Google於11月3日發布Chrome 157大改版，針對電腦版與Android版總計修復213個資安弱點，其中有7個被評為重大等級，涉及Dawn、ANGLE、WebGL、Prerender、Geometry及Core等元件。",
@@ -730,11 +853,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180161",
    "pts": [
-    "Google威脅情報團隊（GTIG）近日揭露XCPE殭屍網路瓦解行動，這個殭屍網路控制全球超過130萬臺機上盒。Google調查發現，Android裝置製造商Videostrong Technology Co.涉嫌刻意在裝置韌體預載後門程式，並向犯罪合作夥伴販售裝置存取權限，協助部署對方開發的惡意模"
+    "**Google揭露XCPE殭屍網路控制全球逾130萬臺機上盒，指控製造商刻意預載後門程式。**",
+    "製造商Videostrong向犯罪夥伴販售裝置存取權限，用以從事廣告詐欺與轉送流量。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "XCPE殭屍網路控制逾130萬臺機上盒，Google指控Android裝置製造商刻意預載後門",
     "desc": "Google威脅情報團隊（GTIG）近日揭露XCPE殭屍網路瓦解行動，這個殭屍網路控制全球超過130萬臺機上盒。Google調查發現，Android裝置製造商Videostrong Technology Co.涉嫌刻意在裝置韌體預載後門程式，並向犯罪合作夥伴販售裝置存取權限，協助部署對方開發的惡意模組。這些合作夥伴利用受感染裝置從事廣告詐欺，或將裝置變成常駐代理網路節點，替第三方轉送流量。",
@@ -760,11 +884,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180159",
    "pts": [
-    "比利時資安業者Aikido Security今年9月先後併購波蘭資安業者Cyberly及比利時資安業者OutKept，並整合兩家公司的技術，於10月20日宣布推出員工資安平臺Noon，將原本以應用程式、程式碼及雲端安全為主的業務擴展至企業員工防護。"
+    "**Aikido Security併購Cyberly與OutKept，整合技術推出員工資安平臺Noon。**",
+    "平臺將業務從應用程式與雲端安全擴展至企業員工防護與AI工具管理。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Aikido併購Cyberly及OutKept推出Noon資安平臺，整合AI工具管理與員工安全防護",
     "desc": "比利時資安業者Aikido Security今年9月先後併購波蘭資安業者Cyberly及比利時資安業者OutKept，並整合兩家公司的技術，於10月20日宣布推出員工資安平臺Noon，將原本以應用程式、程式碼及雲端安全為主的業務擴展至企業員工防護。",
@@ -790,11 +915,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180158",
    "pts": [
-    "Google旗下Mandiant公布2026年多起大型語言模型（LLM）資源遭盜用事件的調查結果，這類攻擊稱為LLMJacking。部分攻擊者利用遭竊的雲端存取憑證及API金鑰，未經授權大量使用企業的AI模型服務，部分受害企業因此單日產生超過10萬美元的雲端使用費用。"
+    "**攻擊者竊取雲端憑證與API金鑰進行LLMJacking攻擊，未經授權盜用企業AI模型資源。**",
+    "部分受害企業因此單日產生超過10萬美元的雲端使用費用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "雲端憑證遭竊成LLMJacking攻擊入口，企業AI模型資源被盜用牟利",
     "desc": "Google旗下Mandiant公布2026年多起大型語言模型（LLM）資源遭盜用事件的調查結果，這類攻擊稱為LLMJacking。部分攻擊者利用遭竊的雲端存取憑證及API金鑰，未經授權大量使用企業的AI模型服務，部分受害企業因此單日產生超過10萬美元的雲端使用費用。",
@@ -967,15 +1093,15 @@
    "cvss": 9.6,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-04T21:53:52+00:00",
+   "updated": "2026-11-05T02:29:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 前的 Google Chrome，攻擊者可透過特製 HTML 頁面**遠端執行任意程式碼**。",
-    "目前未遭利用。部分漏洞需透過社交工程誘使使用者開啟網頁觸發。"
+    "同日公布 116 個漏洞，最高 CVSS 9.6。",
+    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -1254,7 +1380,29 @@
      "Use after free in Extensions in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
      "Missing authorization in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
      "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
-     "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)"
+     "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
+     "Race condition in Mobile in Google Chrome on on iOS prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Improper state validation in XML in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper input validation in Mobile in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Missing authorization in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Confused deputy in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper input validation in Prerender in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Information loss in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Security issue in Platform in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper resource control in WebCodecs in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Confused deputy in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Missing authorization in BackgroundFetch in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in TrustedTypes in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Confused deputy in WebUI in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Incomplete cleanup in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Incorrect authorization in CORS in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in Forms in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Improper input validation in Network in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Missing authorization in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+     "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)"
     ]
    }
   },
@@ -1570,11 +1718,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180179",
    "pts": [
-    "隨著國際局勢越來越緊張，近期針對政府機關的網路間諜活動也不時傳出，然而現在有一起活動相當特別，攻擊者竟是針對專為政府客製化的Windows 10作業系統而來，這種情況並不常見。"
+    "**APT駭客利用惡意軟體框架NetamLoader發動網路間諜活動**，針對專為政府客製化的Windows 10作業系統進行攻擊。",
+    "此攻擊活動針對亞洲政府機關，鎖定特定客製化作業系統的網路間諜行為並不常見。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "APT駭客利用惡意軟體框架NetamLoader攻擊亞洲政府機關",
     "desc": "隨著國際局勢越來越緊張，近期針對政府機關的網路間諜活動也不時傳出，然而現在有一起活動相當特別，攻擊者竟是針對專為政府客製化的Windows 10作業系統而來，這種情況並不常見。",
@@ -1601,11 +1750,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180174",
    "pts": [
-    "駭客借助AI的力量從事網路攻擊，已變得相當氾濫，最近資安公司Palo Alto Networks發現一起攻擊活動，駭客疑似利用大型語言模型（LLM）或自動化AI代理程式協助撰寫攻擊工具，引起研究人員的注意。駭客組織CL-UNK-1211自2025年10月至2026年4月，鎖定政府機關與相關基礎設施從"
+    "駭客組織CL-UNK-1211於2025年10月至2026年4月間針對政府機關與基礎設施的Linux主機發動網路間諜活動。",
+    "**攻擊者疑似利用LLM或自動化AI代理程式協助撰寫攻擊工具**，意圖竊取帳密、郵件、資料庫內容與社群平臺帳號。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "政府機關Linux主機被鎖定，駭客借助AI力量生成惡意程式，意圖竊取郵件與社群平臺帳號",
     "desc": "駭客借助AI的力量從事網路攻擊，已變得相當氾濫，最近資安公司Palo Alto Networks發現一起攻擊活動，駭客疑似利用大型語言模型（LLM）或自動化AI代理程式協助撰寫攻擊工具，引起研究人員的注意。駭客組織CL-UNK-1211自2025年10月至2026年4月，鎖定政府機關與相關基礎設施從事網路間諜活動，意圖竊取帳密、蒐集政府郵件及資料庫內容，並嘗試以此挖掘政府機關的社群平臺帳號。",
@@ -1693,11 +1843,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180169",
    "pts": [
-    "資安研究人員Mark Blaszczyk近日揭露Android通訊服務漏洞CVE-2026-58882，將其稱為「SMS of Death」（死亡簡訊）。攻擊者只要知道受害者的電話號碼，就能傳送特製的WAP Push簡訊發動零點擊阻斷服務攻擊，無須使用者開啟訊息或點擊連結，由於這類訊息不會出現在收件"
+    "**Android通訊服務存在CVE-2026-58882漏洞**，攻擊者傳送特製WAP Push簡訊即可發動零點擊阻斷服務攻擊，癱瘓手機通話。",
+    "攻擊僅需受害者電話號碼且無須使用者點擊，惡意簡訊不會出現在收件匣，受害者無法辨識寄件者。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Android遭揭露「死亡簡訊」漏洞，可遠端癱瘓手機通話服務",
     "desc": "資安研究人員Mark Blaszczyk近日揭露Android通訊服務漏洞CVE-2026-58882，將其稱為「SMS of Death」（死亡簡訊）。攻擊者只要知道受害者的電話號碼，就能傳送特製的WAP Push簡訊發動零點擊阻斷服務攻擊，無須使用者開啟訊息或點擊連結，由於這類訊息不會出現在收件匣，受害者也無法辨識寄件者。",
@@ -1723,11 +1874,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180168",
    "pts": [
-    "最近一個月AI滲透測試框架被用於攻擊活動的情況，不時有消息傳出，臺灣、日本、韓國皆出現相關資安事故，繼微軟揭露中國國家級駭客組織Storm-0940發動全球性大規模攻擊"
+    "**中國國家級駭客組織Storm-0940濫用AI滲透測試框架ARTEX**，在全球逾200個企業組織進行網路間諜活動。",
+    "近期臺灣、日本與韓國皆出現相關資安事故，顯示AI滲透測試框架遭濫用從事大規模攻擊。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "中國駭客濫用AI滲透測試框架ARTEX攻擊，於全球逾200個企業組織從事網路間諜活動",
     "desc": "最近一個月AI滲透測試框架被用於攻擊活動的情況，不時有消息傳出，臺灣、日本、韓國皆出現相關資安事故，繼微軟揭露中國國家級駭客組織Storm-0940發動全球性大規模攻擊",
@@ -1784,11 +1936,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180164",
    "pts": [
-    "國泰航空（Cathay Pacific）、澳洲航空（Qantas Airlines）及馬來西亞航空（Malaysia Airlines）上週先後公布因航空訂位系統供應商Amadeus系統資安事件，導致大批客戶個資外流。 10月28、29日國泰航空接獲Amadeus IT Group通知，得知其系統帳"
+    "**第三方人士非授權登入航空訂位系統供應商Amadeus的帳號憑證**，存取客戶訂位紀錄並導致大批個資外流。",
+    "受影響業者包含國泰航空、澳洲航空與馬來西亞航空，國泰航空於10月28、29日接獲通知。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "國泰、澳航、馬航也成Amadeus系統資料外洩受害者",
     "desc": "國泰航空（Cathay Pacific）、澳洲航空（Qantas Airlines）及馬來西亞航空（Malaysia Airlines）上週先後公布因航空訂位系統供應商Amadeus系統資安事件，導致大批客戶個資外流。 10月28、29日國泰航空接獲Amadeus IT Group通知，得知其系統帳號憑證被第三方人士用以非授權登入，並存取航空公司客戶訂位紀錄的事故，亦影響到國泰航空。",
@@ -1880,11 +2033,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180121",
    "pts": [
-    "隨著後量子密碼學（Post-Quantum Cryptography，PQC）逐步應用於TLS連線，交握期間需要傳輸的資料量也可能增加，進而延長連線建立時間，甚至影響既有網路設備的正常運作。資安業者Red Sift近期彙整Google、Cloudflare及多項學術研究，分析PQC在實際網路環境中的"
+    "**後量子密碼學導入TLS連線傳輸資料量增加**，導致交握延遲延長，並可能影響既有網路設備運作。",
+    "資安業者Red Sift彙整研究指出，PQC在實際網路環境中面臨效能延遲與防火牆相容性問題。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "PQC導入TLS面臨效能挑戰，交握延遲增加、防火牆相容性問題浮現",
     "desc": "隨著後量子密碼學（Post-Quantum Cryptography，PQC）逐步應用於TLS連線，交握期間需要傳輸的資料量也可能增加，進而延長連線建立時間，甚至影響既有網路設備的正常運作。資安業者Red Sift近期彙整Google、Cloudflare及多項學術研究，分析PQC在實際網路環境中的效能與相容性問題。",
@@ -2606,7 +2760,7 @@
    "cvss": 8.5,
    "published": "2026-10-30T16:17:55+00:00",
    "first_seen": "2026-10-30T20:48:44+00:00",
-   "updated": "2026-11-04T21:53:52+00:00",
+   "updated": "2026-11-05T02:29:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
@@ -2623,7 +2777,8 @@
      "pgAdmin 4 runs pg_dump, pg_restore, pg_dumpall and psql from the binary path a user sets in their preferences. In server mode the binary path was refused only when it lay under the per-user storage directory (STORAGE_DIR), not under a SHARED_STORAGE directory, which ordinary users can upload files to. A user could therefore upload an executable to shared storage, point their binary path at it, and have pgAdmin run it as the operating-system account running pgAdmin. On POSIX, files created through pgAdmin are not executable, so this is exploitable where any file with an executable name can run, such as Windows server mode.\n\nThe fix checks the binary path against every SHARED_STORAGE directory as well, after expanding $DIR, collapsing \"..\" and resolving symbolic links, compares directories in a way a different spelling on a case-insensitive filesystem cannot bypass, refuses a path containing a NUL, and enforces the check wherever binary paths are resolved, including for the PSQL tool.\n\nThis issue affects pgAdmin 4: before 9.19.",
      "pgAdmin 4 runs pg_dump, pg_restore, pg_dumpall and psql from the binary path a user sets in their preferences. In server mode the binary path was refused only when it lay under the per-user storage directory (STORAGE_DIR), not under a SHARED_STORAGE directory, which ordinary users can upload files to. A user could therefore upload an executable to shared storage, point their binary path at it, and have pgAdmin run it as the operating-system account running pgAdmin. On POSIX, files created through pgAdmin are not executable, so this is exploitable where any file with an executable name can run, such as Windows server mode.\n\nThe fix checks the binary path against every SHARED_STORAGE directory as well, after expanding $DIR, collapsing \"..\" and resolving symbolic links, compares directories in a way a different spelling on a case-insensitive filesystem cannot bypass, refuses a path containing a NUL, and enforces the check wherever binary paths are resolved, including for the PSQL tool.\n\nThis issue affects pgAdmin 4: before 9.19.",
      "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-bit integer overflow in thumb_data_vertical_flip(). Attackers can craft a .blend file with malicious TEST block dimensions that trigger an out-of-bounds write when blender-thumbnailer or the Windows shell extension previews it, causing crashes or code execution.",
-     "pgAdmin 4 runs pg_dump, pg_restore, pg_dumpall and psql from the binary path a user sets in their preferences. In server mode the binary path was refused only when it lay under the per-user storage directory (STORAGE_DIR), not under a SHARED_STORAGE directory, which ordinary users can upload files to. A user could therefore upload an executable to shared storage, point their binary path at it, and have pgAdmin run it as the operating-system account running pgAdmin. On POSIX, files created through pgAdmin are not executable, so this is exploitable where any file with an executable name can run, such as Windows server mode.\n\nThe fix checks the binary path against every SHARED_STORAGE directory as well, after expanding $DIR, collapsing \"..\" and resolving symbolic links, compares directories in a way a different spelling on a case-insensitive filesystem cannot bypass, refuses a path containing a NUL, and enforces the check wherever binary paths are resolved, including for the PSQL tool.\n\nThis issue affects pgAdmin 4: before 9.19."
+     "pgAdmin 4 runs pg_dump, pg_restore, pg_dumpall and psql from the binary path a user sets in their preferences. In server mode the binary path was refused only when it lay under the per-user storage directory (STORAGE_DIR), not under a SHARED_STORAGE directory, which ordinary users can upload files to. A user could therefore upload an executable to shared storage, point their binary path at it, and have pgAdmin run it as the operating-system account running pgAdmin. On POSIX, files created through pgAdmin are not executable, so this is exploitable where any file with an executable name can run, such as Windows server mode.\n\nThe fix checks the binary path against every SHARED_STORAGE directory as well, after expanding $DIR, collapsing \"..\" and resolving symbolic links, compares directories in a way a different spelling on a case-insensitive filesystem cannot bypass, refuses a path containing a NUL, and enforces the check wherever binary paths are resolved, including for the PSQL tool.\n\nThis issue affects pgAdmin 4: before 9.19.",
+     "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-bit integer overflow in thumb_data_vertical_flip(). Attackers can craft a .blend file with malicious TEST block dimensions that trigger an out-of-bounds write when blender-thumbnailer or the Windows shell extension previews it, causing crashes or code execution."
     ]
    }
   },
@@ -5622,18 +5777,20 @@
    "cvss": 9.0,
    "published": "2026-10-27T17:16:56+00:00",
    "first_seen": "2026-10-27T20:07:11+00:00",
-   "updated": "2026-11-04T21:53:52+00:00",
+   "updated": "2026-11-05T02:29:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106076",
    "pts": [
-    "影響 Veeam Backup for Microsoft 365，可進行 SQL 注入以**遠端執行任意程式碼**，或讀取伺服器任意檔案。",
-    "目前未遭利用。需要具備驗證身份的組織轉移對等端或系統管理員權限。"
+    "同日公布 2 個漏洞，最高 CVSS 9.0。",
+    "A vulnerability allowing an authenticated organization-transfer peer to inject SQL into the configuration database of the source Veeam Backu"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
+     "A vulnerability allowing an authenticated organization-transfer peer to inject SQL into the configuration database of the source Veeam Backup for Microsoft 365 server, leading to cross-tenant read and write of configuration data and remote code execution as the PostgreSQL service account.",
+     "A vulnerability allowing a user with the Veeam Backup for Microsoft 365 Administrator role to read arbitrary files on the backup server with LocalSystem privileges.",
      "A vulnerability allowing an authenticated organization-transfer peer to inject SQL into the configuration database of the source Veeam Backup for Microsoft 365 server, leading to cross-tenant read and write of configuration data and remote code execution as the PostgreSQL service account.",
      "A vulnerability allowing a user with the Veeam Backup for Microsoft 365 Administrator role to read arbitrary files on the backup server with LocalSystem privileges.",
      "A vulnerability allowing an authenticated organization-transfer peer to inject SQL into the configuration database of the source Veeam Backup for Microsoft 365 server, leading to cross-tenant read and write of configuration data and remote code execution as the PostgreSQL service account.",
@@ -6924,15 +7081,15 @@
    "cvss": 10.0,
    "published": "2026-10-22T01:16:57+00:00",
    "first_seen": "2026-10-27T14:33:51+00:00",
-   "updated": "2026-10-31T07:00:41+00:00",
+   "updated": "2026-11-05T02:29:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
    "pts": [
-    "影響 GitLab CE/EE 多個指定版本與 hMailServer 6.0.0 至 6.3.6，可能導致未身分驗證執行操作或**接管 LDAP 帳號**。",
-    "目前未發現遭利用情形。"
+    "同日公布 3 個漏洞，最高 CVSS 10.0。",
+    "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 "
    ],
-   "fix": "升級至 GitLab CE/EE 18.11.13、19.0.10、19.1.9、19.2.9、19.3.6、19.4.3、19.5.1 以上版本。",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -6943,7 +7100,9 @@
      "Missing authorization in the REST and COM administration APIs of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote authenticated user whose credential is confined to named domains to change mail routing and domain configuration beyond those domains on a multi-tenant server. A domain administrator, an account or API key given another role that manages accounts in named domains, or a full-scope API key issued for named domains could create a domain alias for any name (so that other tenants' mail for that name is diverted to an address the attacker controls, or denied), rename a domain to any name the server does not host, set a rule's bind-to-address, send-using-route or script-function action to reach one of the server's own addresses, a configured route's stored credentials or a function of the server's event script, and set the domain's relay host - which delivery then connects to with no address rule - to an address on the server's own network; and over the COM API any account could set the three rule actions on its own rules, where the script-function action runs at delivery. The authorization gate did not refuse these routes to a confined credential and the handlers were not given the caller; over COM the domain-alias save performed no authorization check at all, the domain rename required only a domain administrator, and a rule save required at most that the caller could change the rule's owner.",
      "Missing authorization in the REST and COM administration APIs of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote authenticated user whose credential is confined to named domains to change mail routing and domain configuration beyond those domains on a multi-tenant server. A domain administrator, an account or API key given another role that manages accounts in named domains, or a full-scope API key issued for named domains could create a domain alias for any name (so that other tenants' mail for that name is diverted to an address the attacker controls, or denied), rename a domain to any name the server does not host, set a rule's bind-to-address, send-using-route or script-function action to reach one of the server's own addresses, a configured route's stored credentials or a function of the server's event script, and set the domain's relay host - which delivery then connects to with no address rule - to an address on the server's own network; and over the COM API any account could set the three rule actions on its own rules, where the script-function action runs at delivery. The authorization gate did not refuse these routes to a confined credential and the handlers were not given the caller; over COM the domain-alias save performed no authorization check at all, the domain rename required only a domain administrator, and a rule save required at most that the caller could change the rule's owner.",
      "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression.",
-     "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression."
+     "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression.",
+     "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression.",
+     "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.1 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, when OmniAuth SAML and LDAP auto-linking were both enabled, an authenticated user could have taken over an existing LDAP-backed account without any interaction from the targeted user, due to improper input sanitization in the LDAP email lookup path used during OmniAuth identity linking."
     ]
    }
   },
@@ -8502,15 +8661,15 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-04T21:53:52+00:00",
+   "updated": "2026-11-05T02:29:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 PeopleSoft Enterprise PeopleTools (8.61-8.63) 與 Siebel CRM (17.0-26.9)，可遭未授權或低權限攻擊者**危害系統安全**。",
-    "目前未遭利用。攻擊者可透過網路以 HTTP 存取發動攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -8935,6 +9094,7 @@
      "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
      "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
      "Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel CRM Deployment.  Successful attacks of this vulnerability can result in takeover of Siebel CRM Deployment. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Applications Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Manager. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Applications Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Manager. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)."
     ]
    }
@@ -9409,6 +9569,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-04T21:53:37+00:00",
- "kev_last": "2026-11-04T21:53:37+00:00"
+ "nvd_last": "2026-11-05T02:29:25+00:00",
+ "kev_last": "2026-11-05T02:29:25+00:00"
 }
