@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T02:29:25+00:00",
+ "generated": "2026-11-05T10:57:34+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,422 @@
  },
  "events": [
   {
+   "id": "tw:e46fd02e2527",
+   "kind": "news",
+   "title": "Debian、Ubuntu修補高風險APT套件漏洞，中間人可替換套件取得root權限",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180262",
+   "pts": [
+    "Debian與Ubuntu發布APT套件管理工具安全更新，修補編號CVE-2026-109518的驗證繞過漏洞。攻擊者若能控制系統與套件伺服器之間的HTTP傳輸流量，可在特定條件下替換已通過驗證的套件，誘使系統安裝惡意程式，以root權限執行任意程式碼。其他採用APT的Linux衍生發行版也可能受到"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:e7a3972566ce",
+   "kind": "news",
+   "title": "【資安日報】11月5日，法國國家血液機構冷藏設備遭網路攻擊，3處設施溫度控制遭竄改",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180260",
+   "pts": [
+    "本日新聞焦點 ● 法國國家血液機構冷藏設備遭網路攻擊，3處設施溫度控制遭竄改 ● 永豐銀行異常轉帳確認為駭客攻擊，供應商安全設定漏洞遭利用 ● 俄羅斯駭客APT29大規模水坑式攻擊，竊取iOS與Android裝置資料"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:6bd8bf5f1464",
+   "kind": "news",
+   "title": "熱門遊戲《勝利女神：妮姬》遭遇供應鏈攻擊，玩家電腦恐被植入竊資軟體",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180259",
+   "pts": [
+    "根據資安新聞網站Bleeping Computer報導，韓國遊戲公司Shift Up開發的《勝利女神：妮姬》電腦版遊戲啟動器，於11月4日傳出發生供應鏈攻擊，駭客竄改遊戲啟動器使用的JavaScript檔案，藉此散布具備遠端控制及資料竊取能力的惡意程式。攻擊者可利用植入的後門執行遠端命令、瀏覽及下載"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:0b1616dadde9",
+   "kind": "news",
+   "title": "Safari 27.3測試網頁自動轉暗，WebKit引擎可依內容調整文字與圖示配色",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180256",
+   "pts": [
+    "Apple WebKit團隊公布瀏覽器Safari 27.3測試版新功能自適應深色模式（Adaptive Dark Mode），可將未支援深色模式的淺色網站轉成深色顯示。使用者將系統外觀切換為深色，開啟背景明亮的網站時，Safari便會提供轉換效果預覽，點選試用後即可啟用。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:b720c3259e4b",
+   "kind": "news",
+   "title": "法國銀行Crédit Mutuel Arkéa遭網攻，傳逾1.18億歐元遭攻擊者轉走",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180255",
+   "pts": [
+    "法國合作銀行集團Crédit Mutuel Arkéa於11月4日證實遭遇網路攻擊，攻擊者透過一家外部服務商的平臺取得銀行系統存取管道，並利用該銀行行方的帳戶向其他金融機構進行未授權轉帳。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:78a4483acee4",
+   "kind": "news",
+   "title": "中國駭客利用Zyxel GS1900系列交換器零時差漏洞並竊得敏感資料",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180254",
+   "pts": [
+    "兆勤（Zyxel）近日修補GS1900系列交換器漏洞CVE-2026-107441，通報此事的韌體安全公司Binarly也公布該漏洞的發現過程，該公司在調查資安廠商Acronis、"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:dafcecfecf3e",
+   "kind": "news",
+   "title": "法國國家血液機構冷藏設備遭網路攻擊，3處設施溫度控制遭竄改",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180253",
+   "pts": [
+    "近期歐洲冷凍冷藏設備遭網路攻擊的事件，已從超市與零售業蔓延至醫療機構。法國國家血液機構（EFS）於11月3日證實旗下3處設施的冷藏設備控制系統遭遇網路攻擊，攻擊者竄改溫度及除霜設定，企圖將冷藏設備調高至極端溫度。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:91431e589459",
+   "kind": "news",
+   "title": "Zyxel GS1900系列交換器存在越界寫入漏洞，攻擊者不需通過身分驗證就能執行作業系統命令",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180252",
+   "pts": [
+    "11月3日網通設備製造商兆勤（Zyxel）發布資安公告，GS1900系列交換器存在越界寫入漏洞CVE-2026-107441，該漏洞存在於交換器韌體的CGI程式，位於區域網路（LAN）內的攻擊者，可透過傳送特製HTTP請求觸發漏洞，進而在不需通過身分驗證的情況下執行作業系統命令，該公司已為10款GS"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:d265ba30827f",
+   "kind": "news",
+   "title": "日本外務省網站被駭3,600筆個資恐外洩，但強調非機要外交通訊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180251",
+   "pts": [
+    "日本外務省上週公布，其可與外部通訊的網路遭第三方未授權存取，可能導致約3,600筆個資外洩，包括姓名、電子郵件地址等。外務省強調，這起事件未涉及處理高度機密資訊的封閉網路。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:49e5d503cb56",
+   "kind": "news",
+   "title": "俄羅斯駭客APT29發動大規模水坑式攻擊，竊取iOS與Android裝置帳密及資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180250",
+   "pts": [
+    "資安公司Sekoia於11月4日揭露大規模水坑式攻擊活動Poisoned Source，攻擊者鎖定iOS與Android行動裝置使用者，透過入侵合法網站、架設偽冒網站，以及第三方服務供應鏈攻擊散布惡意JavaScript，再依據受害者的作業系統與瀏覽器版本，投遞不同的漏洞利用鏈。Sekoia研判，此"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:032405178b5b",
+   "kind": "news",
+   "title": "棉花田委外購物平臺發生資安事件，已阻擋異常資料存取行為，影響範圍仍待調查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180247",
+   "pts": [
+    "上櫃公司中天生技（4128）於11月3日晚間，在股市公開資訊觀測站發布重大訊息，子公司棉花田生機園地股份有限公司的委外購物網站服務廠商，近期發現系統出現異常資料存取情形。服務廠商在發現異常後，已先行阻擋相關存取行為，棉花田也立即啟動資安事件應變與調查機制。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:7dff25031a0c",
+   "kind": "news",
+   "title": "王品旗下萬鮮購物網站服務委外廠商系統出現異常資料存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180246",
+   "pts": [
+    "11月4日餐飲集團王品（2727）於股市公開資訊觀測站發布重大訊息，子公司萬鮮的委外購物網站服務廠商發生資訊安全事件。該廠商近期在服務系統發現異常資料存取，並先行阻擋相關存取行為。萬鮮接獲通知後，也啟動資安事件應變與調查機制，並要求委外廠商儘速確認受影響的系統及資料範圍，同時採取必要的防護措施。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:b72f4a663ea6",
+   "kind": "news",
+   "title": "葡萄王線上商城委外廠商資料庫遭異常存取，會員訂單及個資疑似外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180245",
+   "pts": [
+    "上市生技公司葡萄王（1707）於11月4日，在股市公開資訊觀測站發布重大訊息，該公司旗下的線上商城「購健康」委外服務廠商發生資安事件。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:14abf9b06ecd",
+   "kind": "news",
+   "title": "Cisco修補UCS Central遠端程式碼執行漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T10:59:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180242",
+   "pts": [
+    "Cisco於11月4日發布公告修補UCS Central管理平臺漏洞CVE-2026-76506，C"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-76506",
+   "kind": "cve",
+   "title": "Cisco修補UCS Central遠端程式碼執行漏洞",
+   "sub": "CVE-2026-76506 · CVSS 7.6",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-76506"
+   ],
+   "cvss": 7.6,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T11:00:04+00:00",
+   "src": "iThome 報導",
+   "url": "https://www.ithome.com.tw/news/180242",
+   "pts": [
+    "A vulnerability in the web-based management interface of Cisco UCS Central Software could allow an authenticated, remote attacker to achieve"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:6d9dc6a3f43a",
+   "kind": "news",
+   "title": "毛寶電商網站遭不明人士攻擊，已通報主管機關並通知受影響顧客",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T11:00:04+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180240",
+   "pts": [
+    "上市生活清潔用品製造商毛寶（1732）於11月3日，在股市公開資訊觀測站發布重大訊息，該公司透過例行性資安監控機制，發現電商網站遭外部不明人士進行異常網路攻擊，隨即啟動資安應變機制因應。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:1a80022109da",
+   "kind": "news",
+   "title": "AI驅動攻擊與鎖定AI系統的攻擊來勢洶洶，近兩千位全球企業高層有超過一半坦承無法招架",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T11:00:04+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180232",
+   "pts": [
+    "AI的普及為企業帶來顛覆市場的機會，但接踵而至的內部管理挑戰同樣令人擔憂，四大會計師事務所之一的資誠（PwC）10月初發布的2027全球數位信任洞察報告，AI已成為企業安全的首要議題，84%受訪者預期資安相關預算將增加， 58%受訪者將AI列為主要投資項目；對於量子運算安全，近半數（49%）尚未開始"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:d40d55859af4",
+   "kind": "news",
+   "title": "蘋果旗下產品已知漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-05T10:59:37+00:00",
+   "first_seen": "2026-11-05T11:00:04+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180239",
+   "pts": [
+    "11月4日美國網路安全與基礎設施安全局（CISA）指出，已掌握存在蘋果多款產品的身分驗證漏洞CVE-2024-27834遭積極利用的證據，將其加入已遭利用的漏洞名單（KEV），聯邦機構必須在11月18日前完成修補"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:13f451d80f32",
    "kind": "news",
    "title": "歐洲冷凍冷藏系統接連遭駭，法國血庫也遭攻擊，歐盟網路安全局呼籲加強防護",
@@ -425,10 +841,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180198",
    "pts": [
-    "雲端資安業者Wiz近日調查10月接連發生的AI程式開發及部署平臺資安事件，發現其中部分事件的攻擊者曾存取客戶儲存在平臺的環境變數及敏感憑證。由於這些環境變數可能包含AI服務API金鑰等敏感資訊，一旦平臺遭入侵，攻擊者便可能利用遭竊金鑰，未經授權使用客戶的AI服務。"
+    "Wiz調查顯示攻擊者存取多家AI開發及部署平臺的客戶環境變數與敏感憑證。",
+    "**攻擊者利用遭竊取的AI服務API金鑰，未經授權大量呼叫客戶的AI模型服務。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:21a96f3b5e0f",
@@ -448,10 +865,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180197",
    "pts": [
-    "資安業者CrowdStrike於11月3日宣布，已簽署協議將併購AI代理可觀測性業者Fiddler AI，計畫將其技術整合至旗下Falcon資安平臺。"
+    "**CrowdStrike宣布將以4億美元併購AI代理可觀測性業者Fiddler AI。**",
+    "該公司計畫將技術整合至Falcon資安平臺，以強化AI代理行為追蹤與稽核能力。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-92704",
@@ -521,10 +939,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180223",
    "pts": [
-    "Mozilla於11月3日發布Firefox 159.0.1，修補一個高風險漏洞CVE-2026-120572。該漏洞存在於瀏覽器版面配置引擎的Block與Inline元件，源於邊界條件檢查錯誤，可能導致記憶體緩衝區操作超出範圍，進而影響瀏覽器安全，Mozilla將其嚴重性列為High，Tenabl"
+    "Mozilla發布Firefox 159.0.1修補高風險漏洞CVE-2026-120572。",
+    "**漏洞因Block與Inline元件邊界檢查錯誤引發記憶體超限操作，CVSS評分8.8。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:3de660a19302",
@@ -567,10 +986,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180217",
    "pts": [
-    "伺服器資安防護軟體cPGuard發生供應鏈攻擊事件，駭客滲透其更新基礎設施，導致用戶主機被植入惡意軟體。軟體開發商OpsShield於11月3日指出，攻擊者入侵其帳務及授權伺服器，取得軟體更新所需的存取金鑰，進而竄改cPGuard更新內容，透過軟體更新通道向客戶伺服器散布惡意程式，約有2,950臺伺"
+    "攻擊者入侵cPGuard帳務及授權伺服器取得金鑰，並竄改軟體更新內容。",
+    "**約有2,950臺伺服器因下載並執行遭竄改的更新檔而感染惡意程式。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:33c4db4e1b87",
@@ -613,10 +1033,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180216",
    "pts": [
-    "本日新聞焦點 ● XCPE殭屍網路波及臺灣近9萬臺Android設備，感染數量排名全球第5 ● 永豐銀行不明轉帳事件涉及網銀程式異常，初步清查影響419名客戶 ● Hugging Face遭惡意模型濫用，31個儲存庫散布挖礦程式與後門"
+    "**XCPE殭屍網路波及臺灣近9萬臺Android設備，感染量高居全球第5名。**",
+    "日報另包含永豐銀行網銀程式異常影響419人，以及Hugging Face惡意模型濫用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:7c3bff375683",
@@ -636,10 +1057,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180215",
    "pts": [
-    "提供身分驗證與使用者管理服務的WorkOS於11月2日指出，該公司在10月30日發現內部銷售團隊使用的應用程式遭到未經授權存取，攻擊者取得部分客戶關係管理系統（CRM）及客戶支援資料。WorkOS表示，目前尚未發現WorkOS應用程式資料遭到存取的跡象，也沒有證據顯示正式環境服務遭到入侵或受到影響。"
+    "**攻擊者透過AI滲透測試框架ARTEX入侵WorkOS，存取部分CRM與客戶支援資料。**",
+    "WorkOS表示目前尚未發現正式環境服務或應用程式資料遭入侵的跡象。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:3b42b8c5a628",
@@ -659,15 +1081,16 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180207",
    "pts": [
-    "11月2日Google發布每月Android例行更新，一口氣修補216個資安漏洞，這些弱點有119個存在於安卓核心元件，其餘97個存在於第三方元件，用戶應留意裝置製造商的公告，以便新版韌體推出後即時套用。"
+    "Google發布11月Android例行更新，共修補216個資安漏洞，包含119個核心元件與97個第三方元件漏洞。",
+    "**用戶應留意裝置製造商公告以即時套用新版韌體。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-59268",
    "kind": "cve",
-   "title": "Office 漏洞 CVE-2026-59268",
+   "title": "OpenOffice寫入漏洞",
    "sub": "CVE-2026-59268 · CVSS 7.3",
    "sev": "note",
    "kev": false,
@@ -684,10 +1107,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59268",
    "pts": [
-    "An out-of-bounds Write vulnerability in Apache OpenOffice versions through 4.1.16 could allow an attacker to craft a Microsoft Word document"
+    "影響 Apache OpenOffice 4.1.16（含）以前版本。攻擊者可利用特製 Word 文件導致當機或損壞記憶體。",
+    "目前已知未遭利用。"
    ],
-   "fix": "原文：An out-of-bounds Write vulnerability in Apache OpenOffice versions through 4.1.16 could allow an attacker to craft a Microsoft Word document that would crash the program, or oth",
-   "ai": false
+   "fix": "**升級至 4.1.17 版本。**",
+   "ai": true
   },
   {
    "id": "tw:38318aa3d88d",
@@ -778,10 +1202,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180211",
    "pts": [
-    "透過漏洞、弱密碼或惡意程式感染大量設備，進而建立殭屍網路，是駭客常見的攻擊手法，但由設備供應商在產品出廠前便主動植入惡意程式，則是相當特殊的案例。Google近期揭露的XCPE殭屍網路便屬於此類，後門直接預載於Android設備韌體，使設備從交付使用者時便已遭到控制，也讓一般使用者難以透過更新或移除"
+    "**Google揭露XCPE殭屍網路預載於Android設備韌體**，使設備出廠即遭控制，難以透過更新或移除應用程式清除。",
+    "該殭屍網路已波及臺灣近9萬臺設備，受害規模在全球排名第5。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:06654885c567",
@@ -825,10 +1250,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180208",
    "pts": [
-    "日前揭露的Linux核心TCP漏洞CVE-2026-98432，不僅影響各Linux發行版，也涵蓋基於Linux平臺的其他產品，儲存廠商NetApp便於11月2日發布公告，指出旗下多款儲存產品受此漏洞影響，包括AFF、ASA及FAS系列儲存設備的BMC控制器與Service Processor處理器"
+    "**NetApp公告旗下多款儲存產品受Linux核心TCP漏洞CVE-2026-98432影響**。",
+    "受影響設備包含AFF、ASA、FAS系列之BMC與Service Processor，以及SANtricity OS與StorageGRID。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:206b59ee09f5",
@@ -848,10 +1274,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180203",
    "pts": [
-    "全球最大加密貨幣交易平臺Binance公開約63.4億美元加密資產遭竊事件的初步調查，揭露駭客透過假求職面試植入惡意程式，再利用內部AI工具控制其他工程師電腦，取得容器部署權限，進而入侵錢包簽章服務轉走加密資產。 攻擊最早可追溯至今年6月，一名錢包維運工程師為了安裝AI程式開發工具，從搜尋結果下載遭"
+    "**Binance揭露約63.4億美元加密資產遭竊事件**，駭客透過假求職面試誘使工程師執行惡意程式，進而取得部署權限轉走資產。",
+    "攻擊源於工程師下載遭變造的Homebrew，資安團隊雖重設憑證，但相關同仁資訊已被駭客掌握。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:fa9577f19967",
@@ -871,10 +1298,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180205",
    "pts": [
-    "AI新創Anthropic周一（11/2）發表FlashProve，這是一套利用零知識證明（Zero-Knowledge Proof）技術開發的開源系統，可透過密碼學驗證AI回答是否確實來自指定模型，以偵測服務供應商是否私下替換模型，或遭駭客竄改輸出內容，同時不必公開模型權重等商業機密。Anthro"
+    "**Anthropic發表開源系統FlashProve**，利用零知識證明技術透過密碼學驗證AI回答是否確實來自指定模型。",
+    "該系統可防範服務供應商私下替換模型或竄改輸出，同時不必公開模型權重等商業機密。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:bd5d14c603ca",
