@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T18:46:16+00:00",
+ "generated": "2026-11-06T00:17:39+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "items": [
    {
-    "title": "處理：Microsoft 11 月例行安全更新",
-    "desc": "目前未標示已遭利用的漏洞。"
+    "title": "處理：Chrome 遠端執行程式碼漏洞",
+    "desc": "CVSS 評分為 9.6，目前尚未發現漏洞遭實際利用或用於勒索軟體。"
    },
    {
-    "title": "處理：Chrome 遠端執行程式碼漏洞",
+    "title": "處理：IIS 多個高風險漏洞",
+    "desc": "ModSecurity is an open source, cross platform web application firewall"
+   },
+   {
+    "title": "處理：SQL Server 漏洞 CVE-2026-1025",
+    "desc": "MariaDB server is a community developed fork of MySQL server. From 10."
+   },
+   {
+    "title": "處理：Microsoft 11 月例行安全更新",
+    "desc": "目前報告漏洞總數為 0，且無遭惡意利用或先行公開之狀況。"
+   },
+   {
+    "title": "處理：Chrome 多項安全漏洞",
     "desc": "Incorrect authorization in DevTools in Google Chrome prior to 157.0.81"
    },
    {
     "title": "處理：Puppet Server 安全漏洞",
     "desc": "目前未遭利用。攻擊者需持有 CA 簽署之憑證，透過提交特製報告或利用憑證名稱比對漏洞進行冒充。"
-   },
-   {
-    "title": "處理：SonicWall GMS 資訊洩漏漏洞",
-    "desc": "目前未遭利用。具備網路存取權限的未驗證攻擊者即可遠端存取 GMS 內部檔案。"
-   },
-   {
-    "title": "處理：WordPress 外掛程式碼注入漏洞",
-    "desc": "目前未遭利用。觸發條件需管理員啟用特定設定，或伺服器環境缺乏 OpenSSL 函式導致降級解密。"
-   },
-   {
-    "title": "處理：hackney憑證驗證漏洞",
-    "desc": "目前尚未發現漏洞遭利用。攻擊條件為攻擊者需擁有經固定主機名稱的公開信任憑證。"
    }
   ],
   "ai": true
@@ -458,10 +458,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180262",
    "pts": [
-    "Debian與Ubuntu發布APT套件管理工具安全更新，修補編號CVE-2026-109518的驗證繞過漏洞。攻擊者若能控制系統與套件伺服器之間的HTTP傳輸流量，可在特定條件下替換已通過驗證的套件，誘使系統安裝惡意程式，以root權限執行任意程式碼。其他採用APT的Linux衍生發行版也可能受到"
+    "Debian 與 Ubuntu 修補 APT 工具中編號 CVE-2026-109518 的驗證繞過漏洞。",
+    "**攻擊者若能控制 HTTP 流量可替換套件，誘使系統安裝惡意程式並取得 root 權限。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:e7a3972566ce",
@@ -481,10 +482,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180260",
    "pts": [
-    "本日新聞焦點 ● 法國國家血液機構冷藏設備遭網路攻擊，3處設施溫度控制遭竄改 ● 永豐銀行異常轉帳確認為駭客攻擊，供應商安全設定漏洞遭利用 ● 俄羅斯駭客APT29大規模水坑式攻擊，竊取iOS與Android裝置資料"
+    "**法國國家血液機構冷藏設備遭網路攻擊致 3 處設施溫控遭竄改**，永豐銀行亦確認遭駭。",
+    "俄羅斯駭客 APT29 發動大規模水坑式攻擊，旨在竊取 iOS 及 Android 裝置資料。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:6bd8bf5f1464",
@@ -671,10 +673,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180250",
    "pts": [
-    "資安公司Sekoia於11月4日揭露大規模水坑式攻擊活動Poisoned Source，攻擊者鎖定iOS與Android行動裝置使用者，透過入侵合法網站、架設偽冒網站，以及第三方服務供應鏈攻擊散布惡意JavaScript，再依據受害者的作業系統與瀏覽器版本，投遞不同的漏洞利用鏈。Sekoia研判，此"
+    "Sekoia 揭露攻擊活動 Poisoned Source，研判為俄羅斯駭客 APT29 所為。",
+    "**攻擊者鎖定 iOS 與 Android 裝置散布惡意 JS，依系統版本投遞漏洞利用鏈。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:032405178b5b",
@@ -834,10 +837,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180232",
    "pts": [
-    "AI的普及為企業帶來顛覆市場的機會，但接踵而至的內部管理挑戰同樣令人擔憂，四大會計師事務所之一的資誠（PwC）10月初發布的2027全球數位信任洞察報告，AI已成為企業安全的首要議題，84%受訪者預期資安相關預算將增加， 58%受訪者將AI列為主要投資項目；對於量子運算安全，近半數（49%）尚未開始"
+    "資誠報告指出AI成為企業安全首要議題，84%受訪者預期增加資安預算，58%列為主要投資項目。",
+    "**超過半數全球企業高層坦承無法招架AI驅動與鎖定AI系統的攻擊**，近半數尚未開始準備量子運算安全。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:d40d55859af4",
@@ -857,10 +861,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180239",
    "pts": [
-    "11月4日美國網路安全與基礎設施安全局（CISA）指出，已掌握存在蘋果多款產品的身分驗證漏洞CVE-2024-27834遭積極利用的證據，將其加入已遭利用的漏洞名單（KEV），聯邦機構必須在11月18日前完成修補"
+    "**CISA證實Apple多款產品的身分驗證漏洞CVE-2024-27834已遭積極利用**，並將其列入KEV名單。",
+    "美國聯邦機構被要求必須在11月18日前完成該漏洞的修補作業。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:13f451d80f32",
@@ -903,10 +908,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180206",
    "pts": [
-    "區塊鏈分析業者Chainalysis於10月30日揭露一起資安事件，外部攻擊者利用該公司所稱的「攻擊性代理技術」（Offensive Agentic Techniques），未經授權存取內部系統及工具，並存取部分客戶使用者資料。"
+    "**Chainalysis遭外部攻擊者未經授權存取內部系統與工具，導致部分客戶使用者資料遭存取**。",
+    "攻擊者利用「攻擊性代理技術」入侵，該事件導致Chainalysis部分產品暫停服務。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:0f147fa95c9a",
@@ -1239,11 +1245,11 @@
    "src": "Microsoft MSRC",
    "url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Nov",
    "pts": [
-    "本月共修補 0 個漏洞，其中 0 個為重大等級。",
-    "目前未標示已遭利用的漏洞。"
+    "影響 Windows Server，2026 年 11 月發布之安全更新中無報告 CVE 漏洞。",
+    "**目前報告漏洞總數為 0，且無遭惡意利用或先行公開之狀況。**"
    ],
-   "fix": "安裝 11 月累積更新（Windows Update／WSUS），並確認 Exchange、Office 等產品的個別更新。",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "tw:5d14b0ccdb55",
@@ -1745,11 +1751,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 前版本 Google Chrome，包含 DevTools、Views、Prerender 等組件漏洞，攻擊者可透過特製 HTML 頁面執行任意程式碼。",
-    "此漏洞群組最高 CVSS 評分為 9.6，**目前尚未發現遭到實際利用或勒索軟體利用**。"
+    "同日公布 116 個漏洞，最高 CVSS 9.6。",
+    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:憑證/CA:2026-11-04",
@@ -2262,10 +2268,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180103",
    "pts": [
-    "網路服務與資安業者Cloudflare公布2026年第3季分散式阻斷服務（DDoS）攻擊趨勢，該公司在旗下全球網路攔截1,820萬次網路層DDoS攻擊，較去年同期增加208%，平均每小時約8,226次。其中96%的攻擊持續不到10分鐘，98%的攻擊流量速率低於1Gbps。不過，超過1Tbps的超大流"
+    "**Cloudflare於2026年第3季攔截1,820萬次網路層DDoS攻擊，攻擊次數較去年同期增加208%**。",
+    "其中96%的攻擊持續不到10分鐘，98%攻擊流量低於1Gbps，超大流量攻擊則有所減少。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:ce6ebc13fc13",
@@ -2285,10 +2292,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180074",
    "pts": [
-    "網路設備與資安業者思科（Cisco）開源AI代理行為偵測工具Project Quarry，可分析AI代理執行任務期間的工具呼叫、工具執行結果及各項操作的先後順序，協助資安團隊辨識可疑行為。"
+    "**思科開源AI代理行為偵測工具Project Quarry，協助資安團隊辨識可疑行為**。",
+    "該工具可分析AI代理執行任務期間的工具呼叫、執行結果及各項操作的先後順序。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:3309da34425f",
@@ -2778,7 +2786,7 @@
   {
    "id": "grp:Windows Server:2026-10-31",
    "kind": "group",
-   "title": "Blender與pgAdmin資安漏洞",
+   "title": "Blender與pgAdmin漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.5",
    "sev": "high",
    "kev": false,
@@ -2796,11 +2804,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.5。",
-    "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-"
+    "影響 Blender 4.5.15 與 5.2.3 前版本及 pgAdmin 4，可造成堆疊緩衝區溢位等問題。",
+    "CVSS 評分為 8.5，**目前尚無漏洞遭惡意利用或用於勒索軟體攻擊之紀錄**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:796541ef7301",
@@ -3476,11 +3484,36 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101288",
    "pts": [
-    "影響 IBM Langflow OSS 1.0.0 至 1.12.4，可致執行任意程式碼、OS 命令或 SQL 指令。",
-    "目前未遭利用。**遠端或已驗證攻擊者可藉由反序列化與權限缺失進行攻擊**。"
+    "同日公布 19 個漏洞，最高 CVSS 9.9。",
+    "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization o"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-105031",
+   "kind": "cve",
+   "title": "OpenSSL 漏洞 CVE-2026-105031",
+   "sub": "CVE-2026-105031 · CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-105031"
+   ],
+   "cvss": 9.1,
+   "published": "2026-10-29T11:17:24+00:00",
+   "first_seen": "2026-11-06T00:18:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105031",
+   "pts": [
+    "When using the OpenSSL TLS implementation, both the pn_ssl_domain_set_trusted_ca_db() & pn_tls_config_set_trusted_certs() APIs added to rath"
+   ],
+   "fix": "原文：Leading to potentially trusting unexpected peer certificates. This can be worked around by setting the SSL_CERT_FILE environment variable for the application to /dev/null. This ",
+   "ai": false
   },
   {
    "id": "tw:f550a7f24f08",
@@ -5480,7 +5513,7 @@
   {
    "id": "grp:AI 平台:2026-10-25",
    "kind": "group",
-   "title": "vLLM 多重服務中斷漏洞",
+   "title": "vLLM AI 平台多重安全漏洞",
    "sub": "8 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -5504,11 +5537,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116172",
    "pts": [
-    "同日公布 8 個漏洞，最高 CVSS 8.8。",
-    "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers t"
+    "影響 vLLM 多個版本，漏洞可導致 SSRF、輸入驗證繞過與伺服器阻斷服務。",
+    "CVSS 評分為 8.8，**目前相關漏洞皆未發現遭惡意利用或勒索軟體利用**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-46652",
@@ -5882,11 +5915,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響包含 PHP 元件之系統，因記憶體不足與全域狀態處理不當，可能導致**未初始化記憶體讀取或釋放後重用**。",
-    "目前未遭利用。漏洞源於 PHP 內部記憶體與請求清理機制異常。"
+    "同日公布 2 個漏洞，最高 CVSS 9.2。",
+    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:AI 平台:2026-10-21",
@@ -6570,11 +6603,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，遠端攻擊者可透過網路連線入侵系統。",
-    "最高 CVSS 評分為 10.0，**目前尚未發現漏洞遭到實際利用或勒索軟體利用**。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-10-20",

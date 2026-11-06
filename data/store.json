@@ -4,31 +4,31 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "items": [
    {
-    "title": "處理：Microsoft 11 月例行安全更新",
-    "desc": "目前未標示已遭利用的漏洞。"
+    "title": "處理：Chrome 遠端執行程式碼漏洞",
+    "desc": "CVSS 評分為 9.6，目前尚未發現漏洞遭實際利用或用於勒索軟體。"
    },
    {
-    "title": "處理：Chrome 遠端執行程式碼漏洞",
+    "title": "處理：IIS 多個高風險漏洞",
+    "desc": "ModSecurity is an open source, cross platform web application firewall"
+   },
+   {
+    "title": "處理：SQL Server 漏洞 CVE-2026-1025",
+    "desc": "MariaDB server is a community developed fork of MySQL server. From 10."
+   },
+   {
+    "title": "處理：Microsoft 11 月例行安全更新",
+    "desc": "目前報告漏洞總數為 0，且無遭惡意利用或先行公開之狀況。"
+   },
+   {
+    "title": "處理：Chrome 多項安全漏洞",
     "desc": "Incorrect authorization in DevTools in Google Chrome prior to 157.0.81"
    },
    {
     "title": "處理：Puppet Server 安全漏洞",
     "desc": "目前未遭利用。攻擊者需持有 CA 簽署之憑證，透過提交特製報告或利用憑證名稱比對漏洞進行冒充。"
-   },
-   {
-    "title": "處理：SonicWall GMS 資訊洩漏漏洞",
-    "desc": "目前未遭利用。具備網路存取權限的未驗證攻擊者即可遠端存取 GMS 內部檔案。"
-   },
-   {
-    "title": "處理：WordPress 外掛程式碼注入漏洞",
-    "desc": "目前未遭利用。觸發條件需管理員啟用特定設定，或伺服器環境缺乏 OpenSSL 函式導致降級解密。"
-   },
-   {
-    "title": "處理：hackney憑證驗證漏洞",
-    "desc": "目前尚未發現漏洞遭利用。攻擊條件為攻擊者需擁有經固定主機名稱的公開信任憑證。"
    }
   ],
   "ai": true
@@ -164,11 +164,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180262",
    "pts": [
-    "Debian與Ubuntu發布APT套件管理工具安全更新，修補編號CVE-2026-109518的驗證繞過漏洞。攻擊者若能控制系統與套件伺服器之間的HTTP傳輸流量，可在特定條件下替換已通過驗證的套件，誘使系統安裝惡意程式，以root權限執行任意程式碼。其他採用APT的Linux衍生發行版也可能受到"
+    "Debian 與 Ubuntu 修補 APT 工具中編號 CVE-2026-109518 的驗證繞過漏洞。",
+    "**攻擊者若能控制 HTTP 流量可替換套件，誘使系統安裝惡意程式並取得 root 權限。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Debian、Ubuntu修補高風險APT套件漏洞，中間人可替換套件取得root權限",
     "desc": "Debian與Ubuntu發布APT套件管理工具安全更新，修補編號CVE-2026-109518的驗證繞過漏洞。攻擊者若能控制系統與套件伺服器之間的HTTP傳輸流量，可在特定條件下替換已通過驗證的套件，誘使系統安裝惡意程式，以root權限執行任意程式碼。其他採用APT的Linux衍生發行版也可能受到影響。",
@@ -194,11 +195,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180260",
    "pts": [
-    "本日新聞焦點 ● 法國國家血液機構冷藏設備遭網路攻擊，3處設施溫度控制遭竄改 ● 永豐銀行異常轉帳確認為駭客攻擊，供應商安全設定漏洞遭利用 ● 俄羅斯駭客APT29大規模水坑式攻擊，竊取iOS與Android裝置資料"
+    "**法國國家血液機構冷藏設備遭網路攻擊致 3 處設施溫控遭竄改**，永豐銀行亦確認遭駭。",
+    "俄羅斯駭客 APT29 發動大規模水坑式攻擊，旨在竊取 iOS 及 Android 裝置資料。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "【資安日報】11月5日，法國國家血液機構冷藏設備遭網路攻擊，3處設施溫度控制遭竄改",
     "desc": "本日新聞焦點 ● 法國國家血液機構冷藏設備遭網路攻擊，3處設施溫度控制遭竄改 ● 永豐銀行異常轉帳確認為駭客攻擊，供應商安全設定漏洞遭利用 ● 俄羅斯駭客APT29大規模水坑式攻擊，竊取iOS與Android裝置資料",
@@ -440,11 +442,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180250",
    "pts": [
-    "資安公司Sekoia於11月4日揭露大規模水坑式攻擊活動Poisoned Source，攻擊者鎖定iOS與Android行動裝置使用者，透過入侵合法網站、架設偽冒網站，以及第三方服務供應鏈攻擊散布惡意JavaScript，再依據受害者的作業系統與瀏覽器版本，投遞不同的漏洞利用鏈。Sekoia研判，此"
+    "Sekoia 揭露攻擊活動 Poisoned Source，研判為俄羅斯駭客 APT29 所為。",
+    "**攻擊者鎖定 iOS 與 Android 裝置散布惡意 JS，依系統版本投遞漏洞利用鏈。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "俄羅斯駭客APT29發動大規模水坑式攻擊，竊取iOS與Android裝置帳密及資料",
     "desc": "資安公司Sekoia於11月4日揭露大規模水坑式攻擊活動Poisoned Source，攻擊者鎖定iOS與Android行動裝置使用者，透過入侵合法網站、架設偽冒網站，以及第三方服務供應鏈攻擊散布惡意JavaScript，再依據受害者的作業系統與瀏覽器版本，投遞不同的漏洞利用鏈。Sekoia研判，此次活動很有可能是俄羅斯駭客組織APT29所為。",
@@ -652,11 +655,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180232",
    "pts": [
-    "AI的普及為企業帶來顛覆市場的機會，但接踵而至的內部管理挑戰同樣令人擔憂，四大會計師事務所之一的資誠（PwC）10月初發布的2027全球數位信任洞察報告，AI已成為企業安全的首要議題，84%受訪者預期資安相關預算將增加， 58%受訪者將AI列為主要投資項目；對於量子運算安全，近半數（49%）尚未開始"
+    "資誠報告指出AI成為企業安全首要議題，84%受訪者預期增加資安預算，58%列為主要投資項目。",
+    "**超過半數全球企業高層坦承無法招架AI驅動與鎖定AI系統的攻擊**，近半數尚未開始準備量子運算安全。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "AI驅動攻擊與鎖定AI系統的攻擊來勢洶洶，近兩千位全球企業高層有超過一半坦承無法招架",
     "desc": "AI的普及為企業帶來顛覆市場的機會，但接踵而至的內部管理挑戰同樣令人擔憂，四大會計師事務所之一的資誠（PwC）10月初發布的2027全球數位信任洞察報告，AI已成為企業安全的首要議題，84%受訪者預期資安相關預算將增加， 58%受訪者將AI列為主要投資項目；對於量子運算安全，近半數（49%）尚未開始準備；為了專門因應網路威脅，已完全正式制定",
@@ -682,11 +686,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180239",
    "pts": [
-    "11月4日美國網路安全與基礎設施安全局（CISA）指出，已掌握存在蘋果多款產品的身分驗證漏洞CVE-2024-27834遭積極利用的證據，將其加入已遭利用的漏洞名單（KEV），聯邦機構必須在11月18日前完成修補"
+    "**CISA證實Apple多款產品的身分驗證漏洞CVE-2024-27834已遭積極利用**，並將其列入KEV名單。",
+    "美國聯邦機構被要求必須在11月18日前完成該漏洞的修補作業。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "蘋果旗下產品已知漏洞遭積極利用",
     "desc": "11月4日美國網路安全與基礎設施安全局（CISA）指出，已掌握存在蘋果多款產品的身分驗證漏洞CVE-2024-27834遭積極利用的證據，將其加入已遭利用的漏洞名單（KEV），聯邦機構必須在11月18日前完成修補",
@@ -742,11 +747,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180206",
    "pts": [
-    "區塊鏈分析業者Chainalysis於10月30日揭露一起資安事件，外部攻擊者利用該公司所稱的「攻擊性代理技術」（Offensive Agentic Techniques），未經授權存取內部系統及工具，並存取部分客戶使用者資料。"
+    "**Chainalysis遭外部攻擊者未經授權存取內部系統與工具，導致部分客戶使用者資料遭存取**。",
+    "攻擊者利用「攻擊性代理技術」入侵，該事件導致Chainalysis部分產品暫停服務。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "區塊鏈分析業者Chainalysis遭入侵波及客戶使用者資料，部分產品暫停服務",
     "desc": "區塊鏈分析業者Chainalysis於10月30日揭露一起資安事件，外部攻擊者利用該公司所稱的「攻擊性代理技術」（Offensive Agentic Techniques），未經授權存取內部系統及工具，並存取部分客戶使用者資料。",
@@ -1181,12 +1187,12 @@
    "src": "Microsoft MSRC",
    "url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Nov",
    "pts": [
-    "本月共修補 0 個漏洞，其中 0 個為重大等級。",
-    "目前未標示已遭利用的漏洞。"
+    "影響 Windows Server，2026 年 11 月發布之安全更新中無報告 CVE 漏洞。",
+    "**目前報告漏洞總數為 0，且無遭惡意利用或先行公開之狀況。**"
    ],
-   "fix": "安裝 11 月累積更新（Windows Update／WSUS），並確認 Exchange、Office 等產品的個別更新。",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "id": "2026-Nov",
     "total": 0,
@@ -1800,15 +1806,15 @@
    "cvss": 9.6,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-06T00:18:14+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 前版本 Google Chrome，包含 DevTools、Views、Prerender 等組件漏洞，攻擊者可透過特製 HTML 頁面執行任意程式碼。",
-    "此漏洞群組最高 CVSS 評分為 9.6，**目前尚未發現遭到實際利用或勒索軟體利用**。"
+    "同日公布 116 個漏洞，最高 CVSS 9.6。",
+    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2201,7 +2207,18 @@
      "Missing authorization in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
      "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
      "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-     "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)"
+     "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
+     "Use after free in Mobile in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in PDFium in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted PDF file. (Chromium security severity: High)",
+     "Use after free in Paint in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Scheduling in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Out of bounds read in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Animation in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Privilege elevation in Contacts in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)"
     ]
    }
   },
@@ -2863,11 +2880,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180103",
    "pts": [
-    "網路服務與資安業者Cloudflare公布2026年第3季分散式阻斷服務（DDoS）攻擊趨勢，該公司在旗下全球網路攔截1,820萬次網路層DDoS攻擊，較去年同期增加208%，平均每小時約8,226次。其中96%的攻擊持續不到10分鐘，98%的攻擊流量速率低於1Gbps。不過，超過1Tbps的超大流"
+    "**Cloudflare於2026年第3季攔截1,820萬次網路層DDoS攻擊，攻擊次數較去年同期增加208%**。",
+    "其中96%的攻擊持續不到10分鐘，98%攻擊流量低於1Gbps，超大流量攻擊則有所減少。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "2026年第3季DDoS攻擊次數年增208%，短時間攻擊考驗企業防禦能力",
     "desc": "網路服務與資安業者Cloudflare公布2026年第3季分散式阻斷服務（DDoS）攻擊趨勢，該公司在旗下全球網路攔截1,820萬次網路層DDoS攻擊，較去年同期增加208%，平均每小時約8,226次。其中96%的攻擊持續不到10分鐘，98%的攻擊流量速率低於1Gbps。不過，超過1Tbps的超大流量攻擊從前一季805次降至251次，減少近69%。",
@@ -2893,11 +2911,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180074",
    "pts": [
-    "網路設備與資安業者思科（Cisco）開源AI代理行為偵測工具Project Quarry，可分析AI代理執行任務期間的工具呼叫、工具執行結果及各項操作的先後順序，協助資安團隊辨識可疑行為。"
+    "**思科開源AI代理行為偵測工具Project Quarry，協助資安團隊辨識可疑行為**。",
+    "該工具可分析AI代理執行任務期間的工具呼叫、執行結果及各項操作的先後順序。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "思科開源AI代理偵測工具Quarry，可分析多步驟操作找出可疑行為",
     "desc": "網路設備與資安業者思科（Cisco）開源AI代理行為偵測工具Project Quarry，可分析AI代理執行任務期間的工具呼叫、工具執行結果及各項操作的先後順序，協助資安團隊辨識可疑行為。",
@@ -3544,7 +3563,7 @@
   {
    "id": "grp:Windows Server:2026-10-31",
    "kind": "group",
-   "title": "Blender與pgAdmin資安漏洞",
+   "title": "Blender與pgAdmin漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.5",
    "sev": "high",
    "kev": false,
@@ -3563,11 +3582,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.5。",
-    "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap buffer overflow vulnerability in the blend file thumbnail extractor caused by 32-"
+    "影響 Blender 4.5.15 與 5.2.3 前版本及 pgAdmin 4，可造成堆疊緩衝區溢位等問題。",
+    "CVSS 評分為 8.5，**目前尚無漏洞遭惡意利用或用於勒索軟體攻擊之紀錄**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -4545,15 +4564,15 @@
    "cvss": 9.9,
    "published": "2026-10-29T16:17:35+00:00",
    "first_seen": "2026-10-29T16:57:19+00:00",
-   "updated": "2026-10-30T20:48:44+00:00",
+   "updated": "2026-11-06T00:18:14+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101288",
    "pts": [
-    "影響 IBM Langflow OSS 1.0.0 至 1.12.4，可致執行任意程式碼、OS 命令或 SQL 指令。",
-    "目前未遭利用。**遠端或已驗證攻擊者可藉由反序列化與權限缺失進行攻擊**。"
+    "同日公布 19 個漏洞，最高 CVSS 9.9。",
+    "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization o"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -4630,7 +4649,41 @@
      "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
      "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote attacker with a low-privileged authenticated account to bypass the administrator-only restriction and execute arbitrary code on the server by configuring a built-in code-execution component with attacker-supplied inputs.",
      "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to bypass security restrictions due to improper authentication.",
-     "n8n from 2.14.0 through 2.46.3 contains a path traversal vulnerability in the Databricks node that allows unauthenticated attackers to reach arbitrary Databricks API endpoints by injecting unencoded resource identifiers. Attackers can supply ../ sequences and query strings via webhook, chat, or form inputs mapped to spaceId, indexName, or filePath to read secrets using the stored credential."
+     "n8n from 2.14.0 through 2.46.3 contains a path traversal vulnerability in the Databricks node that allows unauthenticated attackers to reach arbitrary Databricks API endpoints by injecting unencoded resource identifiers. Attackers can supply ../ sequences and query strings via webhook, chat, or form inputs mapped to spaceId, indexName, or filePath to read secrets using the stored credential.",
+     "n8n before 2.42.6, 2.43.x before 2.43.3, and 3.x before 3.0.1 contains a remote code execution vulnerability via deprecated Function, Function Item, and LangChain Code nodes running outside task runner isolation. Authenticated users who can create, modify, or import workflows naming these hidden node types can execute JavaScript in the n8n main process."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-105031",
+   "kind": "cve",
+   "title": "OpenSSL 漏洞 CVE-2026-105031",
+   "sub": "CVE-2026-105031 · CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-105031"
+   ],
+   "cvss": 9.1,
+   "published": "2026-10-29T11:17:24+00:00",
+   "first_seen": "2026-11-06T00:18:14+00:00",
+   "updated": "2026-11-06T00:18:14+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105031",
+   "pts": [
+    "When using the OpenSSL TLS implementation, both the pn_ssl_domain_set_trusted_ca_db() & pn_tls_config_set_trusted_certs() APIs added to rath"
+   ],
+   "fix": "原文：Leading to potentially trusting unexpected peer certificates. This can be worked around by setting the SSL_CERT_FILE environment variable for the application to /dev/null. This ",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "When using the OpenSSL TLS implementation, both the pn_ssl_domain_set_trusted_ca_db() & pn_tls_config_set_trusted_certs() APIs added to rather than replaced the default system trust anchors. Leading to potentially trusting unexpected peer certificates.\n\n\n\nThis can be worked around by setting the SSL_CERT_FILE environment variable for the application to /dev/null.\n\n\n\nThis issue does not affect the Win32 SChannel TLS implementation.\n\n\n\nThis issue affects Apache Qpid Proton C: through 0.40.0.\n\n\n\nUsers are recommended to upgrade to version 0.41.1, which fixes the issue.",
+    "refs": [
+     "https://lists.apache.org/thread.html/lc10nrjt2dwcjjhrsgoyy5tqkntsnor4"
     ]
    }
   },
@@ -7525,7 +7578,7 @@
   {
    "id": "grp:AI 平台:2026-10-25",
    "kind": "group",
-   "title": "vLLM 多重服務中斷漏洞",
+   "title": "vLLM AI 平台多重安全漏洞",
    "sub": "8 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -7550,11 +7603,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116172",
    "pts": [
-    "同日公布 8 個漏洞，最高 CVSS 8.8。",
-    "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers t"
+    "影響 vLLM 多個版本，漏洞可導致 SSRF、輸入驗證繞過與伺服器阻斷服務。",
+    "CVSS 評分為 8.8，**目前相關漏洞皆未發現遭惡意利用或勒索軟體利用**。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -8079,15 +8132,15 @@
    "cvss": 9.2,
    "published": "2026-10-21T14:17:09+00:00",
    "first_seen": "2026-10-27T14:33:51+00:00",
-   "updated": "2026-11-04T21:53:52+00:00",
+   "updated": "2026-11-06T00:18:14+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響包含 PHP 元件之系統，因記憶體不足與全域狀態處理不當，可能導致**未初始化記憶體讀取或釋放後重用**。",
-    "目前未遭利用。漏洞源於 PHP 內部記憶體與請求清理機制異常。"
+    "同日公布 2 個漏洞，最高 CVSS 9.2。",
+    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -8099,6 +8152,8 @@
      "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+     "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+     "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
      "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
@@ -9460,15 +9515,15 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-06T00:18:14+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，遠端攻擊者可透過網路連線入侵系統。",
-    "最高 CVSS 評分為 10.0，**目前尚未發現漏洞遭到實際利用或勒索軟體利用**。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -9905,7 +9960,26 @@
      "Vulnerability in the Oracle Purchasing product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Purchasing.  Successful attacks of this vulnerability can result in takeover of Oracle Purchasing. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Partner Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Partner Management.  While the vulnerability is in Oracle Partner Management, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Partner Management accessible data as well as  unauthorized access to critical data or complete access to all Oracle Partner Management accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Partner Management. CVSS 3.1 Base Score 8.4 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:L).",
      "Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Diagnostics).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Applications Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Manager. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Siebel CRM End User product of Oracle Siebel CRM (component: Communications Panel/Dashboard).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM End User.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Siebel CRM End User accessible data as well as  unauthorized update, insert or delete access to some of Siebel CRM End User accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N)."
+     "Vulnerability in the Siebel CRM End User product of Oracle Siebel CRM (component: Communications Panel/Dashboard).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM End User.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Siebel CRM End User accessible data as well as  unauthorized update, insert or delete access to some of Siebel CRM End User accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
+     "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Difficult to exploit vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the Siebel CRM Cloud Applications executes to compromise Siebel CRM Cloud Applications.  While the vulnerability is in Siebel CRM Cloud Applications, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Siebel CRM Cloud Applications accessible data as well as  unauthorized access to critical data or complete access to all Siebel CRM Cloud Applications accessible data. CVSS 3.1 Base Score 8.0 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel CRM Cloud Applications.  While the vulnerability is in Siebel CRM Cloud Applications, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Siebel CRM Cloud Applications. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Siebel Apps - Life Sciences product of Oracle Siebel CRM (component: eDetailing).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via SQL to compromise Siebel Apps - Life Sciences.  Successful attacks of this vulnerability can result in takeover of Siebel Apps - Life Sciences. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via Oracle Net to compromise Oracle Trusted Answer Search.  While the vulnerability is in Oracle Trusted Answer Search, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Trusted Answer Search. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Agent Next Gen).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Enterprise Manager Base Platform.  Successful attacks of this vulnerability can result in takeover of Oracle Enterprise Manager Base Platform. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Enterprise Manager for Siebel product of Oracle Enterprise Manager (component: Configuration Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Enterprise Manager for Siebel.  Successful attacks of this vulnerability can result in takeover of Oracle Enterprise Manager for Siebel. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Enterprise Manager for Siebel product of Oracle Enterprise Manager (component: Configuration Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Enterprise Manager for Siebel.  Successful attacks of this vulnerability can result in takeover of Oracle Enterprise Manager for Siebel. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Enterprise Manager for Oracle Database.  While the vulnerability is in Oracle Enterprise Manager for Oracle Database, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Enterprise Manager for Oracle Database. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Enterprise Manager for Oracle Database.  While the vulnerability is in Oracle Enterprise Manager for Oracle Database, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Enterprise Manager for Oracle Database. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Capacity.  Successful attacks of this vulnerability can result in takeover of Oracle Capacity. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Agile Product Lifecycle Management for Process.  Successful attacks of this vulnerability can result in takeover of Oracle Agile Product Lifecycle Management for Process. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Agile Product Lifecycle Management for Process.  Successful attacks of this vulnerability can result in takeover of Oracle Agile Product Lifecycle Management for Process. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Agile Product Lifecycle Management for Process.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of Oracle Agile Product Lifecycle Management for Process. CVSS 3.1 Base Score 8.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: WebLogic Server Proxy Plug-In for Third-Party Web Servers).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0 and  14.1.2.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Weblogic Server Proxy Plug-in.  While the vulnerability is in Oracle Weblogic Server Proxy Plug-in, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Weblogic Server Proxy Plug-in accessible data as well as  unauthorized access to critical data or complete access to all Oracle Weblogic Server Proxy Plug-in accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle WebLogic Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: OSSL Module).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle HTTP Server.  While the vulnerability is in Oracle HTTP Server, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle HTTP Server accessible data as well as  unauthorized access to critical data or complete access to all Oracle HTTP Server accessible data. CVSS 3.1 Base Score 9.6 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Service Bus.  Successful attacks of this vulnerability can result in takeover of Oracle Service Bus. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Service Bus.  Successful attacks of this vulnerability can result in takeover of Oracle Service Bus. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)."
     ]
    }
   },
@@ -10379,6 +10453,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-05T18:46:16+00:00",
- "kev_last": "2026-11-05T18:46:16+00:00"
+ "nvd_last": "2026-11-06T00:17:39+00:00",
+ "kev_last": "2026-11-06T00:17:39+00:00"
 }
