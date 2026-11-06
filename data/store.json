@@ -35,6 +35,167 @@
  },
  "events": [
   {
+   "id": "tw:3a5181e25729",
+   "kind": "news",
+   "title": "普鴻積極布局PQC解決方案，發展五大密碼學治理能力，自研演算法實作通過CAVP驗證",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T15:56:18+00:00",
+   "first_seen": "2026-11-06T15:56:18+00:00",
+   "updated": "2026-11-06T15:56:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180292",
+   "pts": [
+    "過去在資安市場相對低調的普鴻資訊，長期深耕金融業硬體安全模組（HSM）及加解密系統，主要依據客戶需求提供資安產品與客製化解決方案。近一年多來，該公司逐漸調整發展策略，不僅將既有技術與功能整合為獨立產品，也開始更積極對外推廣，並將後量子密碼學（PQC）列為重要發展方向，同時積極擴展非金融業領域的客戶應"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "普鴻積極布局PQC解決方案，發展五大密碼學治理能力，自研演算法實作通過CAVP驗證",
+    "desc": "過去在資安市場相對低調的普鴻資訊，長期深耕金融業硬體安全模組（HSM）及加解密系統，主要依據客戶需求提供資安產品與客製化解決方案。近一年多來，該公司逐漸調整發展策略，不僅將既有技術與功能整合為獨立產品，也開始更積極對外推廣，並將後量子密碼學（PQC）列為重要發展方向，同時積極擴展非金融業領域的客戶應用。 普鴻10月底舉辦產品發表會，首度完整對外說明自家PQC產品布局，除了自主研發的後量子密碼學演算法與硬體安控設備，也進一步推出五項密碼學治理產品，涵蓋密碼學資產盤點、憑證與金鑰管理，以及加密敏捷等領域，協助企業因應PQC遷移需求。不僅如此，該公司近兩年也積極拓展非金融業市場，目前已逐步展現成效。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:9367ad0425a2",
+   "kind": "news",
+   "title": "【資安週報】1102～1106，電商服務供應鏈資安風波多家同時延燒、永豐銀行異常轉帳確認為資安事件",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T15:56:18+00:00",
+   "first_seen": "2026-11-06T15:56:18+00:00",
+   "updated": "2026-11-06T15:56:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180291",
+   "pts": [
+    "連續數週以來，日本企業資料外洩事件接連曝光，臺灣電商服務供應鏈也持續傳出資安警訊。繼91APP遭駭波及上千家品牌後，1shop、Cyberbiz、meepShop及電商ERP業者莫筆克科技也接連傳出資安事件或疑慮，連帶使得眾多採用相關服務的品牌商陸續發布資安公告，部分顧客訂單及個資可能受到影響。 金"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安週報】1102～1106，電商服務供應鏈資安風波多家同時延燒、永豐銀行異常轉帳確認為資安事件",
+    "desc": "連續數週以來，日本企業資料外洩事件接連曝光，臺灣電商服務供應鏈也持續傳出資安警訊。繼91APP遭駭波及上千家品牌後，1shop、Cyberbiz、meepShop及電商ERP業者莫筆克科技也接連傳出資安事件或疑慮，連帶使得眾多採用相關服務的品牌商陸續發布資安公告，部分顧客訂單及個資可能受到影響。 金融資安事故同樣備受關注。臺灣永豐銀行客戶異常轉帳事件，銀行後續說明是駭客利用新網銀交易系統供應商的安全設定漏洞所導致，但相關細節並未揭露，仍待進一步釐清；國際間，法國銀行也傳出鉅額資金遭駭轉走，加密貨幣交易平臺Binance則揭露，駭客透過假面試及遭變造的軟體安裝程式入侵工程師電腦，進而滲透錢包簽章服務。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:1e09dc1b9c1b",
+   "kind": "news",
+   "title": "【資安日報】11月6日，OpenSSH修補長密碼身分驗證繞過漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T15:56:18+00:00",
+   "first_seen": "2026-11-06T15:56:18+00:00",
+   "updated": "2026-11-06T15:56:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180289",
+   "pts": [
+    "資安新聞焦點 ● OpenSSH修補可利用長密碼繞過身分驗證的資安漏洞 ● 身分驗證服務公司WorkOS遭AI資安框架ARTEX攻擊 ● Node-RED重大漏洞被用於試圖部署後門程式"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月6日，OpenSSH修補長密碼身分驗證繞過漏洞",
+    "desc": "資安新聞焦點 ● OpenSSH修補可利用長密碼繞過身分驗證的資安漏洞 ● 身分驗證服務公司WorkOS遭AI資安框架ARTEX攻擊 ● Node-RED重大漏洞被用於試圖部署後門程式",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-123487",
+   "kind": "cve",
+   "title": "Node.js 服務阻斷漏洞",
+   "sub": "CVE-2026-123487 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-123487"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-06T15:17:17+00:00",
+   "first_seen": "2026-11-06T15:56:16+00:00",
+   "updated": "2026-11-06T15:56:16+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123487",
+   "pts": [
+    "Parse Server 8.6.115 與 9.10.7-alpha.1 之前版本驗證電子郵件時存在正規表示式漏洞。",
+    "CVSS為8.7，目前未遭利用。**未授權攻擊者可傳送特製長郵件阻塞 Node.js 事件循環造成服務阻斷。**"
+   ],
+   "fix": "升級至 Parse Server 8.6.115 或 9.10.7-alpha.1 以上版本",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "Parse Server before 8.6.115 and 9.0.0 before 9.10.7-alpha.1 validates user email address format with a regular expression whose run time grows quadratically with input length and that is applied without a length limit. An unauthenticated attacker who knows the application ID can send a sign-up request, or a logged-in user can update their own email, with a long crafted email address to block the Node.js event loop and deny service to all clients.",
+    "refs": [
+     "https://github.com/parse-community/parse-server/security/advisories/GHSA-9492-427f-466x",
+     "https://www.vulncheck.com/advisories/parse-server-9.0.0-before-9.10.7-alpha.1-redos-via-email-validation-regex"
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-119170",
+   "kind": "cve",
+   "title": "OpenSSL 演算法漏洞",
+   "sub": "CVE-2026-119170 · CVSS 8.2",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-119170"
+   ],
+   "cvss": 8.2,
+   "published": "2026-11-06T15:17:12+00:00",
+   "first_seen": "2026-11-06T15:56:16+00:00",
+   "updated": "2026-11-06T15:56:16+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119170",
+   "pts": [
+    "Python 3.14.10 的 hashlib 模組在強制執行 FIPS 演算法時存在功能退化漏洞。",
+    "CVSS為8.2，目前未遭利用。**僅影響於 FIPS 模式下使用 OpenSSL 的 Python 3.14.10 環境。**"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "There was a regression in how FIPS algorithms were enforced for the hashlib module. Only users that are using OpenSSL in FIPS mode are affected. Only Python 3.14.10 is affected, all other Python versions are unaffected.",
+    "refs": [
+     "https://github.com/python/cpython/issues/160923",
+     "https://github.com/python/cpython/pull/160984",
+     "https://mail.python.org/archives/list/security-announce@python.org/thread/PXVTTOBPUMFJSSUXN6XCS7FC5DZOSZXK/"
+    ]
+   }
+  },
+  {
    "id": "tw:8dee7c0dca3f",
    "kind": "news",
    "title": "SonicWall GMS爆出免登入檔案讀取漏洞，產品退役無修補可用",
@@ -144,11 +305,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180281",
    "pts": [
-    "OpenSSH開發團隊於11月5日發布緊急更新10.6p2，受到資安界高度關注，原因是其中修補能透過長密碼利用的身分驗證繞過漏洞SSHole（CVE-2026-123158），問題源自OpenSSH與musl C程式庫之間的密碼驗證處理方式。"
+    "OpenSSH 發布 10.6p2 緊急更新，修補源自 musl C 程式庫處理方式的 SSHole 漏洞（CVE-2026-123158）。",
+    "**攻擊者可透過長密碼利用該漏洞繞過身分驗證。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "OpenSSH發布緊急更新，修補可利用長密碼繞過身分驗證的資安漏洞SSHole",
     "desc": "OpenSSH開發團隊於11月5日發布緊急更新10.6p2，受到資安界高度關注，原因是其中修補能透過長密碼利用的身分驗證繞過漏洞SSHole（CVE-2026-123158），問題源自OpenSSH與musl C程式庫之間的密碼驗證處理方式。",
@@ -264,11 +426,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180196",
    "pts": [
-    "英國國家網路安全中心（NCSC）發布AI網路入侵威脅評估，認為2028年前，攻擊者極可能使用AI驅動的惡意程式，對英國關鍵基礎設施發動勒索軟體攻擊。NCSC指出，AI可能讓攻擊者更快找出並利用系統漏洞，擴大網路攻擊的規模與速度。即使失去原有的入侵管道，攻擊者也可能以較低成本找到其他入侵途徑。換言之，"
+    "英國 NCSC 評估 2028 年前攻擊者極可能使用 AI 惡意程式對關鍵基礎設施發動勒索軟體攻擊。",
+    "**AI 雖未帶來新型手法，但可降低尋找漏洞成本並提高網路攻擊規模與效率。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "英國NCSC預警2028年前AI惡意程式恐用於勒索軟體攻擊，威脅關鍵基礎設施",
     "desc": "英國國家網路安全中心（NCSC）發布AI網路入侵威脅評估，認為2028年前，攻擊者極可能使用AI驅動的惡意程式，對英國關鍵基礎設施發動勒索軟體攻擊。NCSC指出，AI可能讓攻擊者更快找出並利用系統漏洞，擴大網路攻擊的規模與速度。即使失去原有的入侵管道，攻擊者也可能以較低成本找到其他入侵途徑。換言之，AI不一定帶來全新的攻擊手法，卻可能讓既有的網路攻擊變得更有效率。",
@@ -350,39 +513,37 @@
    }
   },
   {
-   "id": "CVE-2026-102523",
-   "kind": "cve",
-   "title": "SQL Server 漏洞 CVE-2026-102523",
-   "sub": "CVE-2026-102523 · CVSS 8.0",
-   "sev": "high",
+   "id": "grp:SQL Server:2026-11-06",
+   "kind": "group",
+   "title": "SQL Server 相關漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.3",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
     "SQL Server"
    ],
    "cves": [
-    "CVE-2026-102523"
+    "CVE-2026-102523",
+    "CVE-2026-59105"
    ],
-   "cvss": 8.0,
+   "cvss": 9.3,
    "published": "2026-11-05T16:17:23+00:00",
    "first_seen": "2026-11-05T18:48:29+00:00",
-   "updated": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-06T15:56:16+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102523",
    "pts": [
-    "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE "
+    "MariaDB 10.11.1至10.11.19等版本存在分區名稱編碼漏洞；Jumis於SQL Server使用固定演算法衍生之密碼。",
+    "CVSS為9.3，目前未遭利用。**攻擊者可利用已知演算法推算 SQL Server 的帳號密碼。**"
    ],
-   "fix": "原文：This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
-    "desc": "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE ... CONVERT ... PARTITION does not apply filename encoding to user-specified partition names before using them in filesystem path construction. An authenticated database user can use a partition name requiring filename escaping to make the conversion operate on table files the user is not authorized to access, allowing unauthorized table reads or modifications. This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-    "refs": [
-     "https://github.com/MariaDB/server/commit/98437c30ae52ed709f266e5f8095d779261a5879",
-     "https://github.com/MariaDB/server/releases/tag/mariadb-10.11.19",
-     "https://github.com/MariaDB/server/releases/tag/mariadb-11.4.13",
-     "https://github.com/MariaDB/server/releases/tag/mariadb-11.8.9",
-     "https://github.com/MariaDB/server/releases/tag/mariadb-12.3.3"
+    "descs": [
+     "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE ... CONVERT ... PARTITION does not apply filename encoding to user-specified partition names before using them in filesystem path construction. An authenticated database user can use a partition name requiring filename escaping to make the conversion operate on table files the user is not authorized to access, allowing unauthorized table reads or modifications. This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+     "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_JumisAdmin## whose password is derived deterministically from a single non-secret input - the SQL Server name (@@servername). The derivation algorithm is hard-coded in the client application and is identical across every installation; it contains a hard-coded secret key for entropy. Because the only input (the server name) is not secret - the instance suffix is hard-coded and the host name is discoverable via the SQL Server Browser service (UDP 1434), the TDS pre-login response, or DNS/NetBIOS - any party able to reach a Jumis SQL Server can compute the password offline and authenticate. The ##Tilde_JumisAdmin## login is a member of the sysadmin server role. Successful authentication therefore grants full administrative control of the SQL Server instance and read/write access to every customer's accounting database hosted on it. The on-premise server installation also programmatically enables xp_cmdshell during routine operation, so sysadmin access escalates to operating-system command execution on the database server."
     ]
    }
   },
@@ -818,7 +979,7 @@
   {
    "id": "CVE-2026-76506",
    "kind": "cve",
-   "title": "Cisco修補UCS Central遠端程式碼執行漏洞",
+   "title": "Cisco UCS遠端執行漏洞",
    "sub": "CVE-2026-76506 · CVSS 7.6",
    "sev": "note",
    "kev": false,
@@ -836,11 +997,12 @@
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180242",
    "pts": [
-    "A vulnerability in the web-based management interface of Cisco UCS Central Software could allow an authenticated, remote attacker to achieve"
+    "影響 Cisco UCS Central Software 網頁管理介面，輸入驗證不足可導致攻擊者遠端執行程式碼、寫入檔案或取得敏感資訊。",
+    "攻擊者需具備有效使用者憑證並傳送特製 HTTP 請求，目前未遭利用。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "**套用 Cisco 已發布的軟體更新**，目前無可用的替代緩解措施。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "name": "Cisco修補UCS Central遠端程式碼執行漏洞",
     "desc": "A vulnerability in the web-based management interface of Cisco UCS Central Software could allow an authenticated, remote attacker to achieve remote code execution or conduct information disclosure attacks on an affected device.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input in an HTTP request. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected endpoint on an affected device. A successful exploit could allow the attacker to execute arbitrary commands, write arbitrary files to the filesystem, and obtain sensitive information. To exploit this vulnerability, the attacker must have valid user credentials on the affected device.\r\nCisco has released software updates that address this vulnerability There are no workarounds that address this vulnerability.",
@@ -866,11 +1028,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180240",
    "pts": [
-    "上市生活清潔用品製造商毛寶（1732）於11月3日，在股市公開資訊觀測站發布重大訊息，該公司透過例行性資安監控機制，發現電商網站遭外部不明人士進行異常網路攻擊，隨即啟動資安應變機制因應。"
+    "清潔用品業者毛寶於 11 月 3 日發布重大訊息，透過例行監控發現電商網站遭外部不明人士進行異常網路攻擊。",
+    "事件發生後已**啟動資安應變機制**，並通報主管機關與通知受影響顧客。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "毛寶電商網站遭不明人士攻擊，已通報主管機關並通知受影響顧客",
     "desc": "上市生活清潔用品製造商毛寶（1732）於11月3日，在股市公開資訊觀測站發布重大訊息，該公司透過例行性資安監控機制，發現電商網站遭外部不明人士進行異常網路攻擊，隨即啟動資安應變機制因應。",
@@ -1918,7 +2081,7 @@
   {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Google Chrome 多重安全漏洞",
+   "title": "Chrome 遠端執行程式碼漏洞",
    "sub": "116 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -2047,12 +2210,12 @@
    "cvss": 9.6,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-06T00:18:14+00:00",
+   "updated": "2026-11-06T15:56:16+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "漏洞影響 157.0.8103.38 之前版本的 Google Chrome，遠端攻擊者可透過特製 HTML 頁面觸發 DevTools、Views、Prerender 等元件漏洞，進而執行任意程式碼。",
-    "CVSS 最高達 9.6，**目前尚未發現遭到利用**，部分漏洞需配合社交工程誘騙使用者觸發。"
+    "Google Chrome 157.0.8103.38 之前版本存在 DevTools、Views 等多個組件漏洞。",
+    "CVSS最高9.6，目前未遭野外利用。**遠端攻擊者可透過誘騙造訪特製 HTML 頁面執行任意程式碼。**"
    ],
    "fix": "",
    "ai": true,
@@ -2459,7 +2622,8 @@
      "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Privilege elevation in Contacts in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-     "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)"
+     "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Confused deputy in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)"
     ]
    }
   },
@@ -10695,6 +10859,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-06T07:56:09+00:00",
- "kev_last": "2026-11-06T07:56:09+00:00"
+ "nvd_last": "2026-11-06T15:56:02+00:00",
+ "kev_last": "2026-11-06T15:56:02+00:00"
 }
