@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T15:56:02+00:00",
+ "generated": "2026-11-06T21:29:57+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -379,10 +379,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180292",
    "pts": [
-    "過去在資安市場相對低調的普鴻資訊，長期深耕金融業硬體安全模組（HSM）及加解密系統，主要依據客戶需求提供資安產品與客製化解決方案。近一年多來，該公司逐漸調整發展策略，不僅將既有技術與功能整合為獨立產品，也開始更積極對外推廣，並將後量子密碼學（PQC）列為重要發展方向，同時積極擴展非金融業領域的客戶應"
+    "**普鴻資訊積極布局後量子密碼學（PQC）**，推出五項密碼學治理產品，自主研發演算法通過 CAVP 驗證。",
+    "公司由金融業硬體安全模組拓展至非金融領域，提供憑證與金鑰管理及加密敏捷等解決方案。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:9367ad0425a2",
@@ -402,10 +403,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180291",
    "pts": [
-    "連續數週以來，日本企業資料外洩事件接連曝光，臺灣電商服務供應鏈也持續傳出資安警訊。繼91APP遭駭波及上千家品牌後，1shop、Cyberbiz、meepShop及電商ERP業者莫筆克科技也接連傳出資安事件或疑慮，連帶使得眾多採用相關服務的品牌商陸續發布資安公告，部分顧客訂單及個資可能受到影響。 金"
+    "**臺灣多間電商服務供應商接連傳出資安疑慮**，個資恐受影響；永豐銀行異常轉帳確認為資安事件。",
+    "國際間法國銀行遭鉅額轉帳，Binance 揭露駭客透過假面試與變造安裝程式滲透錢包簽章服務。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:1e09dc1b9c1b",
@@ -425,10 +427,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180289",
    "pts": [
-    "資安新聞焦點 ● OpenSSH修補可利用長密碼繞過身分驗證的資安漏洞 ● 身分驗證服務公司WorkOS遭AI資安框架ARTEX攻擊 ● Node-RED重大漏洞被用於試圖部署後門程式"
+    "OpenSSH修補可利用長密碼繞過身分驗證的漏洞；身分驗證服務WorkOS遭AI資安框架ARTEX攻擊。",
+    "Node-RED發現重大漏洞，**遭用於試圖部署後門程式**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-123487",
@@ -500,10 +503,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180287",
    "pts": [
-    "防火牆廠商SonicWall發布資安公告，揭露已終止支援的集中管理平臺Global Management System（GMS）存在兩項漏洞，影響9.5.2及更早版本。其中CVE-2026-109593的CVSS風險評分達9.1分，攻擊者不需登入，就可能透過網路讀取GMS內部檔案。由於產品已終止支援"
+    "SonicWall GMS 9.5.2及更早版本存在免登入檔案讀取漏洞CVE-2026-109593，CVSS評分為9.1分。",
+    "**該產品已終止支援且不會發布修補程式**，原廠建議用戶遷移至Network Security Manager (NSM)。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:103e8a1a5565",
@@ -523,10 +527,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180285",
    "pts": [
-    "OpenAI周四（11/5）發表GPT-6 Cyber，此一專為資安研究開發的AI模型，已在Firefox瀏覽器中發現81個先前未知的高風險漏洞，並針對Linux核心的948個漏洞開發出可實際運作的攻擊程式。"
+    "OpenAI發表資安AI模型GPT-6 Cyber，在Firefox瀏覽器中發現81個先前未知的高風險漏洞。",
+    "**該模型已針對Linux核心的948個漏洞開發出可實際運作的攻擊程式**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:0fd06bcfff65",
@@ -594,10 +599,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180275",
    "pts": [
-    "興櫃保健食品公司騰勢（7889）11月5日於股市公開資訊觀測站發布重大訊息，委外線上服務系統發生異常資料存取事件。該公司接獲委外服務廠商通知，發現其服務系統近期出現異常資料存取狀況，廠商發現後已阻擋相關異常存取行為。"
+    "騰勢發布重訊指出委外線上服務系統發生異常資料存取事件。",
+    "廠商發現後已**阻擋相關異常存取行為**，公司已啟動資安應變並調查影響範圍。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:5c4feb794518",
@@ -617,10 +623,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180274",
    "pts": [
-    "11月5日興櫃公司遠東生技（6886）在股市公開資訊觀測站發布重大訊息，電子商城平臺委外服務廠商順立智慧（Cyberbiz）發生資安事件，資料庫部分資料遭未經授權的異常存取，其中包含遠東生技電子商城的訂單及個人資料，此次事件對公司財務及業務尚無重大影響，但目前尚無法確認相關資料是否受到影響，以"
+    "遠東生技委外廠商Cyberbiz資料庫遭異常存取，包含電子商城訂單與個人資料。",
+    "**目前尚無法確認相關資料是否受到影響**，對公司財務及業務尚無重大影響。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:0813963f11a3",
@@ -640,10 +647,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180234",
    "pts": [
-    "美國網路安全暨基礎設施安全局（CISA）提出強化關鍵基礎設施韌性的4項準備重點，呼籲相關業者除了防範網路攻擊，也應事先規畫重要服務中斷時的應變與復原措施，降低資安事故及其他中斷事件對營運造成的影響。"
+    "CISA提出強化關鍵基礎設施韌性的4項準備重點。",
+    "呼籲業者**事先規畫服務中斷的應變與復原措施**，降低資安事故對營運的衝擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:1354040d1ba8",
@@ -667,6 +675,32 @@
     "**AI 雖未帶來新型手法，但可降低尋找漏洞成本並提高網路攻擊規模與效率。**"
    ],
    "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-19868",
+   "kind": "cve",
+   "title": "SonicWall 驗證繞過漏洞",
+   "sub": "CVE-2026-19868 · CVSS 7.5",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "SonicWall"
+   ],
+   "cves": [
+    "CVE-2026-19868"
+   ],
+   "cvss": 7.5,
+   "published": "2026-11-06T00:00:00+00:00",
+   "first_seen": "2026-11-06T21:31:03+00:00",
+   "src": "CISA KEV",
+   "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0014",
+   "pts": [
+    "SonicWall SonicOS SSLVPN 存在單因子驗證漏洞，可能導致攻擊者繞過 SAML 驗證控制。",
+    "**此漏洞目前已知已被實際利用**，攻擊者可藉此繞過 SAML 實施的多重身份驗證（MFA）。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
    "ai": true
   },
   {
@@ -698,7 +732,7 @@
   {
    "id": "grp:IIS:2026-11-06",
    "kind": "group",
-   "title": "IIS 多個高風險漏洞",
+   "title": "ModSecurity 繞過漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -717,16 +751,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104269",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.6。",
-    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModS"
+    "適用於 IIS 與 Nginx 之 ModSecurity 3.0.0 至 3.0.17 版本存在解析與比對缺陷。",
+    "**目前尚無已知遭實際利用跡象**，攻擊者可利用檔名參數或 Content-Type 大小寫差異繞過檢查。"
    ],
-   "fix": "原文：This issue is fixed in version 3.0.17.",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "grp:SQL Server:2026-11-06",
    "kind": "group",
-   "title": "SQL Server 相關漏洞",
+   "title": "SQL Server 相關安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -744,8 +778,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102523",
    "pts": [
-    "MariaDB 10.11.1至10.11.19等版本存在分區名稱編碼漏洞；Jumis於SQL Server使用固定演算法衍生之密碼。",
-    "CVSS為9.3，目前未遭利用。**攻擊者可利用已知演算法推算 SQL Server 的帳號密碼。**"
+    "MariaDB 10.11.1 等特定版本與 Jumis 之 SQL Server 存在路徑處理及憑證衍生漏洞。",
+    "**目前尚無已知遭實際利用跡象**，攻擊者可推算 SQL Server 登入密碼或利用檔名編碼缺陷。"
    ],
    "fix": "",
    "ai": true
@@ -888,10 +922,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180254",
    "pts": [
-    "兆勤（Zyxel）近日修補GS1900系列交換器漏洞CVE-2026-107441，通報此事的韌體安全公司Binarly也公布該漏洞的發現過程，該公司在調查資安廠商Acronis、"
+    "**中國駭客利用 Zyxel GS1900 系列交換器零時差漏洞 CVE-2026-107441 竊取敏感資料。**",
+    "兆勤（Zyxel）已修補該漏洞，韌體安全公司 Binarly 也公布漏洞發現過程。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:dafcecfecf3e",
@@ -1007,10 +1042,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180247",
    "pts": [
-    "上櫃公司中天生技（4128）於11月3日晚間，在股市公開資訊觀測站發布重大訊息，子公司棉花田生機園地股份有限公司的委外購物網站服務廠商，近期發現系統出現異常資料存取情形。服務廠商在發現異常後，已先行阻擋相關存取行為，棉花田也立即啟動資安事件應變與調查機制。"
+    "中天生技子公司棉花田生機園地的委外購物網站服務廠商，近期發現系統出現異常資料存取情形。",
+    "**服務廠商發現後已阻擋相關存取行為，棉花田也已啟動資安事件應變與調查機制。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:7dff25031a0c",
@@ -1030,10 +1066,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180246",
    "pts": [
-    "11月4日餐飲集團王品（2727）於股市公開資訊觀測站發布重大訊息，子公司萬鮮的委外購物網站服務廠商發生資訊安全事件。該廠商近期在服務系統發現異常資料存取，並先行阻擋相關存取行為。萬鮮接獲通知後，也啟動資安事件應變與調查機制，並要求委外廠商儘速確認受影響的系統及資料範圍，同時採取必要的防護措施。"
+    "王品子公司萬鮮的委外購物網站服務廠商發生資安事件，系統出現異常資料存取。",
+    "**委外廠商已先行阻擋相關存取，萬鮮已啟動資安應變機制並要求廠商確認影響範圍與採取防護措施。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:b72f4a663ea6",
@@ -1053,10 +1090,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180245",
    "pts": [
-    "上市生技公司葡萄王（1707）於11月4日，在股市公開資訊觀測站發布重大訊息，該公司旗下的線上商城「購健康」委外服務廠商發生資安事件。"
+    "**葡萄王旗下線上商城「購健康」委外服務廠商發生資安事件，資料庫遭異常存取。**",
+    "該公司於11月4日在股市公開資訊觀測站發布重大訊息，會員訂單及個資疑似外洩。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:14abf9b06ecd",
@@ -1076,10 +1114,10 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180242",
    "pts": [
-    "Cisco於11月4日發布公告修補UCS Central管理平臺漏洞CVE-2026-76506，C"
+    "**Cisco於11月4日發布公告，修補UCS Central管理平臺漏洞CVE-2026-76506。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-76506",
@@ -1197,10 +1235,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180236",
    "pts": [
-    "歐洲多國冷凍冷藏系統接連遭到網路攻擊，歐盟網路安全局（ENISA）與歐盟執委會及相關機關11月4日發布聯合聲明，呼籲相關組織立即採取安全措施，降低冷凍冷藏系統遭到攻擊的風險。"
+    "歐洲多國冷凍冷藏系統及法國血庫接連遭到網路攻擊。",
+    "**歐盟網路安全局與執委會等機關呼籲相關組織立即採取安全措施降低風險。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:e30de31d6f5b",
@@ -1366,10 +1405,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180213",
    "pts": [
-    "繼91APP、1shop、Cyberbiz及meepShop等臺灣電商技術服務業者接連傳出資安事件與疑慮後，我們同時追蹤另一家電商開店平臺Shopline的資安動態，進一步發現該公司於11月3日公告，第三方雲端ERP服務商莫筆克科技（Mallbic雲端小幫手）發生資安事件，Shopline也對此事件"
+    "第三方雲端 ERP 服務商莫筆克科技發生資安事件。",
+    "**Shopline 已更換相關 API 金鑰，商家匯入 ERP 的資料恐受影響。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:b62b29cd3c5a",
@@ -1413,10 +1453,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180209",
    "pts": [
-    "臺灣多家電商技術服務業者接連傳出資安事件，繼10月中旬91APP公布遭駭事件後，又有多家業者傳出資安事件與相關疑慮，1shop公告其研判「訂單成立通知信」遭竊取，進入11月後，多家使用Cyberbiz及meepShop服務的品牌也陸續發布資安及防詐公告，提及訂單異常讀取或可能遭未經授權取得，實際事件"
+    "繼 91APP 後，1shop、Cyberbiz 及 meepShop 等臺灣電商業者接連傳出資安疑慮。",
+    "**部分業者訂單通知信或資料傳出遭未授權讀取與取得，影響範圍釐清中。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:a32953e9a917",
@@ -1534,10 +1575,11 @@
    "src": "TWCERT/CC 資安新聞",
    "url": "https://www.twcert.org.tw/tw/cp-104-11367-06bed-1.html",
    "pts": [
-    "2026 年 10 月起，歐洲超市的冷凍及冷藏設備接連遭到網路攻擊。攻擊者遠端修改設備的溫度與除霜設定，導致大量食品報廢。事件先發生在法國，11 月初再擴及比利時、荷蘭、瑞典、愛爾蘭等國。法國、荷蘭等國的資安機關已陸續發布警示，提醒業者檢視冷凍設備遠端監控系統的連網與存取管理。 法國約 700 家超"
+    "攻擊者利用預設密碼與連網介面，遠端竄改 Danfoss 與 Copeland/Dixell 控制器設定導致異常升溫。",
+    "**資安機關建議移除設備對外連線，改用 VPN 並更新韌體與強密碼。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "msrc:2026-Nov",
@@ -1902,6 +1944,32 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-121580",
+   "kind": "cve",
+   "title": "Devolutions伺服器漏洞",
+   "sub": "CVE-2026-121580 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Atlassian"
+   ],
+   "cves": [
+    "CVE-2026-121580"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-03T21:17:37+00:00",
+   "first_seen": "2026-11-06T21:30:12+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121580",
+   "pts": [
+    "**Devolutions Server 2026.2.22.0 及更早版本存在 SSRF 漏洞，低權限使用者可藉此獲取 Jira 憑證。**",
+    "漏洞 CVSS 評分為 8.1，目前未發現遭非法利用。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "CVE-2026-121037",
    "kind": "cve",
    "title": "Chrome 遠端執行程式碼漏洞",
@@ -2063,8 +2131,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "Google Chrome 157.0.8103.38 之前版本存在 DevTools、Views 等多個組件漏洞。",
-    "CVSS最高9.6，目前未遭野外利用。**遠端攻擊者可透過誘騙造訪特製 HTML 頁面執行任意程式碼。**"
+    "Google Chrome 157.0.8103.38 之前版本存在 DevTools 與 V8 等多項元件安全漏洞。",
+    "**目前尚無已知遭實際利用跡象**，遠端攻擊者可誘使使用者造訪特製 HTML 頁面以執行任意程式碼。"
    ],
    "fix": "",
    "ai": true
@@ -2090,8 +2158,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
    "pts": [
-    "影響受影響版本中由 Puppet Server 使用的 Puppet 及 trapperkeeper-authorization。持有憑證者可**在伺服器執行任意程式碼**。",
-    "目前未遭利用。攻擊者需持有 CA 簽署之憑證，透過提交特製報告或利用憑證名稱比對漏洞進行冒充。"
+    "Puppet Server 存在報告處理反序列化與憑證名稱授權比對錯誤漏洞。",
+    "**目前尚無已知遭實際利用跡象**，持有 CA 簽署憑證者可假冒主機或於伺服器執行任意程式碼。"
    ],
    "fix": "",
    "ai": true
@@ -2223,7 +2291,7 @@
   {
    "id": "grp:Linux:2026-11-03",
    "kind": "group",
-   "title": "Linux 核心釋放後重用漏洞",
+   "title": "Linux 核心 UAF 漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -2241,8 +2309,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99246",
    "pts": [
-    "Linux 核心存在 TIPC 重置追蹤與 TCP reqsk_timer_handler() 釋放後重用（UAF）漏洞。",
-    "**目前尚未發現漏洞遭惡意利用**，包含 CVE-2026-99246 與 CVE-2026-99270。"
+    "Linux 核心存在 TIPC 跡象傾印未鎖定與 TCP 觸發釋放後使用（UAF）漏洞，可能影響系統穩定性。",
+    "**目前尚未發現此漏洞遭公開利用的情形**，CVSS 風險評分為 8.1。"
    ],
    "fix": "",
    "ai": true
@@ -3069,7 +3137,7 @@
   {
    "id": "grp:.NET:2026-10-31",
    "kind": "group",
-   "title": "Refitter工具安全漏洞",
+   "title": ".NET Refitter 安全漏洞",
    "sub": "4 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -3089,16 +3157,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63184",
    "pts": [
-    "影響 Refitter 2.1.1 及 2.1.2 以前版本。解析 OpenAPI 時因不安全預設值或引號未轉義，可能導致安全漏洞與屬性注入。",
-    "**目前尚未發現漏洞遭利用**。攻擊者需透過可控制或影響的 OpenAPI 描述檔誘發漏洞。"
+    ".NET 之 Refitter 工具在 2.1.1 與 2.1.2 前版本解析 OpenAPI 時存在不安全設定與未脫逸字元漏洞。",
+    "**目前尚未發現漏洞遭公開利用**，攻擊者可藉此產生不安全的 C# API 程式碼，CVSS 評分為 8.6。"
    ],
-   "fix": "升級至 Refitter 2.1.2 以上版本",
+   "fix": "",
    "ai": true
   },
   {
    "id": "grp:Windows Server:2026-10-31",
    "kind": "group",
-   "title": "Blender與pgAdmin漏洞",
+   "title": "Windows Server 相關漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.5",
    "sev": "high",
    "kev": false,
@@ -3116,8 +3184,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116243",
    "pts": [
-    "影響 Blender 4.5.15 與 5.2.3 前版本及 pgAdmin 4，可造成堆疊緩衝區溢位等問題。",
-    "CVSS 評分為 8.5，**目前尚無漏洞遭惡意利用或用於勒索軟體攻擊之紀錄**。"
+    "描述提及 Blender 縮圖擷取器堆疊緩衝區溢位，與 pgAdmin 4 伺服器模式下的二進位路徑驗證漏洞。",
+    "**目前尚未發現相關漏洞遭公開利用的情形**，影響 Windows Server 相關環境，CVSS 評分為 8.5。"
    ],
    "fix": "",
    "ai": true
@@ -3247,7 +3315,7 @@
   {
    "id": "grp:Office:2026-10-30",
    "kind": "group",
-   "title": "SPMP 權限繞過與 XSS 漏洞",
+   "title": "Office 相關產品安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.5",
    "sev": "high",
    "kev": false,
@@ -3265,8 +3333,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119680",
    "pts": [
-    "影響 ManageEngine SharePoint Manager Plus (SPMP)。圖表功能存在儲存型跨網站指令碼漏洞，且 MFA 功能存在不當存取控制漏洞。",
-    "CVSS 評分為 8.5，目前尚無遭利用跡象。**低權限驗證使用者可繞過授權檢查並修改 MFA 設定**。"
+    "SharePoint Manager Plus 存在儲存型 XSS 漏洞與 MFA 存取控制繞過漏洞，可能導致未授權修改設定。",
+    "**目前尚未發現漏洞遭公開利用的情形**，影響 Office 相關應用，CVSS 評分為 8.5。"
    ],
    "fix": "",
    "ai": true
@@ -6684,7 +6752,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 系統多重高風險漏洞",
+   "title": "Oracle 多項產品安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -6916,8 +6984,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 及 Siebel CRM Cloud Applications 17.0-26.9 等版本，攻擊者可透過 HTTP 等管道控制受影響系統。",
-    "CVSS 最高達 10.0，允許未經身分驗證或低權限攻擊者進行利用，**目前尚未發現遭利用跡象**。"
+    "Oracle PeopleSoft PeopleTools 8.61-8.63 與 Siebel CRM 17.0-26.9 存在多項漏洞。",
+    "**目前尚無已知遭實際利用跡象**，攻擊者可透過 HTTP 等網路管道企圖影響系統安全性。"
    ],
    "fix": "",
    "ai": true
