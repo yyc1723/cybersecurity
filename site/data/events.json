@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T00:17:39+00:00",
+ "generated": "2026-11-06T07:56:09+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,191 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:8dee7c0dca3f",
+   "kind": "news",
+   "title": "SonicWall GMS爆出免登入檔案讀取漏洞，產品退役無修補可用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SonicWall"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T07:56:26+00:00",
+   "first_seen": "2026-11-06T07:56:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180287",
+   "pts": [
+    "防火牆廠商SonicWall發布資安公告，揭露已終止支援的集中管理平臺Global Management System（GMS）存在兩項漏洞，影響9.5.2及更早版本。其中CVE-2026-109593的CVSS風險評分達9.1分，攻擊者不需登入，就可能透過網路讀取GMS內部檔案。由於產品已終止支援"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:103e8a1a5565",
+   "kind": "news",
+   "title": "OpenAI發表GPT-6 Cyber，找出Firefox 81個未知高風險漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T07:56:26+00:00",
+   "first_seen": "2026-11-06T07:56:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180285",
+   "pts": [
+    "OpenAI周四（11/5）發表GPT-6 Cyber，此一專為資安研究開發的AI模型，已在Firefox瀏覽器中發現81個先前未知的高風險漏洞，並針對Linux核心的948個漏洞開發出可實際運作的攻擊程式。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:0fd06bcfff65",
+   "kind": "news",
+   "title": "NTT Docomo線上服務遭駭，可能洩露30萬筆用戶個資",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T07:56:26+00:00",
+   "first_seen": "2026-11-06T07:56:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180283",
+   "pts": [
+    "日本電信商 NTT Docomo 旗下 Docomo 線上商店與 My docomo 服務遭第三方未授權存取，估計可能洩漏高達 30 萬筆用戶個資。",
+    "業者於 11 月 4 日確認受害，並於 11 月 5 日凌晨**暫停相關線上服務手續以防止損害擴大**並展開調查。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:deefdf7aacc9",
+   "kind": "news",
+   "title": "OpenSSH發布緊急更新，修補可利用長密碼繞過身分驗證的資安漏洞SSHole",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T07:56:26+00:00",
+   "first_seen": "2026-11-06T07:56:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180281",
+   "pts": [
+    "OpenSSH開發團隊於11月5日發布緊急更新10.6p2，受到資安界高度關注，原因是其中修補能透過長密碼利用的身分驗證繞過漏洞SSHole（CVE-2026-123158），問題源自OpenSSH與musl C程式庫之間的密碼驗證處理方式。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:a4046b38703b",
+   "kind": "news",
+   "title": "騰勢委外線上服務系統遭異常存取，已啟動資安應變並調查影響範圍",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T07:56:26+00:00",
+   "first_seen": "2026-11-06T07:56:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180275",
+   "pts": [
+    "興櫃保健食品公司騰勢（7889）11月5日於股市公開資訊觀測站發布重大訊息，委外線上服務系統發生異常資料存取事件。該公司接獲委外服務廠商通知，發現其服務系統近期出現異常資料存取狀況，廠商發現後已阻擋相關異常存取行為。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:5c4feb794518",
+   "kind": "news",
+   "title": "遠東生技電子商城委外廠商發生資安事件，訂單及個資是否外洩仍待釐清",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T07:56:26+00:00",
+   "first_seen": "2026-11-06T07:56:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180274",
+   "pts": [
+    "11月5日興櫃公司遠東生技（6886）在股市公開資訊觀測站發布重大訊息，電子商城平臺委外服務廠商順立智慧（Cyberbiz）發生資安事件，資料庫部分資料遭未經授權的異常存取，其中包含遠東生技電子商城的訂單及個人資料，此次事件對公司財務及業務尚無重大影響，但目前尚無法確認相關資料是否受到影響，以"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:0813963f11a3",
+   "kind": "news",
+   "title": "CISA提出關鍵基礎設施韌性4項重點，降低網路攻擊造成的營運衝擊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T07:56:26+00:00",
+   "first_seen": "2026-11-06T07:56:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180234",
+   "pts": [
+    "美國網路安全暨基礎設施安全局（CISA）提出強化關鍵基礎設施韌性的4項準備重點，呼籲相關業者除了防範網路攻擊，也應事先規畫重要服務中斷時的應變與復原措施，降低資安事故及其他中斷事件對營運造成的影響。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:1354040d1ba8",
+   "kind": "news",
+   "title": "英國NCSC預警2028年前AI惡意程式恐用於勒索軟體攻擊，威脅關鍵基礎設施",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-06T07:56:26+00:00",
+   "first_seen": "2026-11-06T07:56:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180196",
+   "pts": [
+    "英國國家網路安全中心（NCSC）發布AI網路入侵威脅評估，認為2028年前，攻擊者極可能使用AI驅動的惡意程式，對英國關鍵基礎設施發動勒索軟體攻擊。NCSC指出，AI可能讓攻擊者更快找出並利用系統漏洞，擴大網路攻擊的規模與速度。即使失去原有的入侵管道，攻擊者也可能以較低成本找到其他入侵途徑。換言之，"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "CVE-2026-123158",
    "kind": "cve",
@@ -1619,7 +1804,7 @@
   {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 多項安全漏洞",
+   "title": "Google Chrome 多重安全漏洞",
    "sub": "116 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1751,11 +1936,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "同日公布 116 個漏洞，最高 CVSS 9.6。",
-    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
+    "漏洞影響 157.0.8103.38 之前版本的 Google Chrome，遠端攻擊者可透過特製 HTML 頁面觸發 DevTools、Views、Prerender 等元件漏洞，進而執行任意程式碼。",
+    "CVSS 最高達 9.6，**目前尚未發現遭到利用**，部分漏洞需配合社交工程誘騙使用者觸發。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:憑證/CA:2026-11-04",
@@ -3449,7 +3634,7 @@
   {
    "id": "grp:AI 平台:2026-10-30",
    "kind": "group",
-   "title": "AI 平台遠端執行程式碼漏洞",
+   "title": "IBM Langflow OSS 遠端執行程式碼漏洞",
    "sub": "19 個 CVE · 最高 CVSS 9.9",
    "sev": "crit",
    "kev": false,
@@ -3484,16 +3669,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101288",
    "pts": [
-    "同日公布 19 個漏洞，最高 CVSS 9.9。",
-    "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization o"
+    "影響 IBM Langflow OSS 1.0.0 至 1.12.4 版本，攻擊者可藉由不信任資料反序列化、未妥善處理 OS 指令或存取控制缺陷，執行任意程式碼或 SQL 指令。",
+    "CVSS 最高達 9.9，允許遠端驗證或具備網路存取權限之攻擊者利用，**目前尚未發現實際遭利用情形**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-105031",
    "kind": "cve",
-   "title": "OpenSSL 漏洞 CVE-2026-105031",
+   "title": "Apache Qpid Proton 憑證驗證漏洞",
    "sub": "CVE-2026-105031 · CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -3510,10 +3695,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105031",
    "pts": [
-    "When using the OpenSSL TLS implementation, both the pn_ssl_domain_set_trusted_ca_db() & pn_tls_config_set_trusted_certs() APIs added to rath"
+    "影響 0.40.0 及先前版本的 Apache Qpid Proton C，在使用 OpenSSL TLS 時因 API 未替換預設信任錨點，可能導致信任未預期的對等憑證。",
+    "CVSS 評分為 9.1，此漏洞不影響 Win32 SChannel TLS 實作，目前尚未發現遭利用。"
    ],
-   "fix": "原文：Leading to potentially trusting unexpected peer certificates. This can be worked around by setting the SSL_CERT_FILE environment variable for the application to /dev/null. This ",
-   "ai": false
+   "fix": "**升級至 0.41.1 版本**；或將應用程式的 SSL_CERT_FILE 環境變數設定為 /dev/null。",
+   "ai": true
   },
   {
    "id": "tw:f550a7f24f08",
@@ -5896,7 +6082,7 @@
   {
    "id": "grp:Palo Alto:2026-10-21",
    "kind": "group",
-   "title": "PHP 記憶體存取安全漏洞",
+   "title": "PHP 記憶體處理安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -5915,11 +6101,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.2。",
-    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
+    "影響 PHP 處理記憶體不足（OOM）錯誤及全域狀態Reset機制，可能導致請求記憶體維持未初始化狀態，或在釋放後遭非法讀取與存取。",
+    "CVSS 評分為 9.2，**目前尚未發現遭到利用**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-10-21",
@@ -6371,7 +6557,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多款產品安全漏洞",
+   "title": "Oracle 系統多重高風險漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -6603,11 +6789,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 及 Siebel CRM Cloud Applications 17.0-26.9 等版本，攻擊者可透過 HTTP 等管道控制受影響系統。",
+    "CVSS 最高達 10.0，允許未經身分驗證或低權限攻擊者進行利用，**目前尚未發現遭利用跡象**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
