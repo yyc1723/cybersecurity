@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T20:14:41+00:00",
+ "generated": "2026-11-07T23:39:24+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "items": [
    {
-    "title": "處理：SQL Server 與 MariaDB 安全漏洞",
-    "desc": "目前尚未發現漏洞遭實際利用，CVSS 風險評分為 9.3，攻擊者需具備驗證權限或取得 SQL Server 名稱。"
+    "title": "本單位：修補 Chrome 遠端執行漏洞",
+    "desc": "影響 Windows 版 157.0.8103.38 前版本，可能導致沙盒外執行程式碼。"
    },
    {
-    "title": "處理：Chrome 遠端執行程式碼漏洞",
-    "desc": "CVSS 評分為 9.6，目前尚未發現漏洞遭實際利用或用於勒索軟體。"
+    "title": "本單位：防範 SQL Server 安全漏洞",
+    "desc": "影響 SQL Server（Jumis），存在硬編碼密碼與檔案路徑建構缺失。"
    },
    {
-    "title": "處理：ModSecurity 繞過漏洞",
-    "desc": "目前尚無已知遭實際利用跡象，攻擊者可利用檔名參數或 Content-Type 大小寫差異繞過檢查。"
+    "title": "本單位：因應 IIS ModSecurity 漏洞",
+    "desc": "影響 IIS 之 ModSecurity 3.0.0 至 3.0.17 版本，存在檢查繞過缺陷。"
    },
    {
-    "title": "處理：Microsoft 11 月例行安全更新",
-    "desc": "目前報告漏洞總數為 0，且無遭惡意利用或先行公開之狀況。"
+    "title": "修補 SonicWall SSLVPN 漏洞",
+    "desc": "**此漏洞目前已知已被實際利用**，可繞過 SAML 多重身份驗證。"
    },
    {
-    "title": "處理：SonicWall 驗證繞過漏洞",
-    "desc": "此漏洞目前已知已被實際利用，攻擊者可藉此繞過 SAML 實施的多重身份驗證（MFA）。"
+    "title": "修補 Zyxel 交換器零時差漏洞",
+    "desc": "Zyxel GS1900 系列 CVE-2026-107441 遭駭客利用竊取資料，兆勤已修補。"
    },
    {
-    "title": "處理：Apache Qpid Proton 憑證驗證漏洞",
-    "desc": "CVSS 評分為 9.1，此漏洞不影響 Win32 SChannel TLS 實作，目前尚未發現遭利用。"
+    "title": "升級 OpenSSH 至修補版本",
+    "desc": "修補 SSHole 漏洞（CVE-2026-123158），防範長密碼繞過身分驗證。"
    }
   ],
   "ai": true
@@ -6299,11 +6299,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20043",
    "pts": [
-    "同日公布 16 個漏洞，最高 CVSS 9.8。",
-    "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
+    "影響Cisco多款通訊產品與低於10.4.4等版本之Splunk Enterprise，攻擊者可藉此**執行任意作業系統命令**、洩漏或竄改資料。",
+    "此漏洞最高CVSS評分為9.8分，目前尚未遭攻擊者利用，亦無勒索軟體利用跡象。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Palo Alto:2026-10-21",
