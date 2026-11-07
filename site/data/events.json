@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T21:29:57+00:00",
+ "generated": "2026-11-07T01:56:27+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "items": [
+   {
+    "title": "處理：SQL Server 與 MariaDB 安全漏洞",
+    "desc": "目前尚未發現漏洞遭實際利用，CVSS 風險評分為 9.3，攻擊者需具備驗證權限或取得 SQL Server 名稱。"
+   },
    {
     "title": "處理：Chrome 遠端執行程式碼漏洞",
     "desc": "CVSS 評分為 9.6，目前尚未發現漏洞遭實際利用或用於勒索軟體。"
    },
    {
-    "title": "處理：IIS 多個高風險漏洞",
-    "desc": "ModSecurity is an open source, cross platform web application firewall"
-   },
-   {
-    "title": "處理：SQL Server 漏洞 CVE-2026-1025",
-    "desc": "MariaDB server is a community developed fork of MySQL server. From 10."
+    "title": "處理：ModSecurity 繞過漏洞",
+    "desc": "目前尚無已知遭實際利用跡象，攻擊者可利用檔名參數或 Content-Type 大小寫差異繞過檢查。"
    },
    {
     "title": "處理：Microsoft 11 月例行安全更新",
     "desc": "目前報告漏洞總數為 0，且無遭惡意利用或先行公開之狀況。"
    },
    {
-    "title": "處理：Chrome 多項安全漏洞",
-    "desc": "Incorrect authorization in DevTools in Google Chrome prior to 157.0.81"
+    "title": "處理：SonicWall 驗證繞過漏洞",
+    "desc": "此漏洞目前已知已被實際利用，攻擊者可藉此繞過 SAML 實施的多重身份驗證（MFA）。"
    },
    {
-    "title": "處理：Puppet Server 安全漏洞",
-    "desc": "目前未遭利用。攻擊者需持有 CA 簽署之憑證，透過提交特製報告或利用憑證名稱比對漏洞進行冒充。"
+    "title": "處理：Apache Qpid Proton 憑證驗證漏洞",
+    "desc": "CVSS 評分為 9.1，此漏洞不影響 Win32 SChannel TLS 實作，目前尚未發現遭利用。"
    }
   ],
   "ai": true
@@ -760,7 +760,7 @@
   {
    "id": "grp:SQL Server:2026-11-06",
    "kind": "group",
-   "title": "SQL Server 相關安全漏洞",
+   "title": "SQL Server 與 MariaDB 安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -778,8 +778,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102523",
    "pts": [
-    "MariaDB 10.11.1 等特定版本與 Jumis 之 SQL Server 存在路徑處理及憑證衍生漏洞。",
-    "**目前尚無已知遭實際利用跡象**，攻擊者可推算 SQL Server 登入密碼或利用檔名編碼缺陷。"
+    "影響 SQL Server（Jumis）與 MariaDB 10.11.1 至 10.11.19 等版本，存在硬編碼密碼與檔案路徑建構缺失漏洞。",
+    "**目前尚未發現漏洞遭實際利用**，CVSS 風險評分為 9.3，攻擊者需具備驗證權限或取得 SQL Server 名稱。"
    ],
    "fix": "",
    "ai": true
@@ -2140,7 +2140,7 @@
   {
    "id": "grp:憑證/CA:2026-11-04",
    "kind": "group",
-   "title": "Puppet Server 安全漏洞",
+   "title": "Puppet Server 憑證驗證與執行漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.4",
    "sev": "crit",
    "kev": false,
@@ -2158,8 +2158,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
    "pts": [
-    "Puppet Server 存在報告處理反序列化與憑證名稱授權比對錯誤漏洞。",
-    "**目前尚無已知遭實際利用跡象**，持有 CA 簽署憑證者可假冒主機或於伺服器執行任意程式碼。"
+    "影響 Puppet Server 憑證機制，包含反序列化及憑證名稱比對錯誤漏洞，**持有 CA 簽署憑證者可遠端執行任意程式碼或冒充主機**。",
+    "目前尚未發現遭漏洞利用攻擊，CVSS 評分為 9.4，利用條件為攻擊者需持有有效的 CA 簽署憑證。"
    ],
    "fix": "",
    "ai": true
@@ -6752,7 +6752,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多項產品安全漏洞",
+   "title": "Oracle 多款產品高風險安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -6984,8 +6984,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "Oracle PeopleSoft PeopleTools 8.61-8.63 與 Siebel CRM 17.0-26.9 存在多項漏洞。",
-    "**目前尚無已知遭實際利用跡象**，攻擊者可透過 HTTP 等網路管道企圖影響系統安全性。"
+    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，可導致系統遭 compromise 入侵。",
+    "**目前漏洞尚未遭實際利用**，CVSS 評分最高達 10.0，攻擊者可透過 HTTP 網路存取發動攻擊。"
    ],
    "fix": "",
    "ai": true
