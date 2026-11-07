@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T15:40:19+00:00",
+ "generated": "2026-11-07T20:14:41+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -6268,7 +6268,7 @@
    "id": "grp:Cisco:2026-10-22",
    "kind": "group",
    "title": "Cisco與Splunk安全漏洞",
-   "sub": "9 個 CVE · 最高 CVSS 9.8",
+   "sub": "16 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -6276,12 +6276,19 @@
     "Cisco"
    ],
    "cves": [
+    "CVE-2026-20043",
     "CVE-2026-76291",
     "CVE-2026-76298",
     "CVE-2026-76301",
     "CVE-2026-76407",
     "CVE-2026-76408",
     "CVE-2026-76473",
+    "CVE-2026-76474",
+    "CVE-2026-76475",
+    "CVE-2026-76476",
+    "CVE-2026-76477",
+    "CVE-2026-76478",
+    "CVE-2026-76490",
     "CVE-2026-76527",
     "CVE-2026-76528",
     "CVE-2026-76529"
@@ -6290,13 +6297,13 @@
    "published": "2026-10-21T17:19:06+00:00",
    "first_seen": "2026-10-27T20:07:11+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76291",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20043",
    "pts": [
-    "影響 Cisco 相關產品與 Splunk Enterprise 10.4.4、10.2.8、10.0.11、9.4.16 以前版本，可能導致執行任意指令。",
-    "**目前尚未發現漏洞遭利用**。原廠已進行內部安全審查並推出軟體強化版本修補漏洞。"
+    "同日公布 16 個漏洞，最高 CVSS 9.8。",
+    "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
    ],
-   "fix": "升級至 Splunk Enterprise 10.4.4、10.2.8、10.0.11、9.4.16 以上版本",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:Palo Alto:2026-10-21",

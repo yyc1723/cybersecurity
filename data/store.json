@@ -8603,7 +8603,7 @@
    "id": "grp:Cisco:2026-10-22",
    "kind": "group",
    "title": "Cisco與Splunk安全漏洞",
-   "sub": "9 個 CVE · 最高 CVSS 9.8",
+   "sub": "16 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -8611,12 +8611,19 @@
     "Cisco"
    ],
    "cves": [
+    "CVE-2026-20043",
     "CVE-2026-76291",
     "CVE-2026-76298",
     "CVE-2026-76301",
     "CVE-2026-76407",
     "CVE-2026-76408",
     "CVE-2026-76473",
+    "CVE-2026-76474",
+    "CVE-2026-76475",
+    "CVE-2026-76476",
+    "CVE-2026-76477",
+    "CVE-2026-76478",
+    "CVE-2026-76490",
     "CVE-2026-76527",
     "CVE-2026-76528",
     "CVE-2026-76529"
@@ -8624,15 +8631,15 @@
    "cvss": 9.8,
    "published": "2026-10-21T17:19:06+00:00",
    "first_seen": "2026-10-27T20:07:11+00:00",
-   "updated": "2026-11-03T01:36:25+00:00",
+   "updated": "2026-11-07T20:14:54+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76291",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20043",
    "pts": [
-    "影響 Cisco 相關產品與 Splunk Enterprise 10.4.4、10.2.8、10.0.11、9.4.16 以前版本，可能導致執行任意指令。",
-    "**目前尚未發現漏洞遭利用**。原廠已進行內部安全審查並推出軟體強化版本修補漏洞。"
+    "同日公布 16 個漏洞，最高 CVSS 9.8。",
+    "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prim"
    ],
-   "fix": "升級至 Splunk Enterprise 10.4.4、10.2.8、10.0.11、9.4.16 以上版本",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -8645,7 +8652,15 @@
      "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76408 are related to improper control of a resource through its lifetime and are grouped under the Common Weakness Enumeration (CWE) CWE-664.",
      "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76529 are related to improper protection of alternate path and are grouped under the Common Weakness Enumeration (CWE) CWE-424.",
      "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76407 are related to improper access control and are grouped under the Common Weakness Enumeration (CWE) CWE-284.",
-     "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76528 are related to protection mechanism failure and are grouped under the Common Weakness Enumeration (CWE) CWE-693."
+     "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76528 are related to protection mechanism failure and are grouped under the Common Weakness Enumeration (CWE) CWE-693.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco owned Open Source Snort 3 Software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-20043 are related to issues concerning out-of-bounds writes that are grouped under the Common Weakness Enumeration (CWE) Base CWE-787.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76473 are related to issues concerning improper neutralization of special elements in output used by a downstream component that are grouped under the Common Weakness Enumeration (CWE) Class CWE-74.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76474 are related to issues concerning improper authentication that are grouped under the Common Weakness Enumeration (CWE) Class CWE-287.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76475 are related to issues concerning improper neutralization of input during web page generation that are grouped under the Common Weakness Enumeration (CWE) Base CWE-79.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76476 are related to issues concerning improper input validation that are grouped under the Common Weakness Enumeration (CWE) Class CWE-20.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76477 are related to issues concerning improper neutralization of special elements used in an SQL command that are grouped under the Common Weakness Enumeration (CWE) Base CWE-89.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection have conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76478 are related to improper access control issues that are grouped under the Common Weakness Enumeration (CWE) Pillar CWE-284.",
+     "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76490 are related to issues concerning out-of-bounds writes that are grouped under the Common Weakness Enumeration (CWE) Base CWE-787."
     ]
    }
   },
@@ -10991,6 +11006,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-07T15:40:19+00:00",
- "kev_last": "2026-11-07T15:40:19+00:00"
+ "nvd_last": "2026-11-07T20:14:41+00:00",
+ "kev_last": "2026-11-07T20:14:41+00:00"
 }
