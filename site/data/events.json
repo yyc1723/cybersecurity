@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T01:56:27+00:00",
+ "generated": "2026-11-07T15:40:19+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,30 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:97c6495faeb2",
+   "kind": "news",
+   "title": "Linux核心IPv4 TCP連線漏洞影響廣泛，多家廠商陸續推出修補",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-07T15:40:37+00:00",
+   "first_seen": "2026-11-07T15:40:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180298",
+   "pts": [
+    "Linux 核心網路子系統存在 9.8 分重大漏洞 CVE-2026-98432，影響 IPv4 TCP 連線機制，**可能導致遠端程式碼執行（RCE）**。",
+    "AI 廠商 Anthropic 揭露其 AI 服務 Claude 已編寫出利用此漏洞的程式，多家廠商正陸續推出修補。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:3a5181e25729",
    "kind": "news",
