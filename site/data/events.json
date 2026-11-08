@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T18:50:03+00:00",
+ "generated": "2026-11-08T22:54:28+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,11 +362,37 @@
  },
  "events": [
   {
+   "id": "CVE-2026-97677",
+   "kind": "cve",
+   "title": "IBM Langflow 檔案存取漏洞",
+   "sub": "CVE-2026-97677 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-97677"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-08T19:17:54+00:00",
+   "first_seen": "2026-11-08T22:54:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97677",
+   "pts": [
+    "影響 IBM Langflow OSS 1.0.0 至 1.12.2 版本，**已身分驗證攻擊者可繞過隔離寫入檔案或讀取任意機密檔案**。",
+    "CVSS 風險評分為 8.1 分，攻擊需要具備流程建立者權限，目前未發現遭利用跡象。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "CVE-2026-114432",
    "kind": "cve",
    "title": "Contact Form 7 漏洞",
-   "sub": "CVE-2026-114432 · 尚未評分",
-   "sev": "high",
+   "sub": "CVE-2026-114432 · CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -375,7 +401,7 @@
    "cves": [
     "CVE-2026-114432"
    ],
-   "cvss": null,
+   "cvss": 9.8,
    "published": "2026-11-08T06:17:04+00:00",
    "first_seen": "2026-11-08T13:27:14+00:00",
    "src": "NVD",
@@ -6809,7 +6835,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多款產品高風險安全漏洞",
+   "title": "Oracle 產品多項安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -7041,8 +7067,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，可導致系統遭 compromise 入侵。",
-    "**目前漏洞尚未遭實際利用**，CVSS 評分最高達 10.0，攻擊者可透過 HTTP 網路存取發動攻擊。"
+    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 與 Siebel CRM Cloud Applications 17.0-26.9 等多個組件，可能導致系統遭入侵。",
+    "**最高 CVSS 風險評分為 10.0 分**，未授權或低權限攻擊者可經由 HTTP 存取發動攻擊，目前無遭利用跡象。"
    ],
    "fix": "",
    "ai": true

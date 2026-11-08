@@ -35,11 +35,45 @@
  },
  "events": [
   {
+   "id": "CVE-2026-97677",
+   "kind": "cve",
+   "title": "IBM Langflow 檔案存取漏洞",
+   "sub": "CVE-2026-97677 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-97677"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-08T19:17:54+00:00",
+   "first_seen": "2026-11-08T22:54:42+00:00",
+   "updated": "2026-11-08T22:54:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97677",
+   "pts": [
+    "影響 IBM Langflow OSS 1.0.0 至 1.12.2 版本，**已身分驗證攻擊者可繞過隔離寫入檔案或讀取任意機密檔案**。",
+    "CVSS 風險評分為 8.1 分，攻擊需要具備流程建立者權限，目前未發現遭利用跡象。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "IBM Langflow OSS 1.0.0 through 1.12.2 An authenticated flow author could write attacker-controlled file content into any directory writable by the service account, bypassing the platform's local file access isolation safeguard. Via a crafted on-disk index, the attacker could also read the contents of arbitrary files accessible to the service process — including configuration files, secrets, or database files stored under the application's data directory.",
+    "refs": [
+     "https://www.ibm.com/support/pages/node/7290694"
+    ]
+   }
+  },
+  {
    "id": "CVE-2026-114432",
    "kind": "cve",
    "title": "Contact Form 7 漏洞",
-   "sub": "CVE-2026-114432 · 尚未評分",
-   "sev": "high",
+   "sub": "CVE-2026-114432 · CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -48,10 +82,10 @@
    "cves": [
     "CVE-2026-114432"
    ],
-   "cvss": null,
+   "cvss": 9.8,
    "published": "2026-11-08T06:17:04+00:00",
    "first_seen": "2026-11-08T13:27:14+00:00",
-   "updated": "2026-11-08T13:27:14+00:00",
+   "updated": "2026-11-08T22:54:42+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114432",
    "pts": [
@@ -9871,7 +9905,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多款產品高風險安全漏洞",
+   "title": "Oracle 產品多項安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -10100,12 +10134,12 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-07T01:56:41+00:00",
+   "updated": "2026-11-08T22:54:42+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，可導致系統遭 compromise 入侵。",
-    "**目前漏洞尚未遭實際利用**，CVSS 評分最高達 10.0，攻擊者可透過 HTTP 網路存取發動攻擊。"
+    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 與 Siebel CRM Cloud Applications 17.0-26.9 等多個組件，可能導致系統遭入侵。",
+    "**最高 CVSS 風險評分為 10.0 分**，未授權或低權限攻擊者可經由 HTTP 存取發動攻擊，目前無遭利用跡象。"
    ],
    "fix": "",
    "ai": true,
@@ -10566,7 +10600,9 @@
      "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Service Bus.  Successful attacks of this vulnerability can result in takeover of Oracle Service Bus. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Service Bus.  Successful attacks of this vulnerability can result in takeover of Oracle Service Bus. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle EDI Gateway product of Oracle E-Business Suite (component: EDI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle EDI Gateway.  While the vulnerability is in Oracle EDI Gateway, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle EDI Gateway accessible data as well as  unauthorized update, insert or delete access to some of Oracle EDI Gateway accessible data. CVSS 3.1 Base Score 8.5 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N).",
-     "Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Agile Product Lifecycle Management for Process.  Successful attacks of this vulnerability can result in takeover of Oracle Agile Product Lifecycle Management for Process. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H)."
+     "Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Agile Product Lifecycle Management for Process.  Successful attacks of this vulnerability can result in takeover of Oracle Agile Product Lifecycle Management for Process. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via Oracle Net to compromise Oracle Trusted Answer Search.  Successful attacks of this vulnerability can result in takeover of Oracle Trusted Answer Search. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Trusted Answer Search.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Trusted Answer Search, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Trusted Answer Search accessible data as well as  unauthorized access to critical data or complete access to all Oracle Trusted Answer Search accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N)."
     ]
    }
   },
@@ -11040,6 +11076,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-08T18:50:03+00:00",
- "kev_last": "2026-11-08T18:50:03+00:00"
+ "nvd_last": "2026-11-08T22:54:28+00:00",
+ "kev_last": "2026-11-08T22:54:28+00:00"
 }
