@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T13:27:00+00:00",
+ "generated": "2026-11-08T18:50:03+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -364,7 +364,7 @@
   {
    "id": "CVE-2026-114432",
    "kind": "cve",
-   "title": "nginx 漏洞 CVE-2026-114432",
+   "title": "Contact Form 7 漏洞",
    "sub": "CVE-2026-114432 · 尚未評分",
    "sev": "high",
    "kev": false,
@@ -381,10 +381,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114432",
    "pts": [
-    "The Contact Form 7 WordPress plugin before 6.2.4 does not validate the type or extension of files uploaded through a form file field, and a "
+    "6.2.4 前版本的 Contact Form 7 外掛未驗證上傳檔案，未身分驗證者可上傳檔案，特定設定下可導致**遠端執行程式碼**。",
+    "目前尚未遭利用。在預設 Debian/Ubuntu Apache 上可執行檔案；在 nginx 等設定下則限於寫入檔案至上傳目錄。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:97c6495faeb2",
