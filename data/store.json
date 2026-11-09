@@ -35,6 +35,626 @@
  },
  "events": [
   {
+   "id": "tw:d26544e666d5",
+   "kind": "news",
+   "title": "美國CISA警告SonicWall資安漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SonicWall"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:34:41+00:00",
+   "updated": "2026-11-09T11:34:41+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180346",
+   "pts": [
+    "**CISA 將 SonicWall SonicOS SSL VPN 身分驗證漏洞 CVE-2026-19868 納入已遭利用漏洞名單**。",
+    "該漏洞涉及身分驗證安全問題，CISA 要求美國聯邦機構於 14 天內完成修補或採取緩解措施。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "美國CISA警告SonicWall資安漏洞遭積極利用",
+    "desc": "11月6日美國網路安全與基礎設施安全局（CISA）更新已知遭利用的漏洞名單（KEV），指出已掌握SonicWall SonicOS SSL VPN漏洞CVE-2026-19868遭到實際利用的證據，因此將其納入KEV清單。這項漏洞涉及身分驗證機制的安全問題，CISA並要求美國聯邦機構在14天內完成漏洞修補或採取緩解措施。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5e41e2de0a98",
+   "kind": "news",
+   "title": "SonicWall修補SSL-VPN身分驗證繞過漏洞，原廠示警可能已遭利用",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SonicWall"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:34:41+00:00",
+   "updated": "2026-11-09T11:34:41+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180345",
+   "pts": [
+    "SonicWall 揭露 SonicOS 存在 7 項安全漏洞，其中 **CVE-2026-19868 身分驗證繞過漏洞可能已遭利用**。",
+    "原廠已展開調查並呼籲客戶儘速更新系統。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "SonicWall修補SSL-VPN身分驗證繞過漏洞，原廠示警可能已遭利用",
+    "desc": "SonicWall於11月6日發布資安公告，揭露旗下防火牆作業系統SonicOS存在7項安全漏洞，其中最值得關注的是身分驗證繞過漏洞CVE-2026-19868，因為該公司強調已調查這項漏洞可能遭利用的通報事件，呼籲客戶儘速更新系統。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:bc3b8035f448",
+   "kind": "news",
+   "title": "日本警方查獲車載偽基地臺，逮捕涉嫌干擾手機通訊的男子，並追查釣魚簡訊活動",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:34:41+00:00",
+   "updated": "2026-11-09T11:34:41+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180339",
+   "pts": [
+    "**日本警方與通信局查獲車載偽基地臺案件並逮捕犯嫌，該設備未經許可設置以干擾行動通訊**。",
+    "偽基地臺可冒充合法基地臺向附近手機發送簡訊，進而用於網路釣魚詐騙等活動。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "日本警方查獲車載偽基地臺，逮捕涉嫌干擾手機通訊的男子，並追查釣魚簡訊活動",
+    "desc": "日本總務省關東綜合通信局11月9日發布公告指出，查獲一起車載偽基地臺案件，一名居住在東京都北區的31歲中國籍男子，涉嫌在自己駕駛的車輛內，未經許可設置俗稱「偽基地臺」的無線設備，干擾行動通訊。 該局表示，這類偽基地臺可冒充合法行動通訊基地臺，向附近手機發送簡訊，進而用於網路釣魚詐騙等活動，該局已在11月7日與警視廳展開聯合逮捕行動，並以涉嫌違反相關法規為由告發犯嫌。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c951bbf128d6",
+   "kind": "news",
+   "title": "調查局史上首位科技專業副局長吳富梅，退休後轉戰鴻海合規長",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:34:41+00:00",
+   "updated": "2026-11-09T11:34:41+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180344",
+   "pts": [
+    "法務部調查局前副局長吳富梅退休後轉戰鴻海集團，出任**企業合規長**。",
+    "吳富梅具資安專長，將負責企業營運符合法規與標準，預防訴訟、罰款與聲譽危機。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "調查局史上首位科技專業副局長吳富梅，退休後轉戰鴻海合規長",
+    "desc": "今年7月法務部調查局前副局長吳富梅屆齡退休，日前證實轉戰企業界，獲鴻海集團延攬出任企業合規長（Chief Compliance Officer，CCO），因其具備資安專長，被鴻海集團延攬成為企業內的合規長，將負責企業營運符合國內外法規、產業標準及內部道德規範，預防法律訴訟、鉅額罰款與聲譽危機。 這也是鴻海去年延攬前審計部副審計長李順保出任集團稽查長兼副總經理，再次向公部門延攬資深人才，補強集團治理與風險控管體質。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c4982b0c3b73",
+   "kind": "news",
+   "title": "宏碁智新因委外廠商Cyberbiz資料庫遭異常存取，已暫停線上商店營運",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:34:41+00:00",
+   "updated": "2026-11-09T11:34:41+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180321",
+   "pts": [
+    "宏碁智新因委外服務廠商Cyberbiz其他客戶資料庫遭未經授權存取，已**暫停線上商店營運**。",
+    "宏碁智新接獲媒體報導後立即採取因應措施，並持續向廠商確認自身商店受影響狀況。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "宏碁智新因委外廠商Cyberbiz資料庫遭異常存取，已暫停線上商店營運",
+    "desc": "11月6日宏碁集團旗下的上櫃居家生活業者宏碁智新（7794）發布資安事件重大訊息，指出11月5日下午該公司從媒體報導得知，線上商店委外服務廠商順立智慧（Cyberbiz）的其他客戶發生資料庫遭未經授權存取事件，因此立即暫停線上商店營運，並向廠商確認自家商店是",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2495ea6b3ed5",
+   "kind": "news",
+   "title": "有民眾透過AI學會架設自動化網路攻擊系統，高雄警方破案示警網路犯罪門檻降低",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:34:41+00:00",
+   "updated": "2026-11-09T11:34:41+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180317",
+   "pts": [
+    "高雄警方破獲林姓嫌犯透過AI學習撰寫程式與架網，建立**自動化網路攻擊系統**。",
+    "嫌犯非法侵入網站後臺竊取超過23萬筆會員及客戶個資並販售牟利，全案已移送法辦。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "有民眾透過AI學會架設自動化網路攻擊系統，高雄警方破案示警網路犯罪門檻降低",
+    "desc": "高雄市政府警察局刑事警察大隊11月6日公布一起駭客竊取個資案件，38歲林姓男子涉嫌透過AI學會程式撰寫及網路架設技術，建立自動化網路攻擊系統，非法侵入網站後臺，竊取超過23萬筆會員及客戶個人資料，再於網路上販售牟利。警方已於10月將嫌犯查緝到案，全案依妨害電腦使用罪嫌移送高雄地方檢察署偵辦。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:784a2c5082cb",
+   "kind": "news",
+   "title": "威聯通警告部分NAS設備遭遇Plex2Shell漏洞攻擊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:34:41+00:00",
+   "updated": "2026-11-09T11:34:41+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180338",
+   "pts": [
+    "威聯通警告部分NAS設備遭受影音串流平台Plex漏洞利用鏈**Plex2Shell**的實際攻擊。",
+    "相關漏洞包含CVE-2026-96652等編號，原廠呼籲用戶應儘速採取行動因應。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "威聯通警告部分NAS設備遭遇Plex2Shell漏洞攻擊",
+    "desc": "10月下旬研究人員公布影音串流平臺Plex的漏洞利用鏈Plex2Shell（CVE-2026-96652、CVE-2026-96654、CVE-2026-96655、CVE-2026-96656），不久後便出現實際攻擊活動，如今有NAS廠商透露用戶遭遇相關攻擊，呼籲儘速採取行動因應。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:273eeccc1c8d",
+   "kind": "news",
+   "title": "【資安日報】11月9日，AI自動化攻擊系統BossAI鎖定臺灣緊急應變服務",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180334",
+   "pts": [
+    "**AI 自動化攻擊系統 BossAI 鎖定臺灣緊急應變服務**，駭客亦冒用被竊 Entra ID 憑證入侵多家 MSP 並波及下游客戶。",
+    "Rails 已修補重大漏洞，使用 ImageMagick 處理上傳圖片的網站需留意。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "【資安日報】11月9日，AI自動化攻擊系統BossAI鎖定臺灣緊急應變服務",
+    "desc": "本日新聞焦點 ● AI自動化攻擊系統BossAI鎖定臺灣緊急應變服務 ● 駭客冒用被竊Entra ID憑證入侵多家MSP，並波及下游客戶 ● Rails修補重大漏洞，使用ImageMagick處理上傳圖片的網站需留意",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:0e7f68482ad5",
+   "kind": "news",
+   "title": "天仁會員與線上商城平臺訂單資料恐受91APP資安事件波及",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180330",
+   "pts": [
+    "天仁線上平台委外廠商91APP遭受自動化攻擊，**熟客圈訂單資料恐受影響**。",
+    "天仁已啟動應變機制，評估對財務營運無重大影響，目前尚未接獲會員通報受害。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "天仁會員與線上商城平臺訂單資料恐受91APP資安事件波及",
+    "desc": "連鎖茶飲品牌天仁（1233）11月6日於股市公開資訊觀測站發布重大訊息，其線上平臺委外服務廠商91APP發生網路資安事件，遭受自動化攻擊的資料庫包含天仁會員與線上商城平臺「熟客圈」的訂單資料，天仁接獲委外服務廠商通知後，隨即啟動應變機制，目前評估此次事件對公司財務、業務及營運皆無重大影響，且尚未接獲會員",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e2640641dc13",
+   "kind": "news",
+   "title": "日本ISP業者Arara遭駭，影響小學館、BIC Camera、摩斯漢堡等數百家客戶，可能外洩8,100萬筆資訊",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180324",
+   "pts": [
+    "**日本 ISP 業者 Arara 遭攻擊，造成超過 8,100 萬筆客戶資訊可能外洩**。",
+    "影響小學館、BIC Camera、摩斯漢堡等超過 380 家企業客戶，受影響服務包含 Arara Message 及相關伺服器環境。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "日本ISP業者Arara遭駭，影響小學館、BIC Camera、摩斯漢堡等數百家客戶，可能外洩8,100萬筆資訊",
+    "desc": "日本知名ISP Arara母公司PayCloud上週六公告，旗下Arara公司的郵件發送服務Arara Message及相關伺服器環境發生攻擊事件，造成郵件發送服務7,700萬筆在內共超過8,100萬筆客戶資訊可能外洩，影響超過380家企業客戶。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:6ffc01c77ec2",
+   "kind": "news",
+   "title": "駭客在GitHub散布假資安工具，利用Visual Studio編譯流程植入後門",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180316",
+   "pts": [
+    "駭客在GitHub散布假資安工具，利用Visual Studio編譯流程植入**遠端存取後門**與竊密程式。",
+    "開發者若觸發專案內指令即可遭植入惡意程式，目前已有超過2,000台電腦受感染。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "駭客在GitHub散布假資安工具，利用Visual Studio編譯流程植入後門",
+    "desc": "資安廠商Dr.Web揭露，駭客在GitHub散布偽裝成資安工具的惡意專案，將惡意程式碼藏入Visual Studio專案檔，以及Python、Go原始碼。開發者若觸發埋藏在專案中的指令，電腦可能遭植入遠端存取後門與資訊竊取程式。研究人員指出，調查時已有超過2,000臺電腦遭感染。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b609771fa4f4",
+   "kind": "news",
+   "title": "日本保險集團MS&AD保戶網站遭存取，外洩三井住友等客戶資料72萬筆",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180323",
+   "pts": [
+    "日本MS&AD控股公司公告旗下三井住友海上、愛和誼日生同和壽險與產險之保戶網站遭存取。",
+    "**外洩客戶個人資料超過72萬筆**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "日本保險集團MS&AD保戶網站遭存取，外洩三井住友等客戶資料72萬筆",
+    "desc": "日本MS&AD控股公司上週（11月6日）發布公告，旗下包括三井住友海上、愛和誼日生同和壽險和產險被存取保戶專用網站，外洩客戶個資超過72萬筆。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:59df9690539a",
+   "kind": "news",
+   "title": "倚天酷碁與宏碁風尚線上商店委外服務商Cyberbiz發生資安事件",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180322",
+   "pts": [
+    "倚天酷碁（2432）於11月6日發布資安重大訊息。",
+    "**該公司與宏碁風尚之線上商店委外服務商Cyberbiz發生資安事件**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "倚天酷碁與宏碁風尚線上商店委外服務商Cyberbiz發生資安事件",
+    "desc": "宏碁集團所屬的電腦周邊與智慧生活裝置公司倚天酷碁（2432）於11月6日發布重大訊息，表示該公司與",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8f04832b8752",
+   "kind": "news",
+   "title": "諾貝兒線上商店委外廠商Cyberbiz資料庫遭異常存取，客戶訂單資料恐受影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180319",
+   "pts": [
+    "經營丁丁藥局的諾貝兒寶貝（6844）接獲線上商店委外廠商Cyberbiz通知，其資料庫部分資料遭未授權異常存取。",
+    "**該資料庫存有諾貝兒線上商店平臺訂單資料，相關訂單資訊恐受影響**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "諾貝兒線上商店委外廠商Cyberbiz資料庫遭異常存取，客戶訂單資料恐受影響",
+    "desc": "經營丁丁藥局的上櫃公司諾貝兒寶貝（6844）11月8日（週日）發布資安事件重大訊息，指出接獲線上商店委外服務廠商順立智慧（Cyberbiz）通知，其資料庫部分資料遭未經授權的異常存取，而該資料庫亦存有諾貝兒線上商店平臺的訂單相關資料，因此訂單資料可能受到影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5bee292ab778",
+   "kind": "news",
+   "title": "展碁國際子公司好漾生活先行暫停線上商店營運，釐清線上商店委外業者Cyberbiz資安事件影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180327",
+   "pts": [
+    "展碁國際（6776）子公司好漾生活之線上商店委外服務廠商Cyberbiz發生資料庫遭未授權存取事件。",
+    "**好漾生活已先行暫停線上商店營運，以釐清委外業者資安事件影響**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "展碁國際子公司好漾生活先行暫停線上商店營運，釐清線上商店委外業者Cyberbiz資安事件影響",
+    "desc": "11月6日上市電子通路業者展碁國際（6776）發布資安事件重大訊息，指出子公司好漾生活的線上商店委外服務廠商順立智慧（Cyberbiz），部分客戶發生資料庫部分資料遭未經授權存取事件，展碁國際得知此事後，持續關注事件發展，並與順立智慧保持聯繫，以釐清好漾生活",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:1902116e584b",
+   "kind": "news",
+   "title": "半導體封測廠精材遭不明IP位址入侵，客戶與員工聯絡資訊外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180318",
+   "pts": [
+    "半導體封測廠商精材（3374）於11月6日發現不明IP位址侵入內部資訊系統。",
+    "**事件造成某客戶、部分供應商及少數員工之名稱與商務郵件聯絡資訊外洩**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "半導體封測廠精材遭不明IP位址入侵，客戶與員工聯絡資訊外洩",
+    "desc": "半導體封測廠商精材（3374）於11月6日發布重大訊息，表示發現不明IP位址侵入內部資訊系統，造成某客戶、部分供應商及少數員工的名稱與商務郵件聯絡資訊外洩。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4186edf72d50",
+   "kind": "news",
+   "title": "駭客利用被竊Microsoft Entra ID憑證結合自動化工具入侵多家MSP，並波及下游客戶",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180315",
+   "pts": [
+    "資安業者Todyl揭露攻擊活動，駭客利用被盜的Microsoft Entra ID應用程式註冊憑證登入。",
+    "**攻擊者藉此入侵多家MSP的Microsoft 365及Azure環境並波及下游客戶**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "駭客利用被竊Microsoft Entra ID憑證結合自動化工具入侵多家MSP，並波及下游客戶",
+    "desc": "資安業者Todyl於11月3日揭露一起針對代管服務供應商（MSP）的攻擊活動，攻擊者利用被盜的Microsoft Entra ID應用程式註冊（App Registration）憑證，登入多家MSP的Microsoft 365及Azure環境，並進一步入侵其下",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e1c3e3212b4b",
+   "kind": "news",
+   "title": "中國駭客利用AI代理攻擊亞洲政府機關，入侵臺灣立法院、法務部的內部系統",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180314",
+   "pts": [
+    "威脅情報公司Vulone揭露與中國有關的駭客組織利用AI代理框架Cairn發動攻擊，入侵臺灣立法院與法務部內部系統。",
+    "**該組織於9月24日至10月14日間發起66起活動，其中48起成功取得存取權限**，涵蓋臺灣、越南、印尼及印度等國。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "中國駭客利用AI代理攻擊亞洲政府機關，入侵臺灣立法院、法務部的內部系統",
+    "desc": "威脅情報公司Vulone於10月18日揭露，與中國有關、以經濟利益為動機的駭客組織利用AI代理框架Cairn，在9月24日至10月14日對亞洲多國政府機關及企業發動大規模網路入侵行動，66起活動有48起成功取得目標系統的存取權限，範圍涵蓋臺灣、越南、印尼，以及印度等國。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:936c53fd6b68",
+   "kind": "news",
+   "title": "Acronis揭露AI自動化攻擊系統BOSSAI運作細節，整合12個AI代理、MCP與Skills",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180310",
+   "pts": [
+    "資安業者Acronis揭露名為BossAI的AI攻擊架構，**鎖定臺灣緊急服務系統及全球11個國家的數百個組織**。",
+    "該架構據信由位於臺灣花蓮的攻擊者操作，整合12個AI代理、MCP協定與移除安全限制的本機AI模型執行攻擊。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "Acronis揭露AI自動化攻擊系統BOSSAI運作細節，整合12個AI代理、MCP與Skills",
+    "desc": "資安業者Acronis威脅研究單位（TRU）近日揭露，臺灣緊急服務系統遭到名為BossAI的AI攻擊架構鎖定，而且攻擊目標不只是臺灣緊急服務系統，還涵蓋全球11個國家的數百個組織。研究人員進一步發現，這套架構由一名據信位於臺灣花蓮市的攻擊者操作，整合12個AI代理，透過不同代理分工、模型上下文協定（MCP）串接滲透測試工具，並使用移除安全限制的本機AI模型執行攻擊。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:7419a96d8279",
+   "kind": "news",
+   "title": "AI自動化攻擊系統BossAI鎖定臺灣緊急應變服務",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T11:34:41+00:00",
+   "first_seen": "2026-11-09T11:35:01+00:00",
+   "updated": "2026-11-09T11:35:01+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180304",
+   "pts": [
+    "**AI 自動化攻擊系統 BossAI 於 12 天內鎖定 11 國數百個組織，其中臺灣為遭攻擊最密集地區**。",
+    "該系統由位於花蓮市的攻擊者打造，包含 12 個 AI 代理，主要攻擊目標為政府緊急應變服務，亦涵蓋金融、大學、軍事及電商等領域。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "AI自動化攻擊系統BossAI鎖定臺灣緊急應變服務",
+    "desc": "11月4日資安公司Acronis揭露AI自動化攻擊系統BossAI，位於臺灣花蓮市的攻擊者打造由12個AI代理組成的系統，在短短12天內鎖定11個國家的數百個組織，涵蓋政府緊急應變服務、金融機構、大學、軍事系統及電子商務平臺等領域，其中臺灣是遭到攻擊最密集的地區，尤以緊急應變服務為主要的目標。",
+    "summarize": true
+   }
+  },
+  {
    "id": "tw:b215083cdad9",
    "kind": "news",
    "title": "美國CISA等5機構警告冷鏈系統遭網路攻擊風險，籲企業檢查遠端存取與設備安全",
@@ -11169,6 +11789,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-09T02:40:07+00:00",
- "kev_last": "2026-11-09T02:40:07+00:00"
+ "nvd_last": "2026-11-09T11:34:24+00:00",
+ "kev_last": "2026-11-09T11:34:24+00:00"
 }
