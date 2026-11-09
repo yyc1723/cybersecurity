@@ -35,6 +35,42 @@
  },
  "events": [
   {
+   "id": "CVE-2026-124683",
+   "kind": "cve",
+   "title": "Langium 阻斷服務漏洞",
+   "sub": "CVE-2026-124683 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-124683"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-09T17:17:27+00:00",
+   "first_seen": "2026-11-09T22:23:34+00:00",
+   "updated": "2026-11-09T22:23:34+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124683",
+   "pts": [
+    "影響 Eclipse Langium 3.2.0 至 4.4.0 版，特製文件可阻塞 Node.js 事件迴圈，導致**伺服器遭遇阻斷服務 (DoS) 攻擊**。",
+    "目前未發現已遭利用。僅影響啟用 IndentationAwareTokenBuilder 之設定，使用預設建置器者不受影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "Eclipse Langium versions 3.2.0 through 4.4.0 contain an inefficient algorithmic complexity issue (CWE-407) in the opt-in IndentationAwareTokenBuilder and IndentationAwareLexer. When producing DEDENT tokens, the token builder recomputes line numbers by re-scanning the entire preceding document text. A document whose indentation changes on most lines then takes quadratic time to tokenize. Because tokenization is synchronous, a crafted document of a few hundred kilobytes can block the Node.js event loop for tens of seconds. That causes a DoS for every user served by the same process. Languages built with the DefaultLexer and DefaultTokenBuilder are unaffected.",
+    "refs": [
+     "https://github.com/eclipse-langium/langium/security/advisories/GHSA-297v-g8mm-qj4h",
+     "https://gitlab.eclipse.org/security/cve-assignment/-/work_items/553",
+     "https://gitlab.eclipse.org/security/vulnerability-reports/-/work_items/1069"
+    ]
+   }
+  },
+  {
    "id": "tw:d26544e666d5",
    "kind": "news",
    "title": "美國CISA警告SonicWall資安漏洞遭積極利用",
@@ -1298,8 +1334,8 @@
    "kind": "cve",
    "title": "OpenSSH 密碼驗證繞過漏洞",
    "sub": "CVE-2026-123158 · CVSS 8.1",
-   "sev": "high",
-   "kev": false,
+   "sev": "crit",
+   "kev": true,
    "ransomware": false,
    "products": [
     "OpenSSH"
@@ -1310,14 +1346,14 @@
    "cvss": 8.1,
    "published": "2026-11-05T16:17:47+00:00",
    "first_seen": "2026-11-05T18:48:29+00:00",
-   "updated": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-09T22:23:35+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
    "pts": [
-    "影響 Linux 上使用 musl libc 且未啟用 PAM 的 OpenSSH 10.6p2 前版本（例如 Alpine Linux），特定密碼長度可繞過驗證。",
-    "CVSS 評分為 8.1，**目前尚未發現漏洞遭實際利用或用於勒索軟體**。"
+    "影響 Linux 上 10.6p2 之前版本的 OpenSSH（當使用 musl libc 且未搭配 PAM 時），可能導致密碼驗證被繞過。",
+    "**此漏洞已知遭利用**，在特定帳號設定下，輸入 256 至 1024 個字元的任意密碼即可成功通過驗證。"
    ],
-   "fix": "",
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
    "ai": true,
    "ai_ver": 2,
    "raw": {
@@ -1328,13 +1364,17 @@
      "https://github.com/predkambrij/sshhole-repro",
      "https://hachyderm.io/@damienmiller/117563026759098135",
      "https://marc.info/?l=openssh-unix-dev&m=179388064263131&w=2"
-    ]
+    ],
+    "name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "vendor": "OpenBSD",
+    "product": "OpenSSH"
    }
   },
   {
    "id": "grp:IIS:2026-11-06",
    "kind": "group",
-   "title": "ModSecurity 繞過漏洞",
+   "title": "ModSecurity WAF 解析漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -1350,12 +1390,12 @@
    "cvss": 8.6,
    "published": "2026-11-05T16:17:29+00:00",
    "first_seen": "2026-11-05T18:48:29+00:00",
-   "updated": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-09T22:23:34+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104269",
    "pts": [
-    "適用於 IIS 與 Nginx 之 ModSecurity 3.0.0 至 3.0.17 版本存在解析與比對缺陷。",
-    "**目前尚無已知遭實際利用跡象**，攻擊者可利用檔名參數或 Content-Type 大小寫差異繞過檢查。"
+    "影響 IIS 與 Nginx 等平台的 ModSecurity 3.0.0 至 3.0.17 版，存在 multipart 解析與標頭比對缺陷。",
+    "目前未發現已遭利用。**攻擊者可能利用解析不一致性繞過 WAF 防護**。"
    ],
    "fix": "",
    "ai": true,
@@ -1363,7 +1403,8 @@
    "raw": {
     "descs": [
      "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModSecurity's multipart parser does not apply the RFC 2231 filename* parameter precedence used by common Go, Python, Node.js, and Java application parsers. A Content-Disposition header can provide a benign filename parameter for ModSecurity and a different encoded filename* value that the backend prefers, causing MULTIPART_FILENAME rules and the application to make security decisions on different names. Applications that use the backend-selected name for storage, extension checks, or content-type inference can therefore receive a filename that bypassed WAF inspection. PHP's native multipart parser is not affected by this discrepancy. This issue is fixed in version 3.0.17.",
-     "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, src/transaction.cc compares a response Content-Type value against SecResponseBodyMimeType entries case-sensitively. A mixed-case response media type that is semantically equivalent to a configured lowercase type can therefore be treated as unconfigured, causing ModSecurity to skip RESPONSE_BODY inspection. An unauthenticated requester can then receive response content that a phase 4 rule would otherwise block, including sensitive error or debug data. This issue is fixed in version 3.0.17."
+     "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, src/transaction.cc compares a response Content-Type value against SecResponseBodyMimeType entries case-sensitively. A mixed-case response media type that is semantically equivalent to a configured lowercase type can therefore be treated as unconfigured, causing ModSecurity to skip RESPONSE_BODY inspection. An unauthenticated requester can then receive response content that a phase 4 rule would otherwise block, including sensitive error or debug data. This issue is fixed in version 3.0.17.",
+     "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModSecurity's multipart parser does not apply the RFC 2231 filename* parameter precedence used by common Go, Python, Node.js, and Java application parsers. A Content-Disposition header can provide a benign filename parameter for ModSecurity and a different encoded filename* value that the backend prefers, causing MULTIPART_FILENAME rules and the application to make security decisions on different names. Applications that use the backend-selected name for storage, extension checks, or content-type inference can therefore receive a filename that bypassed WAF inspection. PHP's native multipart parser is not affected by this discrepancy. This issue is fixed in version 3.0.17."
     ]
    }
   },
@@ -2943,46 +2984,10 @@
    }
   },
   {
-   "id": "CVE-2026-121037",
-   "kind": "cve",
-   "title": "Chrome 遠端執行程式碼漏洞",
-   "sub": "CVE-2026-121037 · CVSS 9.6",
-   "sev": "crit",
-   "kev": false,
-   "ransomware": false,
-   "products": [
-    "Windows Server",
-    "Chrome"
-   ],
-   "cves": [
-    "CVE-2026-121037"
-   ],
-   "cvss": 9.6,
-   "published": "2026-11-03T21:17:07+00:00",
-   "first_seen": "2026-11-05T18:48:29+00:00",
-   "updated": "2026-11-05T18:48:29+00:00",
-   "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121037",
-   "pts": [
-    "影響 157.0.8103.38 前版本在 Windows 上的 Google Chrome，ANGLE 組件存在越界寫入漏洞，遠端攻擊者可透過特製 HTML 頁面於沙盒外執行程式碼。",
-    "CVSS 評分為 9.6，**目前尚未發現漏洞遭實際利用或用於勒索軟體**。"
-   ],
-   "fix": "",
-   "ai": true,
-   "ai_ver": 2,
-   "raw": {
-    "desc": "Out of bounds write in ANGLE in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-    "refs": [
-     "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
-     "https://issues.chromium.org/issues/569415790"
-    ]
-   }
-  },
-  {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
    "title": "Chrome 遠端執行程式碼漏洞",
-   "sub": "116 個 CVE · 最高 CVSS 9.6",
+   "sub": "118 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -3005,6 +3010,7 @@
     "CVE-2026-121057",
     "CVE-2026-121060",
     "CVE-2026-121061",
+    "CVE-2026-121063",
     "CVE-2026-121064",
     "CVE-2026-121065",
     "CVE-2026-121068",
@@ -3071,6 +3077,7 @@
     "CVE-2026-121188",
     "CVE-2026-121189",
     "CVE-2026-121195",
+    "CVE-2026-121196",
     "CVE-2026-121198",
     "CVE-2026-121200",
     "CVE-2026-121201",
@@ -3110,14 +3117,14 @@
    "cvss": 9.6,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-06T21:30:12+00:00",
+   "updated": "2026-11-09T22:23:34+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "Google Chrome 157.0.8103.38 之前版本存在 DevTools 與 V8 等多項元件安全漏洞。",
-    "**目前尚無已知遭實際利用跡象**，遠端攻擊者可誘使使用者造訪特製 HTML 頁面以執行任意程式碼。"
+    "影響 157.0.8103.38 之前版本之 Google Chrome，包含 DevTools、Views 等元件漏洞，可經由惡意 HTML 頁面執行任意程式碼。",
+    "**目前漏洞尚未遭利用**，部分漏洞需要配合社交工程誘使使用者造訪惡意網頁方可觸發。"
    ],
-   "fix": "",
+   "fix": "升級至 157.0.8103.38 以上版本。",
    "ai": true,
    "ai_ver": 2,
    "raw": {
@@ -3525,7 +3532,45 @@
      "Use of released resource in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
      "Confused deputy in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
      "Improper resource control in WebCodecs in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
-     "Confused deputy in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)"
+     "Confused deputy in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in CacheStorage in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
+     "Privilege elevation in Mobile in Google Chrome on on iOS prior to 157.0.8103.38 allowed a remote attacker to bypass system access restrictions into a privileged page via a crafted HTML page. (Chromium security severity: Medium)"
+    ]
+   }
+  },
+  {
+   "id": "grp:Windows Server:2026-11-04",
+   "kind": "group",
+   "title": "Windows版 Chrome漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-121034",
+    "CVE-2026-121037"
+   ],
+   "cvss": 9.6,
+   "published": "2026-11-03T21:17:06+00:00",
+   "first_seen": "2026-11-05T18:48:29+00:00",
+   "updated": "2026-11-09T22:23:34+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121034",
+   "pts": [
+    "影響 157.0.8103.38 之前版本的 Windows 版 Google Chrome，包含 ANGLE 與 Views 元件漏洞，可於沙箱外執行任意程式碼。",
+    "**目前漏洞尚未遭利用**，攻擊者需利用社交工程誘騙使用者開啟精心設計的 HTML 頁面。"
+   ],
+   "fix": "升級至 157.0.8103.38 以上版本。",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "descs": [
+     "Out of bounds write in ANGLE in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Views in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
@@ -7564,7 +7609,7 @@
   {
    "id": "grp:Chrome:2026-10-28",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
+   "title": "Chrome 多項遠端執行漏洞",
    "sub": "49 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -7626,14 +7671,14 @@
    "cvss": 9.6,
    "published": "2026-10-27T23:16:58+00:00",
    "first_seen": "2026-10-27T23:47:47+00:00",
-   "updated": "2026-11-03T23:25:01+00:00",
+   "updated": "2026-11-09T22:23:34+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118304",
    "pts": [
-    "影響 156.0.8078.73 之前的 Google Chrome（含 Android 與 Windows），攻擊者可經由造假 HTML 頁面執行任意程式碼。",
-    "**目前尚未遭攻擊利用**，遠端攻擊者需誘使使用者開啟精心製作的 HTML 頁面發動攻擊。"
+    "影響 156.0.8078.73 之前版本之 Google Chrome，多個元件存在記憶體損壞等漏洞，可於沙箱內外執行任意程式碼。",
+    "**目前漏洞尚未遭利用**，攻擊者需經由誘騙使用者存取精心設計的 HTML 頁面進行攻擊。"
    ],
-   "fix": "升級至 156.0.8078.73 或更新版本。",
+   "fix": "升級至 156.0.8078.73 以上版本。",
    "ai": true,
    "ai_ver": 2,
    "raw": {
@@ -7923,6 +7968,8 @@
      "Use after free in Command in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in WTF in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in FileSystem in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in WebAudio in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in V8 in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in WebAudio in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in V8 in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
@@ -10618,7 +10665,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 產品多項安全漏洞",
+   "title": "Oracle 多款產品安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -10847,12 +10894,12 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-08T22:54:42+00:00",
+   "updated": "2026-11-09T22:23:34+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 與 Siebel CRM Cloud Applications 17.0-26.9 等多個組件，可能導致系統遭入侵。",
-    "**最高 CVSS 風險評分為 10.0 分**，未授權或低權限攻擊者可經由 HTTP 存取發動攻擊，目前無遭利用跡象。"
+    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，可遭未授權或低權限攻擊者入侵。",
+    "**目前漏洞尚未遭利用**，攻擊者可透過 HTTP 網路存取等方式進行攻擊。"
    ],
    "fix": "",
    "ai": true,
@@ -11315,14 +11362,18 @@
      "Vulnerability in the Oracle EDI Gateway product of Oracle E-Business Suite (component: EDI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle EDI Gateway.  While the vulnerability is in Oracle EDI Gateway, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle EDI Gateway accessible data as well as  unauthorized update, insert or delete access to some of Oracle EDI Gateway accessible data. CVSS 3.1 Base Score 8.5 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N).",
      "Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Agile Product Lifecycle Management for Process.  Successful attacks of this vulnerability can result in takeover of Oracle Agile Product Lifecycle Management for Process. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via Oracle Net to compromise Oracle Trusted Answer Search.  Successful attacks of this vulnerability can result in takeover of Oracle Trusted Answer Search. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Trusted Answer Search.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Trusted Answer Search, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Trusted Answer Search accessible data as well as  unauthorized access to critical data or complete access to all Oracle Trusted Answer Search accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N)."
+     "Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Trusted Answer Search.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Trusted Answer Search, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Trusted Answer Search accessible data as well as  unauthorized access to critical data or complete access to all Oracle Trusted Answer Search accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Image Packaging System).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Services).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Solaris and  unauthorized read access to a subset of Oracle Solaris accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows unauthenticated attacker with logon to the infrastructure where Oracle Solaris executes to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 8.4 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)."
     ]
    }
   },
   {
    "id": "grp:Apache:2026-10-20",
    "kind": "group",
-   "title": "Apache Tomcat 多項漏洞",
+   "title": "Apache Tomcat 安全漏洞",
    "sub": "4 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -11339,12 +11390,12 @@
    "cvss": 9.1,
    "published": "2026-10-20T14:16:54+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-10-29T21:49:12+00:00",
+   "updated": "2026-11-09T22:23:34+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101296",
    "pts": [
-    "影響 Apache Tomcat 多個版本，漏洞可導致身份驗證繞過、請求與回應混淆或資料洩漏。",
-    "**目前尚未遭利用**；攻擊者可未經授權登入或由具備存取權限的本地使用者利用。"
+    "影響 Apache Tomcat 11.0.0-M1 至 11.0.26、10.1.55 至 10.1.60 等版本，包含未授權身份驗證繞過與資訊洩漏等漏洞。",
+    "**目前漏洞尚未遭利用**，攻擊者可在未提供正確密碼情況下通過驗證，或造成請求與回應混淆。"
    ],
    "fix": "",
    "ai": true,
@@ -11354,7 +11405,8 @@
      "A missing critical step in authentication vulnerability in Apache Tomcat when the JNDI realm was configured with with a non GSSAPI SASL authentication mechanism allowed attackers to authenticate without providing the correct password.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.26, from 10.1.0-M1 through 10.1.60, from 9.0.0.M1 through 9.0.122.\n\n\n\nThe following versions were EOL at the time the CVE was created but are known to be affected: from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109. Other unsupported versions may also be affected.\n\n\n\nUsers are recommended to upgrade to version 11.0.27, 10.1.61 or 9.0.123, which fix the issue.",
      "Incorrect object recycling and re-use vulnerability in Apache Tomcat affecting HTTP/2 processing of asynchronous servlets can trigger request and/or response mix-up between users.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.22 through 11.0.26, from 10.1.55 through 10.1.60, from 9.0.118 through 9.0.122.\n\n\n\nUsers are recommended to upgrade to version 11.0.27, 10.1.61 or 9.0.123, which fixes the issue.",
      "Buffer under-read vulnerability in Apache Tomcat meant that a large non-blocking write could result in the response body being split between the current request and the next request received on that connection leading most likely to failure of the second request and possibly leakage of data from the first response to the second.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M25 through 11.0.26.\n\n\n\nUsers are recommended to upgrade to version 11.0.27, which fixes the issue.",
-     "Time-of-check time-of-use (TOCTOU) race condition vulnerability in Apache Tomcat when creating unix domain sockets for the APR/Native connector allows an unauthorised local user to access the unix domain socket. The fix for CVE-2026-65183 only addressed the NIO connector. It did not address the same issue in the APR/Native connector.\n\n\n\nThis issue affects Apache Tomcat: from 9.0.47 through 9.0.122.\n\n\n\nUsers are recommended to upgrade to version 9.0.123, which fixes the issue."
+     "Time-of-check time-of-use (TOCTOU) race condition vulnerability in Apache Tomcat when creating unix domain sockets for the APR/Native connector allows an unauthorised local user to access the unix domain socket. The fix for CVE-2026-65183 only addressed the NIO connector. It did not address the same issue in the APR/Native connector.\n\n\n\nThis issue affects Apache Tomcat: from 9.0.47 through 9.0.122.\n\n\n\nUsers are recommended to upgrade to version 9.0.123, which fixes the issue.",
+     "A missing critical step in authentication vulnerability in Apache Tomcat when the JNDI realm was configured with with a non GSSAPI SASL authentication mechanism allowed attackers to authenticate without providing the correct password.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.26, from 10.1.0-M1 through 10.1.60, from 9.0.0.M1 through 9.0.122.\n\n\n\nThe following versions were EOL at the time the CVE was created but are known to be affected: from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109. Other unsupported versions may also be affected.\n\n\n\nUsers are recommended to upgrade to version 11.0.27, 10.1.61 or 9.0.123, which fix the issue."
     ]
    }
   },
@@ -11789,6 +11841,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-09T11:34:24+00:00",
- "kev_last": "2026-11-09T11:34:24+00:00"
+ "nvd_last": "2026-11-09T22:23:20+00:00",
+ "kev_last": "2026-11-09T22:23:20+00:00"
 }
