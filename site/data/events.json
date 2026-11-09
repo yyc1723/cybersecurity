@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T22:54:28+00:00",
+ "generated": "2026-11-09T02:40:07+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "items": [
    {
-    "title": "本單位：修補 Chrome 遠端執行漏洞",
-    "desc": "影響 Windows 版 157.0.8103.38 前版本，可能導致沙盒外執行程式碼。"
+    "title": "修補 SonicWall 驗證繞過漏洞",
+    "desc": "**SonicWall SSLVPN 漏洞已遭實際利用**，攻擊者可繞過 SAML 的 MFA 驗證。"
    },
    {
-    "title": "本單位：防範 SQL Server 安全漏洞",
-    "desc": "影響 SQL Server（Jumis），存在硬編碼密碼與檔案路徑建構缺失。"
+    "title": "更新 Contact Form 7 外掛",
+    "desc": "6.2.4 前版本未驗證檔案，特定設定下可導致遠端執行程式碼。"
    },
    {
-    "title": "本單位：因應 IIS ModSecurity 漏洞",
-    "desc": "影響 IIS 之 ModSecurity 3.0.0 至 3.0.17 版本，存在檢查繞過缺陷。"
+    "title": "更新 Ruby on Rails 安全版本",
+    "desc": "發布 8.0.5.2 與 8.1.4.1 更新，修補 CVSS 9.8 分重大漏洞。"
    },
    {
-    "title": "修補 SonicWall SSLVPN 漏洞",
-    "desc": "**此漏洞目前已知已被實際利用**，可繞過 SAML 多重身份驗證。"
+    "title": "升級 OpenSSH 修補漏洞",
+    "desc": "發布 10.6p2 修補 SSHole 漏洞，防止攻擊者透長密碼繞過驗證。"
    },
    {
-    "title": "修補 Zyxel 交換器零時差漏洞",
-    "desc": "Zyxel GS1900 系列 CVE-2026-107441 遭駭客利用竊取資料，兆勤已修補。"
+    "title": "更新 Parse Server 修正漏洞",
+    "desc": "8.6.115 及 9.10.7-alpha.1 前版本有漏洞，防範服務阻斷攻擊。"
    },
    {
-    "title": "升級 OpenSSH 至修補版本",
-    "desc": "修補 SSHole 漏洞（CVE-2026-123158），防範長密碼繞過身分驗證。"
+    "title": "修補 Devolutions 伺服器漏洞",
+    "desc": "2026.2.22.0 前版本存在 SSRF 漏洞，低權限使用者可獲 Jira 憑證。"
    }
   ],
   "ai": true
@@ -361,6 +361,78 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:b215083cdad9",
+   "kind": "news",
+   "title": "美國CISA等5機構警告冷鏈系統遭網路攻擊風險，籲企業檢查遠端存取與設備安全",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T02:40:24+00:00",
+   "first_seen": "2026-11-09T02:40:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180300",
+   "pts": [
+    "歐洲多國冷凍冷藏系統接連發生遭網路攻擊的事件。",
+    "**美CISA與FBI等機構呼籲企業檢查工業冷凍與冷鏈監控系統安全設定**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:66e182dba4e1",
+   "kind": "news",
+   "title": "菲律賓海外就業系統約69GiB資料庫備份疑遭竊，政府展開調查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SQL Server"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T02:40:24+00:00",
+   "first_seen": "2026-11-09T02:40:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180288",
+   "pts": [
+    "公開伺服器發現27個Microsoft SQL Server資料庫備份檔傳輸紀錄。",
+    "**約69GiB涵蓋菲國海外勞工與契約等系統資料疑遭外洩**，政府已展開調查。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:d758edb335f9",
+   "kind": "news",
+   "title": "Rails修補9.8分重大漏洞，使用ImageMagick處理上傳圖片的網站需留意",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-09T02:40:24+00:00",
+   "first_seen": "2026-11-09T02:40:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180273",
+   "pts": [
+    "**Ruby on Rails發布8.0.5.2與8.1.4.1安全更新**，修補21項安全問題。",
+    "修補內容包含CVSS風險分數達9.8分的Active Storage重大漏洞。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "CVE-2026-97677",
    "kind": "cve",
