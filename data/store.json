@@ -35,6 +35,515 @@
  },
  "events": [
   {
+   "id": "tw:362b64b667d4",
+   "kind": "news",
+   "title": "涉嫌入侵美國大學進行非法加密貨幣挖礦的加拿大駭客，被引渡至美國受審",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180396",
+   "pts": [
+    "美國司法部公告引渡兩名加拿大男子，其涉嫌於2016年至2019年間**入侵多州教育機構系統**。",
+    "嫌犯竊取登入憑證並植入惡意程式，利用受害電腦進行非法加密貨幣挖礦。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "涉嫌入侵美國大學進行非法加密貨幣挖礦的加拿大駭客，被引渡至美國受審",
+    "desc": "美國司法部於11月3日公告，兩名加拿大男子Ryan James Roach（35歲）與Mathiew James Stubbings（41歲），涉嫌在2016年6月至2019年12月間，入侵紐約、田納西、北卡羅來納及麻薩諸塞州教育機構的系統，竊取登入憑證，並植入惡意程式，利用受害電腦挖掘加密貨幣。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d93cc3580805",
+   "kind": "news",
+   "title": "應用程式安全檢測可透過臺灣SaaS平臺執行，叡揚資訊促成Mend臺灣雲端區域上線",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180393",
+   "pts": [
+    "叡揚資訊促成Mend臺灣雲端區域上線，讓應用程式安全檢測可**透過臺灣SaaS平臺執行**。",
+    "因應臺灣企業對主權IT重視度提高，國際資安廠商陸續提供在地化雲端服務。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "應用程式安全檢測可透過臺灣SaaS平臺執行，叡揚資訊促成Mend臺灣雲端區域上線",
+    "desc": "因應臺灣企業與組織對於主權IT的重視程度日益提高，越來越多國際資安廠商選擇在臺灣提供在地化的雲端服務。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:9c80b91e6d6d",
+   "kind": "news",
+   "title": "捐款人個資恐外洩！netiCRM服務商遭駭，公督盟、司改會等超過30個非營利組織接連示警",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180384",
+   "pts": [
+    "臺灣非營利組織使用的捐款管理系統netiCRM傳出資安事件，服務商網絡行動科技部分伺服器遭外部攻擊者入侵，包括婦女新知基金會、公民監督國會聯盟、民間司法改革基金會及台灣同志諮詢熱線協會等超過20個非營利組織相繼發布公告，提醒捐款人留意可疑來電與詐騙訊息。其中，公督盟已預防性暫停線上捐款及活動報名服務"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "捐款人個資恐外洩！netiCRM服務商遭駭，公督盟、司改會等超過30個非營利組織接連示警",
+    "desc": "臺灣非營利組織使用的捐款管理系統netiCRM傳出資安事件，服務商網絡行動科技部分伺服器遭外部攻擊者入侵，包括婦女新知基金會、公民監督國會聯盟、民間司法改革基金會及台灣同志諮詢熱線協會等超過20個非營利組織相繼發布公告，提醒捐款人留意可疑來電與詐騙訊息。其中，公督盟已預防性暫停線上捐款及活動報名服務，至於是否涉及捐款人個資外洩，目前仍在調查中。由於相關公告持續增加，究竟有多少組織受到波及，以及是否所有使用netiCRM的組織都受到影響，仍有待進一步釐清。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:f82312eebbc1",
+   "kind": "news",
+   "title": "WorkOS資料外洩事故出現新進展，AI滲透測試框架突破測試環境釀禍",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180388",
+   "pts": [
+    "身分驗證服務公司WorkOS內部銷售應用程式遭未經授權存取，發生資料外洩事故。",
+    "研究人員承認係執行ARTEX資安基準測試時，**AI代理意外逃脫隔離測試環境**釀禍。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "WorkOS資料外洩事故出現新進展，AI滲透測試框架突破測試環境釀禍",
+    "desc": "上週身分驗證服務公司WorkOS發生資料外洩事故，該公司內部銷售應用程式遭未經授權存取，攻擊者疑似使用AI滲透測試框架ARTEX自動化執行。事隔數日此事出現新的變化，有研究人員承認，其實是他們正在透過ARTEX執行資安基準測試的過程當中，該AI代理意外逃脫隔離測試環境造成。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:fbeef4101f2a",
+   "kind": "news",
+   "title": "美國司法部成立AI犯罪專責單位，打擊詐騙及其他非法活動",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180378",
+   "pts": [
+    "美國司法部宣布成立**超級智慧任務編組（DOJ-SITF）**，以打擊國內外的AI詐騙與駭客行為。",
+    "此為美國政府落實確保其在AI產業領先地位，並打擊非法活動的最新行動。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "美國司法部成立AI犯罪專責單位，打擊詐騙及其他非法活動",
+    "desc": "美國司法部宣布成立超級智慧任務編組（Super Intelligence Task Force，DOJ-SITF），以打擊美國國內外的AI詐騙或駭客行為。 這是9月底美國總統川普將人工智慧（AI）改名為超級智慧（SI）後，美國政府持續在法制化機構中落實確保美國在AI產業領先地位的行動。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:3a928daee022",
+   "kind": "news",
+   "title": "AWS支援以暫時性憑證跨分區存取雲端資源，減少長期金鑰依賴",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180369",
+   "pts": [
+    "AWS擴充STS服務，支援工作負載使用原有身分**跨分區取得暫時性憑證**存取資源。",
+    "企業無須再為跨分區作業保存長期IAM金鑰，能減少金鑰外洩風險與管理負擔。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "AWS支援以暫時性憑證跨分區存取雲端資源，減少長期金鑰依賴",
+    "desc": "AWS擴充安全權杖服務（AWS Security Token Service，STS），讓工作負載可以使用原有的身分，在不同AWS分區（AWS Partitions）取得暫時性憑證，存取獲得授權的雲端資源。企業不必再替跨分區作業另外保存長期有效的IAM存取金鑰，可減少金鑰外洩風險及管理負擔。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b2eb8f49f410",
+   "kind": "news",
+   "title": "N-able遭揭露逾30個零時差漏洞，緊急關閉全球N-central雲端服務，要求本地建置客戶停機",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180377",
+   "pts": [
+    "IT管理軟體公司N-able旗下的遠端監控與管理（RMM）平臺N-central，近日遭研究人員公布一系列資安漏洞，其中部分漏洞可串聯形成遠端程式碼執行（RCE）攻擊鏈，使攻擊者取得系統管理權限。N-able於11月9日宣布重大資安事件，緊急關閉全球託管版N-central服務，並要求本地建置的客戶"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "N-able遭揭露逾30個零時差漏洞，緊急關閉全球N-central雲端服務，要求本地建置客戶停機",
+    "desc": "IT管理軟體公司N-able旗下的遠端監控與管理（RMM）平臺N-central，近日遭研究人員公布一系列資安漏洞，其中部分漏洞可串聯形成遠端程式碼執行（RCE）攻擊鏈，使攻擊者取得系統管理權限。N-able於11月9日宣布重大資安事件，緊急關閉全球託管版N-central服務，並要求本地建置的客戶暫時關閉伺服器。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4058f99bcb05",
+   "kind": "news",
+   "title": "【資安日報】11月10日，甫揭露的OpenSSH漏洞SSHole出現嘗試利用活動",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180375",
+   "pts": [
+    "剛揭露的**OpenSSH漏洞SSHole已出現嘗試利用活動**。",
+    "法國將10月冷凍設備網攻歸因於伊朗波及約700處據點，SEGA因Arara事件外洩近220萬筆資料。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "【資安日報】11月10日，甫揭露的OpenSSH漏洞SSHole出現嘗試利用活動",
+    "desc": "本日新聞焦點 ● 甫揭露的OpenSSH漏洞SSHole出現嘗試利用活動 ● 法國將10月冷凍與冷藏設備網攻歸因於伊朗，波及約700處零售據點 ● SEGA集團因日本Arara資安事件外洩資料近220萬筆",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:6854c2b822fd",
+   "kind": "news",
+   "title": "CISA警告SSHole等4個資安漏洞已遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180368",
+   "pts": [
+    "**CISA於11月9日將GPUStack身分驗證不當漏洞等4個漏洞列入已遭利用漏洞名單（KEV）。**"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "CISA警告SSHole等4個資安漏洞已遭積極利用",
+    "desc": "11月9日美國網路安全與基礎設施安全局（CISA）發布公告指出，他們已掌握4個漏洞遭到積極利用的證據，將其列入已遭利用漏洞名單（KEV），這些漏洞是：GPU資源管理及AI模型服務部署GPUStack身分驗證不當漏洞CVE-2026",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ef94d654d634",
+   "kind": "news",
+   "title": "Ethersphere發布流程遭入侵，惡意版bee-js與Swarm Desktop經官方管道散布",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180362",
+   "pts": [
+    "Ethersphere遭遇軟體供應鏈攻擊，攻擊者利用GitHub發布流程散布含有惡意程式的bee-js 13.3.0及Swarm Desktop 0.56.2。",
+    "**惡意程式可竊取節點錢包金鑰，並在使用者電腦植入遠端控制後門。**"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "Ethersphere發布流程遭入侵，惡意版bee-js與Swarm Desktop經官方管道散布",
+    "desc": "去中心化儲存網路Swarm的開發組織Ethersphere遭軟體供應鏈攻擊，攻擊者利用專案的GitHub發布流程，將含有惡意程式的JavaScript套件bee-js 13.3.0上架NPM，並發布Swarm Desktop 0.56.2。惡意程式可竊取節點錢包金鑰，並在使用者電腦植入遠端控制後門。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b83f0b03ac50",
+   "kind": "news",
+   "title": "ShinyHunters兜售宣稱竊自Binance 3.3億用戶的資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180366",
+   "pts": [
+    "**駭客組織ShinyHunters成員宣稱駭入Binance內部系統並於暗網兜售逾3.35億筆用戶資料，但遭Binance否認。**"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "ShinyHunters兜售宣稱竊自Binance 3.3億用戶的資料",
+    "desc": "自稱是ShinyHunters成員的駭客近日聲稱駭入加密貨幣交易平臺Binance內部系統，並取得超過3.35億用戶資料並欲兜售，但遭Binance否認。 Bleeping Computer報導，一個自稱是ShinyHunters的人士在一個新興暗網上張貼訊息，打算出售竊自Binance的資訊。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:1834eb098e4c",
+   "kind": "news",
+   "title": "甫揭露的OpenSSH漏洞SSHole出現嘗試利用活動",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T13:29:10+00:00",
+   "first_seen": "2026-11-10T13:29:10+00:00",
+   "updated": "2026-11-10T13:29:10+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180365",
+   "pts": [
+    "OpenSSH於11月5日發布10.6p2修補可透過長密碼利用的身分驗證繞過漏洞SSHole（CVE-2026-123158）。",
+    "**資安業者在更新公告發布9小時內即偵測到漏洞利用攻擊，攻擊者成功繞過驗證並取得root權限。**"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "甫揭露的OpenSSH漏洞SSHole出現嘗試利用活動",
+    "desc": "11月5日OpenSSH開發團隊發布緊急更新10.6p2，公布及修補能透過長密碼利用的身分驗證繞過漏洞SSHole（CVE-2026-123158），資安公司Previdian透露，他們在前述公告發布的9小時內首度偵測到漏洞利用攻擊，對方在執行Alpine Linux與OpenSSH的蜜罐陷阱裡，成功繞過身分驗證流程，並以root的權限入侵系統。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-58114",
+   "kind": "cve",
+   "title": "SIMATIC等多產品NTLM漏洞",
+   "sub": "CVE-2026-58114 · CVSS 7.7",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SQL Server"
+   ],
+   "cves": [
+    "CVE-2026-58114"
+   ],
+   "cvss": 7.7,
+   "published": "2026-11-10T12:17:20+00:00",
+   "first_seen": "2026-11-10T13:29:08+00:00",
+   "updated": "2026-11-10T13:29:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58114",
+   "pts": [
+    "影響SIMATIC BATCH V9.1、WinCC等Siemens多款產品，系統未妥善保護已棄用的NTLM協定遠端身分驗證。",
+    "**取得中間人位置的未經身分驗證遠端攻擊者，可轉發NTLM身分驗證並冒充合法使用者。**"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "A vulnerability has been identified in SIMATIC BATCH V9.1 (All versions), SIMATIC Information Server 2020 (All versions), SIMATIC Information Server 2022 (All versions), SIMATIC PCS 7 V9.1 (All versions), SIMATIC Process Historian 2020 (All versions), SIMATIC Process Historian 2022 (All versions), SIMATIC WinCC Runtime Professional V17 (All versions), SIMATIC WinCC Runtime Professional V18 (All versions), SIMATIC WinCC Runtime Professional V19 (All versions), SIMATIC WinCC Runtime Professional V20 (All versions), SIMATIC WinCC Runtime Professional V21 (All versions), SIMATIC WinCC V7.5 (All versions), SIMATIC WinCC V8.0 (All versions), SIMATIC WinCC V8.1 (All versions). Affected systems do not properly secure their remote user authentication with the deprecated NTLM protocol. This could allow unauthenticated remote attackers, who have achieved a machine in the middle position, to relay NTLM authentication and impersonate a legitimate user. The potential impact depends on the services that are accessible, e.g. a SQL server used by WinCC.",
+    "refs": [
+     "https://cert-portal.siemens.com/productcert/html/ssa-970803.html"
+    ]
+   }
+  },
+  {
+   "id": "grp:Cisco:2026-11-10",
+   "kind": "group",
+   "title": "Cisco 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-12573",
+    "CVE-2026-95646"
+   ],
+   "cvss": 8.8,
+   "published": "2026-11-10T11:16:43+00:00",
+   "first_seen": "2026-11-10T13:29:08+00:00",
+   "updated": "2026-11-10T13:29:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12573",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.8。",
+    "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the C"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the Cisco IOS DHCP configuration functionality. This vulnerability could allow cluster-scoped operators to inject specially crafted Unicode characters, resulting in the execution of unintended device commands.",
+     "Zoho Corporation ManageEngine DDI Central versions 6200 and below are vulnerable to Cisco IOS command injection via DHCP pool name leading to arbitrary commands on managed Cisco routers."
+    ]
+   }
+  },
+  {
+   "id": "grp:OpenSSL:2026-11-10",
+   "kind": "group",
+   "title": "OpenSSL 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-60037",
+    "CVE-2026-60038"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-10T09:17:23+00:00",
+   "first_seen": "2026-11-10T13:29:08+00:00",
+   "updated": "2026-11-10T13:29:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60037",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.6。",
+    "A high privileged remote attacker can perform an OpenSSL code injection in the frontends device importer function leading to code execution."
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "A high privileged remote attacker can perform an OpenSSL code injection in the frontends device importer function leading to code execution. This can result in a total loss of confidentiality, integrity and availability.",
+     "A high privileged remote attacker can perform an OpenSSL code injection in the backends ImportPKCS12 function leading to code execution. This can result in a total loss of confidentiality, integrity and availability."
+    ]
+   }
+  },
+  {
+   "id": "grp:VMware:2026-11-10",
+   "kind": "group",
+   "title": "VMware 多個高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [
+    "CVE-2026-91754",
+    "CVE-2026-91755",
+    "CVE-2026-91756"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-10T05:18:12+00:00",
+   "first_seen": "2026-11-10T13:29:08+00:00",
+   "updated": "2026-11-10T13:29:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91754",
+   "pts": [
+    "同日公布 3 個漏洞，最高 CVSS 8.1。",
+    "Stack-based Buffer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware. This issue affects Hitachi Dynamic Link Manager for VM"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "Stack-based Buffer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
+     "Integer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
+     "OS Command Injection Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01."
+    ]
+   }
+  },
+  {
    "id": "tw:aaf68f3b7c24",
    "kind": "news",
    "title": "主機服務商DreamHost遭駭，用戶FTP帳號密碼及網頁郵件工作階段資訊外洩",
@@ -484,11 +993,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180261",
    "pts": [
-    "資安業者ESET調查親俄網路間諜組織Gorbag的攻擊活動，發現該組織至少自2025年2月起，針對烏克蘭政府、司法及執法機關、國防相關單位發動攻擊，目標還包括外國軍援物資的重要運輸據點。研究人員研判，攻擊者可能藉此蒐集與俄烏戰爭有關的情報。"
+    "**親俄間諜組織Gorbag自2025年2月起，透過社交工程郵件與WinRAR漏洞攻擊烏克蘭政府、國防單位及軍援運輸據點以竊取情報。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "親俄網路間諜組織Gorbag鎖定烏克蘭政府，透過網釣郵件及WinRAR漏洞竊取情報",
     "desc": "資安業者ESET調查親俄網路間諜組織Gorbag的攻擊活動，發現該組織至少自2025年2月起，針對烏克蘭政府、司法及執法機關、國防相關單位發動攻擊，目標還包括外國軍援物資的重要運輸據點。研究人員研判，攻擊者可能藉此蒐集與俄烏戰爭有關的情報。",
@@ -12107,6 +12616,41 @@
    }
   },
   {
+   "id": "CVE-2026-0322",
+   "kind": "cve",
+   "title": "Palo Alto 漏洞 CVE-2026-0322",
+   "sub": "CVE-2026-0322 · CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Palo Alto"
+   ],
+   "cves": [
+    "CVE-2026-0322"
+   ],
+   "cvss": 8.6,
+   "published": "2026-10-14T18:17:07+00:00",
+   "first_seen": "2026-11-10T13:29:08+00:00",
+   "updated": "2026-11-10T13:29:08+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+   "pts": [
+    "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated atta"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
+    "refs": [
+     "https://security.paloaltonetworks.com/CVE-2026-0322",
+     "https://cert-portal.siemens.com/productcert/html/ssa-104023.html",
+     "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-0322"
+    ]
+   }
+  },
+  {
    "id": "grp:Windows Server:2026-10-14",
    "kind": "group",
    "title": "Windows 多個高風險漏洞",
@@ -12391,6 +12935,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-10T04:38:02+00:00",
- "kev_last": "2026-11-10T04:38:02+00:00"
+ "nvd_last": "2026-11-10T13:28:53+00:00",
+ "kev_last": "2026-11-10T13:28:53+00:00"
 }
