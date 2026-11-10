@@ -4,36 +4,570 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "items": [
    {
-    "title": "修補 SonicWall 驗證繞過漏洞",
-    "desc": "**SonicWall SSLVPN 漏洞已遭實際利用**，攻擊者可繞過 SAML 的 MFA 驗證。"
+    "title": "處理：ASP.NET 漏洞 CVE-2026-125383",
+    "desc": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) befor"
    },
    {
-    "title": "更新 Contact Form 7 外掛",
-    "desc": "6.2.4 前版本未驗證檔案，特定設定下可導致遠端執行程式碼。"
+    "title": "處理：Contact Form 7 漏洞",
+    "desc": "目前尚未遭利用。在預設 Debian/Ubuntu Apache 上可執行檔案；在 nginx 等設定下則限於寫入檔案至上傳目錄。"
    },
    {
-    "title": "更新 Ruby on Rails 安全版本",
-    "desc": "發布 8.0.5.2 與 8.1.4.1 更新，修補 CVSS 9.8 分重大漏洞。"
+    "title": "處理：Langium 阻斷服務漏洞",
+    "desc": "目前未發現已遭利用。僅影響啟用 IndentationAwareTokenBuilder 之設定，使用預設建置器者不受影響。"
    },
    {
-    "title": "升級 OpenSSH 修補漏洞",
-    "desc": "發布 10.6p2 修補 SSHole 漏洞，防止攻擊者透長密碼繞過驗證。"
+    "title": "處理：SonicWall修補SSL-VPN身分驗證繞過漏洞，",
+    "desc": "原廠已展開調查並呼籲客戶儘速更新系統。"
    },
    {
-    "title": "更新 Parse Server 修正漏洞",
-    "desc": "8.6.115 及 9.10.7-alpha.1 前版本有漏洞，防範服務阻斷攻擊。"
+    "title": "處理：【資安日報】11月9日，AI自動化攻擊系統BossAI",
+    "desc": "Rails 已修補重大漏洞，使用 ImageMagick 處理上傳圖片的網站需留意。"
    },
    {
-    "title": "修補 Devolutions 伺服器漏洞",
-    "desc": "2026.2.22.0 前版本存在 SSRF 漏洞，低權限使用者可獲 Jira 憑證。"
+    "title": "處理：日本ISP業者Arara遭駭，影響小學館、BIC Ca",
+    "desc": "影響小學館、BIC Camera、摩斯漢堡等超過 380 家企業客戶，受影響服務包含 Arara Message 及相關伺服器環境。"
    }
   ],
   "ai": true
  },
  "events": [
+  {
+   "id": "tw:aaf68f3b7c24",
+   "kind": "news",
+   "title": "主機服務商DreamHost遭駭，用戶FTP帳號密碼及網頁郵件工作階段資訊外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180363",
+   "pts": [
+    "美國主機代管與網域註冊業者DreamHost近日揭露資安事件，攻擊者利用其網頁版檔案管理工具File Manager的軟體漏洞，入侵執行該服務的伺服器，竊取部分使用者的FTP及SFTP帳號名稱與密碼，此次事件始於今年8月，直到10月23日才為該公司發現。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "主機服務商DreamHost遭駭，用戶FTP帳號密碼及網頁郵件工作階段資訊外洩",
+    "desc": "美國主機代管與網域註冊業者DreamHost近日揭露資安事件，攻擊者利用其網頁版檔案管理工具File Manager的軟體漏洞，入侵執行該服務的伺服器，竊取部分使用者的FTP及SFTP帳號名稱與密碼，此次事件始於今年8月，直到10月23日才為該公司發現。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e66fcb7b6704",
+   "kind": "news",
+   "title": "駭客利用假冒的CWP網頁伺服器程式，散布新型Linux後門程式CWPdoor",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180361",
+   "pts": [
+    "**駭客利用竄改的 Control Web Panel（CWP）執行檔散布新型 Linux 後門程式 CWPdoor**。",
+    "奇安信威脅研究團隊 XLab 於 11 月 5 日揭露此安全威脅。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "駭客利用假冒的CWP網頁伺服器程式，散布新型Linux後門程式CWPdoor",
+    "desc": "中國資安業者奇安信威脅研究團隊XLab於11月5日揭露新型Linux後門程式CWPdoor，利用被竄改的開源Linux網頁伺服器管理工具Control Web Panel（CWP）執行檔散布。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:812ccaabd3cb",
+   "kind": "news",
+   "title": "韓國聯合5家海運業者演練船舶資安事故，模擬供應鏈攻擊造成船岸通訊中斷",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180359",
+   "pts": [
+    "**韓國 KISA 聯合 5 家海運業者演練模擬供應鏈攻擊導致船岸通訊中斷**。",
+    "演練模擬假冒港務機關寄送惡意郵件並透過合作廠商竄改軟體更新檔，導致伺服器遭感染。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "韓國聯合5家海運業者演練船舶資安事故，模擬供應鏈攻擊造成船岸通訊中斷",
+    "desc": "船舶資安已成為各國關注的議題，韓國網際網路振興院（KISA）於11月3日宣布，聯合5家海運業者及相關政府機關，舉行船舶資安事件應變演練，模擬攻擊者假冒港務機關發送惡意電子郵件，並透過遭感染的合作廠商電腦竄改船舶軟體更新檔，導致船上電腦及通訊伺服器遭惡意程式感染，進而造成船岸通訊受阻。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e59761977831",
+   "kind": "news",
+   "title": "易遊網會員中心遭網路攻擊，逾69萬人歷史訂單聯絡資料受影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180354",
+   "pts": [
+    "**易遊網會員中心遭外部異常網路攻擊，逾 69 萬人歷史訂單聯絡資料遭不當取得**。",
+    "易遊網於 11 月 7 日主動偵測到此異常攻擊。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "易遊網會員中心遭網路攻擊，逾69萬人歷史訂單聯絡資料受影響",
+    "desc": "旅遊電商平臺易遊網揭露發生資安事件，指出11月7日主動偵測到會員中心出現外部異常網路攻擊，經初步清查，確認部分歷史訂單聯絡資料遭不當取得，受影響人數超過69萬人。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d5d934332bbd",
+   "kind": "news",
+   "title": "Google發布Chrome 157更新，修補已遭利用的資安漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180360",
+   "pts": [
+    "Google於11月9日發布Chrome 157穩定版更新，修補9個安全漏洞，7個為高風險等級、2個為中度風險等級，存在於WebGL、GPU、V8、XML，以及FileSystem等瀏覽器元件。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Google發布Chrome 157更新，修補已遭利用的資安漏洞",
+    "desc": "Google於11月9日發布Chrome 157穩定版更新，修補9個安全漏洞，7個為高風險等級、2個為中度風險等級，存在於WebGL、GPU、V8、XML，以及FileSystem等瀏覽器元件。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:aa22657f47d8",
+   "kind": "news",
+   "title": "存在漏洞且暴露於網際網路的Danfoss冷藏控制器，Shadowserver示警全球仍有170臺",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180357",
+   "pts": [
+    "**Shadowserver 示警全球仍有 170 臺存在漏洞且暴露於網際網路的 Danfoss 冷藏控制器**。",
+    "歐洲多國冷凍冷藏系統遭遠端操控，導致設備進入除霜模式或溫度遭竄改。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "存在漏洞且暴露於網際網路的Danfoss冷藏控制器，Shadowserver示警全球仍有170臺",
+    "desc": "歐洲多國冷凍冷藏系統接連遭到網路攻擊，攻擊者遠端操控冷凍冷藏設備的控制器，導致冷藏設備進入除霜模式或溫度設定遭到竄改。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c367726d514f",
+   "kind": "news",
+   "title": "美吾華購物網站疑似個資外洩，茅頭指向委外的電商服務系統",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180356",
+   "pts": [
+    "**美吾華購物網站會員反映疑似個資外洩，源頭指向委外的電商服務系統**。",
+    "該公司於 11 月 9 日發布重大訊息，確切原因與影響範圍調查中。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "美吾華購物網站疑似個資外洩，茅頭指向委外的電商服務系統",
+    "desc": "生技醫療公司美吾華（1731）於11月9日，在股市公開資訊觀測站發布重大訊息，該公司於11月6日接獲線上購物網站會員反映疑似個資外洩，經初步了解，事件與公司委外的電商平臺服務廠商系統有關，確切原因及影響範圍仍在調查中。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:67910b61998f",
+   "kind": "news",
+   "title": "SEGA集團因日本Arara資安事件外洩資料220萬筆",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180353",
+   "pts": [
+    "SEGA委外郵件系統商Arara遭未授權存取，**導致SEGA集團外洩近220萬筆客戶電子郵件地址與個資**。",
+    "已確認外流資訊包含2,196,044筆電子郵件地址，以及隨信發送的用戶個人資訊92,273筆。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "SEGA集團因日本Arara資安事件外洩資料220萬筆",
+    "desc": "日本遊戲大廠SEGA上週公告，因委外的郵件發送服務商Arara發生資安事件影響，SEGA遊戲製作及SEGA玩具製造部門SEGA FAVE外洩客戶電子郵件地址將近220萬筆。 SEGA指出，近日接獲負責公司集團下SEGA及SEGA FAVE部分電子報發送的Arara通知，Arara的郵件發送系統遭第三方未授權存取，導致用於發送電子報的訂閱客戶電子郵件地址及部分個資外洩。 根據分析，已確認外流的客戶資訊包括數份電子報訂戶的電子郵件地址2,196,044筆，以及隨信發送的用戶個人資訊92,273筆。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:0b7c6d26e841",
+   "kind": "news",
+   "title": "曜亞子公司線上購物平臺遭委外廠商資安事件波及，訂單資料遭異常存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180352",
+   "pts": [
+    "曜亞子公司曜胜生技「DR CYJ購物網」受到委外服務廠商順立智慧資安事件波及。",
+    "**購物平臺訂單相關資料遭未經授權異常存取**，初步評估對財務及業務尚無重大影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "曜亞子公司線上購物平臺遭委外廠商資安事件波及，訂單資料遭異常存取",
+    "desc": "11月9日晚間生技醫療公司曜亞（4138）於股市公開資訊觀測站發布資安重訊，旗下重要子公司曜胜生技的線上商店「DR CYJ購物網」，受到委外服務廠商順立智慧（Cyberbiz）資安事件影響，購物平臺訂單相關資料遭未經授權異常存取。根據初步評估，此次事件對曜胜財務及業務尚無重大影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:0002a18f1d2d",
+   "kind": "news",
+   "title": "崇越子公司安永生活電商委外服務商發生異常資料存取，清查受影響範圍",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180351",
+   "pts": [
+    "崇越子公司安永生活的電商平臺委外服務商順立智慧，近期發生異常資料存取情形。",
+    "**目前正清查受影響範圍**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "崇越子公司安永生活電商委外服務商發生異常資料存取，清查受影響範圍",
+    "desc": "11月9日半導體材料整合服務商崇越（5434）於股市公開資訊觀測站發布資安重訊，旗下子公司安永生活的電商平臺委外服務商順立智慧，近期發生異常資料存取情形。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:00eabc42a5de",
+   "kind": "news",
+   "title": "DigiCert資料外洩起因是伺服器遷移設定錯誤，導致內部系統暴露於網際網路",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180342",
+   "pts": [
+    "DigiCert因伺服器遷移過程設定錯誤，導致內部業務系統暴露於網際網路。",
+    "**攻擊者利用授權控管漏洞存取封存客戶資料**，包含個人聯絡資料及身分證明文件。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "DigiCert資料外洩起因是伺服器遷移設定錯誤，導致內部系統暴露於網際網路",
+    "desc": "憑證管理公司DigiCert於11月5日證實發生資料外洩事件，因伺服器遷移過程中的設定錯誤，導致原本僅供內部使用的業務系統暴露於網際網路，攻擊者利用系統授權控管漏洞，未經授權存取部分封存客戶資料，外洩資訊包含個人聯絡資料及身分證明文件。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:6e56071c45ab",
+   "kind": "news",
+   "title": "法國將10月冷凍、冷藏設備網攻歸因於伊朗網軍，波及700多處零售據點、損失數千萬歐元",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180349",
+   "pts": [
+    "法國將針對境內零售業冷凍冷藏設備的網攻歸因於伊朗革命衛隊旗下網路攻擊單位Shahid Kaveh。",
+    "**攻擊者竄改700多處據點設備設定**，造成大量食品損失並至少引發15起火災。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "法國將10月冷凍、冷藏設備網攻歸因於伊朗網軍，波及700多處零售據點、損失數千萬歐元",
+    "desc": "法國政府11月9日宣布，將10月11日晚間至12日凌晨針對境內大型零售業者發動的網路攻擊，正式歸因於伊朗革命衛隊旗下的網路攻擊單位Shahid Kaveh。攻擊者鎖定法國700多處零售據點的冷凍、冷藏設備控制器，將設備的除霜溫度設定調高，造成大量食品損失，並至少引發15起火災。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:953166b36bb1",
+   "kind": "news",
+   "title": "AI加快漏洞發現與攻擊速度，2027年企業資安面臨四大變化",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180299",
+   "pts": [
+    "人工智慧加快漏洞發現與攻擊速度，漏洞公開後可能很快就遭到利用。",
+    "**企業若仍採固定週期修補漏洞可能無法及時因應攻擊**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "AI加快漏洞發現與攻擊速度，2027年企業資安面臨四大變化",
+    "desc": "隨著AI加快漏洞發現與攻擊速度，漏洞公開後可能很快就遭到利用，企業若仍按照固定週期修補漏洞，可能無法及時因應攻擊。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:136c7aa09a7c",
+   "kind": "news",
+   "title": "Cloudflare推出漏洞情報服務，整理網際網路服務相關重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180297",
+   "pts": [
+    "網路基礎設施與資安業者Cloudflare近期推出公開漏洞情報服務Zero Wire，這項服務已在Cloudflare Radar平臺上線，非Cloudflare客戶也能查閱相關資訊。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Cloudflare推出漏洞情報服務，整理網際網路服務相關重大漏洞",
+    "desc": "網路基礎設施與資安業者Cloudflare近期推出公開漏洞情報服務Zero Wire，這項服務已在Cloudflare Radar平臺上線，非Cloudflare客戶也能查閱相關資訊。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:1b15a36f9a00",
+   "kind": "news",
+   "title": "親俄網路間諜組織Gorbag鎖定烏克蘭政府，透過網釣郵件及WinRAR漏洞竊取情報",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-10T04:38:18+00:00",
+   "first_seen": "2026-11-10T04:38:18+00:00",
+   "updated": "2026-11-10T04:38:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180261",
+   "pts": [
+    "資安業者ESET調查親俄網路間諜組織Gorbag的攻擊活動，發現該組織至少自2025年2月起，針對烏克蘭政府、司法及執法機關、國防相關單位發動攻擊，目標還包括外國軍援物資的重要運輸據點。研究人員研判，攻擊者可能藉此蒐集與俄烏戰爭有關的情報。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "親俄網路間諜組織Gorbag鎖定烏克蘭政府，透過網釣郵件及WinRAR漏洞竊取情報",
+    "desc": "資安業者ESET調查親俄網路間諜組織Gorbag的攻擊活動，發現該組織至少自2025年2月起，針對烏克蘭政府、司法及執法機關、國防相關單位發動攻擊，目標還包括外國軍援物資的重要運輸據點。研究人員研判，攻擊者可能藉此蒐集與俄烏戰爭有關的情報。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-125383",
+   "kind": "cve",
+   "title": "ASP.NET 漏洞 CVE-2026-125383",
+   "sub": "CVE-2026-125383 · CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "ASP.NET"
+   ],
+   "cves": [
+    "CVE-2026-125383"
+   ],
+   "cvss": 9.3,
+   "published": "2026-11-10T00:17:11+00:00",
+   "first_seen": "2026-11-10T04:38:16+00:00",
+   "updated": "2026-11-10T04:38:16+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125383",
+   "pts": [
+    "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contains an authentication bypass vulnerability caused b"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contains an authentication bypass vulnerability caused by a hard-coded JWT signing key, issuer and audience in appsettings.json. Unauthenticated remote attackers can forge tokens for any user ID and role that the Tokens/DI.cs validator trusts, gaining administrator access to the entire API.",
+    "refs": [
+     "https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System",
+     "https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System/blob/v9.20250118/Presentation/ASPNET/appsettings.json#L38-L44",
+     "https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System/commit/65609b5b88cb4f156e8164f33b8db8c63f5c125b",
+     "https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System/commit/ded7d8a9457c780dfd4f5ea74d7e72111fafaea6",
+     "https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System/issues/48"
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-73857",
+   "kind": "cve",
+   "title": "IIS 漏洞 CVE-2026-73857",
+   "sub": "CVE-2026-73857 · CVSS 7.5",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "IIS",
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-73857"
+   ],
+   "cvss": 7.5,
+   "published": "2026-11-09T22:18:54+00:00",
+   "first_seen": "2026-11-10T04:38:16+00:00",
+   "updated": "2026-11-10T04:38:16+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73857",
+   "pts": [
+    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.15 until 3.0.17, XML"
+   ],
+   "fix": "原文：This issue is fixed in version 3.0.17.",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.15 until 3.0.17, XML request body processing with SecParseXmlIntoArgs set to On or OnlyArgs can leave XMLNodes::parsing_ctx_arg uninitialized in the SAX end-element callback. A single crafted unauthenticated HTTP request can make a worker dereference the pointer, resulting in a constant-value write to an attacker-controlled address. The resulting memory corruption can terminate the worker and may disclose memory or redirect execution. Earlier 3.0.x releases and ModSecurity 2.x do not use the affected path. This issue is fixed in version 3.0.17.",
+    "refs": [
+     "https://github.com/owasp-modsecurity/ModSecurity/commit/e979a73e89d60cefdf42b41bb38bf1e456d7909f",
+     "https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17",
+     "https://github.com/owasp-modsecurity/ModSecurity/security/advisories/GHSA-jx3r-phvx-2jmj"
+    ]
+   }
+  },
   {
    "id": "CVE-2026-124683",
    "kind": "cve",
@@ -1374,7 +1908,7 @@
   {
    "id": "grp:IIS:2026-11-06",
    "kind": "group",
-   "title": "ModSecurity WAF 解析漏洞",
+   "title": "ModSecurity WAF 安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -1390,12 +1924,12 @@
    "cvss": 8.6,
    "published": "2026-11-05T16:17:29+00:00",
    "first_seen": "2026-11-05T18:48:29+00:00",
-   "updated": "2026-11-09T22:23:34+00:00",
+   "updated": "2026-11-10T04:38:16+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104269",
    "pts": [
-    "影響 IIS 與 Nginx 等平台的 ModSecurity 3.0.0 至 3.0.17 版，存在 multipart 解析與標頭比對缺陷。",
-    "目前未發現已遭利用。**攻擊者可能利用解析不一致性繞過 WAF 防護**。"
+    "影響 ModSecurity 3.0.0 至 3.0.17 版本（適用於 Apache、IIS 與 Nginx），存在 multipart 解析器與 Content-Type 比對漏洞。",
+    "**目前漏洞未遭利用**，CVSS 風險評分為 8.6 分。"
    ],
    "fix": "",
    "ai": true,
@@ -1404,7 +1938,8 @@
     "descs": [
      "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModSecurity's multipart parser does not apply the RFC 2231 filename* parameter precedence used by common Go, Python, Node.js, and Java application parsers. A Content-Disposition header can provide a benign filename parameter for ModSecurity and a different encoded filename* value that the backend prefers, causing MULTIPART_FILENAME rules and the application to make security decisions on different names. Applications that use the backend-selected name for storage, extension checks, or content-type inference can therefore receive a filename that bypassed WAF inspection. PHP's native multipart parser is not affected by this discrepancy. This issue is fixed in version 3.0.17.",
      "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, src/transaction.cc compares a response Content-Type value against SecResponseBodyMimeType entries case-sensitively. A mixed-case response media type that is semantically equivalent to a configured lowercase type can therefore be treated as unconfigured, causing ModSecurity to skip RESPONSE_BODY inspection. An unauthenticated requester can then receive response content that a phase 4 rule would otherwise block, including sensitive error or debug data. This issue is fixed in version 3.0.17.",
-     "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModSecurity's multipart parser does not apply the RFC 2231 filename* parameter precedence used by common Go, Python, Node.js, and Java application parsers. A Content-Disposition header can provide a benign filename parameter for ModSecurity and a different encoded filename* value that the backend prefers, causing MULTIPART_FILENAME rules and the application to make security decisions on different names. Applications that use the backend-selected name for storage, extension checks, or content-type inference can therefore receive a filename that bypassed WAF inspection. PHP's native multipart parser is not affected by this discrepancy. This issue is fixed in version 3.0.17."
+     "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModSecurity's multipart parser does not apply the RFC 2231 filename* parameter precedence used by common Go, Python, Node.js, and Java application parsers. A Content-Disposition header can provide a benign filename parameter for ModSecurity and a different encoded filename* value that the backend prefers, causing MULTIPART_FILENAME rules and the application to make security decisions on different names. Applications that use the backend-selected name for storage, extension checks, or content-type inference can therefore receive a filename that bypassed WAF inspection. PHP's native multipart parser is not affected by this discrepancy. This issue is fixed in version 3.0.17.",
+     "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, src/transaction.cc compares a response Content-Type value against SecResponseBodyMimeType entries case-sensitively. A mixed-case response media type that is semantically equivalent to a configured lowercase type can therefore be treated as unconfigured, causing ModSecurity to skip RESPONSE_BODY inspection. An unauthenticated requester can then receive response content that a phase 4 rule would otherwise block, including sensitive error or debug data. This issue is fixed in version 3.0.17."
     ]
    }
   },
@@ -2987,7 +3522,7 @@
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
    "title": "Chrome 遠端執行程式碼漏洞",
-   "sub": "118 個 CVE · 最高 CVSS 9.6",
+   "sub": "121 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -3039,6 +3574,7 @@
     "CVE-2026-121104",
     "CVE-2026-121107",
     "CVE-2026-121108",
+    "CVE-2026-121109",
     "CVE-2026-121112",
     "CVE-2026-121113",
     "CVE-2026-121114",
@@ -3060,8 +3596,10 @@
     "CVE-2026-121140",
     "CVE-2026-121148",
     "CVE-2026-121156",
+    "CVE-2026-121157",
     "CVE-2026-121163",
     "CVE-2026-121166",
+    "CVE-2026-121167",
     "CVE-2026-121168",
     "CVE-2026-121170",
     "CVE-2026-121171",
@@ -3114,18 +3652,18 @@
     "CVE-2026-121256",
     "CVE-2026-121257"
    ],
-   "cvss": 9.6,
+   "cvss": 9.8,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-09T22:23:34+00:00",
+   "updated": "2026-11-10T04:38:16+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 之前版本之 Google Chrome，包含 DevTools、Views 等元件漏洞，可經由惡意 HTML 頁面執行任意程式碼。",
-    "**目前漏洞尚未遭利用**，部分漏洞需要配合社交工程誘使使用者造訪惡意網頁方可觸發。"
+    "同日公布 121 個漏洞，最高 CVSS 9.8。",
+    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
    ],
-   "fix": "升級至 157.0.8103.38 以上版本。",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -3534,7 +4072,10 @@
      "Improper resource control in WebCodecs in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
      "Confused deputy in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
      "Incorrect authorization in CacheStorage in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
-     "Privilege elevation in Mobile in Google Chrome on on iOS prior to 157.0.8103.38 allowed a remote attacker to bypass system access restrictions into a privileged page via a crafted HTML page. (Chromium security severity: Medium)"
+     "Privilege elevation in Mobile in Google Chrome on on iOS prior to 157.0.8103.38 allowed a remote attacker to bypass system access restrictions into a privileged page via a crafted HTML page. (Chromium security severity: Medium)",
+     "Inadequate encryption strength in SSL in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially bypass web origin policy via crafted network traffic. (Chromium security severity: Low)",
+     "Incorrect authorization in Chromoting in Google Chrome prior to 157.0.8103.38 allowed a local attacker to bypass system access restrictions via a local program. (Chromium security severity: Low)",
+     "Incorrect authorization in Permissions in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass system access restrictions via a crafted HTML page. (Chromium security severity: Medium)"
     ]
    }
   },
@@ -10894,15 +11435,15 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-09T22:23:34+00:00",
+   "updated": "2026-11-10T04:38:16+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft PeopleTools 8.61-8.63 及 Siebel CRM 17.0-26.9 等版本，可遭未授權或低權限攻擊者入侵。",
-    "**目前漏洞尚未遭利用**，攻擊者可透過 HTTP 網路存取等方式進行攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -11366,6 +11907,12 @@
      "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Image Packaging System).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Services).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Solaris and  unauthorized read access to a subset of Oracle Solaris accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows unauthenticated attacker with logon to the infrastructure where Oracle Solaris executes to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 8.4 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Siebel Life Sciences product of Oracle Siebel CRM (component: Web UI).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel Life Sciences.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Siebel Life Sciences, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Siebel Life Sciences accessible data as well as  unauthorized access to critical data or complete access to all Siebel Life Sciences accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Siebel Apps - Life Sciences product of Oracle Siebel CRM (component: eDetailing).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via SQL to compromise Siebel Apps - Life Sciences.  Successful attacks of this vulnerability can result in takeover of Siebel Apps - Life Sciences. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Image Packaging System).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Services).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Solaris and  unauthorized read access to a subset of Oracle Solaris accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H).",
      "Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows unauthenticated attacker with logon to the infrastructure where Oracle Solaris executes to compromise Oracle Solaris.  Successful attacks of this vulnerability can result in takeover of Oracle Solaris. CVSS 3.1 Base Score 8.4 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)."
     ]
    }
@@ -11560,10 +12107,10 @@
    }
   },
   {
-   "id": "CVE-2026-96521",
-   "kind": "cve",
-   "title": "Photoshop越界寫入漏洞",
-   "sub": "CVE-2026-96521 · CVSS 7.8",
+   "id": "grp:Windows Server:2026-10-14",
+   "kind": "group",
+   "title": "Windows 多個高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 7.8",
    "sev": "note",
    "kev": false,
    "ransomware": false,
@@ -11571,25 +12118,28 @@
     "Windows Server"
    ],
    "cves": [
+    "CVE-2026-100128",
+    "CVE-2026-100129",
     "CVE-2026-96521"
    ],
    "cvss": 7.8,
-   "published": "2026-10-13T21:20:07+00:00",
+   "published": "2026-10-13T21:17:14+00:00",
    "first_seen": "2026-10-28T18:53:14+00:00",
-   "updated": "2026-10-28T18:53:14+00:00",
+   "updated": "2026-11-10T04:38:16+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96521",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100128",
    "pts": [
-    "Photoshop Desktop存在越界寫入漏洞（CVE-2026-96521），**可導致在當前使用者權限下遠端執行程式碼**。",
-    "利用此漏洞需使用者互動，受害者必須開啟惡意檔案；目前未發現遭利用跡象。"
+    "同日公布 3 個漏洞，最高 CVSS 7.8。",
+    "Photoshop Desktop is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the cu"
    ],
    "fix": "",
-   "ai": true,
-   "ai_ver": 2,
+   "ai": false,
+   "ai_ver": 0,
    "raw": {
-    "desc": "Photoshop Desktop is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "refs": [
-     "https://www.adobe.com/trust/security/products/photoshop/apsb26-158.html"
+    "descs": [
+     "Photoshop Desktop is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+     "Bridge is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+     "Bridge is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file."
     ]
    }
   },
@@ -11841,6 +12391,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-09T22:23:20+00:00",
- "kev_last": "2026-11-09T22:23:20+00:00"
+ "nvd_last": "2026-11-10T04:38:02+00:00",
+ "kev_last": "2026-11-10T04:38:02+00:00"
 }
