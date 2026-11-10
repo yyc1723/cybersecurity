@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T13:28:53+00:00",
+ "generated": "2026-11-10T20:49:55+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,124 @@
  },
  "events": [
   {
+   "id": "grp:Fortinet:2026-11-11",
+   "kind": "group",
+   "title": "Fortinet 多個高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Fortinet"
+   ],
+   "cves": [
+    "CVE-2025-61625",
+    "CVE-2026-121529",
+    "CVE-2026-26248"
+   ],
+   "cvss": 9.6,
+   "published": "2026-11-10T20:17:20+00:00",
+   "first_seen": "2026-11-10T20:50:10+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
+   "pts": [
+    "同日公布 3 個漏洞，最高 CVSS 9.6。",
+    "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6."
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:Chrome:2026-11-11",
+   "kind": "group",
+   "title": "Chrome 多項遠端執行漏洞",
+   "sub": "6 個 CVE · 最高 CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-125343",
+    "CVE-2026-125344",
+    "CVE-2026-125346",
+    "CVE-2026-125347",
+    "CVE-2026-125348",
+    "CVE-2026-125350"
+   ],
+   "cvss": 8.8,
+   "published": "2026-11-10T18:17:34+00:00",
+   "first_seen": "2026-11-10T20:50:10+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125343",
+   "pts": [
+    "Google Chrome 157.0.8103.50 之前版本存在 Compositing、V8、XML 等元件漏洞。",
+    "**攻擊者可透過特製 HTML 頁面或社交工程在沙盒內外遠端執行任意程式碼**；目前未遭利用。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:Ivanti:2026-11-11",
+   "kind": "group",
+   "title": "Ivanti 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Ivanti"
+   ],
+   "cves": [
+    "CVE-2026-121653",
+    "CVE-2026-121683"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-10T16:17:17+00:00",
+   "first_seen": "2026-11-10T20:50:10+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121653",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:Apache:2026-11-11",
+   "kind": "group",
+   "title": "Apache 多個高風險漏洞",
+   "sub": "7 個 CVE",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [
+    "CVE-2026-111250",
+    "CVE-2026-111256",
+    "CVE-2026-86531",
+    "CVE-2026-97870",
+    "CVE-2026-97880",
+    "CVE-2026-97881",
+    "CVE-2026-97888"
+   ],
+   "cvss": null,
+   "published": "2026-11-10T16:17:15+00:00",
+   "first_seen": "2026-11-10T20:50:10+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111250",
+   "pts": [
+    "同日公布 7 個漏洞。",
+    "The embedded OpenEJB HTTP server reports every request as authenticated when an application requests authentication programmatically. A remo"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:362b64b667d4",
    "kind": "news",
    "title": "涉嫌入侵美國大學進行非法加密貨幣挖礦的加拿大駭客，被引渡至美國受審",
@@ -702,24 +820,26 @@
    "id": "grp:OpenSSL:2026-11-10",
    "kind": "group",
    "title": "OpenSSL 多個高風險漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 8.6",
-   "sev": "high",
+   "sub": "3 個 CVE · 最高 CVSS 9.1",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
-    "OpenSSL"
+    "OpenSSL",
+    "憑證/CA"
    ],
    "cves": [
     "CVE-2026-60037",
-    "CVE-2026-60038"
+    "CVE-2026-60038",
+    "CVE-2026-82509"
    ],
-   "cvss": 8.6,
+   "cvss": 9.1,
    "published": "2026-11-10T09:17:23+00:00",
    "first_seen": "2026-11-10T13:29:08+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60037",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.6。",
+    "同日公布 3 個漏洞，最高 CVSS 9.1。",
     "A high privileged remote attacker can perform an OpenSSL code injection in the frontends device importer function leading to code execution."
    ],
    "fix": "",
@@ -866,10 +986,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180360",
    "pts": [
-    "Google於11月9日發布Chrome 157穩定版更新，修補9個安全漏洞，7個為高風險等級、2個為中度風險等級，存在於WebGL、GPU、V8、XML，以及FileSystem等瀏覽器元件。"
+    "Google 於 11 月 9 日發布 Chrome 157 穩定版更新，修補 9 個安全漏洞。",
+    "**修補漏洞包含 7 個高風險與 2 個中度風險等級**，存在於 WebGL、GPU、V8 等元件。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:aa22657f47d8",
@@ -1081,10 +1202,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180297",
    "pts": [
-    "網路基礎設施與資安業者Cloudflare近期推出公開漏洞情報服務Zero Wire，這項服務已在Cloudflare Radar平臺上線，非Cloudflare客戶也能查閱相關資訊。"
+    "Cloudflare 推出公開漏洞情報服務 Zero Wire，於 Cloudflare Radar 平臺上線。",
+    "**該服務整理網際網路服務相關重大漏洞**，非 Cloudflare 客戶亦可查閱。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:1b15a36f9a00",
@@ -1132,6 +1254,58 @@
     "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contains an authentication bypass vulnerability caused b"
    ],
    "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-124194",
+   "kind": "cve",
+   "title": "Microsoft Office Outlook Missing User In",
+   "sub": "CVE-2026-124194 · CVSS 6.5",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [
+    "CVE-2026-124194"
+   ],
+   "cvss": 6.5,
+   "published": "2026-11-10T00:00:00+00:00",
+   "first_seen": "2026-11-10T20:50:17+00:00",
+   "src": "CISA KEV",
+   "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-124194",
+   "pts": [
+    "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacke",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-20320",
+   "kind": "cve",
+   "title": "Cisco BroadWorks Improper Restriction of",
+   "sub": "CVE-2026-20320 · CVSS 7.5",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-20320"
+   ],
+   "cvss": 7.5,
+   "published": "2026-11-10T00:00:00+00:00",
+   "first_seen": "2026-11-10T20:50:23+00:00",
+   "src": "CISA KEV",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt",
+   "pts": [
+    "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
    "ai": false
   },
   {
@@ -1810,6 +1984,32 @@
    "pts": [
     "Linux 核心網路子系統存在 9.8 分重大漏洞 CVE-2026-98432，影響 IPv4 TCP 連線機制，**可能導致遠端程式碼執行（RCE）**。",
     "AI 廠商 Anthropic 揭露其 AI 服務 Claude 已編寫出利用此漏洞的程式，多家廠商正陸續推出修補。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-123218",
+   "kind": "cve",
+   "title": "IBM Aspera 權限提升漏洞",
+   "sub": "CVE-2026-123218 · CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-123218"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-07T04:17:28+00:00",
+   "first_seen": "2026-11-10T20:50:10+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
+   "pts": [
+    "IBM Aspera Faspex 5.0.0 至 5.0.19 版本存在權限繞過漏洞。",
+    "**已授權使用者可發送特製訊息繞過授權並取得完整管理者權限**；目前未遭利用。"
    ],
    "fix": "",
    "ai": true
@@ -3425,8 +3625,8 @@
   {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 遠端執行程式碼漏洞",
-   "sub": "121 個 CVE · 最高 CVSS 9.8",
+   "title": "Chrome 多項遠端執行漏洞",
+   "sub": "123 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -3440,6 +3640,7 @@
     "CVE-2026-121035",
     "CVE-2026-121036",
     "CVE-2026-121037",
+    "CVE-2026-121040",
     "CVE-2026-121044",
     "CVE-2026-121047",
     "CVE-2026-121048",
@@ -3535,6 +3736,7 @@
     "CVE-2026-121217",
     "CVE-2026-121218",
     "CVE-2026-121219",
+    "CVE-2026-121220",
     "CVE-2026-121221",
     "CVE-2026-121222",
     "CVE-2026-121224",
@@ -3562,11 +3764,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "同日公布 121 個漏洞，最高 CVSS 9.8。",
-    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
+    "Google Chrome 157.0.8103.38 之前版本存在 DevTools、Views、Prerender 等元件漏洞。",
+    "**攻擊者可透過特製 HTML 頁面或社交工程在沙盒內外遠端執行任意程式碼**；目前未遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Windows Server:2026-11-04",
@@ -3750,7 +3952,7 @@
   {
    "id": "grp:Linux:2026-11-03",
    "kind": "group",
-   "title": "Linux 核心 UAF 漏洞",
+   "title": "Linux 核心安全漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -3768,8 +3970,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99246",
    "pts": [
-    "Linux 核心存在 TIPC 跡象傾印未鎖定與 TCP 觸發釋放後使用（UAF）漏洞，可能影響系統穩定性。",
-    "**目前尚未發現此漏洞遭公開利用的情形**，CVSS 風險評分為 8.1。"
+    "影響 Linux kernel，包含 tipc 與 TCP 相關漏洞，**可能引發 Use-After-Free 等安全性問題**。",
+    "包含 CVE-2026-99246 與 CVE-2026-99270，CVSS 評分為 8.1，目前未有已遭利用紀錄。"
    ],
    "fix": "",
    "ai": true
@@ -7438,8 +7640,8 @@
   {
    "id": "grp:Linux:2026-10-23",
    "kind": "group",
-   "title": "Linux與Wasmtime多項漏洞",
-   "sub": "5 個 CVE · 最高 CVSS 8.8",
+   "title": "Wasmtime與Linux漏洞",
+   "sub": "6 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -7449,6 +7651,7 @@
    "cves": [
     "CVE-2026-115392",
     "CVE-2026-98968",
+    "CVE-2026-98978",
     "CVE-2026-98981",
     "CVE-2026-99082",
     "CVE-2026-99083"
@@ -7459,8 +7662,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115392",
    "pts": [
-    "Wasmtime 24.0.13、25.0.0 至 36.0.14、37.0.0 至 46.0.3 及 47.0.0 至 47.0.4 前版本存在沙盒逃脫漏洞，Linux 核心亦有多項缺陷。",
-    "**目前未遭利用**。沙盒逃脫需具備寫入權限的訪客在 macOS 或缺乏 openat2 的 Linux 核心觸發。"
+    "影響 Wasmtime 及 Linux kernel，**可能導致沙盒逃逸或堆積越界寫入**。",
+    "包含 CVE-2026-115392 等 6 個漏洞，CVSS 評分為 8.8，目前未有已遭利用紀錄。"
    ],
    "fix": "",
    "ai": true
@@ -8450,11 +8653,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 與 Siebel CRM 等產品存在安全漏洞。",
+    "**攻擊者可透過 HTTP 網路存取入侵系統**；目前未遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
@@ -8514,8 +8717,8 @@
   {
    "id": "grp:Linux:2026-10-19",
    "kind": "group",
-   "title": "Linux 核心多重資安漏洞",
-   "sub": "4 個 CVE · 最高 CVSS 9.8",
+   "title": "Linux 核心多項安全漏洞",
+   "sub": "5 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -8525,6 +8728,7 @@
    "cves": [
     "CVE-2026-98451",
     "CVE-2026-98454",
+    "CVE-2026-98466",
     "CVE-2026-98490",
     "CVE-2026-98549"
    ],
@@ -8534,8 +8738,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98451",
    "pts": [
-    "Linux 核心存在 SMB 用戶端越界讀取與 OpenvSwitch 記憶體釋放後使用等多項瑕疵。",
-    "**漏洞可能造成系統異常，目前尚未遭惡意利用。**"
+    "Linux kernel 之 smb、openvswitch、tcp 及 KVM 等元件存在漏洞。",
+    "**漏洞可能導致越界讀取與釋放後重用等風險**；目前未遭利用。"
    ],
    "fix": "",
    "ai": true
@@ -8595,7 +8799,7 @@
   {
    "id": "CVE-2026-0322",
    "kind": "cve",
-   "title": "Palo Alto 漏洞 CVE-2026-0322",
+   "title": "PAN-OS 遠端執行程式碼漏洞",
    "sub": "CVE-2026-0322 · CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -8612,38 +8816,73 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
    "pts": [
-    "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated atta"
+    "影響 PA-Series、VM-Series 及 Panorama 的 PAN-OS 軟體，具網路存取權的已認證攻擊者可**以 root 權限執行任意程式碼**。",
+    "CVE-2026-0322 的 CVSS 評分為 8.6，目前未遭利用，Cloud NGFW 與 Prisma Access 不受影響。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "限制僅有受信任的內部 IP 位址可存取管理介面。",
+   "ai": true
   },
   {
    "id": "grp:Windows Server:2026-10-14",
    "kind": "group",
-   "title": "Windows 多個高風險漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 7.8",
-   "sev": "note",
+   "title": "Adobe 軟體遠端執行漏洞",
+   "sub": "11 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
    "kev": false,
    "ransomware": false,
    "products": [
     "Windows Server"
    ],
    "cves": [
+    "CVE-2026-100127",
     "CVE-2026-100128",
     "CVE-2026-100129",
+    "CVE-2026-103844",
+    "CVE-2026-103845",
+    "CVE-2026-103846",
+    "CVE-2026-103847",
+    "CVE-2026-103851",
+    "CVE-2026-103854",
+    "CVE-2026-106625",
     "CVE-2026-96521"
    ],
-   "cvss": 7.8,
+   "cvss": 8.6,
    "published": "2026-10-13T21:17:14+00:00",
    "first_seen": "2026-10-28T18:53:14+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100128",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100127",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 7.8。",
-    "Photoshop Desktop is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the cu"
+    "影響 Photoshop Desktop、Bridge、Adobe Framemaker 與 Dimension，受害者開啟惡意檔案可**致使攻擊者執行任意程式碼**。",
+    "包含越界寫入與未受控搜尋路徑漏洞，CVSS 評分為 8.6，目前未有已遭利用紀錄。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-106173",
+   "kind": "cve",
+   "title": "FortiSIEM 路徑穿越漏洞",
+   "sub": "CVE-2026-106173 · CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Fortinet"
+   ],
+   "cves": [
+    "CVE-2026-106173"
+   ],
+   "cvss": 9.8,
+   "published": "2026-10-13T18:17:14+00:00",
+   "first_seen": "2026-11-10T20:50:10+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106173",
+   "pts": [
+    "Fortinet FortiSIEM 7.5.0 及 7.0 至 7.4 所有版本存在路徑穿越漏洞。",
+    "**攻擊者可透過特製封包執行未經授權的程式碼或命令**；目前未遭利用。"
+   ],
+   "fix": "",
+   "ai": true
   },
   {
    "id": "CVE-2024-34324",
