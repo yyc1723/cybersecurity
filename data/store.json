@@ -35,6 +35,315 @@
  },
  "events": [
   {
+   "id": "tw:03b4fe33d46b",
+   "kind": "news",
+   "title": "漢來美食委外購物商城發生資安事件，部分消費者訂單資料遭異常存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180424",
+   "pts": [
+    "餐飲服務公司漢來美食（1268）11月10日於股市公開資訊觀測站發布重大訊息，接獲委外購物商城服務廠商順立智慧（Cyberbiz）通知發生資安事件，該公司資料庫部分資料遭未經授權的異常存取，涉及漢來美食線上購物商城部分消費者訂單相關資料。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "漢來美食委外購物商城發生資安事件，部分消費者訂單資料遭異常存取",
+    "desc": "餐飲服務公司漢來美食（1268）11月10日於股市公開資訊觀測站發布重大訊息，接獲委外購物商城服務廠商順立智慧（Cyberbiz）通知發生資安事件，該公司資料庫部分資料遭未經授權的異常存取，涉及漢來美食線上購物商城部分消費者訂單相關資料。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8e8212aff70f",
+   "kind": "news",
+   "title": "黑松線上商店委外廠商資料庫遭異常存取，訂單資料恐受影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180420",
+   "pts": [
+    "11月10日食品飲料公司黑松（1234）於股市公開資訊觀測站發布重大訊息，旗下線上商店平臺的委外服務廠商順立智慧（Cyberbiz）發生資安事件，資料庫遭到未經授權的異常存取，其中包含黑松線上商店平臺的訂單相關資料。根據初步評估，黑松表示目前對公司財務及業務並無重大影響。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "黑松線上商店委外廠商資料庫遭異常存取，訂單資料恐受影響",
+    "desc": "11月10日食品飲料公司黑松（1234）於股市公開資訊觀測站發布重大訊息，旗下線上商店平臺的委外服務廠商順立智慧（Cyberbiz）發生資安事件，資料庫遭到未經授權的異常存取，其中包含黑松線上商店平臺的訂單相關資料。根據初步評估，黑松表示目前對公司財務及業務並無重大影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c5af84d25e59",
+   "kind": "news",
+   "title": "駭客利用大數據平臺Qubole被竊憑證，入侵數十家企業AWS環境竊取資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180414",
+   "pts": [
+    "雲端資安業者Sentra與Wiz於11月9日揭露一起供應鏈攻擊事件，駭客取得大數據處理與資料湖平臺Qubole的AWS身分與存取管理（IAM）憑證，利用企業先前授予Qubole的跨帳戶存取權限，入侵數十家企業的AWS環境。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "駭客利用大數據平臺Qubole被竊憑證，入侵數十家企業AWS環境竊取資料",
+    "desc": "雲端資安業者Sentra與Wiz於11月9日揭露一起供應鏈攻擊事件，駭客取得大數據處理與資料湖平臺Qubole的AWS身分與存取管理（IAM）憑證，利用企業先前授予Qubole的跨帳戶存取權限，入侵數十家企業的AWS環境。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:1e470e6dd511",
+   "kind": "news",
+   "title": "CISA警告6個弱點遭積極利用，其中包含Outlook、Chrome零時差漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180413",
+   "pts": [
+    "11月10日美國網路安全與基礎設施安全局（CISA）宣布，已掌握6個新漏洞遭到積極利用的證據，將其列入已遭利用漏洞名單（KEV），並要求聯邦機構限期修補。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "CISA警告6個弱點遭積極利用，其中包含Outlook、Chrome零時差漏洞",
+    "desc": "11月10日美國網路安全與基礎設施安全局（CISA）宣布，已掌握6個新漏洞遭到積極利用的證據，將其列入已遭利用漏洞名單（KEV），並要求聯邦機構限期修補。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:0cd77f254fbd",
+   "kind": "news",
+   "title": "SAP發布11月例行更新，修補4個滿分漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180411",
+   "pts": [
+    "企業應用軟體公司SAP於11月10日發布本月例行更新（Security Patch Day），修補旗下多項企業軟體產品的安全漏洞。本次公布35個應用系統的資安漏洞、4個在GitHub公布的程式庫弱點，並更新先前發布的3份資安公告內容。其中最受關注的地方，在於本次修補4個CVSS嚴重程度評分達10分的"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "SAP發布11月例行更新，修補4個滿分漏洞",
+    "desc": "企業應用軟體公司SAP於11月10日發布本月例行更新（Security Patch Day），修補旗下多項企業軟體產品的安全漏洞。本次公布35個應用系統的資安漏洞、4個在GitHub公布的程式庫弱點，並更新先前發布的3份資安公告內容。其中最受關注的地方，在於本次修補4個CVSS嚴重程度評分達10分的重大漏洞，分別影響SAP NetWeaver AS ABAP、SAP Web Dispatcher，以及SAP Gateway等應用系統。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:18f1329b2fbc",
+   "kind": "news",
+   "title": "Apple發布iOS、iPadOS 27.2.1與18.7.12版，緊急修補10個資安漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180410",
+   "pts": [
+    "Apple於11月9日發布iOS與iPadOS 27.2.1版及18.7.12版安全更新，兩份公告分別列出9個與6個CVE漏洞編號，扣除重複項目後，共修補10個獨立漏洞，受影響功能主要集中在iMessage、AirPlay及Bluetooth等三方面。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Apple發布iOS、iPadOS 27.2.1與18.7.12版，緊急修補10個資安漏洞",
+    "desc": "Apple於11月9日發布iOS與iPadOS 27.2.1版及18.7.12版安全更新，兩份公告分別列出9個與6個CVE漏洞編號，扣除重複項目後，共修補10個獨立漏洞，受影響功能主要集中在iMessage、AirPlay及Bluetooth等三方面。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d420ef4f9cf7",
+   "kind": "news",
+   "title": "日本宜得利系統遭非法存取，外洩企業會員、客戶個資近3,800萬筆",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180409",
+   "pts": [
+    "日本居家用品連鎖宜得利（Nitori）集團週一（11月9日）公告客戶系統遭人未經授權存取，導致個人與企業會員，以及線上商店消費者的個資外洩，規模最高達3,762萬筆。 宜得利是10月中下旬發現異常，11月6日確認公司管理的系統遭到來自第三方未經授權的存取。公司立即切斷存取，並連同外部專門機構進行調查"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "日本宜得利系統遭非法存取，外洩企業會員、客戶個資近3,800萬筆",
+    "desc": "日本居家用品連鎖宜得利（Nitori）集團週一（11月9日）公告客戶系統遭人未經授權存取，導致個人與企業會員，以及線上商店消費者的個資外洩，規模最高達3,762萬筆。 宜得利是10月中下旬發現異常，11月6日確認公司管理的系統遭到來自第三方未經授權的存取。公司立即切斷存取，並連同外部專門機構進行調查。截至目前調查顯示，該公司伺服器上所保存的個人資料，確定最多可能已有 3,762萬筆外流。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:eefbe4c39225",
+   "kind": "news",
+   "title": "微軟警告Outlook零時差漏洞已遭到利用",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180405",
+   "pts": [
+    "微軟於11月例行更新（Patch Tuesday）共修補超過1千個資安漏洞，其中有一個特別值得注意，原因是該公司已偵測到漏洞利用活動，呼籲用戶儘速安裝修補程式。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "微軟警告Outlook零時差漏洞已遭到利用",
+    "desc": "微軟於11月例行更新（Patch Tuesday）共修補超過1千個資安漏洞，其中有一個特別值得注意，原因是該公司已偵測到漏洞利用活動，呼籲用戶儘速安裝修補程式。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:47fb54d898de",
+   "kind": "news",
+   "title": "微軟發布11月例行更新，修補1,094個資安漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T07:47:25+00:00",
+   "first_seen": "2026-11-11T07:47:25+00:00",
+   "updated": "2026-11-11T07:47:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180404",
+   "pts": [
+    "11月10日微軟發布本月例行更新（Patch Tuesday），總共修補1,094個由該公司登記CVE編號的漏洞，相較於上個月1,413個明顯減少。若加上165個Chrome資安漏洞，這次修補的弱點達到1,259個。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "微軟發布11月例行更新，修補1,094個資安漏洞",
+    "desc": "11月10日微軟發布本月例行更新（Patch Tuesday），總共修補1,094個由該公司登記CVE編號的漏洞，相較於上個月1,413個明顯減少。若加上165個Chrome資安漏洞，這次修補的弱點達到1,259個。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "grp:Go:2026-11-11",
+   "kind": "group",
+   "title": "Go 語言 多個高風險漏洞",
+   "sub": "4 個 CVE",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Go"
+   ],
+   "cves": [
+    "CVE-2026-97033",
+    "CVE-2026-97036",
+    "CVE-2026-97037",
+    "CVE-2026-97038"
+   ],
+   "cvss": null,
+   "published": "2026-11-11T05:19:57+00:00",
+   "first_seen": "2026-11-11T07:47:20+00:00",
+   "updated": "2026-11-11T07:47:20+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
+   "pts": [
+    "同日公布 4 個漏洞。",
+    "Building a malicious package that uses cgo could cause arbitrary code execution at build time through several compiler and linker flags perm"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "Building a malicious package that uses cgo could cause arbitrary code execution at build time through several compiler and linker flags permitted in \"#cgo\" directives. Specifically, \"--sysroot\" in GCC and Clang relocates compiler subprograms, spec files, and CRT startup objects to an attacker-controlled directory; \"-target\" in Clang falls back to executing target helper tools from the current working directory when not found in PATH; \"-isysroot\" and \"-Wl,-syslibroot\" can pass a regular file on disk to GNU ld.bfd, which interprets it as a positional linker script; and \"-x\" permitted specifying arbitrary compiler input languages beyond those supported by cgo. \"--sysroot\" and \"-target\" are now disallowed in \"#cgo\" flags, \"-isysroot\" and \"-Wl,-syslibroot\" are verified not to point to regular files, and \"-x\" is restricted to the C, C++, Objective-C, and assembler languages supported by cgo.",
+     "On Darwin, building a malicious package that uses cgo could cause arbitrary code execution when using the Apple linker due to passing \"-l to_library <path>\" in a \"#cgo LDFLAGS\" directive. The Apple linker recombines the separated arguments \"-l\" and \"to_library\" into \"-lto_library\", which loads an arbitrary LTO plugin dynamic library at link time. The go command now disallows \"-l\" followed by \"to_library\" in \"#cgo LDFLAGS\", rejects \"-lazy_library\", \"-lazy_framework\", \"-load_hidden\", \"-library\", and \"-library-path\", and checks recombined \"-l\" arguments against disallowed linker flags and patterns.",
+     "Building a malicious package that uses cgo could cause arbitrary code execution at link time by passing linker script files to the host linker via \"#cgo LDFLAGS\". Split \"-Wl,\" flags that consume a following argument (such as \"-Wl,-rpath\", \"-Wl,--just-symbols\", and \"-Wl,-undefined\") previously accepted a bare second argument without a \"-Wl,\" prefix, which the compiler driver passes directly to the linker as a positional input file. Additionally, when using GNU ld.bfd, flags such as \"-framework\", \"-Wl,-framework\", \"-Wl,-undefined\", \"-Wl,--just-symbols\", \"-Wl,-R\", \"-Wl,-subsystem\", and (on non-Darwin platforms) \"-Wl,-sectcreate\" could cause ld.bfd to interpret their arguments as linker scripts if they named a regular file on disk. The go command now requires a \"-Wl,\" prefix on the second token of split \"-Wl,\" flags (except \"-Wl,-R\"), verifies that these flags do not reference linker script files, and disallows bare \"-Wl,--warn-backrefs-exclude\".",
+     "Building a malicious package containing \".syso\" files or cgo linker inputs could inject arbitrary linker flags or execute arbitrary code at link time. Linker input files—including \".syso\" files, direct object or library inputs in \"#cgo LDFLAGS\", and libraries in \"-L\" directories—were passed to the external linker without validating their format or checking for embedded linker options. Across platforms, this allowed executing GNU ld implicit linker scripts disguised as libraries or \".syso\" files (or loaded via \"-l:<filename>\" or \"-l\" containing path separators), injecting unallowlisted linker flags via PE/COFF \".drectve\" sections on Windows or Mach-O \"LC_LINKER_OPTION\" load commands on Darwin, or invoking LTO plugins via GCC or LLVM LTO intermediate representation sections in ELF, PE/COFF, or Mach-O objects. The go command now verifies that \".syso\" files, direct linker inputs, and libraries in \"-L\" directories are valid binary objects or archives that do not contain unallowlisted \".drectve\" directives, \"LC_LINKER_OPTION\" load commands, or LTO IR sections, and disallows \"-l:<filename>\" and \":\", \"=\", or path separators in \"-l\" flags."
+    ]
+   }
+  },
+  {
    "id": "tw:604ba2b9c99b",
    "kind": "news",
    "title": "俄羅斯駭客入侵羅馬尼亞政府Exchange伺服器，意圖竊取北約及歐盟相關郵件",
@@ -174,7 +483,7 @@
    "cvss": 9.8,
    "published": "2026-11-10T20:17:20+00:00",
    "first_seen": "2026-11-10T20:50:10+00:00",
-   "updated": "2026-11-11T01:15:02+00:00",
+   "updated": "2026-11-11T07:47:20+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
    "pts": [
@@ -192,7 +501,9 @@
      "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2.0 through 7.2.11, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2.0 through 7.2.11, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.1 through 7.4.7, FortiManager Cloud 7.2.1 through 7.2.10 may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
      "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim.",
      "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests.",
-     "A improper authorization vulnerability in Fortinet FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.5, FortiManager 7.2.0 through 7.2.8 may allow an unauthenticated attacker that can reach the FGFM port to execute code or commands via crafted FGFM packets."
+     "A improper authorization vulnerability in Fortinet FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.5, FortiManager 7.2.0 through 7.2.8 may allow an unauthenticated attacker that can reach the FGFM port to execute code or commands via crafted FGFM packets.",
+     "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2.0 through 7.2.11, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2.0 through 7.2.11, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.1 through 7.4.7, FortiManager Cloud 7.2.1 through 7.2.10 may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
+     "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests."
     ]
    }
   },
@@ -218,7 +529,7 @@
    "cvss": 9.6,
    "published": "2026-11-10T18:17:34+00:00",
    "first_seen": "2026-11-10T20:50:10+00:00",
-   "updated": "2026-11-11T01:15:02+00:00",
+   "updated": "2026-11-11T07:47:20+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125343",
    "pts": [
@@ -230,6 +541,12 @@
    "ai_ver": 2,
    "raw": {
     "descs": [
+     "Buffer overflow in Compositing in Google Chrome prior to 157.0.8103.50 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.50 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in GPU in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Buffer overflow in Compositing in Google Chrome prior to 157.0.8103.50 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Type confusion in V8 in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
@@ -263,7 +580,7 @@
    "cvss": 9.8,
    "published": "2026-11-10T16:17:17+00:00",
    "first_seen": "2026-11-10T20:50:10+00:00",
-   "updated": "2026-11-10T20:50:10+00:00",
+   "updated": "2026-11-11T07:47:20+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121653",
    "pts": [
@@ -276,7 +593,8 @@
    "raw": {
     "descs": [
      "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code execution.",
-     "Missing authentication in Ivanti Cloud Services Application version 5.0.8 allows a remote unauthenticated attacker to add and delete arbitrary trusted EPM Core certificate entries."
+     "Missing authentication in Ivanti Cloud Services Application version 5.0.8 allows a remote unauthenticated attacker to add and delete arbitrary trusted EPM Core certificate entries.",
+     "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code execution."
     ]
    }
   },
@@ -12372,15 +12690,15 @@
    "cvss": 10.0,
    "published": "2026-10-20T22:17:46+00:00",
    "first_seen": "2026-10-27T09:18:04+00:00",
-   "updated": "2026-11-10T20:50:10+00:00",
+   "updated": "2026-11-11T07:47:20+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "Oracle PeopleSoft Enterprise PeopleTools 8.61-8.63 與 Siebel CRM 等產品存在安全漏洞。",
-    "**攻擊者可透過 HTTP 網路存取入侵系統**；目前未遭利用。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -12867,7 +13185,27 @@
      "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Analytics Web General).  Supported versions that are affected are 8.2.0.0.0, 12.2.1.4.0 and  26.01.0.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Business Intelligence Enterprise Edition as well as  unauthorized update, insert or delete access to some of Oracle Business Intelligence Enterprise Edition accessible data and  unauthorized read access to a subset of Oracle Business Intelligence Enterprise Edition accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H).",
      "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: BI Search).  Supported versions that are affected are 8.2.0.0.0, 12.2.1.4.0 and  26.01.0.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition.  Successful attacks of this vulnerability can result in takeover of Oracle Business Intelligence Enterprise Edition. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: BI Foundation).   The supported version that is affected is 12.2.1.4.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition.  Successful attacks of this vulnerability can result in takeover of Oracle Business Intelligence Enterprise Edition. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Platform Security).  Supported versions that are affected are 8.2.0.0.0 and  26.01.0.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the Oracle Business Intelligence Enterprise Edition executes to compromise Oracle Business Intelligence Enterprise Edition.  While the vulnerability is in Oracle Business Intelligence Enterprise Edition, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Business Intelligence Enterprise Edition. CVSS 3.1 Base Score 8.3 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H)."
+     "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Platform Security).  Supported versions that are affected are 8.2.0.0.0 and  26.01.0.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the Oracle Business Intelligence Enterprise Edition executes to compromise Oracle Business Intelligence Enterprise Edition.  While the vulnerability is in Oracle Business Intelligence Enterprise Edition, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Business Intelligence Enterprise Edition. CVSS 3.1 Base Score 8.3 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Communications BRM - Elastic Charging Engine product of Oracle Communications (component: Cloud native deployment).  Supported versions that are affected are 15.0.0.0.0, 15.0.1.0.0, 15.1.0.0.0 and  15.2.0.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via RMI to compromise Oracle Communications BRM - Elastic Charging Engine.  Successful attacks of this vulnerability can result in takeover of Oracle Communications BRM - Elastic Charging Engine. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Communications Billing and Revenue Management product of Oracle Communications (component: BRM Server).  Supported versions that are affected are 15.0.0.0.0, 15.0.1.0.0, 15.1.0.0.0 and  15.2.0.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Communications Billing and Revenue Management.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Communications Billing and Revenue Management accessible data as well as  unauthorized access to critical data or complete access to all Oracle Communications Billing and Revenue Management accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Communications BRM - Elastic Charging Engine product of Oracle Communications (component: Security).   The supported version that is affected is 15.2.0.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via TLS to compromise Oracle Communications BRM - Elastic Charging Engine.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Communications BRM - Elastic Charging Engine accessible data as well as  unauthorized access to critical data or complete access to all Oracle Communications BRM - Elastic Charging Engine accessible data. CVSS 3.1 Base Score 8.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Workflow product of Oracle E-Business Suite (component: Workflow Notification Mailer).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Workflow.  While the vulnerability is in Workflow, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Workflow. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Shipping Execution product of Oracle E-Business Suite (component: Workflow Events).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Shipping Execution.  Successful attacks of this vulnerability can result in takeover of Oracle Shipping Execution. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Product Hub.  Successful attacks of this vulnerability can result in takeover of Oracle Product Hub. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Product Hub.  Successful attacks of this vulnerability can result in takeover of Oracle Product Hub. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Product Hub.  Successful attacks of this vulnerability can result in takeover of Oracle Product Hub. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Database and Comm SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows low privileged attacker with network access via JDENET to compromise JD Edwards EnterpriseOne Tools.  Successful attacks of this vulnerability can result in takeover of JD Edwards EnterpriseOne Tools. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerability allows low privileged attacker with network access via JDENET to compromise JD Edwards EnterpriseOne Tools.  Successful attacks of this vulnerability can result in takeover of JD Edwards EnterpriseOne Tools. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Service Bus.  Successful attacks of this vulnerability can result in takeover of Oracle Service Bus. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Service Bus.  Successful attacks of this vulnerability can result in takeover of Oracle Service Bus. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: BPM Composer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Business Process Management Suite.  Successful attacks of this vulnerability can result in takeover of Oracle Business Process Management Suite. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Process Management Suite.  Successful attacks of this vulnerability can result in takeover of Oracle Business Process Management Suite. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via SOAP to compromise Oracle Business Process Management Suite.  While the vulnerability is in Oracle Business Process Management Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Business Process Management Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Business Process Management Suite.  While the vulnerability is in Oracle Business Process Management Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Business Process Management Suite accessible data as well as  unauthorized access to critical data or complete access to all Oracle Business Process Management Suite accessible data. CVSS 3.1 Base Score 9.6 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with logon to the infrastructure where Oracle Outside In Technology executes to compromise Oracle Outside In Technology.  Successful attacks of this vulnerability can result in takeover of Oracle Outside In Technology. CVSS 3.1 Base Score 8.4 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Case management  Service (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Process Management Suite.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Business Process Management Suite accessible data as well as  unauthorized update, insert or delete access to some of Oracle Business Process Management Suite accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N)."
     ]
    }
   },
@@ -13434,6 +13772,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-11T01:14:47+00:00",
- "kev_last": "2026-11-11T01:14:47+00:00"
+ "nvd_last": "2026-11-11T07:47:06+00:00",
+ "kev_last": "2026-11-11T07:47:06+00:00"
 }
