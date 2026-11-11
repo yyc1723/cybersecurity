@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T07:47:06+00:00",
+ "generated": "2026-11-11T16:11:08+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,125 @@
  },
  "events": [
   {
+   "id": "tw:fff8ef0585f0",
+   "kind": "news",
+   "title": "DeepMind以AI代理驗證Signal加密實作安全性，數學證明擴及機器碼層級",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T16:11:26+00:00",
+   "first_seen": "2026-11-11T16:11:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180430",
+   "pts": [
+    "Google DeepMind公布AI代理形式化驗證（Formal Verification）框架AlphaProof Code，利用AI代理驗證Signal加密通訊協定的核心程式庫libsignal，將安全性證明延伸到編譯後的機器碼。Signal協定廣泛應用於通訊服務，此次5名DeepMind研究"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:e4b46fd50890",
+   "kind": "news",
+   "title": "Google Gemini 4 Carbon全面上線，以較低價對打Anthropic Fable/Mythos 5.2",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T16:11:26+00:00",
+   "first_seen": "2026-11-11T16:11:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180428",
+   "pts": [
+    "Google本周宣布最新一代尖端模型Gemini 4 Carbon 已開放給企業、開發者及個人付費用戶，API存取費用為Anthropic Fable/Mythos 5.2一半。 Gemini 4 Carbon是繼Gemini 4 Argon推出的新一代尖端模型，著重強化程式開發、代理式AI、科學研"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:030b546cfe85",
+   "kind": "news",
+   "title": "Adobe發布11月上半例行更新，修補110個資安漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T16:11:26+00:00",
+   "first_seen": "2026-11-11T16:11:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180425",
+   "pts": [
+    "11月10日Adobe發布例行更新，針對旗下9款產品修補110個漏洞，涵蓋Adobe Experience Manager（AEM）、Adobe Connect、Photoshop、Premiere、After Effects、Audition、Dimension、M"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:682df4eeb074",
+   "kind": "news",
+   "title": "【資安日報】11月11日，駭客利用大數據平臺Qubole被竊憑證，入侵數十家企業AWS環境竊取資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T16:11:26+00:00",
+   "first_seen": "2026-11-11T16:11:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180422",
+   "pts": [
+    "本日新聞焦點 ● 駭客利用大數據平臺Qubole被竊憑證，入侵數十家企業AWS環境 ● 日本警方查獲車載偽基地臺，逮捕涉嫌干擾手機通訊的男子 ● netiCRM服務商遭駭，超過30個非營利組織示警捐款人個資恐外洩"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-126617",
+   "kind": "cve",
+   "title": "hMailServer SQL注入漏洞",
+   "sub": "CVE-2026-126617 · CVSS 8.8",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SQL Server",
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-126617"
+   ],
+   "cvss": 8.8,
+   "published": "2026-11-11T09:17:13+00:00",
+   "first_seen": "2026-11-11T16:11:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126617",
+   "pts": [
+    "影響使用 MySQL/MariaDB 或 PostgreSQL 之 Progressive Robot hMailServer 6.0.0-B1 至 6.2.18 版本，遠端攻擊者可藉由 SQL 注入變更執行的 SQL 指令。",
+    "**目前未發現遭利用情形**，驗證與未驗證遠端攻擊者皆可觸發此漏洞，SQL Server 及 SQL Server Compact 不受影響。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "tw:03b4fe33d46b",
    "kind": "news",
    "title": "漢來美食委外購物商城發生資安事件，部分消費者訂單資料遭異常存取",
@@ -379,10 +498,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180424",
    "pts": [
-    "餐飲服務公司漢來美食（1268）11月10日於股市公開資訊觀測站發布重大訊息，接獲委外購物商城服務廠商順立智慧（Cyberbiz）通知發生資安事件，該公司資料庫部分資料遭未經授權的異常存取，涉及漢來美食線上購物商城部分消費者訂單相關資料。"
+    "漢來美食接獲委外廠商順立智慧通知，**資料庫遭未經授權異常存取**。",
+    "影響範圍涉及漢來美食線上購物商城部分消費者之訂單相關資料。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:8e8212aff70f",
@@ -402,10 +522,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180420",
    "pts": [
-    "11月10日食品飲料公司黑松（1234）於股市公開資訊觀測站發布重大訊息，旗下線上商店平臺的委外服務廠商順立智慧（Cyberbiz）發生資安事件，資料庫遭到未經授權的異常存取，其中包含黑松線上商店平臺的訂單相關資料。根據初步評估，黑松表示目前對公司財務及業務並無重大影響。"
+    "黑松委外服務廠商順立智慧發生資安事件，**資料庫遭未經授權異常存取**。",
+    "事件包含線上商店訂單資料，初步評估目前對公司財務及業務無重大影響。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:c5af84d25e59",
@@ -425,10 +546,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180414",
    "pts": [
-    "雲端資安業者Sentra與Wiz於11月9日揭露一起供應鏈攻擊事件，駭客取得大數據處理與資料湖平臺Qubole的AWS身分與存取管理（IAM）憑證，利用企業先前授予Qubole的跨帳戶存取權限，入侵數十家企業的AWS環境。"
+    "駭客取得大數據平臺 Qubole 的 AWS IAM 憑證，發動供應鏈攻擊。",
+    "駭客利用企業先前授予的跨帳戶權限，**入侵數十家企業 AWS 環境竊取資料**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:1e470e6dd511",
@@ -448,10 +570,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180413",
    "pts": [
-    "11月10日美國網路安全與基礎設施安全局（CISA）宣布，已掌握6個新漏洞遭到積極利用的證據，將其列入已遭利用漏洞名單（KEV），並要求聯邦機構限期修補。"
+    "CISA 於 11 月 10 日將 6 個已遭積極利用的新漏洞列入已知被利用漏洞名單（KEV），**其中包含 Outlook 與 Chrome 零時差漏洞**。",
+    "CISA 已要求聯邦機構在指定期限內完成漏洞修補。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:0cd77f254fbd",
@@ -471,10 +594,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180411",
    "pts": [
-    "企業應用軟體公司SAP於11月10日發布本月例行更新（Security Patch Day），修補旗下多項企業軟體產品的安全漏洞。本次公布35個應用系統的資安漏洞、4個在GitHub公布的程式庫弱點，並更新先前發布的3份資安公告內容。其中最受關注的地方，在於本次修補4個CVSS嚴重程度評分達10分的"
+    "SAP 發布例行更新修補 35 個系統漏洞、4 個程式庫弱點並更新 3 份公告。",
+    "**包含修補 4 個 CVSS 滿分 10 分漏洞**，影響 SAP NetWeaver AS ABAP 等系統。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:18f1329b2fbc",
@@ -494,10 +618,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180410",
    "pts": [
-    "Apple於11月9日發布iOS與iPadOS 27.2.1版及18.7.12版安全更新，兩份公告分別列出9個與6個CVE漏洞編號，扣除重複項目後，共修補10個獨立漏洞，受影響功能主要集中在iMessage、AirPlay及Bluetooth等三方面。"
+    "Apple 於 11 月 9 日發布 iOS 與 iPadOS 27.2.1 及 18.7.12 安全更新，扣除重複項目後共修補 10 個獨立漏洞。",
+    "**受影響功能主要集中在 iMessage、AirPlay 及 Bluetooth** 等三方面。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:d420ef4f9cf7",
@@ -517,10 +642,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180409",
    "pts": [
-    "日本居家用品連鎖宜得利（Nitori）集團週一（11月9日）公告客戶系統遭人未經授權存取，導致個人與企業會員，以及線上商店消費者的個資外洩，規模最高達3,762萬筆。 宜得利是10月中下旬發現異常，11月6日確認公司管理的系統遭到來自第三方未經授權的存取。公司立即切斷存取，並連同外部專門機構進行調查"
+    "日本宜得利確認客戶系統遭第三方非法存取，已立即切斷連線並進行調查。",
+    "伺服器保存之會員與線上商店客戶個資，**確定最多可能有 3,762 萬筆外流**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:eefbe4c39225",
@@ -540,10 +666,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180405",
    "pts": [
-    "微軟於11月例行更新（Patch Tuesday）共修補超過1千個資安漏洞，其中有一個特別值得注意，原因是該公司已偵測到漏洞利用活動，呼籲用戶儘速安裝修補程式。"
+    "微軟於 11 月例行更新修補超過 1 千個資安漏洞，並**已偵測到 Outlook 零時差漏洞的實際利用活動**。",
+    "微軟呼籲用戶儘速安裝相關修補程式。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:47fb54d898de",
@@ -563,15 +690,16 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180404",
    "pts": [
-    "11月10日微軟發布本月例行更新（Patch Tuesday），總共修補1,094個由該公司登記CVE編號的漏洞，相較於上個月1,413個明顯減少。若加上165個Chrome資安漏洞，這次修補的弱點達到1,259個。"
+    "微軟發布 11 月例行更新，**總計修補 1,094 個微軟 CVE 弱點**。",
+    "若加計 165 個 Chrome 資安漏洞，本次修補弱點數量達到 1,259 個。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Go:2026-11-11",
    "kind": "group",
-   "title": "Go 語言 多個高風險漏洞",
+   "title": "Go cgo遠端執行程式碼漏洞",
    "sub": "4 個 CVE",
    "sev": "high",
    "kev": false,
@@ -591,11 +719,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
    "pts": [
-    "同日公布 4 個漏洞。",
-    "Building a malicious package that uses cgo could cause arbitrary code execution at build time through several compiler and linker flags perm"
+    "影響使用 cgo 的 Go 語言編譯過程，建置包含特定標記或惡意套件（如 .syso 檔案）時，可能導致在編譯或連結時期執行任意程式碼。",
+    "**目前尚未發現遭漏洞利用情形**，攻擊者可透過建置惡意套件在編譯或連結時注入標記與執行指令。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:604ba2b9c99b",
@@ -8753,7 +8881,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多款產品安全漏洞",
+   "title": "Oracle多項產品安全漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -8985,11 +9113,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61 至 8.63，以及 Siebel CRM Cloud Applications 17.0 至 26.9 等版本，未授權或低權限攻擊者可存取並妥協系統。",
+    "**目前尚未發現遭漏洞利用情形**，最高 CVSS 風險評分為 10.0 分，攻擊者可透過 HTTP 或網路進行存取與攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
