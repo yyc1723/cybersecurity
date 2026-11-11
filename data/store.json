@@ -4,41 +4,161 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "items": [
    {
-    "title": "處理：ASP.NET 漏洞 CVE-2026-125383",
-    "desc": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) befor"
+    "title": "本單位：修補 Outlook 漏洞",
+    "desc": "存在不安全動作漏洞，**已列入 CISA KEV 已遭利用清單**。"
    },
    {
-    "title": "處理：Contact Form 7 漏洞",
-    "desc": "目前尚未遭利用。在預設 Debian/Ubuntu Apache 上可執行檔案；在 nginx 等設定下則限於寫入檔案至上傳目錄。"
+    "title": "本單位：修補 ASP.NET 漏洞",
+    "desc": "CVE-2026-125383 存在身份驗證繞過漏洞。"
    },
    {
-    "title": "處理：Langium 阻斷服務漏洞",
-    "desc": "目前未發現已遭利用。僅影響啟用 IndentationAwareTokenBuilder 之設定，使用預設建置器者不受影響。"
+    "title": "修補 Cisco XXE 漏洞",
+    "desc": "BroadWorks 存在漏洞且已被證實遭惡意利用。"
    },
    {
-    "title": "處理：SonicWall修補SSL-VPN身分驗證繞過漏洞，",
-    "desc": "原廠已展開調查並呼籲客戶儘速更新系統。"
+    "title": "修補 Fortinet 產品漏洞",
+    "desc": "FortiAnalyzer 與 FortiSIEM 存在高風險漏洞。"
    },
    {
-    "title": "處理：【資安日報】11月9日，AI自動化攻擊系統BossAI",
-    "desc": "Rails 已修補重大漏洞，使用 ImageMagick 處理上傳圖片的網站需留意。"
+    "title": "更新 Chrome 瀏覽器",
+    "desc": "公布 6 個漏洞，包含 Compositing 緩衝區溢位漏洞。"
    },
    {
-    "title": "處理：日本ISP業者Arara遭駭，影響小學館、BIC Ca",
-    "desc": "影響小學館、BIC Camera、摩斯漢堡等超過 380 家企業客戶，受影響服務包含 Arara Message 及相關伺服器環境。"
+    "title": "修補 Ivanti 產品漏洞",
+    "desc": "Endpoint Manager 存在 SQL 注入漏洞，可遠端執行程式碼。"
    }
   ],
   "ai": true
  },
  "events": [
   {
+   "id": "tw:604ba2b9c99b",
+   "kind": "news",
+   "title": "俄羅斯駭客入侵羅馬尼亞政府Exchange伺服器，意圖竊取北約及歐盟相關郵件",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Exchange"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T01:15:04+00:00",
+   "first_seen": "2026-11-11T01:15:04+00:00",
+   "updated": "2026-11-11T01:15:04+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180399",
+   "pts": [
+    "資安業者ESET近日揭露，與俄羅斯情報機構有關的駭客組織Turla，利用過去未曝光的惡意程式工具組Cereal，入侵哈薩克及羅馬尼亞政府機構的Microsoft Exchange伺服器，藉此蒐集情報。ESET於2025年11月發現哈薩克政府機構遭入侵，後續也在羅馬尼亞政府機構發現相同工具組。在羅馬尼"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "俄羅斯駭客入侵羅馬尼亞政府Exchange伺服器，意圖竊取北約及歐盟相關郵件",
+    "desc": "資安業者ESET近日揭露，與俄羅斯情報機構有關的駭客組織Turla，利用過去未曝光的惡意程式工具組Cereal，入侵哈薩克及羅馬尼亞政府機構的Microsoft Exchange伺服器，藉此蒐集情報。ESET於2025年11月發現哈薩克政府機構遭入侵，後續也在羅馬尼亞政府機構發現相同工具組。在羅馬尼亞的案例中，惡意程式被設定為蒐集與北大西洋公約組織（NATO）及歐盟機構往來的郵件。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d6f18a3ba129",
+   "kind": "news",
+   "title": "柏克萊研究推演2027至2029年AI資安威脅，AI代理供應鏈與自動化攻防成焦點",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T01:15:04+00:00",
+   "first_seen": "2026-11-11T01:15:04+00:00",
+   "updated": "2026-11-11T01:15:04+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180348",
+   "pts": [
+    "美國加州大學柏克萊分校長期網路安全中心（CLTC）旗下AI Security Initiative提出2027至2029年3種AI資安威脅情境，推演攻擊者如何利用AI擴大社交工程攻擊、自動尋找漏洞並與企業防禦系統交手，甚至利用企業與供應商AI代理之間的信任關係發動攻擊，影響企業營運。 2027年：A"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "柏克萊研究推演2027至2029年AI資安威脅，AI代理供應鏈與自動化攻防成焦點",
+    "desc": "美國加州大學柏克萊分校長期網路安全中心（CLTC）旗下AI Security Initiative提出2027至2029年3種AI資安威脅情境，推演攻擊者如何利用AI擴大社交工程攻擊、自動尋找漏洞並與企業防禦系統交手，甚至利用企業與供應商AI代理之間的信任關係發動攻擊，影響企業營運。 2027年：AI擴大針對性社交工程攻擊規模",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:889987523fb0",
+   "kind": "news",
+   "title": "澳洲更新關鍵基礎設施資安指引，強化網路隔離措施並納入AI風險管理建議",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T01:15:04+00:00",
+   "first_seen": "2026-11-11T01:15:04+00:00",
+   "updated": "2026-11-11T01:15:04+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180258",
+   "pts": [
+    "澳洲內政部轄下CISC更新關鍵基礎設施風險管理計畫（CIRMP）指引，說明業者如何透過身分驗證、網路隔離及供應鏈管理，降低網路攻擊與關鍵服務中斷的風險。新版指引也納入AI系統可能造成的營運風險。 在身分驗證方面，新版指引要求適用強化規範的業者，針對關鍵系統及遠端存取服務採用防網路釣魚多因素驗證（MF"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "澳洲更新關鍵基礎設施資安指引，強化網路隔離措施並納入AI風險管理建議",
+    "desc": "澳洲內政部轄下CISC更新關鍵基礎設施風險管理計畫（CIRMP）指引，說明業者如何透過身分驗證、網路隔離及供應鏈管理，降低網路攻擊與關鍵服務中斷的風險。新版指引也納入AI系統可能造成的營運風險。 在身分驗證方面，新版指引要求適用強化規範的業者，針對關鍵系統及遠端存取服務採用防網路釣魚多因素驗證（MFA）；若無法採用，仍須透過其他合理措施降低帳號憑證遭竊取或濫用的風險。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c6d5c38d7967",
+   "kind": "news",
+   "title": "CSA建議企業推動資安職能轉型，從漏洞管理導入AI代理",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-11T01:15:04+00:00",
+   "first_seen": "2026-11-11T01:15:04+00:00",
+   "updated": "2026-11-11T01:15:04+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180249",
+   "pts": [
+    "雲端安全聯盟（CSA）提出資安組織調整建議，認為AI代理逐漸能夠協助漏洞分析、程式碼檢查等工作，可能改變企業資安團隊的人力需求與職能分工。未來小型資安團隊搭配多個AI代理，可能完成過去需要較大團隊才能處理的任務。因此，企業應先調整資安工作流程與人員分工，再依實際成效決定是否改變團隊規模。"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "title": "CSA建議企業推動資安職能轉型，從漏洞管理導入AI代理",
+    "desc": "雲端安全聯盟（CSA）提出資安組織調整建議，認為AI代理逐漸能夠協助漏洞分析、程式碼檢查等工作，可能改變企業資安團隊的人力需求與職能分工。未來小型資安團隊搭配多個AI代理，可能完成過去需要較大團隊才能處理的任務。因此，企業應先調整資安工作流程與人員分工，再依實際成效決定是否改變團隊規模。",
+    "summarize": true
+   }
+  },
+  {
    "id": "grp:Fortinet:2026-11-11",
    "kind": "group",
    "title": "Fortinet 多個高風險漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 9.6",
+   "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -48,16 +168,17 @@
    "cves": [
     "CVE-2025-61625",
     "CVE-2026-121529",
+    "CVE-2026-126261",
     "CVE-2026-26248"
    ],
-   "cvss": 9.6,
+   "cvss": 9.8,
    "published": "2026-11-10T20:17:20+00:00",
    "first_seen": "2026-11-10T20:50:10+00:00",
-   "updated": "2026-11-10T20:50:10+00:00",
+   "updated": "2026-11-11T01:15:02+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.6。",
+    "同日公布 4 個漏洞，最高 CVSS 9.8。",
     "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6."
    ],
    "fix": "",
@@ -67,7 +188,11 @@
     "descs": [
      "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2.0 through 7.2.11, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2.0 through 7.2.11, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.1 through 7.4.7, FortiManager Cloud 7.2.1 through 7.2.10 may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
      "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim.",
-     "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests."
+     "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests.",
+     "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2.0 through 7.2.11, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2.0 through 7.2.11, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.1 through 7.4.7, FortiManager Cloud 7.2.1 through 7.2.10 may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
+     "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim.",
+     "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests.",
+     "A improper authorization vulnerability in Fortinet FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.5, FortiManager 7.2.0 through 7.2.8 may allow an unauthenticated attacker that can reach the FGFM port to execute code or commands via crafted FGFM packets."
     ]
    }
   },
@@ -75,8 +200,8 @@
    "id": "grp:Chrome:2026-11-11",
    "kind": "group",
    "title": "Chrome 多項遠端執行漏洞",
-   "sub": "6 個 CVE · 最高 CVSS 8.8",
-   "sev": "high",
+   "sub": "6 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -90,21 +215,27 @@
     "CVE-2026-125348",
     "CVE-2026-125350"
    ],
-   "cvss": 8.8,
+   "cvss": 9.6,
    "published": "2026-11-10T18:17:34+00:00",
    "first_seen": "2026-11-10T20:50:10+00:00",
-   "updated": "2026-11-10T20:50:10+00:00",
+   "updated": "2026-11-11T01:15:02+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125343",
    "pts": [
-    "Google Chrome 157.0.8103.50 之前版本存在 Compositing、V8、XML 等元件漏洞。",
-    "**攻擊者可透過特製 HTML 頁面或社交工程在沙盒內外遠端執行任意程式碼**；目前未遭利用。"
+    "同日公布 6 個漏洞，最高 CVSS 9.6。",
+    "Buffer overflow in Compositing in Google Chrome prior to 157.0.8103.50 allowed a remote attacker who had compromised the renderer process to"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
+     "Buffer overflow in Compositing in Google Chrome prior to 157.0.8103.50 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.50 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in GPU in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Buffer overflow in Compositing in Google Chrome prior to 157.0.8103.50 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Type confusion in V8 in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
@@ -152,7 +283,7 @@
   {
    "id": "grp:Apache:2026-11-11",
    "kind": "group",
-   "title": "Apache 多個高風險漏洞",
+   "title": "Apache OpenEJB 漏洞",
    "sub": "7 個 CVE",
    "sev": "high",
    "kev": false,
@@ -176,12 +307,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111250",
    "pts": [
-    "同日公布 7 個漏洞。",
-    "The embedded OpenEJB HTTP server reports every request as authenticated when an application requests authentication programmatically. A remo"
+    "影響內嵌式 OpenEJB HTTP 伺服器，漏洞包含身分驗證繞過、任意檔案讀取及資源耗盡導致阻斷服務。",
+    "未驗證遠端攻擊者可存取受保護功能與資源，或**獲取先前身分驗證使用者的權限**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "The embedded OpenEJB HTTP server reports every request as authenticated when an application requests authentication programmatically. A remote unauthenticated attacker can access functionality protected this way. Only applications served by the embedded HTTP server that rely on programmatic authentication are affected. Users are recommended to block network access to the embedded HTTP server from untrusted clients, or to migrate to the Tomcat based TomEE distributions.",
@@ -275,11 +406,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180384",
    "pts": [
-    "臺灣非營利組織使用的捐款管理系統netiCRM傳出資安事件，服務商網絡行動科技部分伺服器遭外部攻擊者入侵，包括婦女新知基金會、公民監督國會聯盟、民間司法改革基金會及台灣同志諮詢熱線協會等超過20個非營利組織相繼發布公告，提醒捐款人留意可疑來電與詐騙訊息。其中，公督盟已預防性暫停線上捐款及活動報名服務"
+    "捐款管理系統 netiCRM 服務商網絡行動科技伺服器遭入侵，超過 20 個 NPO 發布公告提醒防範詐騙。",
+    "**公督盟已預防性暫停線上捐款與活動報名**，是否涉及個資外洩及受影響組織總數仍在調查中。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "捐款人個資恐外洩！netiCRM服務商遭駭，公督盟、司改會等超過30個非營利組織接連示警",
     "desc": "臺灣非營利組織使用的捐款管理系統netiCRM傳出資安事件，服務商網絡行動科技部分伺服器遭外部攻擊者入侵，包括婦女新知基金會、公民監督國會聯盟、民間司法改革基金會及台灣同志諮詢熱線協會等超過20個非營利組織相繼發布公告，提醒捐款人留意可疑來電與詐騙訊息。其中，公督盟已預防性暫停線上捐款及活動報名服務，至於是否涉及捐款人個資外洩，目前仍在調查中。由於相關公告持續增加，究竟有多少組織受到波及，以及是否所有使用netiCRM的組織都受到影響，仍有待進一步釐清。",
@@ -398,11 +530,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180377",
    "pts": [
-    "IT管理軟體公司N-able旗下的遠端監控與管理（RMM）平臺N-central，近日遭研究人員公布一系列資安漏洞，其中部分漏洞可串聯形成遠端程式碼執行（RCE）攻擊鏈，使攻擊者取得系統管理權限。N-able於11月9日宣布重大資安事件，緊急關閉全球託管版N-central服務，並要求本地建置的客戶"
+    "N-able 旗下的 N-central 平臺遭揭露逾 30 個零時差漏洞，部分可串聯成遠端程式碼執行攻擊鏈。",
+    "**N-able 已緊急關閉全球託管版 N-central 服務**，並要求本地建置客戶暫時關閉伺服器。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "N-able遭揭露逾30個零時差漏洞，緊急關閉全球N-central雲端服務，要求本地建置客戶停機",
     "desc": "IT管理軟體公司N-able旗下的遠端監控與管理（RMM）平臺N-central，近日遭研究人員公布一系列資安漏洞，其中部分漏洞可串聯形成遠端程式碼執行（RCE）攻擊鏈，使攻擊者取得系統管理權限。N-able於11月9日宣布重大資安事件，緊急關閉全球託管版N-central服務，並要求本地建置的客戶暫時關閉伺服器。",
@@ -599,7 +732,7 @@
   {
    "id": "grp:Cisco:2026-11-10",
    "kind": "group",
-   "title": "Cisco 多個高風險漏洞",
+   "title": "ManageEngine 指令注入",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -614,18 +747,20 @@
    "cvss": 8.8,
    "published": "2026-11-10T11:16:43+00:00",
    "first_seen": "2026-11-10T13:29:08+00:00",
-   "updated": "2026-11-10T13:29:08+00:00",
+   "updated": "2026-11-11T01:15:02+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12573",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.8。",
-    "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the C"
+    "影響 ManageEngine DDI Central 6500 及 6200 以下版本，其 Cisco IOS DHCP 功能存在指令注入漏洞。",
+    "**攻擊者可藉由特製字元於受管理的 Cisco 路由器上執行任意指令**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
+     "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the Cisco IOS DHCP configuration functionality. This vulnerability could allow cluster-scoped operators to inject specially crafted Unicode characters, resulting in the execution of unintended device commands.",
+     "Zoho Corporation ManageEngine DDI Central versions 6200 and below are vulnerable to Cisco IOS command injection via DHCP pool name leading to arbitrary commands on managed Cisco routers.",
      "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the Cisco IOS DHCP configuration functionality. This vulnerability could allow cluster-scoped operators to inject specially crafted Unicode characters, resulting in the execution of unintended device commands.",
      "Zoho Corporation ManageEngine DDI Central versions 6200 and below are vulnerable to Cisco IOS command injection via DHCP pool name leading to arbitrary commands on managed Cisco routers."
     ]
@@ -690,7 +825,7 @@
    "cvss": 8.1,
    "published": "2026-11-10T05:18:12+00:00",
    "first_seen": "2026-11-10T13:29:08+00:00",
-   "updated": "2026-11-10T20:50:10+00:00",
+   "updated": "2026-11-11T01:15:02+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91754",
    "pts": [
@@ -702,6 +837,9 @@
    "ai_ver": 0,
    "raw": {
     "descs": [
+     "Stack-based Buffer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
+     "Integer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
+     "OS Command Injection Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
      "Stack-based Buffer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
      "Integer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
      "OS Command Injection Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
@@ -1249,7 +1387,7 @@
   {
    "id": "CVE-2026-20320",
    "kind": "cve",
-   "title": "Cisco BroadWorks Improper Restriction of",
+   "title": "Cisco XXE 資訊洩漏漏洞",
    "sub": "CVE-2026-20320 · CVSS 7.5",
    "sev": "crit",
    "kev": true,
@@ -1267,12 +1405,12 @@
    "src": "CISA KEV",
    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt",
    "pts": [
-    "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "Cisco BroadWorks 存在 XML 外部實體參照限制不當漏洞（XXE），未經身分驗證的遠端攻擊者可藉此讀取受影響系統上的敏感設定資訊。",
+    "**此漏洞已被證實遭惡意利用**，攻擊者無需身分驗證即可從遠端發動攻擊。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
     "desc": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
@@ -1284,7 +1422,7 @@
   {
    "id": "CVE-2026-73857",
    "kind": "cve",
-   "title": "IIS 漏洞 CVE-2026-73857",
+   "title": "ModSecurity記憶體漏洞",
    "sub": "CVE-2026-73857 · CVSS 7.5",
    "sev": "note",
    "kev": false,
@@ -1303,11 +1441,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73857",
    "pts": [
-    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.15 until 3.0.17, XML"
+    "ModSecurity 3.0.15 至 3.0.17 版存在漏洞，**攻擊者發送特製 HTTP 請求可致記憶體損壞並引發服務終止或執行轉向**。",
+    "目前未發現已被利用。漏洞僅在 SecParseXmlIntoArgs 啟用時觸發，早期 3.0.x 及 2.x 版本不受影響。"
    ],
-   "fix": "原文：This issue is fixed in version 3.0.17.",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 ModSecurity 3.0.17 版本。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.15 until 3.0.17, XML request body processing with SecParseXmlIntoArgs set to On or OnlyArgs can leave XMLNodes::parsing_ctx_arg uninitialized in the SAX end-element callback. A single crafted unauthenticated HTTP request can make a worker dereference the pointer, resulting in a constant-value write to an attacker-controlled address. The resulting memory corruption can terminate the worker and may disclose memory or redirect execution. Earlier 3.0.x releases and ModSecurity 2.x do not use the affected path. This issue is fixed in version 3.0.17.",
     "refs": [
@@ -4305,7 +4444,7 @@
   {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 多項遠端執行漏洞",
+   "title": "Chrome 多項安全漏洞",
    "sub": "123 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -4441,12 +4580,12 @@
    "cvss": 9.8,
    "published": "2026-11-03T21:17:06+00:00",
    "first_seen": "2026-11-03T23:25:01+00:00",
-   "updated": "2026-11-10T20:50:10+00:00",
+   "updated": "2026-11-11T01:15:02+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "Google Chrome 157.0.8103.38 之前版本存在 DevTools、Views、Prerender 等元件漏洞。",
-    "**攻擊者可透過特製 HTML 頁面或社交工程在沙盒內外遠端執行任意程式碼**；目前未遭利用。"
+    "影響 157.0.8103.38 之前的 Google Chrome，包含 DevTools、Views、Prerender、CSS 等元件漏洞。",
+    "遠端攻擊者可誘騙使用者存取特製 HTML 網頁，**執行任意程式碼並跳脫沙盒**。"
    ],
    "fix": "",
    "ai": true,
@@ -4865,6 +5004,11 @@
      "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass system access restrictions via a crafted HTML page. (Chromium security severity: Medium)",
      "Incorrect authorization in CacheStorage in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
      "Inadequate encryption strength in SSL in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially bypass web origin policy via crafted network traffic. (Chromium security severity: Low)",
+     "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass system access restrictions via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass system access restrictions via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in CacheStorage in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in Chromoting in Google Chrome prior to 157.0.8103.38 allowed a local attacker to bypass system access restrictions via a local program. (Chromium security severity: Low)",
+     "Privilege elevation in Mobile in Google Chrome on on iOS prior to 157.0.8103.38 allowed a remote attacker to bypass system access restrictions into a privileged page via a crafted HTML page. (Chromium security severity: Medium)",
      "Incorrect authorization in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to bypass system access restrictions via a crafted HTML page. (Chromium security severity: Medium)"
     ]
    }
@@ -13290,6 +13434,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-10T20:49:55+00:00",
- "kev_last": "2026-11-10T20:49:55+00:00"
+ "nvd_last": "2026-11-11T01:14:47+00:00",
+ "kev_last": "2026-11-11T01:14:47+00:00"
 }
