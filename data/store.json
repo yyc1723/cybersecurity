@@ -35,6 +35,253 @@
  },
  "events": [
   {
+   "id": "CVE-2026-65949",
+   "kind": "cve",
+   "title": "Lenovo元件指令注入漏洞",
+   "sub": "CVE-2026-65949 · CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-65949"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-11T22:17:27+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "updated": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65949",
+   "pts": [
+    "Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 與 5.2.0 版存在 OS 指令特別元素中和不當漏洞。",
+    "目前未遭利用，通過驗證的遠端攻擊者可傳送特製的主機名稱以**執行任意 PowerShell 指令**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and 5.2.0 allows an authenticated remote attacker to execute arbitrary PowerShell commands by submitting a crafted hostname.",
+    "refs": [
+     "https://support.lenovo.com/us/en/solutions/ht507549-lenovo-xclarity-integrator-for-microsoft-windows-admin-center-v21"
+    ]
+   }
+  },
+  {
+   "id": "grp:Fortinet:2026-11-12",
+   "kind": "group",
+   "title": "Fortinet 多個高風險漏洞",
+   "sub": "37 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Fortinet"
+   ],
+   "cves": [
+    "CVE-2026-121528",
+    "CVE-2026-126144",
+    "CVE-2026-126147",
+    "CVE-2026-126148",
+    "CVE-2026-126150",
+    "CVE-2026-126155",
+    "CVE-2026-126156",
+    "CVE-2026-126157",
+    "CVE-2026-126160",
+    "CVE-2026-126162",
+    "CVE-2026-126163",
+    "CVE-2026-126164",
+    "CVE-2026-126170",
+    "CVE-2026-126175",
+    "CVE-2026-126176",
+    "CVE-2026-126177",
+    "CVE-2026-126180",
+    "CVE-2026-126181",
+    "CVE-2026-126183",
+    "CVE-2026-126184",
+    "CVE-2026-126215",
+    "CVE-2026-126217",
+    "CVE-2026-126218",
+    "CVE-2026-126229",
+    "CVE-2026-126238",
+    "CVE-2026-126240",
+    "CVE-2026-126241",
+    "CVE-2026-126245",
+    "CVE-2026-126250",
+    "CVE-2026-126251",
+    "CVE-2026-126252",
+    "CVE-2026-126253",
+    "CVE-2026-126254",
+    "CVE-2026-126257",
+    "CVE-2026-126259",
+    "CVE-2026-126262",
+    "CVE-2026-126263"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-11T22:17:11+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "updated": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
+   "pts": [
+    "同日公布 37 個漏洞，最高 CVSS 9.8。",
+    "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through "
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through 7.2.13 may allow a remote and unauthenticated attacker to perform a Man-in-the-Middle attack on the communication channel between the SSLVPN web portal and the backend destination website.",
+     "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6, FortiMail 7.2 all versions, FortiRecorder 7.6.0 through 7.6.2, FortiRecorder 7.2.0 through 7.2.12, FortiRecorder 7.0.0 through 7.0.6, FortiVoice 8.0.0 through 8.0.1, FortiVoice 7.4.0 through 7.4.2, FortiVoice 7.2.0 through 7.2.5, FortiVoice 7.0.0 through 7.0.8 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
+     "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+     "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted HA join-request packets.",
+     "A weak password recovery mechanism for forgotten password vulnerability in Fortinet FortiMail 8.0.0, FortiMail 7.6.0 through 7.6.5, FortiMail 7.4.0 through 7.4.7, FortiMail 7.2.0 through 7.2.9 may allow an unauthenticated attacker to reset the password of an arbitrary IBE webmail user and take over their account via specially crafted HTTP requests.",
+     "A incorrect authorization vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated remote attacker to obtain an authenticated IBE webmail session as any IBE recipient and read or send their encrypted mail via crafted HTTP requests.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated remote attacker to take over an arbitrary IBE recipient account via crafted HTTP requests.",
+     "A improper authentication vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to gain access to other users' secure email accounts via crafted HTTP requests.",
+     "A improper authentication vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to escalate privileges and release or delete quarantined messages for arbitrary mailboxes via a crafted quarantine release requests.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6 may allow a remote unauthenticated attacker to execute unauthorized code or commands via a specially crafted request.",
+     "A use of externally-controlled format string vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1 may allow a remote unauthenticated attacker to execute unauthorized code or commands via a specially crafted SMTP command.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+     "A improper encoding or escaping of output vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.2, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer Cloud 8.0.1 through 8.0.2, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer-BigData 7.6.0 through 7.6.2, FortiManager 8.0.0 through 8.0.2, FortiManager 7.6.0 through 7.6.7, FortiManager Cloud 8.0.1 through 8.0.2, FortiManager Cloud 7.6.0 through 7.6.7 may allow an unauthenticated attacker to execute unauthorized code or commands via a specially crafted HTTP request",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.2 through 7.2.12, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.2 through 7.2.13, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.2 through 7.2.12, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.2 through 7.2.13 may allow an authenticated attacker to execute unauthorized code or commands via crafted JSON-RPC requests.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiAnalyzer 8.0.0, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an unauthenticated remote attacker to inject arbitary content into a signed SAML response via crafted SAML requests.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiAnalyzer 8.0.0, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an unauthenticated remote attacker to inject arbitary content into a signed SAML response via crafted SAML requests.",
+     "A improper neutralization of special elements used in a template engine vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2 all versions may allow a low privileged Device Manager admin to obtain super admin privilege on managed FortiGates via injecting malicious commands.",
+     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions may allow an adjacent-network authenticated attacker with user permission to join the FGFM configuration-sync mesh of the affected FortiGate deployment via the default pre-shared key.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated attacker to execute commands outside of the expected scope via specially crafted HTTP request.",
+     "A authentication bypass by spoofing vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an attacker to disrupt the HA state.",
+     "A incorrect authorization vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0 through 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated administrator to escalate their privileges, bypass authorization controls or impersonate internal services via specially crafted requests to the GUI.",
+     "A incorrect authorization vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0 through 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated administrator to escalate their privileges, bypass authorization controls or impersonate internal services via specially crafted requests to the GUI.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow a remote authenticated attacker with admin permission to elevate their privileges to root via crafted HTTP requests.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
+     "A incorrect authorization vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to bypass authorization checks and gain unauthorized access to restricted functionality.",
+     "A improper neutralization of special elements used in an ldap query ('ldap injection') vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an authenticated attacker to bypass authentication. Successful exploitation requires either a malicious/compromised upstream IdP, or an IdP configuration that allows the user to control the NameID (or the SAML attribute used as the username).",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an authenticated attacker to execute unauthorized SQL commands on the underlying database.",
+     "A out-of-bounds write vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to execute unauthorized code or commands via http requests, should the attacker be able to defeat ASLR protections.",
+     "A incorrect authorization vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to cause a denial of service via HTTP requests.",
+     "A incorrect authorization vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an attacker to bypass authentication and gain unauthorized access.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an authenticated attacker to execute unauthorized code or commands via http requests",
+     "A authentication bypass by primary weakness vulnerability in Fortinet FortiOS 8.0.0 through 8.0.1, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow an unauthenticated attacker to broadcast LSA via specially crafted request",
+     "A numeric truncation error vulnerability in Fortinet FortiOS 8.0.0 through 8.0.1, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow a configured ibgp neighbor to send malicious/malformed attributes to all connected routers via a specially crafted request",
+     "A use of hard-coded password vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to bypass credential validation in certain circumstances outside of the attacker's control and gain unauthorized access.",
+     "A missing authentication for critical function vulnerability in Fortinet FortiOS 8.0.0, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow an unauthenticated attacker with HA FGSP + standalone-config-sync, or autoscale to execute command as super admin via crafted HA packets.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12 may allow an unauthenticated attacker who has access to the oftp port to execute code or command on the system via crafted OFTP packets.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted requests."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-65982",
+   "kind": "cve",
+   "title": "nginx串流模組空指標漏洞",
+   "sub": "CVE-2026-65982 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-65982"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-11T21:16:46+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "updated": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65982",
+   "pts": [
+    "nginx-http-flv-module 1.2.14 以前版本接收無 Host 標頭的 HTTP/1.0 請求時，會觸發**空指標解參照崩潰**。",
+    "目前未遭利用，該問題已於 1.2.14 版本中完成修補。"
+   ],
+   "fix": "升級至 1.2.14 版本",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "nginx-http-flv-module is a media streaming server based on nginx-rtmp-module. Prior to version 1.2.14, if a server received an HTTP/1.0 request without a header Host, which was permitted by HTTP core of Nginx, then r->headers_in.host was NULL, nginx-http-flv-module used r->headers_in.host->value to make a pseudo tcUrl, so NULL-pointer dereference happened. This issue has been patched in version 1.2.14.",
+    "refs": [
+     "https://github.com/winshining/nginx-http-flv-module/security/advisories/GHSA-8mc6-jrxv-29g9",
+     "https://www.chtsecurity.com/news/b15d7b24-0a5e-4962-8b52-e4754e5af4f8?lang=en"
+    ]
+   }
+  },
+  {
+   "id": "grp:Node.js:2026-11-12",
+   "kind": "group",
+   "title": "Node.js多重高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 8.2",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-123863",
+    "CVE-2026-123864",
+    "CVE-2026-123872"
+   ],
+   "cvss": 8.2,
+   "published": "2026-11-11T19:17:32+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "updated": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123863",
+   "pts": [
+    "Node.js 存在 HTTP/2 中斷崩潰、HTTPS 記憶體讀取及 TLS 1.2 驗證繞過等多項漏洞。",
+    "目前未遭利用，未經驗證的遠端攻擊者可發動阻斷服務攻擊或**讀取其他連線的 TLS 私鑰與記憶體內容**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "descs": [
+     "A reachable assertion in Node.js HTTP/2 session teardown lets any unauthenticated client abort the server, over both TLS and cleartext. A client can arrange for an Http2Stream that still holds nghttp2-allocated header buffers to outlive its session: the stream is removed from the session's stream set but never detached, so when ~Http2Session() runs the memory accounting is nonzero and the CHECK_EQ(current_nghttp2_memory_, 0) assertion fails, terminating the process. The trigger needs only a default http2 server whose handler responds before the request body has ended, which is typical. It is a variant of CVE-2024-27983 that the earlier fix did not cover, because that fix only detached streams still tracked in the session. This vulnerability affects Node.js 26.x (since 26.9.0) and 24.x (since 24.22.0).",
+     "A re-entrancy flaw in Node.js HTTPS lets an unauthenticated client read memory belonging to other connections, including TLS private keys and other users' requests. TLSWrap::DoWrite() calls ClearOut() directly when asked to write zero bytes; if that write is issued from JavaScript running inside the HTTP parser's on_body callback, ClearOut() decrypts the next TLS record while the parser is still mid-body, re-entering llhttp_execute() and causing a use-after-free and an out-of-bounds heap read. The server then copies that freed or unrelated heap memory into the response for the request body. Triggering it requires a handler that calls res.flushHeaders() before the request body ends and later calls res.end() with a non-empty chunk, and reading the leaked memory requires any ordinary route that echoes or stores a request body. Cleartext node:http is not affected. This vulnerability affects Node.js 26.x, 24.x, and 22.x.",
+     "A client certificate authentication bypass in Node.js TLS lets a client change the servername during TLS 1.2 renegotiation to reach endpoints it was not authorized for. On a server that applies different client-certificate policies per hostname, for example stricter admin-only client-cert auth on one host and ordinary client-cert auth on another, a client that authenticates for a permitted host can renegotiate the TLS 1.2 connection under a different servername and carry its existing authentication to the protected host, bypassing the stricter policy. This vulnerability affects Node.js 26.x, 24.x, and 22.x."
+    ]
+   }
+  },
+  {
+   "id": "grp:ASP.NET:2026-11-12",
+   "kind": "group",
+   "title": "Telerik UI記憶體消耗漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "ASP.NET",
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-106137",
+    "CVE-2026-106156"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-11T18:18:24+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "updated": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106137",
+   "pts": [
+    "Progress Telerik UI for ASP.NET MVC 2012.2.710 至 2026.3.811 及 Core 2015.1.318 至 2026.3.811 存在記憶體管理漏洞。",
+    "目前未遭利用，未經驗證的遠端攻擊者發送重複請求可導致**進程記憶體持續累積消耗**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "descs": [
+     "In affected versions of Progress® Telerik® UI for ASP.NET MVC `2012.2.710` through `2026.3.811`, ClassFactory updates a shared class dictionary without exclusive write protection and emits non-collectible dynamic assemblies that remain loaded for the AppDomain's lifetime. The dictionary lookup and insertion are not atomic, and case variations in aggregate descriptors can produce distinct retained types even though member resolution is case-insensitive. An unauthenticated remote attacker can exploit this if the application exposes an aggregation endpoint that is reachable without authentication, by submitting concurrent or repeated crafted requests. These requests may corrupt dictionary state or increase CPU and memory use, potentially degrading availability. The issue is fixed in version `2026.3.1015`.",
+     "In Progress® Telerik® UI for ASP.NET Core versions `2015.1.318` through `2026.3.811`, repeated server-side aggregation requests, with or without grouping, cause dynamic assemblies and load contexts to be retained, resulting in accumulating process memory consumption. An unauthenticated remote attacker can exploit this if the application exposes an aggregation endpoint that is reachable without authentication. Repeated requests can cause memory growth that may exhaust available resources and affect application availability. Disabling grouping in the client-side interface does not prevent direct requests containing these descriptors. The issue is fixed in version `2026.3.1015`."
+    ]
+   }
+  },
+  {
    "id": "tw:fff8ef0585f0",
    "kind": "news",
    "title": "DeepMind以AI代理驗證Signal加密實作安全性，數學證明擴及機器碼層級",
@@ -557,11 +804,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180348",
    "pts": [
-    "美國加州大學柏克萊分校長期網路安全中心（CLTC）旗下AI Security Initiative提出2027至2029年3種AI資安威脅情境，推演攻擊者如何利用AI擴大社交工程攻擊、自動尋找漏洞並與企業防禦系統交手，甚至利用企業與供應商AI代理之間的信任關係發動攻擊，影響企業營運。 2027年：A"
+    "美國加州大學柏克萊分校CLTC提出2027至2029年AI資安威脅情境，推演攻擊者利用AI擴大針對性社交工程攻擊並自動尋找漏洞。",
+    "**攻擊者可能利用企業與供應商AI代理之間的信任關係發動攻擊**，進而影響企業營運。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "柏克萊研究推演2027至2029年AI資安威脅，AI代理供應鏈與自動化攻防成焦點",
     "desc": "美國加州大學柏克萊分校長期網路安全中心（CLTC）旗下AI Security Initiative提出2027至2029年3種AI資安威脅情境，推演攻擊者如何利用AI擴大社交工程攻擊、自動尋找漏洞並與企業防禦系統交手，甚至利用企業與供應商AI代理之間的信任關係發動攻擊，影響企業營運。 2027年：AI擴大針對性社交工程攻擊規模",
@@ -587,11 +835,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180258",
    "pts": [
-    "澳洲內政部轄下CISC更新關鍵基礎設施風險管理計畫（CIRMP）指引，說明業者如何透過身分驗證、網路隔離及供應鏈管理，降低網路攻擊與關鍵服務中斷的風險。新版指引也納入AI系統可能造成的營運風險。 在身分驗證方面，新版指引要求適用強化規範的業者，針對關鍵系統及遠端存取服務採用防網路釣魚多因素驗證（MF"
+    "澳洲CISC更新關鍵基礎設施風險管理計畫指引，透過身分驗證、網路隔離及供應鏈管理降低攻擊與服務中斷風險，並納入AI風險建議。",
+    "**規範要求針對關鍵系統及遠端存取服務採用防網路釣魚多因素驗證（MFA）**，以降低憑證遭竊取或濫用風險。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "澳洲更新關鍵基礎設施資安指引，強化網路隔離措施並納入AI風險管理建議",
     "desc": "澳洲內政部轄下CISC更新關鍵基礎設施風險管理計畫（CIRMP）指引，說明業者如何透過身分驗證、網路隔離及供應鏈管理，降低網路攻擊與關鍵服務中斷的風險。新版指引也納入AI系統可能造成的營運風險。 在身分驗證方面，新版指引要求適用強化規範的業者，針對關鍵系統及遠端存取服務採用防網路釣魚多因素驗證（MFA）；若無法採用，仍須透過其他合理措施降低帳號憑證遭竊取或濫用的風險。",
@@ -617,11 +866,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180249",
    "pts": [
-    "雲端安全聯盟（CSA）提出資安組織調整建議，認為AI代理逐漸能夠協助漏洞分析、程式碼檢查等工作，可能改變企業資安團隊的人力需求與職能分工。未來小型資安團隊搭配多個AI代理，可能完成過去需要較大團隊才能處理的任務。因此，企業應先調整資安工作流程與人員分工，再依實際成效決定是否改變團隊規模。"
+    "雲端安全聯盟（CSA）指出AI代理逐漸能協助漏洞分析與程式碼檢查，小型團隊搭配AI代理可完成過往大型團隊的任務。",
+    "**企業應先調整資安工作流程與人員分工**，再依實際成效決定是否改變團隊規模。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "CSA建議企業推動資安職能轉型，從漏洞管理導入AI代理",
     "desc": "雲端安全聯盟（CSA）提出資安組織調整建議，認為AI代理逐漸能夠協助漏洞分析、程式碼檢查等工作，可能改變企業資安團隊的人力需求與職能分工。未來小型資安團隊搭配多個AI代理，可能完成過去需要較大團隊才能處理的任務。因此，企業應先調整資安工作流程與人員分工，再依實際成效決定是否改變團隊規模。",
@@ -1293,7 +1543,7 @@
   {
    "id": "grp:VMware:2026-11-10",
    "kind": "group",
-   "title": "VMware 多個高風險漏洞",
+   "title": "Hitachi套件多重漏洞",
    "sub": "3 個 CVE · 最高 CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -1313,12 +1563,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91754",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 8.1。",
-    "Stack-based Buffer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware. This issue affects Hitachi Dynamic Link Manager for VM"
+    "Hitachi Dynamic Link Manager for VMware 8.7.3-00 至 9.0.4-01 以前版本**存在 OS 指令注入等多重漏洞**。",
+    "漏洞包含堆疊緩衝區溢位、整數溢位與 OS 指令注入，目前未遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Stack-based Buffer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware.\n\nThis issue affects Hitachi Dynamic Link Manager for VMware: from 8.7.3-00 before 9.0.4-01.",
@@ -1836,7 +2086,7 @@
   {
    "id": "CVE-2026-124194",
    "kind": "cve",
-   "title": "Microsoft Office Outlook Missing User In",
+   "title": "Outlook網路欺騙漏洞",
    "sub": "CVE-2026-124194 · CVSS 6.5",
    "sev": "crit",
    "kev": true,
@@ -1854,12 +2104,12 @@
    "src": "CISA KEV",
    "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-124194",
    "pts": [
-    "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacke",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "Microsoft Office Outlook 存在缺少使用者互動的漏洞，未經授權的攻擊者可透過網路進行欺騙攻擊。",
+    "**該漏洞目前已知已遭野外利用**，攻擊者無需使用者互動即可經由網路發動攻擊。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "name": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
     "desc": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
@@ -13938,6 +14188,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-11T16:11:08+00:00",
- "kev_last": "2026-11-11T16:11:08+00:00"
+ "nvd_last": "2026-11-11T22:42:48+00:00",
+ "kev_last": "2026-11-11T22:42:48+00:00"
 }

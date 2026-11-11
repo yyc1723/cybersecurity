@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T16:11:08+00:00",
+ "generated": "2026-11-11T22:42:48+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,176 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "CVE-2026-65949",
+   "kind": "cve",
+   "title": "Lenovo元件指令注入漏洞",
+   "sub": "CVE-2026-65949 · CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-65949"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-11T22:17:27+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65949",
+   "pts": [
+    "Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 與 5.2.0 版存在 OS 指令特別元素中和不當漏洞。",
+    "目前未遭利用，通過驗證的遠端攻擊者可傳送特製的主機名稱以**執行任意 PowerShell 指令**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:Fortinet:2026-11-12",
+   "kind": "group",
+   "title": "Fortinet 多個高風險漏洞",
+   "sub": "37 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Fortinet"
+   ],
+   "cves": [
+    "CVE-2026-121528",
+    "CVE-2026-126144",
+    "CVE-2026-126147",
+    "CVE-2026-126148",
+    "CVE-2026-126150",
+    "CVE-2026-126155",
+    "CVE-2026-126156",
+    "CVE-2026-126157",
+    "CVE-2026-126160",
+    "CVE-2026-126162",
+    "CVE-2026-126163",
+    "CVE-2026-126164",
+    "CVE-2026-126170",
+    "CVE-2026-126175",
+    "CVE-2026-126176",
+    "CVE-2026-126177",
+    "CVE-2026-126180",
+    "CVE-2026-126181",
+    "CVE-2026-126183",
+    "CVE-2026-126184",
+    "CVE-2026-126215",
+    "CVE-2026-126217",
+    "CVE-2026-126218",
+    "CVE-2026-126229",
+    "CVE-2026-126238",
+    "CVE-2026-126240",
+    "CVE-2026-126241",
+    "CVE-2026-126245",
+    "CVE-2026-126250",
+    "CVE-2026-126251",
+    "CVE-2026-126252",
+    "CVE-2026-126253",
+    "CVE-2026-126254",
+    "CVE-2026-126257",
+    "CVE-2026-126259",
+    "CVE-2026-126262",
+    "CVE-2026-126263"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-11T22:17:11+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
+   "pts": [
+    "同日公布 37 個漏洞，最高 CVSS 9.8。",
+    "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through "
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-65982",
+   "kind": "cve",
+   "title": "nginx串流模組空指標漏洞",
+   "sub": "CVE-2026-65982 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-65982"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-11T21:16:46+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65982",
+   "pts": [
+    "nginx-http-flv-module 1.2.14 以前版本接收無 Host 標頭的 HTTP/1.0 請求時，會觸發**空指標解參照崩潰**。",
+    "目前未遭利用，該問題已於 1.2.14 版本中完成修補。"
+   ],
+   "fix": "升級至 1.2.14 版本",
+   "ai": true
+  },
+  {
+   "id": "grp:Node.js:2026-11-12",
+   "kind": "group",
+   "title": "Node.js多重高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 8.2",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-123863",
+    "CVE-2026-123864",
+    "CVE-2026-123872"
+   ],
+   "cvss": 8.2,
+   "published": "2026-11-11T19:17:32+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123863",
+   "pts": [
+    "Node.js 存在 HTTP/2 中斷崩潰、HTTPS 記憶體讀取及 TLS 1.2 驗證繞過等多項漏洞。",
+    "目前未遭利用，未經驗證的遠端攻擊者可發動阻斷服務攻擊或**讀取其他連線的 TLS 私鑰與記憶體內容**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:ASP.NET:2026-11-12",
+   "kind": "group",
+   "title": "Telerik UI記憶體消耗漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "ASP.NET",
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-106137",
+    "CVE-2026-106156"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-11T18:18:24+00:00",
+   "first_seen": "2026-11-11T22:43:03+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106137",
+   "pts": [
+    "Progress Telerik UI for ASP.NET MVC 2012.2.710 至 2026.3.811 及 Core 2015.1.318 至 2026.3.811 存在記憶體管理漏洞。",
+    "目前未遭利用，未經驗證的遠端攻擊者發送重複請求可導致**進程記憶體持續累積消耗**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:fff8ef0585f0",
    "kind": "news",
@@ -766,10 +936,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180348",
    "pts": [
-    "美國加州大學柏克萊分校長期網路安全中心（CLTC）旗下AI Security Initiative提出2027至2029年3種AI資安威脅情境，推演攻擊者如何利用AI擴大社交工程攻擊、自動尋找漏洞並與企業防禦系統交手，甚至利用企業與供應商AI代理之間的信任關係發動攻擊，影響企業營運。 2027年：A"
+    "美國加州大學柏克萊分校CLTC提出2027至2029年AI資安威脅情境，推演攻擊者利用AI擴大針對性社交工程攻擊並自動尋找漏洞。",
+    "**攻擊者可能利用企業與供應商AI代理之間的信任關係發動攻擊**，進而影響企業營運。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:889987523fb0",
@@ -789,10 +960,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180258",
    "pts": [
-    "澳洲內政部轄下CISC更新關鍵基礎設施風險管理計畫（CIRMP）指引，說明業者如何透過身分驗證、網路隔離及供應鏈管理，降低網路攻擊與關鍵服務中斷的風險。新版指引也納入AI系統可能造成的營運風險。 在身分驗證方面，新版指引要求適用強化規範的業者，針對關鍵系統及遠端存取服務採用防網路釣魚多因素驗證（MF"
+    "澳洲CISC更新關鍵基礎設施風險管理計畫指引，透過身分驗證、網路隔離及供應鏈管理降低攻擊與服務中斷風險，並納入AI風險建議。",
+    "**規範要求針對關鍵系統及遠端存取服務採用防網路釣魚多因素驗證（MFA）**，以降低憑證遭竊取或濫用風險。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:c6d5c38d7967",
@@ -812,10 +984,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180249",
    "pts": [
-    "雲端安全聯盟（CSA）提出資安組織調整建議，認為AI代理逐漸能夠協助漏洞分析、程式碼檢查等工作，可能改變企業資安團隊的人力需求與職能分工。未來小型資安團隊搭配多個AI代理，可能完成過去需要較大團隊才能處理的任務。因此，企業應先調整資安工作流程與人員分工，再依實際成效決定是否改變團隊規模。"
+    "雲端安全聯盟（CSA）指出AI代理逐漸能協助漏洞分析與程式碼檢查，小型團隊搭配AI代理可完成過往大型團隊的任務。",
+    "**企業應先調整資安工作流程與人員分工**，再依實際成效決定是否改變團隊規模。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Fortinet:2026-11-11",
@@ -1307,7 +1480,7 @@
   {
    "id": "grp:VMware:2026-11-10",
    "kind": "group",
-   "title": "VMware 多個高風險漏洞",
+   "title": "Hitachi套件多重漏洞",
    "sub": "3 個 CVE · 最高 CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -1326,11 +1499,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91754",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 8.1。",
-    "Stack-based Buffer Overflow Vulnerability in Hitachi Dynamic Link Manager for VMware. This issue affects Hitachi Dynamic Link Manager for VM"
+    "Hitachi Dynamic Link Manager for VMware 8.7.3-00 至 9.0.4-01 以前版本**存在 OS 指令注入等多重漏洞**。",
+    "漏洞包含堆疊緩衝區溢位、整數溢位與 OS 指令注入，目前未遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:aaf68f3b7c24",
@@ -1718,7 +1891,7 @@
   {
    "id": "CVE-2026-124194",
    "kind": "cve",
-   "title": "Microsoft Office Outlook Missing User In",
+   "title": "Outlook網路欺騙漏洞",
    "sub": "CVE-2026-124194 · CVSS 6.5",
    "sev": "crit",
    "kev": true,
@@ -1735,11 +1908,11 @@
    "src": "CISA KEV",
    "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-124194",
    "pts": [
-    "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacke",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "Microsoft Office Outlook 存在缺少使用者互動的漏洞，未經授權的攻擊者可透過網路進行欺騙攻擊。",
+    "**該漏洞目前已知已遭野外利用**，攻擊者無需使用者互動即可經由網路發動攻擊。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "CVE-2026-20320",
