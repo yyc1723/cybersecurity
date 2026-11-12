@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T22:42:48+00:00",
+ "generated": "2026-11-12T03:49:32+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "items": [
    {
-    "title": "本單位：修補 Outlook 漏洞",
-    "desc": "存在不安全動作漏洞，**已列入 CISA KEV 已遭利用清單**。"
+    "title": "本單位：修補 Outlook 零時差漏洞",
+    "desc": "**Outlook 漏洞已遭野外積極利用，可免互動發動網路攻擊，應儘速修補。**"
    },
    {
-    "title": "本單位：修補 ASP.NET 漏洞",
-    "desc": "CVE-2026-125383 存在身份驗證繞過漏洞。"
+    "title": "本單位：修補 ASP.NET 驗證漏洞",
+    "desc": "INDOTALENT WHMS 系統存在身份驗證繞過漏洞。"
    },
    {
-    "title": "修補 Cisco XXE 漏洞",
-    "desc": "BroadWorks 存在漏洞且已被證實遭惡意利用。"
+    "title": "本單位：更新 Lenovo 管理元件",
+    "desc": "避免攻擊者利用 Windows Admin Center 執行任意 PowerShell 指令。"
    },
    {
-    "title": "修補 Fortinet 產品漏洞",
-    "desc": "FortiAnalyzer 與 FortiSIEM 存在高風險漏洞。"
+    "title": "本單位：修補 Telerik UI 漏洞",
+    "desc": "避免 ASP.NET 及 .NET 環境遭重複請求導致記憶體持續消耗。"
    },
    {
-    "title": "更新 Chrome 瀏覽器",
-    "desc": "公布 6 個漏洞，包含 Compositing 緩衝區溢位漏洞。"
+    "title": "修補 Cisco 資訊洩漏漏洞",
+    "desc": "Cisco BroadWorks 漏洞已遭惡意利用，可遠端讀取敏感設定資訊。"
    },
    {
-    "title": "修補 Ivanti 產品漏洞",
-    "desc": "Endpoint Manager 存在 SQL 注入漏洞，可遠端執行程式碼。"
+    "title": "更新 Fortinet 與 Chrome 設備",
+    "desc": "FortiOS、FortiAnalyzer 與 Chrome 等產品發布多個高風險修補。"
    }
   ],
   "ai": true
@@ -361,6 +361,229 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:5e66cb727e8f",
+   "kind": "news",
+   "title": "航運巨擘馬士基證實資料外洩，傳遭勒索組織WhiteArmor索討500萬美元",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180437",
+   "pts": [
+    "馬士基證實攻擊者入侵其併購公司的本地舊系統並竊取內部資料。",
+    "**目前無跡象顯示其他內部系統或客戶介接系統受影響，營運不受影響。**"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:822b75acae35",
+   "kind": "news",
+   "title": "聯合航空封鎖未授權AI代理人，限制查詢航班與訂票",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180434",
+   "pts": [
+    "**聯合航空限制未授權第三方 AI 代理人存取航班查詢與訂票服務，防範個資外洩。**",
+    "將帳戶憑證交給第三方 AI 可能暴露敏感資訊，或導致 AI 擅自購票與變更資料。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:4ba7864da17b",
+   "kind": "news",
+   "title": "Git修補6項資安漏洞，惡意儲存庫恐觸發任意程式碼執行",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180432",
+   "pts": [
+    "**Git 修補 6 項漏洞，其中 CVE-2026-111760 可透過惡意儲存庫執行任意程式碼。**",
+    "該漏洞 CVSS 3.1 風險分數為 8.0，會在特定複製情境下觸發。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:71d8c9eba49e",
+   "kind": "news",
+   "title": "微軟揭露駭客利用代理型AI搜尋GitHub外洩憑證，5分鐘內從Azure Key Vault外傳資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180400",
+   "pts": [
+    "**微軟揭露攻擊者利用代理型 AI 搜尋 GitHub 外洩憑證，並侵入雲端環境竊密。**",
+    "攻擊者取得憑證後登入雲端，從 Azure Key Vault 外傳資料前後僅相隔 5 分鐘。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:103cc6a271e9",
+   "kind": "news",
+   "title": "Google預測2027年資安趨勢，AI代理將深入SOC與企業防禦",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180372",
+   "pts": [
+    "Google Cloud預測AI將改變攻防模式，AI代理可協助SOC調查與處理事件，但**須防範代理權限過大與管理不當風險**。",
+    "攻擊方面，軟體供應鏈可能持續受污染，攻擊者重視竊取資料勒索，並將AI模型及雲端資源列為目標。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:553b150ccfa5",
+   "kind": "news",
+   "title": "Cloudflare研究新一代身分驗證技術，兼顧後量子安全與AI代理流量管理",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180305",
+   "pts": [
+    "**未來的量子電腦可能破解Privacy Pass採用的傳統密碼技術**，使攻擊者能偽造權杖並繞過速率限制等控制。",
+    "資安業者Cloudflare刻正研究具備後量子安全能力的新一代私密身分驗證技術MOLE。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:Chrome:2026-11-12",
+   "kind": "group",
+   "title": "Chrome多項遠端執行程式碼漏洞",
+   "sub": "54 個 CVE",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-126840",
+    "CVE-2026-126842",
+    "CVE-2026-126843",
+    "CVE-2026-126846",
+    "CVE-2026-126847",
+    "CVE-2026-126849",
+    "CVE-2026-126851",
+    "CVE-2026-126852",
+    "CVE-2026-126859",
+    "CVE-2026-126860",
+    "CVE-2026-126861",
+    "CVE-2026-126863",
+    "CVE-2026-126864",
+    "CVE-2026-126865",
+    "CVE-2026-126866",
+    "CVE-2026-126867",
+    "CVE-2026-126868",
+    "CVE-2026-126869",
+    "CVE-2026-126872",
+    "CVE-2026-126873",
+    "CVE-2026-126874",
+    "CVE-2026-126876",
+    "CVE-2026-126877",
+    "CVE-2026-126879",
+    "CVE-2026-126880",
+    "CVE-2026-126881",
+    "CVE-2026-126883",
+    "CVE-2026-126885",
+    "CVE-2026-126886",
+    "CVE-2026-126887",
+    "CVE-2026-126888",
+    "CVE-2026-126889",
+    "CVE-2026-126890",
+    "CVE-2026-126892",
+    "CVE-2026-126893",
+    "CVE-2026-126895",
+    "CVE-2026-126897",
+    "CVE-2026-126899",
+    "CVE-2026-126900",
+    "CVE-2026-126901",
+    "CVE-2026-126902",
+    "CVE-2026-126904",
+    "CVE-2026-126905",
+    "CVE-2026-126908",
+    "CVE-2026-126909",
+    "CVE-2026-126910",
+    "CVE-2026-126911",
+    "CVE-2026-126912",
+    "CVE-2026-126915",
+    "CVE-2026-126916",
+    "CVE-2026-126917",
+    "CVE-2026-126918",
+    "CVE-2026-126919",
+    "CVE-2026-126921"
+   ],
+   "cvss": null,
+   "published": "2026-11-11T23:17:11+00:00",
+   "first_seen": "2026-11-12T03:49:46+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126840",
+   "pts": [
+    "**Google Chrome 157.0.8103.78 之前版本存在多項漏洞，可透過特製 HTML 頁面執行任意程式碼。**",
+    "漏洞包含越界寫入、釋放後重用及型別混淆，部分漏洞可繞過沙盒執行程式碼。"
+   ],
+   "fix": "升級至 Google Chrome 157.0.8103.78 以上版本。",
+   "ai": true
+  },
   {
    "id": "CVE-2026-65949",
    "kind": "cve",
@@ -549,10 +772,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180430",
    "pts": [
-    "Google DeepMind公布AI代理形式化驗證（Formal Verification）框架AlphaProof Code，利用AI代理驗證Signal加密通訊協定的核心程式庫libsignal，將安全性證明延伸到編譯後的機器碼。Signal協定廣泛應用於通訊服務，此次5名DeepMind研究"
+    "Google DeepMind公布AlphaProof Code框架，**利用AI代理驗證Signal加密通訊協定核心庫libsignal**。",
+    "5名研究人員與AI代理合作於4周內產出約650萬行Lean語言證明程式碼，將安全性證明延伸至機器碼層級。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:e4b46fd50890",
@@ -572,10 +796,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180428",
    "pts": [
-    "Google本周宣布最新一代尖端模型Gemini 4 Carbon 已開放給企業、開發者及個人付費用戶，API存取費用為Anthropic Fable/Mythos 5.2一半。 Gemini 4 Carbon是繼Gemini 4 Argon推出的新一代尖端模型，著重強化程式開發、代理式AI、科學研"
+    "Google全面開放尖端模型Gemini 4 Carbon，**API存取費用為競品Anthropic Fable/Mythos 5.2的一半**。",
+    "該模型著重強化程式開發、代理式AI、科學研究與長時間自主執行任務能力，先前僅開放受信任資安人員使用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:030b546cfe85",
@@ -595,10 +820,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180425",
    "pts": [
-    "11月10日Adobe發布例行更新，針對旗下9款產品修補110個漏洞，涵蓋Adobe Experience Manager（AEM）、Adobe Connect、Photoshop、Premiere、After Effects、Audition、Dimension、M"
+    "**Adobe發布11月例行更新針對旗下9款產品修補110個漏洞**。",
+    "影響產品涵蓋Adobe Experience Manager（AEM）、Adobe Connect、Photoshop、Premiere、After Effects等。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:682df4eeb074",
@@ -618,10 +844,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180422",
    "pts": [
-    "本日新聞焦點 ● 駭客利用大數據平臺Qubole被竊憑證，入侵數十家企業AWS環境 ● 日本警方查獲車載偽基地臺，逮捕涉嫌干擾手機通訊的男子 ● netiCRM服務商遭駭，超過30個非營利組織示警捐款人個資恐外洩"
+    "**駭客利用大數據平台Qubole被竊憑證入侵數十家企業AWS環境**。",
+    "日本警方查獲車載偽基地台；netiCRM服務商遭駭，逾30個非營利組織示警捐款人個資恐外洩。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-126617",
@@ -913,10 +1140,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180399",
    "pts": [
-    "資安業者ESET近日揭露，與俄羅斯情報機構有關的駭客組織Turla，利用過去未曝光的惡意程式工具組Cereal，入侵哈薩克及羅馬尼亞政府機構的Microsoft Exchange伺服器，藉此蒐集情報。ESET於2025年11月發現哈薩克政府機構遭入侵，後續也在羅馬尼亞政府機構發現相同工具組。在羅馬尼"
+    "ESET揭露俄羅斯駭客組織Turla利用未曝光工具組Cereal，入侵哈薩克與羅馬尼亞政府機構的Microsoft Exchange伺服器以蒐集情報。",
+    "**惡意程式在羅馬尼亞被設定為竊取與 NATO 及歐盟機構往來的郵件。**"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:d6f18a3ba129",
@@ -1523,10 +1751,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180363",
    "pts": [
-    "美國主機代管與網域註冊業者DreamHost近日揭露資安事件，攻擊者利用其網頁版檔案管理工具File Manager的軟體漏洞，入侵執行該服務的伺服器，竊取部分使用者的FTP及SFTP帳號名稱與密碼，此次事件始於今年8月，直到10月23日才為該公司發現。"
+    "**攻擊者利用 DreamHost 檔案管理工具漏洞入侵伺服器，竊取 FTP 與 SFTP 帳密。**",
+    "事件始於 8 月，DreamHost 於 10 月 23 日發現該資安事件。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:e66fcb7b6704",

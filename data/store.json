@@ -4,36 +4,361 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "items": [
    {
-    "title": "本單位：修補 Outlook 漏洞",
-    "desc": "存在不安全動作漏洞，**已列入 CISA KEV 已遭利用清單**。"
+    "title": "本單位：修補 Outlook 零時差漏洞",
+    "desc": "**Outlook 漏洞已遭野外積極利用，可免互動發動網路攻擊，應儘速修補。**"
    },
    {
-    "title": "本單位：修補 ASP.NET 漏洞",
-    "desc": "CVE-2026-125383 存在身份驗證繞過漏洞。"
+    "title": "本單位：修補 ASP.NET 驗證漏洞",
+    "desc": "INDOTALENT WHMS 系統存在身份驗證繞過漏洞。"
    },
    {
-    "title": "修補 Cisco XXE 漏洞",
-    "desc": "BroadWorks 存在漏洞且已被證實遭惡意利用。"
+    "title": "本單位：更新 Lenovo 管理元件",
+    "desc": "避免攻擊者利用 Windows Admin Center 執行任意 PowerShell 指令。"
    },
    {
-    "title": "修補 Fortinet 產品漏洞",
-    "desc": "FortiAnalyzer 與 FortiSIEM 存在高風險漏洞。"
+    "title": "本單位：修補 Telerik UI 漏洞",
+    "desc": "避免 ASP.NET 及 .NET 環境遭重複請求導致記憶體持續消耗。"
    },
    {
-    "title": "更新 Chrome 瀏覽器",
-    "desc": "公布 6 個漏洞，包含 Compositing 緩衝區溢位漏洞。"
+    "title": "修補 Cisco 資訊洩漏漏洞",
+    "desc": "Cisco BroadWorks 漏洞已遭惡意利用，可遠端讀取敏感設定資訊。"
    },
    {
-    "title": "修補 Ivanti 產品漏洞",
-    "desc": "Endpoint Manager 存在 SQL 注入漏洞，可遠端執行程式碼。"
+    "title": "更新 Fortinet 與 Chrome 設備",
+    "desc": "FortiOS、FortiAnalyzer 與 Chrome 等產品發布多個高風險修補。"
    }
   ],
   "ai": true
  },
  "events": [
+  {
+   "id": "tw:5e66cb727e8f",
+   "kind": "news",
+   "title": "航運巨擘馬士基證實資料外洩，傳遭勒索組織WhiteArmor索討500萬美元",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:49+00:00",
+   "updated": "2026-11-12T03:49:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180437",
+   "pts": [
+    "馬士基證實攻擊者入侵其併購公司的本地舊系統並竊取內部資料。",
+    "**目前無跡象顯示其他內部系統或客戶介接系統受影響，營運不受影響。**"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "航運巨擘馬士基證實資料外洩，傳遭勒索組織WhiteArmor索討500萬美元",
+    "desc": "全球最大貨櫃承運商之一的丹麥航運與物流業者馬士基（Maersk），於11月11日證實發生資安事件，攻擊者入侵一套來自先前併購公司的本地舊系統，並竊取其中資料。馬士基表示，該公司網路安全團隊發現問題後，已立即展開調查並採取因應措施，目前沒有跡象顯示其他內部系統，以及透過API或EDI介接的客戶、合作夥伴系統受到影響，預期不會影響正常營運，客戶仍可照常使用馬士基平臺進行貨運預訂及管理。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:822b75acae35",
+   "kind": "news",
+   "title": "聯合航空封鎖未授權AI代理人，限制查詢航班與訂票",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:49+00:00",
+   "updated": "2026-11-12T03:49:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180434",
+   "pts": [
+    "**聯合航空限制未授權第三方 AI 代理人存取航班查詢與訂票服務，防範個資外洩。**",
+    "將帳戶憑證交給第三方 AI 可能暴露敏感資訊，或導致 AI 擅自購票與變更資料。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "聯合航空封鎖未授權AI代理人，限制查詢航班與訂票",
+    "desc": "美國聯合航空（United Airlines）周四（11/12）宣布，將限制未經授權的第三方AI代理人存取旗下數位服務，包括航班查詢與訂票，以防範個資外洩、非預期交易及違反航空法規等風險。 聯合航空表示，旗下App已提供訂票、選位、航班異動及重新安排行程等功能，但若旅客將帳戶登入憑證交給第三方AI助理，可能暴露敏感資訊，也可能導致AI擅自購票、修改帳戶資料或使用MileagePlus會員哩程。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4ba7864da17b",
+   "kind": "news",
+   "title": "Git修補6項資安漏洞，惡意儲存庫恐觸發任意程式碼執行",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:49+00:00",
+   "updated": "2026-11-12T03:49:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180432",
+   "pts": [
+    "**Git 修補 6 項漏洞，其中 CVE-2026-111760 可透過惡意儲存庫執行任意程式碼。**",
+    "該漏洞 CVSS 3.1 風險分數為 8.0，會在特定複製情境下觸發。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "Git修補6項資安漏洞，惡意儲存庫恐觸發任意程式碼執行",
+    "desc": "Git專案於11月10日修補6項資安漏洞，其中CVE-2026-111760可能讓攻擊者透過特製的惡意儲存庫，在特定複製情境下執行任意程式碼，CVSS 3.1風險分數為8.0，屬於高風險等級。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:71d8c9eba49e",
+   "kind": "news",
+   "title": "微軟揭露駭客利用代理型AI搜尋GitHub外洩憑證，5分鐘內從Azure Key Vault外傳資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:55+00:00",
+   "updated": "2026-11-12T03:49:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180400",
+   "pts": [
+    "**微軟揭露攻擊者利用代理型 AI 搜尋 GitHub 外洩憑證，並侵入雲端環境竊密。**",
+    "攻擊者取得憑證後登入雲端，從 Azure Key Vault 外傳資料前後僅相隔 5 分鐘。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "微軟揭露駭客利用代理型AI搜尋GitHub外洩憑證，5分鐘內從Azure Key Vault外傳資料",
+    "desc": "微軟威脅情報團隊觀測到攻擊者利用代理型AI工具，大量搜尋公開GitHub程式碼儲存庫，尋找外洩的應用程式憑證及其他機密資料，再利用找到的有效憑證登入企業雲端環境，進一步查找及存取雲端資源。其中一起案例，AI代理先搜尋GitHub中的機密資料，再從Azure Key Vault外傳資料，前後僅相隔5分鐘。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:103cc6a271e9",
+   "kind": "news",
+   "title": "Google預測2027年資安趨勢，AI代理將深入SOC與企業防禦",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:55+00:00",
+   "updated": "2026-11-12T03:49:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180372",
+   "pts": [
+    "Google Cloud預測AI將改變攻防模式，AI代理可協助SOC調查與處理事件，但**須防範代理權限過大與管理不當風險**。",
+    "攻擊方面，軟體供應鏈可能持續受污染，攻擊者重視竊取資料勒索，並將AI模型及雲端資源列為目標。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "Google預測2027年資安趨勢，AI代理將深入SOC與企業防禦",
+    "desc": "Google Cloud發布2027年資安趨勢預測，指出AI將進一步改變企業資安攻防模式。在防禦方面，AI代理可望協助資安維運中心（SOC）調查與處理安全事件，但企業也須防範代理權限過大及管理不當帶來的風險。在攻擊方面，軟體供應鏈可能持續遭到污染，攻擊者也可能更重視竊取企業資料進行勒索，並將AI模型及雲端運算資源列為攻擊目標。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:553b150ccfa5",
+   "kind": "news",
+   "title": "Cloudflare研究新一代身分驗證技術，兼顧後量子安全與AI代理流量管理",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T03:49:49+00:00",
+   "first_seen": "2026-11-12T03:49:55+00:00",
+   "updated": "2026-11-12T03:49:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180305",
+   "pts": [
+    "**未來的量子電腦可能破解Privacy Pass採用的傳統密碼技術**，使攻擊者能偽造權杖並繞過速率限制等控制。",
+    "資安業者Cloudflare刻正研究具備後量子安全能力的新一代私密身分驗證技術MOLE。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "Cloudflare研究新一代身分驗證技術，兼顧後量子安全與AI代理流量管理",
+    "desc": "未來具備密碼學攻擊能力的量子電腦可能破解Privacy Pass目前使用的傳統密碼技術，讓攻擊者偽造權杖，進而繞過速率限制等安全控制。網路服務與資安業者Cloudflare近日說明，正研究具備後量子安全能力的新一代私密身分驗證技術MOLE。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "grp:Chrome:2026-11-12",
+   "kind": "group",
+   "title": "Chrome多項遠端執行程式碼漏洞",
+   "sub": "54 個 CVE",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-126840",
+    "CVE-2026-126842",
+    "CVE-2026-126843",
+    "CVE-2026-126846",
+    "CVE-2026-126847",
+    "CVE-2026-126849",
+    "CVE-2026-126851",
+    "CVE-2026-126852",
+    "CVE-2026-126859",
+    "CVE-2026-126860",
+    "CVE-2026-126861",
+    "CVE-2026-126863",
+    "CVE-2026-126864",
+    "CVE-2026-126865",
+    "CVE-2026-126866",
+    "CVE-2026-126867",
+    "CVE-2026-126868",
+    "CVE-2026-126869",
+    "CVE-2026-126872",
+    "CVE-2026-126873",
+    "CVE-2026-126874",
+    "CVE-2026-126876",
+    "CVE-2026-126877",
+    "CVE-2026-126879",
+    "CVE-2026-126880",
+    "CVE-2026-126881",
+    "CVE-2026-126883",
+    "CVE-2026-126885",
+    "CVE-2026-126886",
+    "CVE-2026-126887",
+    "CVE-2026-126888",
+    "CVE-2026-126889",
+    "CVE-2026-126890",
+    "CVE-2026-126892",
+    "CVE-2026-126893",
+    "CVE-2026-126895",
+    "CVE-2026-126897",
+    "CVE-2026-126899",
+    "CVE-2026-126900",
+    "CVE-2026-126901",
+    "CVE-2026-126902",
+    "CVE-2026-126904",
+    "CVE-2026-126905",
+    "CVE-2026-126908",
+    "CVE-2026-126909",
+    "CVE-2026-126910",
+    "CVE-2026-126911",
+    "CVE-2026-126912",
+    "CVE-2026-126915",
+    "CVE-2026-126916",
+    "CVE-2026-126917",
+    "CVE-2026-126918",
+    "CVE-2026-126919",
+    "CVE-2026-126921"
+   ],
+   "cvss": null,
+   "published": "2026-11-11T23:17:11+00:00",
+   "first_seen": "2026-11-12T03:49:46+00:00",
+   "updated": "2026-11-12T03:49:46+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126840",
+   "pts": [
+    "**Google Chrome 157.0.8103.78 之前版本存在多項漏洞，可透過特製 HTML 頁面執行任意程式碼。**",
+    "漏洞包含越界寫入、釋放後重用及型別混淆，部分漏洞可繞過沙盒執行程式碼。"
+   ],
+   "fix": "升級至 Google Chrome 157.0.8103.78 以上版本。",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "descs": [
+     "Out of bounds write in Network in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in ANGLE in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in Turbolev in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Skia in Google Chrome on on Android prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in MediaStream in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Link following in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Media in Google Chrome on on Android prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in HTML in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DOM in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in Extensions in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Use after free in Browser in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Frames in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Extensions in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Integer overflow in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Dawn in Google Chrome prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Layout in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper initialization in Media in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Core in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in ServiceWorker in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Frames in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Animation in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Turbolev in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Off-by-one error in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Media in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in MediaStream in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CSS in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Elements in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CSS in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in PDF in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect reference resolution in Browser in Google Chrome on on Mac prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Compositing in Google Chrome prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incomplete cleanup in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Passwords in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Buffer overflow in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use of uninitialized variable in Skia in Google Chrome on on Android prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Integer overflow in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Layout in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in BrowserTag in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
+    ]
+   }
+  },
   {
    "id": "CVE-2026-65949",
    "kind": "cve",
@@ -121,7 +446,7 @@
    "cvss": 9.8,
    "published": "2026-11-11T22:17:11+00:00",
    "first_seen": "2026-11-11T22:43:03+00:00",
-   "updated": "2026-11-11T22:43:03+00:00",
+   "updated": "2026-11-12T03:49:46+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
@@ -133,6 +458,43 @@
    "ai_ver": 0,
    "raw": {
     "descs": [
+     "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through 7.2.13 may allow a remote and unauthenticated attacker to perform a Man-in-the-Middle attack on the communication channel between the SSLVPN web portal and the backend destination website.",
+     "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6, FortiMail 7.2 all versions, FortiRecorder 7.6.0 through 7.6.2, FortiRecorder 7.2.0 through 7.2.12, FortiRecorder 7.0.0 through 7.0.6, FortiVoice 8.0.0 through 8.0.1, FortiVoice 7.4.0 through 7.4.2, FortiVoice 7.2.0 through 7.2.5, FortiVoice 7.0.0 through 7.0.8 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
+     "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+     "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted HA join-request packets.",
+     "A weak password recovery mechanism for forgotten password vulnerability in Fortinet FortiMail 8.0.0, FortiMail 7.6.0 through 7.6.5, FortiMail 7.4.0 through 7.4.7, FortiMail 7.2.0 through 7.2.9 may allow an unauthenticated attacker to reset the password of an arbitrary IBE webmail user and take over their account via specially crafted HTTP requests.",
+     "A incorrect authorization vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated remote attacker to obtain an authenticated IBE webmail session as any IBE recipient and read or send their encrypted mail via crafted HTTP requests.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated remote attacker to take over an arbitrary IBE recipient account via crafted HTTP requests.",
+     "A improper authentication vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to gain access to other users' secure email accounts via crafted HTTP requests.",
+     "A improper authentication vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to escalate privileges and release or delete quarantined messages for arbitrary mailboxes via a crafted quarantine release requests.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6 may allow a remote unauthenticated attacker to execute unauthorized code or commands via a specially crafted request.",
+     "A use of externally-controlled format string vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1 may allow a remote unauthenticated attacker to execute unauthorized code or commands via a specially crafted SMTP command.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+     "A improper encoding or escaping of output vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.2, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer Cloud 8.0.1 through 8.0.2, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer-BigData 7.6.0 through 7.6.2, FortiManager 8.0.0 through 8.0.2, FortiManager 7.6.0 through 7.6.7, FortiManager Cloud 8.0.1 through 8.0.2, FortiManager Cloud 7.6.0 through 7.6.7 may allow an unauthenticated attacker to execute unauthorized code or commands via a specially crafted HTTP request",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.2 through 7.2.12, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.2 through 7.2.13, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.2 through 7.2.12, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.2 through 7.2.13 may allow an authenticated attacker to execute unauthorized code or commands via crafted JSON-RPC requests.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiAnalyzer 8.0.0, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an unauthenticated remote attacker to inject arbitary content into a signed SAML response via crafted SAML requests.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiAnalyzer 8.0.0, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an unauthenticated remote attacker to inject arbitary content into a signed SAML response via crafted SAML requests.",
+     "A improper neutralization of special elements used in a template engine vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2 all versions may allow a low privileged Device Manager admin to obtain super admin privilege on managed FortiGates via injecting malicious commands.",
+     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions may allow an adjacent-network authenticated attacker with user permission to join the FGFM configuration-sync mesh of the affected FortiGate deployment via the default pre-shared key.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated attacker to execute commands outside of the expected scope via specially crafted HTTP request.",
+     "A authentication bypass by spoofing vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an attacker to disrupt the HA state.",
+     "A incorrect authorization vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0 through 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated administrator to escalate their privileges, bypass authorization controls or impersonate internal services via specially crafted requests to the GUI.",
+     "A incorrect authorization vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0 through 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated administrator to escalate their privileges, bypass authorization controls or impersonate internal services via specially crafted requests to the GUI.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow a remote authenticated attacker with admin permission to elevate their privileges to root via crafted HTTP requests.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
+     "A incorrect authorization vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to bypass authorization checks and gain unauthorized access to restricted functionality.",
+     "A improper neutralization of special elements used in an ldap query ('ldap injection') vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an authenticated attacker to bypass authentication. Successful exploitation requires either a malicious/compromised upstream IdP, or an IdP configuration that allows the user to control the NameID (or the SAML attribute used as the username).",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an authenticated attacker to execute unauthorized SQL commands on the underlying database.",
+     "A out-of-bounds write vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to execute unauthorized code or commands via http requests, should the attacker be able to defeat ASLR protections.",
+     "A incorrect authorization vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to cause a denial of service via HTTP requests.",
+     "A incorrect authorization vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an attacker to bypass authentication and gain unauthorized access.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an authenticated attacker to execute unauthorized code or commands via http requests",
+     "A authentication bypass by primary weakness vulnerability in Fortinet FortiOS 8.0.0 through 8.0.1, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow an unauthenticated attacker to broadcast LSA via specially crafted request",
+     "A numeric truncation error vulnerability in Fortinet FortiOS 8.0.0 through 8.0.1, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow a configured ibgp neighbor to send malicious/malformed attributes to all connected routers via a specially crafted request",
+     "A use of hard-coded password vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to bypass credential validation in certain circumstances outside of the attacker's control and gain unauthorized access.",
+     "A missing authentication for critical function vulnerability in Fortinet FortiOS 8.0.0, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow an unauthenticated attacker with HA FGSP + standalone-config-sync, or autoscale to execute command as super admin via crafted HA packets.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12 may allow an unauthenticated attacker who has access to the oftp port to execute code or command on the system via crafted OFTP packets.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted requests.",
      "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through 7.2.13 may allow a remote and unauthenticated attacker to perform a Man-in-the-Middle attack on the communication channel between the SSLVPN web portal and the backend destination website.",
      "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6, FortiMail 7.2 all versions, FortiRecorder 7.6.0 through 7.6.2, FortiRecorder 7.2.0 through 7.2.12, FortiRecorder 7.0.0 through 7.0.6, FortiVoice 8.0.0 through 8.0.1, FortiVoice 7.4.0 through 7.4.2, FortiVoice 7.2.0 through 7.2.5, FortiVoice 7.0.0 through 7.0.8 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
      "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
@@ -300,11 +662,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180430",
    "pts": [
-    "Google DeepMind公布AI代理形式化驗證（Formal Verification）框架AlphaProof Code，利用AI代理驗證Signal加密通訊協定的核心程式庫libsignal，將安全性證明延伸到編譯後的機器碼。Signal協定廣泛應用於通訊服務，此次5名DeepMind研究"
+    "Google DeepMind公布AlphaProof Code框架，**利用AI代理驗證Signal加密通訊協定核心庫libsignal**。",
+    "5名研究人員與AI代理合作於4周內產出約650萬行Lean語言證明程式碼，將安全性證明延伸至機器碼層級。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "DeepMind以AI代理驗證Signal加密實作安全性，數學證明擴及機器碼層級",
     "desc": "Google DeepMind公布AI代理形式化驗證（Formal Verification）框架AlphaProof Code，利用AI代理驗證Signal加密通訊協定的核心程式庫libsignal，將安全性證明延伸到編譯後的機器碼。Signal協定廣泛應用於通訊服務，此次5名DeepMind研究人員與AI代理合作，4周內產出約650萬行以Lean語言撰寫的數學證明程式碼，驗證前向保密性（Forward Secrecy，FS）、身分驗證及入侵後安全性恢復等要求。",
@@ -330,11 +693,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180428",
    "pts": [
-    "Google本周宣布最新一代尖端模型Gemini 4 Carbon 已開放給企業、開發者及個人付費用戶，API存取費用為Anthropic Fable/Mythos 5.2一半。 Gemini 4 Carbon是繼Gemini 4 Argon推出的新一代尖端模型，著重強化程式開發、代理式AI、科學研"
+    "Google全面開放尖端模型Gemini 4 Carbon，**API存取費用為競品Anthropic Fable/Mythos 5.2的一半**。",
+    "該模型著重強化程式開發、代理式AI、科學研究與長時間自主執行任務能力，先前僅開放受信任資安人員使用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Google Gemini 4 Carbon全面上線，以較低價對打Anthropic Fable/Mythos 5.2",
     "desc": "Google本周宣布最新一代尖端模型Gemini 4 Carbon 已開放給企業、開發者及個人付費用戶，API存取費用為Anthropic Fable/Mythos 5.2一半。 Gemini 4 Carbon是繼Gemini 4 Argon推出的新一代尖端模型，著重強化程式開發、代理式AI、科學研究及長時間自主執行任務的能力。10月底推出時，Google僅先開放部分受信任的資安防禦人員使用。",
@@ -360,11 +724,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180425",
    "pts": [
-    "11月10日Adobe發布例行更新，針對旗下9款產品修補110個漏洞，涵蓋Adobe Experience Manager（AEM）、Adobe Connect、Photoshop、Premiere、After Effects、Audition、Dimension、M"
+    "**Adobe發布11月例行更新針對旗下9款產品修補110個漏洞**。",
+    "影響產品涵蓋Adobe Experience Manager（AEM）、Adobe Connect、Photoshop、Premiere、After Effects等。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Adobe發布11月上半例行更新，修補110個資安漏洞",
     "desc": "11月10日Adobe發布例行更新，針對旗下9款產品修補110個漏洞，涵蓋Adobe Experience Manager（AEM）、Adobe Connect、Photoshop、Premiere、After Effects、Audition、Dimension、M",
@@ -390,11 +755,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180422",
    "pts": [
-    "本日新聞焦點 ● 駭客利用大數據平臺Qubole被竊憑證，入侵數十家企業AWS環境 ● 日本警方查獲車載偽基地臺，逮捕涉嫌干擾手機通訊的男子 ● netiCRM服務商遭駭，超過30個非營利組織示警捐款人個資恐外洩"
+    "**駭客利用大數據平台Qubole被竊憑證入侵數十家企業AWS環境**。",
+    "日本警方查獲車載偽基地台；netiCRM服務商遭駭，逾30個非營利組織示警捐款人個資恐外洩。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "【資安日報】11月11日，駭客利用大數據平臺Qubole被竊憑證，入侵數十家企業AWS環境竊取資料",
     "desc": "本日新聞焦點 ● 駭客利用大數據平臺Qubole被竊憑證，入侵數十家企業AWS環境 ● 日本警方查獲車載偽基地臺，逮捕涉嫌干擾手機通訊的男子 ● netiCRM服務商遭駭，超過30個非營利組織示警捐款人個資恐外洩",
@@ -774,11 +1140,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180399",
    "pts": [
-    "資安業者ESET近日揭露，與俄羅斯情報機構有關的駭客組織Turla，利用過去未曝光的惡意程式工具組Cereal，入侵哈薩克及羅馬尼亞政府機構的Microsoft Exchange伺服器，藉此蒐集情報。ESET於2025年11月發現哈薩克政府機構遭入侵，後續也在羅馬尼亞政府機構發現相同工具組。在羅馬尼"
+    "ESET揭露俄羅斯駭客組織Turla利用未曝光工具組Cereal，入侵哈薩克與羅馬尼亞政府機構的Microsoft Exchange伺服器以蒐集情報。",
+    "**惡意程式在羅馬尼亞被設定為竊取與 NATO 及歐盟機構往來的郵件。**"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "俄羅斯駭客入侵羅馬尼亞政府Exchange伺服器，意圖竊取北約及歐盟相關郵件",
     "desc": "資安業者ESET近日揭露，與俄羅斯情報機構有關的駭客組織Turla，利用過去未曝光的惡意程式工具組Cereal，入侵哈薩克及羅馬尼亞政府機構的Microsoft Exchange伺服器，藉此蒐集情報。ESET於2025年11月發現哈薩克政府機構遭入侵，後續也在羅馬尼亞政府機構發現相同工具組。在羅馬尼亞的案例中，惡意程式被設定為蒐集與北大西洋公約組織（NATO）及歐盟機構往來的郵件。",
@@ -1602,11 +1969,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180363",
    "pts": [
-    "美國主機代管與網域註冊業者DreamHost近日揭露資安事件，攻擊者利用其網頁版檔案管理工具File Manager的軟體漏洞，入侵執行該服務的伺服器，竊取部分使用者的FTP及SFTP帳號名稱與密碼，此次事件始於今年8月，直到10月23日才為該公司發現。"
+    "**攻擊者利用 DreamHost 檔案管理工具漏洞入侵伺服器，竊取 FTP 與 SFTP 帳密。**",
+    "事件始於 8 月，DreamHost 於 10 月 23 日發現該資安事件。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "主機服務商DreamHost遭駭，用戶FTP帳號密碼及網頁郵件工作階段資訊外洩",
     "desc": "美國主機代管與網域註冊業者DreamHost近日揭露資安事件，攻擊者利用其網頁版檔案管理工具File Manager的軟體漏洞，入侵執行該服務的伺服器，竊取部分使用者的FTP及SFTP帳號名稱與密碼，此次事件始於今年8月，直到10月23日才為該公司發現。",
@@ -14188,6 +14556,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-11T22:42:48+00:00",
- "kev_last": "2026-11-11T22:42:48+00:00"
+ "nvd_last": "2026-11-12T03:49:32+00:00",
+ "kev_last": "2026-11-12T03:49:32+00:00"
 }
