@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T03:49:32+00:00",
+ "generated": "2026-11-12T12:44:07+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,348 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:e547abdd5049",
+   "kind": "news",
+   "title": "駭客濫用AI代理滲透測試平臺AntiFox，發動AWS雲端憑證竊取攻擊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180465",
+   "pts": [
+    "資安業者Arctic Wolf Labs近日揭露駭客利用開源AI代理滲透測試平臺AntiFox，對網際網路服務及AWS雲端環境發動攻擊。AntiFox最初是從AI代理滲透測試工具ARTEX 0.1.1分支而來，具備中文介面，可讓使用者透過AI 代理自動執行滲透測試任務。研究人員發現，託管於阿里雲上的"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:a2724315bcea",
+   "kind": "news",
+   "title": "康橋國際學校林口校區遭Osiris勒索，傳出部分資料恐外流",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180463",
+   "pts": [
+    "康橋國際學校林口校區遭 Osiris 勒索軟體攻擊，**校方證實部分資料外流並已向警方報案**。",
+    "目前校方已全面隔離受影響系統並進行數位鑑識，初步清查僅該校區網頁無法連線，其他分校未受害。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:ba26eb53b3f0",
+   "kind": "news",
+   "title": "研究人員透露FortiClient重大漏洞Fortinet2Shell細節",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180464",
+   "pts": [
+    "Fortinet 於 11 月 10 日發布例行更新修補 100 個漏洞，其中包括 FortiClient 重大漏洞 CVE-2026-121529。",
+    "**資安專家 Kevin Joensen 透露了該漏洞 Fortinet2Shell 的相關細節**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:fa05c4ac005d",
+   "kind": "news",
+   "title": "Fortinet揭露10月底修補的100個資安漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Fortinet"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180460",
+   "pts": [
+    "網路安全設備廠商Fortinet於10月21日，針對FortiOS、FortiManager、FortiAnalyzer、FortiMail，以及FortiAuthenticator等應用系統發布安全強化更新，修補由頂尖AI找出的資安漏洞。本週該公司也如之前預告，公布這些漏洞的資訊。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:c71a06a0a64e",
+   "kind": "news",
+   "title": "地下論壇有人聲稱兜售4.6萬筆台積電員工紀錄，台積電回應無證據顯示公司系統遭入侵",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180450",
+   "pts": [
+    "今日有新聞媒體報導，有人在地下論壇DarkForums與BreachForums聲稱取得4.6萬筆台積電員工紀錄，資料量為6.9GB，當中包含個資，對方開價3個比特幣兜售（約合新台幣726萬元），揚言一週內沒人買就公開全部資料，對此台積電的回應是：「已掌握此情形，正與相關雲端服務供應商及調查機關密切"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:8ea958a11d37",
+   "kind": "news",
+   "title": "N-able發布N-central重大安全更新，修補研究人員公布的部分零時差漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180452",
+   "pts": [
+    "**N-able 發布 N-central 2026.4 Hotfix 2 修補 7 個 CVE 漏洞**，涵蓋 XXE、OGNL 注入、權限提升、XSS、SSRF 及遠端程式碼執行。",
+    "更新重點包含強化身分驗證、權限控管以及 Agent 與 Probe 通訊安全，呼籲自建用戶儘速套用。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:da1ff24df2c8",
+   "kind": "news",
+   "title": "【資安日報】11月12日，netiCRM服務商內部管理主機遭駭，暫未發現捐款人資料外洩，已將500多家客戶主機納入檢查及重建範圍",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180447",
+   "pts": [
+    "**netiCRM 服務商內部管理主機遭駭**，已將 500 多家客戶主機納入檢查與重建，暫未發現捐款人資料外洩。",
+    "資安日報亦報導馬士基證實資料外洩，以及代理型 AI 搜尋外洩憑證導致 Azure Key Vault 資料外傳事件。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:bb1b1daa1bbb",
+   "kind": "news",
+   "title": "外交部領務局網站遭駭，逾7.2萬個護照大頭照外洩，另有授權書及ABTC資料遭取得",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180446",
+   "pts": [
+    "**外交部領務局網站遭駭導致逾 7.2 萬個護照大頭照外洩**，另有 2.6 萬個授權書掃描檔及 774 件 ABTC 申請資料遭存取。",
+    "領務局提醒受影響民眾留意個資風險但無須換發護照，相關事證將移送司法機關偵辦。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:3cd04b705174",
+   "kind": "news",
+   "title": "netiCRM服務商內部管理主機遭駭，暫未發現捐款人資料外洩，已將500家客戶主機納入檢查及重建範圍",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180438",
+   "pts": [
+    "日前netiCRM捐款管理系統服務商網絡行動科技遭駭，數十家非營利組織接連發布相關資安警訊。如今，網絡行動科技進一步釐清事件影響範圍，指出這次遭入侵的是用來管理其他伺服器的內部管理主機，並非客戶使用的netiCRM系統所在主機。該公司表示，已確認自身持有的非營利組織客戶聯絡人資料、方案與帳務資料，以"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:07d784f60fe4",
+   "kind": "news",
+   "title": "Google同步更新Chrome 157穩定版、Chrome 156延伸穩定版與ChromeOS LTS版",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180443",
+   "pts": [
+    "Google於11月11日同步發布Chrome瀏覽器及ChromeOS作業系統安全更新。其中在Chrome 157桌面穩定版方面，Windows與Linux平臺更新至157.0.8103.78版，macOS平臺更新至157.0.8103.79版，共修補83個漏洞，包含5個重大漏洞與78個高風險漏洞。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:6e1bb75891bd",
+   "kind": "news",
+   "title": "菲律賓證管會傳數位平臺被駭，逾40萬用戶資料外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Exchange"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180442",
+   "pts": [
+    "菲律賓證券交易管理委員會（Securities and Exchange Commission，SEC）本週一（11月9日）傳出數位平臺被駭，導致駭客竊走超過40萬用戶姓名、使用者名稱及稅籍編號等資料並放上網兜售。菲國SEC已著手調查。"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:066b16ddca8b",
+   "kind": "news",
+   "title": "N-central資安漏洞Able2Shell公布後出現嘗試利用活動",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-12T12:44:24+00:00",
+   "first_seen": "2026-11-12T12:44:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180439",
+   "pts": [
+    "研究員公布 33 個 N-central 零時差漏洞 Able2Shell，N-able 已關閉多區代管服務並要求本地部署客戶暫時關閉伺服器。",
+    "**漏洞公布後攻擊者已嘗試用於實際攻擊。**"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-106140",
+   "kind": "cve",
+   "title": "Telerik 報表反序列化漏洞",
+   "sub": "CVE-2026-106140 · CVSS 7.3",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-106140"
+   ],
+   "cvss": 7.3,
+   "published": "2026-11-12T10:17:26+00:00",
+   "first_seen": "2026-11-12T12:44:20+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106140",
+   "pts": [
+    "影響 20.3.26.1110 版本前的 Progress Telerik Reporting，.NET Framework 報表設計工具存在不信任資料反序列化漏洞。",
+    "**低權限在地攻擊者可在使用者進行特定編輯操作時，於設計工具程序中執行任意程式碼**；目前未遭利用。"
+   ],
+   "fix": "升級至 20.3.26.1110 或以上版本",
+   "ai": true
+  },
+  {
+   "id": "grp:Synology:2026-11-12",
+   "kind": "group",
+   "title": "Synology 多個高風險漏洞",
+   "sub": "8 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [
+    "CVE-2026-13672",
+    "CVE-2026-18596",
+    "CVE-2026-18792",
+    "CVE-2026-19048",
+    "CVE-2026-74857",
+    "CVE-2026-76954",
+    "CVE-2026-81584",
+    "CVE-2026-85101"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-12T04:17:18+00:00",
+   "first_seen": "2026-11-12T12:44:20+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13672",
+   "pts": [
+    "同日公布 8 個漏洞，最高 CVSS 9.8。",
+    "An authorization bypass through user-controlled key vulnerability in the SSOAuth in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 "
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:5e66cb727e8f",
    "kind": "news",
@@ -2095,7 +2437,7 @@
   {
    "id": "CVE-2026-125383",
    "kind": "cve",
-   "title": "ASP.NET 漏洞 CVE-2026-125383",
+   "title": "WHMS 系統身分驗證繞過漏洞",
    "sub": "CVE-2026-125383 · CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -2112,10 +2454,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125383",
    "pts": [
-    "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contains an authentication bypass vulnerability caused b"
+    "INDOTALENT WHMS 10.20261109 之前版本在 appsettings.json 中寫死 JWT 金鑰，**未經驗證的遠端攻擊者可偽造 Token 取得整體 API 管理員權限**。",
+    "此漏洞編號為 CVE-2026-125383，CVSS 風險評分為 9.3 分，目前尚未發現遭利用情況。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 10.20261109 以上版本",
+   "ai": true
   },
   {
    "id": "CVE-2026-124194",
