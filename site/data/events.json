@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T12:44:07+00:00",
+ "generated": "2026-11-12T20:49:52+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,109 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "grp:ASP.NET:2026-11-13",
+   "kind": "group",
+   "title": "ASP.NET 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "ASP.NET",
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-106146",
+    "CVE-2026-106154"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-12T18:17:12+00:00",
+   "first_seen": "2026-11-12T20:50:07+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106146",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.6。",
+    "In Progress® Telerik® UI for ASP.NET MVC versions `2012.2.710` through `2026.3.1015`, server-side filter processing does not properly valida"
+   ],
+   "fix": "原文：The issue is fixed in version `2026.4.1111`.",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-126837",
+   "kind": "cve",
+   "title": "Node.js 漏洞 CVE-2026-126837",
+   "sub": "CVE-2026-126837 · CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-126837"
+   ],
+   "cvss": 9.1,
+   "published": "2026-11-12T17:17:33+00:00",
+   "first_seen": "2026-11-12T20:50:07+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126837",
+   "pts": [
+    "A validation flaw in the DNS SRV host discovery of the MongoDB Node.js driver may cause the driver to connect to a host outside the expected"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-123790",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-123790",
+   "sub": "CVE-2026-123790 · 尚未評分",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-123790"
+   ],
+   "cvss": null,
+   "published": "2026-11-12T15:17:46+00:00",
+   "first_seen": "2026-11-12T20:50:07+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123790",
+   "pts": [
+    "ComfyUI-Easy-Use version 1.3.6 contains a path traversal vulnerability in the `save_preview()` handler for POST `/easyuse/save/{name}`. The "
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-120869",
+   "kind": "cve",
+   "title": "Citrix 漏洞 CVE-2026-120869",
+   "sub": "CVE-2026-120869 · CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Citrix"
+   ],
+   "cves": [
+    "CVE-2026-120869"
+   ],
+   "cvss": 9.3,
+   "published": "2026-11-12T14:17:23+00:00",
+   "first_seen": "2026-11-12T20:50:07+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120869",
+   "pts": [
+    "An unauthenticated attacker can bypass authentication controls to access restricted resources on the Citrix NetScaler Console appliance"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:e547abdd5049",
    "kind": "news",
@@ -851,8 +954,8 @@
    "id": "grp:Chrome:2026-11-12",
    "kind": "group",
    "title": "Chrome多項遠端執行程式碼漏洞",
-   "sub": "54 個 CVE",
-   "sev": "high",
+   "sub": "57 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -880,6 +983,7 @@
     "CVE-2026-126872",
     "CVE-2026-126873",
     "CVE-2026-126874",
+    "CVE-2026-126875",
     "CVE-2026-126876",
     "CVE-2026-126877",
     "CVE-2026-126879",
@@ -895,11 +999,13 @@
     "CVE-2026-126892",
     "CVE-2026-126893",
     "CVE-2026-126895",
+    "CVE-2026-126896",
     "CVE-2026-126897",
     "CVE-2026-126899",
     "CVE-2026-126900",
     "CVE-2026-126901",
     "CVE-2026-126902",
+    "CVE-2026-126903",
     "CVE-2026-126904",
     "CVE-2026-126905",
     "CVE-2026-126908",
@@ -914,43 +1020,46 @@
     "CVE-2026-126919",
     "CVE-2026-126921"
    ],
-   "cvss": null,
+   "cvss": 9.6,
    "published": "2026-11-11T23:17:11+00:00",
    "first_seen": "2026-11-12T03:49:46+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126840",
    "pts": [
-    "**Google Chrome 157.0.8103.78 之前版本存在多項漏洞，可透過特製 HTML 頁面執行任意程式碼。**",
-    "漏洞包含越界寫入、釋放後重用及型別混淆，部分漏洞可繞過沙盒執行程式碼。"
+    "同日公布 57 個漏洞，最高 CVSS 9.6。",
+    "Out of bounds write in Network in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbo"
    ],
-   "fix": "升級至 Google Chrome 157.0.8103.78 以上版本。",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
-   "id": "CVE-2026-65949",
-   "kind": "cve",
-   "title": "Lenovo元件指令注入漏洞",
-   "sub": "CVE-2026-65949 · CVSS 8.6",
-   "sev": "high",
+   "id": "grp:Windows Server:2026-11-12",
+   "kind": "group",
+   "title": "Windows 多個高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 9.1",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
-    "Windows Server"
+    "Windows Server",
+    "Chrome"
    ],
    "cves": [
+    "CVE-2026-126883",
+    "CVE-2026-19422",
     "CVE-2026-65949"
    ],
-   "cvss": 8.6,
+   "cvss": 9.1,
    "published": "2026-11-11T22:17:27+00:00",
    "first_seen": "2026-11-11T22:43:03+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65949",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126883",
    "pts": [
-    "Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 與 5.2.0 版存在 OS 指令特別元素中和不當漏洞。",
-    "目前未遭利用，通過驗證的遠端攻擊者可傳送特製的主機名稱以**執行任意 PowerShell 指令**。"
+    "同日公布 3 個漏洞，最高 CVSS 9.1。",
+    "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Fortinet:2026-11-12",
@@ -1044,7 +1153,7 @@
    "id": "grp:Node.js:2026-11-12",
    "kind": "group",
    "title": "Node.js多重高風險漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 8.2",
+   "sub": "4 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -1054,19 +1163,20 @@
    "cves": [
     "CVE-2026-123863",
     "CVE-2026-123864",
-    "CVE-2026-123872"
+    "CVE-2026-123872",
+    "CVE-2026-127056"
    ],
-   "cvss": 8.2,
+   "cvss": 8.7,
    "published": "2026-11-11T19:17:32+00:00",
    "first_seen": "2026-11-11T22:43:03+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123863",
    "pts": [
-    "Node.js 存在 HTTP/2 中斷崩潰、HTTPS 記憶體讀取及 TLS 1.2 驗證繞過等多項漏洞。",
-    "目前未遭利用，未經驗證的遠端攻擊者可發動阻斷服務攻擊或**讀取其他連線的 TLS 私鑰與記憶體內容**。"
+    "同日公布 4 個漏洞，最高 CVSS 8.7。",
+    "A reachable assertion in Node.js HTTP/2 session teardown lets any unauthenticated client abort the server, over both TLS and cleartext. A cl"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:ASP.NET:2026-11-12",
@@ -1090,11 +1200,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106137",
    "pts": [
-    "Progress Telerik UI for ASP.NET MVC 2012.2.710 至 2026.3.811 及 Core 2015.1.318 至 2026.3.811 存在記憶體管理漏洞。",
-    "目前未遭利用，未經驗證的遠端攻擊者發送重複請求可導致**進程記憶體持續累積消耗**。"
+    "同日公布 2 個漏洞，最高 CVSS 8.6。",
+    "In affected versions of Progress® Telerik® UI for ASP.NET MVC `2012.2.710` through `2026.3.811`, ClassFactory updates a shared class diction"
    ],
-   "fix": "",
-   "ai": true
+   "fix": "原文：The issue is fixed in version `2026.3.1015`.",
+   "ai": false
   },
   {
    "id": "tw:fff8ef0585f0",
@@ -1673,11 +1783,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111250",
    "pts": [
-    "影響內嵌式 OpenEJB HTTP 伺服器，漏洞包含身分驗證繞過、任意檔案讀取及資源耗盡導致阻斷服務。",
-    "未驗證遠端攻擊者可存取受保護功能與資源，或**獲取先前身分驗證使用者的權限**。"
+    "同日公布 7 個漏洞。",
+    "The embedded OpenEJB HTTP server reports every request as authenticated when an application requests authentication programmatically. A remo"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:362b64b667d4",
@@ -2012,11 +2122,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12573",
    "pts": [
-    "影響 ManageEngine DDI Central 6500 及 6200 以下版本，其 Cisco IOS DHCP 功能存在指令注入漏洞。",
-    "**攻擊者可藉由特製字元於受管理的 Cisco 路由器上執行任意指令**。"
+    "同日公布 2 個漏洞，最高 CVSS 8.8。",
+    "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the C"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:OpenSSL:2026-11-10",
@@ -2540,30 +2650,31 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-124683",
-   "kind": "cve",
-   "title": "Langium 阻斷服務漏洞",
-   "sub": "CVE-2026-124683 · CVSS 8.7",
-   "sev": "high",
+   "id": "grp:Node.js:2026-11-10",
+   "kind": "group",
+   "title": "Node.js 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.1",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
     "Node.js"
    ],
    "cves": [
+    "CVE-2026-107242",
     "CVE-2026-124683"
    ],
-   "cvss": 8.7,
+   "cvss": 9.1,
    "published": "2026-11-09T17:17:27+00:00",
    "first_seen": "2026-11-09T22:23:34+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124683",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107242",
    "pts": [
-    "影響 Eclipse Langium 3.2.0 至 4.4.0 版，特製文件可阻塞 Node.js 事件迴圈，導致**伺服器遭遇阻斷服務 (DoS) 攻擊**。",
-    "目前未發現已遭利用。僅影響啟用 IndentationAwareTokenBuilder 之設定，使用預設建置器者不受影響。"
+    "同日公布 2 個漏洞，最高 CVSS 9.1。",
+    "Eclipse Langium versions 3.2.0 through 4.4.0 contain an inefficient algorithmic complexity issue (CWE-407) in the opt-in IndentationAwareTok"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:d26544e666d5",
@@ -3636,11 +3747,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102523",
    "pts": [
-    "影響 SQL Server（Jumis）與 MariaDB 10.11.1 至 10.11.19 等版本，存在硬編碼密碼與檔案路徑建構缺失漏洞。",
-    "**目前尚未發現漏洞遭實際利用**，CVSS 風險評分為 9.3，攻擊者需具備驗證權限或取得 SQL Server 名稱。"
+    "同日公布 2 個漏洞，最高 CVSS 9.3。",
+    "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE "
    ],
-   "fix": "",
-   "ai": true
+   "fix": "原文：This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+   "ai": false
   },
   {
    "id": "tw:e46fd02e2527",
@@ -4969,11 +5080,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 之前的 Google Chrome，包含 DevTools、Views、Prerender、CSS 等元件漏洞。",
-    "遠端攻擊者可誘騙使用者存取特製 HTML 網頁，**執行任意程式碼並跳脫沙盒**。"
+    "同日公布 123 個漏洞，最高 CVSS 9.8。",
+    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Windows Server:2026-11-04",
@@ -9858,11 +9969,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft Enterprise PeopleTools 8.61 至 8.63，以及 Siebel CRM Cloud Applications 17.0 至 26.9 等版本，未授權或低權限攻擊者可存取並妥協系統。",
-    "**目前尚未發現遭漏洞利用情形**，最高 CVSS 風險評分為 10.0 分，攻擊者可透過 HTTP 或網路進行存取與攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-10-20",
