@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T01:50:07+00:00",
+ "generated": "2026-11-13T09:33:11+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,344 @@
  },
  "events": [
   {
+   "id": "tw:ee78babeacaf",
+   "kind": "news",
+   "title": "駭客集團UNC6783聲稱入侵資安院竊得102 GB資料，資安院：去年7月已進行資安通報",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180499",
+   "pts": [
+    "駭客組織 UNC6783 於地下論壇宣稱入侵台灣國家資通安全研究院，**聲稱外洩 102 GB 內部檔案**。",
+    "資安院表示去年 7 月已進行資安通報，目前持續監控觀察中。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:5eb321f06fbd",
+   "kind": "news",
+   "title": "【資安日報】11月13日，Apache修補網頁伺服器HTTP/2重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180494",
+   "pts": [
+    "**Apache修補網頁伺服器HTTP/2模組重大漏洞**，N-able修補N-central零時差漏洞。",
+    "eMudhra撤銷8張RSA中繼CA憑證。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:2f563cb69fc4",
+   "kind": "news",
+   "title": "Rust 1.100允許延後採用新套件，Never Type歷經10年正式穩定",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180489",
+   "pts": [
+    "Rust 1.100.0 發布，**Cargo 套件管理工具新增依賴套件發布冷卻期以降低軟體供應鏈攻擊風險**。",
+    "新版同步正式支援歷經多次嘗試的 Never Type，並開放自訂記憶體配置器核心介面。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:50ed3560962f",
+   "kind": "news",
+   "title": "Apache修補網頁伺服器HTTP/2模組的重大漏洞，64%雲端環境恐曝險",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180490",
+   "pts": [
+    "Apache軟體基金會發布Apache HTTP Server 2.4.71，修補mod_http2模組等3個資安漏洞。",
+    "**漏洞源自HTTP/2請求處理的競爭條件**，評估64%雲端環境恐曝險。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-119618",
+   "kind": "cve",
+   "title": "Apache HTTP/2 遠端執行漏洞",
+   "sub": "CVE-2026-119618 · 尚未評分",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [
+    "CVE-2026-119618"
+   ],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome 報導",
+   "url": "https://www.ithome.com.tw/news/180490",
+   "pts": [
+    "影響Apache HTTP Server 2.4.55至2.4.70與mod_h2 2.0.8至2.0.42，因同步不當引發競爭條件。",
+    "**未授權攻擊者可利用該漏洞執行遠端程式碼（RCE）**；目前尚未遭利用。"
+   ],
+   "fix": "升級至 Apache HTTP Server 2.4.71 以上版本。",
+   "ai": true
+  },
+  {
+   "id": "tw:459f16152274",
+   "kind": "news",
+   "title": "美而快電商系統遭異常存取，部分請求涉及會員訂單API",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180488",
+   "pts": [
+    "美而快接獲客戶反映收到疑似詐騙郵件，**清查發現外部特定 IP 對會員訂單 API 進行異常存取**。",
+    "官方已啟動資安應變及調查機制，持續回溯分析系統存取紀錄。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:d0b3b7788cad",
+   "kind": "news",
+   "title": "大聯大發生資安事件，部分員工姓名與公務電子郵件遭未經授權存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180487",
+   "pts": [
+    "大聯大內部系統遭異常存取，確認**部分員工姓名與公務電子郵件地址遭未經授權存取**。",
+    "公司已啟動應變程序與防護措施，初步評估對財務及業務均不受影響。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:37022872b113",
+   "kind": "news",
+   "title": "憂AI助長網攻及生物武器風險，美國非營利組織控告OpenAI等5家業者",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180485",
+   "pts": [
+    "美國 4 家非營利組織針對 OpenAI、Google、Meta、Anthropic 及 SpaceXSI 提出聯合訴訟。",
+    "**指控其先進 AI 系統可能失控並助長網路攻擊與生物武器擴散**，要求法院凍結相關模型開發。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:1583036289dc",
+   "kind": "news",
+   "title": "長榮物流部分資訊系統遭攻擊，啟動資安防禦與復原機制",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180484",
+   "pts": [
+    "長榮物流部分資訊系統遭受駭客攻擊致伺服器異常，**目前系統已恢復正常並啟動資安應變措施**。",
+    "公司初步評估該起事件對財務及業務並無重大影響。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:20e17e4acb96",
+   "kind": "news",
+   "title": "大金空調零件線上商城委外廠商發生資安事件，141筆訂單資料受波及、132筆個資遭未經授權存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180482",
+   "pts": [
+    "和泰服務行銷之委外廠商順立智慧發生資安事件，致大金空調零件線上商城資料庫遭未經授權存取。",
+    "**事件共影響 141 筆訂單資料並涉及 132 筆個人資料**。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:ee353cdfb573",
+   "kind": "news",
+   "title": "AI讓攻擊進入自動化時代，Google：企業更要管好Agent權限",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180481",
+   "pts": [
+    "Google 威脅情報小組指出，AI 讓攻擊者能大幅提升攻擊速度與規模，可在 6 小時內完成多階段攻擊。",
+    "**提醒企業應妥善管理 AI Agent 權限**，避免原本風險較低的弱點成為入侵入口。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:e5a86488e3ba",
+   "kind": "news",
+   "title": "正能量智能子公司電商資料庫遭未經授權存取，已通知受影響消費者並啟動資安應變",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180478",
+   "pts": [
+    "正能量智能旗下子公司正能量運動之 **WooCommerce 電商系統資料庫遭未經授權存取及擷取**。",
+    "公司已啟動資安應變程序並通知受影響之消費者。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:ddff2255cd68",
+   "kind": "news",
+   "title": "泰航與芬蘭航空各因Amadeus資安事件外洩逾6萬筆與11萬筆旅客資訊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180477",
+   "pts": [
+    "**訂票服務系統供應商Amadeus遭到非法存取**，導致泰國航空與芬蘭航空乘客記錄可能外流。",
+    "泰國航空與芬蘭航空受影響乘客記錄分別超過6萬筆及11.6萬筆。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:9f91269293b1",
+   "kind": "news",
+   "title": "威力德生醫線上商店委外廠商發生資安事件，部分消費者訂單資料遭異常存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180476",
+   "pts": [
+    "威力德生醫委外廠商順立智慧發生資安事件，**資料庫部分資料遭未經授權異常存取**。",
+    "本次事件波及威力德生醫線上商店部分消費者訂單相關資料。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "tw:21b3983ad56b",
    "kind": "news",
    "title": "RSAC預測2027年資安趨勢：AI代理增加漏洞處理壓力，企業須強化GRC與事件應變",
@@ -434,10 +772,10 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-120868",
-   "kind": "cve",
-   "title": "Citrix 漏洞 CVE-2026-120868",
-   "sub": "CVE-2026-120868 · CVSS 9.3",
+   "id": "grp:Citrix:2026-11-13",
+   "kind": "group",
+   "title": "Citrix NetScaler 阻斷服務漏洞",
+   "sub": "23 個 CVE · 最高 CVSS 9.5",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -445,18 +783,41 @@
     "Citrix"
    ],
    "cves": [
+    "CVE-2026-107407",
+    "CVE-2026-107408",
+    "CVE-2026-107409",
+    "CVE-2026-107410",
+    "CVE-2026-107411",
+    "CVE-2026-107412",
+    "CVE-2026-107413",
+    "CVE-2026-107414",
+    "CVE-2026-107415",
+    "CVE-2026-111334",
+    "CVE-2026-111336",
+    "CVE-2026-111337",
+    "CVE-2026-111340",
+    "CVE-2026-111341",
+    "CVE-2026-111342",
+    "CVE-2026-120860",
+    "CVE-2026-120861",
+    "CVE-2026-120862",
+    "CVE-2026-120863",
+    "CVE-2026-120864",
+    "CVE-2026-120865",
+    "CVE-2026-120867",
     "CVE-2026-120868"
    ],
-   "cvss": 9.3,
+   "cvss": 9.5,
    "published": "2026-11-13T00:20:09+00:00",
    "first_seen": "2026-11-13T01:50:23+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120868",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107407",
    "pts": [
-    "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gat"
+    "影響 Citrix NetScaler ADC 與 NetScaler Gateway，包含封包處理及 SAML 驗證等模組存在記憶體溢位漏洞，可能導致**未預期的錯誤行為或阻斷服務**。",
+    "包含 CVE-2026-107407 等多個漏洞，目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "grp:ASP.NET:2026-11-13",
@@ -489,7 +850,7 @@
   {
    "id": "CVE-2026-126837",
    "kind": "cve",
-   "title": "Node.js 漏洞 CVE-2026-126837",
+   "title": "Node.js 驅動程式資料洩漏漏洞",
    "sub": "CVE-2026-126837 · CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -506,10 +867,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126837",
    "pts": [
-    "A validation flaw in the DNS SRV host discovery of the MongoDB Node.js driver may cause the driver to connect to a host outside the expected"
+    "影響 MongoDB Node.js 驅動程式，使用 mongodb+srv:// 連線字串時存在 DNS SRV 驗證漏洞，可能導致**應用程式資料與驗證憑證洩漏**。",
+    "未身份驗證的攻擊者可偽造 DNS SRV 回應重新導向連線；目前尚無遭利用報告，mongodb:// 連線不受影響。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "CVE-2026-123790",
@@ -540,7 +902,7 @@
   {
    "id": "CVE-2026-120869",
    "kind": "cve",
-   "title": "Citrix 漏洞 CVE-2026-120869",
+   "title": "Citrix NetScaler 驗證繞過漏洞",
    "sub": "CVE-2026-120869 · CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -557,10 +919,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120869",
    "pts": [
-    "An unauthenticated attacker can bypass authentication controls to access restricted resources on the Citrix NetScaler Console appliance"
+    "影響 Citrix NetScaler Console 設備，存在身份驗證控制繞過漏洞。",
+    "**未身份驗證的遠端攻擊者可繞過控制存取受限資源**；目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "tw:e547abdd5049",
@@ -797,10 +1160,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180443",
    "pts": [
-    "Google於11月11日同步發布Chrome瀏覽器及ChromeOS作業系統安全更新。其中在Chrome 157桌面穩定版方面，Windows與Linux平臺更新至157.0.8103.78版，macOS平臺更新至157.0.8103.79版，共修補83個漏洞，包含5個重大漏洞與78個高風險漏洞。"
+    "Google發布Chrome瀏覽器及ChromeOS安全更新，**共修補83個漏洞**（含5個重大與78個高風險漏洞）。",
+    "Chrome 157修補漏洞涉及元件以Skia與V8最多，各有17個。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:6e1bb75891bd",
@@ -820,10 +1184,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180442",
    "pts": [
-    "菲律賓證券交易管理委員會（Securities and Exchange Commission，SEC）本週一（11月9日）傳出數位平臺被駭，導致駭客竊走超過40萬用戶姓名、使用者名稱及稅籍編號等資料並放上網兜售。菲國SEC已著手調查。"
+    "菲律賓證管會數位平臺遭駭，**超過40萬用戶姓名、使用者名稱及稅籍編號等資料遭竊並兜售**。",
+    "菲律賓證券交易管理委員會已著手調查。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:066b16ddca8b",
@@ -878,7 +1243,7 @@
   {
    "id": "grp:Synology:2026-11-12",
    "kind": "group",
-   "title": "Synology 多個高風險漏洞",
+   "title": "Synology DSM 任意檔案讀寫漏洞",
    "sub": "8 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -902,11 +1267,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13672",
    "pts": [
-    "同日公布 8 個漏洞，最高 CVSS 9.8。",
-    "An authorization bypass through user-controlled key vulnerability in the SSOAuth in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 "
+    "影響 Synology DiskStation Manager (DSM)，存在身份驗證繞過與 SQL 注入等多個漏洞，**遠端攻擊者可讀寫任意檔案及執行阻斷服務攻擊**。",
+    "包含 CVE-2026-13672 等漏洞，目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 Synology DSM 7.3.2-86009-5、7.4.1-90080-1、7.2.1-69057-13 或 7.2.2-72806-10 以上版本。",
+   "ai": true
   },
   {
    "id": "tw:5e66cb727e8f",
@@ -1055,7 +1420,7 @@
   {
    "id": "grp:Chrome:2026-11-12",
    "kind": "group",
-   "title": "Chrome多項遠端執行程式碼漏洞",
+   "title": "Google Chrome 遠端執行程式碼漏洞",
    "sub": "57 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1128,16 +1493,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126840",
    "pts": [
-    "同日公布 57 個漏洞，最高 CVSS 9.6。",
-    "Out of bounds write in Network in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbo"
+    "影響 157.0.8103.78 前版本之 Google Chrome，包含 V8 與 Skia 等模組漏洞，遠端攻擊者可透過精心設計的 HTML 頁面**執行任意程式碼**。",
+    "包含 CVE-2026-126840 等多項高風險與嚴重漏洞，目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 Google Chrome 157.0.8103.78 或以上版本。",
+   "ai": true
   },
   {
    "id": "grp:Windows Server:2026-11-12",
    "kind": "group",
-   "title": "Windows 多個高風險漏洞",
+   "title": "Windows 相關元件多重安全漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -1157,16 +1522,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126883",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.1。",
-    "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and"
+    "影響 Lenovo XClarity Integrator (5.1.1/5.2.0)、ManageEngine DDI Central (6301) 及 Chrome on Windows，遠端攻擊者可**執行任意 PowerShell 指令**或未授權變更 DNS/DHCP。",
+    "包含 CVE-2026-126883 等漏洞，目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "ManageEngine DDI Central 升級至 6301 以上；Chrome 升級至 157.0.8103.78 以上；其餘依原廠說明修補。",
+   "ai": true
   },
   {
    "id": "grp:Fortinet:2026-11-12",
    "kind": "group",
-   "title": "Fortinet 多個高風險漏洞",
+   "title": "Fortinet 多款產品安全性漏洞",
    "sub": "37 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1219,11 +1584,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
-    "同日公布 37 個漏洞，最高 CVSS 9.8。",
-    "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through "
+    "影響 FortiOS、FortiMail 與 FortiRecorder 等，漏洞可能導致**未經身份驗證遠端執行程式碼**、帳號接管或中間人攻擊。",
+    "CVSS 評分為 9.8，目前未遭利用。遠端未身份驗證攻擊者可透過發送特製封包或請求發起攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-65982",
@@ -1254,7 +1619,7 @@
   {
    "id": "grp:Node.js:2026-11-12",
    "kind": "group",
-   "title": "Node.js多重高風險漏洞",
+   "title": "Node.js與套件多重漏洞",
    "sub": "4 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -1274,16 +1639,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123863",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 8.7。",
-    "A reachable assertion in Node.js HTTP/2 session teardown lets any unauthenticated client abort the server, over both TLS and cleartext. A cl"
+    "影響Node.js與PapaParse（5.7.1以前版本），包含HTTP/2與PapaParse阻斷服務、HTTPS記憶體讀取及TLS憑證旁路。",
+    "**攻擊者可造成阻斷服務、讀取私鑰等記憶體資料或旁路憑證驗證**；目前未遭利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "PapaParse 升級至 5.7.1 以上版本；Node.js 請依原廠公告套用修補或緩解措施。",
+   "ai": true
   },
   {
    "id": "grp:ASP.NET:2026-11-12",
    "kind": "group",
-   "title": "Telerik UI記憶體消耗漏洞",
+   "title": "Telerik UI 記憶體耗盡漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -1302,11 +1667,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106137",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.6。",
-    "In affected versions of Progress® Telerik® UI for ASP.NET MVC `2012.2.710` through `2026.3.811`, ClassFactory updates a shared class diction"
+    "影響Telerik UI for ASP.NET MVC 2012.2.710至2026.3.811及Core 2015.1.318至2026.3.811。",
+    "**未經身分驗證攻擊者發送請求會導致記憶體持續累積與耗盡**；目前未遭利用。"
    ],
-   "fix": "原文：The issue is fixed in version `2026.3.1015`.",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
+   "ai": true
   },
   {
    "id": "tw:fff8ef0585f0",
@@ -1650,7 +2015,7 @@
   {
    "id": "grp:Go:2026-11-11",
    "kind": "group",
-   "title": "Go cgo遠端執行程式碼漏洞",
+   "title": "Go cgo 任意程式碼執行漏洞",
    "sub": "4 個 CVE",
    "sev": "high",
    "kev": false,
@@ -1670,11 +2035,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
    "pts": [
-    "同日公布 4 個漏洞。",
-    "Building a malicious package that uses cgo could cause arbitrary code execution at build time through several compiler and linker flags perm"
+    "影響使用cgo的Go語言環境，建置含#cgo指令、.syso檔案或LDFLAGS之惡意套件時觸發漏洞。",
+    "**攻擊者可於建置或連結階段執行任意程式碼**；目前尚未遭利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
+   "ai": true
   },
   {
    "id": "tw:604ba2b9c99b",
@@ -1775,7 +2140,7 @@
   {
    "id": "grp:Fortinet:2026-11-11",
    "kind": "group",
-   "title": "Fortinet 多個高風險漏洞",
+   "title": "Fortinet 多款產品高危漏洞",
    "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1795,16 +2160,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 9.8。",
-    "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6."
+    "影響 FortiAnalyzer、FortiManager 及 FortiClient 等多款產品，攻擊者可**遠端執行任意程式碼**或指令。",
+    "CVSS 評分為 9.8，目前未遭利用。未授權遠端攻擊者可透過 FGFM 連接埠或特製請求發起攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Chrome:2026-11-11",
    "kind": "group",
-   "title": "Chrome 多項遠端執行漏洞",
+   "title": "Chrome 瀏覽器多重高危漏洞",
    "sub": "6 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1826,16 +2191,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125343",
    "pts": [
-    "同日公布 6 個漏洞，最高 CVSS 9.6。",
-    "Buffer overflow in Compositing in Google Chrome prior to 157.0.8103.50 allowed a remote attacker who had compromised the renderer process to"
+    "影響 157.0.8103.50 前的 Google Chrome，遠端攻擊者可藉由特製 HTML 網頁**執行任意程式碼**。",
+    "CVSS 評分為 9.6，目前未遭利用。攻擊者需誘使使用者存取特製網頁，或搭配社交工程發動攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Ivanti:2026-11-11",
    "kind": "group",
-   "title": "Ivanti 多個高風險漏洞",
+   "title": "Ivanti 產品遠端執行漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1853,16 +2218,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121653",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
-    "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code"
+    "影響 2024 SU8 前的 Ivanti Endpoint Manager 及 CSA 5.0.8，攻擊者可**遠端執行程式碼**或修改信任憑證。",
+    "CVSS 評分為 9.8，目前未遭利用。遠端未授權攻擊者可透過 SQL 注入或缺少身分驗證存取來觸發漏洞。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-11-11",
    "kind": "group",
-   "title": "Apache OpenEJB 漏洞",
+   "title": "Apache OpenEJB 多重漏洞",
    "sub": "7 個 CVE",
    "sev": "high",
    "kev": false,
@@ -1885,11 +2250,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111250",
    "pts": [
-    "同日公布 7 個漏洞。",
-    "The embedded OpenEJB HTTP server reports every request as authenticated when an application requests authentication programmatically. A remo"
+    "影響內嵌 OpenEJB HTTP 伺服器，**未經身份驗證的遠端攻擊者可存取受保護功能、讀取任意檔案或導致阻斷服務**。",
+    "目前尚未遭利用，攻擊者須透過網路對內嵌 HTTP 伺服器發送特定請求以觸發漏洞。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "阻檔來自不受信任用戶端對內嵌 HTTP 伺服器的網路存取。",
+   "ai": true
   },
   {
    "id": "tw:362b64b667d4",
@@ -2206,7 +2571,7 @@
   {
    "id": "grp:Cisco:2026-11-10",
    "kind": "group",
-   "title": "ManageEngine 指令注入",
+   "title": "ManageEngine DDI 指令注入漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -2224,16 +2589,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12573",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.8。",
-    "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the C"
+    "影響 ManageEngine DDI Central 6500 及 6200 以下版本，**攻擊者可注入指令於受控 Cisco 路由器執行任意命令**。",
+    "目前尚未遭利用，觸發條件涉及 Unicode 指令注入或透過 DHCP 儲存區名稱進行注入。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:OpenSSL:2026-11-10",
    "kind": "group",
-   "title": "OpenSSL 多個高風險漏洞",
+   "title": "OpenSSL 程式碼注入漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -2253,11 +2618,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60037",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.1。",
-    "A high privileged remote attacker can perform an OpenSSL code injection in the frontends device importer function leading to code execution."
+    "影響 OpenSSL 裝置匯入器與 ImportPKCS12 函式，高權限遠端攻擊者可**執行任意程式碼**並導致系統全面淪陷。",
+    "CVSS 評分為 9.1，目前未遭利用。攻擊需要具備高權限的遠端攻擊者發動程式碼注入攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:VMware:2026-11-10",
@@ -2754,7 +3119,7 @@
   {
    "id": "grp:Node.js:2026-11-10",
    "kind": "group",
-   "title": "Node.js 多個高風險漏洞",
+   "title": "Node.js 與相關元件漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -2772,11 +3137,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107242",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.1。",
-    "Eclipse Langium versions 3.2.0 through 4.4.0 contain an inefficient algorithmic complexity issue (CWE-407) in the opt-in IndentationAwareTok"
+    "影響 Eclipse Langium 3.2.0 至 4.4.0 及 VOS 上的 Node.js 服務，可能導致效能問題或**工作階段識別碼被預測**。",
+    "CVSS 評分為 9.1，目前未遭利用。攻擊條件與影響範圍視各別服務與演算法複雜性而定。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:d26544e666d5",
@@ -3803,7 +4168,7 @@
   {
    "id": "grp:IIS:2026-11-06",
    "kind": "group",
-   "title": "ModSecurity WAF 安全漏洞",
+   "title": "ModSecurity WAF 繞過漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -3822,11 +4187,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104269",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.6。",
-    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModS"
+    "影響 Apache、IIS 與 Nginx 上的 ModSecurity 3.0.0 至 3.0.17 版本，**攻擊者可繞過 WAF 檢查**。",
+    "目前尚未遭利用，漏洞主因多部分解析器未遵守 RFC 2231 及 Content-Type 大小寫比對缺陷。"
    ],
-   "fix": "原文：This issue is fixed in version 3.0.17.",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "grp:SQL Server:2026-11-06",

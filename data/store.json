@@ -35,6 +35,442 @@
  },
  "events": [
   {
+   "id": "tw:ee78babeacaf",
+   "kind": "news",
+   "title": "駭客集團UNC6783聲稱入侵資安院竊得102 GB資料，資安院：去年7月已進行資安通報",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:42+00:00",
+   "updated": "2026-11-13T09:33:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180499",
+   "pts": [
+    "駭客組織 UNC6783 於地下論壇宣稱入侵台灣國家資通安全研究院，**聲稱外洩 102 GB 內部檔案**。",
+    "資安院表示去年 7 月已進行資安通報，目前持續監控觀察中。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "駭客集團UNC6783聲稱入侵資安院竊得102 GB資料，資安院：去年7月已進行資安通報",
+    "desc": "資安情資業者ThreatMon近期在社群媒體X發文揭露，有威脅行為者在地下論壇發文，聲稱駭客組織「UNC6783」已入侵臺灣國家資通安全研究院（NICS），並竊取及外洩102 GB的內部文件。對此，iThome向資安院求證，資安院表示，去年7月已進行資安通報，目前仍持續監控觀察中。 根據ThreatMon的觀察與地下論壇流傳的訊息，UNC6783將國家資通安全研究院網站（nics.nat.gov.tw）列為攻擊對象，標示受害單位所屬產業為政府機關（Government Administration），並宣稱這批資料涵蓋2024年至2025年期間的敏感營運檔案。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5eb321f06fbd",
+   "kind": "news",
+   "title": "【資安日報】11月13日，Apache修補網頁伺服器HTTP/2重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:42+00:00",
+   "updated": "2026-11-13T09:33:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180494",
+   "pts": [
+    "**Apache修補網頁伺服器HTTP/2模組重大漏洞**，N-able修補N-central零時差漏洞。",
+    "eMudhra撤銷8張RSA中繼CA憑證。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "【資安日報】11月13日，Apache修補網頁伺服器HTTP/2重大漏洞",
+    "desc": "資安新聞焦點 ● Apache修補網頁伺服器HTTP/2模組的重大漏洞 ● eMudhra再撤銷8張RSA中繼CA憑證 ● N-able緊急修補研究人員公布的N-central零時差漏洞",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2f563cb69fc4",
+   "kind": "news",
+   "title": "Rust 1.100允許延後採用新套件，Never Type歷經10年正式穩定",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:42+00:00",
+   "updated": "2026-11-13T09:33:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180489",
+   "pts": [
+    "Rust 1.100.0 發布，**Cargo 套件管理工具新增依賴套件發布冷卻期以降低軟體供應鏈攻擊風險**。",
+    "新版同步正式支援歷經多次嘗試的 Never Type，並開放自訂記憶體配置器核心介面。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "Rust 1.100允許延後採用新套件，Never Type歷經10年正式穩定",
+    "desc": "程式語言Rust開發團隊發布Rust 1.100.0，套件管理工具Cargo新增依賴套件發布冷卻期，讓開發者延後採用剛上架的套件版本，降低軟體供應鏈攻擊風險。新版也正式支援歷經10年5次進入穩定階段嘗試未果的Never Type，並開放自訂記憶體配置器的核心介面。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:50ed3560962f",
+   "kind": "news",
+   "title": "Apache修補網頁伺服器HTTP/2模組的重大漏洞，64%雲端環境恐曝險",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:42+00:00",
+   "updated": "2026-11-13T09:33:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180490",
+   "pts": [
+    "Apache軟體基金會發布Apache HTTP Server 2.4.71，修補mod_http2模組等3個資安漏洞。",
+    "**漏洞源自HTTP/2請求處理的競爭條件**，評估64%雲端環境恐曝險。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "Apache修補網頁伺服器HTTP/2模組的重大漏洞，64%雲端環境恐曝險",
+    "desc": "Apache軟體基金會（ASF）於11月11日發布Apache HTTP Server 2.4.71，修補3個資安漏洞，其中最受到關注的部分，是存在於HTTP/2模組mod_http2中的重大安全漏洞CVE-2026-119618，該弱點源自多執行緒處理HTTP/2請求時的競爭條件，可能導致",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-119618",
+   "kind": "cve",
+   "title": "Apache HTTP/2 遠端執行漏洞",
+   "sub": "CVE-2026-119618 · 尚未評分",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [
+    "CVE-2026-119618"
+   ],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome 報導",
+   "url": "https://www.ithome.com.tw/news/180490",
+   "pts": [
+    "影響Apache HTTP Server 2.4.55至2.4.70與mod_h2 2.0.8至2.0.42，因同步不當引發競爭條件。",
+    "**未授權攻擊者可利用該漏洞執行遠端程式碼（RCE）**；目前尚未遭利用。"
+   ],
+   "fix": "升級至 Apache HTTP Server 2.4.71 以上版本。",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "name": "Apache修補網頁伺服器HTTP/2模組的重大漏洞，64%雲端環境恐曝險",
+    "desc": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
+    "news": "Apache軟體基金會（ASF）於11月11日發布Apache HTTP Server 2.4.71，修補3個資安漏洞，其中最受到關注的部分，是存在於HTTP/2模組mod_http2中的重大安全漏洞CVE-2026-119618，該弱點源自多執行緒處理HTTP/2請求時的競爭條件，可能導致"
+   }
+  },
+  {
+   "id": "tw:459f16152274",
+   "kind": "news",
+   "title": "美而快電商系統遭異常存取，部分請求涉及會員訂單API",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180488",
+   "pts": [
+    "美而快接獲客戶反映收到疑似詐騙郵件，**清查發現外部特定 IP 對會員訂單 API 進行異常存取**。",
+    "官方已啟動資安應變及調查機制，持續回溯分析系統存取紀錄。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "美而快電商系統遭異常存取，部分請求涉及會員訂單API",
+    "desc": "11月12日電子商務及服飾零售公司美而快（5321）於股市公開資訊觀測站發布重大訊息，該公司於11月10日接獲客戶反映，有消費者收到疑似詐騙電子郵件，他們隨即啟動資安應變及調查機制，經回溯分析系統存取紀錄，發現外部特定IP位址曾對電商系統進行異常存取，部分請求涉及會員訂單相關API。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d0b3b7788cad",
+   "kind": "news",
+   "title": "大聯大發生資安事件，部分員工姓名與公務電子郵件遭未經授權存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180487",
+   "pts": [
+    "大聯大內部系統遭異常存取，確認**部分員工姓名與公務電子郵件地址遭未經授權存取**。",
+    "公司已啟動應變程序與防護措施，初步評估對財務及業務均不受影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "大聯大發生資安事件，部分員工姓名與公務電子郵件遭未經授權存取",
+    "desc": "11月12日半導體通路商大聯大（3702）於股市公開資訊觀測站發布重大訊息，該公司偵測到內部系統出現異常存取情形，經調查確認，部分員工姓名及公務電子郵件地址遭未經授權存取，公司已立即啟動應變程序，並採取必要防護措施，初步評估對公司財務及業務均不受影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:37022872b113",
+   "kind": "news",
+   "title": "憂AI助長網攻及生物武器風險，美國非營利組織控告OpenAI等5家業者",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180485",
+   "pts": [
+    "美國 4 家非營利組織針對 OpenAI、Google、Meta、Anthropic 及 SpaceXSI 提出聯合訴訟。",
+    "**指控其先進 AI 系統可能失控並助長網路攻擊與生物武器擴散**，要求法院凍結相關模型開發。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "憂AI助長網攻及生物武器風險，美國非營利組織控告OpenAI等5家業者",
+    "desc": "美國4家非營利組織周四（11/12）聯合提告，指控OpenAI、Google、Meta、Anthropic及SpaceXSI開發的先進AI系統可能失去人類控制，助長網路攻擊及生物武器擴散，要求法院凍結相關模型的開發。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:1583036289dc",
+   "kind": "news",
+   "title": "長榮物流部分資訊系統遭攻擊，啟動資安防禦與復原機制",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180484",
+   "pts": [
+    "長榮物流部分資訊系統遭受駭客攻擊致伺服器異常，**目前系統已恢復正常並啟動資安應變措施**。",
+    "公司初步評估該起事件對財務及業務並無重大影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "長榮物流部分資訊系統遭攻擊，啟動資安防禦與復原機制",
+    "desc": "11月12日物流及貨運服務公司榮運（2607）於股市公開資訊觀測站發布重大訊息，長榮物流部分資訊系統遭受駭客攻擊，伺服器出現異常情形，公司隨即啟動資安應變措施因應，目前資訊系統已恢復正常，初步評估對公司財務及業務並無重大影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:20e17e4acb96",
+   "kind": "news",
+   "title": "大金空調零件線上商城委外廠商發生資安事件，141筆訂單資料受波及、132筆個資遭未經授權存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180482",
+   "pts": [
+    "和泰服務行銷之委外廠商順立智慧發生資安事件，致大金空調零件線上商城資料庫遭未經授權存取。",
+    "**事件共影響 141 筆訂單資料並涉及 132 筆個人資料**。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "大金空調零件線上商城委外廠商發生資安事件，141筆訂單資料受波及、132筆個資遭未經授權存取",
+    "desc": "和泰車（2207）11月12日下午於股市公開資訊觀測站發布重大訊息，子公司和泰服務行銷的委外服務廠商順立智慧（Cyberbiz）發生資安事件，導致旗下大金空調零件線上商城的資料庫部分內容遭未經授權存取，目前掌握共有141筆訂單資料受到波及，其中涉及132筆個人資料。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ee353cdfb573",
+   "kind": "news",
+   "title": "AI讓攻擊進入自動化時代，Google：企業更要管好Agent權限",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180481",
+   "pts": [
+    "Google 威脅情報小組指出，AI 讓攻擊者能大幅提升攻擊速度與規模，可在 6 小時內完成多階段攻擊。",
+    "**提醒企業應妥善管理 AI Agent 權限**，避免原本風險較低的弱點成為入侵入口。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "AI讓攻擊進入自動化時代，Google：企業更要管好Agent權限",
+    "desc": "一場網路攻擊，從取得受害系統的存取權限，到透過多個AI Agent協同執行攻擊，最後大規模蒐集存取憑證，可能不到六小時就能完成。攻擊者不再只是逐步尋找漏洞、手動執行攻擊，而是利用AI串聯不同階段的工作，在短時間內擴大攻擊規模。 Google威脅情報小組（Google Threat Intelligence Group，GTIG）技術長Shane Huntley指出，AI並未從根本上改變網路攻擊的本質，卻讓攻擊者能以更快的速度、更大的規模執行既有攻擊。過去受限於人力與時間，攻擊者必須選擇目標；如今AI可以協助搜尋漏洞、分析系統及執行攻擊，企業原本認為風險不高的弱點，也可能成為入侵入口。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e5a86488e3ba",
+   "kind": "news",
+   "title": "正能量智能子公司電商資料庫遭未經授權存取，已通知受影響消費者並啟動資安應變",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180478",
+   "pts": [
+    "正能量智能旗下子公司正能量運動之 **WooCommerce 電商系統資料庫遭未經授權存取及擷取**。",
+    "公司已啟動資安應變程序並通知受影響之消費者。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "正能量智能子公司電商資料庫遭未經授權存取，已通知受影響消費者並啟動資安應變",
+    "desc": "11月11日科技與運動休閒產業公司正能量智能（5348）於股市公開資訊觀測站發布重大訊息，說明旗下子公司正能量運動發生網路資安事件，WooCommerce電商系統資料庫遭到未經授權存取及資料擷取。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ddff2255cd68",
+   "kind": "news",
+   "title": "泰航與芬蘭航空各因Amadeus資安事件外洩逾6萬筆與11萬筆旅客資訊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180477",
+   "pts": [
+    "**訂票服務系統供應商Amadeus遭到非法存取**，導致泰國航空與芬蘭航空乘客記錄可能外流。",
+    "泰國航空與芬蘭航空受影響乘客記錄分別超過6萬筆及11.6萬筆。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "泰航與芬蘭航空各因Amadeus資安事件外洩逾6萬筆與11萬筆旅客資訊",
+    "desc": "泰國航空（Thai Airways）及芬蘭航空（Finnair）週一（11月9日）公告， 訂票服務系統供應商Amadeus遭到非法存取，分別導致超過6萬及11.6萬筆乘客記錄可能外流。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:9f91269293b1",
+   "kind": "news",
+   "title": "威力德生醫線上商店委外廠商發生資安事件，部分消費者訂單資料遭異常存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T09:33:42+00:00",
+   "first_seen": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T09:33:49+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180476",
+   "pts": [
+    "威力德生醫委外廠商順立智慧發生資安事件，**資料庫部分資料遭未經授權異常存取**。",
+    "本次事件波及威力德生醫線上商店部分消費者訂單相關資料。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "威力德生醫線上商店委外廠商發生資安事件，部分消費者訂單資料遭異常存取",
+    "desc": "11月11日生技醫療公司威力德生醫（7713）於股市公開資訊觀測站發布重大訊息，該公司接獲線上商店平臺委外服務廠商順立智慧（Cyberbiz）通知，該公司發生資安事件，資料庫部分資料遭未經授權的異常存取，波及威力德生醫線上商店部分消費者訂單相關資料。",
+    "summarize": true
+   }
+  },
+  {
    "id": "tw:21b3983ad56b",
    "kind": "news",
    "title": "RSAC預測2027年資安趨勢：AI代理增加漏洞處理壓力，企業須強化GRC與事件應變",
@@ -128,10 +564,10 @@
    }
   },
   {
-   "id": "CVE-2026-120868",
-   "kind": "cve",
-   "title": "Citrix 漏洞 CVE-2026-120868",
-   "sub": "CVE-2026-120868 · CVSS 9.3",
+   "id": "grp:Citrix:2026-11-13",
+   "kind": "group",
+   "title": "Citrix NetScaler 阻斷服務漏洞",
+   "sub": "23 個 CVE · 最高 CVSS 9.5",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -139,24 +575,68 @@
     "Citrix"
    ],
    "cves": [
+    "CVE-2026-107407",
+    "CVE-2026-107408",
+    "CVE-2026-107409",
+    "CVE-2026-107410",
+    "CVE-2026-107411",
+    "CVE-2026-107412",
+    "CVE-2026-107413",
+    "CVE-2026-107414",
+    "CVE-2026-107415",
+    "CVE-2026-111334",
+    "CVE-2026-111336",
+    "CVE-2026-111337",
+    "CVE-2026-111340",
+    "CVE-2026-111341",
+    "CVE-2026-111342",
+    "CVE-2026-120860",
+    "CVE-2026-120861",
+    "CVE-2026-120862",
+    "CVE-2026-120863",
+    "CVE-2026-120864",
+    "CVE-2026-120865",
+    "CVE-2026-120867",
     "CVE-2026-120868"
    ],
-   "cvss": 9.3,
+   "cvss": 9.5,
    "published": "2026-11-13T00:20:09+00:00",
    "first_seen": "2026-11-13T01:50:23+00:00",
-   "updated": "2026-11-13T01:50:23+00:00",
+   "updated": "2026-11-13T09:33:39+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120868",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107407",
    "pts": [
-    "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gat"
+    "影響 Citrix NetScaler ADC 與 NetScaler Gateway，包含封包處理及 SAML 驗證等模組存在記憶體溢位漏洞，可能導致**未預期的錯誤行為或阻斷服務**。",
+    "包含 CVE-2026-107407 等多個漏洞，目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
-    "desc": "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gateway.",
-    "refs": [
-     "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697305"
+    "descs": [
+     "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gateway.",
+     "Memory overflow in SMPP traffic can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory corruption in DNS / DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory corruption in DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler",
+     "Memory overflow in NetScaler Push can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory overflow in RTSP ALG can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Multiple Memory overflow vulnerabilities can lead to unpredictable or erroneous behavior and Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in SAML authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in WebAuth authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Email OTP authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in KBA (knowledge-based authentication) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in client-certificate authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in LDAP authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Endpoint Analysis (EPA/EPAS) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in HTTP/2 handling can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Base64 decoding in advanced policy expressions leading to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in protocol load-balancing traffic handling (Diameter, SIP-over-TCP, MQTT, RADIUS) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow / improper handling in GSLB and geolocation (MEP, static-proximity, config-sync) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory overflow in SIP ALG (LSN) and DNS answer-section logging datapaths can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory overflow in the management plane can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in ICA proxy can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in HTTP/3 (QUIC) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in SSL/TLS/DTLS can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway."
     ]
    }
   },
@@ -199,7 +679,7 @@
   {
    "id": "CVE-2026-126837",
    "kind": "cve",
-   "title": "Node.js 漏洞 CVE-2026-126837",
+   "title": "Node.js 驅動程式資料洩漏漏洞",
    "sub": "CVE-2026-126837 · CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -217,11 +697,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126837",
    "pts": [
-    "A validation flaw in the DNS SRV host discovery of the MongoDB Node.js driver may cause the driver to connect to a host outside the expected"
+    "影響 MongoDB Node.js 驅動程式，使用 mongodb+srv:// 連線字串時存在 DNS SRV 驗證漏洞，可能導致**應用程式資料與驗證憑證洩漏**。",
+    "未身份驗證的攻擊者可偽造 DNS SRV 回應重新導向連線；目前尚無遭利用報告，mongodb:// 連線不受影響。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "A validation flaw in the DNS SRV host discovery of the MongoDB Node.js driver may cause the driver to connect to a host outside the expected domain. For a mongodb+srv:// connection string, the driver checks each host name in the DNS SRV response against the domain of the connection string. The driver then builds the connection address from the original name, in which certain characters end the host name early. An unauthenticated party who can forge or change the DNS SRV response may redirect the connection to a host of their choice. TLS does not prevent this, because the driver verifies the server certificate against the redirected host name. This may result in unintended disclosure of application data and authentication credentials, and in altered query results. Applications that use mongodb:// connection strings are not affected.",
     "refs": [
@@ -269,7 +750,7 @@
   {
    "id": "CVE-2026-120869",
    "kind": "cve",
-   "title": "Citrix 漏洞 CVE-2026-120869",
+   "title": "Citrix NetScaler 驗證繞過漏洞",
    "sub": "CVE-2026-120869 · CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -287,11 +768,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120869",
    "pts": [
-    "An unauthenticated attacker can bypass authentication controls to access restricted resources on the Citrix NetScaler Console appliance"
+    "影響 Citrix NetScaler Console 設備，存在身份驗證控制繞過漏洞。",
+    "**未身份驗證的遠端攻擊者可繞過控制存取受限資源**；目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "An unauthenticated attacker can bypass authentication controls to access restricted resources on the Citrix NetScaler Console appliance",
     "refs": [
@@ -598,11 +1080,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180443",
    "pts": [
-    "Google於11月11日同步發布Chrome瀏覽器及ChromeOS作業系統安全更新。其中在Chrome 157桌面穩定版方面，Windows與Linux平臺更新至157.0.8103.78版，macOS平臺更新至157.0.8103.79版，共修補83個漏洞，包含5個重大漏洞與78個高風險漏洞。"
+    "Google發布Chrome瀏覽器及ChromeOS安全更新，**共修補83個漏洞**（含5個重大與78個高風險漏洞）。",
+    "Chrome 157修補漏洞涉及元件以Skia與V8最多，各有17個。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "Google同步更新Chrome 157穩定版、Chrome 156延伸穩定版與ChromeOS LTS版",
     "desc": "Google於11月11日同步發布Chrome瀏覽器及ChromeOS作業系統安全更新。其中在Chrome 157桌面穩定版方面，Windows與Linux平臺更新至157.0.8103.78版，macOS平臺更新至157.0.8103.79版，共修補83個漏洞，包含5個重大漏洞與78個高風險漏洞。在漏洞涉及的元件方面，以Skia與V8元件最多，各有17個。",
@@ -628,11 +1111,12 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180442",
    "pts": [
-    "菲律賓證券交易管理委員會（Securities and Exchange Commission，SEC）本週一（11月9日）傳出數位平臺被駭，導致駭客竊走超過40萬用戶姓名、使用者名稱及稅籍編號等資料並放上網兜售。菲國SEC已著手調查。"
+    "菲律賓證管會數位平臺遭駭，**超過40萬用戶姓名、使用者名稱及稅籍編號等資料遭竊並兜售**。",
+    "菲律賓證券交易管理委員會已著手調查。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "title": "菲律賓證管會傳數位平臺被駭，逾40萬用戶資料外洩",
     "desc": "菲律賓證券交易管理委員會（Securities and Exchange Commission，SEC）本週一（11月9日）傳出數位平臺被駭，導致駭客竊走超過40萬用戶姓名、使用者名稱及稅籍編號等資料並放上網兜售。菲國SEC已著手調查。",
@@ -707,7 +1191,7 @@
   {
    "id": "grp:Synology:2026-11-12",
    "kind": "group",
-   "title": "Synology 多個高風險漏洞",
+   "title": "Synology DSM 任意檔案讀寫漏洞",
    "sub": "8 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -732,12 +1216,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13672",
    "pts": [
-    "同日公布 8 個漏洞，最高 CVSS 9.8。",
-    "An authorization bypass through user-controlled key vulnerability in the SSOAuth in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 "
+    "影響 Synology DiskStation Manager (DSM)，存在身份驗證繞過與 SQL 注入等多個漏洞，**遠端攻擊者可讀寫任意檔案及執行阻斷服務攻擊**。",
+    "包含 CVE-2026-13672 等漏洞，目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 Synology DSM 7.3.2-86009-5、7.4.1-90080-1、7.2.1-69057-13 或 7.2.2-72806-10 以上版本。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "An authorization bypass through user-controlled key vulnerability in the SSOAuth in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write arbitrary files and conduct denial-of-service attacks.",
@@ -948,7 +1432,7 @@
   {
    "id": "grp:Chrome:2026-11-12",
    "kind": "group",
-   "title": "Chrome多項遠端執行程式碼漏洞",
+   "title": "Google Chrome 遠端執行程式碼漏洞",
    "sub": "57 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1018,15 +1502,15 @@
    "cvss": 9.6,
    "published": "2026-11-11T23:17:11+00:00",
    "first_seen": "2026-11-12T03:49:46+00:00",
-   "updated": "2026-11-13T01:50:23+00:00",
+   "updated": "2026-11-13T09:33:39+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126840",
    "pts": [
-    "同日公布 57 個漏洞，最高 CVSS 9.6。",
-    "Out of bounds write in Network in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbo"
+    "影響 157.0.8103.78 前版本之 Google Chrome，包含 V8 與 Skia 等模組漏洞，遠端攻擊者可透過精心設計的 HTML 頁面**執行任意程式碼**。",
+    "包含 CVE-2026-126840 等多項高風險與嚴重漏洞，目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false,
+   "fix": "升級至 Google Chrome 157.0.8103.78 或以上版本。",
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -1141,14 +1625,61 @@
      "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Link following in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-     "Use after free in Media in Google Chrome on on Android prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
+     "Use after free in Media in Google Chrome on on Android prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in Network in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in ANGLE in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in Turbolev in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Skia in Google Chrome on on Android prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Link following in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Media in Google Chrome on on Android prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in HTML in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DOM in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in Extensions in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Use after free in Browser in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Frames in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Extensions in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Integer overflow in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Layout in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in ServiceWorker in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Frames in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Animation in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Turbolev in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Off-by-one error in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Media in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in MediaStream in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CSS in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Elements in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CSS in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in PDF in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incomplete cleanup in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Passwords in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Buffer overflow in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Integer overflow in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Memory corruption in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Layout in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in BrowserTag in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
   {
    "id": "grp:Windows Server:2026-11-12",
    "kind": "group",
-   "title": "Windows 多個高風險漏洞",
+   "title": "Windows 相關元件多重安全漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -1165,29 +1696,30 @@
    "cvss": 9.1,
    "published": "2026-11-11T22:17:27+00:00",
    "first_seen": "2026-11-11T22:43:03+00:00",
-   "updated": "2026-11-13T01:50:23+00:00",
+   "updated": "2026-11-13T09:33:39+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126883",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.1。",
-    "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and"
+    "影響 Lenovo XClarity Integrator (5.1.1/5.2.0)、ManageEngine DDI Central (6301) 及 Chrome on Windows，遠端攻擊者可**執行任意 PowerShell 指令**或未授權變更 DNS/DHCP。",
+    "包含 CVE-2026-126883 等漏洞，目前尚無遭利用報告。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "ManageEngine DDI Central 升級至 6301 以上；Chrome 升級至 157.0.8103.78 以上；其餘依原廠說明修補。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and 5.2.0 allows an authenticated remote attacker to execute arbitrary PowerShell commands by submitting a crafted hostname.",
      "Zohocorp ManageEngine DDI Central versions below 6301 is affected by an authentication bypass vulnerability in Windows DNS and DHCP agent synchronization APIs, allowing unauthenticated user to impersonate onboarded Windows servers and perform unauthorized DNS and DHCP modifications.",
      "Use after free in Core in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-     "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and 5.2.0 allows an authenticated remote attacker to execute arbitrary PowerShell commands by submitting a crafted hostname."
+     "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and 5.2.0 allows an authenticated remote attacker to execute arbitrary PowerShell commands by submitting a crafted hostname.",
+     "Use after free in Core in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
   {
    "id": "grp:Fortinet:2026-11-12",
    "kind": "group",
-   "title": "Fortinet 多個高風險漏洞",
+   "title": "Fortinet 多款產品安全性漏洞",
    "sub": "37 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1237,16 +1769,16 @@
    "cvss": 9.8,
    "published": "2026-11-11T22:17:11+00:00",
    "first_seen": "2026-11-11T22:43:03+00:00",
-   "updated": "2026-11-12T20:50:07+00:00",
+   "updated": "2026-11-13T09:33:39+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
-    "同日公布 37 個漏洞，最高 CVSS 9.8。",
-    "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through "
+    "影響 FortiOS、FortiMail 與 FortiRecorder 等，漏洞可能導致**未經身份驗證遠端執行程式碼**、帳號接管或中間人攻擊。",
+    "CVSS 評分為 9.8，目前未遭利用。遠端未身份驗證攻擊者可透過發送特製封包或請求發起攻擊。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through 7.2.13 may allow a remote and unauthenticated attacker to perform a Man-in-the-Middle attack on the communication channel between the SSLVPN web portal and the backend destination website.",
@@ -1358,6 +1890,12 @@
      "A authentication bypass by primary weakness vulnerability in Fortinet FortiOS 8.0.0 through 8.0.1, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow an unauthenticated attacker to broadcast LSA via specially crafted request",
      "A numeric truncation error vulnerability in Fortinet FortiOS 8.0.0 through 8.0.1, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow a configured ibgp neighbor to send malicious/malformed attributes to all connected routers via a specially crafted request",
      "A use of hard-coded password vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to bypass credential validation in certain circumstances outside of the attacker's control and gain unauthorized access.",
+     "A missing authentication for critical function vulnerability in Fortinet FortiOS 8.0.0, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow an unauthenticated attacker with HA FGSP + standalone-config-sync, or autoscale to execute command as super admin via crafted HA packets.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12 may allow an unauthenticated attacker who has access to the oftp port to execute code or command on the system via crafted OFTP packets.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted requests.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated attacker to execute commands outside of the expected scope via specially crafted HTTP request.",
+     "A incorrect authorization vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0 through 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated administrator to escalate their privileges, bypass authorization controls or impersonate internal services via specially crafted requests to the GUI.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow a remote authenticated attacker with admin permission to elevate their privileges to root via crafted HTTP requests.",
      "A missing authentication for critical function vulnerability in Fortinet FortiOS 8.0.0, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow an unauthenticated attacker with HA FGSP + standalone-config-sync, or autoscale to execute command as super admin via crafted HA packets.",
      "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12 may allow an unauthenticated attacker who has access to the oftp port to execute code or command on the system via crafted OFTP packets.",
      "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted requests."
@@ -1402,7 +1940,7 @@
   {
    "id": "grp:Node.js:2026-11-12",
    "kind": "group",
-   "title": "Node.js多重高風險漏洞",
+   "title": "Node.js與套件多重漏洞",
    "sub": "4 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -1419,15 +1957,15 @@
    "cvss": 8.7,
    "published": "2026-11-11T19:17:32+00:00",
    "first_seen": "2026-11-11T22:43:03+00:00",
-   "updated": "2026-11-13T01:50:23+00:00",
+   "updated": "2026-11-13T09:33:39+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123863",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 8.7。",
-    "A reachable assertion in Node.js HTTP/2 session teardown lets any unauthenticated client abort the server, over both TLS and cleartext. A cl"
+    "影響Node.js與PapaParse（5.7.1以前版本），包含HTTP/2與PapaParse阻斷服務、HTTPS記憶體讀取及TLS憑證旁路。",
+    "**攻擊者可造成阻斷服務、讀取私鑰等記憶體資料或旁路憑證驗證**；目前未遭利用。"
    ],
-   "fix": "",
-   "ai": false,
+   "fix": "PapaParse 升級至 5.7.1 以上版本；Node.js 請依原廠公告套用修補或緩解措施。",
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -1438,6 +1976,7 @@
      "A reachable assertion in Node.js HTTP/2 session teardown lets any unauthenticated client abort the server, over both TLS and cleartext. A client can arrange for an Http2Stream that still holds nghttp2-allocated header buffers to outlive its session: the stream is removed from the session's stream set but never detached, so when ~Http2Session() runs the memory accounting is nonzero and the CHECK_EQ(current_nghttp2_memory_, 0) assertion fails, terminating the process. The trigger needs only a default http2 server whose handler responds before the request body has ended, which is typical. It is a variant of CVE-2024-27983 that the earlier fix did not cover, because that fix only detached streams still tracked in the session. This vulnerability affects Node.js 26.x (since 26.9.0) and 24.x (since 24.22.0).",
      "A re-entrancy flaw in Node.js HTTPS lets an unauthenticated client read memory belonging to other connections, including TLS private keys and other users' requests. TLSWrap::DoWrite() calls ClearOut() directly when asked to write zero bytes; if that write is issued from JavaScript running inside the HTTP parser's on_body callback, ClearOut() decrypts the next TLS record while the parser is still mid-body, re-entering llhttp_execute() and causing a use-after-free and an out-of-bounds heap read. The server then copies that freed or unrelated heap memory into the response for the request body. Triggering it requires a handler that calls res.flushHeaders() before the request body ends and later calls res.end() with a non-empty chunk, and reading the leaked memory requires any ordinary route that echoes or stores a request body. Cleartext node:http is not affected. This vulnerability affects Node.js 26.x, 24.x, and 22.x.",
      "A client certificate authentication bypass in Node.js TLS lets a client change the servername during TLS 1.2 renegotiation to reach endpoints it was not authorized for. On a server that applies different client-certificate policies per hostname, for example stricter admin-only client-cert auth on one host and ordinary client-cert auth on another, a client that authenticates for a permitted host can renegotiate the TLS 1.2 connection under a different servername and carry its existing authentication to the protected host, bypassing the stricter policy. This vulnerability affects Node.js 26.x, 24.x, and 22.x.",
+     "PapaParse before 5.7.1 contains an inefficient algorithmic complexity vulnerability that allows remote unauthenticated attackers to cause denial of service by submitting delimiter-free quoted CSV input to Papa.parse(). Attackers can supply a single-column quoted CSV with no delimiters, triggering repeated full-buffer indexOf scans per row that grow quadratically with input size, exhausting CPU and blocking the Node.js event loop or freezing a browser tab.",
      "PapaParse before 5.7.1 contains an inefficient algorithmic complexity vulnerability that allows remote unauthenticated attackers to cause denial of service by submitting delimiter-free quoted CSV input to Papa.parse(). Attackers can supply a single-column quoted CSV with no delimiters, triggering repeated full-buffer indexOf scans per row that grow quadratically with input size, exhausting CPU and blocking the Node.js event loop or freezing a browser tab."
     ]
    }
@@ -1445,7 +1984,7 @@
   {
    "id": "grp:ASP.NET:2026-11-12",
    "kind": "group",
-   "title": "Telerik UI記憶體消耗漏洞",
+   "title": "Telerik UI 記憶體耗盡漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -1465,11 +2004,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106137",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.6。",
-    "In affected versions of Progress® Telerik® UI for ASP.NET MVC `2012.2.710` through `2026.3.811`, ClassFactory updates a shared class diction"
+    "影響Telerik UI for ASP.NET MVC 2012.2.710至2026.3.811及Core 2015.1.318至2026.3.811。",
+    "**未經身分驗證攻擊者發送請求會導致記憶體持續累積與耗盡**；目前未遭利用。"
    ],
-   "fix": "原文：The issue is fixed in version `2026.3.1015`.",
-   "ai": false,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -1922,7 +2461,7 @@
   {
    "id": "grp:Go:2026-11-11",
    "kind": "group",
-   "title": "Go cgo遠端執行程式碼漏洞",
+   "title": "Go cgo 任意程式碼執行漏洞",
    "sub": "4 個 CVE",
    "sev": "high",
    "kev": false,
@@ -1943,11 +2482,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
    "pts": [
-    "同日公布 4 個漏洞。",
-    "Building a malicious package that uses cgo could cause arbitrary code execution at build time through several compiler and linker flags perm"
+    "影響使用cgo的Go語言環境，建置含#cgo指令、.syso檔案或LDFLAGS之惡意套件時觸發漏洞。",
+    "**攻擊者可於建置或連結階段執行任意程式碼**；目前尚未遭利用。"
    ],
-   "fix": "",
-   "ai": false,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品。",
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2089,7 +2628,7 @@
   {
    "id": "grp:Fortinet:2026-11-11",
    "kind": "group",
-   "title": "Fortinet 多個高風險漏洞",
+   "title": "Fortinet 多款產品高危漏洞",
    "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -2106,16 +2645,16 @@
    "cvss": 9.8,
    "published": "2026-11-10T20:17:20+00:00",
    "first_seen": "2026-11-10T20:50:10+00:00",
-   "updated": "2026-11-12T20:50:07+00:00",
+   "updated": "2026-11-13T09:33:39+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 9.8。",
-    "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6."
+    "影響 FortiAnalyzer、FortiManager 及 FortiClient 等多款產品，攻擊者可**遠端執行任意程式碼**或指令。",
+    "CVSS 評分為 9.8，目前未遭利用。未授權遠端攻擊者可透過 FGFM 連接埠或特製請求發起攻擊。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2.0 through 7.2.11, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2.0 through 7.2.11, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.1 through 7.4.7, FortiManager Cloud 7.2.1 through 7.2.10 may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
@@ -2130,14 +2669,15 @@
      "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2.0 through 7.2.11, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2.0 through 7.2.11, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.1 through 7.4.7, FortiManager Cloud 7.2.1 through 7.2.10 may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
      "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim.",
      "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests.",
-     "A improper authorization vulnerability in Fortinet FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.5, FortiManager 7.2.0 through 7.2.8 may allow an unauthenticated attacker that can reach the FGFM port to execute code or commands via crafted FGFM packets."
+     "A improper authorization vulnerability in Fortinet FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.5, FortiManager 7.2.0 through 7.2.8 may allow an unauthenticated attacker that can reach the FGFM port to execute code or commands via crafted FGFM packets.",
+     "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim."
     ]
    }
   },
   {
    "id": "grp:Chrome:2026-11-11",
    "kind": "group",
-   "title": "Chrome 多項遠端執行漏洞",
+   "title": "Chrome 瀏覽器多重高危漏洞",
    "sub": "6 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -2160,11 +2700,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125343",
    "pts": [
-    "同日公布 6 個漏洞，最高 CVSS 9.6。",
-    "Buffer overflow in Compositing in Google Chrome prior to 157.0.8103.50 allowed a remote attacker who had compromised the renderer process to"
+    "影響 157.0.8103.50 前的 Google Chrome，遠端攻擊者可藉由特製 HTML 網頁**執行任意程式碼**。",
+    "CVSS 評分為 9.6，目前未遭利用。攻擊者需誘使使用者存取特製網頁，或搭配社交工程發動攻擊。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2197,7 +2737,7 @@
   {
    "id": "grp:Ivanti:2026-11-11",
    "kind": "group",
-   "title": "Ivanti 多個高風險漏洞",
+   "title": "Ivanti 產品遠端執行漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -2216,12 +2756,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121653",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
-    "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code"
+    "影響 2024 SU8 前的 Ivanti Endpoint Manager 及 CSA 5.0.8，攻擊者可**遠端執行程式碼**或修改信任憑證。",
+    "CVSS 評分為 9.8，目前未遭利用。遠端未授權攻擊者可透過 SQL 注入或缺少身分驗證存取來觸發漏洞。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code execution.",
@@ -2236,7 +2776,7 @@
   {
    "id": "grp:Apache:2026-11-11",
    "kind": "group",
-   "title": "Apache OpenEJB 漏洞",
+   "title": "Apache OpenEJB 多重漏洞",
    "sub": "7 個 CVE",
    "sev": "high",
    "kev": false,
@@ -2260,11 +2800,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111250",
    "pts": [
-    "同日公布 7 個漏洞。",
-    "The embedded OpenEJB HTTP server reports every request as authenticated when an application requests authentication programmatically. A remo"
+    "影響內嵌 OpenEJB HTTP 伺服器，**未經身份驗證的遠端攻擊者可存取受保護功能、讀取任意檔案或導致阻斷服務**。",
+    "目前尚未遭利用，攻擊者須透過網路對內嵌 HTTP 伺服器發送特定請求以觸發漏洞。"
    ],
-   "fix": "",
-   "ai": false,
+   "fix": "阻檔來自不受信任用戶端對內嵌 HTTP 伺服器的網路存取。",
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2692,7 +3232,7 @@
   {
    "id": "grp:Cisco:2026-11-10",
    "kind": "group",
-   "title": "ManageEngine 指令注入",
+   "title": "ManageEngine DDI 指令注入漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -2711,11 +3251,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12573",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.8。",
-    "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the C"
+    "影響 ManageEngine DDI Central 6500 及 6200 以下版本，**攻擊者可注入指令於受控 Cisco 路由器執行任意命令**。",
+    "目前尚未遭利用，觸發條件涉及 Unicode 指令注入或透過 DHCP 儲存區名稱進行注入。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2730,7 +3270,7 @@
   {
    "id": "grp:OpenSSL:2026-11-10",
    "kind": "group",
-   "title": "OpenSSL 多個高風險漏洞",
+   "title": "OpenSSL 程式碼注入漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -2751,12 +3291,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60037",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.1。",
-    "A high privileged remote attacker can perform an OpenSSL code injection in the frontends device importer function leading to code execution."
+    "影響 OpenSSL 裝置匯入器與 ImportPKCS12 函式，高權限遠端攻擊者可**執行任意程式碼**並導致系統全面淪陷。",
+    "CVSS 評分為 9.1，目前未遭利用。攻擊需要具備高權限的遠端攻擊者發動程式碼注入攻擊。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "A high privileged remote attacker can perform an OpenSSL code injection in the frontends device importer function leading to code execution. This can result in a total loss of confidentiality, integrity and availability.",
@@ -3427,7 +3967,7 @@
   {
    "id": "grp:Node.js:2026-11-10",
    "kind": "group",
-   "title": "Node.js 多個高風險漏洞",
+   "title": "Node.js 與相關元件漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -3446,12 +3986,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107242",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.1。",
-    "Eclipse Langium versions 3.2.0 through 4.4.0 contain an inefficient algorithmic complexity issue (CWE-407) in the opt-in IndentationAwareTok"
+    "影響 Eclipse Langium 3.2.0 至 4.4.0 及 VOS 上的 Node.js 服務，可能導致效能問題或**工作階段識別碼被預測**。",
+    "CVSS 評分為 9.1，目前未遭利用。攻擊條件與影響範圍視各別服務與演算法複雜性而定。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Eclipse Langium versions 3.2.0 through 4.4.0 contain an inefficient algorithmic complexity issue (CWE-407) in the opt-in IndentationAwareTokenBuilder and IndentationAwareLexer. When producing DEDENT tokens, the token builder recomputes line numbers by re-scanning the entire preceding document text. A document whose indentation changes on most lines then takes quadratic time to tokenize. Because tokenization is synchronous, a crafted document of a few hundred kilobytes can block the Node.js event loop for tens of seconds. That causes a DoS for every user served by the same process. Languages built with the DefaultLexer and DefaultTokenBuilder are unaffected.",
@@ -4798,7 +5338,7 @@
   {
    "id": "grp:IIS:2026-11-06",
    "kind": "group",
-   "title": "ModSecurity WAF 安全漏洞",
+   "title": "ModSecurity WAF 繞過漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -4818,11 +5358,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104269",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.6。",
-    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModS"
+    "影響 Apache、IIS 與 Nginx 上的 ModSecurity 3.0.0 至 3.0.17 版本，**攻擊者可繞過 WAF 檢查**。",
+    "目前尚未遭利用，漏洞主因多部分解析器未遵守 RFC 2231 及 Content-Type 大小寫比對缺陷。"
    ],
-   "fix": "原文：This issue is fixed in version 3.0.17.",
-   "ai": false,
+   "fix": "",
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -15427,6 +15967,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-13T01:50:07+00:00",
- "kev_last": "2026-11-13T01:50:07+00:00"
+ "nvd_last": "2026-11-13T09:33:11+00:00",
+ "kev_last": "2026-11-13T09:33:11+00:00"
 }
