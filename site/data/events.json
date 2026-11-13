@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T17:45:18+00:00",
+ "generated": "2026-11-13T23:35:43+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "items": [
    {
-    "title": "處理：Windows 多個高風險漏洞",
-    "desc": "Improper neutralization of special elements used in an OS command in L"
+    "title": "修補 Outlook 零時差漏洞",
+    "desc": "**已遭積極利用**，微軟與 CISA 呼籲儘速安裝修補程式。"
    },
    {
-    "title": "處理：WHMS 系統身分驗證繞過漏洞",
-    "desc": "此漏洞編號為 CVE-2026-125383，CVSS 風險評分為 9.3 分，目前尚未發現遭利用情況。"
+    "title": "修補 Windows 元件漏洞",
+    "desc": "包含最高 CVSS 9.1 漏洞及 Audition 程式碼執行漏洞。"
    },
    {
-    "title": "處理：Outlook網路欺騙漏洞",
-    "desc": "該漏洞目前已知已遭野外利用，攻擊者無需使用者互動即可經由網路發動攻擊。"
+    "title": "更新 Telerik UI 元件",
+    "desc": "修補 ASP.NET 與 .NET 之解析與記憶體耗盡漏洞。"
    },
    {
-    "title": "處理：Telerik UI 伺服器端解析漏洞",
-    "desc": "目前尚未發現此漏洞遭到實際利用，CVSS 評分為 8.6，未驗證攻擊者可遠端發動攻擊。"
+    "title": "修補 Fortinet 與 Citrix 漏洞",
+    "desc": "包含 Fortinet CVSS 9.8 漏洞及 Citrix 驗證繞過等漏洞。"
    },
    {
-    "title": "處理：Telerik UI記憶體消耗漏洞",
-    "desc": "In affected versions of Progress® Telerik® UI for ASP.NET MVC `2012.2."
+    "title": "更新 Chrome 與 Node.js",
+    "desc": "Chrome 存在遠端執行程式碼漏洞，Node.js 存在資料洩漏漏洞。"
    },
    {
-    "title": "處理：hMailServer SQL注入漏洞",
-    "desc": "目前未發現遭利用情形，驗證與未驗證遠端攻擊者皆可觸發此漏洞，SQL Server 及 SQL Server Compact 不受影響。"
+    "title": "修補 Synology DSM 漏洞",
+    "desc": "存在身份驗證繞過與 SQL 注入，可致遠端讀寫任意檔案。"
    }
   ],
   "ai": true
@@ -361,6 +361,56 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "CVE-2026-68905",
+   "kind": "cve",
+   "title": "nginx 漏洞 CVE-2026-68905",
+   "sub": "CVE-2026-68905 · CVSS 8.2",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-68905"
+   ],
+   "cvss": 8.2,
+   "published": "2026-11-13T20:19:00+00:00",
+   "first_seen": "2026-11-13T23:36:37+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68905",
+   "pts": [
+    "Hugo Blog is a tech blog site. In commit 744ca15 and prior, the AI assistant proxy exposes three HTTP endpoints (POST /api/blog-assistant, P"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-129167",
+   "kind": "cve",
+   "title": "Atlassian 漏洞 CVE-2026-129167",
+   "sub": "CVE-2026-129167 · CVSS 9.2",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Atlassian"
+   ],
+   "cves": [
+    "CVE-2026-129167"
+   ],
+   "cvss": 9.2,
+   "published": "2026-11-13T18:17:41+00:00",
+   "first_seen": "2026-11-13T23:36:37+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129167",
+   "pts": [
+    "Seafile SeaDoc converter 2.0.4 before 2.0.11 and 3.0.0 before 3.0.8 contains an absolute path traversal vulnerability that allows unauthenti"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:ad70ce95f981",
    "kind": "news",
@@ -1604,7 +1654,7 @@
    "id": "grp:Windows Server:2026-11-12",
    "kind": "group",
    "title": "Windows 相關元件多重安全漏洞",
-   "sub": "5 個 CVE · 最高 CVSS 9.1",
+   "sub": "6 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1616,6 +1666,7 @@
     "CVE-2026-126867",
     "CVE-2026-126873",
     "CVE-2026-126883",
+    "CVE-2026-126903",
     "CVE-2026-19422",
     "CVE-2026-65949"
    ],
@@ -1625,7 +1676,7 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126867",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 9.1。",
+    "同日公布 6 個漏洞，最高 CVSS 9.1。",
     "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and"
    ],
    "fix": "",
@@ -1687,11 +1738,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
-    "影響 FortiOS、FortiMail 與 FortiRecorder 等，漏洞可能導致**未經身份驗證遠端執行程式碼**、帳號接管或中間人攻擊。",
-    "CVSS 評分為 9.8，目前未遭利用。遠端未身份驗證攻擊者可透過發送特製封包或請求發起攻擊。"
+    "同日公布 37 個漏洞，最高 CVSS 9.8。",
+    "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through "
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "CVE-2026-65982",
@@ -2244,7 +2295,7 @@
    "id": "grp:Windows Server:2026-11-11",
    "kind": "group",
    "title": "Audition 程式碼執行漏洞",
-   "sub": "5 個 CVE · 最高 CVSS 8.6",
+   "sub": "10 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -2252,23 +2303,28 @@
     "Windows Server"
    ],
    "cves": [
+    "CVE-2026-113551",
+    "CVE-2026-113553",
+    "CVE-2026-113555",
+    "CVE-2026-113557",
+    "CVE-2026-113558",
     "CVE-2026-113560",
     "CVE-2026-113562",
     "CVE-2026-113563",
     "CVE-2026-113565",
     "CVE-2026-113567"
    ],
-   "cvss": 8.6,
+   "cvss": 8.8,
    "published": "2026-11-10T21:18:49+00:00",
    "first_seen": "2026-11-13T17:46:00+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113560",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113551",
    "pts": [
-    "Audition 存在輸入驗證與記憶體越界寫入等漏洞，**攻擊者可於當前使用者權限執行任意程式碼**。",
-    "目前未遭利用，部分漏洞利用需誘騙受害者開啟惡意檔案等互動條件。"
+    "同日公布 10 個漏洞，最高 CVSS 8.8。",
+    "Audition is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Fortinet:2026-11-11",
@@ -5680,11 +5736,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "影響 157.0.8103.38 之前的 Google Chrome，攻擊者可藉由特製 HTML 頁面觸發 UAF 或緩衝區溢位，**於沙盒外執行任意程式碼**。",
-    "CVSS 評分為 9.8，目前尚未發現漏洞遭到實際利用，部分漏洞需要結合社交工程誘騙使用者點擊。"
+    "同日公布 123 個漏洞，最高 CVSS 9.8。",
+    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Windows Server:2026-11-04",
@@ -10569,11 +10625,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "影響 Oracle PeopleSoft PeopleTools (8.61-8.63) 及 Siebel CRM (17.0-26.9)，**未授權攻擊者可透過 HTTP 妥協系統**。",
-    "CVSS 評分高達 10.0，目前尚未發現遭實際利用，遠端攻擊者無須身分驗證或僅需低權限即可發動攻擊。"
+    "同日公布 216 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-10-20",
