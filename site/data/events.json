@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T20:49:52+00:00",
+ "generated": "2026-11-13T01:50:07+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "items": [
    {
-    "title": "本單位：修補 Outlook 零時差漏洞",
-    "desc": "**Outlook 漏洞已遭野外積極利用，可免互動發動網路攻擊，應儘速修補。**"
+    "title": "處理：Windows 多個高風險漏洞",
+    "desc": "Improper neutralization of special elements used in an OS command in L"
    },
    {
-    "title": "本單位：修補 ASP.NET 驗證漏洞",
-    "desc": "INDOTALENT WHMS 系統存在身份驗證繞過漏洞。"
+    "title": "處理：WHMS 系統身分驗證繞過漏洞",
+    "desc": "此漏洞編號為 CVE-2026-125383，CVSS 風險評分為 9.3 分，目前尚未發現遭利用情況。"
    },
    {
-    "title": "本單位：更新 Lenovo 管理元件",
-    "desc": "避免攻擊者利用 Windows Admin Center 執行任意 PowerShell 指令。"
+    "title": "處理：Outlook網路欺騙漏洞",
+    "desc": "該漏洞目前已知已遭野外利用，攻擊者無需使用者互動即可經由網路發動攻擊。"
    },
    {
-    "title": "本單位：修補 Telerik UI 漏洞",
-    "desc": "避免 ASP.NET 及 .NET 環境遭重複請求導致記憶體持續消耗。"
+    "title": "處理：Telerik UI 伺服器端解析漏洞",
+    "desc": "目前尚未發現此漏洞遭到實際利用，CVSS 評分為 8.6，未驗證攻擊者可遠端發動攻擊。"
    },
    {
-    "title": "修補 Cisco 資訊洩漏漏洞",
-    "desc": "Cisco BroadWorks 漏洞已遭惡意利用，可遠端讀取敏感設定資訊。"
+    "title": "處理：Telerik UI記憶體消耗漏洞",
+    "desc": "In affected versions of Progress® Telerik® UI for ASP.NET MVC `2012.2."
    },
    {
-    "title": "更新 Fortinet 與 Chrome 設備",
-    "desc": "FortiOS、FortiAnalyzer 與 Chrome 等產品發布多個高風險修補。"
+    "title": "處理：hMailServer SQL注入漏洞",
+    "desc": "目前未發現遭利用情形，驗證與未驗證遠端攻擊者皆可觸發此漏洞，SQL Server 及 SQL Server Compact 不受影響。"
    }
   ],
   "ai": true
@@ -362,9 +362,106 @@
  },
  "events": [
   {
+   "id": "tw:21b3983ad56b",
+   "kind": "news",
+   "title": "RSAC預測2027年資安趨勢：AI代理增加漏洞處理壓力，企業須強化GRC與事件應變",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T01:50:26+00:00",
+   "first_seen": "2026-11-13T01:50:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180448",
+   "pts": [
+    "RSAC預測AI代理將發現與修補更多漏洞，**企業資安團隊須重新檢視漏洞管理流程與復原能力**。",
+    "資安主管關注重心將重新聚焦於GRC，第一線人員則需加強事件應變能力。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:385576519be9",
+   "kind": "news",
+   "title": "NIST發布對抗式機器學習攻擊分類草案，示警MCP工具供應鏈風險",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T01:50:26+00:00",
+   "first_seen": "2026-11-13T01:50:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180433",
+   "pts": [
+    "NIST發布對抗式機器學習攻擊分類草案，整理預測式機器學習、生成式AI與代理式AI系統的攻擊與防禦方式。",
+    "**草案特別示警MCP工具供應鏈風險**，提醒企業關注機器學習相關威脅。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:4e21929d527d",
+   "kind": "news",
+   "title": "Linux基金會調查揭軟體交付速度超過資安審查能力，近6成團隊跟不上",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T01:50:26+00:00",
+   "first_seen": "2026-11-13T01:50:26+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180398",
+   "pts": [
+    "**Linux基金會調查顯示近6成團隊軟體交付速度過快導致資安審查難以跟上**。",
+    "該研究於2026年6月至7月進行，共有308名資安人員、軟體開發者與開源貢獻者參與。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-120868",
+   "kind": "cve",
+   "title": "Citrix 漏洞 CVE-2026-120868",
+   "sub": "CVE-2026-120868 · CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Citrix"
+   ],
+   "cves": [
+    "CVE-2026-120868"
+   ],
+   "cvss": 9.3,
+   "published": "2026-11-13T00:20:09+00:00",
+   "first_seen": "2026-11-13T01:50:23+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120868",
+   "pts": [
+    "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gat"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "grp:ASP.NET:2026-11-13",
    "kind": "group",
-   "title": "ASP.NET 多個高風險漏洞",
+   "title": "Telerik UI 伺服器端解析漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -383,11 +480,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106146",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.6。",
-    "In Progress® Telerik® UI for ASP.NET MVC versions `2012.2.710` through `2026.3.1015`, server-side filter processing does not properly valida"
+    "影響 Telerik UI for ASP.NET MVC (2012.2.710-2026.3.1015) 與 Core 版，攻擊者可利用過濾器解析漏洞傳入惡意參數。",
+    "**目前尚未發現此漏洞遭到實際利用**，CVSS 評分為 8.6，未驗證攻擊者可遠端發動攻擊。"
    ],
-   "fix": "原文：The issue is fixed in version `2026.4.1111`.",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "CVE-2026-126837",
@@ -417,7 +514,7 @@
   {
    "id": "CVE-2026-123790",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-123790",
+   "title": "ComfyUI 套件路徑遍歷漏洞",
    "sub": "CVE-2026-123790 · 尚未評分",
    "sev": "high",
    "kev": false,
@@ -434,10 +531,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123790",
    "pts": [
-    "ComfyUI-Easy-Use version 1.3.6 contains a path traversal vulnerability in the `save_preview()` handler for POST `/easyuse/save/{name}`. The "
+    "影響 ComfyUI-Easy-Use 1.3.6 版，未授權攻擊者可利用路徑遍歷漏洞覆寫自訂節點入口點，**於重啟時執行任意程式碼**。",
+    "目前尚未發現漏洞遭實際利用，攻擊者僅需存取 ComfyUI 伺服器即可發動攻擊並取得該處理程序的權限。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-120869",
@@ -482,10 +580,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180465",
    "pts": [
-    "資安業者Arctic Wolf Labs近日揭露駭客利用開源AI代理滲透測試平臺AntiFox，對網際網路服務及AWS雲端環境發動攻擊。AntiFox最初是從AI代理滲透測試工具ARTEX 0.1.1分支而來，具備中文介面，可讓使用者透過AI 代理自動執行滲透測試任務。研究人員發現，託管於阿里雲上的"
+    "**駭客濫用開源AI代理滲透測試平臺AntiFox對網路服務及AWS發動攻擊並竊取雲端憑證**。",
+    "AntiFox衍生自ARTEX 0.1.1，託管於阿里雲的相關基礎設施曾涉及多起惡意入侵活動。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:a2724315bcea",
@@ -553,10 +652,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180460",
    "pts": [
-    "網路安全設備廠商Fortinet於10月21日，針對FortiOS、FortiManager、FortiAnalyzer、FortiMail，以及FortiAuthenticator等應用系統發布安全強化更新，修補由頂尖AI找出的資安漏洞。本週該公司也如之前預告，公布這些漏洞的資訊。"
+    "Fortinet公布10月底發布安全強化更新所修補的100個漏洞資訊，漏洞由頂尖AI找出。",
+    "**更新涵蓋FortiOS、FortiManager、FortiAnalyzer、FortiMail及FortiAuthenticator**。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:c71a06a0a64e",
@@ -576,10 +676,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180450",
    "pts": [
-    "今日有新聞媒體報導，有人在地下論壇DarkForums與BreachForums聲稱取得4.6萬筆台積電員工紀錄，資料量為6.9GB，當中包含個資，對方開價3個比特幣兜售（約合新台幣726萬元），揚言一週內沒人買就公開全部資料，對此台積電的回應是：「已掌握此情形，正與相關雲端服務供應商及調查機關密切"
+    "暗網論壇有人聲稱兜售4.6萬筆台積電員工紀錄（6.9GB），開價3個比特幣。",
+    "**台積電回應表示無證據顯示公司系統遭入侵**，已與雲端供應商及調查機關合作釐清。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:8ea958a11d37",
@@ -671,10 +772,11 @@
    "src": "iThome",
    "url": "https://www.ithome.com.tw/news/180438",
    "pts": [
-    "日前netiCRM捐款管理系統服務商網絡行動科技遭駭，數十家非營利組織接連發布相關資安警訊。如今，網絡行動科技進一步釐清事件影響範圍，指出這次遭入侵的是用來管理其他伺服器的內部管理主機，並非客戶使用的netiCRM系統所在主機。該公司表示，已確認自身持有的非營利組織客戶聯絡人資料、方案與帳務資料，以"
+    "網絡行動科技內部管理主機遭入侵，已確認客戶聯絡人與帳務資料遭竊，目前未發現捐款人及支持者資料外洩。",
+    "**服務商已將 500 家客戶主機納入檢查與重建範圍**，並持續進行相關資安事件說明與後續處理。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:07d784f60fe4",
@@ -1568,11 +1670,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
    "pts": [
-    "影響使用 cgo 的 Go 語言編譯過程，建置包含特定標記或惡意套件（如 .syso 檔案）時，可能導致在編譯或連結時期執行任意程式碼。",
-    "**目前尚未發現遭漏洞利用情形**，攻擊者可透過建置惡意套件在編譯或連結時注入標記與執行指令。"
+    "同日公布 4 個漏洞。",
+    "Building a malicious package that uses cgo could cause arbitrary code execution at build time through several compiler and linker flags perm"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:604ba2b9c99b",
@@ -3720,16 +3822,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104269",
    "pts": [
-    "影響 ModSecurity 3.0.0 至 3.0.17 版本（適用於 Apache、IIS 與 Nginx），存在 multipart 解析器與 Content-Type 比對漏洞。",
-    "**目前漏洞未遭利用**，CVSS 風險評分為 8.6 分。"
+    "同日公布 2 個漏洞，最高 CVSS 8.6。",
+    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 until 3.0.17, ModS"
    ],
-   "fix": "",
-   "ai": true
+   "fix": "原文：This issue is fixed in version 3.0.17.",
+   "ai": false
   },
   {
    "id": "grp:SQL Server:2026-11-06",
    "kind": "group",
-   "title": "SQL Server 與 MariaDB 安全漏洞",
+   "title": "SQL Server與MariaDB漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -3747,11 +3849,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102523",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.3。",
-    "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE "
+    "影響 MariaDB server 10.11.1 至 10.11.19 等版本及 Jumis SQL Server 登入機制，可能導致路徑處理或憑證遭破解問題。",
+    "**目前尚未發現漏洞遭實際利用**，CVSS 最高達 9.3，攻擊者可透過已驗證或硬編碼衍生演算法進行攻擊。"
    ],
-   "fix": "原文：This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "tw:e46fd02e2527",
@@ -4941,7 +5043,7 @@
   {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 多項安全漏洞",
+   "title": "Chrome 遠端執行程式碼漏洞",
    "sub": "123 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -5080,11 +5182,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
    "pts": [
-    "同日公布 123 個漏洞，最高 CVSS 9.8。",
-    "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to poten"
+    "影響 157.0.8103.38 之前的 Google Chrome，攻擊者可藉由特製 HTML 頁面觸發 UAF 或緩衝區溢位，**於沙盒外執行任意程式碼**。",
+    "CVSS 評分為 9.8，目前尚未發現漏洞遭到實際利用，部分漏洞需要結合社交工程誘騙使用者點擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Windows Server:2026-11-04",
@@ -9737,7 +9839,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle多項產品安全漏洞",
+   "title": "Oracle 產品高風險漏洞",
    "sub": "216 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -9969,11 +10071,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101390",
    "pts": [
-    "同日公布 216 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink). Supported versions that"
+    "影響 Oracle PeopleSoft PeopleTools (8.61-8.63) 及 Siebel CRM (17.0-26.9)，**未授權攻擊者可透過 HTTP 妥協系統**。",
+    "CVSS 評分高達 10.0，目前尚未發現遭實際利用，遠端攻擊者無須身分驗證或僅需低權限即可發動攻擊。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-10-20",
