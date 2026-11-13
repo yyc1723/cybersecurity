@@ -35,6 +35,141 @@
  },
  "events": [
   {
+   "id": "tw:ad70ce95f981",
+   "kind": "news",
+   "title": "【資安週報】1109～1113，Cyberbiz事件擴大、多家上市櫃公司接連公告，資安救火人力不足恐浮現",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-13T17:46:03+00:00",
+   "first_seen": "2026-11-13T17:46:03+00:00",
+   "updated": "2026-11-13T17:46:03+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180500",
+   "pts": [
+    "日本 Arara 與西班牙 Amadeus 等委外服務商遭駭，影響逾 8,100 萬筆資料與多間企業。",
+    "**臺灣亦有多家第三方業者遭駭波及企業客戶**，顯示委外服務資安風險持續擴大。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "title": "【資安週報】1109～1113，Cyberbiz事件擴大、多家上市櫃公司接連公告，資安救火人力不足恐浮現",
+    "desc": "回顧2026年11月第二週的資安動態，委外服務業者的資安風暴延燒並占據大量新聞版面。放眼世界各國，日本郵件服務商Arara遭駭，逾8,100萬筆資訊可能外洩，影響超過380家企業客戶，包括摩斯漢堡、BIC Camera及SEGA等知名業者；西班牙的航空訂位系統供應商Amadeus遭駭事件持續延燒，已波及10多家航空公司，最新包括泰國航空、芬蘭航空公布旅客資料受影響。臺灣也出現多家第三方業者遭駭，導致其服務的企業客戶必須公開說明其受到影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2024-58406",
+   "kind": "cve",
+   "title": "Apache 漏洞 CVE-2024-58406",
+   "sub": "CVE-2024-58406 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [
+    "CVE-2024-58406"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-13T16:17:18+00:00",
+   "first_seen": "2026-11-13T17:46:00+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58406",
+   "pts": [
+    "Huatian Dynamic OA8000 collaborative office system contains an unauthenticated path traversal vulnerability in /OAapp/jsp/trace/ntkodownload"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "Huatian Dynamic OA8000 collaborative office system contains an unauthenticated path traversal vulnerability in /OAapp/jsp/trace/ntkodownload.jsp, where the filename request parameter is used to locate a file without restricting access to an intended directory or rejecting traversal sequences. Attackers can supply ../ sequences to read arbitrary files from the server, such as the Tomcat configuration at ROOT/WEB-INF/web.xml, exposing sensitive configuration, source, and credential material that can enable further compromise. Exploitation evidence was first observed by the Shadowserver Foundation on 2024-11-20.",
+    "refs": [
+     "https://cn-sec.com/archives/2540697.html",
+     "https://www.oa8000.com/",
+     "https://www.vulncheck.com/advisories/huatian-oa8000-path-traversal-via-ntkodownload-jsp"
+    ]
+   }
+  },
+  {
+   "id": "grp:AI 平台:2026-11-13",
+   "kind": "group",
+   "title": "vLLM 拒絕服務漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-126397",
+    "CVE-2026-126398"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-13T10:17:43+00:00",
+   "first_seen": "2026-11-13T17:46:00+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126397",
+   "pts": [
+    "vLLM 0.10.1 至 0.31.0 未滿與 0.28.0 至 0.30.0 未滿版本存在漏洞，**攻擊者可發送特定請求致 CPU 過載或引擎崩潰**。",
+    "目前未遭利用，利用條件為發送多模態聊天補完或僅含 prompt_embeds 之請求。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "descs": [
+     "vLLM from 0.10.1 before 0.31.0 forwards a request-controlled mm_processor_kwargs.max_patches value to the Hugging Face processor for Cohere2 Vision models without a server-side upper bound, causing quadratic CPU work during multimodal preprocessing. Remote clients can send small image chat-completion requests with large, varying max_patches values to bypass the LRU cache, exhaust preprocessing workers, and deny service to other clients.",
+     "vLLM from 0.28.0 before 0.30.0 contains a reachable assertion vulnerability in GPUModelRunner._init_xdrope_positions that allows remote attackers to crash the engine by submitting embeddings-only requests. Attackers can send a /v1/completions request containing only prompt_embeds to XD-RoPE models with --enable-prompt-embeds, terminating the EngineCore and API server for all clients."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-126378",
+   "kind": "cve",
+   "title": "nginx 漏洞 CVE-2026-126378",
+   "sub": "CVE-2026-126378 · CVSS 9.4",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-126378"
+   ],
+   "cvss": 9.4,
+   "published": "2026-11-13T10:17:40+00:00",
+   "first_seen": "2026-11-13T17:46:00+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126378",
+   "pts": [
+    "Vvveb through 1.0.8.6 contains a file upload vulnerability in the theme installer validFile() function that uses strpos() instead of strict "
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "Vvveb through 1.0.8.6 contains a file upload vulnerability in the theme installer validFile() function that uses strpos() instead of strict path matching. Attackers with admin credentials can upload a ZIP containing a PHP file whose path includes /theme.php to achieve remote code execution on nginx deployments.",
+    "refs": [
+     "https://github.com/givanz/Vvveb/security/advisories/GHSA-xpgr-r6c8-3hpq",
+     "https://www.vulncheck.com/advisories/vvveb-through-1.0.8.6-webshell-upload-via-theme-installer-validfile-bypass"
+    ]
+   }
+  },
+  {
    "id": "tw:ee78babeacaf",
    "kind": "news",
    "title": "駭客集團UNC6783聲稱入侵資安院竊得102 GB資料，資安院：去年7月已進行資安通報",
@@ -162,7 +297,7 @@
    "id": "CVE-2026-119618",
    "kind": "cve",
    "title": "Apache HTTP/2 遠端執行漏洞",
-   "sub": "CVE-2026-119618 · 尚未評分",
+   "sub": "CVE-2026-119618 · CVSS 8.1",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -172,10 +307,10 @@
    "cves": [
     "CVE-2026-119618"
    ],
-   "cvss": null,
+   "cvss": 8.1,
    "published": "2026-11-13T09:33:42+00:00",
    "first_seen": "2026-11-13T09:33:49+00:00",
-   "updated": "2026-11-13T09:33:49+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180490",
    "pts": [
@@ -602,15 +737,15 @@
    "cvss": 9.5,
    "published": "2026-11-13T00:20:09+00:00",
    "first_seen": "2026-11-13T01:50:23+00:00",
-   "updated": "2026-11-13T09:33:39+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107407",
    "pts": [
-    "影響 Citrix NetScaler ADC 與 NetScaler Gateway，包含封包處理及 SAML 驗證等模組存在記憶體溢位漏洞，可能導致**未預期的錯誤行為或阻斷服務**。",
-    "包含 CVE-2026-107407 等多個漏洞，目前尚無遭利用報告。"
+    "同日公布 23 個漏洞，最高 CVSS 9.5。",
+    "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gat"
    ],
-   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -634,6 +769,9 @@
      "Memory overflow / improper handling in GSLB and geolocation (MEP, static-proximity, config-sync) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
      "Memory overflow in SIP ALG (LSN) and DNS answer-section logging datapaths can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
      "Memory overflow in the management plane can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in ICA proxy can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in HTTP/3 (QUIC) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in SSL/TLS/DTLS can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
      "Memory overflow in ICA proxy can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
      "Memory overflow in HTTP/3 (QUIC) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
      "Memory overflow in SSL/TLS/DTLS can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway."
@@ -1502,15 +1640,15 @@
    "cvss": 9.6,
    "published": "2026-11-11T23:17:11+00:00",
    "first_seen": "2026-11-12T03:49:46+00:00",
-   "updated": "2026-11-13T09:33:39+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126840",
    "pts": [
-    "影響 157.0.8103.78 前版本之 Google Chrome，包含 V8 與 Skia 等模組漏洞，遠端攻擊者可透過精心設計的 HTML 頁面**執行任意程式碼**。",
-    "包含 CVE-2026-126840 等多項高風險與嚴重漏洞，目前尚無遭利用報告。"
+    "同日公布 57 個漏洞，最高 CVSS 9.6。",
+    "Out of bounds write in Network in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbo"
    ],
-   "fix": "升級至 Google Chrome 157.0.8103.78 或以上版本。",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -1672,7 +1810,26 @@
      "Memory corruption in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in Layout in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in BrowserTag in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
+     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in HTML in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DOM in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in Extensions in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Frames in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Missing authorization in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Integer overflow in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in ServiceWorker in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Frames in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Animation in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Turbolev in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Off-by-one error in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Media in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in MediaStream in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CSS in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)"
     ]
    }
   },
@@ -1680,7 +1837,7 @@
    "id": "grp:Windows Server:2026-11-12",
    "kind": "group",
    "title": "Windows 相關元件多重安全漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 9.1",
+   "sub": "5 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1689,6 +1846,8 @@
     "Chrome"
    ],
    "cves": [
+    "CVE-2026-126867",
+    "CVE-2026-126873",
     "CVE-2026-126883",
     "CVE-2026-19422",
     "CVE-2026-65949"
@@ -1696,15 +1855,15 @@
    "cvss": 9.1,
    "published": "2026-11-11T22:17:27+00:00",
    "first_seen": "2026-11-11T22:43:03+00:00",
-   "updated": "2026-11-13T09:33:39+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126883",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126867",
    "pts": [
-    "影響 Lenovo XClarity Integrator (5.1.1/5.2.0)、ManageEngine DDI Central (6301) 及 Chrome on Windows，遠端攻擊者可**執行任意 PowerShell 指令**或未授權變更 DNS/DHCP。",
-    "包含 CVE-2026-126883 等漏洞，目前尚無遭利用報告。"
+    "同日公布 5 個漏洞，最高 CVSS 9.1。",
+    "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and"
    ],
-   "fix": "ManageEngine DDI Central 升級至 6301 以上；Chrome 升級至 157.0.8103.78 以上；其餘依原廠說明修補。",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -1712,7 +1871,9 @@
      "Zohocorp ManageEngine DDI Central versions below 6301 is affected by an authentication bypass vulnerability in Windows DNS and DHCP agent synchronization APIs, allowing unauthenticated user to impersonate onboarded Windows servers and perform unauthorized DNS and DHCP modifications.",
      "Use after free in Core in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and 5.2.0 allows an authenticated remote attacker to execute arbitrary PowerShell commands by submitting a crafted hostname.",
-     "Use after free in Core in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)"
+     "Use after free in Core in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Browser in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Extensions in Google Chrome on on Windows prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
@@ -2626,6 +2787,47 @@
    }
   },
   {
+   "id": "grp:Windows Server:2026-11-11",
+   "kind": "group",
+   "title": "Audition 程式碼執行漏洞",
+   "sub": "5 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-113560",
+    "CVE-2026-113562",
+    "CVE-2026-113563",
+    "CVE-2026-113565",
+    "CVE-2026-113567"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-10T21:18:49+00:00",
+   "first_seen": "2026-11-13T17:46:00+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113560",
+   "pts": [
+    "Audition 存在輸入驗證與記憶體越界寫入等漏洞，**攻擊者可於當前使用者權限執行任意程式碼**。",
+    "目前未遭利用，部分漏洞利用需誘騙受害者開啟惡意檔案等互動條件。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "descs": [
+     "Audition is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploit depends on conditions beyond the attacker's control. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
+     "Audition is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploit depends on conditions beyond the attacker's control. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
+     "Audition is affected by a Violation of Secure Design Principles vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
+     "Audition is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+     "Audition is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file."
+    ]
+   }
+  },
+  {
    "id": "grp:Fortinet:2026-11-11",
    "kind": "group",
    "title": "Fortinet 多款產品高危漏洞",
@@ -2645,15 +2847,15 @@
    "cvss": 9.8,
    "published": "2026-11-10T20:17:20+00:00",
    "first_seen": "2026-11-10T20:50:10+00:00",
-   "updated": "2026-11-13T09:33:39+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
    "pts": [
-    "影響 FortiAnalyzer、FortiManager 及 FortiClient 等多款產品，攻擊者可**遠端執行任意程式碼**或指令。",
-    "CVSS 評分為 9.8，目前未遭利用。未授權遠端攻擊者可透過 FGFM 連接埠或特製請求發起攻擊。"
+    "同日公布 4 個漏洞，最高 CVSS 9.8。",
+    "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6."
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2670,7 +2872,9 @@
      "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim.",
      "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests.",
      "A improper authorization vulnerability in Fortinet FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.5, FortiManager 7.2.0 through 7.2.8 may allow an unauthenticated attacker that can reach the FGFM port to execute code or commands via crafted FGFM packets.",
-     "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim."
+     "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim.",
+     "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests.",
+     "A improper authorization vulnerability in Fortinet FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.5, FortiManager 7.2.0 through 7.2.8 may allow an unauthenticated attacker that can reach the FGFM port to execute code or commands via crafted FGFM packets."
     ]
    }
   },
@@ -3232,7 +3436,7 @@
   {
    "id": "grp:Cisco:2026-11-10",
    "kind": "group",
-   "title": "ManageEngine DDI 指令注入漏洞",
+   "title": "ManageEngine 命令注入",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -3247,12 +3451,12 @@
    "cvss": 8.8,
    "published": "2026-11-10T11:16:43+00:00",
    "first_seen": "2026-11-10T13:29:08+00:00",
-   "updated": "2026-11-12T20:50:07+00:00",
+   "updated": "2026-11-13T17:46:00+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12573",
    "pts": [
-    "影響 ManageEngine DDI Central 6500 及 6200 以下版本，**攻擊者可注入指令於受控 Cisco 路由器執行任意命令**。",
-    "目前尚未遭利用，觸發條件涉及 Unicode 指令注入或透過 DHCP 儲存區名稱進行注入。"
+    "ManageEngine DDI Central 6500 及 6200 以下版本存在漏洞，**攻擊者可於受管 Cisco 路由器執行任意命令**。",
+    "目前未遭利用，攻擊者可透過 DHCP 設定功能或 DHCP pool 名稱注入命令。"
    ],
    "fix": "",
    "ai": true,
@@ -3263,7 +3467,8 @@
      "Zoho Corporation ManageEngine DDI Central versions 6200 and below are vulnerable to Cisco IOS command injection via DHCP pool name leading to arbitrary commands on managed Cisco routers.",
      "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the Cisco IOS DHCP configuration functionality. This vulnerability could allow cluster-scoped operators to inject specially crafted Unicode characters, resulting in the execution of unintended device commands.",
      "Zoho Corporation ManageEngine DDI Central versions 6200 and below are vulnerable to Cisco IOS command injection via DHCP pool name leading to arbitrary commands on managed Cisco routers.",
-     "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the Cisco IOS DHCP configuration functionality. This vulnerability could allow cluster-scoped operators to inject specially crafted Unicode characters, resulting in the execution of unintended device commands."
+     "Zoho Corporation ManageEngine DDI Central versions 6500 and below are vulnerable to a Unicode-based command injection vulnerability in the Cisco IOS DHCP configuration functionality. This vulnerability could allow cluster-scoped operators to inject specially crafted Unicode characters, resulting in the execution of unintended device commands.",
+     "Zoho Corporation ManageEngine DDI Central versions 6200 and below are vulnerable to Cisco IOS command injection via DHCP pool name leading to arbitrary commands on managed Cisco routers."
     ]
    }
   },
@@ -15967,6 +16172,6 @@
   }
  ],
  "rules_version": 4,
- "nvd_last": "2026-11-13T09:33:11+00:00",
- "kev_last": "2026-11-13T09:33:11+00:00"
+ "nvd_last": "2026-11-13T17:45:18+00:00",
+ "kev_last": "2026-11-13T17:45:18+00:00"
 }
