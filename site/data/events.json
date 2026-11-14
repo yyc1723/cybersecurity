@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T06:25:39+00:00",
+ "generated": "2026-11-14T14:09:48+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -335,20 +335,20 @@
     "desc": "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_"
    },
    {
-    "title": "Office：CISA警告6個弱點遭積極利用，其中包含Outlook、Chrom",
-    "desc": "11月10日美國網路安全與基礎設施安全局（CISA）宣布，已掌握6個新漏洞遭到積極利用的證據，將其列入已遭利用漏洞名單（KEV），並要求聯邦機構限期修補。"
-   },
-   {
-    "title": "Office：微軟警告Outlook零時差漏洞已遭到利用",
-    "desc": "微軟於11月例行更新（Patch Tuesday）共修補超過1千個資安漏洞，其中有一個特別值得注意，原因是該公司已偵測到漏洞利用活動，呼籲用戶儘速安裝修補程式。"
-   },
-   {
     "title": "Windows Server：Audition 提權與執行漏洞",
     "desc": "目前尚未遭利用，CVSS 8.8；低權限攻擊者可免互動提權，執行程式碼須誘使開啟惡意檔案。"
    },
    {
     "title": "IIS/Nginx 解析漏洞",
     "desc": "目前尚未遭利用，CVSS 8.6；涉及與 Go、Python、Node.js 與 Java 解析器差異，以及回應標頭區分大小寫。"
+   },
+   {
+    "title": "Fortinet 多個高風險漏洞",
+    "desc": "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, Fo"
+   },
+   {
+    "title": "Chrome 多個高風險漏洞",
+    "desc": "In multiple locations, there is a possible use-after-free due to a logic error in the code"
    }
   ],
   "ai": false
@@ -361,6 +361,29 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:86df18897cd3",
+   "kind": "news",
+   "title": "eMudhra憑證事故擴大，再有8張RSA中繼CA憑證遭撤銷",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-14T14:11:32+00:00",
+   "first_seen": "2026-11-14T14:11:59+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180445",
+   "pts": [
+    "印度數位憑證業者eMudhra的憑證事故又有新發展。繼先前8張ECDSA中繼CA憑證因私密金鑰可從公開資訊還原而遭撤銷後，eMudhra後續調查又發現，另有8張RSA中繼CA憑證因無法證明私密金鑰移轉程序符合憑證政策要求，於11月7日遭撤銷。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:ad70ce95f981",
    "kind": "news",
