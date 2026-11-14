@@ -4,15 +4,15 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "items": [
    {
     "title": "ASP.NET 漏洞 CVE-2026-125383",
     "desc": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contai"
    },
    {
-    "title": "SQL Server 漏洞 CVE-2026-59105",
-    "desc": "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_"
+    "title": "SQL Server：Jumis 預設憑證漏洞",
+    "desc": "尚未遭利用（CVSS 9.3），能連線至 Jumis SQL Server 的攻擊者皆可離線算出密碼並讀寫所有會計資料庫。"
    },
    {
     "title": "Windows Server：Audition 提權與執行漏洞",
@@ -2232,7 +2232,7 @@
   {
    "id": "CVE-2026-58114",
    "kind": "cve",
-   "title": "SQL Server 漏洞 CVE-2026-58114",
+   "title": "SIMATIC 驗證中繼漏洞",
    "sub": "CVE-2026-58114 · CVSS 7.7",
    "sev": "note",
    "kev": false,
@@ -2250,11 +2250,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58114",
    "pts": [
-    "A vulnerability has been identified in SIMATIC BATCH V9.1 (All versions), SIMATIC Information Server 2020 (All versions), SIMATIC Informatio"
+    "影響 SIMATIC WinCC、PCS 7 等全版本，**遠端攻擊者可中繼 NTLM 驗證冒充使用者**，影響如 SQL Server 等服務。",
+    "目前尚未遭利用。受影響系統亦含 BATCH、Information Server 等；攻擊者須先處於中間人位置才可利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "A vulnerability has been identified in SIMATIC BATCH V9.1 (All versions), SIMATIC Information Server 2020 (All versions), SIMATIC Information Server 2022 (All versions), SIMATIC PCS 7 V9.1 (All versions), SIMATIC Process Historian 2020 (All versions), SIMATIC Process Historian 2022 (All versions), SIMATIC WinCC Runtime Professional V17 (All versions), SIMATIC WinCC Runtime Professional V18 (All versions), SIMATIC WinCC Runtime Professional V19 (All versions), SIMATIC WinCC Runtime Professional V20 (All versions), SIMATIC WinCC Runtime Professional V21 (All versions), SIMATIC WinCC V7.5 (All versions), SIMATIC WinCC V8.0 (All versions), SIMATIC WinCC V8.1 (All versions). Affected systems do not properly secure their remote user authentication with the deprecated NTLM protocol. This could allow unauthenticated remote attackers, who have achieved a machine in the middle position, to relay NTLM authentication and impersonate a legitimate user. The potential impact depends on the services that are accessible, e.g. a SQL server used by WinCC.",
     "refs": [
@@ -2932,7 +2933,7 @@
   {
    "id": "CVE-2026-73857",
    "kind": "cve",
-   "title": "IIS 漏洞 CVE-2026-73857",
+   "title": "ModSecurity 記憶體漏洞",
    "sub": "CVE-2026-73857 · CVSS 7.5",
    "sev": "note",
    "kev": false,
@@ -2951,11 +2952,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73857",
    "pts": [
-    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.15 until 3.0.17, XML"
+    "影響 ModSecurity 3.0.15 至 3.0.17 之前版本，**可導致工作程序終止、記憶體洩漏或重導向執行**。",
+    "目前尚未遭利用。適用 Apache、IIS 與 Nginx，僅於 SecParseXmlIntoArgs 為 On 或 OnlyArgs 時可無驗證觸發。"
    ],
-   "fix": "升級至 3.0.17 以上（依原文擷取）",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 ModSecurity 3.0.17 版本。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.15 until 3.0.17, XML request body processing with SecParseXmlIntoArgs set to On or OnlyArgs can leave XMLNodes::parsing_ctx_arg uninitialized in the SAX end-element callback. A single crafted unauthenticated HTTP request can make a worker dereference the pointer, resulting in a constant-value write to an attacker-controlled address. The resulting memory corruption can terminate the worker and may disclose memory or redirect execution. Earlier 3.0.x releases and ModSecurity 2.x do not use the affected path. This issue is fixed in version 3.0.17.",
     "refs": [
@@ -3693,7 +3695,7 @@
   {
    "id": "CVE-2026-123158",
    "kind": "cve",
-   "title": "OpenBSD OpenSSH Unexpected Status Code o",
+   "title": "OpenSSH 驗證繞過漏洞",
    "sub": "CVE-2026-123158 · CVSS 8.1",
    "sev": "crit",
    "kev": true,
@@ -3711,12 +3713,12 @@
    "src": "CISA KEV",
    "url": "https://www.openssh.org/releasenotes.html",
    "pts": [
-    "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "影響 Linux 上的 OpenBSD OpenSSH，因狀態碼或回傳值異常，**可能導致身分驗證遭繞過**。",
+    "目前已遭實際利用（CVSS 8.1）。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
     "desc": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
@@ -3762,7 +3764,7 @@
   {
    "id": "CVE-2026-123551",
    "kind": "cve",
-   "title": "Ivanti 漏洞 CVE-2026-123551",
+   "title": "OpenAM 資訊外洩漏洞",
    "sub": "CVE-2026-123551 · CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -3780,11 +3782,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123551",
    "pts": [
-    "OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session"
+    "影響 OpenAM 14.0.0 至 16.1.4 以前版本，**未經身分驗證即可竊取工作階段權杖並劫持帳號**。",
+    "尚未遭利用（CVSS 10.0），攻擊者可透過舊版 Liberty ID-FF 端點繞過檢查以讀取 WebSocket 權杖。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session tokens from the notification WebSocket. Attackers can bypass the agent-only check through an unvalidated internal forward on legacy Liberty ID-FF endpoints, collecting iPlanetDirectoryPro tokens to hijack user and administrator sessions.",
     "refs": [
@@ -3826,7 +3829,7 @@
   {
    "id": "CVE-2026-58490",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-58490",
+   "title": "Tracecat 驗證繞過",
    "sub": "CVE-2026-58490 · CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -3844,11 +3847,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58490",
    "pts": [
-    "Tracecat is an open-source security automation platform for teams and AI agents. From version 0.37.0 until 1.0.0-beta.49, Docker Compose dep"
+    "影響 Tracecat 0.37.0 至 1.0.0-beta.49 以前版本，**可偽造未簽章 SAML 回應接管超級管理員帳號**。",
+    "尚未遭利用（CVSS 9.8），僅影響啟用 SAML 的 Docker Compose 部署，不影響 Fargate 與 Helm 預設部署。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 1.0.0-beta.49 以上版本，移除不安全的設定傳遞並強制驗證簽章",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "Tracecat is an open-source security automation platform for teams and AI agents. From version 0.37.0 until 1.0.0-beta.49, Docker Compose deployments with SAML enabled can render SAML_SIGNED_ASSERTIONS and SAML_SIGNED_RESPONSES as empty values, overriding secure application defaults and disabling both signature requirements. An unauthenticated attacker who can reach the SAML assertion consumer endpoint can submit a forged unsigned response for an existing Tracecat user email address and obtain that user’s session. Targeting an existing superadmin can result in superadmin account takeover. Exploitation does not create users when SAML user creation is disabled and does not affect default Fargate or Helm deployments. Version 1.0.0-beta.49 removes the insecure deployment pass-through and requires signed assertions and responses.",
     "refs": [
@@ -3953,7 +3957,7 @@
   {
    "id": "CVE-2026-59105",
    "kind": "cve",
-   "title": "SQL Server 漏洞 CVE-2026-59105",
+   "title": "Jumis 預設憑證漏洞",
    "sub": "CVE-2026-59105 · CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -3971,11 +3975,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59105",
    "pts": [
-    "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_JumisAdmin## whose password is derived determinist"
+    "影響搭配 SQL Server 的 Jumis，因預設管理帳號密碼可被推算，**可取得 sysadmin 權限並執行系統指令**。",
+    "尚未遭利用（CVSS 9.3），能連線至 Jumis SQL Server 的攻擊者皆可離線算出密碼並讀寫所有會計資料庫。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_JumisAdmin## whose password is derived deterministically from a single non-secret input - the SQL Server name (@@servername). The derivation algorithm is hard-coded in the client application and is identical across every installation; it contains a hard-coded secret key for entropy. Because the only input (the server name) is not secret - the instance suffix is hard-coded and the host name is discoverable via the SQL Server Browser service (UDP 1434), the TDS pre-login response, or DNS/NetBIOS - any party able to reach a Jumis SQL Server can compute the password offline and authenticate. The ##Tilde_JumisAdmin## login is a member of the sysadmin server role. Successful authentication therefore grants full administrative control of the SQL Server instance and read/write access to every customer's accounting database hosted on it. The on-premise server installation also programmatically enables xp_cmdshell during routine operation, so sysadmin access escalates to operating-system command execution on the database server.",
     "refs": [
@@ -4961,7 +4966,7 @@
   {
    "id": "CVE-2026-97693",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-97693",
+   "title": "Yuxi 沙箱隔離失效漏洞",
    "sub": "CVE-2026-97693 · CVSS 9.9",
    "sev": "crit",
    "kev": false,
@@ -4979,11 +4984,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97693",
    "pts": [
-    "Yuxi is a large-model-based intelligent knowledge base and knowledge graph agent development platform. From 0.6.0.beta1 until 0.7.1, there i"
+    "影響 Yuxi 0.6.0.beta1 至 0.7.1 以前版本，**低權限使用者可跨租戶存取機密、執行指令或刪除沙箱**。",
+    "尚未遭利用（CVSS 9.9），若內部服務仍使用預設帳密，攻擊者可進一步在 PostgreSQL 容器執行指令。"
    ],
-   "fix": "升級至 0.7.1 以上（依原文擷取）",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 0.7.1 以上版本，並手動輪替原本使用預設值的 PostgreSQL、Neo4j 與 MinIO 憑證",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "Yuxi is a large-model-based intelligent knowledge base and knowledge graph agent development platform.  From 0.6.0.beta1 until 0.7.1, there is insufficient isolation between execution-capable Docker sandboxes and trusted application services. A low-privileged authenticated user who can execute commands in their own sandbox can reach other tenants' sandbox APIs, access their files and secrets, execute commands in active sandboxes, and enumerate, create, or delete sandboxes through the unauthenticated provisioner without knowing administrator, database, or MinIO credentials. Sandboxes can also reach shared internal services; if shipped default service credentials remain unchanged, an attacker can use them, and if the exposed PostgreSQL account is a superuser, obtain command execution in the PostgreSQL container. These paths can disclose or modify cross-tenant data and sandbox state or cause denial of service through sandbox deletion without a container escape or kernel vulnerability. This vulnerability is fixed in 0.7.1. Existing deployments must separately rotate persisted PostgreSQL, Neo4j, or MinIO credentials that were previously set to documented or shipped defaults because upgrading the Compose files does not automatically rotate them.",
     "refs": [
@@ -4995,7 +5001,7 @@
   {
    "id": "CVE-2026-92704",
    "kind": "cve",
-   "title": "Chrome 漏洞 CVE-2026-92704",
+   "title": "SharpEmu 本機執行漏洞",
    "sub": "CVE-2026-92704 · CVSS 8.3",
    "sev": "high",
    "kev": false,
@@ -5013,11 +5019,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92704",
    "pts": [
-    "SharpEmu is an experimental PlayStation 5 emulator for Windows and Linux. In version 0.0.3-release.3 and earlier, the repository-provided de"
+    "影響 SharpEmu 0.0.3-release.3 及之前版本除錯工具，**攻擊者可以受害者權限執行程式或控制程序**。",
+    "目前尚未遭利用。發行檔未含此工具，執行時因缺乏驗證與來源檢查，惡意網頁可透過本機 API 發動跨來源請求。"
    ],
-   "fix": "升級至 0.0.3-release.3-patch.1 以上（依原文擷取）",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 0.0.3-release.3-patch.1 版本。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "SharpEmu is an experimental PlayStation 5 emulator for Windows and Linux. In version 0.0.3-release.3 and earlier, the repository-provided debugger frontend tooling is vulnerable while running. This tooling is not included in the release archives. The frontend exposes an HTTP API on 127.0.0.1:8765 without authentication or CSRF token. Its  do_POST  handler in  tools/SharpEmu.DebuggerFrontend/debugger_frontend.py  does not validate the Origin, Referer, Sec-Fetch-Site, or Host headers. The  _read_json_body()  function also accepts JSON sent with browser-simple content types instead of requiring  application/json . A malicious page that can reach the loopback listener can send cross-origin requests to  /api/launch ,  /api/command , and  /api/connect . Chromium may require Local Network Access permission for pages served from public origins. Local-origin pages and other delivery paths are not consistently subject to this restriction. The  /api/launch  endpoint accepts an attacker-selected  emulatorPath  if it points to an existing file on the victim’s host. On POSIX systems, that file must also be executable. The endpoint additionally requires an existing  ebootPath . The  /api/command  endpoint exposes debugger operations, including  write-memory ,  set-register , and  continue . The  /api/connect  endpoint can initiate outbound TCP connections. These operations can let an attacker execute an existing binary with the victim’s privileges, control the attached emulated process, or reach network services accessible from the host. DNS rebinding can additionally let the attacker read API responses interactively. This issue is fixed in version 0.0.3-release.3-patch.1",
     "refs": [
@@ -5725,7 +5732,7 @@
   {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 多個高風險漏洞",
+   "title": "Chrome 遠端執行及繞過漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -5744,12 +5751,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121047",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.8。",
-    "Buffer overflow in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via "
+    "影響 Google Chrome 157.0.8103.38 之前版本，**遠端攻擊者可於沙箱內執行任意程式碼**，或繞過系統存取限制。",
+    "目前尚未遭利用。包含 Media 緩衝區溢位與 Permissions 授權不當，皆須透過特製 HTML 頁面觸發，後者須先攻陷算繪程序。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Buffer overflow in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
@@ -9584,7 +9591,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多個高風險漏洞",
+   "title": "Oracle EBS 入侵漏洞",
    "sub": "3 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -9604,12 +9611,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101534",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 8.8。",
-    "Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations). Supported versions that are affect"
+    "影響 Oracle E-Business Suite 12.2.3-12.2.15，**低權限攻擊者可經 HTTP 網路危害系統**。",
+    "目前尚未遭利用。漏洞易於利用，影響 Oracle Capacity、Cost Management 與 EDI Gateway 元件。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Capacity.  Successful attacks of this vulnerability can result in takeover of Oracle Capacity. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
@@ -9621,7 +9628,7 @@
   {
    "id": "CVE-2026-98432",
    "kind": "cve",
-   "title": "Linux 核心 漏洞 CVE-2026-98432",
+   "title": "Linux 核心釋放後使用漏洞",
    "sub": "CVE-2026-98432 · CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -9639,11 +9646,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98432",
    "pts": [
-    "In the Linux kernel, the following vulnerability has been resolved: ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_re"
+    "影響 Linux 核心 IPv4 堆疊，因 inet_opt 與 ireq_opt 釋放時機不當，**可能引發記憶體釋放後使用漏洞**。",
+    "尚未遭利用（CVSS 9.8），發生於多核心同步處理 SYN 重傳或連線請求遷移時，IPv6 僅遷移情境受相似問題影響。"
    ],
-   "fix": "原文：This will be addressed in a separate patch.",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() and\nip_options_build() then read opt->optlen twice.\n\nNote that the SYNACK timer itself is not an issue: it holds a\nreference on its request socket, and inet_csk_reqsk_queue_drop()\ncalls timer_delete_sync() before the child can be freed.\n\nSince commit 079096f103fa (\"tcp/dccp: install syn_recv requests\ninto ehash table\"), request sockets are processed without holding\nthe listener lock, so nothing prevents the child socket from being\nfreed while the SYNACK is still being built. TCP child sockets do\nnot have SOCK_RCU_FREE, and inet_sock_destruct() frees inet_opt\nwith a plain kfree(), leading to a use-after-free in\nip_options_build().\n\nA similar issue exists with request socket migration\n(net.ipv4.tcp_migrate_req=1, or a BPF_SK_REUSEPORT_SELECT_OR_MIGRATE\nprogram). reqsk_timer_handler() clones the request socket with\ninet_reqsk_clone(), so that the old request socket and its clone\nshare the same ireq_opt, then reqsk_migrate_reset() clears the\npointer in the old one. Another cpu holding a reference on the old\nrequest socket can still be using these options (sending a SYNACK,\nor creating a child in tcp_v4_syn_recv_sock()) when the clone is\nfreed, and tcp_v4_reqsk_destructor() also uses a plain kfree().\n\nReaders already use RCU, and other paths replacing inet_opt\n(do_ip_setsockopt(), cipso_v4_sock_setattr()...) already use\nkfree_rcu(). Use kfree_rcu() in inet_sock_destruct() and\ntcp_v4_reqsk_destructor() as well.\n\nIPv6 is not affected by the first issue, because tcp_v6_syn_recv_sock()\nduplicates the options. tcp_v6_reqsk_destructor() has the same\nmigration issue with ipv6_opt, which is only set by CALIPSO. This\nwill be addressed in a separate patch.",
     "refs": [
@@ -9817,10 +9825,17 @@
   "CVE-2026-129431": [],
   "CVE-2026-129432": [],
   "CVE-2026-114713": [],
-  "CVE-2026-123039": []
+  "CVE-2026-123039": [],
+  "CVE-2011-10042": [],
+  "CVE-2026-129261": [],
+  "CVE-2026-39732": [],
+  "CVE-2026-129258": [],
+  "CVE-2026-120221": [],
+  "CVE-2026-116753": [],
+  "CVE-2026-120687": []
  },
- "nvd_last": "2026-11-14T14:09:48+00:00",
- "kev_last": "2026-11-14T14:09:48+00:00",
+ "nvd_last": "2026-11-14T19:11:17+00:00",
+ "kev_last": "2026-11-14T19:11:17+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
@@ -9830,6 +9845,7 @@
   "tw:9824245e503c",
   "tw:497bd740ca48",
   "tw:9a927daa96e3",
-  "tw:b28e812035c9"
+  "tw:b28e812035c9",
+  "tw:ee24a0060a6d"
  ]
 }

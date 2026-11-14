@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T14:09:48+00:00",
+ "generated": "2026-11-14T19:11:17+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,15 +324,15 @@
   }
  ],
  "todo": {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "items": [
    {
     "title": "ASP.NET 漏洞 CVE-2026-125383",
     "desc": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contai"
    },
    {
-    "title": "SQL Server 漏洞 CVE-2026-59105",
-    "desc": "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_"
+    "title": "SQL Server：Jumis 預設憑證漏洞",
+    "desc": "尚未遭利用（CVSS 9.3），能連線至 Jumis SQL Server 的攻擊者皆可離線算出密碼並讀寫所有會計資料庫。"
    },
    {
     "title": "Windows Server：Audition 提權與執行漏洞",
@@ -2039,7 +2039,7 @@
   {
    "id": "CVE-2026-58114",
    "kind": "cve",
-   "title": "SQL Server 漏洞 CVE-2026-58114",
+   "title": "SIMATIC 驗證中繼漏洞",
    "sub": "CVE-2026-58114 · CVSS 7.7",
    "sev": "note",
    "kev": false,
@@ -2056,10 +2056,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58114",
    "pts": [
-    "A vulnerability has been identified in SIMATIC BATCH V9.1 (All versions), SIMATIC Information Server 2020 (All versions), SIMATIC Informatio"
+    "影響 SIMATIC WinCC、PCS 7 等全版本，**遠端攻擊者可中繼 NTLM 驗證冒充使用者**，影響如 SQL Server 等服務。",
+    "目前尚未遭利用。受影響系統亦含 BATCH、Information Server 等；攻擊者須先處於中間人位置才可利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Cisco:2026-11-10",
@@ -2570,7 +2571,7 @@
   {
    "id": "CVE-2026-73857",
    "kind": "cve",
-   "title": "IIS 漏洞 CVE-2026-73857",
+   "title": "ModSecurity 記憶體漏洞",
    "sub": "CVE-2026-73857 · CVSS 7.5",
    "sev": "note",
    "kev": false,
@@ -2588,10 +2589,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73857",
    "pts": [
-    "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.15 until 3.0.17, XML"
+    "影響 ModSecurity 3.0.15 至 3.0.17 之前版本，**可導致工作程序終止、記憶體洩漏或重導向執行**。",
+    "目前尚未遭利用。適用 Apache、IIS 與 Nginx，僅於 SecParseXmlIntoArgs 為 On 或 OnlyArgs 時可無驗證觸發。"
    ],
-   "fix": "升級至 3.0.17 以上（依原文擷取）",
-   "ai": false
+   "fix": "升級至 ModSecurity 3.0.17 版本。",
+   "ai": true
   },
   {
    "id": "grp:Node.js:2026-11-10",
@@ -3152,7 +3154,7 @@
   {
    "id": "CVE-2026-123158",
    "kind": "cve",
-   "title": "OpenBSD OpenSSH Unexpected Status Code o",
+   "title": "OpenSSH 驗證繞過漏洞",
    "sub": "CVE-2026-123158 · CVSS 8.1",
    "sev": "crit",
    "kev": true,
@@ -3169,11 +3171,11 @@
    "src": "CISA KEV",
    "url": "https://www.openssh.org/releasenotes.html",
    "pts": [
-    "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "影響 Linux 上的 OpenBSD OpenSSH，因狀態碼或回傳值異常，**可能導致身分驗證遭繞過**。",
+    "目前已遭實際利用（CVSS 8.1）。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "CVE-2026-97677",
@@ -3204,7 +3206,7 @@
   {
    "id": "CVE-2026-123551",
    "kind": "cve",
-   "title": "Ivanti 漏洞 CVE-2026-123551",
+   "title": "OpenAM 資訊外洩漏洞",
    "sub": "CVE-2026-123551 · CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -3221,10 +3223,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123551",
    "pts": [
-    "OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session"
+    "影響 OpenAM 14.0.0 至 16.1.4 以前版本，**未經身分驗證即可竊取工作階段權杖並劫持帳號**。",
+    "尚未遭利用（CVSS 10.0），攻擊者可透過舊版 Liberty ID-FF 端點繞過檢查以讀取 WebSocket 權杖。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:97c6495faeb2",
@@ -3252,7 +3255,7 @@
   {
    "id": "CVE-2026-58490",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-58490",
+   "title": "Tracecat 驗證繞過",
    "sub": "CVE-2026-58490 · CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -3269,10 +3272,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58490",
    "pts": [
-    "Tracecat is an open-source security automation platform for teams and AI agents. From version 0.37.0 until 1.0.0-beta.49, Docker Compose dep"
+    "影響 Tracecat 0.37.0 至 1.0.0-beta.49 以前版本，**可偽造未簽章 SAML 回應接管超級管理員帳號**。",
+    "尚未遭利用（CVSS 9.8），僅影響啟用 SAML 的 Docker Compose 部署，不影響 Fargate 與 Helm 預設部署。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 1.0.0-beta.49 以上版本，移除不安全的設定傳遞並強制驗證簽章",
+   "ai": true
   },
   {
    "id": "tw:3a5181e25729",
@@ -3346,7 +3350,7 @@
   {
    "id": "CVE-2026-59105",
    "kind": "cve",
-   "title": "SQL Server 漏洞 CVE-2026-59105",
+   "title": "Jumis 預設憑證漏洞",
    "sub": "CVE-2026-59105 · CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -3363,10 +3367,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59105",
    "pts": [
-    "Jumis (formerly Tildes Jumis) creates and uses a Microsoft SQL Server login named ##Tilde_JumisAdmin## whose password is derived determinist"
+    "影響搭配 SQL Server 的 Jumis，因預設管理帳號密碼可被推算，**可取得 sysadmin 權限並執行系統指令**。",
+    "尚未遭利用（CVSS 9.3），能連線至 Jumis SQL Server 的攻擊者皆可離線算出密碼並讀寫所有會計資料庫。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:8dee7c0dca3f",
@@ -4118,7 +4123,7 @@
   {
    "id": "CVE-2026-97693",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-97693",
+   "title": "Yuxi 沙箱隔離失效漏洞",
    "sub": "CVE-2026-97693 · CVSS 9.9",
    "sev": "crit",
    "kev": false,
@@ -4135,15 +4140,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97693",
    "pts": [
-    "Yuxi is a large-model-based intelligent knowledge base and knowledge graph agent development platform. From 0.6.0.beta1 until 0.7.1, there i"
+    "影響 Yuxi 0.6.0.beta1 至 0.7.1 以前版本，**低權限使用者可跨租戶存取機密、執行指令或刪除沙箱**。",
+    "尚未遭利用（CVSS 9.9），若內部服務仍使用預設帳密，攻擊者可進一步在 PostgreSQL 容器執行指令。"
    ],
-   "fix": "升級至 0.7.1 以上（依原文擷取）",
-   "ai": false
+   "fix": "升級至 0.7.1 以上版本，並手動輪替原本使用預設值的 PostgreSQL、Neo4j 與 MinIO 憑證",
+   "ai": true
   },
   {
    "id": "CVE-2026-92704",
    "kind": "cve",
-   "title": "Chrome 漏洞 CVE-2026-92704",
+   "title": "SharpEmu 本機執行漏洞",
    "sub": "CVE-2026-92704 · CVSS 8.3",
    "sev": "high",
    "kev": false,
@@ -4160,10 +4166,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92704",
    "pts": [
-    "SharpEmu is an experimental PlayStation 5 emulator for Windows and Linux. In version 0.0.3-release.3 and earlier, the repository-provided de"
+    "影響 SharpEmu 0.0.3-release.3 及之前版本除錯工具，**攻擊者可以受害者權限執行程式或控制程序**。",
+    "目前尚未遭利用。發行檔未含此工具，執行時因缺乏驗證與來源檢查，惡意網頁可透過本機 API 發動跨來源請求。"
    ],
-   "fix": "升級至 0.0.3-release.3-patch.1 以上（依原文擷取）",
-   "ai": false
+   "fix": "升級至 0.0.3-release.3-patch.1 版本。",
+   "ai": true
   },
   {
    "id": "tw:2b5731ee5983",
@@ -4698,7 +4705,7 @@
   {
    "id": "grp:Chrome:2026-11-04",
    "kind": "group",
-   "title": "Chrome 多個高風險漏洞",
+   "title": "Chrome 遠端執行及繞過漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -4716,11 +4723,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121047",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.8。",
-    "Buffer overflow in Media in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via "
+    "影響 Google Chrome 157.0.8103.38 之前版本，**遠端攻擊者可於沙箱內執行任意程式碼**，或繞過系統存取限制。",
+    "目前尚未遭利用。包含 Media 緩衝區溢位與 Permissions 授權不當，皆須透過特製 HTML 頁面觸發，後者須先攻陷算繪程序。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:b4860537c65e",
@@ -7659,7 +7666,7 @@
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
-   "title": "Oracle 多個高風險漏洞",
+   "title": "Oracle EBS 入侵漏洞",
    "sub": "3 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -7678,16 +7685,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101534",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 8.8。",
-    "Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations). Supported versions that are affect"
+    "影響 Oracle E-Business Suite 12.2.3-12.2.15，**低權限攻擊者可經 HTTP 網路危害系統**。",
+    "目前尚未遭利用。漏洞易於利用，影響 Oracle Capacity、Cost Management 與 EDI Gateway 元件。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-98432",
    "kind": "cve",
-   "title": "Linux 核心 漏洞 CVE-2026-98432",
+   "title": "Linux 核心釋放後使用漏洞",
    "sub": "CVE-2026-98432 · CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -7704,10 +7711,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98432",
    "pts": [
-    "In the Linux kernel, the following vulnerability has been resolved: ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_re"
+    "影響 Linux 核心 IPv4 堆疊，因 inet_opt 與 ireq_opt 釋放時機不當，**可能引發記憶體釋放後使用漏洞**。",
+    "尚未遭利用（CVSS 9.8），發生於多核心同步處理 SYN 重傳或連線請求遷移時，IPv6 僅遷移情境受相似問題影響。"
    ],
-   "fix": "原文：This will be addressed in a separate patch.",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "msrc:2026-Oct",
