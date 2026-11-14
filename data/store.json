@@ -7,8 +7,8 @@
   "date": "2026-11-15",
   "items": [
    {
-    "title": "ASP.NET 漏洞 CVE-2026-125383",
-    "desc": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contai"
+    "title": "ASP.NET：WHMS 驗證繞過漏洞",
+    "desc": "CVSS 9.3，未經身分驗證的遠端攻擊者可偽造任意使用者權杖；目前尚未傳出遭利用。"
    },
    {
     "title": "SQL Server：Jumis 預設憑證漏洞",
@@ -23,12 +23,12 @@
     "desc": "目前尚未遭利用，CVSS 8.6；涉及與 Go、Python、Node.js 與 Java 解析器差異，以及回應標頭區分大小寫。"
    },
    {
-    "title": "Fortinet 多個高風險漏洞",
-    "desc": "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, Fo"
+    "title": "Fortinet 遠端執行漏洞",
+    "desc": "CVSS 最高 9.6，未授權遠端攻擊者即可利用 FortiClient 漏洞；目前尚未傳出遭利用。"
    },
    {
-    "title": "Chrome 多個高風險漏洞",
-    "desc": "In multiple locations, there is a possible use-after-free due to a logic error in the code"
+    "title": "Chrome 遠端執行漏洞",
+    "desc": "CVSS 最高 9.8，部分漏洞無須互動或透過惡意 HTML 即可突破沙盒；目前尚未傳出遭利用。"
    }
   ],
   "ai": false
@@ -1712,7 +1712,7 @@
   {
    "id": "grp:Fortinet:2026-11-11",
    "kind": "group",
-   "title": "Fortinet 多個高風險漏洞",
+   "title": "Fortinet 遠端執行漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -1732,12 +1732,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.6。",
-    "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientW"
+    "影響 FortiClient、FortiSandbox、FortiAnalyzer 等，**可致遠端執行程式碼**與 XSS。",
+    "CVSS 最高 9.6，未授權遠端攻擊者即可利用 FortiClient 漏洞；目前尚未傳出遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim.",
@@ -1749,7 +1749,7 @@
   {
    "id": "grp:Chrome:2026-11-11",
    "kind": "group",
-   "title": "Chrome 多個高風險漏洞",
+   "title": "Chrome 遠端執行漏洞",
    "sub": "6 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1772,12 +1772,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125343",
    "pts": [
-    "同日公布 6 個漏洞，最高 CVSS 9.8。",
-    "In multiple locations, there is a possible use-after-free due to a logic error in the code. This could lead to remote code execution with no"
+    "影響 Google Chrome 157.0.8103.50 前版本，含 V8、GPU 等多處漏洞，**可致遠端執行程式碼**。",
+    "CVSS 最高 9.8，部分漏洞無須互動或透過惡意 HTML 即可突破沙盒；目前尚未傳出遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "In multiple locations, there is a possible use-after-free due to a logic error in the code. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
@@ -1792,7 +1792,7 @@
   {
    "id": "grp:Ivanti:2026-11-11",
    "kind": "group",
-   "title": "Ivanti 多個高風險漏洞",
+   "title": "Ivanti 遠端與驗證漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1811,12 +1811,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121653",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
-    "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code"
+    "影響 Ivanti Endpoint Manager 2024 SU8 前版本，**可致未驗證遠端執行程式碼**。",
+    "另 Cloud Services Application 5.0.8 缺驗證可增刪信任憑證；CVSS 9.8，尚未遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code execution.",
@@ -2301,7 +2301,7 @@
   {
    "id": "grp:OpenSSL:2026-11-10",
    "kind": "group",
-   "title": "OpenSSL 多個高風險漏洞",
+   "title": "OpenSSL 注入與憑證漏洞",
    "sub": "3 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -2322,12 +2322,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60037",
    "pts": [
-    "同日公布 3 個漏洞，最高 CVSS 9.1。",
-    "V programming language standard library net.http through version 0.5.2 prior to commit 4077484 contains a TLS certificate validation bypass "
+    "影響 V 語言 net.http 0.5.2 前版本及 OpenSSL 匯入功能，**可致繞過 TLS 憑證驗證或執行程式碼**。",
+    "CVSS 9.1，中間人可攔截 HTTPS 流量，高權限遠端攻擊者可注入程式碼；目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "V programming language standard library net.http through version 0.5.2 prior to commit 4077484 contains a TLS certificate validation bypass vulnerability that allows on-path attackers to intercept HTTPS traffic by exploiting the default false value of SSLConnectConfig.validate and FetchConfig.validate, which completes TLS handshakes without verifying certificates in both the mbedtls and OpenSSL backends. Attackers can present an expired, self-signed, wrong-hostname, or untrusted-root certificate to successfully complete the handshake via http.get, http.post, or http.fetch, enabling interception or modification of HTTPS traffic unless validate: true is explicitly configured.",
@@ -2826,7 +2826,7 @@
   {
    "id": "CVE-2026-125383",
    "kind": "cve",
-   "title": "ASP.NET 漏洞 CVE-2026-125383",
+   "title": "WHMS 驗證繞過漏洞",
    "sub": "CVE-2026-125383 · CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -2844,11 +2844,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125383",
    "pts": [
-    "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contains an authentication bypass vulnerability caused b"
+    "INDOTALENT WHMS 10.20261109 前因硬編碼 JWT 金鑰導致驗證繞過，**可取得 API 管理員權限**。",
+    "CVSS 9.3，未經身分驗證的遠端攻擊者可偽造任意使用者權杖；目前尚未傳出遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contains an authentication bypass vulnerability caused by a hard-coded JWT signing key, issuer and audience in appsettings.json. Unauthenticated remote attackers can forge tokens for any user ID and role that the Tokens/DI.cs validator trusts, gaining administrator access to the entire API.",
     "refs": [
@@ -2970,7 +2971,7 @@
   {
    "id": "grp:Node.js:2026-11-10",
    "kind": "group",
-   "title": "Node.js 多個高風險漏洞",
+   "title": "Node.js 相關元件漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -2989,12 +2990,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107242",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.1。",
-    "The Node.js web service on VOS (previously Versa FlexVNF) is used for URL-based Zero Touch Provisioning (ZTP) of the VOS appliance and is no"
+    "VOS Node.js ZTP 服務採 UUIDv1；Eclipse Langium 3.2.0–4.4.0 **演算法複雜度問題**。",
+    "CVSS 最高 9.1；VOS ZTP 服務於佈建完成後即無須使用，Langium 需啟用特定元件才受影響，尚未遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "The Node.js web service on VOS (previously Versa FlexVNF) is used for URL-based Zero Touch Provisioning (ZTP) of the VOS appliance and is not required after provisioning is complete. This service generates session identifiers using UUID version 1 (UUIDv1), which is derived from the system’s date and time and its MAC address. As a result, successive identifiers differ only slightly and can be predicted. An attacker who can predict a user’s session ID could hijack that user’s session. \n\nVersa’s security hardening guide for Hubs, Branches, and Controllers recommends disabling the Node.js web service after the initial provisioning of the VOS device. This vulnerability is not exploitable on VOS devices where the Node.js web service has been disabled.",
@@ -9832,10 +9833,11 @@
   "CVE-2026-129258": [],
   "CVE-2026-120221": [],
   "CVE-2026-116753": [],
-  "CVE-2026-120687": []
+  "CVE-2026-120687": [],
+  "CVE-2026-129456": []
  },
- "nvd_last": "2026-11-14T19:11:17+00:00",
- "kev_last": "2026-11-14T19:11:17+00:00",
+ "nvd_last": "2026-11-14T22:59:14+00:00",
+ "kev_last": "2026-11-14T22:59:14+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
