@@ -19,13 +19,17 @@ GROUP_MIN = 2
 KEEP_DAYS = 60
 # 第一次執行往回抓幾天
 FIRST_RUN_DAYS = 7
-# 每次執行最多呼叫 AI 幾次（免費額度有限，剩下的下次再處理）；每次呼叫一次送 AI_BATCH 則
-AI_MAX_CALLS = 12
+# 每次執行最多呼叫 AI 幾次（所有模型合計，剩下的下次再處理）；每次呼叫一次送 AI_BATCH 則
+AI_MAX_CALLS = 20
 AI_BATCH = 6
 # 兩次 AI 呼叫間隔秒數（免費版每分鐘次數很少）
 AI_GAP_SECONDS = 7
-# Gemini 模型；想換模型可在 GitHub Secrets/Variables 設 GEMINI_MODEL 覆蓋
-GEMINI_MODEL = "gemini-3.5-flash-lite"
+# Gemini 模型輪替清單：免費額度是「每個模型」分開算，前一個額度用完就自動換下一個。
+# 想自訂可在 GitHub Variables 設 GEMINI_MODEL，多個模型用逗號隔開，例如：gemini-3.6-flash,gemini-3.5-flash-lite
+# 依序使用：品質好的放前面；不能用（額度用完或模型不存在）會自動換下一個
+GEMINI_MODELS = ["gemini-4-hydrogen", "gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+# 只翻譯近幾天的事件（網頁首頁顯示範圍），更舊的用規則式中文，不浪費額度
+AI_RECENT_DAYS = 14
 
 # ---------- 資料來源 ----------
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"

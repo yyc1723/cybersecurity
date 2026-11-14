@@ -47,42 +47,67 @@ TODO_TASK = """以下是近幾天的緊急與高風險資安事件。請替同�
 class AI:
     def __init__(self):
         self.key = os.environ.get("GEMINI_API_KEY", "").strip()
-        self.model = os.environ.get("GEMINI_MODEL", "").strip() or config.GEMINI_MODEL
+        env = os.environ.get("GEMINI_MODEL", "").strip()
+        self.models = [m.strip() for m in env.split(",") if m.strip()] if env else list(config.GEMINI_MODELS)
+        self.idx = 0
         self.calls = 0
+        self.used = {}
         self.disabled = not self.key
         self.last = 0.0
+        if not self.key:
+            print("[AI] 沒有設定 GEMINI_API_KEY，改用規則式中文摘要")
+
+    @property
+    def model(self):
+        return self.models[self.idx] if self.idx < len(self.models) else "（全部用完）"
 
     @property
     def available(self):
-        return not self.disabled and self.calls < config.AI_MAX_CALLS
+        return not self.disabled and self.idx < len(self.models) and self.calls < config.AI_MAX_CALLS
+
+    def _next_model(self, why):
+        print(f"[AI] {self.model} {why}，改用下一個模型")
+        self.idx += 1
+        if self.idx >= len(self.models):
+            print("[AI] 所有模型今天的額度都用完了，額度重置（台灣時間約下午 3～4 點）後會自動補上")
 
     def _ask(self, prompt):
-        wait = config.AI_GAP_SECONDS - (time.time() - self.last)
-        if wait > 0:
-            time.sleep(wait)
         payload = {
             "contents": [{"role": "user", "parts": [{"text": prompt}]}],
             "systemInstruction": {"parts": [{"text": RULES}]},
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
         }
-        for attempt in range(2):
+        bad_json = 0
+        while self.available:
+            wait = config.AI_GAP_SECONDS - (time.time() - self.last)
+            if wait > 0:
+                time.sleep(wait)
+            model = self.model
             try:
                 self.calls += 1
+                self.used[model] = self.used.get(model, 0) + 1
                 self.last = time.time()
-                res = post_json(API.format(model=self.model), payload, headers={"x-goog-api-key": self.key})
+                res = post_json(API.format(model=model), payload, headers={"x-goog-api-key": self.key})
                 text = res["candidates"][0]["content"]["parts"][0]["text"]
                 return json.loads(text)
             except urllib.error.HTTPError as e:
-                if e.code == 429 and attempt == 0:
-                    time.sleep(30)
-                    continue
-                if e.code in (400, 401, 403, 404):
-                    print(f"[AI] 停用：HTTP {e.code}（請檢查 GEMINI_API_KEY 或 GEMINI_MODEL）")
+                if e.code == 429:
+                    self._next_model("額度用完（HTTP 429）")
+                elif e.code in (400, 404):
+                    self._next_model(f"無法使用（HTTP {e.code}，可能是模型名稱已停用）")
+                elif e.code in (401, 403):
+                    print(f"[AI] 停用：HTTP {e.code}，請檢查 GEMINI_API_KEY")
                     self.disabled = True
-                print(f"[AI] 呼叫失敗：HTTP {e.code}")
-                return None
-            except Exception as e:  # 回傳格式異常、逾時等
-                print(f"[AI] 呼叫失敗：{type(e).__name__}")
+                else:
+                    print(f"[AI] {model} 暫時失敗：HTTP {e.code}")
+                    return None
+            except (json.JSONDecodeError, KeyError, IndexError):
+                bad_json += 1
+                print(f"[AI] {model} 回傳格式異常")
+                if bad_json >= 2:
+                    return None
+            except Exception as e:  # 逾時等
+                print(f"[AI] {model} 呼叫失敗：{type(e).__name__}")
                 return None
         return None
 

@@ -141,6 +141,10 @@ KEV_STD = re.compile(r"^apply mitigations", re.I)
 FIX_RE = re.compile(r"\b(fixed in|patched in|upgrade to|update to|updating to|addressed in|resolved in|is fixed|has been fixed|versions? [\d.]+ (and|or) (later|above))\b", re.I)
 
 
+FIX_VER = re.compile(r"\b(fixed in|patched in|upgrade to|update to|addressed in|resolved in)\s+(?:versions?\s+)?"
+                     r"(v?\d[\w.\-]*(?:(?:,\s*(?:and\s+|or\s+)?|\s+(?:and|or)\s+)v?\d[\w.\-]*)*)", re.I)
+
+
 def extract_fix(ev):
     """沒有 AI 時，從原文擷取修補資訊；擷取不到就留空。"""
     r = ev["raw"]
@@ -148,6 +152,10 @@ def extract_fix(ev):
         return f"安裝 {month_zh(r['id'])}累積更新（Windows Update／WSUS），並確認 Exchange、Office 等產品的個別更新。"
     texts = [r.get("desc", "")] + list(r.get("descs", []))
     for t in texts:
+        v = FIX_VER.search(t or "")
+        if v:
+            vers = "、".join(x.rstrip(".") for x in re.split(r",\s*(?:and\s+|or\s+)?|\s+(?:and|or)\s+", v.group(2)) if x.rstrip("."))
+            return f"升級至 {vers} 以上（依原文擷取）"
         m = FIX_RE.search(t or "")
         if m:
             # 句子邊界：句點後接空白或結尾（避免把版本號 19.5.1 的點當成句尾）
@@ -156,7 +164,7 @@ def extract_fix(ev):
             return clean("原文：" + t[start:end + 1 if end >= 0 else len(t)].strip(), 180)
     act = r.get("action") or ""
     if KEV_STD.search(act):
-        return "依原廠公告套用修補或緩解措施；若無法修補，應停止使用該產品（CISA 建議）。"
+        return "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。"
     return clean(act, 160) if act else ""
 
 
@@ -426,12 +434,17 @@ def run():
         set_sub(ev)
         ev.setdefault("fix", "")
         if ev["kind"] == "news":
-            ev["title"] = clean(ev["raw"].get("title", ""), 120)  # 新聞保留原標題
-            if not ev["raw"].get("summarize", True):
-                ev["pts"], ev["ai"] = [], True  # 設定為不摘要的來源：只顯示標題與連結
-                continue
+            # 新聞本來就是中文：直接用 RSS 摘要，不占 AI 額度
+            ev["title"] = clean(ev["raw"].get("title", ""), 120)
+            desc = clean(ev["raw"].get("desc", ""), 150) if ev["raw"].get("summarize", True) else ""
+            ev["pts"], ev["fix"], ev["ai"] = ([desc] if desc else []), "", True
+            continue
         if ev["ai"] and ev.get("ai_ver") == config.AI_VERSION:
             continue
+        if not ev["pts"] or not ev["title"]:
+            fallback(ev)  # 先放規則式內容，AI 成功後再覆蓋
+        if max(parse(ev["published"]), parse(ev["first_seen"])) < t0 - timedelta(days=config.AI_RECENT_DAYS):
+            continue  # 太舊的不送 AI
         pending.append(ev)
     # 批次送 AI：一次 AI_BATCH 則，省額度又能在同一次執行把新事件都翻成中文
     for i in range(0, len(pending), config.AI_BATCH):
@@ -445,27 +458,28 @@ def run():
                     ev["title"] = res["title"]
                 elif ev["kind"] == "msrc":
                     ev["title"] = f"Microsoft {month_zh(ev['raw']['id'])}例行安全更新"
-            elif not ev["pts"] or not ev["title"] or not ev.get("ai"):
+            elif not ev.get("ai"):
                 fallback(ev)
     left = sum(1 for e in pending if not e.get("ai"))
     if left:
         print(f"[AI] 還有 {left} 則待翻譯，下次執行繼續")
-    print(f"[AI] 本次呼叫 {ai.calls} 次（模型 {ai.model}）")
+    print(f"[AI] 本次呼叫 {ai.calls} 次：{ai.used or '無'}")
 
-    # ---- 本日應辦事項（台灣時間每天 07:00 後更新一次）----
+    # ---- 本日應辦事項（近 3 天緊急／高風險事件，每次執行更新）----
     today = t0.astimezone(TPE).strftime("%Y-%m-%d")
     todo = store.get("todo", {})
-    if todo.get("date") != today and t0.astimezone(TPE).hour >= 7:
+    if True:  # 不再用 AI，每次執行都依最新翻譯重新整理
         recent = [e for e in events.values() if e["sev"] in ("crit", "high")
                   and max(parse(e["published"]), parse(e["first_seen"])) >= t0 - timedelta(days=3)]
         recent.sort(key=lambda e: (not any(p in MINE for p in e["products"]), SEV_RANK[e["sev"]]))
-        brief = [dict(標題=e["title"], 等級=e["sev"], 產品=e["products"], 本單位=any(p in MINE for p in e["products"]),
-                      重點=e["pts"]) for e in recent[:15]]
-        items = ai.todo(brief, MINE) if brief else []
-        if items is None:
-            items = [dict(title=clean(f"處理：{e['title']}", 30), desc=clean((e["pts"] or [""])[-1].replace("**", ""), 70))
-                     for e in recent[:6]]
-        todo = dict(date=today, items=items, ai=ai.calls > 0 and bool(items))
+        # 不用 AI：直接從事件的中文標題與修補方式整理，不占額度
+        items = []
+        for e in recent[:6]:
+            prod = e["products"][0] if e["products"] else ""
+            act = (e.get("fix") or "").replace("**", "") or (e["pts"][-1].replace("**", "") if e["pts"] else "")
+            title = e["title"] if prod and prod in e["title"] else f"{prod}：{e['title']}"
+            items.append(dict(title=clean(title, 40), desc=clean(act, 90)))
+        todo = dict(date=today, items=items, ai=False)
         store["todo"] = todo
 
     # ---- 輸出 ----
