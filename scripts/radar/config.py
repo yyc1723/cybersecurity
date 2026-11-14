@@ -1,7 +1,7 @@
 """網站設定：產品清單、等級門檻、資料來源。改這個檔案就能調整收錄範圍。"""
 
 # 比對規則版本：改了產品清單或規則後把數字加 1，下次執行會重新回看 FIRST_RUN_DAYS 天補抓
-RULES_VERSION = 4
+RULES_VERSION = 5
 # AI 摘要格式版本：改了摘要格式就加 1，舊摘要會在之後幾次執行中逐步重新產生
 AI_VERSION = 2
 
@@ -188,4 +188,34 @@ SEVERE_WORDS = r"remote code execution|execute arbitrary (code|commands)|arbitra
 KW_BLOCK_CNA = {
     "Node.js": ["security-advisories@github.com"], "Go": ["security-advisories@github.com"],
     "PHP": ["security-advisories@github.com"], "Java": ["security-advisories@github.com"],
+}
+
+# ---------- Gemini Decisions API（判斷用，不產生文字）----------
+# 用途：1. 是產品本身還是第三方套件　2. 影響清單中哪些產品　3. 新聞是否資安相關、是否重要
+# 失敗或停用時自動退回上面的關鍵字規則。不想用就改成 False。
+DECISION_ENABLED = True
+DECISION_MAX_CALLS = 80       # 每次執行最多幾次（免費方案每天 10,000 次，每小時跑一次很寬裕）
+DECISION_GAP_SECONDS = 3      # 間隔（免費方案每分鐘 tokens 有上限）
+DECISION_THRESHOLD = 0.6      # 「是」的機率超過這個值才採用
+# 只有 CVSS 達這個分數（或尚未評分但描述嚴重）的 NVD 漏洞才送去判斷，避免浪費
+DECISION_MIN_CVSS = 7.0
+# 給判斷模型看的產品英文說明（沒列的直接用產品名稱）
+DECISION_DESC = {
+    "Windows Server": "Microsoft Windows (the operating system)",
+    "IIS": "Microsoft IIS web server", "ASP.NET": "Microsoft ASP.NET / ASP.NET Core",
+    ".NET": "Microsoft .NET runtime or .NET Framework", "SQL Server": "Microsoft SQL Server",
+    "Exchange": "Microsoft Exchange Server", "Office": "Microsoft Office, Outlook, or SharePoint",
+    "Fortinet": "a Fortinet product (FortiOS, FortiGate, FortiManager, etc.)", "Cisco": "a Cisco product",
+    "Palo Alto": "Palo Alto Networks PAN-OS or GlobalProtect", "Ivanti": "an Ivanti product",
+    "Citrix": "Citrix or NetScaler", "SonicWall": "a SonicWall product", "SD-WAN": "VMware VeloCloud SD-WAN",
+    "Linux": "the Linux kernel", "VMware": "VMware ESXi, vCenter, or other VMware products",
+    "Apache": "Apache HTTP Server, Apache Tomcat, Apache Struts, or Log4j", "nginx": "nginx",
+    "OpenSSL": "OpenSSL", "OpenSSH": "OpenSSH", "BIND": "ISC BIND DNS server",
+    "Oracle": "Oracle Database, WebLogic, or E-Business Suite", "QNAP": "QNAP NAS (QTS / QuTS hero)",
+    "Synology": "Synology NAS / DSM", "Veeam": "Veeam Backup & Replication",
+    "PHP": "the PHP language interpreter / runtime", "Java": "Java SE, OpenJDK, or GraalVM",
+    "Node.js": "the Node.js runtime", "Go": "the Go language toolchain or standard library",
+    "GitLab": "GitLab", "Atlassian": "Atlassian Confluence, Jira, or Bitbucket", "Chrome": "Google Chrome or Chromium",
+    "AI 平台": "an AI/LLM application platform such as Langflow, LiteLLM, Ollama, n8n, ComfyUI, vLLM, or Open WebUI",
+    "憑證/CA": "a certificate authority, root or intermediate certificate trust, or TLS certificate issuance",
 }

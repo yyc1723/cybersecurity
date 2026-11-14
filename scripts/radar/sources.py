@@ -221,8 +221,9 @@ def fetch_news(since):
                 dt = dt.replace(tzinfo=UTC)
             if not title or not link.startswith("https://") or (dt and dt < since):
                 continue
-            if feed.get("filter") and not re.search(config.NEWS_SEC_WORDS, f"{cats} {title} {desc}", re.I):
-                continue  # 綜合新聞來源只留資安相關
+            # 綜合新聞來源要篩出資安相關：先記下關鍵字結果，主流程會優先用 Decisions API 判斷
+            kw_sec = bool(re.search(config.NEWS_SEC_WORDS, f"{cats} {title} {desc}", re.I))
             out.append(dict(title=title, link=link, desc=desc[:1200], published=dt or datetime.now(UTC),
-                            src=name, short=feed.get("short", name), summarize=feed.get("summarize", True)))
+                            src=name, short=feed.get("short", name), summarize=feed.get("summarize", True),
+                            need_filter=bool(feed.get("filter")), kw_sec=kw_sec))
     return ok, out

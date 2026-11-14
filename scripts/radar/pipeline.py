@@ -7,6 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 from . import config, sources
 from .ai import AI, clean
+from .decide import Decider
 
 UTC = timezone.utc
 TPE = timezone(timedelta(hours=8))
@@ -268,18 +269,50 @@ def run():
             return None
 
     # ---- NVD ----
+    dec = Decider()
+    decided = store.setdefault("decided", {})  # CVE → 判斷結果（產品清單），避免重複詢問
+    dstat = {"asked": 0, "dropped": 0, "added": 0}
+
+    def decide_products(cve, text, rule, trusted):
+        """有 CPE／發布單位可確認的直接採用；只靠關鍵字或沒比對到的交給 Decisions API。"""
+        if rule and set(rule) <= set(trusted):
+            return rule
+        if cve in decided:
+            return sorted(set(trusted) | set(decided[cve]))
+        got = dec.products(text, None) if dec.available else None
+        if got is None:
+            return rule  # 判斷失敗 → 用原本規則
+        dstat["asked"] += 1
+        decided[cve] = got
+        dstat["dropped"] += len(set(rule) - set(got) - set(trusted))
+        dstat["added"] += len(set(got) - set(rule))
+        return sorted(set(trusted) | set(got))
+
     candidates = []
     try:
         since = parse(store.get("nvd_last")) - timedelta(hours=1) if store.get("nvd_last") else default_since
-        for it in sources.fetch_nvd(since, t0, nvd_key):
-            if it["source"] == "secure@microsoft.com":
-                continue  # 微軟漏洞改由 MSRC 月度摘要彙整，避免洗版
-            prods = match_products(it["desc"], it["cpes"], cna=it["source"])
+        items = [it for it in sources.fetch_nvd(since, t0, nvd_key) if it["source"] != "secure@microsoft.com"]
+        # 分數高的先判斷（判斷次數有上限）
+        items.sort(key=lambda it: -(it["cvss"] if it["cvss"] is not None else 9.5))
+        for it in items:
+            rule = match_products(it["desc"], it["cpes"], cna=it["source"])
+            trusted = match_products("", it["cpes"], cna=it["source"])
+            worth = (it["cvss"] or 0) >= config.DECISION_MIN_CVSS or (
+                it["cvss"] is None and re.search(config.SEVERE_WORDS, it["desc"], re.I))
+            prods = rule
+            if worth:
+                text = (f"{it['cve']}\nCNA: {it['source']}\nCVSS: {it['cvss']}\n"
+                        f"Affected CPEs: {', '.join(it['cpes'][:15]) or 'not yet listed'}\nDescription: {it['desc']}")
+                prods = decide_products(it["cve"], text, rule, trusted)
             sev = classify(it["cvss"], prods, desc=it["desc"])
             if sev:
                 candidates.append((it, prods, sev))
         store["nvd_last"] = iso(t0)
         status["NVD"] = True
+        # 判斷快取只留最近 45 天會再出現的量
+        if len(decided) > 3000:
+            for k in list(decided)[:len(decided) - 3000]:
+                del decided[k]
     except Exception as e:
         print(f"[NVD] 失敗：{e}")
         status["NVD"] = False
@@ -324,7 +357,11 @@ def run():
             text = f"{k['vendor']} {k['product']} {k['name']} {k['desc']}"
             prods = match_products(text, names=f"{k['vendor']} {k['product']}")
             if not prods:
-                continue  # 不在產品清單內的不收錄
+                # 名稱對不上時再請 Decisions API 確認一次，仍不在清單就不收錄
+                prods = decide_products(k["cve"], f"Vendor: {k['vendor']}\nProduct: {k['product']}\n"
+                                                  f"{k['name']}\n{k['desc']}", [], [])
+            if not prods:
+                continue
             raw = dict(name=k["name"], desc=k["desc"], action=k["action"], vendor=k["vendor"], product=k["product"])
             old = events.get(k["cve"])
             if old:
@@ -386,12 +423,27 @@ def run():
         ok, news = sources.fetch_news(default_since if first else t0 - timedelta(days=3))
         status.update(ok)
         known = {c for e in events.values() for c in e["cves"]}
+        skipped = store.setdefault("news_skip", [])  # 判斷為非資安的新聞，不再重問
         for n in news:
             eid = "tw:" + hashlib.sha1(n["link"].encode()).hexdigest()[:12]
+            if eid in skipped:
+                continue
             text = f"{n['title']} {n['desc']}"
             important = any(w in n["title"] for w in config.TW_HIGH_WORDS)
+            prods = None
             if eid not in events:
-                prods = match_products(text, zh=True) or ["其他"]
+                verdict = dec.news(f"{n['title']}\n{n['desc']}", n["need_filter"]) if dec.available else None
+                if verdict:
+                    dstat["asked"] += 1
+                    if not verdict["security"]:
+                        skipped.append(eid)
+                        continue
+                    important = important or verdict["important"]
+                elif n["need_filter"] and not n["kw_sec"]:
+                    continue  # 判斷不可用時退回關鍵字篩選
+                got = dec.products(f"{n['title']}\n{n['desc']}", None, news=True) if dec.available else None
+                prods = got if got is not None else match_products(text, zh=True)
+                prods = prods or ["其他"]
                 events[eid] = new_event(eid, "news", products=prods, sev="high" if important else "note",
                                         published=iso(n["published"]), src=n["src"], url=n["link"],
                                         raw=dict(title=n["title"], desc=n["desc"], summarize=n["summarize"]))
@@ -401,7 +453,9 @@ def run():
                     continue
                 one = nvd_one(cve)
                 if one:
-                    prods = match_products(one["desc"], one["cpes"], cna=one["source"])
+                    prods = decide_products(cve, f"{cve}\nCNA: {one['source']}\nDescription: {one['desc']}",
+                                            match_products(one["desc"], one["cpes"], cna=one["source"]),
+                                            match_products("", one["cpes"], cna=one["source"]))
                 else:
                     # 查不到 NVD：先看標題提到哪個產品，再看全文；只有一個時才採用
                     prods = match_products(n["title"], zh=True)
@@ -421,6 +475,11 @@ def run():
         print(f"[新聞] 失敗：{e}")
         for f in config.NEWS_FEEDS:
             status.setdefault(f["name"], False)
+
+    store["news_skip"] = store.get("news_skip", [])[-500:]
+    if dec.calls:
+        print(f"[判斷] Decisions API 呼叫 {dec.calls} 次；判斷 {dstat['asked']} 則，"
+              f"排除誤判產品 {dstat['dropped']} 個、補上產品 {dstat['added']} 個")
 
     # ---- 清除過舊 ----
     cutoff = t0 - timedelta(days=config.KEEP_DAYS)

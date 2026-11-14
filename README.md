@@ -114,6 +114,17 @@ repo 的 **Settings → Secrets and variables → Actions → New repository sec
 - NVD 剛公布、尚未評分的 CVE：描述含遠端執行、免驗證等字會先以「高」收錄；其他先略過，等評分後自動補進來。
 - 沒有 CVE 編號的事件（例如研究報告外洩）不會出現在 NVD／KEV，只能從右欄新聞看到。
 
+## Gemini Decisions API（判斷用）
+
+除了產生中文摘要的模型，程式也用 `gemini-decision-1` 做是非題判斷（不產生文字、額度寬鬆）：
+
+1. 漏洞是不是產品本身（例如 Node.js 本身 vs. 某個 npm 套件）
+2. 影響產品清單中的哪些產品（補上關鍵字沒抓到的）
+3. iThome 新聞是不是資安相關、新聞是否重要（已遭利用、已發生攻擊或外洩）
+
+有 CPE 或官方發布單位可確認的直接採用，不浪費次數。Decisions API 失敗或停用時自動退回關鍵字規則。
+要關閉：把 `config.py` 的 `DECISION_ENABLED` 改成 `False`。
+
 ## 注意事項
 
 - **Cloudflare Pages 免費方案每月 500 次部署**：程式只在資料真的有變化時才 commit，正常約每天 5～15 次，在額度內。
