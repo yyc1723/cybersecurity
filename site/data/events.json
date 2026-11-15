@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T02:40:32+00:00",
+ "generated": "2026-11-15T10:55:22+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -361,6 +361,29 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:090455ab4d63",
+   "kind": "news",
+   "title": "兆勤科技防火牆整合Bitdefender端點安全資訊，2027年將擴大跨平臺防禦協作",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-15T10:56:33+00:00",
+   "first_seen": "2026-11-15T10:56:37+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180509",
+   "pts": [
+    "談到端點安全與網路安全的交集，過往市面上出現多種整合型解決方案，例如內建防毒軟體引擎的各種網路安全閘道，像是防毒牆、網頁過濾閘道、UTM/次世代防火牆，以及提供協同防禦機制的網路存取控制（NAC）；到了進階持續性威脅（APT）崛起時，針對端點、網路、電子郵件、雲端服務等不同環境的威脅偵測與應變系統（"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:86df18897cd3",
    "kind": "news",
