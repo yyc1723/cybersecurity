@@ -9590,6 +9590,45 @@
    "ai_ver": 2
   },
   {
+   "id": "CVE-2026-109618",
+   "kind": "cve",
+   "title": "PHP 遠端執行程式碼漏洞",
+   "sub": "CVE-2026-109618 · CVSS 9.2",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Palo Alto",
+    "PHP"
+   ],
+   "cves": [
+    "CVE-2026-109618"
+   ],
+   "cvss": 9.2,
+   "published": "2026-10-21T14:17:09+00:00",
+   "first_seen": "2026-11-15T02:42:00+00:00",
+   "updated": "2026-11-15T02:42:00+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+   "pts": [
+    "影響 Palo Alto、PHP。PHP 處理記憶體不足錯誤時未初始化請求記憶體，清理時讀取**可導致遠端執行程式碼**。",
+    "CVSS 9.2，發布於 2026-10-21。多種記憶體不足策略可穩定觸發此條件；目前尚未遭利用，亦未被勒索軟體利用。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+    "refs": [
+     "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w",
+     "https://github.com/rapid7/metasploit-framework/pull/22139",
+     "https://arcticwolf.com/resources/blog/php2shell-critical-php-vulnerabilities-enable-unauthenticated-remote-code-execution/",
+     "https://cert-portal.siemens.com/productcert/html/ssa-166980.html",
+     "https://cert-portal.siemens.com/productcert/html/ssa-566435.html"
+    ]
+   }
+  },
+  {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
    "title": "Oracle EBS 入侵漏洞",
@@ -9834,10 +9873,17 @@
   "CVE-2026-120221": [],
   "CVE-2026-116753": [],
   "CVE-2026-120687": [],
-  "CVE-2026-129456": []
+  "CVE-2026-129456": [],
+  "CVE-2026-129351": [],
+  "CVE-2026-129353": [],
+  "CVE-2026-129354": [],
+  "CVE-2026-129464": [],
+  "CVE-2026-129465": [],
+  "CVE-2026-129352": [],
+  "CVE-2026-129454": []
  },
- "nvd_last": "2026-11-14T22:59:14+00:00",
- "kev_last": "2026-11-14T22:59:14+00:00",
+ "nvd_last": "2026-11-15T02:40:32+00:00",
+ "kev_last": "2026-11-15T02:40:32+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
