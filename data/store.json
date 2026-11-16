@@ -4,7 +4,7 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "items": [
    {
     "title": "ASP.NET：WHMS 驗證繞過漏洞",
@@ -13,6 +13,10 @@
    {
     "title": "SQL Server：Jumis 預設憑證漏洞",
     "desc": "尚未遭利用（CVSS 9.3），能連線至 Jumis SQL Server 的攻擊者皆可離線算出密碼並讀寫所有會計資料庫。"
+   },
+   {
+    "title": "Windows Server：【資安日報】11月16日，Check Point閘",
+    "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
    },
    {
     "title": "Windows Server：Windows零時差漏洞SignDrop曝光，微軟",
@@ -25,15 +29,116 @@
    {
     "title": "IIS/Nginx 解析漏洞",
     "desc": "目前尚未遭利用，CVSS 8.6；涉及與 Go、Python、Node.js 與 Java 解析器差異，以及回應標頭區分大小寫。"
-   },
-   {
-    "title": "Windows Server：【資安日報】11月16日，Check Point閘",
-    "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "CVE-2026-53998",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-53998",
+   "sub": "CVE-2026-53998 · CVSS 10.0",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-53998"
+   ],
+   "cvss": 10.0,
+   "published": "2026-11-16T20:19:06+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53998",
+   "pts": [
+    "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-contro"
+   ],
+   "fix": "升級至 15.7.0 以上（依原文擷取）",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-controlled F-string templates to FStringTemplateFormatter._format, while DotDict.__getattr__ did not prevent traversal through Python private attributes. A crafted field could traverse object internals such as __class__, __init__, and __globals__ to read process environment variables and internal module state. The endpoint is unauthenticated on default installations, and any account can reach it when authentication is enabled. Exposure of PHOENIX_SECRET can allow administrative session-token forgery and decryption of credentials protected by keys derived from that secret. This issue is fixed in version 15.7.0.",
+    "refs": [
+     "https://github.com/Arize-ai/phoenix/commit/e7224a685589f2ffae1fefcc68ff210bd6ad28b8",
+     "https://github.com/Arize-ai/phoenix/pull/13197",
+     "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v15.7.0",
+     "https://github.com/Arize-ai/phoenix/security/advisories/GHSA-gfv3-m769-5xm3"
+    ]
+   }
+  },
+  {
+   "id": "grp:GitLab:2026-11-16",
+   "kind": "group",
+   "title": "GitLab 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-129877",
+    "CVE-2026-129880"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-16T15:17:26+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129877",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
+    "DeepAudit 2.0.0-beta.1 through 3.8.0 contains an information disclosure vulnerability that allows unauthenticated attackers to retrieve serv"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "DeepAudit 2.0.0-beta.1 through 3.8.0 contains an information disclosure vulnerability that allows unauthenticated attackers to retrieve server secrets through the /api/v1/config/defaults endpoint. Attackers can send a GET request to obtain the operator's LLM provider API keys and GitHub or GitLab tokens, then abuse those services and accessible repositories.",
+     "DeepAudit 2.0.0-beta.5 through 3.8.0 contains a server-side request forgery vulnerability that allows registered users to leak server-wide GitLab or Gitea tokens via repository_url. Attackers can create a gitlab or gitea project pointing to a controlled host and request its branches to capture the operator's token and reach internal hosts."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-15707",
+   "kind": "cve",
+   "title": "OpenSSL 搜尋路徑漏洞",
+   "sub": "CVE-2026-15707 · CVSS 8.5",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-15707"
+   ],
+   "cvss": 8.5,
+   "published": "2026-11-16T12:17:53+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15707",
+   "pts": [
+    "影響 Netskope Client 與 Endpoint DLP 內嵌 OpenSSL，**可致 SYSTEM 權限執行程式碼**。",
+    "僅影響 Windows，尚未傳出遭利用，需本機已驗證攻擊者在次要磁碟建立惡意設定檔，macOS 與 Linux 不受影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "An uncontrolled search path vulnerability (CWE-427) in statically linked OpenSSL libraries within Netskope Client (stAgentSvc.exe) and Endpoint DLP (epdlp.exe) on Windows allows an authenticated local attacker to execute arbitrary code with elevated SYSTEM privileges. The services retain internal build-time paths referencing a secondary drive location. On Windows systems where default volume permissions allow standard users to create root-level directories on secondary drives, an attacker can place a malicious configuration file (openssl.cnf) that is loaded under the NT AUTHORITY\\SYSTEM context upon service startup or system reboot. Under default operating system permissions, macOS and Linux are not susceptible, and mobile platforms are unaffected.",
+    "refs": [
+     "https://www.netskope.com/resources/netskope-resources/netskope-security-advisory-nskpsa-2026-005"
+    ]
+   }
+  },
   {
    "id": "tw:0997facc1aee",
    "kind": "news",
@@ -397,7 +502,7 @@
   {
    "id": "CVE-2026-123039",
    "kind": "cve",
-   "title": "Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛",
+   "title": "PHP 閘道設備權限提升漏洞",
    "sub": "CVE-2026-123039 · 尚未評分",
    "sev": "high",
    "kev": false,
@@ -414,10 +519,13 @@
    "updated": "2026-11-16T11:26:22+00:00",
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180523",
-   "pts": [],
+   "pts": [
+    "Check Point 閘道設備受 PHP2Shell（CVE-2026-123039）權限提升漏洞影響，駭客可植入後門並破壞資料。",
+    "Check Point 於 11 月 12 日公布並修補，**該漏洞自 10 月底起已遭用於攻擊活動**。"
+   ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "name": "Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛擬化平臺進行資料破壞",
     "desc": "",
@@ -812,6 +920,40 @@
     "title": "eMudhra憑證事故擴大，再有8張RSA中繼CA憑證遭撤銷",
     "desc": "印度數位憑證業者eMudhra的憑證事故又有新發展。繼先前8張ECDSA中繼CA憑證因私密金鑰可從公開資訊還原而遭撤銷後，eMudhra後續調查又發現，另有8張RSA中繼CA憑證因無法證明私密金鑰移轉程序符合憑證政策要求，於11月7日遭撤銷。",
     "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-68905",
+   "kind": "cve",
+   "title": "nginx 反向代理未驗證漏洞",
+   "sub": "CVE-2026-68905 · CVSS 8.2",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-68905"
+   ],
+   "cvss": 8.2,
+   "published": "2026-11-13T20:19:00+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68905",
+   "pts": [
+    "影響依文件設 Nginx 反向代理的 Hugo Blog（commit 744ca15 及以前），**未驗證者可濫用 API 金鑰**。",
+    "尚未傳出遭利用，遠端免驗證即可發動攻擊，造成 API 配額與費用耗盡及服務中斷。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "Hugo Blog is a tech blog site. In commit 744ca15 and prior, the AI assistant proxy exposes three HTTP endpoints (POST /api/blog-assistant, POST /api/blog-search-embedding, POST /api/blog-search-rerank) without any authentication check. When deployed following the documented Nginx reverse-proxy setup, any unauthenticated remote attacker can send arbitrary requests that the proxy forwards to the upstream LLM/embedding/rerank API using the operator's server-side API key (OPENAI_API_KEY / AI_SEARCH_API_KEY). This enables unlimited quota consumption, cost exhaustion, and potential service unavailability for the operator. At time of publication, there are no publicly available patches.",
+    "refs": [
+     "https://github.com/lanshi17/hugo_blog/security/advisories/GHSA-pj75-r769-qjv2"
+    ]
    }
   },
   {
@@ -1358,6 +1500,83 @@
    }
   },
   {
+   "id": "grp:Citrix:2026-11-13",
+   "kind": "group",
+   "title": "Citrix 多個高風險漏洞",
+   "sub": "23 個 CVE · 最高 CVSS 9.5",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Citrix"
+   ],
+   "cves": [
+    "CVE-2026-107407",
+    "CVE-2026-107408",
+    "CVE-2026-107409",
+    "CVE-2026-107410",
+    "CVE-2026-107411",
+    "CVE-2026-107412",
+    "CVE-2026-107413",
+    "CVE-2026-107414",
+    "CVE-2026-107415",
+    "CVE-2026-111334",
+    "CVE-2026-111336",
+    "CVE-2026-111337",
+    "CVE-2026-111340",
+    "CVE-2026-111341",
+    "CVE-2026-111342",
+    "CVE-2026-120860",
+    "CVE-2026-120861",
+    "CVE-2026-120862",
+    "CVE-2026-120863",
+    "CVE-2026-120864",
+    "CVE-2026-120865",
+    "CVE-2026-120867",
+    "CVE-2026-120868"
+   ],
+   "cvss": 9.5,
+   "published": "2026-11-13T00:20:09+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107407",
+   "pts": [
+    "同日公布 23 個漏洞，最高 CVSS 9.5。",
+    "Multiple Memory overflow vulnerabilities can lead to unpredictable or erroneous behavior and Denial of Service in Citrix NetScaler ADC and C"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "Multiple Memory overflow vulnerabilities can lead to unpredictable or erroneous behavior and Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gateway.",
+     "Memory overflow in SMPP traffic can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory corruption in DNS / DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory corruption in DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler",
+     "Memory overflow in NetScaler Push can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory overflow in Email OTP authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Endpoint Analysis (EPA/EPAS) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in ICA proxy can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in RTSP ALG can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory overflow in SAML authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in WebAuth authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in KBA (knowledge-based authentication) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in client-certificate authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in LDAP authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Base64 decoding in advanced policy expressions leading to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in protocol load-balancing traffic handling (Diameter, SIP-over-TCP, MQTT, RADIUS) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow / improper handling in GSLB and geolocation (MEP, static-proximity, config-sync) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory overflow in SIP ALG (LSN) and DNS answer-section logging datapaths can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory overflow in the management plane can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in HTTP/3 (QUIC) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in SSL/TLS/DTLS can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in HTTP/2 handling can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway."
+    ]
+   }
+  },
+  {
    "id": "tw:e547abdd5049",
    "kind": "news",
    "title": "駭客濫用AI代理滲透測試平臺AntiFox，發動AWS雲端憑證竊取攻擊",
@@ -1719,6 +1938,87 @@
    }
   },
   {
+   "id": "CVE-2026-106140",
+   "kind": "cve",
+   "title": "Telerik 反序列化漏洞",
+   "sub": "CVE-2026-106140 · CVSS 7.3",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-106140"
+   ],
+   "cvss": 7.3,
+   "published": "2026-11-12T10:17:26+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106140",
+   "pts": [
+    "Progress Telerik Reporting 20.3.26.1110 以前版本含反序列化漏洞，**可執行任意程式碼**。",
+    "尚未遭利用。低權限本機攻擊者可在 .NET Framework 報表設計器執行特定編輯時觸發（CVSS 7.3）。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "In Progress® Telerik® Reporting prior to version 20.3.26.1110, a deserialization of untrusted data vulnerability in the .NET Framework report designers allows a local attacker with low privileges to execute arbitrary code in the context of the designer process when the user performs certain editing operations.",
+    "refs": [
+     "https://www.telerik.com/products/reporting/documentation/knowledge-base/kb-security-deserialization-of-untrusted-data-cve-2026-106140"
+    ]
+   }
+  },
+  {
+   "id": "grp:Synology:2026-11-12",
+   "kind": "group",
+   "title": "Synology 多個高風險漏洞",
+   "sub": "8 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [
+    "CVE-2026-13672",
+    "CVE-2026-18596",
+    "CVE-2026-18792",
+    "CVE-2026-19048",
+    "CVE-2026-74857",
+    "CVE-2026-76954",
+    "CVE-2026-81584",
+    "CVE-2026-85101"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-12T04:17:18+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13672",
+   "pts": [
+    "同日公布 8 個漏洞，最高 CVSS 9.8。",
+    "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskStation Manager (DSM) be"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read or write arbitrary files and conduct denial-of-service attacks.",
+     "An authorization bypass through user-controlled key vulnerability in the SSOAuth in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write arbitrary files and conduct denial-of-service attacks.",
+     "An improper limitation of a pathname to a restricted directory vulnerability in the Sharing API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write arbitrary files and conduct denial-of-service attacks.",
+     "A missing critical step in authentication vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write arbitrary files and conduct denial-of-service attacks.",
+     "An authentication bypass using an alternate path or channel vulnerability in the rsync in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read specific files, write arbitrary files, and conduct limited denial-of-service attacks.",
+     "An authentication bypass using an alternate path or channel vulnerability in the OTP in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers with valid user credentials to read or write arbitrary files and conduct denial-of-service attacks.",
+     "An improper link resolution before file access vulnerability in the thumb in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write arbitrary files and conduct denial-of-service attacks.",
+     "An improper neutralization of special elements used in an SQL command vulnerability in the User API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers with control over a compromised LDAP or Active Directory server to read or write arbitrary files and conduct denial-of-service attacks."
+    ]
+   }
+  },
+  {
    "id": "tw:5e66cb727e8f",
    "kind": "news",
    "title": "航運巨擘馬士基證實資料外洩，傳遭勒索組織WhiteArmor索討500萬美元",
@@ -1899,35 +2199,148 @@
    }
   },
   {
-   "id": "CVE-2026-126181",
-   "kind": "cve",
-   "title": "Fortinet 漏洞 CVE-2026-126181",
-   "sub": "CVE-2026-126181 · CVSS 8.0",
+   "id": "grp:Chrome:2026-11-12",
+   "kind": "group",
+   "title": "Chrome 釋放後使用漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-126919",
+    "CVE-2026-126921"
+   ],
+   "cvss": 8.8,
+   "published": "2026-11-11T23:17:22+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126919",
+   "pts": [
+    "影響 157.0.8103.78 之前 Chrome（BrowserTag、Accessibility），**可於沙盒執行任意程式碼**。",
+    "尚未傳出遭利用，遠端攻擊者需誘使目標瀏覽特製 HTML 頁面即可觸發。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "descs": [
+     "Use after free in BrowserTag in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)"
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-65949",
+   "kind": "cve",
+   "title": "Windows 命令注入漏洞",
+   "sub": "CVE-2026-65949 · CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-65949"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-11T22:17:27+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65949",
+   "pts": [
+    "影響 Lenovo XClarity Integrator 5.1.1 與 5.2.0，**可執行任意 PowerShell 命令**。",
+    "適用 Windows Admin Center，尚未傳出遭利用，需已驗證遠端攻擊者提交特製主機名稱。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integrator for Microsoft Windows Admin Center 5.1.1 and 5.2.0 allows an authenticated remote attacker to execute arbitrary PowerShell commands by submitting a crafted hostname.",
+    "refs": [
+     "https://support.lenovo.com/us/en/solutions/ht507549-lenovo-xclarity-integrator-for-microsoft-windows-admin-center-v21"
+    ]
+   }
+  },
+  {
+   "id": "grp:Fortinet:2026-11-12",
+   "kind": "group",
+   "title": "Fortinet 多個高風險漏洞",
+   "sub": "23 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
     "Fortinet"
    ],
    "cves": [
-    "CVE-2026-126181"
+    "CVE-2026-121528",
+    "CVE-2026-126144",
+    "CVE-2026-126147",
+    "CVE-2026-126148",
+    "CVE-2026-126150",
+    "CVE-2026-126155",
+    "CVE-2026-126156",
+    "CVE-2026-126157",
+    "CVE-2026-126160",
+    "CVE-2026-126162",
+    "CVE-2026-126163",
+    "CVE-2026-126164",
+    "CVE-2026-126170",
+    "CVE-2026-126175",
+    "CVE-2026-126176",
+    "CVE-2026-126177",
+    "CVE-2026-126180",
+    "CVE-2026-126181",
+    "CVE-2026-126217",
+    "CVE-2026-126229",
+    "CVE-2026-126240",
+    "CVE-2026-126257",
+    "CVE-2026-126259"
    ],
-   "cvss": 8.0,
-   "published": "2026-11-11T22:17:16+00:00",
+   "cvss": 9.8,
+   "published": "2026-11-11T22:17:11+00:00",
    "first_seen": "2026-11-16T11:22:42+00:00",
-   "updated": "2026-11-16T11:22:42+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126181",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
+    "同日公布 23 個漏洞，最高 CVSS 9.8。",
     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7"
    ],
    "fix": "",
    "ai": false,
    "ai_ver": 0,
    "raw": {
-    "desc": "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow an adjacent-network authenticated attacker with user permission to join the FGFM configuration-sync mesh of the affected FortiGate deployment via the default pre-shared key.",
-    "refs": [
-     "https://fortiguard.fortinet.com/psirt/FG-IR-26-226"
+    "descs": [
+     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow an adjacent-network authenticated attacker with user permission to join the FGFM configuration-sync mesh of the affected FortiGate deployment via the default pre-shared key.",
+     "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+     "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted HA join-request packets.",
+     "A improper encoding or escaping of output vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.2, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer Cloud 8.0.1 through 8.0.2, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer-BigData 7.6.0 through 7.6.2, FortiManager 8.0.0 through 8.0.2, FortiManager 7.6.0 through 7.6.7, FortiManager Cloud 8.0.1 through 8.0.2, FortiManager Cloud 7.6.0 through 7.6.7 may allow an unauthenticated attacker to execute unauthorized code or commands via a specially crafted HTTP request",
+     "A missing authentication for critical function vulnerability in Fortinet FortiOS 8.0.0, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13, FortiOS 7.0 all versions may allow an unauthenticated attacker with HA FGSP + standalone-config-sync, or autoscale to execute command as super admin via crafted HA packets.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+     "A weak password recovery mechanism for forgotten password vulnerability in Fortinet FortiMail 8.0.0, FortiMail 7.6.0 through 7.6.5, FortiMail 7.4.0 through 7.4.7, FortiMail 7.2.0 through 7.2.9 may allow an unauthenticated attacker to reset the password of an arbitrary IBE webmail user and take over their account via specially crafted HTTP requests.",
+     "A incorrect authorization vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated remote attacker to obtain an authenticated IBE webmail session as any IBE recipient and read or send their encrypted mail via crafted HTTP requests.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated remote attacker to take over an arbitrary IBE recipient account via crafted HTTP requests.",
+     "A improper authentication vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to gain access to other users' secure email accounts via crafted HTTP requests.",
+     "A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer 7.0 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiAnalyzer Cloud 7.0 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager 7.0 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12, FortiManager Cloud 7.0 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
+     "A use of hard-coded password vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an unauthenticated attacker to bypass credential validation in certain circumstances outside of the attacker's control and gain unauthorized access.",
+     "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6, FortiMail 7.2 all versions, FortiRecorder 7.6.0 through 7.6.2, FortiRecorder 7.2.0 through 7.2.12, FortiRecorder 7.0.0 through 7.0.6, FortiVoice 8.0.0 through 8.0.1, FortiVoice 7.4.0 through 7.4.2, FortiVoice 7.2.0 through 7.2.5, FortiVoice 7.0.0 through 7.0.8 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
+     "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.2 through 7.2.12, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.2 through 7.2.13, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.2 through 7.2.12, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.2 through 7.2.13 may allow an authenticated attacker to execute unauthorized code or commands via crafted JSON-RPC requests.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6 may allow a remote unauthenticated attacker to execute unauthorized code or commands via a specially crafted request.",
+     "A incorrect authorization vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0 through 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated administrator to escalate their privileges, bypass authorization controls or impersonate internal services via specially crafted requests to the GUI.",
+     "A improper neutralization of special elements used in a template engine vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2 all versions may allow a low privileged Device Manager admin to obtain super admin privilege on managed FortiGates via injecting malicious commands.",
+     "A improper authentication vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated attacker to escalate privileges and release or delete quarantined messages for arbitrary mailboxes via a crafted quarantine release requests.",
+     "A improper neutralization of special elements used in an ldap query ('ldap injection') vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an authenticated attacker to bypass authentication. Successful exploitation requires either a malicious/compromised upstream IdP, or an IdP configuration that allows the user to control the NameID (or the SAML attribute used as the username).",
+     "A improper certificate validation vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2.0 through 7.2.13, FortiOS 7.0 all versions, FortiOS 6.4 all versions may allow a remote and unauthenticated attacker to perform a Man-in-the-Middle attack on the communication channel between the SSLVPN web portal and the backend destination website.",
+     "A use of externally-controlled format string vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1 may allow a remote unauthenticated attacker to execute unauthorized code or commands via a specially crafted SMTP command.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiAnalyzer 8.0.0, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an unauthenticated remote attacker to inject arbitary content into a signed SAML response via crafted SAML requests.",
+     "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiAnalyzer 8.0.0, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an unauthenticated remote attacker to inject arbitary content into a signed SAML response via crafted SAML requests."
     ]
    }
   },
@@ -2322,6 +2735,57 @@
    }
   },
   {
+   "id": "grp:Go:2026-11-11",
+   "kind": "group",
+   "title": "Go 語言 多個高風險漏洞",
+   "sub": "10 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Go"
+   ],
+   "cves": [
+    "CVE-2026-97033",
+    "CVE-2026-97034",
+    "CVE-2026-97036",
+    "CVE-2026-97037",
+    "CVE-2026-97038",
+    "CVE-2026-97039",
+    "CVE-2026-97040",
+    "CVE-2026-97041",
+    "CVE-2026-97042",
+    "CVE-2026-97043"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-11T05:19:57+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
+   "pts": [
+    "同日公布 10 個漏洞，最高 CVSS 9.8。",
+    "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When l"
+   ],
+   "fix": "原文：\"cmd/compile\" and \"cmd/go\" now properly handle backslash-escaped quotes and unquote \"//go:cgo_*\" pragma strings with strconv.Unquote, and the slice bounds check in processCgoOut",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When loading \".syso\" entries from a package archive, the linker only checked for recognized host object headers (ELF, Mach-O, PE, and XCOFF) before falling through to Go object parsing. A \".syso\" file beginning with a \"go object\" header was parsed as a Go compiler object, allowing untrusted cgo metadata directives (such as \"cgo_ldflag\" or \"cgo_dynamic_linker\") embedded in the \".syso\" file to be passed to the external linker without validation. Additionally, \".syso\" filenames longer than 16 bytes lost their \".syso\" extension when truncated in archive headers, and unrecognized \".syso\" formats forced external linking in pure-Go builds. The linker now rejects \".syso\" files that are not recognized host object formats, and \"cmd/go\" and \"cmd/pack\" preserve the \".syso\" suffix when truncating long archive member names.",
+     "Building a malicious package that uses cgo could cause arbitrary code execution at build time through several compiler and linker flags permitted in \"#cgo\" directives. Specifically, \"--sysroot\" in GCC and Clang relocates compiler subprograms, spec files, and CRT startup objects to an attacker-controlled directory; \"-target\" in Clang falls back to executing target helper tools from the current working directory when not found in PATH; \"-isysroot\" and \"-Wl,-syslibroot\" can pass a regular file on disk to GNU ld.bfd, which interprets it as a positional linker script; and \"-x\" permitted specifying arbitrary compiler input languages beyond those supported by cgo. \"--sysroot\" and \"-target\" are now disallowed in \"#cgo\" flags, \"-isysroot\" and \"-Wl,-syslibroot\" are verified not to point to regular files, and \"-x\" is restricted to the C, C++, Objective-C, and assembler languages supported by cgo.",
+     "When using GCC, building a malicious package that uses cgo could cause arbitrary command execution at link time via untrusted GCC spec files (\"specs\" or \"*.spec\"). When linking with \"-fopenmp\", \"-fopenacc\", or \"-fsanitize=\" in \"#cgo LDFLAGS\", GCC's built-in link spec evaluates \"%:include(libgomp.spec)\" or \"%:include(libsanitizer.spec)\" and searches for spec files in \"-L\" and sysroot directories (including subdirectories and multilib sibling directories such as \"../lib64\"), as well as the working directory when \"-fopenmp\" or \"-fopenacc\" is used or when \"-fsanitize=\" is combined with \"-static\" or \"-static-lib*\". The go command now rejects \"-L\", \"-isysroot\", and \"-Wl,-syslibroot\" directories (and the working and package directories when applicable) that contain GCC spec files, and disallows \"@\" and \"-\" prefixes in \"-fsanitize=\" compiler flag values.",
+     "On Darwin, building a malicious package that uses cgo could cause arbitrary code execution when using the Apple linker due to passing \"-l to_library <path>\" in a \"#cgo LDFLAGS\" directive. The Apple linker recombines the separated arguments \"-l\" and \"to_library\" into \"-lto_library\", which loads an arbitrary LTO plugin dynamic library at link time. The go command now disallows \"-l\" followed by \"to_library\" in \"#cgo LDFLAGS\", rejects \"-lazy_library\", \"-lazy_framework\", \"-load_hidden\", \"-library\", and \"-library-path\", and checks recombined \"-l\" arguments against disallowed linker flags and patterns.",
+     "Building a malicious package that uses cgo could cause arbitrary code execution at link time by passing linker script files to the host linker via \"#cgo LDFLAGS\". Split \"-Wl,\" flags that consume a following argument (such as \"-Wl,-rpath\", \"-Wl,--just-symbols\", and \"-Wl,-undefined\") previously accepted a bare second argument without a \"-Wl,\" prefix, which the compiler driver passes directly to the linker as a positional input file. Additionally, when using GNU ld.bfd, flags such as \"-framework\", \"-Wl,-framework\", \"-Wl,-undefined\", \"-Wl,--just-symbols\", \"-Wl,-R\", \"-Wl,-subsystem\", and (on non-Darwin platforms) \"-Wl,-sectcreate\" could cause ld.bfd to interpret their arguments as linker scripts if they named a regular file on disk. The go command now requires a \"-Wl,\" prefix on the second token of split \"-Wl,\" flags (except \"-Wl,-R\"), verifies that these flags do not reference linker script files, and disallows bare \"-Wl,--warn-backrefs-exclude\".",
+     "Building a malicious package containing \".syso\" files or cgo linker inputs could inject arbitrary linker flags or execute arbitrary code at link time. Linker input files—including \".syso\" files, direct object or library inputs in \"#cgo LDFLAGS\", and libraries in \"-L\" directories—were passed to the external linker without validating their format or checking for embedded linker options. Across platforms, this allowed executing GNU ld implicit linker scripts disguised as libraries or \".syso\" files (or loaded via \"-l:<filename>\" or \"-l\" containing path separators), injecting unallowlisted linker flags via PE/COFF \".drectve\" sections on Windows or Mach-O \"LC_LINKER_OPTION\" load commands on Darwin, or invoking LTO plugins via GCC or LLVM LTO intermediate representation sections in ELF, PE/COFF, or Mach-O objects. The go command now verifies that \".syso\" files, direct linker inputs, and libraries in \"-L\" directories are valid binary objects or archives that do not contain unallowlisted \".drectve\" directives, \"LC_LINKER_OPTION\" load commands, or LTO IR sections, and disallows \"-l:<filename>\" and \":\", \"=\", or path separators in \"-l\" flags.",
+     "Building a malicious package containing \"//go:cgo_*\" compiler directives could inject arbitrary flags into the external linker invocation on ELF platforms. The compiler and linker did not reject commas in \"//go:cgo_import_dynamic\", \"//go:cgo_export_dynamic\", \"//go:cgo_export_static\", \"//go:cgo_import_static\", and \"//go:cgo_dynamic_linker\" directives, and the linker passed the dynamic linker path using \"-Wl,--dynamic-linker,<path>\". Furthermore, the two-argument form of \"//go:cgo_import_dynamic\" (which is permitted in non-cgo Go source files) could overwrite the external symbol name of a symbol already marked for cgo export. A symbol name or dynamic linker path containing a comma or leading \"@\" could split \"-Wl,--export-dynamic-symbol=\" or \"-Wl,--dynamic-linker,\" into arbitrary host linker flags or response file arguments. The compiler and linker now reject commas in \"//go:cgo_*\" symbol and dynamic linker directives, the linker passes \"-Wl,--dynamic-linker=<path>\", and \"cgo_import_dynamic\" no longer overwrites symbols exported via \"cgo_export_dynamic\" or \"cgo_export_static\".",
+     "Building a malicious package that uses \"//go:cgo_import_dynamic\" or links against a crafted PE object on Windows could pass unsafe library arguments to the external linker. The compiler only checked the first character of the library name in \"//go:cgo_import_dynamic\" directives and skipped validation in cgo-generated files. In addition, on Windows, \"cmd/cgo\" and \"cmd/link\" did not validate imported DLL names extracted from PE object files before emitting \"-l<name>\" flags for the external linker, allowing a crafted DLL name containing \"..\" path traversal or special characters to reference arbitrary files on disk. The compiler now validates every character of the library name in \"//go:cgo_import_dynamic\" directives (including in cgo-generated files on Windows) and rejects \"..\" path traversal, and \"cmd/cgo\" and \"cmd/link\" reject PE imported DLL names containing path separators, \"..\", \":\", or leading \"-\" or \"@\".",
+     "Building a malicious package that uses cgo could bypass \"#cgo LDFLAGS\" validation and cause unexpected code execution at build time, or cause the go command to panic, via crafted quoting in \"//go:cgo_ldflag\" directives. When \"cmd/cgo\" generates \"_cgo_gotypes.go\", it quotes each \"#cgo LDFLAGS\" argument with strconv.Quote in a \"//go:cgo_ldflag\" directive, but \"cmd/compile\" and \"cmd/go\" parsed those directives by splitting on raw quote characters without handling backslash escapes or unquoting the string. This mismatch allowed disallowed linker flags or unvalidated linker search paths to be smuggled past the go command's flag checks and passed to the external linker. In addition, deduplicating LDFLAGS in the go command could panic with an out-of-bounds slice index when a prefix of the flag list matched near the end of the slice. \"cmd/compile\" and \"cmd/go\" now properly handle backslash-escaped quotes and unquote \"//go:cgo_*\" pragma strings with strconv.Unquote, and the slice bounds check in processCgoOutputs has been fixed.",
+     "Building a malicious package that uses \"#cgo pkg-config:\" directives could load untrusted pkg-config \".pc\" files or inject unvalidated compiler and linker flags. The pkg-config flag allowlist previously permitted \"--with-path=\" and \"--personality=\", allowed \"--define-variable=\" values beginning with \"=\" or \"$\" (which can rewrite paths in system \".pc\" files into sysroot-prefixed \"-L=\" or \"-L$SYSROOT\" linker search paths), and allowed package arguments ending in \".pc\" or containing path separators or \"..\", which caused pkg-config to load local \".pc\" files directly from the package directory. In addition, flags returned by \"pkg-config --cflags\" in cgoCPPFLAGS were not checked when determining whether internal linking is safe. The go command now disallows \"--with-path=\", \"--personality=\", leading \"=\" or \"$\" characters in \"--define-variable=\" values, and local \".pc\" paths in \"#cgo pkg-config:\" directives, and inspects cgoCPPFLAGS when checking internal linking compatibility."
+    ]
+   }
+  },
+  {
    "id": "tw:604ba2b9c99b",
    "kind": "news",
    "title": "俄羅斯駭客入侵羅馬尼亞政府Exchange伺服器，意圖竊取北約及歐盟相關郵件",
@@ -2442,6 +2906,41 @@
    }
   },
   {
+   "id": "CVE-2026-126129",
+   "kind": "cve",
+   "title": "Auth0 登出狀態驗證漏洞",
+   "sub": "CVE-2026-126129 · CVSS 7.5",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "ASP.NET",
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-126129"
+   ],
+   "cvss": 7.5,
+   "published": "2026-11-10T22:18:31+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126129",
+   "pts": [
+    "Auth0 ASP.NET Core Authentication SDK 誤判登出狀態，**已登出工作階段仍可存取受保護端點**。",
+    "問題出於 OIDC Back-Channel Logout 狀態判斷，目前尚未遭利用（CVSS 7.5）。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "The Auth0 ASP.NET Core Authentication SDK incorrectly determines a session's OIDC Back-Channel Logout status, which may result in a logged-out session being accepted for access to protected endpoints.",
+    "refs": [
+     "https://trust.okta.com/security-advisories/improper-backchannel-session-revocation-in-the-auth0-asp-net-core-authentication-sdk-cve-2026-126129"
+    ]
+   }
+  },
+  {
    "id": "grp:Windows Server:2026-11-11",
    "kind": "group",
    "title": "Audition 提權與執行漏洞",
@@ -2493,6 +2992,39 @@
    }
   },
   {
+   "id": "CVE-2026-102166",
+   "kind": "cve",
+   "title": "Cisco 漏洞 CVE-2026-102166",
+   "sub": "CVE-2026-102166 · CVSS 9.4",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-102166"
+   ],
+   "cvss": 9.4,
+   "published": "2026-11-10T20:17:21+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102166",
+   "pts": [
+    "Arista C-260 and C-250 access points ship with fleet-wide static cryptographic keys used for firmware image verification and SSLP authentica"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "Arista C-260 and C-250 access points ship with fleet-wide static cryptographic keys used for firmware image verification and SSLP authentication. An attacker who is able to access these keys would be able to create modified firmware that will pass verification checks. This vulnerability is specific to the C-260 and C-250 models; other access point models enforce digitally signed upgrade images with secure boot and are not affected by this issue.",
+    "refs": [
+     "https://www.arista.com/en/support/advisories-notices/security-advisory/25049-security-advisory-0227"
+    ]
+   }
+  },
+  {
    "id": "grp:Fortinet:2026-11-11",
    "kind": "group",
    "title": "Fortinet 遠端執行漏洞",
@@ -2511,21 +3043,59 @@
    "cvss": 9.6,
    "published": "2026-11-10T20:17:20+00:00",
    "first_seen": "2026-11-14T06:31:50+00:00",
-   "updated": "2026-11-14T06:31:50+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
    "pts": [
-    "影響 FortiClient、FortiSandbox、FortiAnalyzer 等，**可致遠端執行程式碼**與 XSS。",
-    "CVSS 最高 9.6，未授權遠端攻擊者即可利用 FortiClient 漏洞；目前尚未傳出遭利用。"
+    "同日公布 3 個漏洞，最高 CVSS 9.6。",
+    "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientW"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim.",
      "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to perform an XSS attack via social engineering and crafted HTTP requests.",
-     "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2.0 through 7.2.11, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2.0 through 7.2.11, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.1 through 7.4.7, FortiManager Cloud 7.2.1 through 7.2.10 may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests."
+     "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2.0 through 7.2.11, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2.0 through 7.2.11, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.1 through 7.4.7, FortiManager Cloud 7.2.1 through 7.2.10 may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
+     "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized remote attacker to execute unauthorized code or commands. Successful exploitation requires interaction with the victim."
+    ]
+   }
+  },
+  {
+   "id": "CVE-2026-95691",
+   "kind": "cve",
+   "title": "OpenSSL 釋放後使用漏洞",
+   "sub": "CVE-2026-95691 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-95691"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-10T19:21:39+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95691",
+   "pts": [
+    "影響 OpenSSL QUIC 用戶端，處理重傳 CRYPTO 框架發生釋放後使用讀取，**可致阻斷服務或記憶體洩漏**。",
+    "尚未傳出遭利用，需透過惡意 QUIC 伺服器觸發，FIPS 模組不受影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
+   "raw": {
+    "desc": "Issue summary: A retransmitted QUIC CRYPTO frame can release packet storage\nwhile the TLS record layer retains a direct pointer into that storage causing\nuse after free.\n\nImpact summary: A malicious QUIC server can cause a heap-use-after-free read\nin the OpenSSL QUIC client. The server can also identify one allocator-adjacent\nbyte through the client's protected Handshake response.\n\nCWE: CWE-416: Use After Free\n\nDescription: During CRYPTO stream processing, a pointer into the first frame's\nmemory on the stream is lent to the TLS handshake processing. The memory\nmust remain stable until it is processed and released. However the processing\nof retransmitted CRYPTO frames could release the memory if the retransmitted\nframe fully overlapped the existing frame. This then causes use-after-free read\nwhen the TLS handshake processing continues.\n\nThe use-after-free read can lead to a Denial-of-Service of the client\napplication or a minor leak of information about the heap memory contents\nthat might be overwritten with other data, subsequently allocated by\nthe application, to the peer.\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
+    "refs": [
+     "https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba336bb4a00be9ebabd84c2a1",
+     "https://github.com/openssl/openssl/commit/ec9d4de9d03989b29db5a3d7efdb4c285deaf386",
+     "https://github.com/openssl/openssl/commit/f6244675833e097c2429a40d1b206d95385bd42f",
+     "https://openssl-library.org/news/secadv/20261110.txt"
     ]
    }
   },
@@ -2590,19 +3160,20 @@
    "cvss": 9.8,
    "published": "2026-11-10T16:17:17+00:00",
    "first_seen": "2026-11-14T06:31:50+00:00",
-   "updated": "2026-11-14T06:31:50+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121653",
    "pts": [
-    "影響 Ivanti Endpoint Manager 2024 SU8 前版本，**可致未驗證遠端執行程式碼**。",
-    "另 Cloud Services Application 5.0.8 缺驗證可增刪信任憑證；CVSS 9.8，尚未遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code execution.",
+     "Missing authentication in Ivanti Cloud Services Application version 5.0.8 allows a remote unauthenticated attacker to add and delete arbitrary trusted EPM Core certificate entries.",
      "Missing authentication in Ivanti Cloud Services Application version 5.0.8 allows a remote unauthenticated attacker to add and delete arbitrary trusted EPM Core certificate entries."
     ]
    }
@@ -2611,34 +3182,37 @@
    "id": "grp:Apache:2026-11-11",
    "kind": "group",
    "title": "Apache 內嵌伺服器漏洞",
-   "sub": "7 個 CVE",
-   "sev": "high",
+   "sub": "10 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
     "Apache"
    ],
    "cves": [
+    "CVE-2026-111240",
     "CVE-2026-111250",
     "CVE-2026-111256",
+    "CVE-2026-111259",
     "CVE-2026-86531",
     "CVE-2026-97870",
     "CVE-2026-97880",
     "CVE-2026-97881",
-    "CVE-2026-97888"
+    "CVE-2026-97888",
+    "CVE-2026-97890"
    ],
-   "cvss": null,
+   "cvss": 9.8,
    "published": "2026-11-10T16:17:15+00:00",
    "first_seen": "2026-11-14T06:31:50+00:00",
-   "updated": "2026-11-14T06:31:50+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111250",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111240",
    "pts": [
-    "Apache 內嵌 OpenEJB HTTP 伺服器存在多項漏洞，**可讓遠端未經驗證攻擊者繞過驗證、讀取任意檔案或引發阻斷服務**。",
-    "目前尚未遭利用，僅影響啟用該內嵌伺服器及特定驗證或端點設定的部署環境。"
+    "同日公布 10 個漏洞，最高 CVSS 9.8。",
+    "The embedded OpenEJB HTTP server reports every request as authenticated when an application requests authentication programmatically. A remo"
    ],
-   "fix": "建議封鎖來自未受信任用戶端對內嵌 OpenEJB HTTP 伺服器的網路存取。",
-   "ai": true,
+   "fix": "升級至 10.3.0、11.0.0-M2 以上（依原文擷取）",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2648,7 +3222,10 @@
      "When Hessian remoting endpoints are served by the embedded HTTP server, configured authentication and transport security requirements are silently ignored. A remote unauthenticated attacker can invoke the exposed EJB methods without credentials or over an unencrypted connection. Only deployments that use the embedded HTTP server rather than Tomcat and rely on these settings are affected. Users are recommended to block network access to Hessian endpoints from untrusted clients, or to migrate to another remoting protocol.",
      "The embedded OpenEJB HTTP server dispatches some requests to REST endpoints configured for HTTP Basic authentication without verifying credentials. A remote unauthenticated attacker can invoke protected resources, bypassing authentication. Only deployments that use the embedded HTTP server with Basic authentication are affected. Users are recommended to block network access to the embedded HTTP server from untrusted clients, or to migrate to the Tomcat based TomEE distributions.",
      "The embedded OpenEJB HTTP server does not restrict static resource paths to the configured resource directories. A remote unauthenticated attacker can read arbitrary files accessible to the server process. Users are recommended to block network access to the embedded HTTP server from untrusted clients, or to migrate to the Tomcat based TomEE distributions.",
-     "The embedded HTTP server does not clear the security identity established during a request before its worker thread handles the next request. A remote unauthenticated attacker can have their request processed with the identity of a previously authenticated user, gaining that user's privileges. Only applications served by the embedded HTTP server that authenticate programmatically or via basic authentication are affected. Users are recommended to block network access to the embedded HTTP server from untrusted clients, or to migrate to the Tomcat based TomEE distributions."
+     "The embedded HTTP server does not clear the security identity established during a request before its worker thread handles the next request. A remote unauthenticated attacker can have their request processed with the identity of a previously authenticated user, gaining that user's privileges. Only applications served by the embedded HTTP server that authenticate programmatically or via basic authentication are affected. Users are recommended to block network access to the embedded HTTP server from untrusted clients, or to migrate to the Tomcat based TomEE distributions.",
+     "The JDBC based JAAS login module accepts a login without a password for accounts whose stored password is NULL. A remote attacker who knows the user name of such an account can authenticate as that user and obtain its roles. Only deployments using this login module with NULL passwords in the user table are affected. Users are recommended to upgrade to version 10.3.0 or 11.0.0-M2, which fix the issue.",
+     "The embedded server generates HTTP session identifiers with a non-cryptographic random number generator by default. A remote attacker who observes a session identifier can predict the identifiers issued to other users and hijack their sessions, if the application relies on HTTP sessions for authentication. Users are recommended to upgrade to version 10.3.0 or 11.0.0-M2, which fix the issue.",
+     "The embedded HTTP server does not invalidate the previous session identifier when an application changes the session id, e.g. after login. An attacker who can plant a session identifier in a victim's browser can hijack the victim's authenticated session. Users are recommended to block network access to the embedded HTTP server from untrusted clients, or to migrate to the Tomcat based TomEE distributions."
     ]
    }
   },
@@ -10373,10 +10950,10 @@
    "ai_ver": 2
   },
   {
-   "id": "CVE-2026-109618",
-   "kind": "cve",
-   "title": "PHP 遠端執行程式碼漏洞",
-   "sub": "CVE-2026-109618 · CVSS 9.2",
+   "id": "grp:Palo Alto:2026-10-21",
+   "kind": "group",
+   "title": "Palo Alto 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -10385,29 +10962,26 @@
     "PHP"
    ],
    "cves": [
-    "CVE-2026-109618"
+    "CVE-2026-109618",
+    "CVE-2026-109619"
    ],
    "cvss": 9.2,
    "published": "2026-10-21T14:17:09+00:00",
    "first_seen": "2026-11-15T02:42:00+00:00",
-   "updated": "2026-11-15T02:42:00+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響 Palo Alto、PHP。PHP 處理記憶體不足錯誤時未初始化請求記憶體，清理時讀取**可導致遠端執行程式碼**。",
-    "CVSS 9.2，發布於 2026-10-21。多種記憶體不足策略可穩定觸發此條件；目前尚未遭利用，亦未被勒索軟體利用。"
+    "同日公布 2 個漏洞，最高 CVSS 9.2。",
+    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
    ],
    "fix": "",
-   "ai": true,
-   "ai_ver": 2,
+   "ai": false,
+   "ai_ver": 0,
    "raw": {
-    "desc": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
-    "refs": [
-     "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w",
-     "https://github.com/rapid7/metasploit-framework/pull/22139",
-     "https://arcticwolf.com/resources/blog/php2shell-critical-php-vulnerabilities-enable-unauthenticated-remote-code-execution/",
-     "https://cert-portal.siemens.com/productcert/html/ssa-166980.html",
-     "https://cert-portal.siemens.com/productcert/html/ssa-566435.html"
+    "descs": [
+     "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+     "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE)."
     ]
    }
   },
@@ -10415,8 +10989,8 @@
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
    "title": "Oracle EBS 入侵漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 8.8",
-   "sev": "high",
+   "sub": "12 個 CVE · 最高 CVSS 9.1",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -10425,26 +10999,44 @@
    "cves": [
     "CVE-2026-101534",
     "CVE-2026-101542",
-    "CVE-2026-101567"
+    "CVE-2026-101567",
+    "CVE-2026-101590",
+    "CVE-2026-101634",
+    "CVE-2026-101635",
+    "CVE-2026-101653",
+    "CVE-2026-101654",
+    "CVE-2026-101655",
+    "CVE-2026-101656",
+    "CVE-2026-101664",
+    "CVE-2026-101665"
    ],
-   "cvss": 8.8,
+   "cvss": 9.1,
    "published": "2026-10-20T22:18:02+00:00",
    "first_seen": "2026-11-14T06:31:50+00:00",
-   "updated": "2026-11-14T06:31:50+00:00",
+   "updated": "2026-11-16T22:09:24+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101534",
    "pts": [
-    "影響 Oracle E-Business Suite 12.2.3-12.2.15，**低權限攻擊者可經 HTTP 網路危害系統**。",
-    "目前尚未遭利用。漏洞易於利用，影響 Oracle Capacity、Cost Management 與 EDI Gateway 元件。"
+    "同日公布 12 個漏洞，最高 CVSS 9.1。",
+    "Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations). Supported versions that are affect"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Capacity.  Successful attacks of this vulnerability can result in takeover of Oracle Capacity. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle Cost Management product of Oracle E-Business Suite (component: Cost Planning).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Cost Management.  Successful attacks of this vulnerability can result in takeover of Oracle Cost Management. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Oracle EDI Gateway product of Oracle E-Business Suite (component: EDI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle EDI Gateway.  While the vulnerability is in Oracle EDI Gateway, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle EDI Gateway accessible data as well as  unauthorized update, insert or delete access to some of Oracle EDI Gateway accessible data. CVSS 3.1 Base Score 8.5 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N)."
+     "Vulnerability in the Oracle EDI Gateway product of Oracle E-Business Suite (component: EDI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle EDI Gateway.  While the vulnerability is in Oracle EDI Gateway, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle EDI Gateway accessible data as well as  unauthorized update, insert or delete access to some of Oracle EDI Gateway accessible data. CVSS 3.1 Base Score 8.5 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N).",
+     "Vulnerability in the Helidon product of Oracle Fusion Middleware (component: helidon-microprofile-security).  Supported versions that are affected are 4.0.0-4.5.5. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Helidon.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Helidon accessible data as well as  unauthorized access to critical data or complete access to all Helidon accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Mobile Field Service.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Mobile Field Service accessible data and unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Mobile Field Service. CVSS 3.1 Base Score 9.1 (Confidentiality and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H).",
+     "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Mobile Field Service.  Successful attacks of this vulnerability can result in takeover of Oracle Mobile Field Service. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTPS to compromise Oracle Mobile Field Service.  Successful attacks of this vulnerability can result in takeover of Oracle Mobile Field Service. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTPS to compromise Oracle Mobile Field Service.  Successful attacks of this vulnerability can result in takeover of Oracle Mobile Field Service. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Mobile Field Service.  Successful attacks of this vulnerability can result in takeover of Oracle Mobile Field Service. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTPS to compromise Oracle Mobile Field Service.  Successful attacks of this vulnerability can result in takeover of Oracle Mobile Field Service. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Mobile Field Service.  Successful attacks of this vulnerability can result in takeover of Oracle Mobile Field Service. CVSS 3.1 Base Score 8.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Mobile Field Service.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Mobile Field Service accessible data as well as  unauthorized access to critical data or complete access to all Oracle Mobile Field Service accessible data. CVSS 3.1 Base Score 8.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N)."
     ]
    }
   },
@@ -10731,10 +11323,113 @@
   "CVE-2026-63245": [],
   "CVE-2026-129606": [],
   "CVE-2026-97358": [],
-  "CVE-2026-6460": []
+  "CVE-2026-6460": [],
+  "CVE-2026-93664": [],
+  "CVE-2026-53998": [
+   "AI 平台"
+  ],
+  "CVE-2026-19732": [],
+  "CVE-2026-77033": [],
+  "CVE-2026-12591": [],
+  "CVE-2026-111264": [],
+  "CVE-2026-87756": [],
+  "CVE-2026-111240": [
+   "Apache"
+  ],
+  "CVE-2026-111244": [],
+  "CVE-2026-111245": [],
+  "CVE-2026-111250": [],
+  "CVE-2026-111256": [],
+  "CVE-2026-97880": [],
+  "CVE-2026-97888": [],
+  "CVE-2026-126673": [],
+  "CVE-2026-126173": [],
+  "CVE-2026-127048": [],
+  "CVE-2026-117868": [],
+  "CVE-2026-124855": [],
+  "CVE-2026-107412": [
+   "Citrix"
+  ],
+  "CVE-2026-120699": [],
+  "CVE-2026-17409": [],
+  "CVE-2026-18838": [],
+  "CVE-2026-121683": [
+   "Ivanti"
+  ],
+  "CVE-2026-126087": [],
+  "CVE-2026-102166": [
+   "Cisco"
+  ],
+  "CVE-2026-118965": [],
+  "CVE-2026-120495": [],
+  "CVE-2026-121374": [],
+  "CVE-2026-129550": [],
+  "CVE-2026-129552": [],
+  "CVE-2026-111559": [],
+  "CVE-2026-129941": [],
+  "CVE-2026-129952": [],
+  "CVE-2026-129955": [],
+  "CVE-2026-116606": [],
+  "CVE-2026-17329": [],
+  "CVE-2026-17344": [],
+  "CVE-2026-126797": [],
+  "CVE-2026-90908": [],
+  "CVE-2026-124004": [],
+  "CVE-2026-120868": [
+   "Citrix"
+  ],
+  "CVE-2026-107407": [
+   "Citrix"
+  ],
+  "CVE-2026-107408": [
+   "Citrix"
+  ],
+  "CVE-2026-107409": [
+   "Citrix"
+  ],
+  "CVE-2026-107410": [
+   "Citrix"
+  ],
+  "CVE-2026-107415": [
+   "Citrix"
+  ],
+  "CVE-2026-111334": [
+   "Citrix"
+  ],
+  "CVE-2026-120864": [
+   "Citrix"
+  ],
+  "CVE-2026-126269": [],
+  "CVE-2026-126274": [],
+  "CVE-2026-129110": [],
+  "CVE-2026-63079": [],
+  "CVE-2026-104840": [],
+  "CVE-2026-126325": [],
+  "CVE-2026-127016": [],
+  "CVE-2026-127046": [],
+  "CVE-2026-124012": [],
+  "CVE-2026-126273": [],
+  "CVE-2026-126953": [],
+  "CVE-2026-75491": [],
+  "CVE-2026-75495": [],
+  "CVE-2026-129126": [],
+  "CVE-2026-124020": [],
+  "CVE-2026-124021": [],
+  "CVE-2026-117691": [],
+  "CVE-2026-111243": [],
+  "CVE-2026-111249": [],
+  "CVE-2026-111259": [
+   "Apache"
+  ],
+  "CVE-2026-111260": [],
+  "CVE-2026-111261": [],
+  "CVE-2026-86336": [],
+  "CVE-2026-97849": [],
+  "CVE-2026-97870": [],
+  "CVE-2026-97874": []
  },
- "nvd_last": "2026-11-16T11:21:22+00:00",
- "kev_last": "2026-11-16T11:21:22+00:00",
+ "nvd_last": "2026-11-16T22:03:44+00:00",
+ "kev_last": "2026-11-16T22:03:44+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",

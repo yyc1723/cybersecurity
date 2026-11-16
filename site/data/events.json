@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T11:21:22+00:00",
+ "generated": "2026-11-16T22:03:44+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,7 +324,7 @@
   }
  ],
  "todo": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "items": [
    {
     "title": "ASP.NET：WHMS 驗證繞過漏洞",
@@ -333,6 +333,10 @@
    {
     "title": "SQL Server：Jumis 預設憑證漏洞",
     "desc": "尚未遭利用（CVSS 9.3），能連線至 Jumis SQL Server 的攻擊者皆可離線算出密碼並讀寫所有會計資料庫。"
+   },
+   {
+    "title": "Windows Server：【資安日報】11月16日，Check Point閘",
+    "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
    },
    {
     "title": "Windows Server：Windows零時差漏洞SignDrop曝光，微軟",
@@ -345,10 +349,6 @@
    {
     "title": "IIS/Nginx 解析漏洞",
     "desc": "目前尚未遭利用，CVSS 8.6；涉及與 Go、Python、Node.js 與 Java 解析器差異，以及回應標頭區分大小寫。"
-   },
-   {
-    "title": "Windows Server：【資安日報】11月16日，Check Point閘",
-    "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
    }
   ],
   "ai": false
@@ -361,6 +361,84 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "CVE-2026-53998",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-53998",
+   "sub": "CVE-2026-53998 · CVSS 10.0",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-53998"
+   ],
+   "cvss": 10.0,
+   "published": "2026-11-16T20:19:06+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53998",
+   "pts": [
+    "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-contro"
+   ],
+   "fix": "升級至 15.7.0 以上（依原文擷取）",
+   "ai": false
+  },
+  {
+   "id": "grp:GitLab:2026-11-16",
+   "kind": "group",
+   "title": "GitLab 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-129877",
+    "CVE-2026-129880"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-16T15:17:26+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129877",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
+    "DeepAudit 2.0.0-beta.1 through 3.8.0 contains an information disclosure vulnerability that allows unauthenticated attackers to retrieve serv"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-15707",
+   "kind": "cve",
+   "title": "OpenSSL 搜尋路徑漏洞",
+   "sub": "CVE-2026-15707 · CVSS 8.5",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-15707"
+   ],
+   "cvss": 8.5,
+   "published": "2026-11-16T12:17:53+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15707",
+   "pts": [
+    "影響 Netskope Client 與 Endpoint DLP 內嵌 OpenSSL，**可致 SYSTEM 權限執行程式碼**。",
+    "僅影響 Windows，尚未傳出遭利用，需本機已驗證攻擊者在次要磁碟建立惡意設定檔，macOS 與 Linux 不受影響。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:0997facc1aee",
    "kind": "news",
@@ -640,7 +718,7 @@
   {
    "id": "CVE-2026-123039",
    "kind": "cve",
-   "title": "Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛",
+   "title": "PHP 閘道設備權限提升漏洞",
    "sub": "CVE-2026-123039 · 尚未評分",
    "sev": "high",
    "kev": false,
@@ -656,9 +734,12 @@
    "first_seen": "2026-11-16T11:26:22+00:00",
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180523",
-   "pts": [],
+   "pts": [
+    "Check Point 閘道設備受 PHP2Shell（CVE-2026-123039）權限提升漏洞影響，駭客可植入後門並破壞資料。",
+    "Check Point 於 11 月 12 日公布並修補，**該漏洞自 10 月底起已遭用於攻擊活動**。"
+   ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:9ba31c30c1ea",
@@ -955,6 +1036,32 @@
    "url": "https://www.ithome.com.tw/news/180445",
    "pts": [
     "印度數位憑證業者eMudhra的憑證事故又有新發展。繼先前8張ECDSA中繼CA憑證因私密金鑰可從公開資訊還原而遭撤銷後，eMudhra後續調查又發現，另有8張RSA中繼CA憑證因無法證明私密金鑰移轉程序符合憑證政策要求，於11月7日遭撤銷。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-68905",
+   "kind": "cve",
+   "title": "nginx 反向代理未驗證漏洞",
+   "sub": "CVE-2026-68905 · CVSS 8.2",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-68905"
+   ],
+   "cvss": 8.2,
+   "published": "2026-11-13T20:19:00+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68905",
+   "pts": [
+    "影響依文件設 Nginx 反向代理的 Hugo Blog（commit 744ca15 及以前），**未驗證者可濫用 API 金鑰**。",
+    "尚未傳出遭利用，遠端免驗證即可發動攻擊，造成 API 配額與費用耗盡及服務中斷。"
    ],
    "fix": "",
    "ai": true
@@ -1377,6 +1484,54 @@
    "ai": true
   },
   {
+   "id": "grp:Citrix:2026-11-13",
+   "kind": "group",
+   "title": "Citrix 多個高風險漏洞",
+   "sub": "23 個 CVE · 最高 CVSS 9.5",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Citrix"
+   ],
+   "cves": [
+    "CVE-2026-107407",
+    "CVE-2026-107408",
+    "CVE-2026-107409",
+    "CVE-2026-107410",
+    "CVE-2026-107411",
+    "CVE-2026-107412",
+    "CVE-2026-107413",
+    "CVE-2026-107414",
+    "CVE-2026-107415",
+    "CVE-2026-111334",
+    "CVE-2026-111336",
+    "CVE-2026-111337",
+    "CVE-2026-111340",
+    "CVE-2026-111341",
+    "CVE-2026-111342",
+    "CVE-2026-120860",
+    "CVE-2026-120861",
+    "CVE-2026-120862",
+    "CVE-2026-120863",
+    "CVE-2026-120864",
+    "CVE-2026-120865",
+    "CVE-2026-120867",
+    "CVE-2026-120868"
+   ],
+   "cvss": 9.5,
+   "published": "2026-11-13T00:20:09+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107407",
+   "pts": [
+    "同日公布 23 個漏洞，最高 CVSS 9.5。",
+    "Multiple Memory overflow vulnerabilities can lead to unpredictable or erroneous behavior and Denial of Service in Citrix NetScaler ADC and C"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:e547abdd5049",
    "kind": "news",
    "title": "駭客濫用AI代理滲透測試平臺AntiFox，發動AWS雲端憑證竊取攻擊",
@@ -1654,6 +1809,65 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-106140",
+   "kind": "cve",
+   "title": "Telerik 反序列化漏洞",
+   "sub": "CVE-2026-106140 · CVSS 7.3",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-106140"
+   ],
+   "cvss": 7.3,
+   "published": "2026-11-12T10:17:26+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106140",
+   "pts": [
+    "Progress Telerik Reporting 20.3.26.1110 以前版本含反序列化漏洞，**可執行任意程式碼**。",
+    "尚未遭利用。低權限本機攻擊者可在 .NET Framework 報表設計器執行特定編輯時觸發（CVSS 7.3）。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:Synology:2026-11-12",
+   "kind": "group",
+   "title": "Synology 多個高風險漏洞",
+   "sub": "8 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [
+    "CVE-2026-13672",
+    "CVE-2026-18596",
+    "CVE-2026-18792",
+    "CVE-2026-19048",
+    "CVE-2026-74857",
+    "CVE-2026-76954",
+    "CVE-2026-81584",
+    "CVE-2026-85101"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-12T04:17:18+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13672",
+   "pts": [
+    "同日公布 8 個漏洞，最高 CVSS 9.8。",
+    "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskStation Manager (DSM) be"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:5e66cb727e8f",
    "kind": "news",
    "title": "航運巨擘馬士基證實資料外洩，傳遭勒索組織WhiteArmor索討500萬美元",
@@ -1792,25 +2006,101 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-126181",
-   "kind": "cve",
-   "title": "Fortinet 漏洞 CVE-2026-126181",
-   "sub": "CVE-2026-126181 · CVSS 8.0",
+   "id": "grp:Chrome:2026-11-12",
+   "kind": "group",
+   "title": "Chrome 釋放後使用漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-126919",
+    "CVE-2026-126921"
+   ],
+   "cvss": 8.8,
+   "published": "2026-11-11T23:17:22+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126919",
+   "pts": [
+    "影響 157.0.8103.78 之前 Chrome（BrowserTag、Accessibility），**可於沙盒執行任意程式碼**。",
+    "尚未傳出遭利用，遠端攻擊者需誘使目標瀏覽特製 HTML 頁面即可觸發。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-65949",
+   "kind": "cve",
+   "title": "Windows 命令注入漏洞",
+   "sub": "CVE-2026-65949 · CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-65949"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-11T22:17:27+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65949",
+   "pts": [
+    "影響 Lenovo XClarity Integrator 5.1.1 與 5.2.0，**可執行任意 PowerShell 命令**。",
+    "適用 Windows Admin Center，尚未傳出遭利用，需已驗證遠端攻擊者提交特製主機名稱。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:Fortinet:2026-11-12",
+   "kind": "group",
+   "title": "Fortinet 多個高風險漏洞",
+   "sub": "23 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
     "Fortinet"
    ],
    "cves": [
-    "CVE-2026-126181"
+    "CVE-2026-121528",
+    "CVE-2026-126144",
+    "CVE-2026-126147",
+    "CVE-2026-126148",
+    "CVE-2026-126150",
+    "CVE-2026-126155",
+    "CVE-2026-126156",
+    "CVE-2026-126157",
+    "CVE-2026-126160",
+    "CVE-2026-126162",
+    "CVE-2026-126163",
+    "CVE-2026-126164",
+    "CVE-2026-126170",
+    "CVE-2026-126175",
+    "CVE-2026-126176",
+    "CVE-2026-126177",
+    "CVE-2026-126180",
+    "CVE-2026-126181",
+    "CVE-2026-126217",
+    "CVE-2026-126229",
+    "CVE-2026-126240",
+    "CVE-2026-126257",
+    "CVE-2026-126259"
    ],
-   "cvss": 8.0,
-   "published": "2026-11-11T22:17:16+00:00",
+   "cvss": 9.8,
+   "published": "2026-11-11T22:17:11+00:00",
    "first_seen": "2026-11-16T11:22:42+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126181",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
+    "同日公布 23 個漏洞，最高 CVSS 9.8。",
     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7"
    ],
    "fix": "",
@@ -2116,6 +2406,41 @@
    "ai": true
   },
   {
+   "id": "grp:Go:2026-11-11",
+   "kind": "group",
+   "title": "Go 語言 多個高風險漏洞",
+   "sub": "10 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Go"
+   ],
+   "cves": [
+    "CVE-2026-97033",
+    "CVE-2026-97034",
+    "CVE-2026-97036",
+    "CVE-2026-97037",
+    "CVE-2026-97038",
+    "CVE-2026-97039",
+    "CVE-2026-97040",
+    "CVE-2026-97041",
+    "CVE-2026-97042",
+    "CVE-2026-97043"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-11T05:19:57+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
+   "pts": [
+    "同日公布 10 個漏洞，最高 CVSS 9.8。",
+    "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When l"
+   ],
+   "fix": "原文：\"cmd/compile\" and \"cmd/go\" now properly handle backslash-escaped quotes and unquote \"//go:cgo_*\" pragma strings with strconv.Unquote, and the slice bounds check in processCgoOut",
+   "ai": false
+  },
+  {
    "id": "tw:604ba2b9c99b",
    "kind": "news",
    "title": "俄羅斯駭客入侵羅馬尼亞政府Exchange伺服器，意圖竊取北約及歐盟相關郵件",
@@ -2208,6 +2533,33 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-126129",
+   "kind": "cve",
+   "title": "Auth0 登出狀態驗證漏洞",
+   "sub": "CVE-2026-126129 · CVSS 7.5",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "ASP.NET",
+    ".NET"
+   ],
+   "cves": [
+    "CVE-2026-126129"
+   ],
+   "cvss": 7.5,
+   "published": "2026-11-10T22:18:31+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126129",
+   "pts": [
+    "Auth0 ASP.NET Core Authentication SDK 誤判登出狀態，**已登出工作階段仍可存取受保護端點**。",
+    "問題出於 OIDC Back-Channel Logout 狀態判斷，目前尚未遭利用（CVSS 7.5）。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "grp:Windows Server:2026-11-11",
    "kind": "group",
    "title": "Audition 提權與執行漏洞",
@@ -2243,6 +2595,31 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-102166",
+   "kind": "cve",
+   "title": "Cisco 漏洞 CVE-2026-102166",
+   "sub": "CVE-2026-102166 · CVSS 9.4",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-102166"
+   ],
+   "cvss": 9.4,
+   "published": "2026-11-10T20:17:21+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102166",
+   "pts": [
+    "Arista C-260 and C-250 access points ship with fleet-wide static cryptographic keys used for firmware image verification and SSLP authentica"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "grp:Fortinet:2026-11-11",
    "kind": "group",
    "title": "Fortinet 遠端執行漏洞",
@@ -2264,8 +2641,34 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61625",
    "pts": [
-    "影響 FortiClient、FortiSandbox、FortiAnalyzer 等，**可致遠端執行程式碼**與 XSS。",
-    "CVSS 最高 9.6，未授權遠端攻擊者即可利用 FortiClient 漏洞；目前尚未傳出遭利用。"
+    "同日公布 3 個漏洞，最高 CVSS 9.6。",
+    "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientW"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-95691",
+   "kind": "cve",
+   "title": "OpenSSL 釋放後使用漏洞",
+   "sub": "CVE-2026-95691 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-95691"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-10T19:21:39+00:00",
+   "first_seen": "2026-11-16T22:09:24+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95691",
+   "pts": [
+    "影響 OpenSSL QUIC 用戶端，處理重傳 CRYPTO 框架發生釋放後使用讀取，**可致阻斷服務或記憶體洩漏**。",
+    "尚未傳出遭利用，需透過惡意 QUIC 伺服器觸發，FIPS 模組不受影響。"
    ],
    "fix": "",
    "ai": true
@@ -2322,43 +2725,46 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121653",
    "pts": [
-    "影響 Ivanti Endpoint Manager 2024 SU8 前版本，**可致未驗證遠端執行程式碼**。",
-    "另 Cloud Services Application 5.0.8 缺驗證可增刪信任憑證；CVSS 9.8，尚未遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Apache:2026-11-11",
    "kind": "group",
    "title": "Apache 內嵌伺服器漏洞",
-   "sub": "7 個 CVE",
-   "sev": "high",
+   "sub": "10 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
     "Apache"
    ],
    "cves": [
+    "CVE-2026-111240",
     "CVE-2026-111250",
     "CVE-2026-111256",
+    "CVE-2026-111259",
     "CVE-2026-86531",
     "CVE-2026-97870",
     "CVE-2026-97880",
     "CVE-2026-97881",
-    "CVE-2026-97888"
+    "CVE-2026-97888",
+    "CVE-2026-97890"
    ],
-   "cvss": null,
+   "cvss": 9.8,
    "published": "2026-11-10T16:17:15+00:00",
    "first_seen": "2026-11-14T06:31:50+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111250",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111240",
    "pts": [
-    "Apache 內嵌 OpenEJB HTTP 伺服器存在多項漏洞，**可讓遠端未經驗證攻擊者繞過驗證、讀取任意檔案或引發阻斷服務**。",
-    "目前尚未遭利用，僅影響啟用該內嵌伺服器及特定驗證或端點設定的部署環境。"
+    "同日公布 10 個漏洞，最高 CVSS 9.8。",
+    "The embedded OpenEJB HTTP server reports every request as authenticated when an application requests authentication programmatically. A remo"
    ],
-   "fix": "建議封鎖來自未受信任用戶端對內嵌 OpenEJB HTTP 伺服器的網路存取。",
-   "ai": true
+   "fix": "升級至 10.3.0、11.0.0-M2 以上（依原文擷取）",
+   "ai": false
   },
   {
    "id": "tw:362b64b667d4",
@@ -8265,10 +8671,10 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-109618",
-   "kind": "cve",
-   "title": "PHP 遠端執行程式碼漏洞",
-   "sub": "CVE-2026-109618 · CVSS 9.2",
+   "id": "grp:Palo Alto:2026-10-21",
+   "kind": "group",
+   "title": "Palo Alto 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -8277,7 +8683,8 @@
     "PHP"
    ],
    "cves": [
-    "CVE-2026-109618"
+    "CVE-2026-109618",
+    "CVE-2026-109619"
    ],
    "cvss": 9.2,
    "published": "2026-10-21T14:17:09+00:00",
@@ -8285,18 +8692,18 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響 Palo Alto、PHP。PHP 處理記憶體不足錯誤時未初始化請求記憶體，清理時讀取**可導致遠端執行程式碼**。",
-    "CVSS 9.2，發布於 2026-10-21。多種記憶體不足策略可穩定觸發此條件；目前尚未遭利用，亦未被勒索軟體利用。"
+    "同日公布 2 個漏洞，最高 CVSS 9.2。",
+    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Oracle:2026-10-21",
    "kind": "group",
    "title": "Oracle EBS 入侵漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 8.8",
-   "sev": "high",
+   "sub": "12 個 CVE · 最高 CVSS 9.1",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -8305,19 +8712,28 @@
    "cves": [
     "CVE-2026-101534",
     "CVE-2026-101542",
-    "CVE-2026-101567"
+    "CVE-2026-101567",
+    "CVE-2026-101590",
+    "CVE-2026-101634",
+    "CVE-2026-101635",
+    "CVE-2026-101653",
+    "CVE-2026-101654",
+    "CVE-2026-101655",
+    "CVE-2026-101656",
+    "CVE-2026-101664",
+    "CVE-2026-101665"
    ],
-   "cvss": 8.8,
+   "cvss": 9.1,
    "published": "2026-10-20T22:18:02+00:00",
    "first_seen": "2026-11-14T06:31:50+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101534",
    "pts": [
-    "影響 Oracle E-Business Suite 12.2.3-12.2.15，**低權限攻擊者可經 HTTP 網路危害系統**。",
-    "目前尚未遭利用。漏洞易於利用，影響 Oracle Capacity、Cost Management 與 EDI Gateway 元件。"
+    "同日公布 12 個漏洞，最高 CVSS 9.1。",
+    "Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations). Supported versions that are affect"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "CVE-2026-98432",
