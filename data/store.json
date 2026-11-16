@@ -23,17 +23,227 @@
     "desc": "目前尚未遭利用，CVSS 8.6；涉及與 Go、Python、Node.js 與 Java 解析器差異，以及回應標頭區分大小寫。"
    },
    {
-    "title": "Fortinet 遠端執行漏洞",
-    "desc": "CVSS 最高 9.6，未授權遠端攻擊者即可利用 FortiClient 漏洞；目前尚未傳出遭利用。"
+    "title": "Windows Server：Windows零時差漏洞SignDrop曝光，微軟",
+    "desc": "微軟原本為防止Windows日誌檔案遭惡意利用而導入的安全功能，如今卻被發現可能成為攻擊者提升權限的途徑。資安研究人員Nightmare Eclipse於11月10日公開Windo"
    },
    {
-    "title": "Chrome 遠端執行漏洞",
-    "desc": "CVSS 最高 9.8，部分漏洞無須互動或透過惡意 HTML 即可突破沙盒；目前尚未傳出遭利用。"
+    "title": "Fortinet 遠端執行漏洞",
+    "desc": "CVSS 最高 9.6，未授權遠端攻擊者即可利用 FortiClient 漏洞；目前尚未傳出遭利用。"
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:43fcc44e8b73",
+   "kind": "news",
+   "title": "韓國企業協作平臺Dooray!遭駭恐波及多家企業，已證實部分客戶資料外洩，緊急停用API服務",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T02:46:55+00:00",
+   "first_seen": "2026-11-16T02:46:59+00:00",
+   "updated": "2026-11-16T02:46:59+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180513",
+   "pts": [
+    "韓國企業協作服務供應商NHN Dooray傳出資安事件，該公司11月13日公告發現外部人士嘗試存取使用者帳號，緊急停用服務API及管理員API，隔日進一步證實，部分客戶帳號遭到未經授權存取，導致專案文件、即時通訊、行事曆等業務資料，以及客戶企業員工的個人資料外洩。 NHN Dooray是韓國NHN集"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "韓國企業協作平臺Dooray!遭駭恐波及多家企業，已證實部分客戶資料外洩，緊急停用API服務",
+    "desc": "韓國企業協作服務供應商NHN Dooray傳出資安事件，該公司11月13日公告發現外部人士嘗試存取使用者帳號，緊急停用服務API及管理員API，隔日進一步證實，部分客戶帳號遭到未經授權存取，導致專案文件、即時通訊、行事曆等業務資料，以及客戶企業員工的個人資料外洩。 NHN Dooray是韓國NHN集團旗下企業，提供名為Dooray!的雲端協作平臺，整合專案管理、檔案儲存、即時通訊及行事曆等功能，服務對象涵蓋民間企業及公共部門。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:69580897c1d6",
+   "kind": "news",
+   "title": "Mozilla發布Firefox 160改版，修補99個安全漏洞，涵蓋沙箱逃逸與權限提升",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T02:46:55+00:00",
+   "first_seen": "2026-11-16T02:47:08+00:00",
+   "updated": "2026-11-16T02:47:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180514",
+   "pts": [
+    "11月10日Mozilla發布Firefox 160，總計修補99個安全漏洞，依影響程度區分，57個有高風險、24個有中度風險，以及18個有低風險。此次修補範圍涵蓋圖形處理、DOM、JavaScript引擎、網路、音訊與視訊等多個核心元件，呼籲用戶儘速更新因應。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Mozilla發布Firefox 160改版，修補99個安全漏洞，涵蓋沙箱逃逸與權限提升",
+    "desc": "11月10日Mozilla發布Firefox 160，總計修補99個安全漏洞，依影響程度區分，57個有高風險、24個有中度風險，以及18個有低風險。此次修補範圍涵蓋圖形處理、DOM、JavaScript引擎、網路、音訊與視訊等多個核心元件，呼籲用戶儘速更新因應。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e284ef92f612",
+   "kind": "news",
+   "title": "長榮物流資安事故調查結果出爐，員工個資及營業資料外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T02:46:55+00:00",
+   "first_seen": "2026-11-16T02:47:34+00:00",
+   "updated": "2026-11-16T02:47:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180512",
+   "pts": [
+    "物流及貨運服務公司榮運（2607）於11月13日晚間，針對子公司長榮物流的資安事故再度股市公開資訊觀測站發布重大訊息，表示經外部資安公司技術專家進一步鑑識調查後，確"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "長榮物流資安事故調查結果出爐，員工個資及營業資料外洩",
+    "desc": "物流及貨運服務公司榮運（2607）於11月13日晚間，針對子公司長榮物流的資安事故再度股市公開資訊觀測站發布重大訊息，表示經外部資安公司技術專家進一步鑑識調查後，確",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:263501a7ae7a",
+   "kind": "news",
+   "title": "FBI警告駭客利用AI工具ARTEX加速入侵，部分事件不到3小時取得系統高權限",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T02:46:55+00:00",
+   "first_seen": "2026-11-16T02:47:46+00:00",
+   "updated": "2026-11-16T02:47:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180508",
+   "pts": [
+    "駭客利用AI滲透測試工具ARTEX加快入侵速度，部分攻擊事件從鎖定目標到取得受害系統的高權限，耗時不到3小時。美國聯邦調查局（FBI）11月13日發布資安警示，說明不同駭客組織如何利用這套開源工具，自動尋找系統弱點、利用漏洞入侵企業，甚至竊取資料。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "FBI警告駭客利用AI工具ARTEX加速入侵，部分事件不到3小時取得系統高權限",
+    "desc": "駭客利用AI滲透測試工具ARTEX加快入侵速度，部分攻擊事件從鎖定目標到取得受害系統的高權限，耗時不到3小時。美國聯邦調查局（FBI）11月13日發布資安警示，說明不同駭客組織如何利用這套開源工具，自動尋找系統弱點、利用漏洞入侵企業，甚至竊取資料。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:478495b4e2e5",
+   "kind": "news",
+   "title": "Windows零時差漏洞SignDrop曝光，微軟CLFS防護機制反遭利用提升權限",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T02:46:55+00:00",
+   "first_seen": "2026-11-16T02:47:52+00:00",
+   "updated": "2026-11-16T02:47:52+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180506",
+   "pts": [
+    "微軟原本為防止Windows日誌檔案遭惡意利用而導入的安全功能，如今卻被發現可能成為攻擊者提升權限的途徑。資安研究人員Nightmare Eclipse於11月10日公開Windows零時差漏洞SignDrop，並釋出概念驗證（PoC）程式碼。攻擊者若已能在目標電腦以一般使用者權限執行程式碼，就可能"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Windows零時差漏洞SignDrop曝光，微軟CLFS防護機制反遭利用提升權限",
+    "desc": "微軟原本為防止Windows日誌檔案遭惡意利用而導入的安全功能，如今卻被發現可能成為攻擊者提升權限的途徑。資安研究人員Nightmare Eclipse於11月10日公開Windows零時差漏洞SignDrop，並釋出概念驗證（PoC）程式碼。攻擊者若已能在目標電腦以一般使用者權限執行程式碼，就可能利用這項漏洞取得Windows本機系統帳戶SYSTEM的高權限。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:fdbd96486710",
+   "kind": "news",
+   "title": "Red Hat Quay爆兩項重大漏洞，攻擊者恐植入不會到期的金鑰、竄改私人容器映像檔",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T02:46:55+00:00",
+   "first_seen": "2026-11-16T02:47:58+00:00",
+   "updated": "2026-11-16T02:47:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180505",
+   "pts": [
+    "企業開源軟體業者Red Hat（紅帽）近日公布容器映像檔儲存庫Red Hat Quay兩項重大資安漏洞，攻擊者可能利用漏洞繞過存取權限限制，讀取或覆寫其他使用者的私人容器映像檔。其中一項漏洞還可能讓攻擊者植入不會到期的簽章金鑰，長期保有未經授權的存取能力。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Red Hat Quay爆兩項重大漏洞，攻擊者恐植入不會到期的金鑰、竄改私人容器映像檔",
+    "desc": "企業開源軟體業者Red Hat（紅帽）近日公布容器映像檔儲存庫Red Hat Quay兩項重大資安漏洞，攻擊者可能利用漏洞繞過存取權限限制，讀取或覆寫其他使用者的私人容器映像檔。其中一項漏洞還可能讓攻擊者植入不會到期的簽章金鑰，長期保有未經授權的存取能力。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:41762b49d266",
+   "kind": "news",
+   "title": "駭客利用逾4,800個遭入侵GitHub帳號，鎖定6萬個儲存庫竊取雲端憑證",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T02:46:55+00:00",
+   "first_seen": "2026-11-16T02:48:04+00:00",
+   "updated": "2026-11-16T02:48:04+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180498",
+   "pts": [
+    "資安業者Aikido Security於11月12日揭露代號為wfx-loot的大規模GitHub憑證竊取攻擊。這波攻擊自11月10日開始，駭客利用遭竊的GitHub存取權杖，透過4,837個遭入侵帳號，探測61,764個程式碼儲存庫的寫入權限。根據Aikido統計，至少1,835個儲存庫已執行惡意"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "駭客利用逾4,800個遭入侵GitHub帳號，鎖定6萬個儲存庫竊取雲端憑證",
+    "desc": "資安業者Aikido Security於11月12日揭露代號為wfx-loot的大規模GitHub憑證竊取攻擊。這波攻擊自11月10日開始，駭客利用遭竊的GitHub存取權杖，透過4,837個遭入侵帳號，探測61,764個程式碼儲存庫的寫入權限。根據Aikido統計，至少1,835個儲存庫已執行惡意程式，攻擊者還會在竊取憑證後迅速清除紀錄。",
+    "summarize": true
+   }
+  },
   {
    "id": "tw:090455ab4d63",
    "kind": "news",
@@ -9954,10 +10164,23 @@
   "CVE-2026-125733": [],
   "CVE-2026-125765": [],
   "CVE-2026-125793": [],
-  "CVE-2026-128893": []
+  "CVE-2026-128893": [],
+  "CVE-2026-129493": [],
+  "CVE-2026-129494": [],
+  "CVE-2026-129540": [],
+  "CVE-2026-129091": [],
+  "CVE-2026-125823": [],
+  "CVE-2026-125760": [],
+  "CVE-2026-125798": [],
+  "CVE-2026-125804": [],
+  "CVE-2026-125817": [],
+  "CVE-2026-125818": [],
+  "CVE-2026-125822": [],
+  "CVE-2026-125830": [],
+  "CVE-2026-129539": []
  },
- "nvd_last": "2026-11-15T17:43:00+00:00",
- "kev_last": "2026-11-15T17:43:00+00:00",
+ "nvd_last": "2026-11-16T02:44:26+00:00",
+ "kev_last": "2026-11-16T02:44:26+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
@@ -9968,6 +10191,9 @@
   "tw:497bd740ca48",
   "tw:9a927daa96e3",
   "tw:b28e812035c9",
-  "tw:ee24a0060a6d"
+  "tw:ee24a0060a6d",
+  "tw:e60b853aba3f",
+  "tw:9558c907dda2",
+  "tw:0cb2a2b64e2e"
  ]
 }
