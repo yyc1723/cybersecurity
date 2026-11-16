@@ -15,6 +15,10 @@
     "desc": "尚未遭利用（CVSS 9.3），能連線至 Jumis SQL Server 的攻擊者皆可離線算出密碼並讀寫所有會計資料庫。"
    },
    {
+    "title": "Windows Server：Windows零時差漏洞SignDrop曝光，微軟",
+    "desc": "微軟原本為防止Windows日誌檔案遭惡意利用而導入的安全功能，如今卻被發現可能成為攻擊者提升權限的途徑。資安研究人員Nightmare Eclipse於11月10日公開Windo"
+   },
+   {
     "title": "Windows Server：Audition 提權與執行漏洞",
     "desc": "目前尚未遭利用，CVSS 8.8；低權限攻擊者可免互動提權，執行程式碼須誘使開啟惡意檔案。"
    },
@@ -23,17 +27,523 @@
     "desc": "目前尚未遭利用，CVSS 8.6；涉及與 Go、Python、Node.js 與 Java 解析器差異，以及回應標頭區分大小寫。"
    },
    {
-    "title": "Windows Server：Windows零時差漏洞SignDrop曝光，微軟",
-    "desc": "微軟原本為防止Windows日誌檔案遭惡意利用而導入的安全功能，如今卻被發現可能成為攻擊者提升權限的途徑。資安研究人員Nightmare Eclipse於11月10日公開Windo"
-   },
-   {
-    "title": "Fortinet 遠端執行漏洞",
-    "desc": "CVSS 最高 9.6，未授權遠端攻擊者即可利用 FortiClient 漏洞；目前尚未傳出遭利用。"
+    "title": "Windows Server：【資安日報】11月16日，Check Point閘",
+    "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:0997facc1aee",
+   "kind": "news",
+   "title": "韓國客服委外業者MetaM遭駭，加密貨幣交易所Coinone受波及",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:22:51+00:00",
+   "updated": "2026-11-16T11:22:51+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180545",
+   "pts": [
+    "韓國近期接連傳出供應商資安事件，當地承攬客服的廠商MetaM也已證實遭駭，導致部分客戶的客服系統遭外部人士非法存取，涉及電話號碼及客服對話紀錄等資訊，目前仍在調查實際影響範圍。值得關注的是，已有企業客戶發布個資外洩公告，其中加密貨幣交易所Coinone已確認受MetaM事件影響，二手交易平臺Bunj"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "韓國客服委外業者MetaM遭駭，加密貨幣交易所Coinone受波及",
+    "desc": "韓國近期接連傳出供應商資安事件，當地承攬客服的廠商MetaM也已證實遭駭，導致部分客戶的客服系統遭外部人士非法存取，涉及電話號碼及客服對話紀錄等資訊，目前仍在調查實際影響範圍。值得關注的是，已有企業客戶發布個資外洩公告，其中加密貨幣交易所Coinone已確認受MetaM事件影響，二手交易平臺Bunjang也公告其委外營運的客服系統遭非法存取。至於這次事件會有多少企業客戶受影響，仍有待進一步釐清。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:3b3d90d2ac14",
+   "kind": "news",
+   "title": "蠕蟲SCKit利用ScreenConnect第三方延伸套件漏洞散布，近500臺主機被感染",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:22:57+00:00",
+   "updated": "2026-11-16T11:22:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180544",
+   "pts": [
+    "軟體公司ConnectWise於世界協調時間（UTC）11月11日晚間22時45分指出，他們獲報有ScreenConnect的合作夥伴帳號遭未經授權存取，且客戶環境被植入未經授權的遠端存取軟體。根據ConnectWise初步調查結果，有5個第三方的ScreenConnect延伸套件受到影響，約有40"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "蠕蟲SCKit利用ScreenConnect第三方延伸套件漏洞散布，近500臺主機被感染",
+    "desc": "軟體公司ConnectWise於世界協調時間（UTC）11月11日晚間22時45分指出，他們獲報有ScreenConnect的合作夥伴帳號遭未經授權存取，且客戶環境被植入未經授權的遠端存取軟體。根據ConnectWise初步調查結果，有5個第三方的ScreenConnect延伸套件受到影響，約有400個合作夥伴建置的環境含有這些套件而曝險，為了預防該公司已將這些套件停用。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:0813a1355d4a",
+   "kind": "news",
+   "title": "調查局破獲BossAI駭侵消防系統案，3嫌竊取OHCA資訊轉售殯葬業",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:23:06+00:00",
+   "updated": "2026-11-16T11:23:06+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180536",
+   "pts": [
+    "Acronis在11月初揭露名為BossAI的AI自動化攻擊系統，指出攻擊者利用12個AI代理程式鎖定臺灣、墨西哥、泰國等11個國家的數百個組織，其中臺灣緊急應變服務也是主要目標，並研判攻擊者疑似位於花蓮。今日（11月16日）法務部調查局宣布破獲駭侵消防救護系統案件，查出3名駭客涉案，其中2人已遭法"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "調查局破獲BossAI駭侵消防系統案，3嫌竊取OHCA資訊轉售殯葬業",
+    "desc": "Acronis在11月初揭露名為BossAI的AI自動化攻擊系統，指出攻擊者利用12個AI代理程式鎖定臺灣、墨西哥、泰國等11個國家的數百個組織，其中臺灣緊急應變服務也是主要目標，並研判攻擊者疑似位於花蓮。今日（11月16日）法務部調查局宣布破獲駭侵消防救護系統案件，查出3名駭客涉案，其中2人已遭法院裁准羈押。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:a494a6eec184",
+   "kind": "news",
+   "title": "AI代理網攻波及臺灣十餘家企業，逾百萬份個資受影響",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:23:12+00:00",
+   "updated": "2026-11-16T11:23:12+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180535",
+   "pts": [
+    "數位發展部（以下簡稱數發部）於日前召開「因應國際AI網攻威脅，強化個資保護與防詐」記者會，說明近期國際及臺灣面臨的AI自動化網路攻擊情勢。 數位發展部部長林宜敬指出，境外駭客自今年7月起，便開始運用AI代理（AI Agent）工具攻擊我國政府機關；近期攻擊範圍進一步擴大至各行各業，包括網路商店與電商"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "AI代理網攻波及臺灣十餘家企業，逾百萬份個資受影響",
+    "desc": "數位發展部（以下簡稱數發部）於日前召開「因應國際AI網攻威脅，強化個資保護與防詐」記者會，說明近期國際及臺灣面臨的AI自動化網路攻擊情勢。 數位發展部部長林宜敬指出，境外駭客自今年7月起，便開始運用AI代理（AI Agent）工具攻擊我國政府機關；近期攻擊範圍進一步擴大至各行各業，包括網路商店與電商平臺。目前臺灣已有十餘家企業及網路平臺通報受害，受影響個資累計超過100萬份。數發部尚未發現信用卡等付款資訊外洩，但大量訂單與聯絡資料流入黑市，已衍生冒名詐騙的風險。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8cb7b521e3e5",
+   "kind": "news",
+   "title": "【資安日報】11月16日，Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛擬化平臺進行資料破壞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:23:18+00:00",
+   "updated": "2026-11-16T11:23:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180534",
+   "pts": [
+    "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Windows零時差漏洞SignDrop曝光，CLFS防護反遭利用提升權限"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月16日，Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛擬化平臺進行資料破壞",
+    "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Windows零時差漏洞SignDrop曝光，CLFS防護反遭利用提升權限",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d83acc634ee9",
+   "kind": "news",
+   "title": "國家級駭客組織SilentAir鎖定臺灣等十多個國家的手機用戶，濫用電信訊號攔截簡訊與通話",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:23:24+00:00",
+   "updated": "2026-11-16T11:23:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180533",
+   "pts": [
+    "鎖定全球電信產業的攻擊活動，最容易讓人想到的莫過於兩年前爆發的中國駭客Salt Typhoon大規模攻擊，當時有多家美國電信公司透露遇害，也傳出後續駭客的攻擊範圍擴及加拿大及歐洲。如今傳出有駭客組織同樣透過電信公司的網路環境犯案，而且，他們的主要目標就是臺灣。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "國家級駭客組織SilentAir鎖定臺灣等十多個國家的手機用戶，濫用電信訊號攔截簡訊與通話",
+    "desc": "鎖定全球電信產業的攻擊活動，最容易讓人想到的莫過於兩年前爆發的中國駭客Salt Typhoon大規模攻擊，當時有多家美國電信公司透露遇害，也傳出後續駭客的攻擊範圍擴及加拿大及歐洲。如今傳出有駭客組織同樣透過電信公司的網路環境犯案，而且，他們的主要目標就是臺灣。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b173ab62832a",
+   "kind": "news",
+   "title": "修補程式也可能成為攻擊線索，Google重訂漏洞揭露時程",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:23:30+00:00",
+   "updated": "2026-11-16T11:23:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180531",
+   "pts": [
+    "Google旗下漏洞研究團隊Project Zero宣布調整漏洞揭露政策，因應AI加速漏洞發現及利用，將逐步縮短通報廠商後的公開期限。新制目前為90天，2027年2月2日起改為60天，2028年1月3日起再縮至30天。期限屆滿後，無論廠商是否完成修補，研究團隊原則上都會公開漏洞技術細節。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "修補程式也可能成為攻擊線索，Google重訂漏洞揭露時程",
+    "desc": "Google旗下漏洞研究團隊Project Zero宣布調整漏洞揭露政策，因應AI加速漏洞發現及利用，將逐步縮短通報廠商後的公開期限。新制目前為90天，2027年2月2日起改為60天，2028年1月3日起再縮至30天。期限屆滿後，無論廠商是否完成修補，研究團隊原則上都會公開漏洞技術細節。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2bf56a59aa8e",
+   "kind": "news",
+   "title": "Zoom修補Windows版Workplace重大漏洞，未更新可能導致攻擊者遠端提升權限",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:23:36+00:00",
+   "updated": "2026-11-16T11:23:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180530",
+   "pts": [
+    "視訊會議與協作平臺業者Zoom於11月10日修補Windows版Workplace兩個遠端提升權限漏洞，兩者都可能導致未經身分驗證的攻擊者透過網路發動攻擊，在系統上提升權限。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Zoom修補Windows版Workplace重大漏洞，未更新可能導致攻擊者遠端提升權限",
+    "desc": "視訊會議與協作平臺業者Zoom於11月10日修補Windows版Workplace兩個遠端提升權限漏洞，兩者都可能導致未經身分驗證的攻擊者透過網路發動攻擊，在系統上提升權限。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8e3977da8cb5",
+   "kind": "news",
+   "title": "韓國企業協作平臺DaouOffice傳遭零時差漏洞攻擊，客戶共用帳號又遭暴力破解，至少3家金融業者受駭",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:23:45+00:00",
+   "updated": "2026-11-16T11:23:45+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180522",
+   "pts": [
+    "韓國企業協作平臺DaouOffice近期接連傳出不同類型的資安事件，服務供應商Daou Technology（다우기술）在11月先後發布兩則安全公告，分別說明產品存取控制漏洞遭利用的攻擊事故，以及企業共用帳號遭暴力破解的情況，強調兩起事故原因不同。值得注意的是，事件影響已陸續浮現，先前的存取控制漏洞"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "韓國企業協作平臺DaouOffice傳遭零時差漏洞攻擊，客戶共用帳號又遭暴力破解，至少3家金融業者受駭",
+    "desc": "韓國企業協作平臺DaouOffice近期接連傳出不同類型的資安事件，服務供應商Daou Technology（다우기술）在11月先後發布兩則安全公告，分別說明產品存取控制漏洞遭利用的攻擊事故，以及企業共用帳號遭暴力破解的情況，強調兩起事故原因不同。值得注意的是，事件影響已陸續浮現，先前的存取控制漏洞攻擊事件波及韓國加密貨幣交易所Bithumb及漢陽證券，後續的帳號暴力破解事件則涉及另一家加密貨幣交易所Flybit，3家金融業者均傳出客戶或員工個資外洩。 從事件揭露的時間來看，DaouOffice相關資安事故先後由受影響企業公布，服務供應商Daou Technology隨後才發布公開說明。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:70e9bca01c66",
+   "kind": "news",
+   "title": "CISA警告Check Point權限提升漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:23:51+00:00",
+   "updated": "2026-11-16T11:23:51+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180528",
+   "pts": [
+    "上週Check Point揭露鎖定旗下資安閘道的漏洞利用活動，過程中駭客使用零時差漏洞CVE-2026-123039提升權限，後續美國網路安全與基礎設施安全局（CISA）也針對漏洞遭到利用提出警告，呼籲各界提高警覺。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "CISA警告Check Point權限提升漏洞遭積極利用",
+    "desc": "上週Check Point揭露鎖定旗下資安閘道的漏洞利用活動，過程中駭客使用零時差漏洞CVE-2026-123039提升權限，後續美國網路安全與基礎設施安全局（CISA）也針對漏洞遭到利用提出警告，呼籲各界提高警覺。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:56c67a803a85",
+   "kind": "news",
+   "title": "MongoDB修補可能導致資料庫切換節點時當機的重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:24:43+00:00",
+   "updated": "2026-11-16T11:24:43+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180527",
+   "pts": [
+    "資料庫軟體業者MongoDB於11月10日修補重大漏洞CVE-2026-118383，CVSS嚴重性評分達9.5。該漏洞源自資料庫複製（Replication）元件，影響MongoDB複製集（replica set）伺服器，涵蓋4.4至9.0等分支版本，使用者應升級至已修補的4.4.32、5.0.3"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "MongoDB修補可能導致資料庫切換節點時當機的重大漏洞",
+    "desc": "資料庫軟體業者MongoDB於11月10日修補重大漏洞CVE-2026-118383，CVSS嚴重性評分達9.5。該漏洞源自資料庫複製（Replication）元件，影響MongoDB複製集（replica set）伺服器，涵蓋4.4至9.0等分支版本，使用者應升級至已修補的4.4.32、5.0.35、6.0.30、7.0.48、8.0.37、8.3.16及9.0.7等版本。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:7a9e16c66aa0",
+   "kind": "news",
+   "title": "Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛擬化平臺進行資料破壞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:25:34+00:00",
+   "updated": "2026-11-16T11:25:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180523",
+   "pts": [
+    "11月12日資安公司Check Point公布與修補權限提升漏洞CVE-2026-123039，同一天該公司的威脅研究團隊透露，此弱點已被用於自10月底出現的攻擊活動。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛擬化平臺進行資料破壞",
+    "desc": "11月12日資安公司Check Point公布與修補權限提升漏洞CVE-2026-123039，同一天該公司的威脅研究團隊透露，此弱點已被用於自10月底出現的攻擊活動。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-123039",
+   "kind": "cve",
+   "title": "Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛",
+   "sub": "CVE-2026-123039 · 尚未評分",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP"
+   ],
+   "cves": [
+    "CVE-2026-123039"
+   ],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:26:22+00:00",
+   "updated": "2026-11-16T11:26:22+00:00",
+   "src": "iThome 報導",
+   "url": "https://www.ithome.com.tw/news/180523",
+   "pts": [],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "name": "Check Point閘道設備遭PHP2Shell漏洞攻擊，駭客植入後門並透過虛擬化平臺進行資料破壞",
+    "desc": "",
+    "news": "11月12日資安公司Check Point公布與修補權限提升漏洞CVE-2026-123039，同一天該公司的威脅研究團隊透露，此弱點已被用於自10月底出現的攻擊活動。"
+   }
+  },
+  {
+   "id": "tw:9ba31c30c1ea",
+   "kind": "news",
+   "title": "Check Point修補已遭利用的Gaia OS高風險權限提升漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:26:25+00:00",
+   "updated": "2026-11-16T11:26:25+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180521",
+   "pts": [
+    "Check Point於11月12日發布資安公告，修補旗下Gaia OS高風險權限提升漏洞CVE-2026-123039，CVSS嚴重程度評為7.8分。Check Point表示，已觀察到攻擊者積極利用的現象，受影響客戶達數十家，呼籲管理人員儘速安裝修補程式。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Check Point修補已遭利用的Gaia OS高風險權限提升漏洞",
+    "desc": "Check Point於11月12日發布資安公告，修補旗下Gaia OS高風險權限提升漏洞CVE-2026-123039，CVSS嚴重程度評為7.8分。Check Point表示，已觀察到攻擊者積極利用的現象，受影響客戶達數十家，呼籲管理人員儘速安裝修補程式。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:7c6e161688de",
+   "kind": "news",
+   "title": "Uber因Fireworks AI事件，外洩數千司機證件資訊",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:26:32+00:00",
+   "updated": "2026-11-16T11:26:32+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180520",
+   "pts": [
+    "受到AI推論基礎架構Fireworks AI遭駭事件影響，Uber上週通報美國多州政府至少8,000名司機個資因此外洩。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Uber因Fireworks AI事件，外洩數千司機證件資訊",
+    "desc": "受到AI推論基礎架構Fireworks AI遭駭事件影響，Uber上週通報美國多州政府至少8,000名司機個資因此外洩。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4c23a569a7e8",
+   "kind": "news",
+   "title": "Cursor受Fireworks AI事件波及，惡意版Anthropic Claude擴充程式於Cursor市集上架",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:26:38+00:00",
+   "updated": "2026-11-16T11:26:38+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180519",
+   "pts": [
+    "AI程式碼撰寫平臺Cursor 11月13日公告，受到使用的Fireworks AI平臺被駭影響，導致自家外掛平臺上出現了惡意版的Anthropic Claude擴充程式，致使用戶受害。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Cursor受Fireworks AI事件波及，惡意版Anthropic Claude擴充程式於Cursor市集上架",
+    "desc": "AI程式碼撰寫平臺Cursor 11月13日公告，受到使用的Fireworks AI平臺被駭影響，導致自家外掛平臺上出現了惡意版的Anthropic Claude擴充程式，致使用戶受害。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5ad8ebef0411",
+   "kind": "news",
+   "title": "PostgreSQL修補52個漏洞，含存在22年的遠端程式碼執行漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-16T11:22:45+00:00",
+   "first_seen": "2026-11-16T11:26:44+00:00",
+   "updated": "2026-11-16T11:26:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180518",
+   "pts": [
+    "PostgreSQL資料庫全球開發小組（PostgreSQL Global Development Group）於11月12日發布多個分支版本的更新，涵蓋18.7、17.12、16.16、15.20及14.25等版本，共修補52個安全漏洞，其中最受矚目的是CVE-2026-6460，CVSS嚴重性達"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "PostgreSQL修補52個漏洞，含存在22年的遠端程式碼執行漏洞",
+    "desc": "PostgreSQL資料庫全球開發小組（PostgreSQL Global Development Group）於11月12日發布多個分支版本的更新，涵蓋18.7、17.12、16.16、15.20及14.25等版本，共修補52個安全漏洞，其中最受矚目的是CVE-2026-6460，CVSS嚴重性達8.8分，可追溯至2004年5月引進的功能更新，至今已存在22",
+    "summarize": true
+   }
+  },
   {
    "id": "tw:43fcc44e8b73",
    "kind": "news",
@@ -1386,6 +1896,39 @@
     "title": "Cloudflare研究新一代身分驗證技術，兼顧後量子安全與AI代理流量管理",
     "desc": "未來具備密碼學攻擊能力的量子電腦可能破解Privacy Pass目前使用的傳統密碼技術，讓攻擊者偽造權杖，進而繞過速率限制等安全控制。網路服務與資安業者Cloudflare近日說明，正研究具備後量子安全能力的新一代私密身分驗證技術MOLE。",
     "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-126181",
+   "kind": "cve",
+   "title": "Fortinet 漏洞 CVE-2026-126181",
+   "sub": "CVE-2026-126181 · CVSS 8.0",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Fortinet"
+   ],
+   "cves": [
+    "CVE-2026-126181"
+   ],
+   "cvss": 8.0,
+   "published": "2026-11-11T22:17:16+00:00",
+   "first_seen": "2026-11-16T11:22:42+00:00",
+   "updated": "2026-11-16T11:22:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126181",
+   "pts": [
+    "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow an adjacent-network authenticated attacker with user permission to join the FGFM configuration-sync mesh of the affected FortiGate deployment via the default pre-shared key.",
+    "refs": [
+     "https://fortiguard.fortinet.com/psirt/FG-IR-26-226"
+    ]
    }
   },
   {
@@ -10177,10 +10720,21 @@
   "CVE-2026-125818": [],
   "CVE-2026-125822": [],
   "CVE-2026-125830": [],
-  "CVE-2026-129539": []
+  "CVE-2026-129539": [],
+  "CVE-2026-82156": [],
+  "CVE-2026-129784": [],
+  "CVE-2026-97361": [],
+  "CVE-2026-105925": [],
+  "CVE-2026-129703": [],
+  "CVE-2026-102448": [],
+  "CVE-2026-124672": [],
+  "CVE-2026-63245": [],
+  "CVE-2026-129606": [],
+  "CVE-2026-97358": [],
+  "CVE-2026-6460": []
  },
- "nvd_last": "2026-11-16T02:44:26+00:00",
- "kev_last": "2026-11-16T02:44:26+00:00",
+ "nvd_last": "2026-11-16T11:21:22+00:00",
+ "kev_last": "2026-11-16T11:21:22+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
@@ -10194,6 +10748,10 @@
   "tw:ee24a0060a6d",
   "tw:e60b853aba3f",
   "tw:9558c907dda2",
-  "tw:0cb2a2b64e2e"
+  "tw:0cb2a2b64e2e",
+  "tw:b773442fb78f",
+  "tw:8e28aa2d972e",
+  "tw:4aeb404d1cdf",
+  "tw:bc754607bfc0"
  ]
 }
