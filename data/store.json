@@ -7,14 +7,6 @@
   "date": "2026-11-17",
   "items": [
    {
-    "title": "ASP.NET：WHMS 驗證繞過漏洞",
-    "desc": "CVSS 9.3，未經身分驗證的遠端攻擊者可偽造任意使用者權杖；目前尚未傳出遭利用。"
-   },
-   {
-    "title": "SQL Server：Jumis 預設憑證漏洞",
-    "desc": "尚未遭利用（CVSS 9.3），能連線至 Jumis SQL Server 的攻擊者皆可離線算出密碼並讀寫所有會計資料庫。"
-   },
-   {
     "title": "Windows Server：【資安日報】11月16日，Check Point閘",
     "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
    },
@@ -27,13 +19,361 @@
     "desc": "適用 Windows Admin Center，尚未傳出遭利用，需已驗證遠端攻擊者提交特製主機名稱。"
    },
    {
-    "title": "Windows Server：Audition 提權與執行漏洞",
-    "desc": "目前尚未遭利用，CVSS 8.8；低權限攻擊者可免互動提權，執行程式碼須誘使開啟惡意檔案。"
+    "title": "Citrix 多個高風險漏洞",
+    "desc": "Multiple Memory overflow vulnerabilities can lead to unpredictable or erroneous behavior a"
+   },
+   {
+    "title": "Citrix 漏洞 CVE-2026-120869",
+    "desc": "An unauthenticated attacker can bypass authentication controls to access restricted resour"
+   },
+   {
+    "title": "Synology 多個高風險漏洞",
+    "desc": "An improper neutralization of special elements used in an SQL command vulnerability in the"
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:880b7eae7d5a",
+   "kind": "news",
+   "title": "Tor匿名網路遭DDoS攻擊，官方緊急更新IPv6防禦機制",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:24+00:00",
+   "updated": "2026-11-17T14:32:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180572",
+   "pts": [
+    "Tor Project團隊緊急發布Tor 0.4.9.17安全更新，修補IPv6用戶端計數方式的漏洞，強化中繼節點的DoS防禦。官方證實，Tor網路正遭持續性的分散式阻斷服務（DDoS）攻擊，攻擊者大量建立通訊電路（circuit），造成中繼節點負載過重，已影響大多數中繼節點營運者。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Tor匿名網路遭DDoS攻擊，官方緊急更新IPv6防禦機制",
+    "desc": "Tor Project團隊緊急發布Tor 0.4.9.17安全更新，修補IPv6用戶端計數方式的漏洞，強化中繼節點的DoS防禦。官方證實，Tor網路正遭持續性的分散式阻斷服務（DDoS）攻擊，攻擊者大量建立通訊電路（circuit），造成中繼節點負載過重，已影響大多數中繼節點營運者。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:57ee5de1b8a1",
+   "kind": "news",
+   "title": "奇偶科技示警影像監控軟體已知漏洞遭利用，Huntress揭露13家組織的設備遭挖礦攻擊",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:24+00:00",
+   "updated": "2026-11-17T14:32:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180574",
+   "pts": [
+    "臺灣影像監控設備業者奇偶科技（GeoVision）旗下GV-VMS監控管理系統的已知漏洞遭到利用，攻擊者鎖定尚未安裝修補程式的系統，部署XMRig加密貨幣挖礦程式。資安業者Huntress發布調查報告，揭露近期攻擊者利用GeoVision攝影機軟體投放XMRig挖礦程式，相關攻擊活動涉及13家不同產"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "奇偶科技示警影像監控軟體已知漏洞遭利用，Huntress揭露13家組織的設備遭挖礦攻擊",
+    "desc": "臺灣影像監控設備業者奇偶科技（GeoVision）旗下GV-VMS監控管理系統的已知漏洞遭到利用，攻擊者鎖定尚未安裝修補程式的系統，部署XMRig加密貨幣挖礦程式。資安業者Huntress發布調查報告，揭露近期攻擊者利用GeoVision攝影機軟體投放XMRig挖礦程式，相關攻擊活動涉及13家不同產業的組織。奇偶科技也在此前發布資安通告，示警旗下產品已知漏洞遭利用並被用於部署XMRig的攻擊活動，呼籲仍使用舊版軟體的用戶儘速更新，並提供受影響系統的隔離、惡意程式清除及後續檢查等應變指引。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:f35b06d764c2",
+   "kind": "news",
+   "title": "Apache Axis重大漏洞遭到利用，攻擊者藉此滲透Atlassian Confluence與N-able N-central",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:24+00:00",
+   "updated": "2026-11-17T14:32:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180573",
+   "pts": [
+    "資安公司Rapid7於11月16日揭露，SOAP網頁服務框架Apache Axis重大遠端程式碼執行（RCE）漏洞CVE-2026-90436已遭駭客實際利用"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Apache Axis重大漏洞遭到利用，攻擊者藉此滲透Atlassian Confluence與N-able N-central",
+    "desc": "資安公司Rapid7於11月16日揭露，SOAP網頁服務框架Apache Axis重大遠端程式碼執行（RCE）漏洞CVE-2026-90436已遭駭客實際利用",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:3c7fc3ff3781",
+   "kind": "news",
+   "title": "Firefox版uBlock Origin修補XSS漏洞，惡意規則可跨網站執行JavaScript",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:30+00:00",
+   "updated": "2026-11-17T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180570",
+   "pts": [
+    "廣告阻擋擴充套件uBlock Origin修補一項高風險漏洞，攻擊者可利用Firefox版的元素選取器，誘使使用者新增惡意過濾規則，進而在其他網站執行JavaScript，形成通用跨站指令碼攻擊（Universal XSS）。開發者公開安全公告，確認1.75.2及更早版本受到影響，1.75.4已完成"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Firefox版uBlock Origin修補XSS漏洞，惡意規則可跨網站執行JavaScript",
+    "desc": "廣告阻擋擴充套件uBlock Origin修補一項高風險漏洞，攻擊者可利用Firefox版的元素選取器，誘使使用者新增惡意過濾規則，進而在其他網站執行JavaScript，形成通用跨站指令碼攻擊（Universal XSS）。開發者公開安全公告，確認1.75.2及更早版本受到影響，1.75.4已完成修補。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:f1b4b55ae961",
+   "kind": "news",
+   "title": "N-central零時差漏洞4EverAble2Shell遭到利用，攻擊者試圖從事挖礦活動",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:30+00:00",
+   "updated": "2026-11-17T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180571",
+   "pts": [
+    "資安研究員Sean Bales近日公布N-central零時差漏洞4EverAble2Shell，有資安公司發現，在相關資料公布不久後已出現利用活動，攻擊者將其用於在N-central伺服器植入門羅幣挖礦程式。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "N-central零時差漏洞4EverAble2Shell遭到利用，攻擊者試圖從事挖礦活動",
+    "desc": "資安研究員Sean Bales近日公布N-central零時差漏洞4EverAble2Shell，有資安公司發現，在相關資料公布不久後已出現利用活動，攻擊者將其用於在N-central伺服器植入門羅幣挖礦程式。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:27e2167116c8",
+   "kind": "news",
+   "title": "德國研究揭露AI開發平臺Lovable用戶開發的應用程式，至少7千多個資料庫存在權限設定不當問題",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:30+00:00",
+   "updated": "2026-11-17T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180567",
+   "pts": [
+    "許多用戶透過主打無程式碼AI應用程式開發的Lovable，以自然語言描述需求，就能快速建立網站及網頁應用程式，但降低開發門檻的同時，也不能忽略既有的基本資安要求，尤其是資料庫存取權限設定。近日，德國一項研究提出警告，指出以Lovable專案開發的部分應用程式存在資料存取控制問題，讓未登入的外部人士也"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "德國研究揭露AI開發平臺Lovable用戶開發的應用程式，至少7千多個資料庫存在權限設定不當問題",
+    "desc": "許多用戶透過主打無程式碼AI應用程式開發的Lovable，以自然語言描述需求，就能快速建立網站及網頁應用程式，但降低開發門檻的同時，也不能忽略既有的基本資安要求，尤其是資料庫存取權限設定。近日，德國一項研究提出警告，指出以Lovable專案開發的部分應用程式存在資料存取控制問題，讓未登入的外部人士也能讀取原本不應公開的資料。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5f6e74a6f447",
+   "kind": "news",
+   "title": "研究人員揭露N-central零時差漏洞4EverAble2Shell、Agent2Shell",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:30+00:00",
+   "updated": "2026-11-17T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180569",
+   "pts": [
+    "日前資安研究員Sean Bales公布33個N-central零時差漏洞Able2Shell，並指出部分可串聯形成完整攻擊鏈，導致N-able一度宣布緊急關閉全球代管的N-central服務，後續該公司發布緊急更新2026.4 HF2版修補部分弱點。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "研究人員揭露N-central零時差漏洞4EverAble2Shell、Agent2Shell",
+    "desc": "日前資安研究員Sean Bales公布33個N-central零時差漏洞Able2Shell，並指出部分可串聯形成完整攻擊鏈，導致N-able一度宣布緊急關閉全球代管的N-central服務，後續該公司發布緊急更新2026.4 HF2版修補部分弱點。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c55894522ef9",
+   "kind": "news",
+   "title": "【資安日報】11月17日，國家級駭客組織SilentAir鎖定臺灣等十多個國家的手機用戶，濫用電信訊號攔截簡訊與通話",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:30+00:00",
+   "updated": "2026-11-17T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180566",
+   "pts": [
+    "本日新聞焦點 ● 國家級駭客組織SilentAir鎖定臺灣等十多個國家的手機用戶 ● 公開網路上存在逾3,800個AI攻擊框架執行個體，臺灣也有20個 ● 微軟揭露Microsoft 365全球當機原因，潛伏3個月的程式錯誤釀禍"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月17日，國家級駭客組織SilentAir鎖定臺灣等十多個國家的手機用戶，濫用電信訊號攔截簡訊與通話",
+    "desc": "本日新聞焦點 ● 國家級駭客組織SilentAir鎖定臺灣等十多個國家的手機用戶 ● 公開網路上存在逾3,800個AI攻擊框架執行個體，臺灣也有20個 ● 微軟揭露Microsoft 365全球當機原因，潛伏3個月的程式錯誤釀禍",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:29aeda5d1c6b",
+   "kind": "news",
+   "title": "駭客利用AI自動化漏洞研究，遭到利用的零時差漏洞一個月爆增至22個",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T14:32:24+00:00",
+   "first_seen": "2026-11-17T14:32:30+00:00",
+   "updated": "2026-11-17T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180561",
+   "pts": [
+    "11月17日Google威脅情報團隊（GTIG）發布AI威脅追蹤報告，當中特別提及駭客將AI代理與大型語言模型（LLM）進行漏洞研究與攻擊工具開發的情況，已從實驗階段進入實際運作。攻擊者透過多代理系統執行修補程式差異分析、動態模糊測試，以及概念驗證（PoC）攻擊程式開發等工作，逐步建立自動化漏洞攻擊"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "駭客利用AI自動化漏洞研究，遭到利用的零時差漏洞一個月爆增至22個",
+    "desc": "11月17日Google威脅情報團隊（GTIG）發布AI威脅追蹤報告，當中特別提及駭客將AI代理與大型語言模型（LLM）進行漏洞研究與攻擊工具開發的情況，已從實驗階段進入實際運作。攻擊者透過多代理系統執行修補程式差異分析、動態模糊測試，以及概念驗證（PoC）攻擊程式開發等工作，逐步建立自動化漏洞攻擊流程，甚至出現完全不需要人工介入的漏洞發現與利用活動。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-129271",
+   "kind": "cve",
+   "title": "Ivanti 漏洞 CVE-2026-129271",
+   "sub": "CVE-2026-129271 · CVSS 8.5",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Ivanti"
+   ],
+   "cves": [
+    "CVE-2026-129271"
+   ],
+   "cvss": 8.5,
+   "published": "2026-11-17T11:17:25+00:00",
+   "first_seen": "2026-11-17T14:32:21+00:00",
+   "updated": "2026-11-17T14:32:21+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129271",
+   "pts": [
+    "The Patch Management Engine in N-central is vulnerable to LPE via attacker controlled metadata"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "The Patch Management Engine in N-central is vulnerable to LPE via attacker controlled metadata",
+    "refs": [
+     "https://me.n-able.com/s/security-advisory/aArVy0000002k5BKAQ"
+    ]
+   }
+  },
+  {
+   "id": "grp:GitLab:2026-11-17",
+   "kind": "group",
+   "title": "GitLab 多個高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-105739",
+    "CVE-2026-108153",
+    "CVE-2026-18241"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-17T05:18:29+00:00",
+   "first_seen": "2026-11-17T14:32:21+00:00",
+   "updated": "2026-11-17T14:32:21+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105739",
+   "pts": [
+    "同日公布 3 個漏洞，最高 CVSS 8.7。",
+    "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.2 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 th"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.2 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to execute arbitrary JavaScript in the browser of users viewing a wiki page due to improper sanitization of user input.",
+     "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to execute arbitrary JavaScript in the browser of users viewing Error Tracking pages due to improper sanitization of user input.",
+     "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.3 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to access protected CI/CD variables and resources due to a race condition in pipeline job authorization."
+    ]
+   }
+  },
   {
    "id": "tw:fa3a10d61cfa",
    "kind": "news",
@@ -365,10 +705,10 @@
    }
   },
   {
-   "id": "CVE-2026-53998",
-   "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-53998",
-   "sub": "CVE-2026-53998 · CVSS 10.0",
+   "id": "grp:AI 平台:2026-11-17",
+   "kind": "group",
+   "title": "AI 平台 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -376,27 +716,26 @@
     "AI 平台"
    ],
    "cves": [
+    "CVE-2026-130591",
     "CVE-2026-53998"
    ],
    "cvss": 10.0,
    "published": "2026-11-16T20:19:06+00:00",
    "first_seen": "2026-11-16T22:09:24+00:00",
-   "updated": "2026-11-16T22:09:24+00:00",
+   "updated": "2026-11-17T14:32:21+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53998",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130591",
    "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
     "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-contro"
    ],
    "fix": "升級至 15.7.0 以上（依原文擷取）",
    "ai": false,
    "ai_ver": 0,
    "raw": {
-    "desc": "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-controlled F-string templates to FStringTemplateFormatter._format, while DotDict.__getattr__ did not prevent traversal through Python private attributes. A crafted field could traverse object internals such as __class__, __init__, and __globals__ to read process environment variables and internal module state. The endpoint is unauthenticated on default installations, and any account can reach it when authentication is enabled. Exposure of PHOENIX_SECRET can allow administrative session-token forgery and decryption of credentials protected by keys derived from that secret. This issue is fixed in version 15.7.0.",
-    "refs": [
-     "https://github.com/Arize-ai/phoenix/commit/e7224a685589f2ffae1fefcc68ff210bd6ad28b8",
-     "https://github.com/Arize-ai/phoenix/pull/13197",
-     "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v15.7.0",
-     "https://github.com/Arize-ai/phoenix/security/advisories/GHSA-gfv3-m769-5xm3"
+    "descs": [
+     "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-controlled F-string templates to FStringTemplateFormatter._format, while DotDict.__getattr__ did not prevent traversal through Python private attributes. A crafted field could traverse object internals such as __class__, __init__, and __globals__ to read process environment variables and internal module state. The endpoint is unauthenticated on default installations, and any account can reach it when authentication is enabled. Exposure of PHOENIX_SECRET can allow administrative session-token forgery and decryption of credentials protected by keys derived from that secret. This issue is fixed in version 15.7.0.",
+     "53AIHub before 0.5.5 contains a missing authentication vulnerability that allows unauthenticated attackers to read files by requesting /api/files/:file_id/preview and /api/file-version/:file_body_id without UserTokenAuth. Attackers can enumerate sequential numeric ids to read raw knowledge-base files and stored file versions belonging to any enterprise tenant."
     ]
    }
   },
@@ -1906,7 +2245,7 @@
    "cvss": 9.5,
    "published": "2026-11-13T00:20:09+00:00",
    "first_seen": "2026-11-16T22:09:24+00:00",
-   "updated": "2026-11-17T04:34:55+00:00",
+   "updated": "2026-11-17T14:32:21+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107407",
    "pts": [
@@ -1947,7 +2286,12 @@
      "Memory corruption in DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler",
      "Memory overflow in NetScaler Push can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
      "Memory overflow in the management plane can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
-     "Memory overflow in SSL/TLS/DTLS can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway."
+     "Memory overflow in SSL/TLS/DTLS can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gateway.",
+     "Memory overflow in SMPP traffic can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory corruption in DNS / DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
+     "Memory corruption in DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler",
+     "Memory overflow in NetScaler Push can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler"
     ]
    }
   },
@@ -2681,7 +3025,7 @@
    "id": "grp:Fortinet:2026-11-12",
    "kind": "group",
    "title": "Fortinet 多個高風險漏洞",
-   "sub": "23 個 CVE · 最高 CVSS 9.8",
+   "sub": "24 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2707,6 +3051,7 @@
     "CVE-2026-126177",
     "CVE-2026-126180",
     "CVE-2026-126181",
+    "CVE-2026-126184",
     "CVE-2026-126217",
     "CVE-2026-126229",
     "CVE-2026-126240",
@@ -2716,11 +3061,11 @@
    "cvss": 9.8,
    "published": "2026-11-11T22:17:11+00:00",
    "first_seen": "2026-11-16T11:22:42+00:00",
-   "updated": "2026-11-17T04:34:55+00:00",
+   "updated": "2026-11-17T14:32:21+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
-    "同日公布 23 個漏洞，最高 CVSS 9.8。",
+    "同日公布 24 個漏洞，最高 CVSS 9.8。",
     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7"
    ],
    "fix": "",
@@ -2760,7 +3105,9 @@
      "A improper neutralization of special elements used in an ldap query ('ldap injection') vulnerability in Fortinet FortiAuthenticator 8.0.0 through 8.0.3, FortiAuthenticator 6.6.0 through 6.6.10 may allow an authenticated attacker to bypass authentication. Successful exploitation requires either a malicious/compromised upstream IdP, or an IdP configuration that allows the user to control the NameID (or the SAML attribute used as the username).",
      "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiAnalyzer 8.0.0, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an unauthenticated remote attacker to inject arbitary content into a signed SAML response via crafted SAML requests.",
      "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiAnalyzer 8.0.0, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.0, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an unauthenticated remote attacker to inject arbitary content into a signed SAML response via crafted SAML requests.",
-     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow an adjacent-network authenticated attacker with user permission to join the FGFM configuration-sync mesh of the affected FortiGate deployment via the default pre-shared key."
+     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow an adjacent-network authenticated attacker with user permission to join the FGFM configuration-sync mesh of the affected FortiGate deployment via the default pre-shared key.",
+     "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6, FortiMail 7.2 all versions, FortiRecorder 7.6.0 through 7.6.2, FortiRecorder 7.2.0 through 7.2.12, FortiRecorder 7.0.0 through 7.0.6 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
+     "A authentication bypass by spoofing vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiAnalyzer-BigData 7.6.0 through 7.6.2, FortiAnalyzer-BigData 7.4.0 through 7.4.6, FortiAnalyzer-BigData 7.2.0 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an attacker to disrupt the HA state."
     ]
    }
   },
@@ -3218,7 +3565,7 @@
    "cvss": 9.8,
    "published": "2026-11-11T05:19:57+00:00",
    "first_seen": "2026-11-16T22:09:24+00:00",
-   "updated": "2026-11-17T04:34:55+00:00",
+   "updated": "2026-11-17T14:32:21+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
    "pts": [
@@ -3240,7 +3587,14 @@
      "Building a malicious package that uses \"//go:cgo_import_dynamic\" or links against a crafted PE object on Windows could pass unsafe library arguments to the external linker. The compiler only checked the first character of the library name in \"//go:cgo_import_dynamic\" directives and skipped validation in cgo-generated files. In addition, on Windows, \"cmd/cgo\" and \"cmd/link\" did not validate imported DLL names extracted from PE object files before emitting \"-l<name>\" flags for the external linker, allowing a crafted DLL name containing \"..\" path traversal or special characters to reference arbitrary files on disk. The compiler now validates every character of the library name in \"//go:cgo_import_dynamic\" directives (including in cgo-generated files on Windows) and rejects \"..\" path traversal, and \"cmd/cgo\" and \"cmd/link\" reject PE imported DLL names containing path separators, \"..\", \":\", or leading \"-\" or \"@\".",
      "Building a malicious package that uses cgo could bypass \"#cgo LDFLAGS\" validation and cause unexpected code execution at build time, or cause the go command to panic, via crafted quoting in \"//go:cgo_ldflag\" directives. When \"cmd/cgo\" generates \"_cgo_gotypes.go\", it quotes each \"#cgo LDFLAGS\" argument with strconv.Quote in a \"//go:cgo_ldflag\" directive, but \"cmd/compile\" and \"cmd/go\" parsed those directives by splitting on raw quote characters without handling backslash escapes or unquoting the string. This mismatch allowed disallowed linker flags or unvalidated linker search paths to be smuggled past the go command's flag checks and passed to the external linker. In addition, deduplicating LDFLAGS in the go command could panic with an out-of-bounds slice index when a prefix of the flag list matched near the end of the slice. \"cmd/compile\" and \"cmd/go\" now properly handle backslash-escaped quotes and unquote \"//go:cgo_*\" pragma strings with strconv.Unquote, and the slice bounds check in processCgoOutputs has been fixed.",
      "Building a malicious package that uses \"#cgo pkg-config:\" directives could load untrusted pkg-config \".pc\" files or inject unvalidated compiler and linker flags. The pkg-config flag allowlist previously permitted \"--with-path=\" and \"--personality=\", allowed \"--define-variable=\" values beginning with \"=\" or \"$\" (which can rewrite paths in system \".pc\" files into sysroot-prefixed \"-L=\" or \"-L$SYSROOT\" linker search paths), and allowed package arguments ending in \".pc\" or containing path separators or \"..\", which caused pkg-config to load local \".pc\" files directly from the package directory. In addition, flags returned by \"pkg-config --cflags\" in cgoCPPFLAGS were not checked when determining whether internal linking is safe. The go command now disallows \"--with-path=\", \"--personality=\", leading \"=\" or \"$\" characters in \"--define-variable=\" values, and local \".pc\" paths in \"#cgo pkg-config:\" directives, and inspects cgoCPPFLAGS when checking internal linking compatibility.",
-     "When using Clang or GCC, building a malicious package that uses cgo could cause unexpected code execution at build time or write files to arbitrary directories via \"-gen-*\" or \"-gnat*\" flags in \"#cgo\" directives. The \"-g*\" wildcard in the compiler and linker flag allowlists previously matched Clang's two-argument \"-gen-cdb-fragment-path <dir>\" flag and GCC's two-argument \"-gnatO <file>\" flag, permitting compilation database fragments and sidecar output files to be written to arbitrary directories and desynchronizing flag argument parsing between the go command and the compiler driver so that subsequent arguments could be passed as unvalidated positional inputs to the linker. \"-gen-*\" and \"-gnat*\" flags are now disallowed in \"#cgo\" compiler and linker flags."
+     "When using Clang or GCC, building a malicious package that uses cgo could cause unexpected code execution at build time or write files to arbitrary directories via \"-gen-*\" or \"-gnat*\" flags in \"#cgo\" directives. The \"-g*\" wildcard in the compiler and linker flag allowlists previously matched Clang's two-argument \"-gen-cdb-fragment-path <dir>\" flag and GCC's two-argument \"-gnatO <file>\" flag, permitting compilation database fragments and sidecar output files to be written to arbitrary directories and desynchronizing flag argument parsing between the go command and the compiler driver so that subsequent arguments could be passed as unvalidated positional inputs to the linker. \"-gen-*\" and \"-gnat*\" flags are now disallowed in \"#cgo\" compiler and linker flags.",
+     "Building a malicious package that uses cgo could cause arbitrary code execution at build time through several compiler and linker flags permitted in \"#cgo\" directives. Specifically, \"--sysroot\" in GCC and Clang relocates compiler subprograms, spec files, and CRT startup objects to an attacker-controlled directory; \"-target\" in Clang falls back to executing target helper tools from the current working directory when not found in PATH; \"-isysroot\" and \"-Wl,-syslibroot\" can pass a regular file on disk to GNU ld.bfd, which interprets it as a positional linker script; and \"-x\" permitted specifying arbitrary compiler input languages beyond those supported by cgo. \"--sysroot\" and \"-target\" are now disallowed in \"#cgo\" flags, \"-isysroot\" and \"-Wl,-syslibroot\" are verified not to point to regular files, and \"-x\" is restricted to the C, C++, Objective-C, and assembler languages supported by cgo.",
+     "When using GCC, building a malicious package that uses cgo could cause arbitrary command execution at link time via untrusted GCC spec files (\"specs\" or \"*.spec\"). When linking with \"-fopenmp\", \"-fopenacc\", or \"-fsanitize=\" in \"#cgo LDFLAGS\", GCC's built-in link spec evaluates \"%:include(libgomp.spec)\" or \"%:include(libsanitizer.spec)\" and searches for spec files in \"-L\" and sysroot directories (including subdirectories and multilib sibling directories such as \"../lib64\"), as well as the working directory when \"-fopenmp\" or \"-fopenacc\" is used or when \"-fsanitize=\" is combined with \"-static\" or \"-static-lib*\". The go command now rejects \"-L\", \"-isysroot\", and \"-Wl,-syslibroot\" directories (and the working and package directories when applicable) that contain GCC spec files, and disallows \"@\" and \"-\" prefixes in \"-fsanitize=\" compiler flag values.",
+     "When using Clang or GCC, building a malicious package that uses cgo could cause unexpected code execution at build time or write files to arbitrary directories via \"-gen-*\" or \"-gnat*\" flags in \"#cgo\" directives. The \"-g*\" wildcard in the compiler and linker flag allowlists previously matched Clang's two-argument \"-gen-cdb-fragment-path <dir>\" flag and GCC's two-argument \"-gnatO <file>\" flag, permitting compilation database fragments and sidecar output files to be written to arbitrary directories and desynchronizing flag argument parsing between the go command and the compiler driver so that subsequent arguments could be passed as unvalidated positional inputs to the linker. \"-gen-*\" and \"-gnat*\" flags are now disallowed in \"#cgo\" compiler and linker flags.",
+     "On Darwin, building a malicious package that uses cgo could cause arbitrary code execution when using the Apple linker due to passing \"-l to_library <path>\" in a \"#cgo LDFLAGS\" directive. The Apple linker recombines the separated arguments \"-l\" and \"to_library\" into \"-lto_library\", which loads an arbitrary LTO plugin dynamic library at link time. The go command now disallows \"-l\" followed by \"to_library\" in \"#cgo LDFLAGS\", rejects \"-lazy_library\", \"-lazy_framework\", \"-load_hidden\", \"-library\", and \"-library-path\", and checks recombined \"-l\" arguments against disallowed linker flags and patterns.",
+     "Building a malicious package that uses cgo could cause arbitrary code execution at link time by passing linker script files to the host linker via \"#cgo LDFLAGS\". Split \"-Wl,\" flags that consume a following argument (such as \"-Wl,-rpath\", \"-Wl,--just-symbols\", and \"-Wl,-undefined\") previously accepted a bare second argument without a \"-Wl,\" prefix, which the compiler driver passes directly to the linker as a positional input file. Additionally, when using GNU ld.bfd, flags such as \"-framework\", \"-Wl,-framework\", \"-Wl,-undefined\", \"-Wl,--just-symbols\", \"-Wl,-R\", \"-Wl,-subsystem\", and (on non-Darwin platforms) \"-Wl,-sectcreate\" could cause ld.bfd to interpret their arguments as linker scripts if they named a regular file on disk. The go command now requires a \"-Wl,\" prefix on the second token of split \"-Wl,\" flags (except \"-Wl,-R\"), verifies that these flags do not reference linker script files, and disallows bare \"-Wl,--warn-backrefs-exclude\".",
+     "Building a malicious package containing \".syso\" files or cgo linker inputs could inject arbitrary linker flags or execute arbitrary code at link time. Linker input files—including \".syso\" files, direct object or library inputs in \"#cgo LDFLAGS\", and libraries in \"-L\" directories—were passed to the external linker without validating their format or checking for embedded linker options. Across platforms, this allowed executing GNU ld implicit linker scripts disguised as libraries or \".syso\" files (or loaded via \"-l:<filename>\" or \"-l\" containing path separators), injecting unallowlisted linker flags via PE/COFF \".drectve\" sections on Windows or Mach-O \"LC_LINKER_OPTION\" load commands on Darwin, or invoking LTO plugins via GCC or LLVM LTO intermediate representation sections in ELF, PE/COFF, or Mach-O objects. The go command now verifies that \".syso\" files, direct linker inputs, and libraries in \"-L\" directories are valid binary objects or archives that do not contain unallowlisted \".drectve\" directives, \"LC_LINKER_OPTION\" load commands, or LTO IR sections, and disallows \"-l:<filename>\" and \":\", \"=\", or path separators in \"-l\" flags.",
+     "Building a malicious package that uses cgo could bypass \"#cgo LDFLAGS\" validation and cause unexpected code execution at build time, or cause the go command to panic, via crafted quoting in \"//go:cgo_ldflag\" directives. When \"cmd/cgo\" generates \"_cgo_gotypes.go\", it quotes each \"#cgo LDFLAGS\" argument with strconv.Quote in a \"//go:cgo_ldflag\" directive, but \"cmd/compile\" and \"cmd/go\" parsed those directives by splitting on raw quote characters without handling backslash escapes or unquoting the string. This mismatch allowed disallowed linker flags or unvalidated linker search paths to be smuggled past the go command's flag checks and passed to the external linker. In addition, deduplicating LDFLAGS in the go command could panic with an out-of-bounds slice index when a prefix of the flag list matched near the end of the slice. \"cmd/compile\" and \"cmd/go\" now properly handle backslash-escaped quotes and unquote \"//go:cgo_*\" pragma strings with strconv.Unquote, and the slice bounds check in processCgoOutputs has been fixed."
     ]
    }
   },
@@ -11987,10 +12341,96 @@
   ],
   "CVE-2026-13269": [],
   "CVE-2026-13270": [],
-  "CVE-2026-118976": []
+  "CVE-2026-118976": [],
+  "CVE-2026-120387": [],
+  "CVE-2026-129448": [],
+  "CVE-2026-107904": [],
+  "CVE-2026-119623": [],
+  "CVE-2026-130587": [],
+  "CVE-2026-128049": [],
+  "CVE-2026-129272": [],
+  "CVE-2026-129280": [],
+  "CVE-2026-130603": [],
+  "CVE-2026-119757": [],
+  "CVE-2026-128027": [],
+  "CVE-2026-129286": [],
+  "CVE-2026-130583": [],
+  "CVE-2026-127079": [],
+  "CVE-2026-128023": [],
+  "CVE-2026-12239": [],
+  "CVE-2026-129274": [],
+  "CVE-2026-129282": [],
+  "CVE-2026-124643": [],
+  "CVE-2026-124645": [],
+  "CVE-2026-124646": [],
+  "CVE-2026-130584": [],
+  "CVE-2026-130591": [
+   "AI 平台"
+  ],
+  "CVE-2026-126487": [],
+  "CVE-2026-128338": [],
+  "CVE-2026-128342": [],
+  "CVE-2026-128346": [],
+  "CVE-2026-129273": [],
+  "CVE-2026-130589": [],
+  "CVE-2026-82025": [],
+  "CVE-2026-105600": [],
+  "CVE-2026-21175": [],
+  "CVE-2026-21176": [],
+  "CVE-2026-129271": [
+   "Ivanti"
+  ],
+  "CVE-2026-129281": [],
+  "CVE-2026-101352": [],
+  "CVE-2026-101892": [],
+  "CVE-2026-104007": [],
+  "CVE-2026-104692": [],
+  "CVE-2026-104920": [],
+  "CVE-2026-100101": [],
+  "CVE-2026-109138": [],
+  "CVE-2026-129287": [],
+  "CVE-2026-130386": [],
+  "CVE-2026-126491": [],
+  "CVE-2026-128015": [],
+  "CVE-2026-21151": [],
+  "CVE-2026-125159": [],
+  "CVE-2026-125162": [],
+  "CVE-2026-129275": [],
+  "CVE-2026-121684": [],
+  "CVE-2026-130608": [],
+  "CVE-2026-114560": [],
+  "CVE-2026-121864": [],
+  "CVE-2026-119621": [],
+  "CVE-2026-126982": [],
+  "CVE-2026-130615": [
+   "AI 平台"
+  ],
+  "CVE-2026-118496": [],
+  "CVE-2026-118498": [],
+  "CVE-2026-101698": [
+   "Oracle"
+  ],
+  "CVE-2026-124737": [],
+  "CVE-2026-118497": [],
+  "CVE-2026-21153": [],
+  "CVE-2026-108169": [],
+  "CVE-2026-119643": [],
+  "CVE-2026-121865": [],
+  "CVE-2026-103420": [],
+  "CVE-2026-126479": [],
+  "CVE-2026-21609": [
+   "Atlassian"
+  ],
+  "CVE-2026-119622": [],
+  "CVE-2026-129283": [],
+  "CVE-2026-130588": [],
+  "CVE-2026-126463": [],
+  "CVE-2026-126471": [],
+  "CVE-2026-126483": [],
+  "CVE-2026-127075": []
  },
- "nvd_last": "2026-11-17T04:29:17+00:00",
- "kev_last": "2026-11-17T04:29:17+00:00",
+ "nvd_last": "2026-11-17T14:26:23+00:00",
+ "kev_last": "2026-11-17T14:26:23+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
