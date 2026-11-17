@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T22:03:44+00:00",
+ "generated": "2026-11-17T04:29:17+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -343,12 +343,12 @@
     "desc": "微軟原本為防止Windows日誌檔案遭惡意利用而導入的安全功能，如今卻被發現可能成為攻擊者提升權限的途徑。資安研究人員Nightmare Eclipse於11月10日公開Windo"
    },
    {
-    "title": "Windows Server：Audition 提權與執行漏洞",
-    "desc": "目前尚未遭利用，CVSS 8.8；低權限攻擊者可免互動提權，執行程式碼須誘使開啟惡意檔案。"
+    "title": "Windows Server：Windows 命令注入漏洞",
+    "desc": "適用 Windows Admin Center，尚未傳出遭利用，需已驗證遠端攻擊者提交特製主機名稱。"
    },
    {
-    "title": "IIS/Nginx 解析漏洞",
-    "desc": "目前尚未遭利用，CVSS 8.6；涉及與 Go、Python、Node.js 與 Java 解析器差異，以及回應標頭區分大小寫。"
+    "title": "Windows Server：Audition 提權與執行漏洞",
+    "desc": "目前尚未遭利用，CVSS 8.8；低權限攻擊者可免互動提權，執行程式碼須誘使開啟惡意檔案。"
    }
   ],
   "ai": false
@@ -361,6 +361,259 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:fa3a10d61cfa",
+   "kind": "news",
+   "title": "Shadowserver觀測到公開網路上存在逾3,800個AI攻擊框架執行個體，臺灣也有20個",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180560",
+   "pts": [
+    "美國聯邦調查局（FBI）11月13日發布警示，指出駭客至少從今年8月起，已利用開源AI自主滲透測試框架ARTEX發動攻擊，大幅加快入侵速度。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:4e597768944a",
+   "kind": "news",
+   "title": "美國加強AI晶片出口管制，限制中國等國家透過海外資料中心取得算力",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180558",
+   "pts": [
+    "美國商務部工業暨安全局（BIS）周一（11/16）宣布擴大先進AI晶片出口管制，一方面限制中國等國家透過海外資料中心遠端取得AI算力，另一方面擴大對印尼、新加坡等5國的晶片出口限制，以防堵透過第三國規避美國出口管制的漏洞。 美國現行出口管制將中國、古巴、伊朗、伊拉克及俄羅斯等22國列入D:5國家組別"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:f09145425750",
+   "kind": "news",
+   "title": "漏洞濫用速度加快，Anthropic將重大漏洞揭露靜默期由90天縮短為30天",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180557",
+   "pts": [
+    "AI技術使得軟體漏洞的發現及濫用愈來愈容易，Anthropic本週預告將調整協調漏洞揭露（coordinated vulnerability disclosure，CVD）政策，將從2027年1月1日起，漏洞揭露的期間由90天縮短為30天和45天。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:1c727a421c39",
+   "kind": "news",
+   "title": "驊陞部分資訊系統遭網路攻擊，核心系統未受影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180554",
+   "pts": [
+    "電子零組件公司驊陞（6272）於11月16日晚間，在股市公開資訊觀測站發布重大訊息，該公司發現部分資訊系統主機遭受駭客攻擊，經初步確認，部分主機及相關資訊系統受到影響，隨即啟動資訊安全事件應變機制，展開調查及復原作業。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:fa14a80e834b",
+   "kind": "news",
+   "title": "京成電鐵Skyliner訂位系統遭駭，337萬筆用戶資料可能外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180553",
+   "pts": [
+    "許多人從成田機場到東京常搭乘的Skyliner訂位系統於本月初遭駭，營運商京成電鐵表示可能導致約337萬筆用戶資料因此外流。 京成電鐵指出，Skyliner訂位系統於11月11日深夜遭到第三方人士未授權存取，使Skyliner預約服務及e-ticket服務的用戶資料曝險。在發現異常後，該公司已全面暫"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:104ad4b0d814",
+   "kind": "news",
+   "title": "加州控告OpenAI，指AI代理人失控至少80次、攻擊外部系統",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180551",
+   "pts": [
+    "美國加州檢察長Rob Bonta週一（11/16）宣布，正式對OpenAI提起訴訟，指控該公司明知旗下AI模型存在安全風險，卻未採取充分防護措施，導致自主AI代理人失控並攻擊外部系統，要求法院下令改善安全措施，並支付民事罰款。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:0e805cf0453e",
+   "kind": "news",
+   "title": "貿易百貨公司永邑委外電商服務商發生資安事件，訂單資料庫遭未授權存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180550",
+   "pts": [
+    "11月16日貿易百貨公司永邑（永邑-KY，股票代號2939）於股市公開資訊觀測站發布重大訊息，臺灣分公司（BVI臺灣）所使用的線上商店平臺，其委外服務廠商順立智慧（Cyberbiz）發生資安事件，部分資料庫遭未經授權的異常存取，其中包含BVI臺灣線上商店的訂單相關資料。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:00f538a27a45",
+   "kind": "news",
+   "title": "歐盟網路安全局示警漏洞公開後數分鐘內恐遭利用，AI與供應鏈依賴加劇資安風險",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180493",
+   "pts": [
+    "歐盟網路安全局（ENISA）近期公布2026年資安現況報告，分析漏洞攻擊、供應鏈安全及事件應變等資安趨勢。攻擊者持續利用零時差漏洞，以及已公開但尚未修補的漏洞入侵系統，部分大規模攻擊活動能在漏洞資訊公布後數天、數小時，甚至數分鐘內利用漏洞發動攻擊。隨著頂尖AI模型的能力提升，ENISA預期，漏洞發掘"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:8ae5e8d934d4",
+   "kind": "news",
+   "title": "OWASP公布AI資料中心十大資安風險，韌體遭竄改、高速網路防護不足列重大風險",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180526",
+   "pts": [
+    "開放全球應用程式安全計畫（OWASP）近期介紹新型雲端服務（Neocloud）與AI資料中心十大資安風險，其中五項被列為重大風險。這份清單聚焦AI模型訓練與推論所依賴的底層運算環境，涵蓋硬體與韌體安全、高速網路及多租戶隔離等問題，提供企業與服務供應商檢查基礎架構安全的參考。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:e3dbf65a017f",
+   "kind": "news",
+   "title": "美國查扣北韓駭客FaceStealer攻擊基礎設施，另凍結逾27億美元Binance遭竊資產",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180495",
+   "pts": [
+    "美國司法部11月12日公布兩項打擊北韓駭客竊取加密資產的執法成果。美國聯邦調查局（FBI）查扣北韓駭客FaceStealer攻擊行動使用的雲端基礎設施，以及超過900段遭祕密錄製的受害者網路攝影機影片；另一方面，美國政府與民間業者合作，已凍結超過27億美元的加密貨幣交易平臺Binance遭竊資產。根"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:1d0041019b42",
+   "kind": "news",
+   "title": "英法發布商業網路入侵產業指引，籲業者審查客戶、必要時停止銷售工具",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-17T04:34:57+00:00",
+   "first_seen": "2026-11-17T04:34:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180491",
+   "pts": [
+    "過去只有少數政府專業機構具備的部分網路入侵技術，如今已能透過商業市場取得，包括可秘密入侵手機的間諜軟體。為防範這類工具遭到濫用，英國與法國於11月11日共同發布商業網路入侵產業指引，呼籲相關業者加強客戶審查及風險管理，避免入侵工具流向可能從事不當活動的使用者。 指引涵蓋的對象不只有商業間諜軟體及入侵"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "CVE-2026-53998",
    "kind": "cve",
@@ -995,6 +1248,32 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-123638",
+   "kind": "cve",
+   "title": "Atlassian 漏洞 CVE-2026-123638",
+   "sub": "CVE-2026-123638 · CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Atlassian",
+    "GitLab"
+   ],
+   "cves": [
+    "CVE-2026-123638"
+   ],
+   "cvss": 8.3,
+   "published": "2026-11-15T22:17:18+00:00",
+   "first_seen": "2026-11-17T04:34:55+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123638",
+   "pts": [
+    "The \"Protected file patterns\" setting of a branch protection rule was checked against file names as git prints them, and git quotes names th"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:090455ab4d63",
    "kind": "news",
    "title": "兆勤科技防火牆整合Bitdefender端點安全資訊，2027年將擴大跨平臺防禦協作",
@@ -1492,7 +1771,8 @@
    "kev": false,
    "ransomware": false,
    "products": [
-    "Citrix"
+    "Citrix",
+    "憑證/CA"
    ],
    "cves": [
     "CVE-2026-107407",
@@ -1527,6 +1807,31 @@
    "pts": [
     "同日公布 23 個漏洞，最高 CVSS 9.5。",
     "Multiple Memory overflow vulnerabilities can lead to unpredictable or erroneous behavior and Denial of Service in Citrix NetScaler ADC and C"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-120869",
+   "kind": "cve",
+   "title": "Citrix 漏洞 CVE-2026-120869",
+   "sub": "CVE-2026-120869 · CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Citrix"
+   ],
+   "cves": [
+    "CVE-2026-120869"
+   ],
+   "cvss": 9.3,
+   "published": "2026-11-12T14:17:23+00:00",
+   "first_seen": "2026-11-17T04:34:55+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120869",
+   "pts": [
+    "An unauthenticated attacker can bypass authentication controls to access restricted resources on the Citrix NetScaler Console appliance"
    ],
    "fix": "",
    "ai": false
@@ -2026,11 +2331,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126919",
    "pts": [
-    "影響 157.0.8103.78 之前 Chrome（BrowserTag、Accessibility），**可於沙盒執行任意程式碼**。",
-    "尚未傳出遭利用，遠端攻擊者需誘使目標瀏覽特製 HTML 頁面即可觸發。"
+    "同日公布 2 個漏洞，最高 CVSS 8.8。",
+    "Use after free in BrowserTag in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox "
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "CVE-2026-65949",
@@ -2102,6 +2407,34 @@
    "pts": [
     "同日公布 23 個漏洞，最高 CVSS 9.8。",
     "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:Node.js:2026-11-12",
+   "kind": "group",
+   "title": "Node.js 多個高風險漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 8.2",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-123863",
+    "CVE-2026-123864",
+    "CVE-2026-123872"
+   ],
+   "cvss": 8.2,
+   "published": "2026-11-11T19:17:32+00:00",
+   "first_seen": "2026-11-17T04:34:55+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123863",
+   "pts": [
+    "同日公布 3 個漏洞，最高 CVSS 8.2。",
+    "A reachable assertion in Node.js HTTP/2 session teardown lets any unauthenticated client abort the server, over both TLS and cleartext. A cl"
    ],
    "fix": "",
    "ai": false
@@ -2409,7 +2742,7 @@
    "id": "grp:Go:2026-11-11",
    "kind": "group",
    "title": "Go 語言 多個高風險漏洞",
-   "sub": "10 個 CVE · 最高 CVSS 9.8",
+   "sub": "11 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2419,6 +2752,7 @@
    "cves": [
     "CVE-2026-97033",
     "CVE-2026-97034",
+    "CVE-2026-97035",
     "CVE-2026-97036",
     "CVE-2026-97037",
     "CVE-2026-97038",
@@ -2434,7 +2768,7 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97033",
    "pts": [
-    "同日公布 10 個漏洞，最高 CVSS 9.8。",
+    "同日公布 11 個漏洞，最高 CVSS 9.8。",
     "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When l"
    ],
    "fix": "原文：\"cmd/compile\" and \"cmd/go\" now properly handle backslash-escaped quotes and unquote \"//go:cgo_*\" pragma strings with strconv.Unquote, and the slice bounds check in processCgoOut",
