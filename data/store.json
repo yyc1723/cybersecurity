@@ -35,6 +35,404 @@
  },
  "events": [
   {
+   "id": "tw:2e6ab840ef1c",
+   "kind": "news",
+   "title": "永信藥品委外電商服務商發生資安事件，部分會員個資疑似外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180619",
+   "pts": [
+    "生技醫療投資控股公司永信國際（3705）於11月17日，在股市公開資訊觀測站發布重大訊息，旗下子公司永信藥品購物網站接獲會員反映疑似個人資料外洩，根據初步了解，事件與委外電商平臺服務商的系統有關，確切原因及影響範圍仍在調查中，永信藥品的資訊系統未受到影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "永信藥品委外電商服務商發生資安事件，部分會員個資疑似外洩",
+    "desc": "生技醫療投資控股公司永信國際（3705）於11月17日，在股市公開資訊觀測站發布重大訊息，旗下子公司永信藥品購物網站接獲會員反映疑似個人資料外洩，根據初步了解，事件與委外電商平臺服務商的系統有關，確切原因及影響範圍仍在調查中，永信藥品的資訊系統未受到影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2c8449dee2d1",
+   "kind": "news",
+   "title": "神達數位部分資訊系統遭外部網路攻擊，出現未經授權存取情形",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180618",
+   "pts": [
+    "11月17日車用電子與智慧聯網設備製造商神達數位（7821）於股市公開資訊觀測站發布重大訊息，該公司部分資訊系統遭受外部網路攻擊，經初步調查，部分系統存在未經授權存取情形，目前已啟動資安事件應變機制，針對受影響系統採取隔離及管制措施，並展開安全檢視、事件調查及影響範圍盤點，初步評估對公司整體營運及財"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "神達數位部分資訊系統遭外部網路攻擊，出現未經授權存取情形",
+    "desc": "11月17日車用電子與智慧聯網設備製造商神達數位（7821）於股市公開資訊觀測站發布重大訊息，該公司部分資訊系統遭受外部網路攻擊，經初步調查，部分系統存在未經授權存取情形，目前已啟動資安事件應變機制，針對受影響系統採取隔離及管制措施，並展開安全檢視、事件調查及影響範圍盤點，初步評估對公司整體營運及財務尚",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:264e879fa3c5",
+   "kind": "news",
+   "title": "jQuery雙版本更新修正ReDoS問題，3.x停止新增功能",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180617",
+   "pts": [
+    "JavaScript函式庫jQuery開發團隊發布4.1.0與3.8.0，兩個版本都修正可能造成網頁停止回應的正規表示式阻斷服務（ReDoS）漏洞。4.1.0另改善元素查找及資料傳輸功能。官方也宣布，3.8.0是3.x系列最後一次預定的功能更新，往後僅修補重大資安與程式錯誤問題，新功能開發將集中於4"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "jQuery雙版本更新修正ReDoS問題，3.x停止新增功能",
+    "desc": "JavaScript函式庫jQuery開發團隊發布4.1.0與3.8.0，兩個版本都修正可能造成網頁停止回應的正規表示式阻斷服務（ReDoS）漏洞。4.1.0另改善元素查找及資料傳輸功能。官方也宣布，3.8.0是3.x系列最後一次預定的功能更新，往後僅修補重大資安與程式錯誤問題，新功能開發將集中於4.x。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ebf8b95309bb",
+   "kind": "news",
+   "title": "面對AI加速攻擊，英國NCSC呼籲企業董事會應關切以主動威脅獵捕找出偵測缺口",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180613",
+   "pts": [
+    "僅依賴既有監控與告警機制，恐難及時偵測攻擊者利用AI以更快速度及更大規模發動的攻擊。英國國家網路安全中心（NCSC）在11月17日發布文章，呼籲企業也應透過威脅獵捕（Threat Hunting）主動探查，以確認當新的攻擊技術出現在自身環境時，是否有能力及早發現。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "面對AI加速攻擊，英國NCSC呼籲企業董事會應關切以主動威脅獵捕找出偵測缺口",
+    "desc": "僅依賴既有監控與告警機制，恐難及時偵測攻擊者利用AI以更快速度及更大規模發動的攻擊。英國國家網路安全中心（NCSC）在11月17日發布文章，呼籲企業也應透過威脅獵捕（Threat Hunting）主動探查，以確認當新的攻擊技術出現在自身環境時，是否有能力及早發現。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:947b0dbad3a4",
+   "kind": "news",
+   "title": "大同購物網站e同購遭自動化攻擊入侵，疑似個資外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180615",
+   "pts": [
+    "11月17日電機設備製造商大同（2371）於股市公開資訊觀測站發布重大訊息，子公司大同綜合訊電發現其購物網站「e同購」遭到自動化攻擊入侵，且疑似有個人資料外洩情形，大同綜合訊電隨即啟動資安事件應變機制，並關閉受到影響的網站系統，同時由資安部門全面啟動防禦機制及備援作業。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "大同購物網站e同購遭自動化攻擊入侵，疑似個資外洩",
+    "desc": "11月17日電機設備製造商大同（2371）於股市公開資訊觀測站發布重大訊息，子公司大同綜合訊電發現其購物網站「e同購」遭到自動化攻擊入侵，且疑似有個人資料外洩情形，大同綜合訊電隨即啟動資安事件應變機制，並關閉受到影響的網站系統，同時由資安部門全面啟動防禦機制及備援作業。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:82556d2c8fe5",
+   "kind": "news",
+   "title": "【資安日報】11月18日，Optimizely供應鏈攻擊波及BBC、GitLab、IKEA等178個組織網站，匯豐臺灣也名列其中",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java",
+    "GitLab"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180612",
+   "pts": [
+    "本日新聞焦點 ● Optimizely供應鏈攻擊波及BBC、GitLab、IKEA等178個組織網站 ● 駭客利用M365當機事件發動釣魚攻擊，謊稱郵件將遭刪除誘騙點擊 ● 研究人員公布OpenJDK重大漏洞Java4Shell細節"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月18日，Optimizely供應鏈攻擊波及BBC、GitLab、IKEA等178個組織網站，匯豐臺灣也名列其中",
+    "desc": "本日新聞焦點 ● Optimizely供應鏈攻擊波及BBC、GitLab、IKEA等178個組織網站 ● 駭客利用M365當機事件發動釣魚攻擊，謊稱郵件將遭刪除誘騙點擊 ● 研究人員公布OpenJDK重大漏洞Java4Shell細節",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:db1d45f6041b",
+   "kind": "news",
+   "title": "Perforce Puppet重大漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180611",
+   "pts": [
+    "11月17日美國網路安全與基礎設施安全局（CISA）更新已知遭利用漏洞名單（KEV），加入基礎設施自動化與組態管理平臺Perforce Puppet重大漏洞CVE-2026-115731，並要求聯邦機構需在12月1日"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Perforce Puppet重大漏洞遭積極利用",
+    "desc": "11月17日美國網路安全與基礎設施安全局（CISA）更新已知遭利用漏洞名單（KEV），加入基礎設施自動化與組態管理平臺Perforce Puppet重大漏洞CVE-2026-115731，並要求聯邦機構需在12月1日",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b16f36ba1a84",
+   "kind": "news",
+   "title": "日本理研系統被駭，外洩註冊用戶個資、憑證，迫使超級電腦Fugaku暫停運作",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180610",
+   "pts": [
+    "日本理化學研究所（理研）本週說明，理研旗下計算科學研究中心一個連結超級電腦富岳(Fugaku)的系統上星期遭到未授權存取，外洩系統用戶的個資及另一臺超級電腦的存取憑證近4,597筆資料，為防事件擴大，理研也暫停了富岳的運作。 理研是在11月12日偵測到異常活動，13日確認資料可能外洩。調查確認，「富"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "日本理研系統被駭，外洩註冊用戶個資、憑證，迫使超級電腦Fugaku暫停運作",
+    "desc": "日本理化學研究所（理研）本週說明，理研旗下計算科學研究中心一個連結超級電腦富岳(Fugaku)的系統上星期遭到未授權存取，外洩系統用戶的個資及另一臺超級電腦的存取憑證近4,597筆資料，為防事件擴大，理研也暫停了富岳的運作。 理研是在11月12日偵測到異常活動，13日確認資料可能外洩。調查確認，「富岳」超級電腦用戶的主目錄（Home Directory）中所儲存的部分檔案，以及登錄於使用者認證管理系統中的相關資訊（如SSH金鑰、存取金鑰等）可能已外流。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:cc61829972c2",
+   "kind": "news",
+   "title": "Chrome 158正式推出，修補204個資安漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180609",
+   "pts": [
+    "11月17日Google發布Chrome 158穩定版更新，一口氣修補204個資安漏洞，從漏洞的嚴重程度來看，6個為重大等級、62個為高風險等級，中度及低風險分別為82個與54個。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Chrome 158正式推出，修補204個資安漏洞",
+    "desc": "11月17日Google發布Chrome 158穩定版更新，一口氣修補204個資安漏洞，從漏洞的嚴重程度來看，6個為重大等級、62個為高風險等級，中度及低風險分別為82個與54個。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2614022d76f7",
+   "kind": "news",
+   "title": "Node.js修補16個漏洞，包括可能導致伺服器當機與洩漏連線資料的HTTP/2漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java",
+    "Node.js"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180608",
+   "pts": [
+    "開源JavaScript執行環境專案Node.js於11月11日發布更新，涵蓋26.x、24.x與22.x等三個主要分支版本，共修補16個漏洞，其中7個為高風險漏洞，包括多項影響HTTP/2與HTTP伺服器功能的漏洞。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Node.js修補16個漏洞，包括可能導致伺服器當機與洩漏連線資料的HTTP/2漏洞",
+    "desc": "開源JavaScript執行環境專案Node.js於11月11日發布更新，涵蓋26.x、24.x與22.x等三個主要分支版本，共修補16個漏洞，其中7個為高風險漏洞，包括多項影響HTTP/2與HTTP伺服器功能的漏洞。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:a8e192b406bc",
+   "kind": "news",
+   "title": "資安署揭露某機關平臺忘記帳號功能存在身分驗證漏洞，而被新增34組異常帳號",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T14:06:36+00:00",
+   "first_seen": "2026-11-18T14:06:36+00:00",
+   "updated": "2026-11-18T14:06:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180607",
+   "pts": [
+    "資安署每期發布的《資通安全網路月報》，都會整理政府機關近期發生的資安事件，供各機關借鏡。本週公布的115年10月月報，則檢討一起機關服務平臺資安事件，該平臺的「忘記帳號」功能存在身分驗證漏洞，系統誤判憑證驗證狀態，導致攻擊者即使未完成憑證驗證，仍能取得帳號維護權限，並進一步新增34組異常帳號。 資安"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "資安署揭露某機關平臺忘記帳號功能存在身分驗證漏洞，而被新增34組異常帳號",
+    "desc": "資安署每期發布的《資通安全網路月報》，都會整理政府機關近期發生的資安事件，供各機關借鏡。本週公布的115年10月月報，則檢討一起機關服務平臺資安事件，該平臺的「忘記帳號」功能存在身分驗證漏洞，系統誤判憑證驗證狀態，導致攻擊者即使未完成憑證驗證，仍能取得帳號維護權限，並進一步新增34組異常帳號。 資安署指出，這批異常帳號後續曾嘗試存取平臺其他功能，但遭到機關既有的權限存取控制機制攔阻，因此未影響平臺正常運作，也未發現功能異常或資料遭竄改、外洩等情事。本次事件影響範圍僅限於異常帳號建立，機關目前已完成漏洞修補。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-19707",
+   "kind": "cve",
+   "title": "Ivanti 漏洞 CVE-2026-19707",
+   "sub": "CVE-2026-19707 · CVSS 9.5",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Ivanti"
+   ],
+   "cves": [
+    "CVE-2026-19707"
+   ],
+   "cvss": 9.5,
+   "published": "2026-11-18T10:16:55+00:00",
+   "first_seen": "2026-11-18T14:06:32+00:00",
+   "updated": "2026-11-18T14:06:32+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19707",
+   "pts": [
+    "A bug in the Airlock Gateway (8.5.2 and earlier, and 8.6.0) allows attacker-controlled HTML in a backend response to exploit the Smart Form "
+   ],
+   "fix": "原文：The issue has been fixed in Airlock Gateway version 8.5.3 and 8.6.1. For an attack to be executable, the Airlock Gateway needs to have 'Smart Form Protection' (or the correspond",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "A bug in the Airlock Gateway (8.5.2 and earlier, and 8.6.0)  allows attacker-controlled HTML in a backend response to exploit the Smart Form Protection feature, possibly leading to a Denial of Service (DoS) or Remote Code Execution (RCE) attack against the Airlock Gateway. The issue has been fixed in Airlock Gateway version 8.5.3 and 8.6.1.\n\nFor an attack to be executable, the Airlock Gateway needs to have 'Smart Form Protection' (or the corresponding expert settings) enabled on a mapping whose backend returns a response containing certain multi-byte HTML character references. The buffer overflow then happens during the parsing of that HTML response. Such a response can come either from a malicious or compromised backend, or from an otherwise trusted backend that returns attacker-supplied HTML, e.g. an application that stores and serves plain user-provided HTML files.\n\nSuccessfully exploiting the vulnerability can enable an attacker to perform a DoS attack or, in the worst case, an RCE attack against the Airlock Gateway in front of the affected backend. Compromising the functionality of the Airlock Gateway could in this way also affect the availability and protection of other well-intentioned backends deployed behind the same Gateway.",
+    "refs": [
+     "https://www.airlock.com/security-advisories"
+    ]
+   }
+  },
+  {
+   "id": "CVE-2025-15716",
+   "kind": "cve",
+   "title": "Synology 漏洞 CVE-2025-15716",
+   "sub": "CVE-2025-15716 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [
+    "CVE-2025-15716"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-18T08:17:18+00:00",
+   "first_seen": "2026-11-18T14:06:32+00:00",
+   "updated": "2026-11-18T14:06:32+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15716",
+   "pts": [
+    "An incorrect implementation of authentication algorithm vulnerability in the SSO API in Synology DiskStation Manager (DSM) before 7.2.2-7280"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "An incorrect implementation of authentication algorithm vulnerability in the SSO API in Synology DiskStation Manager (DSM) before 7.2.2-72806-5 and 7.3.1-86003-1 (7.2.1-69057 is not affected) allows remote attackers to read or write arbitrary files and conduct denial-of-service attacks with prior knowledge of the distinguished name (DN).",
+    "refs": [
+     "https://www.synology.com/en-global/security/advisory/Synology_SA_25_14"
+    ]
+   }
+  },
+  {
    "id": "tw:7e95f69f184d",
    "kind": "news",
    "title": "N-able發布N-central重大安全更新，修補17個漏洞並強化身分驗證機制",
@@ -991,7 +1389,7 @@
    "cvss": 9.6,
    "published": "2026-11-17T21:17:44+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
-   "updated": "2026-11-18T04:29:10+00:00",
+   "updated": "2026-11-18T14:06:32+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130907",
    "pts": [
@@ -1151,6 +1549,75 @@
      "Use after free in DeviceBoundSessionCredentials in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
      "Use after free in Proxy in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted file. (Chromium security severity: Medium)",
      "Use after free in Mojo in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in FedCM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in ANGLE in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in WebGL in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in ANGLE in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in ANGLE in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in GPU in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Out of bounds write in ANGLE in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Out of bounds read in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Color in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Out of bounds write in Tint in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper input validation in WebAppInstalls in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in Extensions in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CSS in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in V8 in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Chromecast in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in Plugins in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper state validation in Performance in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in WebAudio in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in PDFium in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted PDF file. (Chromium security severity: Medium)",
+     "Use after free in Forms in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Layout in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Video in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in GarbageCollection in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Accessibility in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DOM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in V8 in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Autofill in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Media in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Autofill in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Bindings in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CSS in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in XML in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Type confusion in V8 in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Geometry in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Loader in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds read in Editing in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Partition in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Autofill in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Browser in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Views in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Race condition in Printing in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in Ozone in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Omnibox in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in VR in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Omnibox in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper input validation in WebAppInstalls in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Session in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in Omnibox in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in UserEducation in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in Omnibox in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Race condition in Downloads in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Incorrect authorization in Views in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Downloads in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in WebAppInstalls in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in FedCM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Skia in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Mojo in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Payments in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Mojo in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in UI in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in WebAppInstalls in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in CameraCapture in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DeviceBoundSessionCredentials in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Proxy in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted file. (Chromium security severity: Medium)",
+     "Use after free in Mojo in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
      "Use after free in FedCM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
@@ -1159,7 +1626,7 @@
    "id": "grp:AI 平台:2026-11-18",
    "kind": "group",
    "title": "AI 平台 多個高風險漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 9.3",
+   "sub": "4 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1167,17 +1634,19 @@
     "AI 平台"
    ],
    "cves": [
+    "CVE-2026-130685",
+    "CVE-2026-130686",
     "CVE-2026-130840",
     "CVE-2026-130856"
    ],
    "cvss": 9.3,
    "published": "2026-11-17T20:17:48+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
-   "updated": "2026-11-17T22:58:36+00:00",
+   "updated": "2026-11-18T14:06:32+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130840",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130685",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.3。",
+    "同日公布 4 個漏洞，最高 CVSS 9.3。",
     "BISHENG before 3.0.0 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to impersonate administrat"
    ],
    "fix": "",
@@ -1186,7 +1655,9 @@
    "raw": {
     "descs": [
      "BISHENG before 3.0.0 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to impersonate administrators by abusing a hard-coded default jwt_secret used by AuthJwt. Attackers can forge an HS256 token offline naming user_id 1 with the admin role, send it as access_token_cookie, and gain full administrative access to users, workspaces, knowledge bases and workflows.",
-     "53AIHub before 0.5.5 contains a missing authentication vulnerability that allows remote unauthenticated attackers to reinitialize installed instances by calling the public POST /api/init endpoint. Attackers can reset an existing account's password, assign the top creator role, and obtain an access token to take over accounts and use admin-only API routes."
+     "53AIHub before 0.5.5 contains a missing authentication vulnerability that allows remote unauthenticated attackers to reinitialize installed instances by calling the public POST /api/init endpoint. Attackers can reset an existing account's password, assign the top creator role, and obtain an access token to take over accounts and use admin-only API routes.",
+     "vLLM from 0.28.0 before 0.33.0 contains an improper input validation vulnerability that allows unauthenticated attackers to crash the shared EngineCore by sending out-of-range prompt token ids when served with --skip-tokenizer-init. Attackers can submit a large positive token id to /v1/completions, /v1/embeddings, or /pooling, bypassing the tokenizer-gated vocab check and causing a fatal embedding index error that denies service to all tenants.",
+     "vLLM from 0.6.0 before 0.33.0 lacks a request-wide media budget, allowing remote inference clients to exhaust frontend resources by submitting many remote image URLs in one request. Attackers can send a compact request to /v1/messages or /v1/responses that forces downloading and decoding of every image before prompt-length admission, exhausting memory, CPU, and connections."
     ]
    }
   },
@@ -1562,7 +2033,7 @@
    "cvss": 8.7,
    "published": "2026-11-17T05:18:29+00:00",
    "first_seen": "2026-11-17T14:32:21+00:00",
-   "updated": "2026-11-18T04:29:10+00:00",
+   "updated": "2026-11-18T14:06:32+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105739",
    "pts": [
@@ -1582,6 +2053,7 @@
      "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.3 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to access protected CI/CD variables and resources due to a race condition in pipeline job authorization.",
      "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.2 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to execute arbitrary JavaScript in the browser of users viewing a wiki page due to improper sanitization of user input.",
      "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to execute arbitrary JavaScript in the browser of users viewing Error Tracking pages due to improper sanitization of user input.",
+     "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.3 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to access protected CI/CD variables and resources due to a race condition in pipeline job authorization.",
      "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.3 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to access protected CI/CD variables and resources due to a race condition in pipeline job authorization."
     ]
    }
@@ -3529,7 +4001,7 @@
    "cvss": 9.5,
    "published": "2026-11-13T00:20:09+00:00",
    "first_seen": "2026-11-16T22:09:24+00:00",
-   "updated": "2026-11-18T04:29:10+00:00",
+   "updated": "2026-11-18T14:06:32+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107407",
    "pts": [
@@ -3591,6 +4063,8 @@
      "Memory overflow in SIP ALG (LSN) and DNS answer-section logging datapaths can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler",
      "Memory overflow in HTTP/3 (QUIC) can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
      "Memory overflow in HTTP/2 handling can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Endpoint Analysis (EPA/EPAS) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+     "Memory overflow in Email OTP authentication can lead to unpredictable or erroneous behavior or Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
      "Memory overflow in Endpoint Analysis (EPA/EPAS) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway."
     ]
    }
@@ -14068,10 +14542,94 @@
   "CVE-2026-52787": [],
   "CVE-2026-129295": [],
   "CVE-2026-100977": [],
-  "CVE-2026-100980": []
+  "CVE-2026-100980": [],
+  "CVE-2026-110486": [],
+  "CVE-2026-126041": [],
+  "CVE-2026-128851": [],
+  "CVE-2026-129434": [],
+  "CVE-2026-128981": [],
+  "CVE-2026-19707": [
+   "Ivanti"
+  ],
+  "CVE-2026-129961": [],
+  "CVE-2026-130678": [],
+  "CVE-2026-130679": [],
+  "CVE-2026-130680": [],
+  "CVE-2026-130681": [],
+  "CVE-2026-130682": [],
+  "CVE-2026-130706": [],
+  "CVE-2026-127143": [],
+  "CVE-2025-59906": [],
+  "CVE-2025-59907": [],
+  "CVE-2026-130648": [],
+  "CVE-2026-130650": [],
+  "CVE-2026-130674": [],
+  "CVE-2026-130675": [],
+  "CVE-2026-130683": [],
+  "CVE-2026-130712": [],
+  "CVE-2026-130716": [],
+  "CVE-2026-130730": [],
+  "CVE-2026-130733": [],
+  "CVE-2026-130735": [],
+  "CVE-2026-129171": [],
+  "CVE-2026-130747": [],
+  "CVE-2026-109857": [],
+  "CVE-2026-129125": [],
+  "CVE-2026-129167": [],
+  "CVE-2026-95643": [],
+  "CVE-2026-95645": [],
+  "CVE-2026-111508": [],
+  "CVE-2026-5765": [],
+  "CVE-2025-2235": [],
+  "CVE-2026-125820": [],
+  "CVE-2026-113497": [],
+  "CVE-2026-130677": [],
+  "CVE-2026-130685": [
+   "AI 平台"
+  ],
+  "CVE-2026-130686": [
+   "AI 平台"
+  ],
+  "CVE-2026-130689": [],
+  "CVE-2026-130690": [],
+  "CVE-2026-130692": [],
+  "CVE-2026-130702": [],
+  "CVE-2026-130704": [],
+  "CVE-2026-130708": [],
+  "CVE-2026-130709": [],
+  "CVE-2026-130718": [],
+  "CVE-2026-130723": [],
+  "CVE-2026-130727": [],
+  "CVE-2026-130729": [],
+  "CVE-2026-130732": [],
+  "CVE-2026-130736": [],
+  "CVE-2026-130739": [],
+  "CVE-2026-130740": [],
+  "CVE-2026-130741": [],
+  "CVE-2026-130742": [],
+  "CVE-2026-130743": [],
+  "CVE-2026-130744": [],
+  "CVE-2026-130748": [],
+  "CVE-2026-130749": [],
+  "CVE-2026-107518": [],
+  "CVE-2026-109861": [],
+  "CVE-2026-127142": [],
+  "CVE-2026-63151": [],
+  "CVE-2026-128126": [],
+  "CVE-2026-130700": [],
+  "CVE-2026-130737": [],
+  "CVE-2026-130738": [],
+  "CVE-2026-82952": [],
+  "CVE-2026-87789": [],
+  "CVE-2026-87790": [],
+  "CVE-2026-132121": [],
+  "CVE-2026-130728": [],
+  "CVE-2026-63167": [],
+  "CVE-2026-118900": [],
+  "CVE-2026-130724": []
  },
- "nvd_last": "2026-11-18T04:23:30+00:00",
- "kev_last": "2026-11-18T04:23:30+00:00",
+ "nvd_last": "2026-11-18T13:59:44+00:00",
+ "kev_last": "2026-11-18T13:59:44+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
