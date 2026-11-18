@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T13:59:44+00:00",
+ "generated": "2026-11-18T21:57:45+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,11 +324,19 @@
   }
  ],
  "todo": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "items": [
    {
     "title": "Windows Server：Windows 多個高風險漏洞",
     "desc": "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integ"
+   },
+   {
+    "title": ".NET 漏洞 CVE-2026-111497",
+    "desc": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli ve"
+   },
+   {
+    "title": "Windows Server：Windows 多個高風險漏洞",
+    "desc": "Insufficient protection of communications in Progress WS_FTP Server versions prior to 2025"
    },
    {
     "title": "Windows Server：【資安日報】11月16日，Check Point閘",
@@ -341,14 +349,6 @@
    {
     "title": "ASP.NET 多個高風險漏洞",
     "desc": "原文：The issue is fixed in version `2026.4.1111`."
-   },
-   {
-    "title": "ASP.NET 多個高風險漏洞",
-    "desc": "原文：The issue is fixed in version `2026.3.1015`."
-   },
-   {
-    "title": "SQL Server 漏洞 CVE-2026-126617",
-    "desc": "SQL injection in the database layer of Progressive Robot hMailServer 6.0.0-B1 through 6.2."
    }
   ],
   "ai": false
@@ -361,6 +361,87 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:efd23899a90f",
+   "kind": "news",
+   "title": "NuGet.org新增套件上架核准機制，降低自動化憑證遭濫用風險",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-18T22:03:48+00:00",
+   "first_seen": "2026-11-18T22:03:48+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180626",
+   "pts": [
+    "微軟NuGet.org新增套件暫存發布功能，開發團隊可先透過自動化流程上傳套件，完成安全檢查後，再由授權維護者核准公開。新機制也允許限制自動化工具的發布權限，降低建置系統憑證遭竊後，被用來直接發布惡意套件的風險。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:AI 平台:2026-11-19",
+   "kind": "group",
+   "title": "AI 平台 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-130154",
+    "CVE-2026-63189"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-18T16:18:16+00:00",
+   "first_seen": "2026-11-18T22:03:25+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130154",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "Dialoqbase is an application for creating chatbots. Prior to 1.11.5, the unauthenticated GET /api/v1/view/* route in server/src/routes/api/v"
+   ],
+   "fix": "升級至 1.11.5 以上（依原文擷取）",
+   "ai": false
+  },
+  {
+   "id": "grp:nginx:2026-11-19",
+   "kind": "group",
+   "title": "nginx 多個高風險漏洞",
+   "sub": "6 個 CVE · 最高 CVSS 9.2",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-113425",
+    "CVE-2026-118899",
+    "CVE-2026-121810",
+    "CVE-2026-123007",
+    "CVE-2026-123633",
+    "CVE-2026-123634"
+   ],
+   "cvss": 9.2,
+   "published": "2026-11-18T16:17:59+00:00",
+   "first_seen": "2026-11-18T22:03:25+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113425",
+   "pts": [
+    "同日公布 6 個漏洞，最高 CVSS 9.2。",
+    "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker proces"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:2e6ab840ef1c",
    "kind": "news",
@@ -898,6 +979,84 @@
    "ai": true
   },
   {
+   "id": "CVE-2024-10441",
+   "kind": "cve",
+   "title": "Synology DiskStation Manager (DSM) Impro",
+   "sub": "CVE-2024-10441 · CVSS 9.8",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [
+    "CVE-2024-10441"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T22:03:33+00:00",
+   "src": "CISA KEV",
+   "url": "https://www.synology.com/zh-tw/security/advisory/Synology_SA_24_20",
+   "pts": [
+    "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) t",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-40217",
+   "kind": "cve",
+   "title": "BerriAI LiteLLM Unprotected Alternate Ch",
+   "sub": "CVE-2026-40217 · CVSS 8.8",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-40217"
+   ],
+   "cvss": 8.8,
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T22:03:39+00:00",
+   "src": "CISA KEV",
+   "url": "https://github.com/BerriAI/litellm/security/advisories/GHSA-wxxx-gvqv-xp7p",
+   "pts": [
+    "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via byte",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-90436",
+   "kind": "cve",
+   "title": "Apache Axis Unsafe Reflection Vulnerabil",
+   "sub": "CVE-2026-90436 · CVSS 9.8",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [
+    "CVE-2026-90436"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T22:03:46+00:00",
+   "src": "CISA KEV",
+   "url": "https://lists.apache.org/thread/8slf0j9gz35z56t0glt5h0ncwlbn4bdz",
+   "pts": [
+    "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a ",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
+   "ai": false
+  },
+  {
    "id": "grp:SQL Server:2026-11-18",
    "kind": "group",
    "title": "MySQL 多元件漏洞",
@@ -922,11 +1081,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114949",
    "pts": [
-    "影響 MySQL Server 8.4.0-8.4.13 等及 Cluster 8.0.0-8.0.50 等版本之四元件漏洞。",
-    "含 5 項 CVE（CVSS 7.2），**漏洞易於利用**，目前尚未遭利用，亦無勒索軟體利用情形。"
+    "同日公布 5 個漏洞，最高 CVSS 7.2。",
+    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Replication). Supported versions that are affec"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "CVE-2026-114938",
@@ -1130,10 +1289,42 @@
    "ai": false
   },
   {
+   "id": "grp:Windows Server:2026-11-18",
+   "kind": "group",
+   "title": "Windows 多個高風險漏洞",
+   "sub": "6 個 CVE · 最高 CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server",
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-130938",
+    "CVE-2026-130944",
+    "CVE-2026-130969",
+    "CVE-2026-130987",
+    "CVE-2026-131063",
+    "CVE-2026-131092"
+   ],
+   "cvss": 8.3,
+   "published": "2026-11-17T21:17:49+00:00",
+   "first_seen": "2026-11-18T22:03:25+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130938",
+   "pts": [
+    "同日公布 6 個漏洞，最高 CVSS 8.3。",
+    "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code ou"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "grp:Chrome:2026-11-18",
    "kind": "group",
    "title": "Chrome 多個高風險漏洞",
-   "sub": "81 個 CVE · 最高 CVSS 9.6",
+   "sub": "104 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1141,28 +1332,35 @@
     "Chrome"
    ],
    "cves": [
+    "CVE-2026-130906",
     "CVE-2026-130907",
     "CVE-2026-130909",
     "CVE-2026-130910",
+    "CVE-2026-130913",
     "CVE-2026-130915",
     "CVE-2026-130917",
     "CVE-2026-130918",
     "CVE-2026-130919",
     "CVE-2026-130923",
+    "CVE-2026-130924",
     "CVE-2026-130926",
+    "CVE-2026-130927",
     "CVE-2026-130929",
     "CVE-2026-130930",
     "CVE-2026-130938",
     "CVE-2026-130943",
     "CVE-2026-130944",
     "CVE-2026-130945",
+    "CVE-2026-130946",
     "CVE-2026-130948",
     "CVE-2026-130950",
     "CVE-2026-130951",
     "CVE-2026-130956",
     "CVE-2026-130957",
     "CVE-2026-130960",
+    "CVE-2026-130962",
     "CVE-2026-130963",
+    "CVE-2026-130964",
     "CVE-2026-130968",
     "CVE-2026-130969",
     "CVE-2026-130971",
@@ -1172,33 +1370,46 @@
     "CVE-2026-130979",
     "CVE-2026-130980",
     "CVE-2026-130982",
+    "CVE-2026-130983",
+    "CVE-2026-130984",
     "CVE-2026-130987",
     "CVE-2026-130992",
     "CVE-2026-130994",
     "CVE-2026-130996",
+    "CVE-2026-130998",
     "CVE-2026-130999",
     "CVE-2026-131000",
     "CVE-2026-131001",
+    "CVE-2026-131003",
     "CVE-2026-131004",
     "CVE-2026-131005",
     "CVE-2026-131006",
     "CVE-2026-131008",
     "CVE-2026-131010",
     "CVE-2026-131013",
+    "CVE-2026-131015",
+    "CVE-2026-131018",
     "CVE-2026-131020",
     "CVE-2026-131021",
     "CVE-2026-131022",
+    "CVE-2026-131023",
+    "CVE-2026-131024",
     "CVE-2026-131025",
+    "CVE-2026-131029",
     "CVE-2026-131031",
     "CVE-2026-131037",
+    "CVE-2026-131038",
     "CVE-2026-131039",
+    "CVE-2026-131041",
     "CVE-2026-131042",
     "CVE-2026-131043",
     "CVE-2026-131044",
+    "CVE-2026-131045",
     "CVE-2026-131049",
     "CVE-2026-131050",
     "CVE-2026-131051",
     "CVE-2026-131054",
+    "CVE-2026-131055",
     "CVE-2026-131056",
     "CVE-2026-131057",
     "CVE-2026-131059",
@@ -1207,7 +1418,9 @@
     "CVE-2026-131063",
     "CVE-2026-131065",
     "CVE-2026-131068",
+    "CVE-2026-131071",
     "CVE-2026-131074",
+    "CVE-2026-131075",
     "CVE-2026-131077",
     "CVE-2026-131078",
     "CVE-2026-131079",
@@ -1219,6 +1432,7 @@
     "CVE-2026-131090",
     "CVE-2026-131092",
     "CVE-2026-131093",
+    "CVE-2026-131097",
     "CVE-2026-131100",
     "CVE-2026-131101",
     "CVE-2026-131106"
@@ -1227,9 +1441,9 @@
    "published": "2026-11-17T21:17:44+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130907",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130906",
    "pts": [
-    "同日公布 81 個漏洞，最高 CVSS 9.6。",
+    "同日公布 104 個漏洞，最高 CVSS 9.6。",
     "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute"
    ],
    "fix": "",
@@ -2594,10 +2808,10 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-126398",
-   "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-126398",
-   "sub": "CVE-2026-126398 · CVSS 8.2",
+   "id": "grp:AI 平台:2026-11-13",
+   "kind": "group",
+   "title": "AI 平台 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -2605,14 +2819,16 @@
     "AI 平台"
    ],
    "cves": [
+    "CVE-2026-126397",
     "CVE-2026-126398"
    ],
-   "cvss": 8.2,
-   "published": "2026-11-13T10:17:44+00:00",
+   "cvss": 8.7,
+   "published": "2026-11-13T10:17:43+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126398",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126397",
    "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
     "vLLM from 0.28.0 before 0.30.0 contains a reachable assertion vulnerability in GPUModelRunner._init_xdrope_positions that allows remote atta"
    ],
    "fix": "",
@@ -5315,6 +5531,36 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "grp:Windows Server:2026-11-10",
+   "kind": "group",
+   "title": "Windows 多個高風險漏洞",
+   "sub": "5 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-115337",
+    "CVE-2026-115338",
+    "CVE-2026-115339",
+    "CVE-2026-115340",
+    "CVE-2026-115341"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-09T17:17:11+00:00",
+   "first_seen": "2026-11-18T22:03:25+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115337",
+   "pts": [
+    "同日公布 5 個漏洞，最高 CVSS 9.8。",
+    "Insufficient protection of communications in Progress WS_FTP Server versions prior to 2025.0.5 could allow a network attacker to intercept s"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "tw:d26544e666d5",
@@ -10309,6 +10555,32 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-111497",
+   "kind": "cve",
+   "title": ".NET 漏洞 CVE-2026-111497",
+   "sub": "CVE-2026-111497 · CVSS 9.2",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    ".NET",
+    "Node.js"
+   ],
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "cvss": 9.2,
+   "published": "2026-10-22T14:17:37+00:00",
+   "first_seen": "2026-11-18T22:03:25+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
+   "pts": [
+    "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "tw:09854930ad06",
