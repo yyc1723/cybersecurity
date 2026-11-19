@@ -11,20 +11,20 @@
     "desc": "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integ"
    },
    {
+    "title": "Windows Server：Windows 多個高風險漏洞",
+    "desc": "Insufficient protection of communications in Progress WS_FTP Server versions prior to 2025"
+   },
+   {
     "title": ".NET 漏洞 CVE-2026-111497",
     "desc": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli ve"
    },
    {
     "title": "Windows Server：Windows 多個高風險漏洞",
-    "desc": "Insufficient protection of communications in Progress WS_FTP Server versions prior to 2025"
+    "desc": "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allo"
    },
    {
     "title": "Windows Server：【資安日報】11月16日，Check Point閘",
     "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
-   },
-   {
-    "title": "Windows Server：Windows零時差漏洞SignDrop曝光，微軟",
-    "desc": "微軟原本為防止Windows日誌檔案遭惡意利用而導入的安全功能，如今卻被發現可能成為攻擊者提升權限的途徑。資安研究人員Nightmare Eclipse於11月10日公開Windo"
    },
    {
     "title": "ASP.NET 多個高風險漏洞",
@@ -34,6 +34,186 @@
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:0c6183b7e495",
+   "kind": "news",
+   "title": "JINS、三菱UFJ銀行等數十家日本企業陸續發布資安事件公告，皆因第三方行銷科技業者PLAID旗下KARTE平臺遭駭",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "updated": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180640",
+   "pts": [
+    "日本行銷科技服務業者PLAID旗下的KARTE平臺遭駭，攻擊者利用伺服器漏洞入侵，竊取系統認證資訊及客戶資料，導致使用該服務的數十家日本企業受到波及，包括眼鏡品牌JINS、金融業者三菱UFJ銀行、工業零組件供應商MISUMI等，多家企業已陸續公告會員個資外洩或可能外洩的情況。其中，JINS已經指出最"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "JINS、三菱UFJ銀行等數十家日本企業陸續發布資安事件公告，皆因第三方行銷科技業者PLAID旗下KARTE平臺遭駭",
+    "desc": "日本行銷科技服務業者PLAID旗下的KARTE平臺遭駭，攻擊者利用伺服器漏洞入侵，竊取系統認證資訊及客戶資料，導致使用該服務的數十家日本企業受到波及，包括眼鏡品牌JINS、金融業者三菱UFJ銀行、工業零組件供應商MISUMI等，多家企業已陸續公告會員個資外洩或可能外洩的情況。其中，JINS已經指出最多約1,829萬個會員帳號可能受到影響。 日本行銷科技服務業者PLAID（プレイド）於11月13日首次發布公告，指出旗下提供顧客資料分析及數位行銷服務的KARTE平臺遭到第三方未經授權存取，已緊急停止相關服務並展開調查。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4321a7014ebc",
+   "kind": "news",
+   "title": "駭客利用AI代理框架ARTEX攻擊資安公司Barracuda，44小時入侵10個雲端帳戶搜刮憑證",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "updated": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180621",
+   "pts": [
+    "資安公司Barracuda近日揭露雲端環境遭到入侵的事件，攻擊者利用遭竊的雲端存取金鑰，在44小時內橫跨10個雲端帳戶，持續蒐集憑證、探索內部系統，並嘗試建立後門，根據該公司的調查，此次攻擊行為使用的工具，就是AI滲透測試框架ARTEX。 駭客最初入侵的管道，是Barracuda尚未撤銷的雲端存取金"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "駭客利用AI代理框架ARTEX攻擊資安公司Barracuda，44小時入侵10個雲端帳戶搜刮憑證",
+    "desc": "資安公司Barracuda近日揭露雲端環境遭到入侵的事件，攻擊者利用遭竊的雲端存取金鑰，在44小時內橫跨10個雲端帳戶，持續蒐集憑證、探索內部系統，並嘗試建立後門，根據該公司的調查，此次攻擊行為使用的工具，就是AI滲透測試框架ARTEX。 駭客最初入侵的管道，是Barracuda尚未撤銷的雲端存取金鑰，該公司先前委託一家AI公司執行專案而提供，到了2026年10月，該AI公司的開發環境遭到入侵，攻擊者疑似從中取得這把金鑰。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:313e21f6a1ac",
+   "kind": "news",
+   "title": "Palo Alto Networks斥資45億美元併購AI新創Applied Compute",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Palo Alto"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "updated": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180637",
+   "pts": [
+    "美國資安大廠Palo Alto Networks周三（11/18）宣布，將以45億美元全股票交易併購AI新創Applied Compute，藉此擴展企業AI業務，協助客戶安全地訓練、客製化及部署開放權重AI模型，預計於明年4月以前完成交易，屆時Applied Compute共同創辦人暨執行長Yash"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Palo Alto Networks斥資45億美元併購AI新創Applied Compute",
+    "desc": "美國資安大廠Palo Alto Networks周三（11/18）宣布，將以45億美元全股票交易併購AI新創Applied Compute，藉此擴展企業AI業務，協助客戶安全地訓練、客製化及部署開放權重AI模型，預計於明年4月以前完成交易，屆時Applied Compute共同創辦人暨執行長Yash Patil將出任Palo Alto Networks共同AI長。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:148e5e1e0f95",
+   "kind": "news",
+   "title": "微軟Agent Framework套件遭植入惡意程式，鎖定Azure及CI/CD環境憑證",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "updated": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180624",
+   "pts": [
+    "微軟AI代理開發框架Microsoft Agent Framework的Python套件agent-framework遭植入惡意程式。根據資安業者Wiz的分析，攻擊者於11月17日在Python套件儲存庫PyPI發布惡意版本1.26.1及1.26.2，企圖竊取Azure雲端服務及Azure DevO"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "微軟Agent Framework套件遭植入惡意程式，鎖定Azure及CI/CD環境憑證",
+    "desc": "微軟AI代理開發框架Microsoft Agent Framework的Python套件agent-framework遭植入惡意程式。根據資安業者Wiz的分析，攻擊者於11月17日在Python套件儲存庫PyPI發布惡意版本1.26.1及1.26.2，企圖竊取Azure雲端服務及Azure DevOps、GitHub Actions等開發與CI/CD環境所使用的身分驗證憑證。兩個版本均已從PyPI移除。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:87fbc492d091",
+   "kind": "news",
+   "title": "研究人員揭Gemini 4 Argon行為偏離測試結果，AI代理繞過網路限制、試圖攻擊真實網站",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "updated": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180579",
+   "pts": [
+    "研究人員測試Gemini 4 Argon模型時，發現部分AI代理為了完成指定任務，不僅試圖攻擊真實網站，甚至冒用員工身分索取未公開的評測資料。即使研究團隊逐步加強網路限制，仍有AI代理設法繞過防護措施，再次連上正式網站。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "研究人員揭Gemini 4 Argon行為偏離測試結果，AI代理繞過網路限制、試圖攻擊真實網站",
+    "desc": "研究人員測試Gemini 4 Argon模型時，發現部分AI代理為了完成指定任務，不僅試圖攻擊真實網站，甚至冒用員工身分索取未公開的評測資料。即使研究團隊逐步加強網路限制，仍有AI代理設法繞過防護措施，再次連上正式網站。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d0aef390581a",
+   "kind": "news",
+   "title": "CSA發布自主滲透測試標準APAS，建立AI測試結果可信度評估規範",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "updated": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180548",
+   "pts": [
+    "AI代理逐漸應用於滲透測試，但工具能自動找出漏洞，不代表企業就能直接採信測試結果。雲端安全聯盟（Cloud Security Alliance，CSA）於2026年11月發布自主滲透測試保證標準（Autonomous Pentest Assurance Standard，APAS）1.0，要求AI工"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "CSA發布自主滲透測試標準APAS，建立AI測試結果可信度評估規範",
+    "desc": "AI代理逐漸應用於滲透測試，但工具能自動找出漏洞，不代表企業就能直接採信測試結果。雲端安全聯盟（Cloud Security Alliance，CSA）於2026年11月發布自主滲透測試保證標準（Autonomous Pentest Assurance Standard，APAS）1.0，要求AI工具提供可供第三方查核的測試證據，協助企業判斷漏洞是否確實存在，以及測試結果能否作為資安決策的依據。",
+    "summarize": true
+   }
+  },
   {
    "id": "tw:efd23899a90f",
    "kind": "news",
@@ -68,7 +248,7 @@
    "id": "grp:AI 平台:2026-11-19",
    "kind": "group",
    "title": "AI 平台 多個高風險漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 9.8",
+   "sub": "3 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -76,17 +256,18 @@
     "AI 平台"
    ],
    "cves": [
+    "CVE-2026-127222",
     "CVE-2026-130154",
     "CVE-2026-63189"
    ],
    "cvss": 9.8,
    "published": "2026-11-18T16:18:16+00:00",
    "first_seen": "2026-11-18T22:03:25+00:00",
-   "updated": "2026-11-18T22:03:25+00:00",
+   "updated": "2026-11-19T03:35:27+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130154",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127222",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "同日公布 3 個漏洞，最高 CVSS 9.8。",
     "Dialoqbase is an application for creating chatbots. Prior to 1.11.5, the unauthenticated GET /api/v1/view/* route in server/src/routes/api/v"
    ],
    "fix": "升級至 1.11.5 以上（依原文擷取）",
@@ -95,7 +276,8 @@
    "raw": {
     "descs": [
      "Dialoqbase is an application for creating chatbots. Prior to 1.11.5, the unauthenticated GET /api/v1/view/* route in server/src/routes/api/v1/view/root.ts resolves its attacker-controlled wildcard path without normalization or containment, allowing traversal outside the intended uploads directory and arbitrary server file reads. Reading environment files can disclose DB_SECRET_KEY, the application’s JWT signing key, which permits forged administrator tokens and takeover of bots, conversations, integrations, and stored third-party credentials. This issue is fixed in version 1.11.5.",
-     "Zyrabit Platform provides sovereign AI infrastructure for enterprise retrieval-augmented generation. Prior to 2.4.4, import_to_vault(source_path, destination_name) accepts both caller-controlled paths, but the content-pattern guard does not confine destination_name. The vulnerable tool is implemented in zyrabit-slm/api-rag/app/domain/services/mcp_service.py, where Path(DOCS_DIR) / destination_name is passed to shutil.copy2, allowing traversal or an absolute destination to write outside the vault. An unrestricted source_path can be copied into the vault and retrieved through secure_query, disclosing files readable by the service; files that do not match the executable-pattern filter pass that filter. When ENABLE_LEGACY_EXTENSIONS=true, zyrabit-slm/api-rag/app/main.py registers POST /mcp/rpc without get_current_user, allowing unauthenticated network tool calls; this optional exposure is disabled by default and is not required for local invocation. If an attacker can stage chosen source content and write to an execution-triggered destination, the advisory describes conditional process execution. This issue is fixed in version 2.4.4."
+     "Zyrabit Platform provides sovereign AI infrastructure for enterprise retrieval-augmented generation. Prior to 2.4.4, import_to_vault(source_path, destination_name) accepts both caller-controlled paths, but the content-pattern guard does not confine destination_name. The vulnerable tool is implemented in zyrabit-slm/api-rag/app/domain/services/mcp_service.py, where Path(DOCS_DIR) / destination_name is passed to shutil.copy2, allowing traversal or an absolute destination to write outside the vault. An unrestricted source_path can be copied into the vault and retrieved through secure_query, disclosing files readable by the service; files that do not match the executable-pattern filter pass that filter. When ENABLE_LEGACY_EXTENSIONS=true, zyrabit-slm/api-rag/app/main.py registers POST /mcp/rpc without get_current_user, allowing unauthenticated network tool calls; this optional exposure is disabled by default and is not required for local invocation. If an attacker can stage chosen source content and write to an execution-triggered destination, the advisory describes conditional process execution. This issue is fixed in version 2.4.4.",
+     "SGLang through 0.5.23, fixed in commit 7b5fb39, contains a missing authorization vulnerability in the POST /load_lora_adapter_from_tensors HTTP endpoint, which lacks the @auth_level(AuthLevel.ADMIN_OPTIONAL) decorator applied to its sibling admin endpoints, allowing unauthenticated network-reachable attackers to invoke it without an API key. Attackers can load a LoRA adapter from attacker-supplied serialized tensors to manipulate the served model, and when combined with a separately documented deserialization bypass, achieve unauthenticated remote code execution as root."
     ]
    }
   },
@@ -121,7 +303,7 @@
    "cvss": 9.2,
    "published": "2026-11-18T16:17:59+00:00",
    "first_seen": "2026-11-18T22:03:25+00:00",
-   "updated": "2026-11-18T22:03:25+00:00",
+   "updated": "2026-11-19T03:35:27+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113425",
    "pts": [
@@ -138,7 +320,9 @@
      "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
-     "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+     "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     ]
    }
   },
@@ -1197,7 +1381,7 @@
    "cvss": 10.0,
    "published": "2026-11-17T22:18:03+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
-   "updated": "2026-11-18T22:03:25+00:00",
+   "updated": "2026-11-19T03:35:27+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101652",
    "pts": [
@@ -1568,7 +1752,11 @@
      "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security).   The supported version that is affected is 21.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle AutoVue.  Successful attacks of this vulnerability can result in takeover of Oracle AutoVue. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security).   The supported version that is affected is 21.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle AutoVue.  Successful attacks of this vulnerability can result in takeover of Oracle AutoVue. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
      "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security).   The supported version that is affected is 21.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle AutoVue.  Successful attacks of this vulnerability can result in takeover of Oracle AutoVue. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via SAML to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Access Manager. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H)."
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via SAML to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Access Manager. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via RMI to compromise Oracle Service Bus.  While the vulnerability is in Oracle Service Bus, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Service Bus accessible data as well as  unauthorized access to critical data or complete access to all Oracle Service Bus accessible data. CVSS 3.1 Base Score 9.6 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Composer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle WebCenter Portal accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data as well as  unauthorized update, insert or delete access to some of Oracle Access Manager accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data as well as  unauthorized update, insert or delete access to some of Oracle Access Manager accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N)."
     ]
    }
   },
@@ -1576,7 +1764,7 @@
    "id": "grp:Windows Server:2026-11-18",
    "kind": "group",
    "title": "Windows 多個高風險漏洞",
-   "sub": "6 個 CVE · 最高 CVSS 8.3",
+   "sub": "7 個 CVE · 最高 CVSS 8.3",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -1589,17 +1777,18 @@
     "CVE-2026-130944",
     "CVE-2026-130969",
     "CVE-2026-130987",
+    "CVE-2026-130999",
     "CVE-2026-131063",
     "CVE-2026-131092"
    ],
    "cvss": 8.3,
    "published": "2026-11-17T21:17:49+00:00",
    "first_seen": "2026-11-18T22:03:25+00:00",
-   "updated": "2026-11-18T22:03:25+00:00",
+   "updated": "2026-11-19T03:35:27+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130938",
    "pts": [
-    "同日公布 6 個漏洞，最高 CVSS 8.3。",
+    "同日公布 7 個漏洞，最高 CVSS 8.3。",
     "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code ou"
    ],
    "fix": "",
@@ -1612,7 +1801,10 @@
      "Incorrect authorization in Omnibox in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
      "Race condition in Downloads in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
      "Use after free in CameraCapture in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-     "Use after free in Mojo in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)"
+     "Use after free in Mojo in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Race condition in Downloads in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Downloads in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CameraCapture in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
@@ -1736,7 +1928,7 @@
    "cvss": 9.6,
    "published": "2026-11-17T21:17:44+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
-   "updated": "2026-11-18T22:03:25+00:00",
+   "updated": "2026-11-19T03:35:27+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130906",
    "pts": [
@@ -2040,7 +2232,35 @@
      "Improper output encoding in Editing in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
      "Confused deputy in Mobile in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
      "Improper input validation in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to potentially bypass web origin policy into a privileged page via a crafted HTML page. (Chromium security severity: Medium)",
-     "Missing authorization in V8 in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)"
+     "Missing authorization in V8 in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in WebGL in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Out of bounds write in ANGLE in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Buffer overflow in Color in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Out of bounds write in Tint in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+     "Buffer overflow in Video in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+     "Use after free in GarbageCollection in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Buffer overflow in Media in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "Use after free in Autofill in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DOM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Use after free in Bindings in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in CSS in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in XML in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in Views in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Improper input validation in WebAppInstalls in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in FedCM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in DeviceBoundSessionCredentials in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Proxy in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted file. (Chromium security severity: Medium)",
+     "Incorrect authorization in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy into a privileged page via a crafted Chrome extension. (Chromium security severity: Low)",
+     "Incorrect authorization in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted Chrome extension. (Chromium security severity: Low)",
+     "Incorrect authorization in PerformanceAPIs in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Incorrect authorization in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy into a privileged page via a crafted Chrome extension. (Chromium security severity: Low)",
+     "Incorrect authorization in Canvas in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Confused deputy in TabModel in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via UI Interaction. (Chromium security severity: Medium)",
+     "Race condition in Core in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Improper input validation in Extensions in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy into a privileged page via a crafted Chrome extension. (Chromium security severity: Low)",
+     "Incorrect authorization in PerformanceAPIs in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)"
     ]
    }
   },
@@ -15225,10 +15445,89 @@
   "CVE-2026-17332": [],
   "CVE-2026-17333": [],
   "CVE-2026-126280": [],
-  "CVE-2026-61532": []
+  "CVE-2026-61532": [],
+  "CVE-2026-129987": [],
+  "CVE-2026-129316": [],
+  "CVE-2026-129986": [],
+  "CVE-2026-129989": [],
+  "CVE-2026-129991": [],
+  "CVE-2026-63411": [],
+  "CVE-2026-63412": [],
+  "CVE-2026-63413": [],
+  "CVE-2026-131914": [],
+  "CVE-2026-123965": [],
+  "CVE-2026-76913": [],
+  "CVE-2026-77283": [],
+  "CVE-2026-17158": [],
+  "CVE-2026-17172": [],
+  "CVE-2026-127222": [
+   "AI 平台"
+  ],
+  "CVE-2026-130092": [],
+  "CVE-2026-73967": [],
+  "CVE-2026-77295": [],
+  "CVE-2026-129985": [],
+  "CVE-2026-126091": [],
+  "CVE-2026-130753": [],
+  "CVE-2026-130761": [],
+  "CVE-2026-132139": [],
+  "CVE-2026-132141": [],
+  "CVE-2026-132143": [],
+  "CVE-2026-132748": [],
+  "CVE-2026-121720": [],
+  "CVE-2026-132142": [],
+  "CVE-2026-129315": [],
+  "CVE-2026-132751": [],
+  "CVE-2026-132756": [],
+  "CVE-2026-55169": [],
+  "CVE-2026-106094": [],
+  "CVE-2026-130785": [],
+  "CVE-2026-132144": [],
+  "CVE-2026-129990": [],
+  "CVE-2026-109858": [],
+  "CVE-2026-109860": [],
+  "CVE-2026-76100": [],
+  "CVE-2026-59961": [],
+  "CVE-2026-76007": [],
+  "CVE-2026-132244": [],
+  "CVE-2026-132229": [],
+  "CVE-2026-73971": [],
+  "CVE-2026-82171": [],
+  "CVE-2026-62964": [],
+  "CVE-2026-129246": [],
+  "CVE-2026-130893": [],
+  "CVE-2026-132140": [],
+  "CVE-2026-13451": [
+   "AI 平台"
+  ],
+  "CVE-2026-114585": [],
+  "CVE-2026-59975": [],
+  "CVE-2026-75522": [],
+  "CVE-2026-76088": [],
+  "CVE-2026-75612": [],
+  "CVE-2026-76818": [],
+  "CVE-2026-123123": [],
+  "CVE-2026-111513": [],
+  "CVE-2026-111514": [],
+  "CVE-2026-111520": [],
+  "CVE-2026-130089": [],
+  "CVE-2026-73968": [],
+  "CVE-2026-113699": [],
+  "CVE-2026-116519": [],
+  "CVE-2026-96665": [],
+  "CVE-2026-3232": [],
+  "CVE-2026-111515": [],
+  "CVE-2026-130091": [],
+  "CVE-2026-76101": [],
+  "CVE-2026-71535": [],
+  "CVE-2026-132745": [],
+  "CVE-2026-132746": [],
+  "CVE-2026-132747": [],
+  "CVE-2026-132749": [],
+  "CVE-2026-132750": []
  },
- "nvd_last": "2026-11-18T21:57:45+00:00",
- "kev_last": "2026-11-18T21:57:45+00:00",
+ "nvd_last": "2026-11-19T03:29:49+00:00",
+ "kev_last": "2026-11-19T03:29:49+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",

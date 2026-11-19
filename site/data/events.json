@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T21:57:45+00:00",
+ "generated": "2026-11-19T03:29:49+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -331,20 +331,20 @@
     "desc": "Improper neutralization of special elements used in an OS command in Lenovo XClarity Integ"
    },
    {
+    "title": "Windows Server：Windows 多個高風險漏洞",
+    "desc": "Insufficient protection of communications in Progress WS_FTP Server versions prior to 2025"
+   },
+   {
     "title": ".NET 漏洞 CVE-2026-111497",
     "desc": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli ve"
    },
    {
     "title": "Windows Server：Windows 多個高風險漏洞",
-    "desc": "Insufficient protection of communications in Progress WS_FTP Server versions prior to 2025"
+    "desc": "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allo"
    },
    {
     "title": "Windows Server：【資安日報】11月16日，Check Point閘",
     "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
-   },
-   {
-    "title": "Windows Server：Windows零時差漏洞SignDrop曝光，微軟",
-    "desc": "微軟原本為防止Windows日誌檔案遭惡意利用而導入的安全功能，如今卻被發現可能成為攻擊者提升權限的途徑。資安研究人員Nightmare Eclipse於11月10日公開Windo"
    },
    {
     "title": "ASP.NET 多個高風險漏洞",
@@ -361,6 +361,144 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:0c6183b7e495",
+   "kind": "news",
+   "title": "JINS、三菱UFJ銀行等數十家日本企業陸續發布資安事件公告，皆因第三方行銷科技業者PLAID旗下KARTE平臺遭駭",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180640",
+   "pts": [
+    "日本行銷科技服務業者PLAID旗下的KARTE平臺遭駭，攻擊者利用伺服器漏洞入侵，竊取系統認證資訊及客戶資料，導致使用該服務的數十家日本企業受到波及，包括眼鏡品牌JINS、金融業者三菱UFJ銀行、工業零組件供應商MISUMI等，多家企業已陸續公告會員個資外洩或可能外洩的情況。其中，JINS已經指出最"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:4321a7014ebc",
+   "kind": "news",
+   "title": "駭客利用AI代理框架ARTEX攻擊資安公司Barracuda，44小時入侵10個雲端帳戶搜刮憑證",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180621",
+   "pts": [
+    "資安公司Barracuda近日揭露雲端環境遭到入侵的事件，攻擊者利用遭竊的雲端存取金鑰，在44小時內橫跨10個雲端帳戶，持續蒐集憑證、探索內部系統，並嘗試建立後門，根據該公司的調查，此次攻擊行為使用的工具，就是AI滲透測試框架ARTEX。 駭客最初入侵的管道，是Barracuda尚未撤銷的雲端存取金"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:313e21f6a1ac",
+   "kind": "news",
+   "title": "Palo Alto Networks斥資45億美元併購AI新創Applied Compute",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Palo Alto"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180637",
+   "pts": [
+    "美國資安大廠Palo Alto Networks周三（11/18）宣布，將以45億美元全股票交易併購AI新創Applied Compute，藉此擴展企業AI業務，協助客戶安全地訓練、客製化及部署開放權重AI模型，預計於明年4月以前完成交易，屆時Applied Compute共同創辦人暨執行長Yash"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:148e5e1e0f95",
+   "kind": "news",
+   "title": "微軟Agent Framework套件遭植入惡意程式，鎖定Azure及CI/CD環境憑證",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180624",
+   "pts": [
+    "微軟AI代理開發框架Microsoft Agent Framework的Python套件agent-framework遭植入惡意程式。根據資安業者Wiz的分析，攻擊者於11月17日在Python套件儲存庫PyPI發布惡意版本1.26.1及1.26.2，企圖竊取Azure雲端服務及Azure DevO"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:87fbc492d091",
+   "kind": "news",
+   "title": "研究人員揭Gemini 4 Argon行為偏離測試結果，AI代理繞過網路限制、試圖攻擊真實網站",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180579",
+   "pts": [
+    "研究人員測試Gemini 4 Argon模型時，發現部分AI代理為了完成指定任務，不僅試圖攻擊真實網站，甚至冒用員工身分索取未公開的評測資料。即使研究團隊逐步加強網路限制，仍有AI代理設法繞過防護措施，再次連上正式網站。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:d0aef390581a",
+   "kind": "news",
+   "title": "CSA發布自主滲透測試標準APAS，建立AI測試結果可信度評估規範",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T03:35:30+00:00",
+   "first_seen": "2026-11-19T03:35:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180548",
+   "pts": [
+    "AI代理逐漸應用於滲透測試，但工具能自動找出漏洞，不代表企業就能直接採信測試結果。雲端安全聯盟（Cloud Security Alliance，CSA）於2026年11月發布自主滲透測試保證標準（Autonomous Pentest Assurance Standard，APAS）1.0，要求AI工"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:efd23899a90f",
    "kind": "news",
@@ -388,7 +526,7 @@
    "id": "grp:AI 平台:2026-11-19",
    "kind": "group",
    "title": "AI 平台 多個高風險漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 9.8",
+   "sub": "3 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -396,6 +534,7 @@
     "AI 平台"
    ],
    "cves": [
+    "CVE-2026-127222",
     "CVE-2026-130154",
     "CVE-2026-63189"
    ],
@@ -403,9 +542,9 @@
    "published": "2026-11-18T16:18:16+00:00",
    "first_seen": "2026-11-18T22:03:25+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130154",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127222",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "同日公布 3 個漏洞，最高 CVSS 9.8。",
     "Dialoqbase is an application for creating chatbots. Prior to 1.11.5, the unauthenticated GET /api/v1/view/* route in server/src/routes/api/v"
    ],
    "fix": "升級至 1.11.5 以上（依原文擷取）",
@@ -1292,7 +1431,7 @@
    "id": "grp:Windows Server:2026-11-18",
    "kind": "group",
    "title": "Windows 多個高風險漏洞",
-   "sub": "6 個 CVE · 最高 CVSS 8.3",
+   "sub": "7 個 CVE · 最高 CVSS 8.3",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -1305,6 +1444,7 @@
     "CVE-2026-130944",
     "CVE-2026-130969",
     "CVE-2026-130987",
+    "CVE-2026-130999",
     "CVE-2026-131063",
     "CVE-2026-131092"
    ],
@@ -1314,7 +1454,7 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130938",
    "pts": [
-    "同日公布 6 個漏洞，最高 CVSS 8.3。",
+    "同日公布 7 個漏洞，最高 CVSS 8.3。",
     "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code ou"
    ],
    "fix": "",
