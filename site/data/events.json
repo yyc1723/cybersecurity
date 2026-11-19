@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T03:29:49+00:00",
+ "generated": "2026-11-19T13:10:28+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -343,12 +343,12 @@
     "desc": "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allo"
    },
    {
-    "title": "Windows Server：【資安日報】11月16日，Check Point閘",
-    "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
+    "title": "ASP.NET 多個高風險漏洞",
+    "desc": "原文：The issue is fixed in version `2026.4.1111`."
    },
    {
     "title": "ASP.NET 多個高風險漏洞",
-    "desc": "原文：The issue is fixed in version `2026.4.1111`."
+    "desc": "原文：The issue is fixed in version `2026.3.1015`."
    }
   ],
   "ai": false
@@ -361,6 +361,351 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:7e54063b17fb",
+   "kind": "news",
+   "title": "愛爾蘭金融業IT供應商Wellington IT遭駭，波及約40家信用合作社，會員收款人資料外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180665",
+   "pts": [
+    "愛爾蘭金融業傳出大規模第三方服務供應商資安事件，為當地信用合作社提供銀行軟體及IT服務的Wellington IT遭到駭客攻擊，導致約40家信用合作社受到波及，會員在網路銀行儲存的收款帳戶資料，包括收款人姓名、銀行帳號等資訊，皆因此遭到未經授權的存取。Wellington IT已證實發生資安事件，並"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:afabda8590e8",
+   "kind": "news",
+   "title": "勒索軟體駭客The Gentlemen聲稱入侵Nvidia，疑為合作夥伴遭駭受到波及",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180664",
+   "pts": [
+    "勒索軟體組織The Gentlemen近日將GPU大廠Nvidia列入其暗網資料勒索網站的受害者名單，聲稱已取得該公司的資料，並威脅若雙方未能達成協議，將在10天後公開竊取的資料，引起全球高度關注。對此，Nvidia發言人表示，該公司正在調查一起可能影響第三方合作夥伴的事件，目前沒有發現Nvidia"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:bdcae02c19a5",
+   "kind": "news",
+   "title": "大車隊子公司全球商務科技遭未經授權存取，部分客戶及會員資料外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180662",
+   "pts": [
+    "11月18日晚間車隊運輸服務公司大車隊（2640）於股市公開資訊觀測站發布重大訊息，子公司全球商務科技發生資訊系統遭外部未經授權存取事件，初步調查發現部分客戶、會員及外務人員資料涉及未經授權存取及擷取，實際影響範圍仍在釐清。全球商務科技已關閉異常存取入口、修補系統弱點，並啟動帳號安全處置及後續調查。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:a560862e3a9b",
+   "kind": "news",
+   "title": "資安業者剖析ARTEX、Cairn、CyberStrikeAI等五大AI攻擊框架，均已遭濫用於實際入侵事件",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180657",
+   "pts": [
+    "近來AI自動化攻擊框架日益受到資安界關注，因為已有多種工具被濫用於實際網路入侵事件。資安業者Elastic於11月13日發布研究報告，針對5種已遭濫用的工具進行分析，涵蓋ARTEX、CyberStrikeAI、Cairn、PentAGI及HexStrike。研究指出，這些AI代理式攻擊框架雖然在架構"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:7899f2103f0f",
+   "kind": "news",
+   "title": "元太資訊系統疑遭攻擊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180658",
+   "pts": [
+    "11月18日下午電子紙顯示技術廠商元太（8069）於股市公開資訊觀測站發布重大訊息，該公司資訊系統疑似遭受駭客網路攻擊，已啟動資訊安全防禦機制，並委請外部第三方資訊安全技術公司及專家共同處理，初步評估對營運暫無重大影響。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:2c8afc11c81e",
+   "kind": "news",
+   "title": "富邦媒mo店+發生資安事件，部分出貨資料遭未經授權存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180656",
+   "pts": [
+    "電商公司富邦媒（8454）於11月19日，在股市公開資訊觀測站發布重大訊息，該公司於11月18日透過資安監控機制，發現旗下mo店+服務出貨資料發生疑似資安事件。經初步調查，部分出貨資料遭未經授權存取，目前仍持續釐清事件原因及實際影響範圍。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:83f8ee774dd5",
+   "kind": "news",
+   "title": "【資安日報】11月19日，Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180654",
+   "pts": [
+    "本日新聞焦點 ● Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼 ● 駭客利用AI代理框架ARTEX攻擊資安公司Barracuda ● 行銷平臺KARTE遭駭，波及JINS、三菱UFJ銀行等數十家日本企業"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:58e668129aef",
+   "kind": "news",
+   "title": "Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180651",
+   "pts": [
+    "開源網頁伺服器軟體Nginx周三（11/18）發布1.30.7穩定版及1.31.9主線版，緊急修補10個安全漏洞，其中有5個屬於遠端程式攻擊漏洞，而資安業者Xint也獨立發現了這5項漏洞，並將它們稱為nginx2root。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:5af90ca9adb0",
+   "kind": "news",
+   "title": "FBI警告Gootloader已入侵逾千個WordPress網站，相關勒索軟體贖金逾2,800萬美元",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180649",
+   "pts": [
+    "美國聯邦調查局（FBI）於11月16日發布Flash通報，警告惡意初始存取框架Gootloader透過遭污染的搜尋結果及遭挾持的網站，入侵各類組織，一旦取得初始存取權限，攻擊者會針對不同產業的受害者部署勒索軟體。FBI截至2026年10月已識別出逾1,000個遭感染的WordPress網站，以及21"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:8f6dc25f4a46",
+   "kind": "news",
+   "title": "日本藥妝業者DHC因第三方行銷分析平臺被駭，外洩用戶個資1,911萬筆",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180648",
+   "pts": [
+    "日本藥妝及健康食品業者DHC週三（11月18日）公告因使用的行銷分析平臺KARTE遭駭，外流客戶資料約1,911萬筆。 DHC指出，11月13日，DHC接獲外包商PLAID通知，告知後者提供的互動式行銷及客戶分析平臺KARTE遭到第三方未經授權存取，波及DHC的客戶資訊被非法存取。經過調查，DHC確"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:ee215da2a7a8",
+   "kind": "news",
+   "title": "資安業者揭露ARTEX攻擊事件應變過程，AI代理程式取得API金鑰後幾分鐘內即發動攻擊，防守方也用AI加速調查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180647",
+   "pts": [
+    "AI代理程式攻擊框架ARTEX持續受到資安界關注，已有多家資安業者揭露相關攻擊活動及調查結果，但較少詳細說明第一線資安團隊的實際應變經過。資安業者Eye Security近日公布一起企業遭ARTEX攻擊的事件應變案例，詳細揭露攻擊者如何利用AI代理程式快速滲透企業環境，以及防守方如何調查、阻擋攻擊，"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:677760efe8e8",
+   "kind": "news",
+   "title": "Apple多項雲端服務大規模中斷，內部軟體更新問題影響iCloud等服務逾6個小時",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180645",
+   "pts": [
+    "Apple於11月17日發生多項網路服務中斷，最早於美東時間上午11時15分左右出現異常，影響範圍隨後擴大。Apple向媒體表示，問題源自內部軟體更新，並非網路攻擊，該公司已復原部分系統，正設法讓其餘服務重新上線。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:8290ea758fd1",
+   "kind": "news",
+   "title": "美國警告群暉NAS、Apache Axis等4款應用系統的漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180644",
+   "pts": [
+    "11月18日美國網路安全與基礎設施安全局（CISA）表示，他們已掌握4個漏洞遭積極利用的證據，將其納入已知遭利用的漏洞名單（KEV），這些漏洞編號是CVE-2024-10441、CVE-2026-40217、CVE-2026-90436，以及CVE-2026-90817，分別影響群暉NAS作業系統D"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:ee05dc42a197",
+   "kind": "news",
+   "title": "N0n勒索軟體組織宣稱取得Visa、摩根大通等59家公司資料",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180643",
+   "pts": [
+    "勒索軟體組織N0n近日先後將金融業者摩根大通（JPMorgan Chase）及信用卡組織Visa、Mastercard以及Walmart、P&G等59家企業列入受害者名單，威脅部分受害企業若未在48小時內達成交易談判，將公開資料。 N0n今年9月開始活動，該組織在11月16日將59家企業列於其暗網資"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:86fd13cb5744",
+   "kind": "news",
+   "title": "Apache Roller反序列化漏洞已遭利用，開發團隊警告漏洞影響範圍涵蓋近20年的版本",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180639",
+   "pts": [
+    "11月17日Apache基金會（ASF）針對開源部落格發布平臺Apache Roller用戶提出警告，他們在9月修補的重大漏洞CVE-2026-82384（CVE-2026-129448）已遭積極利用，而且，原本認定影響範圍只有6.1.5版，現在確認也同時存在於4.0.0至6.1.4版所有版本。對此"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:0c6183b7e495",
    "kind": "news",
@@ -1593,7 +1938,7 @@
    "id": "grp:AI 平台:2026-11-18",
    "kind": "group",
    "title": "AI 平台 多個高風險漏洞",
-   "sub": "4 個 CVE · 最高 CVSS 9.3",
+   "sub": "6 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1603,8 +1948,10 @@
    "cves": [
     "CVE-2026-130685",
     "CVE-2026-130686",
+    "CVE-2026-130796",
     "CVE-2026-130840",
-    "CVE-2026-130856"
+    "CVE-2026-130856",
+    "CVE-2026-86061"
    ],
    "cvss": 9.3,
    "published": "2026-11-17T20:17:48+00:00",
@@ -1612,10 +1959,10 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130685",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 9.3。",
+    "同日公布 6 個漏洞，最高 CVSS 9.3。",
     "BISHENG before 3.0.0 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to impersonate administrat"
    ],
-   "fix": "",
+   "fix": "原文：This issue is fixed in release.2026-07-17T05-20-38Z.2264.",
    "ai": false
   },
   {

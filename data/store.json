@@ -23,17 +23,467 @@
     "desc": "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allo"
    },
    {
-    "title": "Windows Server：【資安日報】11月16日，Check Point閘",
-    "desc": "本日新聞焦點 ● Check Point設備遭PHP2Shell漏洞攻擊，駭客植入後門並破壞資料 ● 微軟Microsoft 365全球當機逾30小時，禍因網路升級瑕疵 ● Win"
+    "title": "ASP.NET 多個高風險漏洞",
+    "desc": "原文：The issue is fixed in version `2026.4.1111`."
    },
    {
     "title": "ASP.NET 多個高風險漏洞",
-    "desc": "原文：The issue is fixed in version `2026.4.1111`."
+    "desc": "原文：The issue is fixed in version `2026.3.1015`."
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:7e54063b17fb",
+   "kind": "news",
+   "title": "愛爾蘭金融業IT供應商Wellington IT遭駭，波及約40家信用合作社，會員收款人資料外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180665",
+   "pts": [
+    "愛爾蘭金融業傳出大規模第三方服務供應商資安事件，為當地信用合作社提供銀行軟體及IT服務的Wellington IT遭到駭客攻擊，導致約40家信用合作社受到波及，會員在網路銀行儲存的收款帳戶資料，包括收款人姓名、銀行帳號等資訊，皆因此遭到未經授權的存取。Wellington IT已證實發生資安事件，並"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "愛爾蘭金融業IT供應商Wellington IT遭駭，波及約40家信用合作社，會員收款人資料外洩",
+    "desc": "愛爾蘭金融業傳出大規模第三方服務供應商資安事件，為當地信用合作社提供銀行軟體及IT服務的Wellington IT遭到駭客攻擊，導致約40家信用合作社受到波及，會員在網路銀行儲存的收款帳戶資料，包括收款人姓名、銀行帳號等資訊，皆因此遭到未經授權的存取。Wellington IT已證實發生資安事件，並表示正與外部資安專家及主管機關合作調查，目前相關漏洞已完成修補。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:afabda8590e8",
+   "kind": "news",
+   "title": "勒索軟體駭客The Gentlemen聲稱入侵Nvidia，疑為合作夥伴遭駭受到波及",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180664",
+   "pts": [
+    "勒索軟體組織The Gentlemen近日將GPU大廠Nvidia列入其暗網資料勒索網站的受害者名單，聲稱已取得該公司的資料，並威脅若雙方未能達成協議，將在10天後公開竊取的資料，引起全球高度關注。對此，Nvidia發言人表示，該公司正在調查一起可能影響第三方合作夥伴的事件，目前沒有發現Nvidia"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "勒索軟體駭客The Gentlemen聲稱入侵Nvidia，疑為合作夥伴遭駭受到波及",
+    "desc": "勒索軟體組織The Gentlemen近日將GPU大廠Nvidia列入其暗網資料勒索網站的受害者名單，聲稱已取得該公司的資料，並威脅若雙方未能達成協議，將在10天後公開竊取的資料，引起全球高度關注。對此，Nvidia發言人表示，該公司正在調查一起可能影響第三方合作夥伴的事件，目前沒有發現Nvidia自身系統或網路受到影響的跡象，將持續監控相關情況。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:bdcae02c19a5",
+   "kind": "news",
+   "title": "大車隊子公司全球商務科技遭未經授權存取，部分客戶及會員資料外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180662",
+   "pts": [
+    "11月18日晚間車隊運輸服務公司大車隊（2640）於股市公開資訊觀測站發布重大訊息，子公司全球商務科技發生資訊系統遭外部未經授權存取事件，初步調查發現部分客戶、會員及外務人員資料涉及未經授權存取及擷取，實際影響範圍仍在釐清。全球商務科技已關閉異常存取入口、修補系統弱點，並啟動帳號安全處置及後續調查。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "大車隊子公司全球商務科技遭未經授權存取，部分客戶及會員資料外洩",
+    "desc": "11月18日晚間車隊運輸服務公司大車隊（2640）於股市公開資訊觀測站發布重大訊息，子公司全球商務科技發生資訊系統遭外部未經授權存取事件，初步調查發現部分客戶、會員及外務人員資料涉及未經授權存取及擷取，實際影響範圍仍在釐清。全球商務科技已關閉異常存取入口、修補系統弱點，並啟動帳號安全處置及後續調查。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:a560862e3a9b",
+   "kind": "news",
+   "title": "資安業者剖析ARTEX、Cairn、CyberStrikeAI等五大AI攻擊框架，均已遭濫用於實際入侵事件",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180657",
+   "pts": [
+    "近來AI自動化攻擊框架日益受到資安界關注，因為已有多種工具被濫用於實際網路入侵事件。資安業者Elastic於11月13日發布研究報告，針對5種已遭濫用的工具進行分析，涵蓋ARTEX、CyberStrikeAI、Cairn、PentAGI及HexStrike。研究指出，這些AI代理式攻擊框架雖然在架構"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "資安業者剖析ARTEX、Cairn、CyberStrikeAI等五大AI攻擊框架，均已遭濫用於實際入侵事件",
+    "desc": "近來AI自動化攻擊框架日益受到資安界關注，因為已有多種工具被濫用於實際網路入侵事件。資安業者Elastic於11月13日發布研究報告，針對5種已遭濫用的工具進行分析，涵蓋ARTEX、CyberStrikeAI、Cairn、PentAGI及HexStrike。研究指出，這些AI代理式攻擊框架雖然在架構設計及工具整合方式上有所不同，但都能利用AI規畫攻擊步驟、呼叫不同工具執行任務。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:7899f2103f0f",
+   "kind": "news",
+   "title": "元太資訊系統疑遭攻擊",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180658",
+   "pts": [
+    "11月18日下午電子紙顯示技術廠商元太（8069）於股市公開資訊觀測站發布重大訊息，該公司資訊系統疑似遭受駭客網路攻擊，已啟動資訊安全防禦機制，並委請外部第三方資訊安全技術公司及專家共同處理，初步評估對營運暫無重大影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "元太資訊系統疑遭攻擊",
+    "desc": "11月18日下午電子紙顯示技術廠商元太（8069）於股市公開資訊觀測站發布重大訊息，該公司資訊系統疑似遭受駭客網路攻擊，已啟動資訊安全防禦機制，並委請外部第三方資訊安全技術公司及專家共同處理，初步評估對營運暫無重大影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2c8afc11c81e",
+   "kind": "news",
+   "title": "富邦媒mo店+發生資安事件，部分出貨資料遭未經授權存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180656",
+   "pts": [
+    "電商公司富邦媒（8454）於11月19日，在股市公開資訊觀測站發布重大訊息，該公司於11月18日透過資安監控機制，發現旗下mo店+服務出貨資料發生疑似資安事件。經初步調查，部分出貨資料遭未經授權存取，目前仍持續釐清事件原因及實際影響範圍。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "富邦媒mo店+發生資安事件，部分出貨資料遭未經授權存取",
+    "desc": "電商公司富邦媒（8454）於11月19日，在股市公開資訊觀測站發布重大訊息，該公司於11月18日透過資安監控機制，發現旗下mo店+服務出貨資料發生疑似資安事件。經初步調查，部分出貨資料遭未經授權存取，目前仍持續釐清事件原因及實際影響範圍。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:83f8ee774dd5",
+   "kind": "news",
+   "title": "【資安日報】11月19日，Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180654",
+   "pts": [
+    "本日新聞焦點 ● Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼 ● 駭客利用AI代理框架ARTEX攻擊資安公司Barracuda ● 行銷平臺KARTE遭駭，波及JINS、三菱UFJ銀行等數十家日本企業"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月19日，Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼",
+    "desc": "本日新聞焦點 ● Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼 ● 駭客利用AI代理框架ARTEX攻擊資安公司Barracuda ● 行銷平臺KARTE遭駭，波及JINS、三菱UFJ銀行等數十家日本企業",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:58e668129aef",
+   "kind": "news",
+   "title": "Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180651",
+   "pts": [
+    "開源網頁伺服器軟體Nginx周三（11/18）發布1.30.7穩定版及1.31.9主線版，緊急修補10個安全漏洞，其中有5個屬於遠端程式攻擊漏洞，而資安業者Xint也獨立發現了這5項漏洞，並將它們稱為nginx2root。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Nginx緊急修補10個漏洞，其中5個恐遭遠端執行程式碼",
+    "desc": "開源網頁伺服器軟體Nginx周三（11/18）發布1.30.7穩定版及1.31.9主線版，緊急修補10個安全漏洞，其中有5個屬於遠端程式攻擊漏洞，而資安業者Xint也獨立發現了這5項漏洞，並將它們稱為nginx2root。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5af90ca9adb0",
+   "kind": "news",
+   "title": "FBI警告Gootloader已入侵逾千個WordPress網站，相關勒索軟體贖金逾2,800萬美元",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180649",
+   "pts": [
+    "美國聯邦調查局（FBI）於11月16日發布Flash通報，警告惡意初始存取框架Gootloader透過遭污染的搜尋結果及遭挾持的網站，入侵各類組織，一旦取得初始存取權限，攻擊者會針對不同產業的受害者部署勒索軟體。FBI截至2026年10月已識別出逾1,000個遭感染的WordPress網站，以及21"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "FBI警告Gootloader已入侵逾千個WordPress網站，相關勒索軟體贖金逾2,800萬美元",
+    "desc": "美國聯邦調查局（FBI）於11月16日發布Flash通報，警告惡意初始存取框架Gootloader透過遭污染的搜尋結果及遭挾持的網站，入侵各類組織，一旦取得初始存取權限，攻擊者會針對不同產業的受害者部署勒索軟體。FBI截至2026年10月已識別出逾1,000個遭感染的WordPress網站，以及216個由Gootloader管理者控制的網域，相關攻擊已造成超過2,800萬美元的勒索軟體贖金支付。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8f6dc25f4a46",
+   "kind": "news",
+   "title": "日本藥妝業者DHC因第三方行銷分析平臺被駭，外洩用戶個資1,911萬筆",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180648",
+   "pts": [
+    "日本藥妝及健康食品業者DHC週三（11月18日）公告因使用的行銷分析平臺KARTE遭駭，外流客戶資料約1,911萬筆。 DHC指出，11月13日，DHC接獲外包商PLAID通知，告知後者提供的互動式行銷及客戶分析平臺KARTE遭到第三方未經授權存取，波及DHC的客戶資訊被非法存取。經過調查，DHC確"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "日本藥妝業者DHC因第三方行銷分析平臺被駭，外洩用戶個資1,911萬筆",
+    "desc": "日本藥妝及健康食品業者DHC週三（11月18日）公告因使用的行銷分析平臺KARTE遭駭，外流客戶資料約1,911萬筆。 DHC指出，11月13日，DHC接獲外包商PLAID通知，告知後者提供的互動式行銷及客戶分析平臺KARTE遭到第三方未經授權存取，波及DHC的客戶資訊被非法存取。經過調查，DHC確認一部分客戶資料外洩。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ee215da2a7a8",
+   "kind": "news",
+   "title": "資安業者揭露ARTEX攻擊事件應變過程，AI代理程式取得API金鑰後幾分鐘內即發動攻擊，防守方也用AI加速調查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180647",
+   "pts": [
+    "AI代理程式攻擊框架ARTEX持續受到資安界關注，已有多家資安業者揭露相關攻擊活動及調查結果，但較少詳細說明第一線資安團隊的實際應變經過。資安業者Eye Security近日公布一起企業遭ARTEX攻擊的事件應變案例，詳細揭露攻擊者如何利用AI代理程式快速滲透企業環境，以及防守方如何調查、阻擋攻擊，"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "資安業者揭露ARTEX攻擊事件應變過程，AI代理程式取得API金鑰後幾分鐘內即發動攻擊，防守方也用AI加速調查",
+    "desc": "AI代理程式攻擊框架ARTEX持續受到資安界關注，已有多家資安業者揭露相關攻擊活動及調查結果，但較少詳細說明第一線資安團隊的實際應變經過。資安業者Eye Security近日公布一起企業遭ARTEX攻擊的事件應變案例，詳細揭露攻擊者如何利用AI代理程式快速滲透企業環境，以及防守方如何調查、阻擋攻擊，甚至運用AI代理程式協助應變。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:677760efe8e8",
+   "kind": "news",
+   "title": "Apple多項雲端服務大規模中斷，內部軟體更新問題影響iCloud等服務逾6個小時",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180645",
+   "pts": [
+    "Apple於11月17日發生多項網路服務中斷，最早於美東時間上午11時15分左右出現異常，影響範圍隨後擴大。Apple向媒體表示，問題源自內部軟體更新，並非網路攻擊，該公司已復原部分系統，正設法讓其餘服務重新上線。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Apple多項雲端服務大規模中斷，內部軟體更新問題影響iCloud等服務逾6個小時",
+    "desc": "Apple於11月17日發生多項網路服務中斷，最早於美東時間上午11時15分左右出現異常，影響範圍隨後擴大。Apple向媒體表示，問題源自內部軟體更新，並非網路攻擊，該公司已復原部分系統，正設法讓其餘服務重新上線。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8290ea758fd1",
+   "kind": "news",
+   "title": "美國警告群暉NAS、Apache Axis等4款應用系統的漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180644",
+   "pts": [
+    "11月18日美國網路安全與基礎設施安全局（CISA）表示，他們已掌握4個漏洞遭積極利用的證據，將其納入已知遭利用的漏洞名單（KEV），這些漏洞編號是CVE-2024-10441、CVE-2026-40217、CVE-2026-90436，以及CVE-2026-90817，分別影響群暉NAS作業系統D"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "美國警告群暉NAS、Apache Axis等4款應用系統的漏洞遭積極利用",
+    "desc": "11月18日美國網路安全與基礎設施安全局（CISA）表示，他們已掌握4個漏洞遭積極利用的證據，將其納入已知遭利用的漏洞名單（KEV），這些漏洞編號是CVE-2024-10441、CVE-2026-40217、CVE-2026-90436，以及CVE-2026-90817，分別影響群暉NAS作業系統DiskStation Manager（DSM）、LiteLLM、Apache Axis，以及REDCap。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ee05dc42a197",
+   "kind": "news",
+   "title": "N0n勒索軟體組織宣稱取得Visa、摩根大通等59家公司資料",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180643",
+   "pts": [
+    "勒索軟體組織N0n近日先後將金融業者摩根大通（JPMorgan Chase）及信用卡組織Visa、Mastercard以及Walmart、P&G等59家企業列入受害者名單，威脅部分受害企業若未在48小時內達成交易談判，將公開資料。 N0n今年9月開始活動，該組織在11月16日將59家企業列於其暗網資"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "N0n勒索軟體組織宣稱取得Visa、摩根大通等59家公司資料",
+    "desc": "勒索軟體組織N0n近日先後將金融業者摩根大通（JPMorgan Chase）及信用卡組織Visa、Mastercard以及Walmart、P&G等59家企業列入受害者名單，威脅部分受害企業若未在48小時內達成交易談判，將公開資料。 N0n今年9月開始活動，該組織在11月16日將59家企業列於其暗網資訊公開網站。其中駭客宣稱竊得摩根大通、Visa、Mastercard三家機構的資訊，包括持卡人資料檔（profile）、個人聯絡資訊如電子郵件地址、旅遊、機票與餐廳預約紀錄、以及大量客戶行銷活動紀錄等。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:86fd13cb5744",
+   "kind": "news",
+   "title": "Apache Roller反序列化漏洞已遭利用，開發團隊警告漏洞影響範圍涵蓋近20年的版本",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-19T13:16:08+00:00",
+   "first_seen": "2026-11-19T13:16:08+00:00",
+   "updated": "2026-11-19T13:16:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180639",
+   "pts": [
+    "11月17日Apache基金會（ASF）針對開源部落格發布平臺Apache Roller用戶提出警告，他們在9月修補的重大漏洞CVE-2026-82384（CVE-2026-129448）已遭積極利用，而且，原本認定影響範圍只有6.1.5版，現在確認也同時存在於4.0.0至6.1.4版所有版本。對此"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Apache Roller反序列化漏洞已遭利用，開發團隊警告漏洞影響範圍涵蓋近20年的版本",
+    "desc": "11月17日Apache基金會（ASF）針對開源部落格發布平臺Apache Roller用戶提出警告，他們在9月修補的重大漏洞CVE-2026-82384（CVE-2026-129448）已遭積極利用，而且，原本認定影響範圍只有6.1.5版，現在確認也同時存在於4.0.0至6.1.4版所有版本。對此，ASF呼籲用戶應儘速升級至6.1.6以上版本因應。",
+    "summarize": true
+   }
+  },
   {
    "id": "tw:0c6183b7e495",
    "kind": "news",
@@ -303,7 +753,7 @@
    "cvss": 9.2,
    "published": "2026-11-18T16:17:59+00:00",
    "first_seen": "2026-11-18T22:03:25+00:00",
-   "updated": "2026-11-19T03:35:27+00:00",
+   "updated": "2026-11-19T13:16:05+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113425",
    "pts": [
@@ -322,7 +772,12 @@
      "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
-     "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+     "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     ]
    }
   },
@@ -1381,7 +1836,7 @@
    "cvss": 10.0,
    "published": "2026-11-17T22:18:03+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
-   "updated": "2026-11-19T03:35:27+00:00",
+   "updated": "2026-11-19T13:16:05+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101652",
    "pts": [
@@ -1756,6 +2211,43 @@
      "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via RMI to compromise Oracle Service Bus.  While the vulnerability is in Oracle Service Bus, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Service Bus accessible data as well as  unauthorized access to critical data or complete access to all Oracle Service Bus accessible data. CVSS 3.1 Base Score 9.6 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N).",
      "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Composer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle WebCenter Portal accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
      "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data as well as  unauthorized update, insert or delete access to some of Oracle Access Manager accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data as well as  unauthorized update, insert or delete access to some of Oracle Access Manager accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
+     "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Platform Security).  Supported versions that are affected are 8.2.0.0.0 and  26.01.0.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition.  While the vulnerability is in Oracle Business Intelligence Enterprise Edition, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Business Intelligence Enterprise Edition. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Thirdparty Jars).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Platform Security for Java.  While the vulnerability is in Oracle Platform Security for Java, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Platform Security for Java. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Admin Console).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Access Manager. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Access Manager accessible data as well as  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Access Manager. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Access Manager accessible data as well as  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Access Manager. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L).",
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  While the vulnerability is in Oracle WebLogic Server, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+     "Vulnerability in the Service Delivery Platform product of Oracle Fusion Middleware (component: Messaging Enabler).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via SOAP to compromise Service Delivery Platform.  Successful attacks of this vulnerability can result in takeover of Service Delivery Platform. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in Oracle APEX (component: General).  Supported versions that are affected are 24.1.22, 24.2.21, 26.1.5 and  26.2.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle APEX.  Successful attacks of this vulnerability can result in takeover of Oracle APEX. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in Oracle APEX (component: General).  Supported versions that are affected are 24.1.22, 24.2.21, 26.1.5 and  26.2.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle APEX.  Successful attacks of this vulnerability can result in takeover of Oracle APEX. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Universal Work Queue product of Oracle E-Business Suite (component: Media Integration issues).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Universal Work Queue.  Successful attacks of this vulnerability can result in takeover of Oracle Universal Work Queue. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Document Management and Collaboration product of Oracle E-Business Suite (component: Attachments).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Document Management and Collaboration.  Successful attacks of this vulnerability can result in takeover of Document Management and Collaboration. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: Core).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Application Object Library.  Successful attacks of this vulnerability can result in takeover of Oracle Application Object Library. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Applications Framework product of Oracle E-Business Suite (component: REST Services).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Applications Framework.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Framework. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Installation and Configuration).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Infrastructure Technology.  Successful attacks of this vulnerability can result in takeover of Oracle Hyperion Infrastructure Technology. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Common Security).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Infrastructure Technology.  Successful attacks of this vulnerability can result in takeover of Oracle Hyperion Infrastructure Technology. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Installation and Configuration).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Infrastructure Technology.  Successful attacks of this vulnerability can result in takeover of Oracle Hyperion Infrastructure Technology. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Hyperion Planning product of Oracle Hyperion (component: Security).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via RMI to compromise Oracle Hyperion Planning.  Successful attacks of this vulnerability can result in takeover of Oracle Hyperion Planning. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Hyperion Planning product of Oracle Hyperion (component: Application Development Framework).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Planning.  Successful attacks of this vulnerability can result in takeover of Oracle Hyperion Planning. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security).   The supported version that is affected is 21.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle AutoVue.  Successful attacks of this vulnerability can result in takeover of Oracle AutoVue. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security).   The supported version that is affected is 21.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle AutoVue.  Successful attacks of this vulnerability can result in takeover of Oracle AutoVue. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security).   The supported version that is affected is 21.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle AutoVue.  Successful attacks of this vulnerability can result in takeover of Oracle AutoVue. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle AutoVue product of Oracle Supply Chain (component: Security).   The supported version that is affected is 21.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle AutoVue.  Successful attacks of this vulnerability can result in takeover of Oracle AutoVue. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via SOAP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+     "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via RMI to compromise Oracle Service Bus.  While the vulnerability is in Oracle Service Bus, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Service Bus accessible data as well as  unauthorized access to critical data or complete access to all Oracle Service Bus accessible data. CVSS 3.1 Base Score 9.6 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N).",
+     "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Weblogic).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all PeopleSoft Enterprise PeopleTools accessible data as well as  unauthorized access to critical data or complete access to all PeopleSoft Enterprise PeopleTools accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.13, 9.7.0-9.7.4, 26.10; MySQL Cluster: 8.0.0-8.0.50, 8.4.0-8.4.13, 9.7.0-9.7.4 and  26.10. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server, MySQL Cluster.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all MySQL Server, MySQL Cluster accessible data as well as  unauthorized access to critical data or complete access to all MySQL Server, MySQL Cluster accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Installation and Configuration).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Infrastructure Technology.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Hyperion Infrastructure Technology accessible data as well as  unauthorized access to critical data or complete access to all Oracle Hyperion Infrastructure Technology accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Hyperion Financial Close Management product of Oracle Hyperion (component: Reconciliation Manage).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Financial Close Management.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Hyperion Financial Close Management accessible data as well as  unauthorized access to critical data or complete access to all Oracle Hyperion Financial Close Management accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Hyperion Financial Close Management product of Oracle Hyperion (component: Reconciliation Manage).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via Oracle Net to compromise Oracle Hyperion Financial Close Management.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Hyperion Financial Close Management accessible data as well as  unauthorized access to critical data or complete access to all Oracle Hyperion Financial Close Management accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle Application Development Framework (ADF) product of Oracle Fusion Middleware (component: Security Framework).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Application Development Framework (ADF).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Application Development Framework (ADF) accessible data as well as  unauthorized access to critical data or complete access to all Oracle Application Development Framework (ADF) accessible data. CVSS 3.1 Base Score 9.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+     "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Composer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle WebCenter Portal accessible data. CVSS 3.1 Base Score 8.6 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+     "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data as well as  unauthorized update, insert or delete access to some of Oracle Access Manager accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N).",
      "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data as well as  unauthorized update, insert or delete access to some of Oracle Access Manager accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N)."
     ]
    }
@@ -1928,7 +2420,7 @@
    "cvss": 9.6,
    "published": "2026-11-17T21:17:44+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
-   "updated": "2026-11-19T03:35:27+00:00",
+   "updated": "2026-11-19T13:16:05+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130906",
    "pts": [
@@ -2260,7 +2752,16 @@
      "Confused deputy in TabModel in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via UI Interaction. (Chromium security severity: Medium)",
      "Race condition in Core in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
      "Improper input validation in Extensions in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy into a privileged page via a crafted Chrome extension. (Chromium security severity: Low)",
-     "Incorrect authorization in PerformanceAPIs in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)"
+     "Incorrect authorization in PerformanceAPIs in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+     "Use after free in Views in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+     "Use after free in HID in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
+     "Confused deputy in Sync in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: High)",
+     "Use after free in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+     "Use after free in WebView in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Critical)",
+     "Use after free in WebView in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+     "!MISSING CAUSE! in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Low)",
+     "Use after free in SignIn in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via UI Interaction. (Chromium security severity: Low)",
+     "Use after free in WebAppInstalls in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)"
     ]
    }
   },
@@ -2268,7 +2769,7 @@
    "id": "grp:AI 平台:2026-11-18",
    "kind": "group",
    "title": "AI 平台 多個高風險漏洞",
-   "sub": "4 個 CVE · 最高 CVSS 9.3",
+   "sub": "6 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2278,20 +2779,22 @@
    "cves": [
     "CVE-2026-130685",
     "CVE-2026-130686",
+    "CVE-2026-130796",
     "CVE-2026-130840",
-    "CVE-2026-130856"
+    "CVE-2026-130856",
+    "CVE-2026-86061"
    ],
    "cvss": 9.3,
    "published": "2026-11-17T20:17:48+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
-   "updated": "2026-11-18T22:03:25+00:00",
+   "updated": "2026-11-19T13:16:05+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130685",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 9.3。",
+    "同日公布 6 個漏洞，最高 CVSS 9.3。",
     "BISHENG before 3.0.0 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to impersonate administrat"
    ],
-   "fix": "",
+   "fix": "原文：This issue is fixed in release.2026-07-17T05-20-38Z.2264.",
    "ai": false,
    "ai_ver": 0,
    "raw": {
@@ -2303,7 +2806,9 @@
      "BISHENG before 3.0.0 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to impersonate administrators by abusing a hard-coded default jwt_secret used by AuthJwt. Attackers can forge an HS256 token offline naming user_id 1 with the admin role, send it as access_token_cookie, and gain full administrative access to users, workspaces, knowledge bases and workflows.",
      "53AIHub before 0.5.5 contains a missing authentication vulnerability that allows remote unauthenticated attackers to reinitialize installed instances by calling the public POST /api/init endpoint. Attackers can reset an existing account's password, assign the top creator role, and obtain an access token to take over accounts and use admin-only API routes.",
      "vLLM from 0.28.0 before 0.33.0 contains an improper input validation vulnerability that allows unauthenticated attackers to crash the shared EngineCore by sending out-of-range prompt token ids when served with --skip-tokenizer-init. Attackers can submit a large positive token id to /v1/completions, /v1/embeddings, or /pooling, bypassing the tokenizer-gated vocab check and causing a fatal embedding index error that denies service to all tenants.",
-     "vLLM from 0.6.0 before 0.33.0 lacks a request-wide media budget, allowing remote inference clients to exhaust frontend resources by submitting many remote image URLs in one request. Attackers can send a compact request to /v1/messages or /v1/responses that forces downloading and decoding of every image before prompt-length admission, exhausting memory, CPU, and connections."
+     "vLLM from 0.6.0 before 0.33.0 lacks a request-wide media budget, allowing remote inference clients to exhaust frontend resources by submitting many remote image URLs in one request. Attackers can send a compact request to /v1/messages or /v1/responses that forces downloading and decoding of every image before prompt-length admission, exhausting memory, CPU, and connections.",
+     "Teable is an AI spreadsheet for business. Prior to release.2026-07-17T05-20-38Z.2264, the routes for PluginService::regenerateSecret and PluginService::delete carry no @Permissions decorator, and the methods omit plugin ownership checks. An authenticated attacker can directly target another plugin's identifier to rotate and disclose its OAuth secret or delete the plugin, including system plugins. Separately, PermissionGuard authorizes several nested API requests using a caller-controlled parent tableId, baseId, or spaceId, while the services resolve the requested child object only by its globally unique identifier. An authenticated attacker can provide a parent resource the attacker owns together with a victim's child identifier. ViewService::getViewById can then disclose another tenant's view configuration, embedded filter values, field layout, and shareId. DashboardService::updatePluginStorage and the view-position updatePluginStorage path can overwrite another tenant's plugin storage because the plugin installation is not rebound to the authorized base, dashboard, table, or view. This issue is fixed in release.2026-07-17T05-20-38Z.2264.",
+     "Flowise 3.1.3 through 3.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read MCP server bearer tokens via the GET /api/v1/public-chatflows/:id handler. Attackers can use the leaked mcpServerConfig token on the POST /api/v1/mcp/:chatflowId route to invoke chatflows, bypassing API key protection and consuming the owner's model quota."
     ]
    }
   },
@@ -15524,10 +16029,89 @@
   "CVE-2026-132746": [],
   "CVE-2026-132747": [],
   "CVE-2026-132749": [],
-  "CVE-2026-132750": []
+  "CVE-2026-132750": [],
+  "CVE-2026-132802": [],
+  "CVE-2026-132803": [],
+  "CVE-2026-132804": [],
+  "CVE-2026-132808": [],
+  "CVE-2026-129048": [],
+  "CVE-2026-14492": [],
+  "CVE-2026-132891": [],
+  "CVE-2026-108687": [],
+  "CVE-2026-129446": [],
+  "CVE-2026-132622": [],
+  "CVE-2026-110461": [],
+  "CVE-2026-117656": [],
+  "CVE-2026-123058": [],
+  "CVE-2026-132807": [],
+  "CVE-2026-132806": [],
+  "CVE-2026-132906": [],
+  "CVE-2026-132909": [],
+  "CVE-2026-132917": [],
+  "CVE-2026-125060": [],
+  "CVE-2026-133015": [],
+  "CVE-2026-133016": [],
+  "CVE-2026-133018": [],
+  "CVE-2026-133019": [],
+  "CVE-2026-133027": [],
+  "CVE-2026-86061": [
+   "AI 平台"
+  ],
+  "CVE-2026-130796": [
+   "AI 平台"
+  ],
+  "CVE-2026-107515": [],
+  "CVE-2026-116447": [],
+  "CVE-2026-132236": [],
+  "CVE-2026-132237": [],
+  "CVE-2026-22311": [],
+  "CVE-2026-93471": [],
+  "CVE-2026-119292": [],
+  "CVE-2026-121707": [],
+  "CVE-2026-130841": [],
+  "CVE-2026-130857": [],
+  "CVE-2026-130861": [],
+  "CVE-2026-69155": [],
+  "CVE-2026-125274": [],
+  "CVE-2026-110462": [],
+  "CVE-2026-19609": [],
+  "CVE-2026-130853": [],
+  "CVE-2026-125061": [],
+  "CVE-2026-132913": [],
+  "CVE-2026-132805": [],
+  "CVE-2026-132798": [],
+  "CVE-2026-121809": [],
+  "CVE-2026-132892": [],
+  "CVE-2026-132903": [],
+  "CVE-2026-132904": [],
+  "CVE-2026-132907": [],
+  "CVE-2026-116442": [],
+  "CVE-2026-109555": [],
+  "CVE-2026-132914": [],
+  "CVE-2026-133017": [],
+  "CVE-2026-132038": [],
+  "CVE-2026-132893": [],
+  "CVE-2026-132894": [],
+  "CVE-2026-132897": [],
+  "CVE-2026-132901": [],
+  "CVE-2026-132902": [],
+  "CVE-2026-133025": [],
+  "CVE-2026-132899": [],
+  "CVE-2026-132905": [],
+  "CVE-2026-132918": [],
+  "CVE-2026-129013": [],
+  "CVE-2026-129030": [],
+  "CVE-2026-14491": [],
+  "CVE-2026-85776": [],
+  "CVE-2026-132895": [],
+  "CVE-2026-132900": [],
+  "CVE-2026-132908": [],
+  "CVE-2026-132910": [],
+  "CVE-2026-132911": [],
+  "CVE-2026-115677": []
  },
- "nvd_last": "2026-11-19T03:29:49+00:00",
- "kev_last": "2026-11-19T03:29:49+00:00",
+ "nvd_last": "2026-11-19T13:10:28+00:00",
+ "kev_last": "2026-11-19T13:10:28+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
