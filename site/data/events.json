@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T21:36:27+00:00",
+ "generated": "2026-11-20T03:17:34+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -327,8 +327,8 @@
   "date": "2026-11-20",
   "items": [
    {
-    "title": "Windows Server：Windows 管理元件漏洞",
-    "desc": "目前未遭利用或用於勒索軟體；前者需認證並送出特製主機名稱，後者無須認證即可偽冒 Windows 伺服器。"
+    "title": "Office：Guardium 驗證缺失漏洞",
+    "desc": "漏洞位於 SharePoint S-TAP RelayService（CVSS 9.1），無需驗證即可經網路觸發，目前尚未遭利用。"
    },
    {
     "title": "Windows Server：WS_FTP 伺服器多項漏洞",
@@ -339,16 +339,16 @@
     "desc": "將 1.0.3 至 1.2.0 版的 Brotli 函式庫或執行檔更新至 1.0.10、1.1.1 或 1.2.1。"
    },
    {
-    "title": "Office：Guardium 驗證缺失漏洞",
-    "desc": "漏洞位於 SharePoint S-TAP RelayService（CVSS 9.1），無需驗證即可經網路觸發，目前尚未遭利用。"
-   },
-   {
     "title": "Windows Server：Chrome 多項遠端執行漏洞",
     "desc": "尚未遭利用；需透過特製 HTML 網頁觸發，部分漏洞須配合社交工程或已入侵算繪程序。"
    },
    {
     "title": "ASP.NET：Telerik UI 解析漏洞",
     "desc": "涵蓋 CVE-2026-106146、CVE-2026-106154（CVSS 8.6），目前尚未遭利用，涉及未經驗證之篩選參數處理。"
+   },
+   {
+    "title": "ASP.NET：Telerik 記憶體累積漏洞",
+    "desc": "尚未遭利用或用於勒索軟體；透過重複伺服器端彙總請求及無保護的類別字典更新觸發（CVSS 8.6）。"
    }
   ],
   "ai": false
@@ -361,6 +361,169 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:195ea95bb6de",
+   "kind": "news",
+   "title": "中國駭客利用VMware vCenter零時差漏洞入侵，部署後門以竊取資料",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T03:23:14+00:00",
+   "first_seen": "2026-11-20T03:23:14+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180674",
+   "pts": [
+    "11月19日博通（Broadcom）修補VMware vCenter重大等級的身分驗證繞過漏洞CVE-2026-123890，通報此事的Google威脅情報團隊（GTIG）與Mandiant後續透露，該漏洞的發現，源自中國駭客組織Armory Castle（之前Google稱作UNC5221）網路間"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:f16f9d816c4b",
+   "kind": "news",
+   "title": "VMware發布資安更新，修補重大等級的vCenter漏洞，警告只能升級沒有其他替代緩解方法",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T03:23:14+00:00",
+   "first_seen": "2026-11-20T03:23:14+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180673",
+   "pts": [
+    "11月19日博通（Broadcom）發布公告，修補VMware vCenter、VMware Tools，以及SDDC Manager當中5個漏洞，涵蓋身分驗證繞過、SQL注入、命令注入、權限提升，以及SAML權杖簽章繞過等弱點。其中，評為重大等級的vCenter身分驗證繞過漏洞CVE-2026-1"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:385d5fa32c3d",
+   "kind": "news",
+   "title": "歐盟執委會遭AI網攻，ARTEX開源工具成駭客利器",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T03:23:14+00:00",
+   "first_seen": "2026-11-20T03:23:14+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180672",
+   "pts": [
+    "歐盟執委會（European Commission）週四（11/19）對外證實，該機構10月22日偵測到使用AI工具的網路攻擊，至今已近一個月，部分內部系統仍無法使用，員工個資是否外洩也尚待釐清。 根據Politico週四率先揭露的消息，這起攻擊影響歐盟執委會多項內部系統，包括處理薪資、請假及工時紀"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:6cd60aec58ba",
+   "kind": "news",
+   "title": "Ruby修補7項記憶體安全漏洞，5項可能導致遠端程式碼執行",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T03:23:14+00:00",
+   "first_seen": "2026-11-20T03:23:14+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180667",
+   "pts": [
+    "程式語言Ruby維護團隊11月18日發布安全更新，修補7項記憶體安全漏洞，其中3項被列為重大（Critical）風險、3項為高（High）風險，另有1項為中度（Moderate）風險。官方指出，其中5項漏洞已有概念驗證（PoC）證明，在特定情況下可觸發遠端程式碼執行（RCE），使用受影響版本的企業應"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:a0cca29352f8",
+   "kind": "news",
+   "title": "NIST完成量子位置驗證實驗，未來有望防範駭客從遠端冒用身分",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T03:23:14+00:00",
+   "first_seen": "2026-11-20T03:23:14+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180652",
+   "pts": [
+    "帳號密碼一旦遭竊，攻擊者就可能冒用合法使用者身分，從其他地點登入系統。美國國家標準暨技術研究院（NIST）近日公布量子位置驗證（Quantum Position Verification，QPV）研究成果，利用量子糾纏與訊息傳輸時間，確認通訊對象是否位於指定地點，未來有望為企業存取控制增加一道防護。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:c8969567b59c",
+   "kind": "news",
+   "title": "資安AI新創Corma相隔3個月再募資1.25億美元，估值達10億美元",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T03:23:14+00:00",
+   "first_seen": "2026-11-20T03:23:14+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180568",
+   "pts": [
+    "今年8月才宣布取得6,000萬美元種子輪資金的資安AI新創公司Corma，相隔約3個月，再完成1.25億美元A輪募資，公司估值達10億美元。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-77312",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-77312",
+   "sub": "CVE-2026-77312 · CVSS 10.0",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-77312"
+   ],
+   "cvss": 10.0,
+   "published": "2026-11-19T22:18:44+00:00",
+   "first_seen": "2026-11-20T03:23:11+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77312",
+   "pts": [
+    "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.8, the earlier CVE-2026-67429 remediation applied va"
+   ],
+   "fix": "升級至 2.26.8 以上（依原文擷取）",
+   "ai": false
+  },
   {
    "id": "CVE-2026-82339",
    "kind": "cve",
@@ -437,11 +600,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131199",
    "pts": [
-    "影響 Splunk Enterprise、SOAR 與 Enterprise Security，**可致遠端執行程式碼或竄改資料**。",
-    "共 10 個 CVE（最高 CVSS 9.9），部分漏洞不需驗證即可觸發，目前尚未遭利用或勒索軟體攻擊。"
+    "同日公布 31 個漏洞，最高 CVSS 9.9。",
+    "In Splunk SOAR versions below 8.8.0, an authenticated user that holds a role with the Apps edit, Containers edit, and Playbooks execute perm"
    ],
-   "fix": "升級 Splunk SOAR 8.8.0、ES 8.7.0 及 Enterprise 10.6.1/10.4.5/10.2.9/10.0.12/9.4.17",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2026-127064",
@@ -473,7 +636,7 @@
   {
    "id": "CVE-2026-87867",
    "kind": "cve",
-   "title": "SQL Server 漏洞 CVE-2026-87867",
+   "title": "MRemoteNG 憑證漏洞",
    "sub": "CVE-2026-87867 · CVSS 7.1",
    "sev": "note",
    "kev": false,
@@ -490,10 +653,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87867",
    "pts": [
-    "MRemoteNG establishes encrypted but unauthenticated channel with Microsoft SQL Server backend. Client accepts any certificate the server pre"
+    "MRemoteNG 1.76.20 連線 SQL Server 未驗證憑證，**可遭中間人攻擊讀取傳輸流量與登入資訊**。",
+    "尚未遭利用（CVSS 7.1）；需處於連線路徑（如 ARP/DNS 欺騙）方能觸發，原廠未公布影響範圍，其他版本亦可能受影響。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-123890",
@@ -525,7 +689,7 @@
    "id": "grp:PHP:2026-11-19",
    "kind": "group",
    "title": "PHP 遠端執行與提權漏洞",
-   "sub": "9 個 CVE · 最高 CVSS 9.2",
+   "sub": "10 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -538,6 +702,7 @@
     "CVE-2026-127960",
     "CVE-2026-128064",
     "CVE-2026-129182",
+    "CVE-2026-129289",
     "CVE-2026-129291",
     "CVE-2026-129474",
     "CVE-2026-129481",
@@ -549,11 +714,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115560",
    "pts": [
-    "影響 PHP Session、PHP-FPM 與 HTTP 串流等元件，**可導致遠端執行程式碼、權限提升或阻斷服務**。",
-    "共 9 個 CVE（最高 CVSS 9.2），包含多起釋放後使用（UAF）漏洞，目前尚未發現遭利用。"
+    "同日公布 10 個漏洞，最高 CVSS 9.2。",
+    "Session serializer mismatch can lead to remote code execution. Session upload progress, when enabled, can store attacker-controlled data in "
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:7e54063b17fb",
@@ -1117,11 +1282,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113425",
    "pts": [
-    "影響 NGINX Plus 與 Open Source（HTTP/2、HTTP/3、郵件代理等），**可致執行程式碼或阻斷服務**。",
-    "共 8 個 CVE（最高 CVSS 9.2），多數需特定組態或條件（如未啟用 ASLR、TLSv1.3），目前尚未遭利用。"
+    "同日公布 8 個漏洞，最高 CVSS 9.2。",
+    "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker proces"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:2e6ab840ef1c",
@@ -1377,6 +1542,33 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "grp:OpenSSL:2026-11-18",
+   "kind": "group",
+   "title": "OpenSSL 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [
+    "CVE-2026-107494",
+    "CVE-2026-121481"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-18T12:17:01+00:00",
+   "first_seen": "2026-11-20T03:23:11+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107494",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "Calling EVP_EncodeBlock() with an input length close to INT_MAX may overflow the calculation of the encoded output size and write past the e"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "CVE-2026-19707",
@@ -1769,7 +1961,7 @@
   {
    "id": "grp:SQL Server:2026-11-18",
    "kind": "group",
-   "title": "MySQL 多元件漏洞",
+   "title": "Oracle MySQL 漏洞",
    "sub": "5 個 CVE · 最高 CVSS 7.2",
    "sev": "note",
    "kev": false,
@@ -1791,11 +1983,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114949",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 7.2。",
-    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Replication). Supported versions that are affec"
+    "MySQL Server(8.4.0-8.4.13等)與Cluster(8.0.0-8.0.50等)**多元件存在易於利用的漏洞**。",
+    "尚未遭利用（CVSS 7.2），含 5 個 CVE，影響 Replication、Optimizer、Logging 及 GIS 元件。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-114938",
@@ -1993,11 +2185,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101652",
    "pts": [
-    "影響 Oracle Analytics、Fusion Middleware 及 Database，**CVSS 10.0**，可危害系統。",
-    "目前尚未遭利用；含 10 項 CVE，可經 HTTP（免驗證）或 Oracle Net（低權限）發動攻擊。"
+    "同日公布 149 個漏洞，最高 CVSS 10.0。",
+    "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Platform Security). Supported v"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Windows Server:2026-11-18",
