@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T03:17:34+00:00",
+ "generated": "2026-11-20T12:55:06+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -362,6 +362,146 @@
  },
  "events": [
   {
+   "id": "tw:ea2224494566",
+   "kind": "news",
+   "title": "鳳凰旅遊遭駭、部分旅客個資外洩，已發現冒名訂單詐騙活動",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180684",
+   "pts": [
+    "繼易遊網之後，國內旅行社鳳凰旅遊也遭駭客攻擊，該公司於11月16日發現資訊系統遭入侵，並發生部分個資外洩事件，目前尚未公布受影響人數。值得注意的是，業者也發現不法人士冒用鳳凰旅遊名義，以訂單錯誤、重複訂單等理由誘騙旅客提供金融資訊，呼籲旅客提高警覺。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:c88824898c9a",
+   "kind": "news",
+   "title": "【資安日報】11月20日，VMware修補已遭利用的vCenter重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware",
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180682",
+   "pts": [
+    "資安新聞焦點 ● VMware修補重大等級的vCenter漏洞 ● PHP釋出安全更新修補18個漏洞，7個為重大等級 ● 群暉警告NAS存在兩個重大漏洞，預告將提供修補程式"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:ecedf109fd43",
+   "kind": "news",
+   "title": "【資安週報】1116～1120，全球第三方供應商遭駭連環爆；Java4Shell、NGINX2Root等重大漏洞揭露引關注",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office",
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180681",
+   "pts": [
+    "全球第三方服務供應商資安事件持續擴大，單一供應商遭駭，往往連帶波及數十甚至數百家企業。例如：愛爾蘭銀行IT服務商Wellington IT遭駭，已有3家信用合作社發布資安公告，據統計約40家信用合作社受到影響；日本行銷科技業者PLAID旗下KARTE平臺遭入侵，隨後JINS、DHC及三菱UFJ銀行等"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:4898a8c99ecf",
+   "kind": "news",
+   "title": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180680",
+   "pts": [
+    "11月19日群暉（Synology）發布兩份嚴重程度為重大等級的資安公告，揭露漏洞CVE-2026-120382與CVE-2026-123007，這些弱點同時影響DiskStation Manager（DSM）與BeeStation OS，CVE-2026-123007也影響Application "
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-120382",
+   "kind": "cve",
+   "title": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
+   "sub": "CVE-2026-120382 · 尚未評分",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [
+    "CVE-2026-120382"
+   ],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:52+00:00",
+   "src": "iThome 報導",
+   "url": "https://www.ithome.com.tw/news/180680",
+   "pts": [],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:ea60fcc94fd1",
+   "kind": "news",
+   "title": "PHP釋出安全更新修補18個漏洞，7個為重大等級",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:52+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180678",
+   "pts": [
+    "11月19日PHP基金會發布安全更新8.6.0、8.5.13、8.4.28、"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
    "id": "tw:195ea95bb6de",
    "kind": "news",
    "title": "中國駭客利用VMware vCenter零時差漏洞入侵，部署後門以竊取資料",
@@ -660,10 +800,10 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-123890",
-   "kind": "cve",
-   "title": "vCenter 驗證繞過漏洞",
-   "sub": "CVE-2026-123890 · CVSS 9.8",
+   "id": "grp:VMware:2026-11-19",
+   "kind": "group",
+   "title": "VMware 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -671,7 +811,8 @@
     "VMware"
    ],
    "cves": [
-    "CVE-2026-123890"
+    "CVE-2026-123890",
+    "CVE-2026-123891"
    ],
    "cvss": 9.8,
    "published": "2026-11-19T15:17:25+00:00",
@@ -679,11 +820,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
    "pts": [
-    "影響 vCenter 及 Telco Cloud，**VMware Directory Service 存在驗證繞過漏洞**。",
-    "CVSS 為 9.8，影響 vCenter 5.x/8.0/9.0.x/9.1.x 等產品，目前尚未發現遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. Affected versions: 9.1.x (fixed in 9.1.1.020"
    ],
-   "fix": "依版本升級至 9.1.1.0200、9.0.2.0200、8.0 U3m 或 5.2.5，其餘產品參考 KB463116",
-   "ai": true
+   "fix": "升級至 9.1.1.0200 以上（依原文擷取）",
+   "ai": false
   },
   {
    "id": "grp:PHP:2026-11-19",
@@ -1617,11 +1758,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99312",
    "pts": [
-    "影響 Linux 核心 KVM x86 與 logitech-hidpp 驅動，涉及 MMU 重設與競爭條件問題。",
-    "尚未遭利用；**最高 CVSS 8.8，上游核心程式碼已修復該兩項問題**。"
+    "同日公布 2 個漏洞，最高 CVSS 8.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: KVM: x86: Unconditionally reset MMU context when emulating INIT Force an"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "CVE-2025-15716",
@@ -2352,11 +2493,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130906",
    "pts": [
-    "影響 Google Chrome 158.0.8127.36 以前版本（含 Android），**可於沙盒外執行任意程式碼**。",
-    "目前尚未遭利用；涵蓋 10 項 CVE（含 ANGLE、WebGL、GPU），可透過特製 HTML 頁面遠端觸發。"
+    "同日公布 107 個漏洞，最高 CVSS 9.6。",
+    "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute"
    ],
-   "fix": "將 Google Chrome（含 Android 版）升級至 158.0.8127.36 以上版本。",
-   "ai": true
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:AI 平台:2026-11-18",
@@ -10148,6 +10289,33 @@
    "ai": true
   },
   {
+   "id": "grp:QNAP:2026-10-29",
+   "kind": "group",
+   "title": "QNAP 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "QNAP"
+   ],
+   "cves": [
+    "CVE-2025-62839",
+    "CVE-2025-62841"
+   ],
+   "cvss": 8.7,
+   "published": "2026-10-29T08:16:59+00:00",
+   "first_seen": "2026-11-20T13:00:43+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62839",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
+    "An use of hard-coded cryptographic key vulnerability has been reported to affect Hybrid Backup Sync. If exploited, the vulnerability could a"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:cb2af2067b57",
    "kind": "news",
    "title": "駭客利用AI滲透測試工具ARTEX竊取韓國金融業資料",
@@ -11626,11 +11794,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響 Palo Alto 與 PHP 記憶體清理與全域狀態機制，**可能讀取未初始化或已釋放記憶體**。",
-    "於記憶體不足（OOM）錯誤中止請求後，後續請求可能讀取已釋放之請求記憶體；尚無遭利用紀錄，CVSS 9.2。"
+    "同日公布 2 個漏洞，最高 CVSS 9.2。",
+    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:SQL Server:2026-10-21",

@@ -35,6 +35,188 @@
  },
  "events": [
   {
+   "id": "tw:ea2224494566",
+   "kind": "news",
+   "title": "鳳凰旅遊遭駭、部分旅客個資外洩，已發現冒名訂單詐騙活動",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:46+00:00",
+   "updated": "2026-11-20T13:00:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180684",
+   "pts": [
+    "繼易遊網之後，國內旅行社鳳凰旅遊也遭駭客攻擊，該公司於11月16日發現資訊系統遭入侵，並發生部分個資外洩事件，目前尚未公布受影響人數。值得注意的是，業者也發現不法人士冒用鳳凰旅遊名義，以訂單錯誤、重複訂單等理由誘騙旅客提供金融資訊，呼籲旅客提高警覺。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "鳳凰旅遊遭駭、部分旅客個資外洩，已發現冒名訂單詐騙活動",
+    "desc": "繼易遊網之後，國內旅行社鳳凰旅遊也遭駭客攻擊，該公司於11月16日發現資訊系統遭入侵，並發生部分個資外洩事件，目前尚未公布受影響人數。值得注意的是，業者也發現不法人士冒用鳳凰旅遊名義，以訂單錯誤、重複訂單等理由誘騙旅客提供金融資訊，呼籲旅客提高警覺。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c88824898c9a",
+   "kind": "news",
+   "title": "【資安日報】11月20日，VMware修補已遭利用的vCenter重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware",
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:46+00:00",
+   "updated": "2026-11-20T13:00:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180682",
+   "pts": [
+    "資安新聞焦點 ● VMware修補重大等級的vCenter漏洞 ● PHP釋出安全更新修補18個漏洞，7個為重大等級 ● 群暉警告NAS存在兩個重大漏洞，預告將提供修補程式"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月20日，VMware修補已遭利用的vCenter重大漏洞",
+    "desc": "資安新聞焦點 ● VMware修補重大等級的vCenter漏洞 ● PHP釋出安全更新修補18個漏洞，7個為重大等級 ● 群暉警告NAS存在兩個重大漏洞，預告將提供修補程式",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ecedf109fd43",
+   "kind": "news",
+   "title": "【資安週報】1116～1120，全球第三方供應商遭駭連環爆；Java4Shell、NGINX2Root等重大漏洞揭露引關注",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Office",
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:46+00:00",
+   "updated": "2026-11-20T13:00:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180681",
+   "pts": [
+    "全球第三方服務供應商資安事件持續擴大，單一供應商遭駭，往往連帶波及數十甚至數百家企業。例如：愛爾蘭銀行IT服務商Wellington IT遭駭，已有3家信用合作社發布資安公告，據統計約40家信用合作社受到影響；日本行銷科技業者PLAID旗下KARTE平臺遭入侵，隨後JINS、DHC及三菱UFJ銀行等"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安週報】1116～1120，全球第三方供應商遭駭連環爆；Java4Shell、NGINX2Root等重大漏洞揭露引關注",
+    "desc": "全球第三方服務供應商資安事件持續擴大，單一供應商遭駭，往往連帶波及數十甚至數百家企業。例如：愛爾蘭銀行IT服務商Wellington IT遭駭，已有3家信用合作社發布資安公告，據統計約40家信用合作社受到影響；日本行銷科技業者PLAID旗下KARTE平臺遭入侵，隨後JINS、DHC及三菱UFJ銀行等數十家企業陸續公告個資外洩或可能外洩的情況。韓國客服委外業者MetaM、企業協作平臺Dooray!與DaouOffice也接連傳出資安事故，已確認影響多家企業客戶。在國內，除了委外服務供應商資安事件持續波及企業，上市櫃公司自身資訊系統也接連傳出資安事故，包括富邦媒旗下mo店+、大車隊子公司全球商務科技，以及元太、神達數位、驊陞等企業，分別發生資料遭未經授權存取或資訊系統遭到攻擊的情況。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4898a8c99ecf",
+   "kind": "news",
+   "title": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:46+00:00",
+   "updated": "2026-11-20T13:00:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180680",
+   "pts": [
+    "11月19日群暉（Synology）發布兩份嚴重程度為重大等級的資安公告，揭露漏洞CVE-2026-120382與CVE-2026-123007，這些弱點同時影響DiskStation Manager（DSM）與BeeStation OS，CVE-2026-123007也影響Application "
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
+    "desc": "11月19日群暉（Synology）發布兩份嚴重程度為重大等級的資安公告，揭露漏洞CVE-2026-120382與CVE-2026-123007，這些弱點同時影響DiskStation Manager（DSM）與BeeStation OS，CVE-2026-123007也影響Application P",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-120382",
+   "kind": "cve",
+   "title": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
+   "sub": "CVE-2026-120382 · 尚未評分",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Synology"
+   ],
+   "cves": [
+    "CVE-2026-120382"
+   ],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:52+00:00",
+   "updated": "2026-11-20T13:00:52+00:00",
+   "src": "iThome 報導",
+   "url": "https://www.ithome.com.tw/news/180680",
+   "pts": [],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "name": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
+    "desc": "",
+    "news": "11月19日群暉（Synology）發布兩份嚴重程度為重大等級的資安公告，揭露漏洞CVE-2026-120382與CVE-2026-123007，這些弱點同時影響DiskStation Manager（DSM）與BeeStation OS，CVE-2026-123007也影響Application P"
+   }
+  },
+  {
+   "id": "tw:ea60fcc94fd1",
+   "kind": "news",
+   "title": "PHP釋出安全更新修補18個漏洞，7個為重大等級",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-20T13:00:46+00:00",
+   "first_seen": "2026-11-20T13:00:52+00:00",
+   "updated": "2026-11-20T13:00:52+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180678",
+   "pts": [
+    "11月19日PHP基金會發布安全更新8.6.0、8.5.13、8.4.28、"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "PHP釋出安全更新修補18個漏洞，7個為重大等級",
+    "desc": "11月19日PHP基金會發布安全更新8.6.0、8.5.13、8.4.28、",
+    "summarize": true
+   }
+  },
+  {
    "id": "tw:195ea95bb6de",
    "kind": "news",
    "title": "中國駭客利用VMware vCenter零時差漏洞入侵，部署後門以竊取資料",
@@ -331,7 +513,7 @@
    "cvss": 9.9,
    "published": "2026-11-19T20:17:32+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
-   "updated": "2026-11-20T03:23:11+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131199",
    "pts": [
@@ -387,7 +569,23 @@
      "In Splunk SOAR versions below 8.8.0, an authenticated user with permission to edit and run playbooks could read or overwrite persisted data for playbook runs outside the authorized label, or ownership scope for that user. The affected data can include playbook inputs, prompt and block results, outputs, and secrets that playbooks save in run data. Overwriting the data could corrupt results that paused, scheduled, or parent playbook runs later use.\nThe vulnerability is possible because the playbook automation APIs do not bind data operations to the active playbook run.",
      "In Splunk SOAR versions below 8.8.0, a user who holds the \"Observer\" Splunk SOAR role could access a password-reset credential in a diagnostic log bundle and reset the password for an active local account.\nThe vulnerability is possible because Splunk SOAR does not redact password-reset email bodies before it logs communications between product processes.",
      "In Splunk AI Assistant versions below 2.0.0 a user who does not hold the \"admin\" or \"power\" Splunk roles could access data associated with another tenant and cause actions to be attributed to that tenant through the Representational State Transfer (REST) API.\nThe vulnerability is possible because Splunk AI Assistant accepted a client-controlled tenant identifier when selecting the authorization context for a request.",
-     "In Splunk AI Assistant versions below 2.0.0, a user who does not hold the \"admin\" or \"power\" Splunk roles could submit client-controlled feature settings through the Representational State Transfer (REST) API. This could modify limited response metadata outside the expected server-side configuration.\nThe vulnerability is possible because the REST API processes client-supplied feature settings without enforcing the expected server-side configuration boundary."
+     "In Splunk AI Assistant versions below 2.0.0, a user who does not hold the \"admin\" or \"power\" Splunk roles could submit client-controlled feature settings through the Representational State Transfer (REST) API. This could modify limited response metadata outside the expected server-side configuration.\nThe vulnerability is possible because the REST API processes client-supplied feature settings without enforcing the expected server-side configuration boundary.",
+     "In Splunk SOAR versions below 8.8.0, an authenticated user that holds a role with the Apps edit, Containers edit, and Playbooks execute permissions could use the App Wizard to execute arbitrary code as the user account that runs Splunk SOAR. This could compromise the confidentiality, integrity, and availability of the Splunk SOAR instance.\nThe vulnerability exists because the App Wizard does not validate user-supplied identifiers before incorporating them into generated connector code.",
+     "In Splunk SOAR versions below 8.8.0, a user that holds a role with the Playbooks view, edit, execute, and delete permissions could cause existing cross-repository playbook references to run attacker-controlled playbook code.\nThe vulnerability is possible because Splunk SOAR can bind existing cross-repository playbook references to a different source control repository when a deleted repository name is reused.",
+     "In Splunk Enterprise versions below 10.6.1, 10.4.5, 10.2.9, 10.0.12, and 9.4.17, an unauthenticated user could run arbitrary Search Processing Language (SPL) searches through RapidDiag task collection as an authenticated user. With this access, the user could read or modify data and configuration available to that authenticated user.\nThe vulnerability is possible because Splunk Enterprise accepts an empty shared secret when it authenticates RapidDiag task-collection requests.\nFor more information see Using RapidDiag (https://help.splunk.com/en/splunk-enterprise/administer/troubleshoot/9.3/contact-splunk-support/using-rapiddiag) in the Splunk documentation.",
+     "In Splunk SOAR versions below 8.8.0, an authenticated user with edit permission for the container label on a pending approval could read an external-prompt capability through an Approval details Representational State Transfer (REST) API response and use it to view the prompt content, change the pending approval decision, and modify its action parameters.\nThe vulnerability is possible because an Approval details response exposes the external-prompt capability without checking approval ownership.\nFor more information see REST External Prompt (https://help.splunk.com/en/splunk-soar/soar-on-premises/rest-api-reference/8.5.0/external-prompt-endpoints/rest-external-prompt) and Manage roles and permissions in Splunk SOAR (On-premises) (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.5.0/manage-your-splunk-soar-on-premises-users-and-accounts/manage-roles-and-permissions-in-splunk-soar-on-premises) in the Splunk documentation.",
+     "In Splunk SOAR versions below 8.8.0, a user that holds a role with the Assets edit or delete permission and access to one or more tenants could change or delete assets assigned to other tenants through the Representational State Transfer (REST) API. With this access, the user could redirect connector traffic and expose the credentials and operational data associated with an asset, or disrupt integrations and data ingestion for other tenants.\nThe vulnerability is possible because Splunk SOAR verifies the Assets edit or delete permission but does not verify that the user can access every tenant assigned to the target asset before Splunk SOAR changes or deletes the asset.\nFor more information see Manage roles and permissions in Splunk SOAR (On-premises) (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.8.0/manage-your-splunk-soar-on-premises-users-and-accounts/manage-roles-and-permissions-in-splunk-soar-on-premises), Configure multiple tenants on your Splunk SOAR (On-premises) instance (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.7.0/configure-product-settings-for-your-splunk-soar-on-premises-instance/configure-multiple-tenants-on-your-splunk-soar-on-premises-instance), Add and configure apps and assets to provide actions in Splunk SOAR (On-premises) (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.6.0/manage-your-splunk-soar-on-premises-apps-and-assets/add-and-configure-apps-and-assets-to-provide-actions-in-splunk-soar-on-premises), and Using the REST API reference for Splunk SOAR (On-premises) (https://help.splunk.com/en/splunk-soar/soar-on-premises/rest-api-reference/8.5.0/using-the-splunk-soar-rest-api/using-the-rest-api-reference-for-splunk-soar-on-premises) in the Splunk documentation.",
+     "In Splunk SOAR versions below 8.8.0, a user that holds a role with the Apps edit permission could execute arbitrary code as the user account that runs Splunk SOAR by installing a malicious app.\nThe vulnerability is possible because Splunk SOAR does not restrict app dependencies to validated binary packages before installing them.",
+     "In Splunk SOAR versions below 8.8.0, a user that holds a role with only the apps:edit permission could install a connector app that causes Splunk SOAR to write attacker-controlled files outside the app directory. This could let the user modify files used by Splunk SOAR and execute arbitrary code as the user account that runs Splunk SOAR.\nThe vulnerability is possible because Splunk SOAR constructs the dependency installation command from app-supplied metadata without preventing that metadata from changing its arguments.\nFor more information see Manage roles and permissions in Splunk SOAR (On-premises) (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.8.0/manage-your-splunk-soar-on-premises-users-and-accounts/manage-roles-and-permissions-in-splunk-soar-on-premises) and Add and configure apps and assets to provide actions in Splunk SOAR (On-premises) (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.6.0/manage-your-splunk-soar-on-premises-apps-and-assets/add-and-configure-apps-and-assets-to-provide-actions-in-splunk-soar-on-premises) in the Splunk documentation.",
+     "In Splunk SOAR versions below 8.8.0, a user that holds a role with the Apps edit permission could cause Splunk SOAR to execute arbitrary code on the host when the user validates an installed app.\nThe vulnerability is possible because the app validation workflow does not isolate untrusted code from the trusted environment.",
+     "In Splunk SOAR versions below 8.8.0, an authenticated user with repository edit access could cause Splunk SOAR to write files outside the configured repository, which lets the user modify files that the user account running Splunk SOAR can write to.\nThe vulnerability is possible because Splunk SOAR does not require source control repository paths to remain inside the configured repository.",
+     "In Splunk SOAR versions below 8.8.0, an authenticated user with permission to create and run playbooks could start child playbooks on containers outside the authorized label, or repository scope for that user. This could expose container data and affect automation outside that scope.\nThe vulnerability is possible because Splunk SOAR does not bind the identity used to authorize the child playbook run to the parent playbook execution context.",
+     "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.16, a user who does not hold the \"admin\" or \"power\" Splunk roles could cause Splunk Enterprise to run arbitrary Search Processing Language (SPL) searches with elevated privileges through data model acceleration.\nThe vulnerability is possible because Splunk Enterprise does not correctly neutralize caller-supplied data model acceleration values before it places them into generated summarization searches.",
+     "In Splunk Enterprise versions below 9.4.17, 10.0.12, 10.2.9, and 10.4.5, a user who does not hold the \"admin\" or \"power\" Splunk roles can configure a metric alert through the Representational State Transfer (REST) API that runs a search with elevated privileges. The vulnerability lets the user access or modify data and disrupt the Splunk Enterprise instance.\nThe vulnerability occurs because Splunk Enterprise does not enforce the required role-based authorization when it processes metric alert configuration through the REST API. Splunk Enterprise schedules the resulting search with elevated authorization and runs attacker-controlled search processing with that authorization.\nFor more information see About configuring role-based user access (https://help.splunk.com/en/splunk-enterprise/administer/manage-users-and-security/10.6/manage-splunk-platform-users-and-roles/about-configuring-role-based-user-access) in the Splunk documentation.",
+     "In Splunk SOAR versions below 8.8.0, an authenticated user with permission to edit and run playbooks could read or overwrite persisted data for playbook runs outside the authorized label, or ownership scope for that user. The affected data can include playbook inputs, prompt and block results, outputs, and secrets that playbooks save in run data. Overwriting the data could corrupt results that paused, scheduled, or parent playbook runs later use.\nThe vulnerability is possible because the playbook automation APIs do not bind data operations to the active playbook run.",
+     "In Splunk SOAR versions below 8.8.0, a user who holds the \"Observer\" Splunk SOAR role could access a password-reset credential in a diagnostic log bundle and reset the password for an active local account.\nThe vulnerability is possible because Splunk SOAR does not redact password-reset email bodies before it logs communications between product processes.",
+     "In Splunk SOAR versions below 8.8.0, an operator of a configured identity provider could authenticate as an existing user associated with another configured identity provider. If that account has the \"Administrator\" Splunk SOAR role, the operator could control the Splunk SOAR deployment.\nSplunk SOAR does not bind external user accounts to the identity provider that provisions them and authenticates accounts by username without verifying provider ownership.\nThe vulnerability requires more than one configured external identity provider with distinct trust domains and a target username that an operator of a configured identity provider can authenticate through a different provider.\nFor more information see Configure single sign-on authentication (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.7.0/manage-your-splunk-soar-on-premises-users-and-accounts/configure-single-sign-on-authentication-for-splunk-soar-on-premises) and Manage roles and permissions (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.8.0/manage-your-splunk-soar-on-premises-users-and-accounts/manage-roles-and-permissions-in-splunk-soar-on-premises) in the Splunk documentation.",
+     "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.16, a user who does not hold the \"admin\" or \"power\" Splunk roles could cause scheduled metric alert searches to run arbitrary Search Processing Language (SPL) commands and access credentials stored in cleartext. This requires at least one non-internal metric index on the instance.\nThe vulnerability is possible because Splunk Enterprise does not fully validate metric alert filter input before using it in a scheduled search."
     ]
    }
   },
@@ -462,10 +660,10 @@
    }
   },
   {
-   "id": "CVE-2026-123890",
-   "kind": "cve",
-   "title": "vCenter 驗證繞過漏洞",
-   "sub": "CVE-2026-123890 · CVSS 9.8",
+   "id": "grp:VMware:2026-11-19",
+   "kind": "group",
+   "title": "VMware 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -473,25 +671,26 @@
     "VMware"
    ],
    "cves": [
-    "CVE-2026-123890"
+    "CVE-2026-123890",
+    "CVE-2026-123891"
    ],
    "cvss": 9.8,
    "published": "2026-11-19T15:17:25+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
-   "updated": "2026-11-19T21:37:42+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
    "pts": [
-    "影響 vCenter 及 Telco Cloud，**VMware Directory Service 存在驗證繞過漏洞**。",
-    "CVSS 為 9.8，影響 vCenter 5.x/8.0/9.0.x/9.1.x 等產品，目前尚未發現遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 9.8。",
+    "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. Affected versions: 9.1.x (fixed in 9.1.1.020"
    ],
-   "fix": "依版本升級至 9.1.1.0200、9.0.2.0200、8.0 U3m 或 5.2.5，其餘產品參考 KB463116",
-   "ai": true,
-   "ai_ver": 2,
+   "fix": "升級至 9.1.1.0200 以上（依原文擷取）",
+   "ai": false,
+   "ai_ver": 0,
    "raw": {
-    "desc": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x (fixed in 5.2.5).\nTelco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x, 5.2 and Telco Cloud Infrastructure 3.0 are also affected (see KB463116).",
-    "refs": [
-     "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495"
+    "descs": [
+     "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x (fixed in 5.2.5).\nTelco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x, 5.2 and Telco Cloud Infrastructure 3.0 are also affected (see KB463116).",
+     "SDDC Manager contains an SQL-injection vulnerability due to improper sanitization of user-supplied input.\nAffected versions: 9.1.x.x (fixed in 9.1.1.0200); 9.0.x.x (fixed in 9.0.2.0100); 5.x (fixed in 5.2.5)."
     ]
    }
   },
@@ -521,7 +720,7 @@
    "cvss": 9.2,
    "published": "2026-11-19T15:17:24+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
-   "updated": "2026-11-20T03:23:11+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115560",
    "pts": [
@@ -551,7 +750,14 @@
      "Timezone cache use-after-free can lead to remote code execution.\n\nIn non-thread-safe builds, a diagnostic written to a file-based error_log during module startup, for example for an invalid date.timezone value or a session configuration warning, causes the timezone cache to be allocated in startup memory that is freed while a reference to it is kept. A diagnostic raised early in the first request of a worker, such as the max_input_vars warning, then accesses the freed cache. On such a deployment an unauthenticated remote attacker can crash PHP-FPM, Apache mod_php or CGI workers with a crafted request. Arbitrary code execution may be possible and has been demonstrated with known memory addresses.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
      "PHP-FPM epoll use-after-free can lead to local privilege escalation.\n\nWhen catch_workers_output is enabled and the epoll event backend is used, the PHP-FPM master can close a worker's output pipe in fpm_child_close() without removing the associated event, and the delayed cleanup can free the worker record while its epoll registration is still active. A later event is then dispatched through a pointer into freed memory. A local attacker who can execute PHP code in an FPM worker can crash the master or execute code with its privileges, commonly root. catch_workers_output is disabled by default but enabled in the official PHP-FPM Docker images.\n\nThis issue affects PHP versions from 8.1.20 through 8.1.34, from 8.2.7 before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
      "Denial of service through folded HTTP response headers.\n\nThe HTTP stream wrapper joins each continuation line of a folded response header to the accumulated value by allocating a new string and copying the whole value, so a response with many short continuation lines takes disproportionate CPU time to parse. An attacker who controls an HTTP or HTTPS response fetched through file_get_contents(), fopen() or other stream functions, by making the application request a chosen URL or by influencing a server it already contacts, can keep PHP workers busy. Repeated or concurrent requests can cause a denial of service.\n\nThis issue affects PHP versions from 8.1.32 through 8.1.34, from 8.2.28 before 8.2.36, from 8.3.18 before 8.3.37, from 8.4.5 before 8.4.28 and 8.5.* before 8.5.13.",
-     "Mixed-case HTTPS and FTPS URLs can expose data in plaintext.\n\nThe HTTP and FTP stream wrappers recognise URL schemes case-insensitively, but enable TLS only when the scheme contains a lowercase \"s\" at a fixed position. A URL such as HTTPS:// or FTPS:// passed to file_get_contents(), fopen() or other stream functions, or received as an HTTP redirect target, is therefore handled over unencrypted HTTP or FTP. An attacker able to observe the network traffic can read data the application expected TLS to protect, including credentials, request bodies and transferred files.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13."
+     "Mixed-case HTTPS and FTPS URLs can expose data in plaintext.\n\nThe HTTP and FTP stream wrappers recognise URL schemes case-insensitively, but enable TLS only when the scheme contains a lowercase \"s\" at a fixed position. A URL such as HTTPS:// or FTPS:// passed to file_get_contents(), fopen() or other stream functions, or received as an HTTP redirect target, is therefore handled over unencrypted HTTP or FTP. An attacker able to observe the network traffic can read data the application expected TLS to protect, including credentials, request bodies and transferred files.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "Session serializer mismatch can lead to remote code execution.\n\nSession upload progress, when enabled, can store attacker-controlled data in a session key using the php_binary or php_serialize session serializer. If the same session is later read with the php serializer, because session.serialize_handler is changed at runtime or differs between applications sharing a session store, bytes inside the key can be passed to the unserializer. A remote attacker able to submit a multipart upload can inject objects, which may lead to code execution when the reading application contains a suitable gadget chain, or to session corruption or denial of service.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "Partially overwritten session files can lead to remote code execution.\n\nThe files session save handler, which is the default, writes updated session data into the existing session file without first clearing it. If a write is interrupted, the file can contain the beginning of the new session followed by the end of the old one, and bytes of an ordinary string can later be unserialized as objects. An attacker who can influence the session data, for example through session upload progress, and interrupt a write at a suitable point may inject objects, which can lead to code execution when the application contains a suitable gadget chain. Session data can also be corrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "Use-after-free via repopulation of last_fatal_error_backtrace global after shutdown.\n\nA fatal error raised while modified INI settings are restored during request shutdown can repopulate the stored fatal error backtrace after the executor has been cleaned up. The request memory is then freed, and a diagnostic emitted before executor initialization in a later request handled by the same PHP-FPM or mod_php worker can access the stale backtrace. The shutdown error requires per-path configuration of max_memory_limit, or of zlib.output_compression together with output_handler (which .user.ini can also set). The early diagnostic requires Apache per-directory configuration or, for PHP-FPM, a PHP_VALUE or PHP_ADMIN_VALUE parameter sent by the front end. This can cause memory corruption and worker crashes, and may allow remote code execution.\n\nThis issue affects PHP versions 8.5.* before 8.5.13.",
+     "PHP-FPM request smuggling through an unread HTTP request body.\n\nPHP does not discard the unread part of an HTTP request body at request shutdown when the application has opened php://input without reading it to the end. When the front end reuses backend connections, which is not the default in nginx or Apache (for example nginx with fastcgi_keep_conn on, or Apache mod_proxy_fcgi with enablereuse=on), PHP-FPM can parse the leftover bytes as a new FastCGI request. An unauthenticated remote attacker can use a single crafted multipart/form-data request to forge a backend request with chosen parameters such as SCRIPT_FILENAME, REMOTE_ADDR and PHP_ADMIN_VALUE, which can lead to execution of attacker-controlled PHP code. With LSAPI, subsequent requests on the connection can be disrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "Use-after-free in magic method backtraces can lead to remote code execution.\n\nWhen collecting the arguments of a method call handled by __call() or __callStatic() for a backtrace, PHP can read stale values that may refer to freed memory. If a fatal error such as exceeding memory_limit occurs while an application enters such a call, with fatal_error_backtraces enabled (the default) and zend.exception_ignore_args disabled, a remote attacker who controls enough request data to influence memory allocation may cause memory corruption, crash the PHP worker or, with knowledge of memory addresses, execute arbitrary code. php.ini-production enables zend.exception_ignore_args, which prevents this.\n\nThis issue affects PHP versions 8.5.* before 8.5.13.",
+     "Timezone cache use-after-free can lead to remote code execution.\n\nIn non-thread-safe builds, a diagnostic written to a file-based error_log during module startup, for example for an invalid date.timezone value or a session configuration warning, causes the timezone cache to be allocated in startup memory that is freed while a reference to it is kept. A diagnostic raised early in the first request of a worker, such as the max_input_vars warning, then accesses the freed cache. On such a deployment an unauthenticated remote attacker can crash PHP-FPM, Apache mod_php or CGI workers with a crafted request. Arbitrary code execution may be possible and has been demonstrated with known memory addresses.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "PHP-FPM epoll use-after-free can lead to local privilege escalation.\n\nWhen catch_workers_output is enabled and the epoll event backend is used, the PHP-FPM master can close a worker's output pipe in fpm_child_close() without removing the associated event, and the delayed cleanup can free the worker record while its epoll registration is still active. A later event is then dispatched through a pointer into freed memory. A local attacker who can execute PHP code in an FPM worker can crash the master or execute code with its privileges, commonly root. catch_workers_output is disabled by default but enabled in the official PHP-FPM Docker images.\n\nThis issue affects PHP versions from 8.1.20 through 8.1.34, from 8.2.7 before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13."
     ]
    }
   },
@@ -1279,7 +1485,7 @@
    "cvss": 9.2,
    "published": "2026-11-18T16:17:59+00:00",
    "first_seen": "2026-11-18T22:03:25+00:00",
-   "updated": "2026-11-20T03:23:11+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113425",
    "pts": [
@@ -1312,6 +1518,11 @@
      "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "In Eclipse Ditto versions 1.1.0 to 3.9.8, when pre-authentication is enabled, the gateway service accepts the pre-authenticated subject not only from the `x-ditto-pre-authenticated` HTTP header set by a trusted reverse proxy, but also from an undocumented `x-ditto-pre-authenticated` URL query parameter that a client can set. A reverse proxy that only overwrites the header therefore does not stop clients from supplying their own subject. With the default configuration of the Ditto Helm chart (`global.jwtOnly: false`, which implicitly enables pre-authentication), the bundled nginx skips HTTP Basic authentication for any request with an `Authorization: Bearer` header and forwards it without the pre-authentication header. An unauthenticated remote attacker can send an invalid Bearer token together with the query parameter to authenticate as any chosen policy subject. Pre-authentication succeeds before the JWT is validated, so the attacker can read and modify Things and Policies with that subject's permissions. As a mitigation, disable pre-authentication in the gateway (`ENABLE_PRE_AUTHENTICATION=false`) or, when using the Helm chart, configure `global.jwtOnly: true`.",
      "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
@@ -1670,7 +1881,7 @@
    "cvss": 9.8,
    "published": "2026-11-18T12:17:01+00:00",
    "first_seen": "2026-11-20T03:23:11+00:00",
-   "updated": "2026-11-20T03:23:11+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107494",
    "pts": [
@@ -1683,7 +1894,9 @@
    "raw": {
     "descs": [
      "Calling EVP_EncodeBlock() with an input length close to INT_MAX may overflow the calculation of the encoded output size and write past the end of the caller-supplied output buffer.",
-     "The QUIC stack queues a RETIRE_CONNECTION_ID frame also for retransmitted NEW_CONNECTION_ID frames. This allows a remote malicious QUIC stack to queue an unlimited number of RETIRE_CONNECTION_ID frames."
+     "The QUIC stack queues a RETIRE_CONNECTION_ID frame also for retransmitted NEW_CONNECTION_ID frames. This allows a remote malicious QUIC stack to queue an unlimited number of RETIRE_CONNECTION_ID frames.",
+     "Issue summary: Calling EVP_EncodeBlock() with an input length close to INT_MAX\nmay overflow the calculation of the encoded output size and write past the end\nof the caller-supplied output buffer.\n\nImpact summary: No path by which an attacker can trigger this has been\nidentified. An application that passes an input length near INT_MAX to\nEVP_EncodeBlock() could suffer a heap buffer overflow, crashing or corrupting\nits own memory, but it must itself supply such a length.\n\nCWE: CWE-190: Integer Overflow or Wraparound\n\nDescription: EVP_EncodeBlock() base64-encodes a buffer of a caller-supplied\nlength into an output buffer that the caller allocates. The caller is expected\nto reserve 4*((len+2)/3)+1 bytes. For input lengths close to INT_MAX, the\narithmetic that computes the encoded length overflows a signed integer, so the\nfunction writes more data than the documented output size. The result is a\nheap buffer overflow in the calling process.\n\nReaching this requires an application to pass an input length near INT_MAX to\nEVP_EncodeBlock(). OpenSSL's TLS, QUIC and CMS implementations never encode\nbuffers of that size, and the command line tools cannot practically be made to\ndo so: the limits on reading a proxy password from a file and on bignum sizes\nprevent it. An application that accepts an attacker-controlled length and\nforwards it to EVP_EncodeBlock() without its own bound check is exposed.\n\nThe severity is Low because no attacker-controlled path to the overflow is\nknown. The caller must already hold a buffer of about two gigabytes before the\ndefect can be reached.\n\nFIPS impact: no\nThe affected code is outside the FIPS module boundary.",
+     "Issue summary: The QUIC stack queues a RETIRE_CONNECTION_ID frame also for\nretransmitted NEW_CONNECTION_ID frames. This allows a remote malicious\nQUIC stack to queue an unlimited number of RETIRE_CONNECTION_ID frames.\n\nImpact summary: A malicious remote QUIC peer can trigger an out-of-memory\ncondition causing a Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The earlier fix for CVE-2026-84784 was not complete. It\nfailed to ignore retransmissions of the NEW_CONNECTION_ID frame. The QUIC\nimplementation created and inserted a RETIRE_CONNECTION_ID frame for every\nretransmitted NEW_CONNECTION_ID frame it received and there was no limit\non how many RETIRE_CONNECTION_ID frames were queued.\nThis allows a malicious remote QUIC stack to trigger an out-of-memory (OOM)\ncondition.\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside the\nOpenSSL FIPS module boundary."
     ]
    }
   },
@@ -1739,19 +1952,20 @@
    "cvss": 8.8,
    "published": "2026-11-18T09:17:45+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
-   "updated": "2026-11-19T21:37:42+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99312",
    "pts": [
-    "影響 Linux 核心 KVM x86 與 logitech-hidpp 驅動，涉及 MMU 重設與競爭條件問題。",
-    "尚未遭利用；**最高 CVSS 8.8，上游核心程式碼已修復該兩項問題**。"
+    "同日公布 2 個漏洞，最高 CVSS 8.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: KVM: x86: Unconditionally reset MMU context when emulating INIT Force an"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Unconditionally reset MMU context when emulating INIT\n\nForce an MMU reset when emulating an INIT even if paging was already\ndisabled, as the MMU page role includes guest_mode (L2), i.e. an INIT while\nL2 is running with CR0.PG=0 will result in KVM running L1 with a stale MMU\ncontext.\n\nAlternatively, the reset could be scoped strictly to paging being enabled\nor L2 being active, but SMM is also encoded in the page role.  Even though\nit _should_ be impossible for the vCPU to be INIT'd while SMM is active,\nthere's zero value in not handling SMM.  At that point, the only scenario\nwhere KVM _doesn't_ need to reset the MMU context is on an INIT with the\nvCPU running in Real Mode or Unpaged Protect Mode, and while INIT in those\nmodes is somewhat common, it's far from a hot path and re-initializing the\nMMU is not expensive, especially when the role isn't changing (KVM elides\nmost of the re-configuration in that case).\n\nNote, like the Fixes commit, this bug only affects nested SVM as INIT is an\nunconditional intercept on VMX, i.e. it's impossible to emulate INIT while\nL2 is active.\n\nTemporarily keep the guest TLB flush when CR0.PG is being cleared even\nthough it is fully redundant with the flush that is emitted on all INIT\nevents (KVM itself only does RESET when a vCPU is being created, i.e. when\nCR0.PG must be '0').",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nHID: logitech-hidpp: fix race condition when accessing stale stack pointer\n\nThe driver uses hidpp->send_receive_buf to point to a stack-allocated\nbuffer in the synchronous command path (__do_hidpp_send_message_sync).\nHowever, this pointer is not cleared when the function returns.\n\nIf an event is processed (e.g. by a different thread) while the\nsend_mutex is held by a new command, but before that command has\nupdated send_receive_buf, the handler (hidpp_raw_hidpp_event) will\nobserve that the mutex is locked and dereference the stale pointer.\n\nThis results in an out-of-bounds access on a different thread's kernel\nstack (or a NULL pointer dereference on the very first command).\n\nFix this by:\n1. Clearing hidpp->send_receive_buf to NULL before releasing the mutex\n   in the synchronous command path.\n2. Moving the assignment of the local 'question' and 'answer' pointers\n   inside the mutex_is_locked() block in the handler, and adding\n   a NULL check before dereferencing.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nHID: logitech-hidpp: fix race condition when accessing stale stack pointer\n\nThe driver uses hidpp->send_receive_buf to point to a stack-allocated\nbuffer in the synchronous command path (__do_hidpp_send_message_sync).\nHowever, this pointer is not cleared when the function returns.\n\nIf an event is processed (e.g. by a different thread) while the\nsend_mutex is held by a new command, but before that command has\nupdated send_receive_buf, the handler (hidpp_raw_hidpp_event) will\nobserve that the mutex is locked and dereference the stale pointer.\n\nThis results in an out-of-bounds access on a different thread's kernel\nstack (or a NULL pointer dereference on the very first command).\n\nFix this by:\n1. Clearing hidpp->send_receive_buf to NULL before releasing the mutex\n   in the synchronous command path.\n2. Moving the assignment of the local 'question' and 'answer' pointers\n   inside the mutex_is_locked() block in the handler, and adding\n   a NULL check before dereferencing."
     ]
    }
@@ -3086,15 +3300,15 @@
    "cvss": 9.6,
    "published": "2026-11-17T21:17:44+00:00",
    "first_seen": "2026-11-17T22:58:36+00:00",
-   "updated": "2026-11-19T21:37:42+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130906",
    "pts": [
-    "影響 Google Chrome 158.0.8127.36 以前版本（含 Android），**可於沙盒外執行任意程式碼**。",
-    "目前尚未遭利用；涵蓋 10 項 CVE（含 ANGLE、WebGL、GPU），可透過特製 HTML 頁面遠端觸發。"
+    "同日公布 107 個漏洞，最高 CVSS 9.6。",
+    "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute"
    ],
-   "fix": "將 Google Chrome（含 Android 版）升級至 158.0.8127.36 以上版本。",
-   "ai": true,
+   "fix": "",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -3447,7 +3661,9 @@
      "Missing authorization in PersistentCache in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted PDF file. (Chromium security severity: Medium)",
      "Race condition in Core in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
      "Incorrect authorization in PerformanceAPIs in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
-     "Missing authorization in Autofill in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)"
+     "Missing authorization in Autofill in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
+     "Use after free in Extensions in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
+     "Improper input validation in Parser in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)"
     ]
    }
   },
@@ -13785,6 +14001,41 @@
    }
   },
   {
+   "id": "grp:QNAP:2026-10-29",
+   "kind": "group",
+   "title": "QNAP 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "QNAP"
+   ],
+   "cves": [
+    "CVE-2025-62839",
+    "CVE-2025-62841"
+   ],
+   "cvss": 8.7,
+   "published": "2026-10-29T08:16:59+00:00",
+   "first_seen": "2026-11-20T13:00:43+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62839",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
+    "An use of hard-coded cryptographic key vulnerability has been reported to affect Hybrid Backup Sync. If exploited, the vulnerability could a"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "An use of hard-coded cryptographic key vulnerability has been reported to affect Hybrid Backup Sync. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.\n\nWe have already fixed the vulnerability in the following version:\nHybrid Backup Sync 26.4.0.521 and later\nHybrid Backup Sync 26.4.1.563 and later",
+     "An use of hard-coded cryptographic key vulnerability has been reported to affect Hybrid Backup Sync. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.\n\nWe have already fixed the vulnerability in the following version:\nHybrid Backup Sync 26.4.0.521 and later\nHybrid Backup Sync 26.4.1.563 and later"
+    ]
+   }
+  },
+  {
    "id": "tw:cb2af2067b57",
    "kind": "news",
    "title": "駭客利用AI滲透測試工具ARTEX竊取韓國金融業資料",
@@ -15706,18 +15957,20 @@
    "cvss": 9.2,
    "published": "2026-10-21T14:17:09+00:00",
    "first_seen": "2026-11-15T02:42:00+00:00",
-   "updated": "2026-11-18T22:03:25+00:00",
+   "updated": "2026-11-20T13:00:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "影響 Palo Alto 與 PHP 記憶體清理與全域狀態機制，**可能讀取未初始化或已釋放記憶體**。",
-    "於記憶體不足（OOM）錯誤中止請求後，後續請求可能讀取已釋放之請求記憶體；尚無遭利用紀錄，CVSS 9.2。"
+    "同日公布 2 個漏洞，最高 CVSS 9.2。",
+    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
+     "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+     "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
      "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
      "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
@@ -17004,10 +17257,93 @@
   "CVE-2026-63202": [],
   "CVE-2026-99288": [
    "Linux"
-  ]
+  ],
+  "CVE-2026-127057": [],
+  "CVE-2026-133648": [],
+  "CVE-2026-129056": [],
+  "CVE-2026-121385": [],
+  "CVE-2026-124770": [],
+  "CVE-2026-124772": [],
+  "CVE-2026-133493": [],
+  "CVE-2026-129713": [],
+  "CVE-2026-117601": [],
+  "CVE-2026-120681": [],
+  "CVE-2026-65094": [],
+  "CVE-2026-131167": [],
+  "CVE-2026-125085": [],
+  "CVE-2026-99313": [
+   "Linux"
+  ],
+  "CVE-2026-133534": [],
+  "CVE-2026-129971": [],
+  "CVE-2026-129972": [],
+  "CVE-2026-124767": [],
+  "CVE-2026-124768": [],
+  "CVE-2026-105270": [],
+  "CVE-2025-62839": [
+   "QNAP"
+  ],
+  "CVE-2025-62841": [
+   "QNAP"
+  ],
+  "CVE-2026-101107": [],
+  "CVE-2026-113347": [],
+  "CVE-2026-130494": [],
+  "CVE-2026-133659": [],
+  "CVE-2026-133663": [],
+  "CVE-2026-131163": [],
+  "CVE-2026-128915": [],
+  "CVE-2026-133500": [],
+  "CVE-2026-133501": [],
+  "CVE-2026-133662": [],
+  "CVE-2026-133254": [],
+  "CVE-2026-125080": [],
+  "CVE-2026-86696": [],
+  "CVE-2026-120556": [],
+  "CVE-2026-131795": [],
+  "CVE-2026-89095": [],
+  "CVE-2026-118522": [],
+  "CVE-2026-130010": [],
+  "CVE-2026-126716": [],
+  "CVE-2026-123891": [
+   "VMware"
+  ],
+  "CVE-2026-133553": [],
+  "CVE-2026-119528": [],
+  "CVE-2026-126826": [],
+  "CVE-2026-130493": [],
+  "CVE-2026-133577": [],
+  "CVE-2026-104927": [],
+  "CVE-2026-128102": [],
+  "CVE-2026-129015": [],
+  "CVE-2026-129036": [],
+  "CVE-2026-129065": [],
+  "CVE-2026-130055": [],
+  "CVE-2026-129840": [],
+  "CVE-2026-125059": [],
+  "CVE-2026-133021": [],
+  "CVE-2026-133022": [],
+  "CVE-2026-133024": [],
+  "CVE-2026-133076": [],
+  "CVE-2026-133081": [],
+  "CVE-2026-132825": [],
+  "CVE-2026-133097": [],
+  "CVE-2026-120508": [],
+  "CVE-2026-129327": [],
+  "CVE-2026-131582": [],
+  "CVE-2026-131645": [],
+  "CVE-2026-121985": [],
+  "CVE-2026-127112": [],
+  "CVE-2026-109387": [],
+  "CVE-2026-116550": [],
+  "CVE-2026-119611": [],
+  "CVE-2026-121790": [],
+  "CVE-2026-96771": [],
+  "CVE-2026-133652": [],
+  "CVE-2026-125094": []
  },
- "nvd_last": "2026-11-20T03:17:34+00:00",
- "kev_last": "2026-11-20T03:17:34+00:00",
+ "nvd_last": "2026-11-20T12:55:06+00:00",
+ "kev_last": "2026-11-20T12:55:06+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
