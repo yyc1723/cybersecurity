@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T12:55:06+00:00",
+ "generated": "2026-11-20T21:06:01+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,11 +324,15 @@
   }
  ],
  "todo": {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "items": [
    {
     "title": "Office：Guardium 驗證缺失漏洞",
     "desc": "漏洞位於 SharePoint S-TAP RelayService（CVSS 9.1），無需驗證即可經網路觸發，目前尚未遭利用。"
+   },
+   {
+    "title": "Windows Server：Chrome 多項遠端執行漏洞",
+    "desc": "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allo"
    },
    {
     "title": "Windows Server：WS_FTP 伺服器多項漏洞",
@@ -339,16 +343,12 @@
     "desc": "將 1.0.3 至 1.2.0 版的 Brotli 函式庫或執行檔更新至 1.0.10、1.1.1 或 1.2.1。"
    },
    {
-    "title": "Windows Server：Chrome 多項遠端執行漏洞",
-    "desc": "尚未遭利用；需透過特製 HTML 網頁觸發，部分漏洞須配合社交工程或已入侵算繪程序。"
+    "title": "Office：【資安週報】1116～1120，全球第三方供應商遭駭連環爆；Jav",
+    "desc": "全球第三方服務供應商資安事件持續擴大，單一供應商遭駭，往往連帶波及數十甚至數百家企業。例如：愛爾蘭銀行IT服務商Wellington IT遭駭，已有3家信用合作社發布資安公告，據統"
    },
    {
     "title": "ASP.NET：Telerik UI 解析漏洞",
     "desc": "涵蓋 CVE-2026-106146、CVE-2026-106154（CVSS 8.6），目前尚未遭利用，涉及未經驗證之篩選參數處理。"
-   },
-   {
-    "title": "ASP.NET：Telerik 記憶體累積漏洞",
-    "desc": "尚未遭利用或用於勒索軟體；透過重複伺服器端彙總請求及無保護的類別字典更新觸發（CVSS 8.6）。"
    }
   ],
   "ai": false
@@ -361,6 +361,31 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "CVE-2026-54039",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-54039",
+   "sub": "CVE-2026-54039 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-54039"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-20T20:17:42+00:00",
+   "first_seen": "2026-11-20T21:11:39+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54039",
+   "pts": [
+    "LibreChat is an enhanced ChatGPT clone that supports multiple AI providers. From 0.7.0 until 0.8.6, when local registration is enabled and a"
+   ],
+   "fix": "升級至 0.8.6 以上（依原文擷取）",
+   "ai": false
+  },
   {
    "id": "tw:ea2224494566",
    "kind": "news",
@@ -640,6 +665,58 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-129448",
+   "kind": "cve",
+   "title": "Apache Roller Deserialization of Untrust",
+   "sub": "CVE-2026-129448 · CVSS 9.8",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [
+    "CVE-2026-129448"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-20T00:00:00+00:00",
+   "first_seen": "2026-11-20T21:11:46+00:00",
+   "src": "CISA KEV",
+   "url": "https://lists.apache.org/thread/cc0jck13nb9vvcmzxzwotr6n16mx28z9",
+   "pts": [
+    "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-76466",
+   "kind": "cve",
+   "title": "Cisco Expressway Series Use of Hard-code",
+   "sub": "CVE-2026-76466 · CVSS 9.8",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-76466"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-20T00:00:00+00:00",
+   "first_seen": "2026-11-20T21:11:53+00:00",
+   "src": "CISA KEV",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
+   "pts": [
+    "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persiste",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
+   "ai": false
+  },
+  {
    "id": "CVE-2026-77312",
    "kind": "cve",
    "title": "AI 平台 漏洞 CVE-2026-77312",
@@ -747,11 +824,11 @@
    "ai": false
   },
   {
-   "id": "CVE-2026-127064",
-   "kind": "cve",
-   "title": "Fastify 外掛路徑穿越漏洞",
-   "sub": "CVE-2026-127064 · CVSS 8.2",
-   "sev": "high",
+   "id": "grp:Apache:2026-11-20",
+   "kind": "group",
+   "title": "Apache 多個高風險漏洞",
+   "sub": "5 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -759,19 +836,23 @@
     "nginx"
    ],
    "cves": [
-    "CVE-2026-127064"
+    "CVE-2026-116561",
+    "CVE-2026-118028",
+    "CVE-2026-127064",
+    "CVE-2026-133325",
+    "CVE-2026-95517"
    ],
-   "cvss": 8.2,
+   "cvss": 9.8,
    "published": "2026-11-19T19:17:19+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
    "src": "NVD",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127064",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116561",
    "pts": [
-    "影響 @fastify/reply-from 12.8.4 前版本，搭 Tomcat 等後端可繞過路徑存取內部 API。",
-    "尚未遭利用；未經身分驗證者可發送含分號路徑參數請求利用，nginx 不受影響。"
+    "同日公布 5 個漏洞，最高 CVSS 9.8。",
+    "@fastify/reply-from is a Fastify plugin that forwards requests to an upstream HTTP server. In versions before 12.8.4, its buildURL function "
    ],
-   "fix": "**升級 @fastify/reply-from 至 12.8.4 以上版本**",
-   "ai": true
+   "fix": "升級至 12.8.4 以上（依原文擷取）",
+   "ai": false
   },
   {
    "id": "CVE-2026-87867",
@@ -2124,11 +2205,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114949",
    "pts": [
-    "MySQL Server(8.4.0-8.4.13等)與Cluster(8.0.0-8.0.50等)**多元件存在易於利用的漏洞**。",
-    "尚未遭利用（CVSS 7.2），含 5 個 CVE，影響 Replication、Optimizer、Logging 及 GIS 元件。"
+    "同日公布 5 個漏洞，最高 CVSS 7.2。",
+    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Replication). Supported versions that are affec"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "CVE-2026-114938",
@@ -2336,8 +2417,8 @@
    "id": "grp:Windows Server:2026-11-18",
    "kind": "group",
    "title": "Chrome 多項遠端執行漏洞",
-   "sub": "9 個 CVE · 最高 CVSS 8.3",
-   "sev": "high",
+   "sub": "13 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -2347,25 +2428,29 @@
    "cves": [
     "CVE-2026-130938",
     "CVE-2026-130944",
+    "CVE-2026-130968",
     "CVE-2026-130969",
     "CVE-2026-130987",
     "CVE-2026-130999",
+    "CVE-2026-131006",
     "CVE-2026-131039",
+    "CVE-2026-131049",
     "CVE-2026-131050",
     "CVE-2026-131063",
+    "CVE-2026-131089",
     "CVE-2026-131092"
    ],
-   "cvss": 8.3,
+   "cvss": 9.6,
    "published": "2026-11-17T21:17:49+00:00",
    "first_seen": "2026-11-18T22:03:25+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130938",
    "pts": [
-    "影響 Windows 版 Google Chrome 158.0.8127.36 前版本，**可於沙盒外遠端執行程式碼**。",
-    "尚未遭利用；需透過特製 HTML 網頁觸發，部分漏洞須配合社交工程或已入侵算繪程序。"
+    "同日公布 13 個漏洞，最高 CVSS 9.6。",
+    "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code ou"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Chrome:2026-11-18",
@@ -2558,11 +2643,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21590",
    "pts": [
-    "影響 Bamboo、Jira 等多項 Data Center 產品，**未經身分驗證的遠端攻擊者可藉路徑遍歷任意讀寫或繞過驗證**。",
-    "含 9 項 CVE，最高 CVSS 8.9，目前尚未遭利用，亦無勒索軟體利用紀錄；部分漏洞無須登入即可遠端觸發。"
+    "同日公布 9 個漏洞，最高 CVSS 8.9。",
+    "This High severity Security Misconfiguration vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Cent"
    ],
-   "fix": "",
-   "ai": true
+   "fix": "原文：This High severity Security Misconfiguration vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Center. This Security Misconfiguration vu",
+   "ai": false
   },
   {
    "id": "tw:880b7eae7d5a",
