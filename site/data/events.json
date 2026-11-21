@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T02:16:54+00:00",
+ "generated": "2026-11-21T17:34:05+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,7 +324,7 @@
   }
  ],
  "todo": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "items": [
    {
     "title": "Office：Guardium 驗證缺失漏洞",
@@ -361,6 +361,29 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:740481b01c5f",
+   "kind": "news",
+   "title": "網擎策略投資微智安聯，臺灣資安業者攜手擴大產品布局、拓展海外市場",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-21T17:39:45+00:00",
+   "first_seen": "2026-11-21T17:39:45+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180692",
+   "pts": [
+    "以郵件伺服器、郵件雲與郵件安全系統著稱的網擎資訊（Openfind），近期特別召開記者會，說明今年營運狀況、財務表現之餘，也談到近期運用AI強化技術應用研發，並宣布策略投資新創公司微智安聯（Shield eXtreme），可望攜手開拓海外市場，網擎同時揭露經營日本與奈及利亞市場的現況。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:c07498241b4f",
    "kind": "news",
