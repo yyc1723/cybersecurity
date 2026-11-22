@@ -97,7 +97,7 @@
   {
    "id": "CVE-2026-54039",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-54039",
+   "title": "LibreChat 驗證漏洞",
    "sub": "CVE-2026-54039 · CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -115,11 +115,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54039",
    "pts": [
-    "LibreChat is an enhanced ChatGPT clone that supports multiple AI providers. From 0.7.0 until 0.8.6, when local registration is enabled and a"
+    "影響 LibreChat 0.7.0 至 0.8.6 前版本，**未經驗證攻擊者可綁定受害者工作階段並持續讀寫其資料**。",
+    "須啟用本地註冊且設定至少一個社群登入提供者方可觸發，CVSS 8.1，目前尚未遭利用。"
    ],
-   "fix": "升級至 0.8.6 以上（依原文擷取）",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 LibreChat 0.8.6 以上版本。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "LibreChat is an enhanced ChatGPT clone that supports multiple AI providers. From 0.7.0 until 0.8.6, when local registration is enabled and at least one social provider is configured, POST /api/auth/register passes an unparsed request object into api/server/services/AuthService.js, allowing an unauthenticated attacker to persist a forged provider value for a known victim email. The api/strategies/socialLogin.js email-fallback path then accepts the planted record when the victim signs in because it compares the stored provider name without requiring the provider subject identifier. The victim OAuth session and the attacker local-password session become bound to the same user record, giving the attacker persistent read and write access to data created by the victim. The first-user administrator role is an additional conditional impact only on a fresh deployment. This issue is fixed in version 0.8.6.",
     "refs": [
@@ -256,7 +257,7 @@
   {
    "id": "CVE-2026-120382",
    "kind": "cve",
-   "title": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
+   "title": "Synology 重大漏洞",
    "sub": "CVE-2026-120382 · 尚未評分",
    "sev": "high",
    "kev": false,
@@ -273,10 +274,13 @@
    "updated": "2026-11-20T13:00:52+00:00",
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180680",
-   "pts": [],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "pts": [
+    "影響 Synology DiskStation Manager（DSM）與 BeeStation OS，**列為重大等級漏洞**。",
+    "含 CVE-2026-120382 等弱點，原文未說明攻擊條件與後果，目前尚未遭利用。"
+   ],
+   "fix": "群暉預計於 20 日提供部分版本作業系統修補程式。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "name": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
     "desc": "",
@@ -928,7 +932,7 @@
    "cvss": 9.2,
    "published": "2026-11-19T15:17:24+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
-   "updated": "2026-11-20T21:11:39+00:00",
+   "updated": "2026-11-22T06:50:43+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115560",
    "pts": [
@@ -968,7 +972,11 @@
      "PHP-FPM epoll use-after-free can lead to local privilege escalation.\n\nWhen catch_workers_output is enabled and the epoll event backend is used, the PHP-FPM master can close a worker's output pipe in fpm_child_close() without removing the associated event, and the delayed cleanup can free the worker record while its epoll registration is still active. A later event is then dispatched through a pointer into freed memory. A local attacker who can execute PHP code in an FPM worker can crash the master or execute code with its privileges, commonly root. catch_workers_output is disabled by default but enabled in the official PHP-FPM Docker images.\n\nThis issue affects PHP versions from 8.1.20 through 8.1.34, from 8.2.7 before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
      "Partially overwritten session files can lead to remote code execution.\n\nThe files session save handler, which is the default, writes updated session data into the existing session file without first clearing it. If a write is interrupted, the file can contain the beginning of the new session followed by the end of the old one, and bytes of an ordinary string can later be unserialized as objects. An attacker who can influence the session data, for example through session upload progress, and interrupt a write at a suitable point may inject objects, which can lead to code execution when the application contains a suitable gadget chain. Session data can also be corrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
      "Use-after-free via repopulation of last_fatal_error_backtrace global after shutdown.\n\nA fatal error raised while modified INI settings are restored during request shutdown can repopulate the stored fatal error backtrace after the executor has been cleaned up. The request memory is then freed, and a diagnostic emitted before executor initialization in a later request handled by the same PHP-FPM or mod_php worker can access the stale backtrace. The shutdown error requires per-path configuration of max_memory_limit, or of zlib.output_compression together with output_handler (which .user.ini can also set). The early diagnostic requires Apache per-directory configuration or, for PHP-FPM, a PHP_VALUE or PHP_ADMIN_VALUE parameter sent by the front end. This can cause memory corruption and worker crashes, and may allow remote code execution.\n\nThis issue affects PHP versions 8.5.* before 8.5.13.",
-     "PHP-FPM request smuggling through an unread HTTP request body.\n\nPHP does not discard the unread part of an HTTP request body at request shutdown when the application has opened php://input without reading it to the end. When the front end reuses backend connections, which is not the default in nginx or Apache (for example nginx with fastcgi_keep_conn on, or Apache mod_proxy_fcgi with enablereuse=on), PHP-FPM can parse the leftover bytes as a new FastCGI request. An unauthenticated remote attacker can use a single crafted multipart/form-data request to forge a backend request with chosen parameters such as SCRIPT_FILENAME, REMOTE_ADDR and PHP_ADMIN_VALUE, which can lead to execution of attacker-controlled PHP code. With LSAPI, subsequent requests on the connection can be disrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13."
+     "PHP-FPM request smuggling through an unread HTTP request body.\n\nPHP does not discard the unread part of an HTTP request body at request shutdown when the application has opened php://input without reading it to the end. When the front end reuses backend connections, which is not the default in nginx or Apache (for example nginx with fastcgi_keep_conn on, or Apache mod_proxy_fcgi with enablereuse=on), PHP-FPM can parse the leftover bytes as a new FastCGI request. An unauthenticated remote attacker can use a single crafted multipart/form-data request to forge a backend request with chosen parameters such as SCRIPT_FILENAME, REMOTE_ADDR and PHP_ADMIN_VALUE, which can lead to execution of attacker-controlled PHP code. With LSAPI, subsequent requests on the connection can be disrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "Session serializer mismatch can lead to remote code execution.\n\nSession upload progress, when enabled, can store attacker-controlled data in a session key using the php_binary or php_serialize session serializer. If the same session is later read with the php serializer, because session.serialize_handler is changed at runtime or differs between applications sharing a session store, bytes inside the key can be passed to the unserializer. A remote attacker able to submit a multipart upload can inject objects, which may lead to code execution when the reading application contains a suitable gadget chain, or to session corruption or denial of service.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "Partially overwritten session files can lead to remote code execution.\n\nThe files session save handler, which is the default, writes updated session data into the existing session file without first clearing it. If a write is interrupted, the file can contain the beginning of the new session followed by the end of the old one, and bytes of an ordinary string can later be unserialized as objects. An attacker who can influence the session data, for example through session upload progress, and interrupt a write at a suitable point may inject objects, which can lead to code execution when the application contains a suitable gadget chain. Session data can also be corrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "PHP-FPM request smuggling through an unread HTTP request body.\n\nPHP does not discard the unread part of an HTTP request body at request shutdown when the application has opened php://input without reading it to the end. When the front end reuses backend connections, which is not the default in nginx or Apache (for example nginx with fastcgi_keep_conn on, or Apache mod_proxy_fcgi with enablereuse=on), PHP-FPM can parse the leftover bytes as a new FastCGI request. An unauthenticated remote attacker can use a single crafted multipart/form-data request to forge a backend request with chosen parameters such as SCRIPT_FILENAME, REMOTE_ADDR and PHP_ADMIN_VALUE, which can lead to execution of attacker-controlled PHP code. With LSAPI, subsequent requests on the connection can be disrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+     "Use-after-free in magic method backtraces can lead to remote code execution.\n\nWhen collecting the arguments of a method call handled by __call() or __callStatic() for a backtrace, PHP can read stale values that may refer to freed memory. If a fatal error such as exceeding memory_limit occurs while an application enters such a call, with fatal_error_backtraces enabled (the default) and zend.exception_ignore_args disabled, a remote attacker who controls enough request data to influence memory allocation may cause memory corruption, crash the PHP worker or, with knowledge of memory addresses, execute arbitrary code. php.ini-production enables zend.exception_ignore_args, which prevents this.\n\nThis issue affects PHP versions 8.5.* before 8.5.13."
     ]
    }
   },
@@ -2153,7 +2161,7 @@
   {
    "id": "grp:Linux:2026-11-18",
    "kind": "group",
-   "title": "Linux 核心多項漏洞",
+   "title": "Linux 核心高風險漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -2172,11 +2180,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99312",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: KVM: x86: Unconditionally reset MMU context when emulating INIT Force an"
+    "影響 Linux 核心 KVM x86 與 HID 驅動，**涉及 MMU 未重設及存取過期堆疊指標的競爭條件漏洞**。",
+    "含 CVE-2026-99312、CVE-2026-99313，CVSS 最高 8.8，核心程式碼已修正，目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2629,7 +2637,7 @@
   {
    "id": "grp:SQL Server:2026-11-18",
    "kind": "group",
-   "title": "Oracle MySQL 漏洞",
+   "title": "MySQL 多項元件漏洞",
    "sub": "5 個 CVE · 最高 CVSS 7.2",
    "sev": "note",
    "kev": false,
@@ -2652,11 +2660,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114949",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 7.2。",
-    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Replication). Supported versions that are affec"
+    "影響MySQL Server 8.4.0-8.4.13、9.7.0-9.7.4、26.10及Cluster 8.0.0-8.0.50等。",
+    "含 5 個 CVE（CVSS 7.2），影響多元件且**易於利用**，尚無遭利用或勒索軟體利用紀錄。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -3978,7 +3986,7 @@
   {
    "id": "grp:Atlassian:2026-11-18",
    "kind": "group",
-   "title": "Atlassian 多重漏洞",
+   "title": "Atlassian 多項漏洞",
    "sub": "9 個 CVE · 最高 CVSS 8.9",
    "sev": "high",
    "kev": false,
@@ -4004,11 +4012,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21590",
    "pts": [
-    "同日公布 9 個漏洞，最高 CVSS 8.9。",
-    "This High severity Security Misconfiguration vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Cent"
+    "影響 Bamboo 與 Jira 等 Data Center 產品，**可導致任意讀寫、驗證失效或系統遭入侵**。",
+    "共 9 項漏洞（CVSS 8.7 至 8.9），部分可由遠端未經驗證攻擊者觸發，目前尚未遭利用。"
    ],
-   "fix": "原文：This High severity Security Misconfiguration vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Center. This Security Misconfiguration vu",
-   "ai": false,
+   "fix": "",
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -14270,7 +14278,7 @@
   {
    "id": "grp:QNAP:2026-10-29",
    "kind": "group",
-   "title": "QNAP 多個高風險漏洞",
+   "title": "QNAP 硬編碼金鑰漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -14289,12 +14297,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62839",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.7。",
-    "An use of hard-coded cryptographic key vulnerability has been reported to affect Hybrid Backup Sync. If exploited, the vulnerability could a"
+    "影響 QNAP Hybrid Backup Sync，**硬編碼加密金鑰漏洞可讓遠端攻擊者破壞系統安全性**。",
+    "包含 CVE-2025-62839 與 CVE-2025-62841，CVSS 8.7，目前尚未遭利用。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "升級至 Hybrid Backup Sync 26.4.0.521 以上版本。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "An use of hard-coded cryptographic key vulnerability has been reported to affect Hybrid Backup Sync. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.\n\nWe have already fixed the vulnerability in the following version:\nHybrid Backup Sync 26.4.0.521 and later\nHybrid Backup Sync 26.4.1.563 and later",
@@ -16208,7 +16216,7 @@
   {
    "id": "grp:Palo Alto:2026-10-21",
    "kind": "group",
-   "title": "PHP 記憶體處理安全漏洞",
+   "title": "Palo Alto/PHP漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -16228,11 +16236,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.2。",
-    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
+    "影響 Palo Alto 與 PHP，**CVE-2026-109618 等漏洞可導致未初始化或已釋放記憶體遭錯誤存取**。",
+    "CVSS 最高 9.2，發生於記憶體不足中斷或全域狀態未重設情境，目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -17885,10 +17893,22 @@
   "CVE-2026-134432": [],
   "CVE-2026-134453": [],
   "CVE-2026-134455": [],
-  "CVE-2026-134457": []
+  "CVE-2026-134457": [],
+  "CVE-2026-123068": [],
+  "CVE-2026-127024": [],
+  "CVE-2026-132814": [],
+  "CVE-2026-134679": [],
+  "CVE-2026-134654": [],
+  "CVE-2026-134694": [],
+  "CVE-2026-134704": [],
+  "CVE-2026-84725": [],
+  "CVE-2026-114488": [],
+  "CVE-2026-15564": [],
+  "CVE-2026-134675": [],
+  "CVE-2026-134678": []
  },
- "nvd_last": "2026-11-21T23:17:35+00:00",
- "kev_last": "2026-11-21T23:17:35+00:00",
+ "nvd_last": "2026-11-22T06:49:56+00:00",
+ "kev_last": "2026-11-22T06:49:56+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",

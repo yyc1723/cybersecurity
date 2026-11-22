@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T23:17:35+00:00",
+ "generated": "2026-11-22T06:49:56+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -410,7 +410,7 @@
   {
    "id": "CVE-2026-54039",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-54039",
+   "title": "LibreChat 驗證漏洞",
    "sub": "CVE-2026-54039 · CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -427,10 +427,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54039",
    "pts": [
-    "LibreChat is an enhanced ChatGPT clone that supports multiple AI providers. From 0.7.0 until 0.8.6, when local registration is enabled and a"
+    "影響 LibreChat 0.7.0 至 0.8.6 前版本，**未經驗證攻擊者可綁定受害者工作階段並持續讀寫其資料**。",
+    "須啟用本地註冊且設定至少一個社群登入提供者方可觸發，CVSS 8.1，目前尚未遭利用。"
    ],
-   "fix": "升級至 0.8.6 以上（依原文擷取）",
-   "ai": false
+   "fix": "升級至 LibreChat 0.8.6 以上版本。",
+   "ai": true
   },
   {
    "id": "tw:ea2224494566",
@@ -529,7 +530,7 @@
   {
    "id": "CVE-2026-120382",
    "kind": "cve",
-   "title": "群暉警告NAS存在兩個重大漏洞，預計20日提供部分版本作業系統修補程式",
+   "title": "Synology 重大漏洞",
    "sub": "CVE-2026-120382 · 尚未評分",
    "sev": "high",
    "kev": false,
@@ -545,9 +546,12 @@
    "first_seen": "2026-11-20T13:00:52+00:00",
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180680",
-   "pts": [],
-   "fix": "",
-   "ai": false
+   "pts": [
+    "影響 Synology DiskStation Manager（DSM）與 BeeStation OS，**列為重大等級漏洞**。",
+    "含 CVE-2026-120382 等弱點，原文未說明攻擊條件與後果，目前尚未遭利用。"
+   ],
+   "fix": "群暉預計於 20 日提供部分版本作業系統修補程式。",
+   "ai": true
   },
   {
    "id": "tw:ea60fcc94fd1",
@@ -1867,7 +1871,7 @@
   {
    "id": "grp:Linux:2026-11-18",
    "kind": "group",
-   "title": "Linux 核心多項漏洞",
+   "title": "Linux 核心高風險漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -1885,11 +1889,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99312",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: KVM: x86: Unconditionally reset MMU context when emulating INIT Force an"
+    "影響 Linux 核心 KVM x86 與 HID 驅動，**涉及 MMU 未重設及存取過期堆疊指標的競爭條件漏洞**。",
+    "含 CVE-2026-99312、CVE-2026-99313，CVSS 最高 8.8，核心程式碼已修正，目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2025-15716",
@@ -2229,7 +2233,7 @@
   {
    "id": "grp:SQL Server:2026-11-18",
    "kind": "group",
-   "title": "Oracle MySQL 漏洞",
+   "title": "MySQL 多項元件漏洞",
    "sub": "5 個 CVE · 最高 CVSS 7.2",
    "sev": "note",
    "kev": false,
@@ -2251,11 +2255,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114949",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 7.2。",
-    "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Replication). Supported versions that are affec"
+    "影響MySQL Server 8.4.0-8.4.13、9.7.0-9.7.4、26.10及Cluster 8.0.0-8.0.50等。",
+    "含 5 個 CVE（CVSS 7.2），影響多元件且**易於利用**，尚無遭利用或勒索軟體利用紀錄。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-114938",
@@ -2664,7 +2668,7 @@
   {
    "id": "grp:Atlassian:2026-11-18",
    "kind": "group",
-   "title": "Atlassian 多重漏洞",
+   "title": "Atlassian 多項漏洞",
    "sub": "9 個 CVE · 最高 CVSS 8.9",
    "sev": "high",
    "kev": false,
@@ -2689,11 +2693,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21590",
    "pts": [
-    "同日公布 9 個漏洞，最高 CVSS 8.9。",
-    "This High severity Security Misconfiguration vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Cent"
+    "影響 Bamboo 與 Jira 等 Data Center 產品，**可導致任意讀寫、驗證失效或系統遭入侵**。",
+    "共 9 項漏洞（CVSS 8.7 至 8.9），部分可由遠端未經驗證攻擊者觸發，目前尚未遭利用。"
    ],
-   "fix": "原文：This High severity Security Misconfiguration vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Center. This Security Misconfiguration vu",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "tw:880b7eae7d5a",
@@ -10422,7 +10426,7 @@
   {
    "id": "grp:QNAP:2026-10-29",
    "kind": "group",
-   "title": "QNAP 多個高風險漏洞",
+   "title": "QNAP 硬編碼金鑰漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -10440,11 +10444,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62839",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.7。",
-    "An use of hard-coded cryptographic key vulnerability has been reported to affect Hybrid Backup Sync. If exploited, the vulnerability could a"
+    "影響 QNAP Hybrid Backup Sync，**硬編碼加密金鑰漏洞可讓遠端攻擊者破壞系統安全性**。",
+    "包含 CVE-2025-62839 與 CVE-2025-62841，CVSS 8.7，目前尚未遭利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級至 Hybrid Backup Sync 26.4.0.521 以上版本。",
+   "ai": true
   },
   {
    "id": "tw:cb2af2067b57",
@@ -11906,7 +11910,7 @@
   {
    "id": "grp:Palo Alto:2026-10-21",
    "kind": "group",
-   "title": "PHP 記憶體處理安全漏洞",
+   "title": "Palo Alto/PHP漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -11925,11 +11929,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.2。",
-    "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not prope"
+    "影響 Palo Alto 與 PHP，**CVE-2026-109618 等漏洞可導致未初始化或已釋放記憶體遭錯誤存取**。",
+    "CVSS 最高 9.2，發生於記憶體不足中斷或全域狀態未重設情境，目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:SQL Server:2026-10-21",
