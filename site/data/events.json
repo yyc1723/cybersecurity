@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T06:49:56+00:00",
+ "generated": "2026-11-22T15:18:41+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -577,6 +577,42 @@
    "ai": true
   },
   {
+   "id": "grp:Linux:2026-11-20",
+   "kind": "group",
+   "title": "Linux 核心 多個高風險漏洞",
+   "sub": "11 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-99586",
+    "CVE-2026-99589",
+    "CVE-2026-99590",
+    "CVE-2026-99634",
+    "CVE-2026-99676",
+    "CVE-2026-99679",
+    "CVE-2026-99680",
+    "CVE-2026-99685",
+    "CVE-2026-99792",
+    "CVE-2026-99793",
+    "CVE-2026-99794"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-20T06:17:50+00:00",
+   "first_seen": "2026-11-22T15:20:54+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99586",
+   "pts": [
+    "同日公布 11 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: ceph: clamp the inline data length in ceph_fill_inline_data() The MDS de"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "tw:195ea95bb6de",
    "kind": "news",
    "title": "中國駭客利用VMware vCenter零時差漏洞入侵，部署後門以竊取資料",
@@ -929,6 +965,51 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "grp:Linux:2026-11-19",
+   "kind": "group",
+   "title": "Linux 核心 多個高風險漏洞",
+   "sub": "20 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-99322",
+    "CVE-2026-99346",
+    "CVE-2026-99355",
+    "CVE-2026-99356",
+    "CVE-2026-99362",
+    "CVE-2026-99366",
+    "CVE-2026-99370",
+    "CVE-2026-99380",
+    "CVE-2026-99385",
+    "CVE-2026-99388",
+    "CVE-2026-99432",
+    "CVE-2026-99433",
+    "CVE-2026-99441",
+    "CVE-2026-99454",
+    "CVE-2026-99460",
+    "CVE-2026-99513",
+    "CVE-2026-99540",
+    "CVE-2026-99541",
+    "CVE-2026-99544",
+    "CVE-2026-99556"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-19T15:17:42+00:00",
+   "first_seen": "2026-11-22T15:20:54+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99322",
+   "pts": [
+    "同日公布 20 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Do not credit control-record octets to the RPC stream svc_tcp_so"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "grp:VMware:2026-11-19",
@@ -2496,16 +2577,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130938",
    "pts": [
-    "同日公布 13 個漏洞，最高 CVSS 9.6。",
-    "Use after free in Accessibility in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code ou"
+    "影響 Windows Server 上的 Chrome 158.0.8127.36 以前版本，**可於沙箱外遠端執行程式碼**。",
+    "CVSS 9.6，目前尚未遭利用，亦無勒索軟體利用；部分漏洞需透過特製 HTML 頁面、社交工程或先攻陷轉譯程序觸發。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Chrome:2026-11-18",
    "kind": "group",
-   "title": "Chrome 遠端執行漏洞",
+   "title": "Chrome 圖形元件沙箱漏洞",
    "sub": "107 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -2628,11 +2709,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130906",
    "pts": [
-    "同日公布 107 個漏洞，最高 CVSS 9.6。",
-    "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute"
+    "影響 Chrome 158.0.8127.36 以前版本（含 Android），**遠端攻擊者可於沙箱外執行任意程式碼**。",
+    "CVSS 9.6，目前尚未遭利用，亦無勒索軟體利用；遠端攻擊者可透過特製 HTML 頁面觸發 ANGLE、WebGL 與 GPU 漏洞。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-11-18",
