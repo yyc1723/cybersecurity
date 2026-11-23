@@ -11,6 +11,10 @@
     "desc": "全球第三方服務供應商資安事件持續擴大，單一供應商遭駭，往往連帶波及數十甚至數百家企業。例如：愛爾蘭銀行IT服務商Wellington IT遭駭，已有3家信用合作社發布資安公告，據統"
    },
    {
+    "title": "Synology 重大漏洞",
+    "desc": "群暉預計於 20 日提供部分版本作業系統修補程式。"
+   },
+   {
     "title": "Linux 核心 多個高風險漏洞",
     "desc": "In the Linux kernel, the following vulnerability has been resolved: ceph: clamp the inline"
    },
@@ -23,10 +27,6 @@
     "desc": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。"
    },
    {
-    "title": "AI 平台 漏洞 CVE-2026-77312",
-    "desc": "升級至 2.26.8 以上（依原文擷取）"
-   },
-   {
     "title": "Linux 核心 多個高風險漏洞",
     "desc": "In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Do not credit "
    }
@@ -34,6 +34,650 @@
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:bd49688d1019",
+   "kind": "news",
+   "title": "電商開店平臺BVShop平臺揭露遭異常自動化存取，已通知多個品牌與主管機關",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:21+00:00",
+   "updated": "2026-11-23T12:49:21+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180724",
+   "pts": [
+    "近期電商開店平臺接連傳出訂單資料遭未經授權存取的事件，由架值資訊科技經營、提供品牌商家網路開店服務BVShop平臺，上週突然發布資安事件公告，揭露部分商家的訂單資訊遭未經授權存取，可能涉及消費者個資及訂單內容。由於部分訂單聯絡資訊可能遭不當利用，業者也提醒商家及消費者提高警覺，慎防冒名詐騙。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "電商開店平臺BVShop平臺揭露遭異常自動化存取，已通知多個品牌與主管機關",
+    "desc": "近期電商開店平臺接連傳出訂單資料遭未經授權存取的事件，由架值資訊科技經營、提供品牌商家網路開店服務BVShop平臺，上週突然發布資安事件公告，揭露部分商家的訂單資訊遭未經授權存取，可能涉及消費者個資及訂單內容。由於部分訂單聯絡資訊可能遭不當利用，業者也提醒商家及消費者提高警覺，慎防冒名詐騙。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:6912bc76b9db",
+   "kind": "news",
+   "title": "研究人員揭露PHP重大漏洞phpAfterShell，問題源自PHP2Shell修補不夠完整",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:21+00:00",
+   "updated": "2026-11-23T12:49:21+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180722",
+   "pts": [
+    "上週PHP基金會發布安全更新，總共修補18個資安漏洞，其中最受到外界注意的地方，是由資安公司DepthFirst通報的重大漏洞CVE-2026-126714，此為檢查時間與使用時間（TOCTOU）競爭條件類型的弱點，攻擊者可利用PHP處理未通過身分驗證的multipart/form-data請求，更"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "研究人員揭露PHP重大漏洞phpAfterShell，問題源自PHP2Shell修補不夠完整",
+    "desc": "上週PHP基金會發布安全更新，總共修補18個資安漏洞，其中最受到外界注意的地方，是由資安公司DepthFirst通報的重大漏洞CVE-2026-126714，此為檢查時間與使用時間（TOCTOU）競爭條件類型的弱點，攻擊者可利用PHP處理未通過身分驗證的multipart/form-data請求，更新連線階段（Session）檔案所產生的競爭條件與中斷寫入問題，竄改伺服器連線階段資料，再透過PHP原",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4e7e166d253b",
+   "kind": "news",
+   "title": "Ghostscript字型載入器存在漏洞Upload2Shell，攻擊者可繞過沙箱執行任意命令",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:21+00:00",
+   "updated": "2026-11-23T12:49:21+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180719",
+   "pts": [
+    "AI滲透測試公司Pwn.ai公布開源文件處理引擎Ghostscript資安漏洞CVE-2026-125396，攻擊者可透過一般檔案上傳、圖片預覽及電子郵件附件等功能，將惡意PostScript文件傳入Ghostscript，觸發記憶體錯誤，取得任意記憶體寫入能力，進一步修改Ghostscript內部"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Ghostscript字型載入器存在漏洞Upload2Shell，攻擊者可繞過沙箱執行任意命令",
+    "desc": "AI滲透測試公司Pwn.ai公布開源文件處理引擎Ghostscript資安漏洞CVE-2026-125396，攻擊者可透過一般檔案上傳、圖片預覽及電子郵件附件等功能，將惡意PostScript文件傳入Ghostscript，觸發記憶體錯誤，取得任意記憶體寫入能力，進一步修改Ghostscript內部的安全控制狀態，CVSS v4.0嚴重程度評為8.5分，軟體開發商Artifex於9月上旬發布10.08.0版修補，Pwn.ai將此漏洞命名為Upload2Shell。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:c8d671003f31",
+   "kind": "news",
+   "title": "【資安日報】11月23日，東亞多所大學遭鎖定，中國駭客用AI攻擊框架Cairn發動攻擊，11分鐘內發現並利用醫療影像AI軟體零時差漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:27+00:00",
+   "updated": "2026-11-23T12:49:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180718",
+   "pts": [
+    "本日新聞焦點 ● 中國駭客用AI框架Cairn發動攻擊，11分鐘內發現並利用零時差漏洞 ● Apache Tomcat傳重大漏洞，可導致未經驗證加入受信任伺服器叢集 ● API金鑰隨Docker Hub映像檔暴露，研究發現最快7.86秒就遭濫用"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月23日，東亞多所大學遭鎖定，中國駭客用AI攻擊框架Cairn發動攻擊，11分鐘內發現並利用醫療影像AI軟體零時差漏洞",
+    "desc": "本日新聞焦點 ● 中國駭客用AI框架Cairn發動攻擊，11分鐘內發現並利用零時差漏洞 ● Apache Tomcat傳重大漏洞，可導致未經驗證加入受信任伺服器叢集 ● API金鑰隨Docker Hub映像檔暴露，研究發現最快7.86秒就遭濫用",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:60e1f162cde9",
+   "kind": "news",
+   "title": "日本Tower Records電商網站外洩千萬筆會員個資，網購出貨下單受影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:27+00:00",
+   "updated": "2026-11-23T12:49:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180717",
+   "pts": [
+    "日本知名連鎖唱片行淘兒唱片（Tower Records）上週公告電子商務網站遭駭客入侵，外洩會員超過1,100萬筆個資及密碼，影響網購商品出貨及下單。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "日本Tower Records電商網站外洩千萬筆會員個資，網購出貨下單受影響",
+    "desc": "日本知名連鎖唱片行淘兒唱片（Tower Records）上週公告電子商務網站遭駭客入侵，外洩會員超過1,100萬筆個資及密碼，影響網購商品出貨及下單。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:53d89ae805d2",
+   "kind": "news",
+   "title": "荷蘭測試6款AI眼鏡揭安全漏洞，建議消費者不要購買",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:27+00:00",
+   "updated": "2026-11-23T12:49:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180714",
+   "pts": [
+    "荷蘭個人資料保護局（Autoriteit Persoonsgegevens，AP）上周四（11/19）公布《AI攝影眼鏡安全調查報告》，發現受測產品普遍存在隱私、資安及人身安全風險，包括可能遭陌生人接管、偷偷錄影，甚至在緊急救援時提供錯誤資訊，因此建議消費者暫時不要購買。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "荷蘭測試6款AI眼鏡揭安全漏洞，建議消費者不要購買",
+    "desc": "荷蘭個人資料保護局（Autoriteit Persoonsgegevens，AP）上周四（11/19）公布《AI攝影眼鏡安全調查報告》，發現受測產品普遍存在隱私、資安及人身安全風險，包括可能遭陌生人接管、偷偷錄影，甚至在緊急救援時提供錯誤資訊，因此建議消費者暫時不要購買。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d4cdaa896ac5",
+   "kind": "news",
+   "title": "WhatsApp修補3個漏洞，其中Android版漏洞疑遭詐騙活動利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:27+00:00",
+   "updated": "2026-11-23T12:49:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180712",
+   "pts": [
+    "Meta旗下通訊軟體平臺WhatsApp在11月資安公告揭露3個漏洞，其中Android版漏洞CVE-2026-23871疑似已被詐騙者利用。此漏洞源自Click to WhatsApp廣告回覆網址驗證不完整，攻擊者可透過特製訊息，誘使收訊者裝置載入攻擊者控制的外部媒體網址，進而洩露IP資訊。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "WhatsApp修補3個漏洞，其中Android版漏洞疑遭詐騙活動利用",
+    "desc": "Meta旗下通訊軟體平臺WhatsApp在11月資安公告揭露3個漏洞，其中Android版漏洞CVE-2026-23871疑似已被詐騙者利用。此漏洞源自Click to WhatsApp廣告回覆網址驗證不完整，攻擊者可透過特製訊息，誘使收訊者裝置載入攻擊者控制的外部媒體網址，進而洩露IP資訊。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:9d9d65df538e",
+   "kind": "news",
+   "title": "新加坡CSA警告Apache HTTP/2重大漏洞已遭積極利用，公開PoC也已流傳",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180711",
+   "pts": [
+    "新加坡網路安全局（CSA）於11月17日發布警告，指出Apache HTTP Server的HTTP/2模組漏洞CVE-2026-119618據報已遭攻擊者積極利用，且已有公開的概念驗證（PoC）攻擊程式。CSA指出，此漏洞可能讓攻擊者遠端執行程式碼，CVSS嚴重性評分達8.1分，但未進一步說明遭攻"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "新加坡CSA警告Apache HTTP/2重大漏洞已遭積極利用，公開PoC也已流傳",
+    "desc": "新加坡網路安全局（CSA）於11月17日發布警告，指出Apache HTTP Server的HTTP/2模組漏洞CVE-2026-119618據報已遭攻擊者積極利用，且已有公開的概念驗證（PoC）攻擊程式。CSA指出，此漏洞可能讓攻擊者遠端執行程式碼，CVSS嚴重性評分達8.1分，但未進一步說明遭攻擊的受害對象、攻擊規模或PoC的技術細節，僅提醒使用者立即更新至修補版本。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:73dc5195881c",
+   "kind": "news",
+   "title": "倫敦交通局發行的Oyster相片版地鐵卡資料外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180710",
+   "pts": [
+    "倫敦交通局（Transport for London，TfL）上週公告，相片版Oyster卡網站被駭，致使26.5萬用戶資料包括姓名、電話等個資外洩。 TfL是倫敦交通的主管機關。Oyster卡是由TfL發行的電子交通儲值卡，類似臺灣的悠遊卡，用於支付大倫敦地區的大眾運輸涵括地鐵、地上鐵路及巴士、火"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "倫敦交通局發行的Oyster相片版地鐵卡資料外洩",
+    "desc": "倫敦交通局（Transport for London，TfL）上週公告，相片版Oyster卡網站被駭，致使26.5萬用戶資料包括姓名、電話等個資外洩。 TfL是倫敦交通的主管機關。Oyster卡是由TfL發行的電子交通儲值卡，類似臺灣的悠遊卡，用於支付大倫敦地區的大眾運輸涵括地鐵、地上鐵路及巴士、火車的費用。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2dd2fce8ea7f",
+   "kind": "news",
+   "title": "社群交友服務業者尚凡揭露不明IP位址侵入資訊設備，旗下iPair、SweetRing公告系統維護",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180708",
+   "pts": [
+    "以雲端交友與社群平臺起家的上櫃公司尚凡國際創新科技（5278），11月21日（週六）發布資安事件重大訊息，指出當日發現不明IP位址侵入公司資訊設備，資安團隊隨即啟動資安緊急應變機制，目前評估事件對營運尚無重大影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "社群交友服務業者尚凡揭露不明IP位址侵入資訊設備，旗下iPair、SweetRing公告系統維護",
+    "desc": "以雲端交友與社群平臺起家的上櫃公司尚凡國際創新科技（5278），11月21日（週六）發布資安事件重大訊息，指出當日發現不明IP位址侵入公司資訊設備，資安團隊隨即啟動資安緊急應變機制，目前評估事件對營運尚無重大影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:f79bf5e299cd",
+   "kind": "news",
+   "title": "OpenJDK重大漏洞Java4Shell出現嘗試利用活動",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180709",
+   "pts": [
+    "11月17日Oracle與OpenJDK修補被稱為Java4Shell的OpenJDK重大漏洞CVE-2026-114938，發現此弱點的資安公司Calif.io已確認可在多款Java應用程式利用，隨後多家威脅情報公司發現，攻擊者已開始嘗試利用，企業應儘速採取行動因應。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "OpenJDK重大漏洞Java4Shell出現嘗試利用活動",
+    "desc": "11月17日Oracle與OpenJDK修補被稱為Java4Shell的OpenJDK重大漏洞CVE-2026-114938，發現此弱點的資安公司Calif.io已確認可在多款Java應用程式利用，隨後多家威脅情報公司發現，攻擊者已開始嘗試利用，企業應儘速採取行動因應。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:bc57a22f00f5",
+   "kind": "news",
+   "title": "Apache Tomcat傳出重大漏洞，可能導致未經身分驗證攻擊者加入受信任伺服器叢集",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache",
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180707",
+   "pts": [
+    "Java Web應用程式伺服器軟體專案Apache Tomcat於11月19日揭露重大漏洞CVE-2026-133325，問題源自叢集通訊使用TLS 1.3搭配預先共享金鑰（TLS-PSK）時，金鑰交換過程未能驗證連線對端身分，導致未經身分驗證的遠端攻擊者，只要能連線至叢集通訊服務，就可能冒充受信任"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Apache Tomcat傳出重大漏洞，可能導致未經身分驗證攻擊者加入受信任伺服器叢集",
+    "desc": "Java Web應用程式伺服器軟體專案Apache Tomcat於11月19日揭露重大漏洞CVE-2026-133325，問題源自叢集通訊使用TLS 1.3搭配預先共享金鑰（TLS-PSK）時，金鑰交換過程未能驗證連線對端身分，導致未經身分驗證的遠端攻擊者，只要能連線至叢集通訊服務，就可能冒充受信任節點加入叢集，存取叢集通訊及資料，影響Tomcat 11.0.28至11.0.29、10.1.62及9.0.124等版本。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2b0d43161d5a",
+   "kind": "news",
+   "title": "全國電子發布資安重訊，會員收到含真實個資的假訂單釣魚郵件，來源待查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180706",
+   "pts": [
+    "11月19日上市電子通路業者全國電（6281）發布資安事件重大訊息，指出近期陸續接獲部分會員反映，收到冒用全國電名義寄發的虛假訂單電子郵件。經查發現，郵件中的會員姓名、電子郵件及會員卡號等資訊與真實資料相符，懷疑相關資訊遭第三方利用進行釣魚詐騙。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "全國電子發布資安重訊，會員收到含真實個資的假訂單釣魚郵件，來源待查",
+    "desc": "11月19日上市電子通路業者全國電（6281）發布資安事件重大訊息，指出近期陸續接獲部分會員反映，收到冒用全國電名義寄發的虛假訂單電子郵件。經查發現，郵件中的會員姓名、電子郵件及會員卡號等資訊與真實資料相符，懷疑相關資訊遭第三方利用進行釣魚詐騙。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:f2ac532afd92",
+   "kind": "news",
+   "title": "Cisco Expressway重大漏洞遭利用，攻擊者入侵企業並內部環境取得Root權限",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180705",
+   "pts": [
+    "美國網路安全與基礎設施安全局（CISA）於11月20日，將思科（Cisco）視訊通訊閘道系統Expressway重大漏洞CVE-2026-76466納入已知遭利用漏洞名單（KEV），在此之前有資安公司發現首起攻擊活動。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Cisco Expressway重大漏洞遭利用，攻擊者入侵企業並內部環境取得Root權限",
+    "desc": "美國網路安全與基礎設施安全局（CISA）於11月20日，將思科（Cisco）視訊通訊閘道系統Expressway重大漏洞CVE-2026-76466納入已知遭利用漏洞名單（KEV），在此之前有資安公司發現首起攻擊活動。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:45a617f8ee39",
+   "kind": "news",
+   "title": "崇越發布資安重訊，揭露第三方電商服務商伊比薩發現異常資料存取，子公司全越運動影響待查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180703",
+   "pts": [
+    "國內再傳委外服務供應商資安事件，這起事件因上市公司崇越近日發布重大訊息而曝光。根據上市公司崇越（5434）11月19日發布的資安事件重大訊息，旗下子公司全越運動事業接獲電商平臺委外服務商伊比薩（IBIZA）通知，該服務商近期發現異常資料存取情況。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "崇越發布資安重訊，揭露第三方電商服務商伊比薩發現異常資料存取，子公司全越運動影響待查",
+    "desc": "國內再傳委外服務供應商資安事件，這起事件因上市公司崇越近日發布重大訊息而曝光。根據上市公司崇越（5434）11月19日發布的資安事件重大訊息，旗下子公司全越運動事業接獲電商平臺委外服務商伊比薩（IBIZA）通知，該服務商近期發現異常資料存取情況。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5c7ccec3c10c",
+   "kind": "news",
+   "title": "KPMG加拿大被駭，外洩部分客戶稅務資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180701",
+   "pts": [
+    "全球四大會計師事務所之一KPMG的加拿大分公司上週證實遭駭，導致部分客戶稅務資料外流。 加拿大媒體Globe and Mail上週首先報導，KPMG已證實內部系統被駭，部分客戶稅務文件遭到竊取，並已聯繫客戶。 KPMG發出聲明指出，根據調查，截至目前為止，受到影響的客戶資料未外流到線上或遭到任何形式"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "KPMG加拿大被駭，外洩部分客戶稅務資料",
+    "desc": "全球四大會計師事務所之一KPMG的加拿大分公司上週證實遭駭，導致部分客戶稅務資料外流。 加拿大媒體Globe and Mail上週首先報導，KPMG已證實內部系統被駭，部分客戶稅務文件遭到竊取，並已聯繫客戶。 KPMG發出聲明指出，根據調查，截至目前為止，受到影響的客戶資料未外流到線上或遭到任何形式的誤用。不過KPMG未說明受影響的客戶數量、存取的檔案規模，或是駭客存取的管道。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:456dd2b19c1d",
+   "kind": "news",
+   "title": "OpenSSL Base64編碼函式傳出堆積緩衝區溢位漏洞，可能導致記憶體破壞與程式當機",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180700",
+   "pts": [
+    "OpenSSL專案於11月18日揭露Base64編碼函式漏洞CVE-2026-121481，問題源自Base64編碼EVP_EncodeBlock()函式存在堆積緩衝區溢位，當輸入資料長度接近整數上限INT_MAX（約2GB）時，函式計算編碼後的輸出長度可能發生整數溢位，導致寫入資料超出呼叫端配置的"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "OpenSSL Base64編碼函式傳出堆積緩衝區溢位漏洞，可能導致記憶體破壞與程式當機",
+    "desc": "OpenSSL專案於11月18日揭露Base64編碼函式漏洞CVE-2026-121481，問題源自Base64編碼EVP_EncodeBlock()函式存在堆積緩衝區溢位，當輸入資料長度接近整數上限INT_MAX（約2GB）時，函式計算編碼後的輸出長度可能發生整數溢位，導致寫入資料超出呼叫端配置的緩衝區，造成記憶體破壞或程式當機，受影響版本包括4.0.0至4.0.3，以及4.1.0。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:582e38fcd49c",
+   "kind": "news",
+   "title": "東亞多所大學遭鎖定，中國駭客用AI攻擊框架Cairn發動攻擊，11分鐘內發現並利用醫療影像AI軟體零時差漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180697",
+   "pts": [
+    "開放原始碼醫療影像AI軟體MONAI Label的零時差漏洞遭駭客利用，攻擊者透過AI代理程式自行發現漏洞並成功入侵大學伺服器，取得root最高權限。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "東亞多所大學遭鎖定，中國駭客用AI攻擊框架Cairn發動攻擊，11分鐘內發現並利用醫療影像AI軟體零時差漏洞",
+    "desc": "開放原始碼醫療影像AI軟體MONAI Label的零時差漏洞遭駭客利用，攻擊者透過AI代理程式自行發現漏洞並成功入侵大學伺服器，取得root最高權限。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:f19809ddfb2d",
+   "kind": "news",
+   "title": "CISA警告VMware vCenter等4款應用系統的漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "updated": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180699",
+   "pts": [
+    "11月20日美國網路安全與基礎設施安全局（CISA）發布公告，他們已掌握4個漏洞遭到積極利用的證據，將它們列入已知遭利用漏洞名單（KEV），這些漏洞是：CVE-2025-42884、"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "CISA警告VMware vCenter等4款應用系統的漏洞遭積極利用",
+    "desc": "11月20日美國網路安全與基礎設施安全局（CISA）發布公告，他們已掌握4個漏洞遭到積極利用的證據，將它們列入已知遭利用漏洞名單（KEV），這些漏洞是：CVE-2025-42884、",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-115900",
+   "kind": "cve",
+   "title": "GitLab 漏洞 CVE-2026-115900",
+   "sub": "CVE-2026-115900 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab",
+    "Ivanti"
+   ],
+   "cves": [
+    "CVE-2026-115900"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-23T09:17:05+00:00",
+   "first_seen": "2026-11-23T12:49:18+00:00",
+   "updated": "2026-11-23T12:49:18+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115900",
+   "pts": [
+    "An attacker must possess a valid Worker distribution credential, reach the Leader distribution listener, and send crafted authenticated Work"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "An attacker must possess a valid Worker distribution credential, reach the Leader distribution listener, and send crafted authenticated Worker heartbeats. Where mTLS client authentication is enforced, an accepted client certificate and its private key are also required. Successful exploitation bypasses Leader REST authentication and permits administrative API access.",
+    "refs": [
+     "https://csaf.cribl.io/2026/cribl-2026-0008.json",
+     "https://trust.cribl.io/notifications"
+    ]
+   }
+  },
+  {
+   "id": "grp:Cisco:2026-11-23",
+   "kind": "group",
+   "title": "Cisco 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco",
+    "Ivanti",
+    "SonicWall",
+    "SD-WAN"
+   ],
+   "cves": [
+    "CVE-2026-115873",
+    "CVE-2026-115899"
+   ],
+   "cvss": 9.3,
+   "published": "2026-11-23T09:17:04+00:00",
+   "first_seen": "2026-11-23T12:49:18+00:00",
+   "updated": "2026-11-23T12:49:18+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115873",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.3。",
+    "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must us"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must use affected response-based pagination and process the crafted data during a job run. Successful exploitation executes code with the Worker service account's permissions.",
+     "A remote attacker must authenticate with Read Only (GroupRead) access to at least one Worker Group and reach the Leader API. A crafted expression can exploit the nested compiler to bypass expression restrictions and execute code with the Leader service account's permissions."
+    ]
+   }
+  },
   {
    "id": "tw:07745c21e30f",
    "kind": "news",
@@ -378,8 +1022,8 @@
    "id": "CVE-2026-120382",
    "kind": "cve",
    "title": "Synology 重大漏洞",
-   "sub": "CVE-2026-120382 · 尚未評分",
-   "sev": "high",
+   "sub": "CVE-2026-120382 · CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -388,10 +1032,10 @@
    "cves": [
     "CVE-2026-120382"
    ],
-   "cvss": null,
+   "cvss": 9.8,
    "published": "2026-11-20T13:00:46+00:00",
    "first_seen": "2026-11-20T13:00:52+00:00",
-   "updated": "2026-11-20T13:00:52+00:00",
+   "updated": "2026-11-23T12:49:18+00:00",
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180680",
    "pts": [
@@ -464,7 +1108,7 @@
    "cvss": 9.8,
    "published": "2026-11-20T06:17:50+00:00",
    "first_seen": "2026-11-22T15:20:54+00:00",
-   "updated": "2026-11-22T15:20:54+00:00",
+   "updated": "2026-11-23T12:49:18+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99586",
    "pts": [
@@ -486,6 +1130,14 @@
      "In the Linux kernel, the following vulnerability has been resolved:\n\nbatman-adv: tt: clear ROAM flag when re-adding a pending local client\n\nWhen a ROAMING_ADV is received for an announced local client,\nbatadv_tt_local_mark_removed() sets BATADV_TT_CLIENT_ROAM, queues a\nDEL|ROAM change and marks the entry as BATADV_TT_CLIENT_PENDING. If the\nclient sends a frame again before the next TTVN commit,\nbatadv_tt_local_add_existing() only clears the PENDING flag and returns\nearly. The ADD cancels the queued DEL, but the entry keeps the ROAM flag:\n\n* batadv_is_my_client() reports the client as not served by this node\n* batadv_tt_local_client_is_roaming() reroutes unicast frames for it to\n  the node which sent the ROAMING_ADV\n\nThe ROAM flag is only removed with the next frame of the client.\n\nSince BATADV_TT_CLIENT_ROAM is set together with BATADV_TT_CLIENT_PENDING,\nit has to be cleared also at the same time with BATADV_TT_CLIENT_PENDING\nwhen the client roamed back.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: Reject signalling responses in invalid states\n\nA peer can send configuration messages while an\nincoming channel is in BT_CONNECT2, before the\nsecurity or deferred accept gate has completed. A\nconfiguration response can then promote the channel\nto BT_CONNECTED. Configuration responses can also\nact on channels that are closing, and a late connection\nresponse can move a disconnecting channel back to\nBT_CONFIG.\n\nAccept connection responses only while waiting in\nBT_CONNECT. Answer configuration requests in\nBT_CONNECT2, but defer our own request until\nBT_CONFIG so configuration cannot complete before\nthe gate. Ignore configuration responses outside\nBT_CONFIG and BT_CONNECTED, and only complete\nconfiguration in BT_CONFIG.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\niommu/arm-smmu-v3: Handle ARM erratum for CONT under invalidation with SVA\n\nThe erratum (MMU-700: #3777127, S3: #3673557) deals with under\ninvalidation of a CONT PTE grouping in the SMMU. The recommended work\naround is to use a range invalidation that spans the entire CONT. The only\nuser of CONT in the kernel right now is through SVA sharing a CPU page\ntable that contains a CONT created by the mm.\n\nPreviously it was thought that this errata was dealt with because the\ndriver always uses range invalidation. However, there is a subtle detail\nin the errata that the invalidation range must fully enclose the entire\nCONT for it to work.\n\nIt seems that two sequential range invalidations, with a split point\nfalling inside a CONT grouping, will not prevent the errata.\n\nThe SMMU's range invalidation generation algorithm does not produce a\nsingle invalidation for a single SVA invalidation request, nor does the mm\ncarefully align the SVA invalidation ranges to accommodate the splitting\nof the invalidation into several ranges.\n\nThus, when processing a SVA invalidation, the range invalidation splitting\nroutine can generate a range invalidation that is split in the middle of\nthe CONT and risk under invalidation from this errata. This condition\ncould be triggered by a malicious userspace manipulating the TLB gathers\nvia mmap/mprotect/munmap.\n\nUpdate the errata list to the include the S3 variation, detect the IOMMUs\nthat have it, and then have SVA invalidations use a simplified version of\nthe over invalidation algorithm from the tlbi rework series. This ensures\nthat a single range invalidation is issued for a single MMU notifier\ncallback and now the range invalidation is guarenteed to cover any posible\nCONT.\n\nFuture work to add CONT to iommu_domain page tables should either use this\none-invalidate/one-range invalidation algorithm or disable CONT support in\nthe iommu_domain.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: Only accept connection responses to outstanding requests\n\nAn outgoing channel waits in BT_CONNECT until security\nand the feature mask exchange complete, and only then\nsends its connection request. A peer can answer it\nbefore that with a connection response matching our\nsource CID. The channel then moves to BT_CONFIG,\ncompletes configuration and becomes connected before\nsecurity has completed. If security then fails,\nl2cap_security_cfm() leaves the connected channel\nalone, so it stays up on a link that did not reach\nthe required security level.\n\nA connection response with a zero source CID is\nmatched by identifier. Another channel can hold the\nsame identifier for a response it still has to send,\nso the lookup can pick the wrong channel.\n\nOnly accept a connection response while our request\nis outstanding, and only look at such channels when\nmatching by identifier.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nceph: clamp the inline data length in ceph_fill_inline_data()\n\nThe MDS decides how much inline data to attach to a reply, and the\nclient parses inline_len without any upper bound: ceph_decode_need()\nonly verifies that the message actually carries that many bytes.\nceph_fill_inline_data() then copies the data into a single folio\nwith no length check, so a malicious or buggy MDS returning more\ninline data than the folio can hold writes past its end.\n\nClamp the length to folio_size() so both callers, handle_cap_grant()\nand fill_inode(), are covered.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: do not use Fast Open on MP_JOIN subflows\n\ntcp_fastopen_create_child() hands the SYN packet itself to\nsubflow_syn_recv_sock(). For an MP_JOIN request this takes the\nfatal fallback: the cloned child is destroyed and handed back with\ndrop_req flagged, but tcp_fastopen_create_child() does not check\nthe flag and queues it, so accept() can expose the freed child.\n\nMP_JOIN cannot use Fast Open: data on a subflow requires the\ncompleted HMAC exchange (RFC 8684, sec. 3.2). Refuse it (only the\nTFO path passes a SYN skb here) and let tcp_conn_request() fall\nback to the regular MP_JOIN handshake; also strip the Fast Open\ncookie from MP_JOIN SYN/ACKs.\n\n[ Moving code to avoid clearing TS and consolidating checks. ]",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: refuse a pNFS LAYOUTCOMMIT of a range without blocks\n\nA client can commit a hole in a LAYOUTCOMMIT, because nfsd does not\ncheck the extents against its layouts. xfs_iomap_write_unwritten() then\nallocates written blocks there. A large hole overruns the block\nreservation and shuts XFS down. A small one exposes stale data.\n\nRefuse such a range with -EIO, using XFS_BMAPI_CONVERT_ONLY.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: mark the inode preallocated for pNFS write layouts past EOF\n\nxfs_fs_map_blocks() marks the inode XFS_DIFLAG_PREALLOC only when it\nallocates blocks for a write layout. A write layout past EOF can also\nhand out allocated blocks, such as speculative preallocation. blockgc\nthen frees them under the layout, and another file may get them.\n\nMark the inode whenever a write mapping ends past EOF.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\niommu/virtio: Reset device before deleting virtqueues on probe failure\n\nviommu_probe() marks the device DRIVER_OK before populating the event\nvirtqueue and registering the IOMMU device in sysfs.  viommu_fill_evtq()\nhands the device a set of device-writable buffers through\nvirtqueue_add_inbuf(), so from that point on the device may write into\nthem and into the rings.\n\nIf either step fails, the error path deletes the virtqueues without\nresetting the device first.  The event buffers are allocated with\ndevm_kmalloc_array() and are released as probe unwinds, so the device can\ngo on writing to memory that has been freed.\n\nReset the device before deleting the virtqueues, the way viommu_remove()\nalready does.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nbatman-adv: tt: clear ROAM flag when re-adding a pending local client\n\nWhen a ROAMING_ADV is received for an announced local client,\nbatadv_tt_local_mark_removed() sets BATADV_TT_CLIENT_ROAM, queues a\nDEL|ROAM change and marks the entry as BATADV_TT_CLIENT_PENDING. If the\nclient sends a frame again before the next TTVN commit,\nbatadv_tt_local_add_existing() only clears the PENDING flag and returns\nearly. The ADD cancels the queued DEL, but the entry keeps the ROAM flag:\n\n* batadv_is_my_client() reports the client as not served by this node\n* batadv_tt_local_client_is_roaming() reroutes unicast frames for it to\n  the node which sent the ROAMING_ADV\n\nThe ROAM flag is only removed with the next frame of the client.\n\nSince BATADV_TT_CLIENT_ROAM is set together with BATADV_TT_CLIENT_PENDING,\nit has to be cleared also at the same time with BATADV_TT_CLIENT_PENDING\nwhen the client roamed back.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: Reject signalling responses in invalid states\n\nA peer can send configuration messages while an\nincoming channel is in BT_CONNECT2, before the\nsecurity or deferred accept gate has completed. A\nconfiguration response can then promote the channel\nto BT_CONNECTED. Configuration responses can also\nact on channels that are closing, and a late connection\nresponse can move a disconnecting channel back to\nBT_CONFIG.\n\nAccept connection responses only while waiting in\nBT_CONNECT. Answer configuration requests in\nBT_CONNECT2, but defer our own request until\nBT_CONFIG so configuration cannot complete before\nthe gate. Ignore configuration responses outside\nBT_CONFIG and BT_CONNECTED, and only complete\nconfiguration in BT_CONFIG.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: Only accept connection responses to outstanding requests\n\nAn outgoing channel waits in BT_CONNECT until security\nand the feature mask exchange complete, and only then\nsends its connection request. A peer can answer it\nbefore that with a connection response matching our\nsource CID. The channel then moves to BT_CONFIG,\ncompletes configuration and becomes connected before\nsecurity has completed. If security then fails,\nl2cap_security_cfm() leaves the connected channel\nalone, so it stays up on a link that did not reach\nthe required security level.\n\nA connection response with a zero source CID is\nmatched by identifier. Another channel can hold the\nsame identifier for a response it still has to send,\nso the lookup can pick the wrong channel.\n\nOnly accept a connection response while our request\nis outstanding, and only look at such channels when\nmatching by identifier."
     ]
    }
@@ -1050,7 +1702,8 @@
    "kev": false,
    "ransomware": false,
    "products": [
-    "Linux"
+    "Linux",
+    "Synology"
    ],
    "cves": [
     "CVE-2026-99322",
@@ -1077,7 +1730,7 @@
    "cvss": 9.8,
    "published": "2026-11-19T15:17:42+00:00",
    "first_seen": "2026-11-22T15:20:54+00:00",
-   "updated": "2026-11-22T15:20:54+00:00",
+   "updated": "2026-11-23T12:49:18+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99322",
    "pts": [
@@ -1108,6 +1761,24 @@
      "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix OOB read and cross-share confusion in ksmbd_validate_name_reconnect()\n\nksmbd_validate_name_reconnect() indexes\nab_pathname[share->path_sz + 1] without checking that the path is\nlonger than share->path_sz + 1 (d_path() fills the buffer from the\nend). A durable fp is not bound to its original share, so a client\ncan preserve a file from a short-path share and reconnect it on a\nlong-path share, making strcmp() read past the PATH_MAX buffer -\nwith a long enough share path this oopses the kernel, and on a\nmapped page it also gives a byte-equality oracle on adjacent heap\n(the reconnect succeeds exactly when the out-of-bounds string\nequals the requested name). A same-share variant with the durable\nfp at the share root reads 1 byte past the buffer\n(strlen(ab_pathname) == share->path_sz).\n\nCheck before comparing: the path must be longer than share->path_sz,\nit must start with share->path, and the next character must be '/'.\nThe share root itself is accepted only for an empty name.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: fix oversized GSS proxy token copy\n\ngss_read_proxy_verf() allocates one page per token chunk, but it copies the\nentire linear head of an RPC request into in_token->pages[0]. A UDP datagram\ncan leave more than PAGE_SIZE bytes in the linear head, so a large\nRPCSEC_GSS INIT token overwrites following pages.\n\nCopy the linear head in page-sized chunks before switching to the request\npage array. The linear head itself can span multiple pages.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: validate NT transaction response layout and offsets\n\nvalidate_ntransact() assumes that the response uses the fixed 18-word NT\ntransaction layout. A different WordCount makes get_bcc() locate the byte\ncount at a different offset from pSMBr->ByteCount, allowing the subsequent\nbounds checks to use inconsistent response boundaries.\n\nThe function also turns the 32-bit ParameterOffset and DataOffset fields\ninto pointers before checking their bounds. On a 32-bit client, a large\noffset can wrap the pointer below end_of_smb and pass the one-sided pointer\ncomparison. The caller then dereferences the parameter pointer or copies\nfrom the data pointer.\n\nRequire the expected WordCount before reading the byte count. Check each\noffset and count against the received SMB length as integers before forming\neither pointer. Use subtraction after validating the offset so that the\nrange checks cannot overflow.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: hold MP_JOIN msk ref when cloning reqsk\n\nTCP request migration clones pending request sockets with\ninet_reqsk_clone().  For MPTCP MP_JOIN requests this byte-copies\nsubflow_req->msk, but the clone does not own a reference.\n\nThe original and cloned requests can consequently drop the same msk\nreference, leaving one request with a dangling pointer.  This manifests as\na KASAN slab-use-after-free in subflow_req_destructor():\n\n  BUG: KASAN: slab-use-after-free in subflow_req_destructor (net/mptcp/subflow.c:45)\n  Write of size 4 at addr ff1100010e008d40 by task swapper/0/0\n  CPU: 0 UID: 0 PID: 0 Comm: swapper/0 Not tainted 7.2.0-rc5-00353-gc27e36054537 #10 PREEMPT(full)\n\n  Call Trace:\n   subflow_req_destructor (net/mptcp/subflow.c:45)\n   subflow_v4_req_destructor (net/mptcp/subflow.c:694)\n   __reqsk_free (net/ipv4/inet_connection_sock.c:906)\n   reqsk_timer_handler (include/net/request_sock.h:137 net/ipv4/inet_connection_sock.c:1147)\n\n  Allocated by task 10014:\n   sk_prot_alloc (net/core/sock.c:2246)\n   sk_clone (net/core/sock.c:2488)\n   mptcp_sk_clone_init (include/net/sock.h:1848 net/mptcp/protocol.c:3564)\n   subflow_syn_recv_sock (net/mptcp/subflow.c:883)\n   tcp_check_req (net/ipv4/tcp_minisocks.c:934)\n\n  Freed by task 0:\n   slab_free_after_rcu_debug (include/linux/kasan.h:235 mm/slub.c:2677 mm/slub.c:6439)\n   rcu_core (kernel/rcu/tree.c:2645 kernel/rcu/tree.c:2897)\n\n  Last potentially related work creation:\n   kmem_cache_free (mm/slub.c:2638 mm/slub.c:6377 mm/slub.c:6504)\n   __sk_destruct (net/core/sock.c:2289 net/core/sock.c:2391)\n   sk_destruct (net/core/sock.c:2419)\n   __sk_free (net/core/sock.c:2430)\n   sk_free (net/core/sock.c:2441)\n   mptcp_close (include/net/sock.h:2020 net/mptcp/protocol.c:3399)\n   inet_release (net/ipv4/af_inet.c:442)\n\n  The buggy address belongs to the cache MPTCP of size 2968\n  The buggy address is 128 bytes inside a freed 2968-byte region\n\nA non-NULL subflow_req->msk means that the request owns one reference. The\nthird ACK can concurrently transfer the original request reference to the\nchild and release it, so taking an unconditional hold on the copied pointer\nis unsafe.\n\nMPTCP sockets use SLAB_TYPESAFE_BY_RCU and all current inet_reqsk_clone()\ncallers run in an RCU read-side critical section. Document and\nlockdep-check that calling-context requirement.  Read the pointer from the\noriginal request and acquire a reference only if it is still live.  Use\nrefcount_inc_not_zero_acquire() so the subsequent ownership validation\ncannot be reordered before the try-get, then re-read the original request\nto verify that it still owns the same msk. If either check fails, clear the\nclone pointer; otherwise its normal destructor balances the new reference.\nMark the ownership-transfer store with WRITE_ONCE() to match the lockless\nreads.\n\nThe following patch completes the clone fixup for MP_CAPABLE token\nownership. Both patches carry the same Fixes tag and are required for\nstable backports.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: Do not credit control-record octets to the RPC stream\n\nsvc_tcp_sock_recv_cmsg() receives up to two octets into a local\nbuffer, and returns that count for any record type other than\nTLS_RECORD_TYPE_ALERT. Nothing reached the caller's buffer, but\nsvc_tcp_read_marker() adds the count to sk_tcplen and\nsvc_tcp_read_msg()'s caller adds it to sk_datalen. The RPC stream\nadvances over octets it never received. The fragment marker is\nassembled from stale sk_marker octets. The message body comes from\npages nothing wrote.\n\nA conforming client reaches this. RFC 8446 Section 4.6.3 lets either\npeer send KeyUpdate once it has sent its Finished, and svcsock has no\nrekey path. kTLS leaves the partially consumed record on ctx->rx_list,\nso the body drains two octets per svc_tcp_recvfrom() call. Each pair\nis credited the same way.\n\nReturn -EAGAIN for a record that is not an alert. That is what\nsvc_tcp_sock_process_cmsg()'s default arm returned before the receive\nmoved into a local buffer.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: preflight SEQUENCE replies before accepting a slot\n\nnfsd4_sequence() narrows the reply buffer to the session's cached\nreply limit before it accepts the slot seqid. A client may negotiate\nca_maxresponsesize_cached down to NFSD_MIN_HDR_SEQ_SZ, and\nnfsd4_alloc_slot() then gives every slot a zero-length sl_data[]. A\nCOMPOUND tag can fill that narrowed buffer until it holds the\nSEQUENCE opcode but not the status word that follows.\nnfsd4_encode_operation() returns without running\nnfsd4_encode_sequence(), so cstate.data_offset stays zero. It leaves\nop->status at nfs_ok as well, so the COMPOUND is treated as having\nsucceeded.\n\nnfsd4_store_cache_entry() declines to cache a lone SEQUENCE that\nreturned an error. That test reads the status the operation\nreported, so it passes here. The copy starts at offset zero and\ntakes the whole reply, RPC and COMPOUND headers included, into the\nzero-length sl_data[]. The COMPOUND tag is copied along with it, so\nthe client picks most of the bytes written past the end of the slot:\n\n  BUG: KASAN: slab-out-of-bounds in read_bytes_from_xdr_buf+0x1bc/0x390\n  Write of size 80 at addr ffff888003a549cd by task kunit_try_catch/24\n   __asan_memcpy+0x38/0x60\n   read_bytes_from_xdr_buf+0x1bc/0x390\n   nfsd4_sequence_done+0x5b0/0x810\n   nfs4svc_encode_compoundres+0x1bf/0x240\n\nCheck that the fixed-size SEQUENCE result, plus room for a following\noperation's error status, fits the negotiated limit before narrowing\nthe buffer and consuming the slot seqid. The slot and its reply\ncache are left unchanged, as RFC 8881 Section 2.10.6.1.2 requires of\nan error returned from SEQUENCE.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: don't modify a session slot when replaying its cached reply\n\nnfsd4_sequence() claims a session slot by setting NFSD4_SLOT_INUSE\nunder nn->client_lock. A reply served from the slot's reply cache does\nnot claim it, and that distinction lived only in cstate->status, which\nnfsd4_sequence() set to nfserr_replay_cache. Commit cc028a10a48c\n(\"NFSD: Hoist status code encoding into XDR encoder functions\") moved\nnfsd4_proc_compound()'s cstate->status assignment below the out:\nlabel, and the replay path's goto out was the one path that relied on\nskipping it. The test in nfsd4_sequence_done() therefore no longer\nidentifies a replay, and every replay now stores its reply and clears\nNFSD4_SLOT_INUSE as though it owned the slot.\n\nNFSD4_SLOT_INUSE is the interlock: check_slot_seqid() rejects every\nsequence id for a slot that is in use, before replay_matches_cache()\nruns. A replay never sets it, so two replays can be in flight on the\nsame slot at once. One can read slot->sl_cred under nn->client_lock\nwhile the other's completion frees and rebuilds it from the XDR\nencoder without that lock. Two completions can also collide with each\nother and release the same group_info twice. free_svc_cred() leaves\ncr_uid, cr_gid and cr_flavor intact, so the reader passes every\nearlier test in same_creds() and dereferences a NULL cr_group_info.\nFrom a 6.12.91 production server:\n\n  BUG: kernel NULL pointer dereference, address: 0000000000000004\n  CPU: 63 UID: 0 PID: 39015 Comm: nfsd\n  RIP: 0010:same_creds+0x38/0xa0 [nfsd]\n  RDX: 0000000000000000\n  Call Trace:\n   nfsd4_sequence+0x6a8/0x910 [nfsd]\n   nfsd4_proc_compound+0x345/0x670 [nfsd]\n   nfsd_dispatch+0x100/0x220 [nfsd]\n   svc_process_common+0x311/0x700 [sunrpc]\n   svc_process+0x131/0x1c0 [sunrpc]\n   svc_recv+0x7ef/0x9c0 [sunrpc]\n   nfsd+0xa3/0x100 [nfsd]\n  Kernel panic - not syncing: Fatal exception\n\nSince v6.14 a live session's slot table can shrink, and the unowned\nstore becomes a use-after-free write. nfsd4_sequence() defers the\nshrink while a slot is in use, but it tests NFSD4_SLOT_INUSE, which a\nreplay does not set, so free_session_slots() can kfree() the slot the\nreplay still holds in cstate->slot.\n\nRecord the claim in cstate->slot_owned when nfsd4_sequence() accepts a\nrequest and test that in nfsd4_sequence_done(), so only the request\nthat claimed the slot updates its cached reply and clears\nNFSD4_SLOT_INUSE. svc_generic_init_request() zeroes the compound\nresponse before each request, so the flag starts clear.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix buffer overflow in SMB2_tcon()\n\nIn SMB2_tcon(), unc_path is allocated with a fixed buffer size of\nMAX_SHARENAME_LENGTH * 2 bytes (672 bytes). However, the user-controlled\nUNC path (tree) length is passed to cifs_strtoUTF16(), which assumes the\ndestination buffer is large enough and writes strlen(tree) + 1 UTF-16 code\nunits.\n\nCommit 62a1a439e0fd (\"cifs: clean up handling of unc= option\") removed the\nlength check on UNC mount options, allowing mount paths to exceed\nMAX_SHARENAME_LENGTH while retaining the fixed-size buffer allocation in\nSMB2_tcon(). Consequently, an oversized UNC string causes cifs_strtoUTF16()\nto write past the end of the heap object, resulting in a slab-out-of-bounds\nwrite. Furthermore, if a tree exceeds MAX_TREE_SIZE characters, strscpy()\ntruncates it in cifs_tcon::tree_name, causing subsequent reconnects or\nfailovers to fail.\n\nFix this by first verifying that the length of tree does not exceed\nMAX_TREE_SIZE, returning -EINVAL if it does. Then, dynamically allocate\nunc_path based on the length of tree so that it safely accommodates all\nUTF-16 code units for paths within MAX_TREE_SIZE.\n\n[pc: remove unused MAX_SHARENAME_LENGTH]",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nlockd: Fix use-after-free in nlmsvc_retry_blocked\n\nnlmsvc_retry_blocked() examines the block at the head of nlm_blocked\nunder nlm_blocked_lock, then releases the lock before calling\nnlmsvc_grant_blocked() or retry_deferred_block(). The nlm_blocked list\nreference is all that keeps the block alive across that window.\nnlmsvc_grant_blocked() does take one of its own, but not until after\nthe lock has been dropped. Unmounting the nfsd filesystem while a lock\nrequest is still blocked reaches nlmsvc_traverse_blocks(), which drops\nthe list reference and frees the block along with the nlm_rqst hanging\noff it.\n\n  BUG: KASAN: slab-use-after-free in nlm_async_call+0xd6/0x230\n  Read of size 8 at addr ffff88811b04c808 by task lockd/8377\n    nlm_async_call+0xd6/0x230\n    nlmsvc_retry_blocked+0x61c/0x800\n    lockd+0x144/0x1c0\n  Freed by task 8392:\n    nlmsvc_release_block+0x231/0x290\n    nlmsvc_traverse_blocks+0x139/0x1b0\n    nlm_traverse_files+0x1aa/0xa00\n    nlmsvc_free_host_resources+0x12/0x60\n    nlm_shutdown_hosts_net+0x127/0x280\n    lockd_down+0xd5/0x1c0\n\nTake a reference before releasing nlm_blocked_lock and drop it once\nthe retry has run.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nNFSD: copy SETXATTR data from all XDR buffer segments\n\nnfsd4_vbuf_from_vector() manually copies the head followed by whole\npages starting at offset zero. This assumes that all remaining data\nstarts at the beginning of the page array and that no data is stored\nin the tail.\n\nHowever, nfsd4_decode_setxattr() passes an xdr_buf returned by\nxdr_stream_subsegment(). Such a sub-buffer can have a nonzero\npage_base and can span its page and tail segments. Ignoring that\nlayout can copy the wrong bytes into the value passed to\nvfs_setxattr().\n\nUse read_bytes_from_xdr_buf(), which observes the complete xdr_buf\nlayout.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nDrivers: hv: vmbus: Bounds check the shared ring buffer indices\n\nIn a CoCo VM the host is untrusted. Since the VMBus ring buffer read and\nwrite indices live in shared memory, the guest has to treat both as\npotentially malicious.\n\nhv_ringbuffer_write() copies into the ring at write_index with no bounds\nchecking, so the host can make the guest write packet data at any offset\nup to 4 GiB past the start of the ring buffer. read_index matters too:\nthe available space derived from both indices is the only bound on how\nmuch is copied, and an out-of-range index can make it far larger than\nthe ring.\n\nThe fix is to validate both indices before use and to use the validated\nsnapshot instead of re-accessing. For invalid indices,\nhv_ringbuffer_write() logs and returns -EIO.\n\nOne re-read of write_index is left unchecked in this patch:\nhv_get_ring_bufferindices() fetches it again for the prev_indices\ntrailer. The value is only returned to the host and is not used as an\noffset or length for indexing. Since this is not a security issue, it is\naddressed later in the series.\n\nOpen-coding the bytes available arithmetic keeps the fix free of\nprerequisites; a later patch refactors it into a helper function.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: SVM: Trigger new ASID allocation in both VMCBs on pCPU switch\n\nWhen the pCPU where the VMCB was most recently used is switched, reset\nthe ASID generation in both VMCBs, triggering new ASID allocation for\nthe immediate VMRUN as well as the next VMRUN on the other VMCB.\n\nThe ASID is shared between vmcb01 and vmcb02, and gets flushed on every\nnested transition. However, since pCPU tracking is done per VMCB, it is\npossible for one VMCB to allocate a new ASID when migrated to a new\npCPU, and then the other VMCB reuses that ASID on the old pCPU. This can\nresult in the same ASID being used by multiple vCPUs on the old pCPU.\n\nExample scenario:\n- vCPU runs on pCPU A, vmcb01 is active, asid=1.\n- vCPU migrates to pCPU B, vmcb01 pCPU changes, new asid=2.\n- Another vCPU runs on pCPU A and allocates asid=2 as well.\n- vCPU migrates back to pCPU A, and then switches to vmcb02 before it\n  runs again with vmcb01.\n- No pCPU switch is detected for vmcb02, so VMRUN is done with asid=2.\n- Two vCPUs end up using asid=2 on the same pCPU.\n\nKeep the VMCB dirtying to the active VMCB only. Clean bits are tracked\nby a pCPU for each VMCB, so do not unnecessarily dirty a VMCB if its\npCPU does not change.\n\nAdditionally, initialize the tracked pCPU for vmcb02 to -1 on nested\nenablement as hardening, so that a new ASID allocation is always\ntriggered when nested is disabled and re-enabled.\n\nNo performance regression was noticed when overcommitting L1 vCPUs in L0\n(to force rescheduling), pinning L1 <-> L2 vCPUs, and running CPUID in a\ntight loop bouncing between 2 vCPUs in L2.\n\nAn alternative (and perhaps more proper) fix would be tracking the ASID\nper-VMCB instead (e.g. [1]). However, that's a more involved change, and\nit would result in having different ASIDs for L1 and L2 without actually\nproperly maintaining them. It would probably work because all TLB\nflushes target the current VMCB, and the other VMCB is always flushed on\nnested transitions, but the code ends up in an arguably more fragile\nstate. Punt a proper clean fix to an incoming (and overdue) overhaul of\nSVM's ASID usage [2].\n\n[1] https://lore.kernel.org/lkml/20250205182402.2147495-2-yosry.ahmed@linux.dev\n[2] https://lore.kernel.org/kvm/20260728003557.1136583-1-yosry@kernel.org",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: smbdirect: fix buffer length underflow in RDMA transfers\n\nWhen a remote buffer descriptor is larger than the remaining local\nbuffer, smbdirect_connection_rdma_xmit() clamps its length and sets\nbuf_len to zero. The common accounting code then subtracts the clamped\nlength from buf_len, causing it to underflow. If another descriptor\nfollows, the loop processes it with a wrapped remaining length and\nincludes memory beyond the local buffer in the RDMA transfer.\n\nA client can trigger an out-of-bounds kernel write with an SMB WRITE\nrequest, or an out-of-bounds kernel read with an SMB READ request, by\nsupplying multiple RDMA buffer descriptors with an oversized descriptor\nbefore the last one.\n\nRemove the premature assignment to buf_len. Subtracting the clamped length\nalready consumes the remaining buffer, so the next iteration stops and\nonly descriptors within the local buffer are used to build work requests.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nocfs2/dlm: hold the lookup reference across convert AST enqueue\n\ndlm_convert_lock_handler() drops the reference it took when it found the\nlock on res->granted at its leave label, one statement before it calls\ndlm_queue_ast().  dlm_free_dead_locks() takes res->spinlock and drops the\nlist and base references, so a peer death landing in that gap leaves the\nhandler's own put as the one that frees the lock, and __dlm_queue_ast()\nthen reads lock->lockres from freed memory.\n\nThe handler is registered next to dlm_create_lock_handler(), so a convert\nmessage buffered on a dying peer's socket arrives on the same o2net\nreceive work that o2net_disconnect_node() does not wait for.  The two can\ninterleave as follows, with the reference counts as they are before this\nfix:\n\n  Socket data-ready       Node-down thread      Receive worker\n  -----------------       ----------------      --------------\n  o2net_data_ready()\n    select sc under\n    callback read lock\n                          o2net_disconnect_node()\n                            queue shutdown\n                            begin flush; new color\n    queue sc_rx_work\n    in the new color\n    release callback lock\n                            shutdown socket\n                            flush returns\n                                                read buffered convert_lock\n                                                dlm_convert_lock_handler()\n                                                  find lock on res->granted\n                                                  dlm_lock_get()  refs = 3\n                                                  lock res->spinlock\n                                                  __dlmconvert_master()\n                                                    call_ast = 1\n                                                  unlock res->spinlock\n                          DLM node-down cleanup\n                            lock res->spinlock\n                            dlm_free_dead_locks()\n                              unlink lock\n                              put list ref  refs = 2\n                              put base ref  refs = 1\n                            unlock res->spinlock\n                                                dlm_lock_put()  refs = 0\n                                                  free lock\n                                                dlm_queue_ast()\n                                                  __dlm_queue_ast()\n                                                  read lock->lockres\n                                                  (use-after-free)\n\n__dlmconvert_master() only moves the lock between lists, so the count\nentering the gap is base, list and lookup.  Drop the lookup reference\nafter the AST is queued instead of before it and the race ends with the\none __dlm_queue_ast() took, which dlm_flush_asts() releases later with\nast_pending cleared and ast_list unlinked.  No extra get is needed, and\nthe normal case ends with the same count as before.\n\ndlmconvert_master() has the same shape but is only reached from dlmlock()\nfor a lock this node owns, which dlm_free_dead_locks() never matches.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nocfs2/dlm: hold a lock reference across grant AST enqueue\n\nA newly granted remote lock must remain alive until its grant AST is\nqueued.  dlmlock_master() publishes the lock on res->granted with its base\nand queue references, then drops res->spinlock before calling\ndlm_queue_ast().  The resource's reserved AST count does not retain the\nlock itself.\n\nThis can fail when a peer dies with an immediately grantable CREATE\nbuffered on its socket.  O2NET's node-down callback flushes receive work\nbefore DLM cleanup, but the flush only waits for work queued on entry.  A\ndata-ready callback that already selected the socket container can queue\nnew receive work after the flush advances its work color.  Socket shutdown\ndoes not discard bytes already queued for TCP receive.\n\nThe late receive work and DLM node-down cleanup can interleave as\nfollows (the lock reference operations shown are before this fix):\n\n  Socket data-ready        Node-down thread         Receive worker\n  -----------------        ----------------         --------------\n  o2net_data_ready()\n    select sc under\n    callback read lock\n                           o2net_disconnect_node()\n                             queue shutdown\n                             begin flush; new color\n    queue sc_rx_work\n    in the new color\n    release callback lock\n                             shutdown socket\n                             flush returns\n                                                    read buffered CREATE\n                                                    dlmlock_master()\n                                                      lock res->spinlock\n                                                      add lock to granted\n                                                      unlock res->spinlock\n                           DLM node-down cleanup\n                             lock res->spinlock\n                             dlm_free_dead_locks()\n                               unlink lock\n                               put queue/base refs\n                               free lock\n                             unlock res->spinlock\n                                                    dlm_queue_ast()\n                                                      __dlm_queue_ast()\n                                                      read lock->lockres\n                                                      (use-after-free)\n\nDLM cleanup holds res->spinlock while dlm_free_dead_locks() drops the\nqueue and base references.  The CREATE handler no longer holds that\nspinlock when __dlm_queue_ast() reads the lock, before taking its AST list\nreference.\n\nTake a temporary lock reference under res->spinlock when a grant AST will\nbe queued, and drop it after dlm_queue_ast().  This keeps the lock alive\nacross cleanup until the AST path has taken its own reference, without\nreversing the existing AST/resource lock order.\n\nKASAN report as below:\n\n    BUG: KASAN: slab-use-after-free in __dlm_queue_ast+0x8a4/0xc00\n    Read of size 8 at addr ffff88810ead5940 by task kworker/u16:3/52\n\n    CPU: 3 UID: 0 PID: 52 Comm: kworker/u16:3 Not tainted 7.3.0-rc4-next-20260921-pmb-bt-functional-v1+ #1 PREEMPT(lazy)\n    Hardware name: QEMU Ubuntu 24.04 PC v2 (i440FX + PIIX, arch_caps fix, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014\n    Workqueue: o2net o2net_rx_until_empty\n    Call Trace:\n     <TASK>\n     dump_stack_lvl+0x93/0xd0\n     print_report+0xce/0x630\n     ? __dlm_queue_ast+0x8a4/0xc00\n     ? srso_alias_return_thunk+0x5/0xfbef5\n     ? __virt_addr_valid+0x20e/0x420\n     ? __dlm_queue_ast+0x8a4/0xc00\n     kasan_report+0xe0/0x110\n     ? __dlm_queue_ast+0x8a4/0xc00\n     __dlm_queue_ast+0x8a4/0xc00\n     ? srso_alias_return_thunk+0x5/0xfbef5\n     ? srso_alias_return_thunk+0x5/0xfbef5\n     ? do_raw_spin_lock+0x130/0x270\n     ? __pfx___dlm_queue_ast+0x10/0x10\n     ? __pfx_do_raw_spin_lock+0x10/0x10\n     ? _raw_spin_unlock_irqrestore+0x45/0x60\n     ? srs\n---truncated---",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nnvmet-auth: serialize access to DH-HMAC-CHAP state to fix UAF\n\nA REPLY AUTH_SEND command can derive a dhchap_skey key while a\nconcurrent AUTH_RECEIVE command observing this REPLY state executes\nthe failure path and frees that key. The REPLY command then continues\nand writes into freed memory, causing a use-after-free. KASAN reports\nit as:\n\n  BUG: KASAN: slab-use-after-free in __sha256_final\n  Write of size 4 at addr ffff88800359c540\n  ...\n  nvmet_auth_sq_free (drivers/nvme/target/auth.c:237)\n  nvmet_execute_auth_receive (drivers/nvme/target/fabrics-cmd-auth.c:621)\n\nAdd a mutex to each submission queue to serialize authentication\ncommands and timeout handling. Unlock the mutex before completing\nrequests and ignore outdated timeout callbacks. Limit timeout delays\nto prevent immediate expiry on 32-bit kernels.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nstaging: rtl8723bs: fix protected RX frame validation in decrypt path\n\nThe RX software decrypt path mishandles crafted protected frames from a\nmalicious AP in two ways:\n\n1) decryptor() never checks that a protected frame is long enough to\nhold the 802.11 header plus the per-cipher trailer.  All of\nrtw_wep_decrypt(), rtw_tkip_decrypt() and rtw_aes_decrypt() compute\n\n\tlength = hdr.len - hdrlen - iv_len;\n\nand act on the result, and recvframe_chkmic() similarly computes\n\n\tdatalen = hdr.len - hdrlen - iv_len - icv_len - 8;\n\nfor TKIP (the 8-byte Michael MIC is not accounted for in icv_len).\nA frame shorter than hdrlen + iv_len + icv_len (+ 8 for TKIP) underflows\nthese unsigned subtractions, turning into a ~4 GiB iteration count in\naes_decipher()/arc4_crypt()/rtw_seccalctkipmic() or a ~4 GiB crc32_le()\nlength, causing out-of-bounds reads/writes of up to ~4 GiB starting from\nthe rx skb.  Reject such frames in decryptor() before touching the IV;\nthis covers all three ciphers and the TKIP MIC check, and also keeps the\nunconditional iv[3] access within the frame.\n\n2) validate_80211w_mgmt() keeps using the frame - two memcpys through\nthe stale rx_data pointer and a pkt_len update - before checking\nwhether decryptor() returned NULL.  On decrypt failure (e.g. a unicast\nprotected deauth/disassoc/action frame with a bad MIC, which this path\nalways software-decrypts) the skb has already been freed, so this is a\nuse-after-free read/write, and the caller's error path frees the frame\na second time, drifting free_recvframe_cnt.  Bail out immediately when\ndecryptor() fails, freeing the temporary mgmt_DATA buffer first.\n\nDiscovered by Atuin - Automated Vulnerability Discovery Engine.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix parent dentry lifetime in directory enumeration\n\nksmbd_populate_dot_dotdot_entries() builds the \"..\" entry from\nthe open directory's d_parent and passes that pointer to\nksmbd_vfs_fill_dentry_attrs() without taking a reference. That pointer\nis only valid while the directory stays under this parent. If a\nconcurrent rename moves the directory elsewhere, the old parent loses\nits last reference; a following rmdir then turns it into a negative\ndentry with d_inode cleared, and after the RCU grace period the dentry\nitself is freed. The worker still holds the raw pointer and\ndereferences d_inode through vfs_getattr() and vfs_getxattr().\n\nA remote SMB client, authenticated or guest, triggers this by listing\na directory while that directory is moved under a new parent and the\nold parent is deleted. It can be done by the client itself with write\naccess or by other concurrent writers, triggering null-ptr-deref and\nslab-use-after-free on a KASAN build.\n\n  KASAN: null-ptr-deref in range\n      [0x0000000000000000-0x0000000000000007]\n  Workqueue: ksmbd-io handle_ksmbd_work\n  RIP: 0010:xattr_permission+0x9d/0x160\n  Call Trace:\n   vfs_getxattr+0x9c/0x1b0\n   ksmbd_vfs_getxattr+0x82/0x100\n   ksmbd_vfs_get_dos_attrib_xattr+0x7f/0x130\n   ksmbd_vfs_fill_dentry_attrs+0x435/0x650\n   ksmbd_populate_dot_dotdot_entries+0x25e/0x630\n   smb2_query_dir+0xcf9/0x1a20\n   handle_ksmbd_work+0x5f1/0x1c80\n   process_one_work+0x90b/0x19d0\n\nFix by using the dentry reference counting APIs: take the parent with\ndget_parent(), take a matching dget() on \".\", and dput() the dentry\nonce ksmbd_vfs_fill_dentry_attrs() has returned or the pattern does\nnot match.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: serialize directory emptiness checks with readdir\n\nSMB2 QUERY_DIRECTORY holds fp->readdir_lock while it calls iterate_dir()\non fp->filp. An SMB2 SET_INFO request with FILE_DISPOSITION_INFORMATION\ncan resolve the same FileId and call ksmbd_vfs_empty_dir() on the same\nfilp without that lock.\n\niterate_dir()'s inode read lock permits concurrent readers and does not\nserialize per-file iterator state. ext4 stores its dx readdir cursor and\nfname RB tree in file->private_data. Concurrent reset or refill can\ntherefore free a fname node while the other worker still traverses it or\nretains its RB-tree link, resulting in use-after-free accesses.\n\nAn authenticated SMB client with list and delete rights on a directory in\na writable KSMBD share backed by ext4 can trigger this when the directory\ntakes the dx readdir path. The client overlaps an SMB2 QUERY_DIRECTORY\nrequest with an SMB2 SET_INFO request carrying FILE_DISPOSITION_INFORMATION\non one live FileId.\n\nIn one x86_64 SMP KASAN multi-shot guest using ksmbd-for-next at\n171df27077fb, the unmodified kernel reported a cross-worker use-after-free\nbefore a panic. The first report's access and free stacks show the two\nrequest paths directly (trimmed):\n\n  BUG: KASAN: slab-use-after-free in ext4_htree_store_dirent+0x488/0x550\n  Read of size 8 by task kworker/2:0/29\n  Workqueue: ksmbd-io handle_ksmbd_work\n  Call Trace:\n   ext4_htree_store_dirent+0x488/0x550\n   htree_dirblock_to_tree+0x535/0x990\n   ext4_htree_fill_tree+0x319/0xba0\n   ext4_readdir+0x175a/0x2f40\n   iterate_dir+0x1b6/0x630\n   smb2_query_dir+0x1003/0x1cc0\n\n  Freed by task 279:\n   free_rb_tree_fname+0x67/0xc0\n   ext4_readdir+0x13a9/0x2f40\n   iterate_dir+0x1b6/0x630\n   ksmbd_vfs_empty_dir+0xa2/0x100\n   smb2_set_info+0x2ffa/0x45d0\n\nTake fp->readdir_lock across the entire emptiness check. This places both\niterators over that handle's filp in the same lock domain while\npreserving the disposition status handling. The exact code change\ncompleted a warning-free x86_64 KASAN bzImage build. Tracing three request\npairs showed that the two iterate_dir() calls no longer overlapped and the\nexpected statuses were preserved. A further 1,600 reproducer iterations\ncompleted with expected statuses and no KASAN report, Oops, or panic.\n\nThe reproducer and complete guest configuration are available privately\nto maintainers on request.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix OOB read and cross-share confusion in ksmbd_validate_name_reconnect()\n\nksmbd_validate_name_reconnect() indexes\nab_pathname[share->path_sz + 1] without checking that the path is\nlonger than share->path_sz + 1 (d_path() fills the buffer from the\nend). A durable fp is not bound to its original share, so a client\ncan preserve a file from a short-path share and reconnect it on a\nlong-path share, making strcmp() read past the PATH_MAX buffer -\nwith a long enough share path this oopses the kernel, and on a\nmapped page it also gives a byte-equality oracle on adjacent heap\n(the reconnect succeeds exactly when the out-of-bounds string\nequals the requested name). A same-share variant with the durable\nfp at the share root reads 1 byte past the buffer\n(strlen(ab_pathname) == share->path_sz).\n\nCheck before comparing: the path must be longer than share->path_sz,\nit must start with share->path, and the next character must be '/'.\nThe share root itself is accepted only for an empty name.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: fix oversized GSS proxy token copy\n\ngss_read_proxy_verf() allocates one page per token chunk, but it copies the\nentire linear head of an RPC request into in_token->pages[0]. A UDP datagram\ncan leave more than PAGE_SIZE bytes in the linear head, so a large\nRPCSEC_GSS INIT token overwrites following pages.\n\nCopy the linear head in page-sized chunks before switching to the request\npage array. The linear head itself can span multiple pages.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: hold MP_JOIN msk ref when cloning reqsk\n\nTCP request migration clones pending request sockets with\ninet_reqsk_clone().  For MPTCP MP_JOIN requests this byte-copies\nsubflow_req->msk, but the clone does not own a reference.\n\nThe original and cloned requests can consequently drop the same msk\nreference, leaving one request with a dangling pointer.  This manifests as\na KASAN slab-use-after-free in subflow_req_destructor():\n\n  BUG: KASAN: slab-use-after-free in subflow_req_destructor (net/mptcp/subflow.c:45)\n  Write of size 4 at addr ff1100010e008d40 by task swapper/0/0\n  CPU: 0 UID: 0 PID: 0 Comm: swapper/0 Not tainted 7.2.0-rc5-00353-gc27e36054537 #10 PREEMPT(full)\n\n  Call Trace:\n   subflow_req_destructor (net/mptcp/subflow.c:45)\n   subflow_v4_req_destructor (net/mptcp/subflow.c:694)\n   __reqsk_free (net/ipv4/inet_connection_sock.c:906)\n   reqsk_timer_handler (include/net/request_sock.h:137 net/ipv4/inet_connection_sock.c:1147)\n\n  Allocated by task 10014:\n   sk_prot_alloc (net/core/sock.c:2246)\n   sk_clone (net/core/sock.c:2488)\n   mptcp_sk_clone_init (include/net/sock.h:1848 net/mptcp/protocol.c:3564)\n   subflow_syn_recv_sock (net/mptcp/subflow.c:883)\n   tcp_check_req (net/ipv4/tcp_minisocks.c:934)\n\n  Freed by task 0:\n   slab_free_after_rcu_debug (include/linux/kasan.h:235 mm/slub.c:2677 mm/slub.c:6439)\n   rcu_core (kernel/rcu/tree.c:2645 kernel/rcu/tree.c:2897)\n\n  Last potentially related work creation:\n   kmem_cache_free (mm/slub.c:2638 mm/slub.c:6377 mm/slub.c:6504)\n   __sk_destruct (net/core/sock.c:2289 net/core/sock.c:2391)\n   sk_destruct (net/core/sock.c:2419)\n   __sk_free (net/core/sock.c:2430)\n   sk_free (net/core/sock.c:2441)\n   mptcp_close (include/net/sock.h:2020 net/mptcp/protocol.c:3399)\n   inet_release (net/ipv4/af_inet.c:442)\n\n  The buggy address belongs to the cache MPTCP of size 2968\n  The buggy address is 128 bytes inside a freed 2968-byte region\n\nA non-NULL subflow_req->msk means that the request owns one reference. The\nthird ACK can concurrently transfer the original request reference to the\nchild and release it, so taking an unconditional hold on the copied pointer\nis unsafe.\n\nMPTCP sockets use SLAB_TYPESAFE_BY_RCU and all current inet_reqsk_clone()\ncallers run in an RCU read-side critical section. Document and\nlockdep-check that calling-context requirement.  Read the pointer from the\noriginal request and acquire a reference only if it is still live.  Use\nrefcount_inc_not_zero_acquire() so the subsequent ownership validation\ncannot be reordered before the try-get, then re-read the original request\nto verify that it still owns the same msk. If either check fails, clear the\nclone pointer; otherwise its normal destructor balances the new reference.\nMark the ownership-transfer store with WRITE_ONCE() to match the lockless\nreads.\n\nThe following patch completes the clone fixup for MP_CAPABLE token\nownership. Both patches carry the same Fixes tag and are required for\nstable backports."
     ]
    }
@@ -2420,21 +3091,22 @@
    "cvss": 8.8,
    "published": "2026-11-18T09:17:45+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
-   "updated": "2026-11-20T13:00:43+00:00",
+   "updated": "2026-11-23T12:49:18+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99312",
    "pts": [
-    "影響 Linux 核心 KVM x86 與 HID 驅動，**涉及 MMU 未重設及存取過期堆疊指標的競爭條件漏洞**。",
-    "含 CVE-2026-99312、CVE-2026-99313，CVSS 最高 8.8，核心程式碼已修正，目前尚未遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 8.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: KVM: x86: Unconditionally reset MMU context when emulating INIT Force an"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Unconditionally reset MMU context when emulating INIT\n\nForce an MMU reset when emulating an INIT even if paging was already\ndisabled, as the MMU page role includes guest_mode (L2), i.e. an INIT while\nL2 is running with CR0.PG=0 will result in KVM running L1 with a stale MMU\ncontext.\n\nAlternatively, the reset could be scoped strictly to paging being enabled\nor L2 being active, but SMM is also encoded in the page role.  Even though\nit _should_ be impossible for the vCPU to be INIT'd while SMM is active,\nthere's zero value in not handling SMM.  At that point, the only scenario\nwhere KVM _doesn't_ need to reset the MMU context is on an INIT with the\nvCPU running in Real Mode or Unpaged Protect Mode, and while INIT in those\nmodes is somewhat common, it's far from a hot path and re-initializing the\nMMU is not expensive, especially when the role isn't changing (KVM elides\nmost of the re-configuration in that case).\n\nNote, like the Fixes commit, this bug only affects nested SVM as INIT is an\nunconditional intercept on VMX, i.e. it's impossible to emulate INIT while\nL2 is active.\n\nTemporarily keep the guest TLB flush when CR0.PG is being cleared even\nthough it is fully redundant with the flush that is emitted on all INIT\nevents (KVM itself only does RESET when a vCPU is being created, i.e. when\nCR0.PG must be '0').",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nHID: logitech-hidpp: fix race condition when accessing stale stack pointer\n\nThe driver uses hidpp->send_receive_buf to point to a stack-allocated\nbuffer in the synchronous command path (__do_hidpp_send_message_sync).\nHowever, this pointer is not cleared when the function returns.\n\nIf an event is processed (e.g. by a different thread) while the\nsend_mutex is held by a new command, but before that command has\nupdated send_receive_buf, the handler (hidpp_raw_hidpp_event) will\nobserve that the mutex is locked and dereference the stale pointer.\n\nThis results in an out-of-bounds access on a different thread's kernel\nstack (or a NULL pointer dereference on the very first command).\n\nFix this by:\n1. Clearing hidpp->send_receive_buf to NULL before releasing the mutex\n   in the synchronous command path.\n2. Moving the assignment of the local 'question' and 'answer' pointers\n   inside the mutex_is_locked() block in the handler, and adding\n   a NULL check before dereferencing.",
-     "In the Linux kernel, the following vulnerability has been resolved:\n\nHID: logitech-hidpp: fix race condition when accessing stale stack pointer\n\nThe driver uses hidpp->send_receive_buf to point to a stack-allocated\nbuffer in the synchronous command path (__do_hidpp_send_message_sync).\nHowever, this pointer is not cleared when the function returns.\n\nIf an event is processed (e.g. by a different thread) while the\nsend_mutex is held by a new command, but before that command has\nupdated send_receive_buf, the handler (hidpp_raw_hidpp_event) will\nobserve that the mutex is locked and dereference the stale pointer.\n\nThis results in an out-of-bounds access on a different thread's kernel\nstack (or a NULL pointer dereference on the very first command).\n\nFix this by:\n1. Clearing hidpp->send_receive_buf to NULL before releasing the mutex\n   in the synchronous command path.\n2. Moving the assignment of the local 'question' and 'answer' pointers\n   inside the mutex_is_locked() block in the handler, and adding\n   a NULL check before dereferencing."
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nHID: logitech-hidpp: fix race condition when accessing stale stack pointer\n\nThe driver uses hidpp->send_receive_buf to point to a stack-allocated\nbuffer in the synchronous command path (__do_hidpp_send_message_sync).\nHowever, this pointer is not cleared when the function returns.\n\nIf an event is processed (e.g. by a different thread) while the\nsend_mutex is held by a new command, but before that command has\nupdated send_receive_buf, the handler (hidpp_raw_hidpp_event) will\nobserve that the mutex is locked and dereference the stale pointer.\n\nThis results in an out-of-bounds access on a different thread's kernel\nstack (or a NULL pointer dereference on the very first command).\n\nFix this by:\n1. Clearing hidpp->send_receive_buf to NULL before releasing the mutex\n   in the synchronous command path.\n2. Moving the assignment of the local 'question' and 'answer' pointers\n   inside the mutex_is_locked() block in the handler, and adding\n   a NULL check before dereferencing.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Unconditionally reset MMU context when emulating INIT\n\nForce an MMU reset when emulating an INIT even if paging was already\ndisabled, as the MMU page role includes guest_mode (L2), i.e. an INIT while\nL2 is running with CR0.PG=0 will result in KVM running L1 with a stale MMU\ncontext.\n\nAlternatively, the reset could be scoped strictly to paging being enabled\nor L2 being active, but SMM is also encoded in the page role.  Even though\nit _should_ be impossible for the vCPU to be INIT'd while SMM is active,\nthere's zero value in not handling SMM.  At that point, the only scenario\nwhere KVM _doesn't_ need to reset the MMU context is on an INIT with the\nvCPU running in Real Mode or Unpaged Protect Mode, and while INIT in those\nmodes is somewhat common, it's far from a hot path and re-initializing the\nMMU is not expensive, especially when the role isn't changing (KVM elides\nmost of the re-configuration in that case).\n\nNote, like the Fixes commit, this bug only affects nested SVM as INIT is an\nunconditional intercept on VMX, i.e. it's impossible to emulate INIT while\nL2 is active.\n\nTemporarily keep the guest TLB flush when CR0.PG is being cleared even\nthough it is fully redundant with the flush that is emitted on all INIT\nevents (KVM itself only does RESET when a vCPU is being created, i.e. when\nCR0.PG must be '0')."
     ]
    }
   },
@@ -5640,15 +6312,15 @@
    "cvss": 9.8,
    "published": "2026-11-16T10:17:00+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
-   "updated": "2026-11-19T21:37:42+00:00",
+   "updated": "2026-11-23T12:49:18+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99289",
    "pts": [
-    "影響 Linux 核心 ceph、nfsd、ksmbd 及 smb 元件，**存在整數溢位、釋放後使用與越界寫入風險**。",
-    "目前尚無遭利用紀錄；相關漏洞涉及檔案系統與 SMB 處理流程，部分問題已在核心中修正。"
+    "同日公布 7 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: ceph: fix integer overflow in the snap trace bounds check ceph_update_sn"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -5657,6 +6329,11 @@
      "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: hold cl_lock in client_has_openowners()\n\nclient_has_openowners() walks clp->cl_openowners and reads so_stateids\nwithout clp->cl_lock. nfs4_put_stateowner() unhashes that openowner under\ncl_lock and then frees it, so a concurrent EXCHANGE_ID with mismatched\ncreds can use-after-free the nfs4_openowner.\n\nBUG: KASAN: slab-use-after-free in client_has_state+0x10a/0x140\n  fs/nfsd/nfs4state.c:3718 client_has_openowners()\n  nfsd4_exchange_id\n  nfsd4_proc_compound\n  nfsd_dispatch\n  svc_process\n\nTake clp->cl_lock while client_has_openowners() walks the openowner\nlist.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix app-instance non-durable supersede session UAF\n\nksmbd_close_fd_app_instance_id() supersedes a prior open that has the\nsame AppInstanceId. It reaches that open's session through opinfo->sess.\nThis pointer is not refcounted.\n\nSession teardown detaches durable handles before it frees the session.\nIt does not detach a non-durable open. That open still points at the\nsession through opinfo->sess after the session is freed. Another session\ncan supersede the open at the same time. The supersede then takes a\nwrite lock through the stale pointer, in the freed session's file table.\n\n  BUG: KASAN: slab-use-after-free in _raw_write_lock+0x71/0xd0\n  Call Trace:\n   _raw_write_lock+0x71/0xd0\n   ksmbd_close_fd_app_instance_id+0xd9/0x670 [ksmbd]\n   smb2_open+0x3e10/0xd910 [ksmbd]\n  Freed by task 212:\n   ksmbd_session_destroy+0x38d/0x480 [ksmbd]\n\nFix this by looking the session up by opinfo->session_id. The lookup\nreturns a reference, as smb2_break_collect_channels() does. Recheck that\nopinfo->sess still points at it before using it.\n\nDo the lookup without m_lock held. destroy_previous_session() takes\nm_lock under the session table lock, and taking them in the other order\nhere would deadlock.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix SMB2 CREATE response buffer overflow\n\nsmb2_allocate_rsp_buf() uses the MAX_CIFS_SMALL_BUFFER_SIZE\n(448-byte) buffer for a single SMB2_CREATE response. That buffer also\nholds a 4-byte length field, which only leaves 444 bytes for the SMB2\nbody.\n\nThe AAPL response made this buffer too small. After 8f1b796ff113, a\nrequest with AAPL response contexts may need at least 456 bytes. In\nthe 456-byte case, create_aapl_rsp_buf() is appended last, clears 128\nbytes, and writes 12 bytes past the allocation.\n\nKASAN reports:\n\n    BUG: KASAN: slab-out-of-bounds in create_aapl_rsp_buf+0x31/0x6e0\n    Write of size 128 at addr ffff88800370954c by task kworker/0:0/9\n    ...\n    create_aapl_rsp_buf+0x31/0x6e0\n    smb2_open+0x58f9/0xef10\n    ...\n    smb2_allocate_rsp_buf+0x19d/0x370\n    ...\n    The buggy address is located 332 bytes inside of\n     allocated 448-byte region [ffff888003709400, ffff8880037095c0)\n\nReserve enough space for any fixed CREATE response KSMBD can build.\nStore the required allocation size in the per-dialect values table.\nThis keeps the small buffer for other commands and avoids using the max\ntransaction buffer for every CREATE.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix slab-out-of-bounds write in id_mode_to_cifs_acl()\n\nIn id_mode_to_cifs_acl(), while the chown branch reserves\nsizeof(struct smb_ntsd) + 2 * sizeof(struct smb_sid) (plus\nsizeof(struct smb_acl) and the worst-case ACE space after\ncommit 0ee150794c75 (\"smb: client: fix heap overflow in DACL owner/group\nrewrite\")), the chmod branch only adds 2 * sizeof(struct smb_ace) or\n5 * sizeof(struct smb_ace) to secdesclen (or 1 * sizeof(struct smb_ace)\non posix).\n\nHowever, the chmod branch also invokes build_sec_desc() ->\ncopy_sec_desc(), which unconditionally writes the Owner SID at\npnntsd + sidsoffset and the Group SID at\npnntsd + sidsoffset + sizeof(struct smb_sid) (2 * 68 = 136 bytes total),\nand set_chmod_dacl() always writes a struct smb_acl header (8 bytes)\neven when the source descriptor has dacloffset == 0. When a security\ndescriptor has compact or overlapping Owner/Group SIDs (or\ndacloffset == 0), calling chmod() under-allocates pnntsd and writes past\nthe end of the slab buffer.\n\nReserve sizeof(struct smb_acl) + 2 * sizeof(struct smb_sid) (plus\nsizeof(struct smb_ntsd) on the posix path) in the chmod branch of\nid_mode_to_cifs_acl().",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix overflow in dacloffset bounds check in build_sec_desc()\n\nWhen the large dacl_offset is provided, dacl_offset + sizeof(struct\nsmb_acl) overflows on 32-bit builds and the check is passed,\nWhich makes le16_to_cpu(ppdacl_ptr->size) read out-of-bounds. This\nonly happens for dacl_offset in range [0xFFFFFFF8, 0xFFFFFFFF]. So\nthe oob read is max 8 bytes preceding the allocated ppntsd.\n\n    unsigned int dacl_offset = le32_to_cpu(ppntsd->dacloffset);\n    int ppdacl_size, ntacl_size = ppntsd_size - dacl_offset;\n\n    if (!dacl_offset ||\n\t(dacl_offset + sizeof(struct smb_acl) > ppntsd_size))\n\t    goto out;\n\nCommit beff0bc9d69b (\"ksmbd: fix overflow in dacloffset bounds check\")\nfixes similar checks in other functions. But leaves this one out,\nbecause it is only valid for 32-bit builds.\n\nReproduced on 32-bit ARM with KASAN, by a client sending SMB2\nSET_INFO(SEC) with dacloffset=0xfffffff8, then QUERY_INFO(SEC) on the\nsame file:\n\n BUG: KASAN: slab-out-of-bounds in build_sec_desc (fs/smb/server/smbacl.c:1105)\n Read of size 2 at addr c2a273fa by task kworker/1:1/35\n CPU: 1 UID: 0 PID: 35 Comm: kworker/1:1 Not tainted 7.3.0-rc2+ #5\n Workqueue: ksmbd-io handle_ksmbd_work\n Call trace:\n  kasan_check_range from build_sec_desc (fs/smb/server/smbacl.c:1105)\n  build_sec_desc from smb2_query_info (fs/smb/server/smb2pdu.c:7676)\n  smb2_query_info from handle_ksmbd_work (fs/smb/server/server.c:160)\n  handle_ksmbd_work from process_one_work (kernel/workqueue.c:3401)\n  process_one_work from worker_thread (kernel/workqueue.c:3473)\n  worker_thread from kthread (kernel/kthread.c:436)\n\nAdd overflow check.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nceph: fix integer overflow in the snap trace bounds check\n\nceph_update_snap_trace() bounds the two encoded snapid arrays that follow a\nstruct ceph_mds_snap_realm with sizeof(u64) * (num_snaps +\nnum_prior_parent_snaps).  Both counts come straight off the wire as __le32,\nso the addition is evaluated in unsigned int and wraps before sizeof(u64)\npromotes it to size_t: an MDS sending num_snaps = 1 and\nnum_prior_parent_snaps = 0xffffffff makes the sum zero and the check\ndegenerates to ceph_decode_need(&p, e, 0, bad), which always passes.\ndup_array() then reads num_snaps * 8 bytes past the end of the message\nfront, which ceph_msg_new2() allocates at exactly front_len bytes.  An\nunsolicited CEPH_MSG_CLIENT_SNAP reaches this from a malicious or\ncompromised MDS with no client-side action, as do the snaptraces carried in\nan MDS reply and in a cap import.\n\nCompute the length with size_add()/size_mul() so it saturates at SIZE_MAX\ninstead of wrapping, in the style fs/ceph/mdsmap.c already uses for\nnum_export_targets.\n\n  BUG: KASAN: slab-out-of-bounds in dup_array (include/linux/unaligned.h:28 fs/ceph/snap.c:500)\n  Read of size 8 at addr ffff8880102a16c8 by task kworker/1:2/129\n  Workqueue: ceph-msgr ceph_con_workfn\n  Call Trace:\n   dump_stack_lvl (lib/dump_stack.c:94 lib/dump_stack.c:120)\n   print_report (mm/kasan/report.c:378 mm/kasan/report.c:482)\n   kasan_report (mm/kasan/report.c:595)\n   dup_array (include/linux/unaligned.h:28 fs/ceph/snap.c:500)\n   ceph_update_snap_trace (fs/ceph/snap.c:836)\n   ceph_handle_snap (fs/ceph/snap.c:1155)\n   mds_dispatch (fs/ceph/mds_client.c:7234)\n   ceph_con_process_message (net/ceph/messenger.c:1424)\n   ceph_con_v1_try_read (net/ceph/messenger_v1.c:1430)\n   ceph_con_workfn (net/ceph/messenger.c:1576)\n   process_one_work (kernel/workqueue.c:3396)\n   worker_thread (kernel/workqueue.c:3479 kernel/workqueue.c:3560)\n   kthread (kernel/kthread.c:436)\n   ret_from_fork (arch/x86/kernel/process.c:158)\n   ret_from_fork_asm (arch/x86/entry/entry_64.S:245)\n  ...\n  The buggy address is located 0 bytes to the right of\n   allocated 72-byte region [ffff8880102a1680, ffff8880102a16c8)",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nceph: reject mdsmaps that claim more than CEPH_MAX_MDS ranks\n\ncheck_new_map() sizes its export-target bitmap from CEPH_MAX_MDS but walks\nit with newmap->possible_max_rank, which comes straight off the wire:\nceph_mdsmap_decode() sets it to max(m_num_active_mds, m_max_mds), then\noverwrites it with the size of the \"in\" set.  Neither is bounded by\nCEPH_MAX_MDS, only by m_info allocating, so a monitor announcing more ranks\nthan the bitmap holds makes test_bit() read past the end of targets[].  The\nclear_bit() loop above indexes the same bitmap, though it is additionally\nbounded by mdsc->max_sessions.  The map arrives on the monitor connection,\nwhich is unauthenticated in legacy msgr mode.\n\nCEPH_MAX_MDS is a protocol constant from src/mds/mdstypes.h, and the\nreserved inode ranges in super.h are laid out one rank apart over that\nspan, so a map claiming more ranks is corrupt.  Reject it where the rank\nspace is established rather than letting the count reach check_new_map().\n\n  BUG: KASAN: stack-out-of-bounds in check_new_map (fs/ceph/mds_client.c:5968)\n  Read of size 8 at addr ffffc90000ac7798 by task kworker/1:2/127\n  Workqueue: ceph-msgr ceph_con_workfn\n  Call Trace:\n   <TASK>\n   dump_stack_lvl (lib/dump_stack.c:94 lib/dump_stack.c:120)\n   print_report (mm/kasan/report.c:378 mm/kasan/report.c:482)\n   kasan_report (mm/kasan/report.c:595)\n   kasan_check_range (mm/kasan/generic.c:186 mm/kasan/generic.c:200)\n   check_new_map (fs/ceph/mds_client.c:5968)\n   ceph_mdsc_handle_mdsmap (fs/ceph/mds_client.c:7060)\n   extra_mon_dispatch (fs/ceph/super.c:802)\n   mon_dispatch (net/ceph/mon_client.c:1483)\n   ceph_con_process_message (net/ceph/messenger.c:1424)\n   ceph_con_v1_try_read (net/ceph/messenger_v1.c:1430)\n   ceph_con_workfn (net/ceph/messenger.c:1576)\n   process_one_work (kernel/workqueue.c:3396)\n   worker_thread (kernel/workqueue.c:3479 kernel/workqueue.c:3560)\n   kthread (kernel/kthread.c:436)\n   ret_from_fork (arch/x86/kernel/process.c:158)\n   ret_from_fork_asm (arch/x86/entry/entry_64.S:245)\n   </TASK>\n  The buggy address belongs to stack of task kworker/1:2/127\n   and is located at offset 288 in frame:\n   check_new_map (fs/ceph/mds_client.c:5846)\n  This frame has 1 object:\n   [32, 288) 'targets'",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: hold cl_lock in client_has_openowners()\n\nclient_has_openowners() walks clp->cl_openowners and reads so_stateids\nwithout clp->cl_lock. nfs4_put_stateowner() unhashes that openowner under\ncl_lock and then frees it, so a concurrent EXCHANGE_ID with mismatched\ncreds can use-after-free the nfs4_openowner.\n\nBUG: KASAN: slab-use-after-free in client_has_state+0x10a/0x140\n  fs/nfsd/nfs4state.c:3718 client_has_openowners()\n  nfsd4_exchange_id\n  nfsd4_proc_compound\n  nfsd_dispatch\n  svc_process\n\nTake clp->cl_lock while client_has_openowners() walks the openowner\nlist.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix slab-out-of-bounds write in id_mode_to_cifs_acl()\n\nIn id_mode_to_cifs_acl(), while the chown branch reserves\nsizeof(struct smb_ntsd) + 2 * sizeof(struct smb_sid) (plus\nsizeof(struct smb_acl) and the worst-case ACE space after\ncommit 0ee150794c75 (\"smb: client: fix heap overflow in DACL owner/group\nrewrite\")), the chmod branch only adds 2 * sizeof(struct smb_ace) or\n5 * sizeof(struct smb_ace) to secdesclen (or 1 * sizeof(struct smb_ace)\non posix).\n\nHowever, the chmod branch also invokes build_sec_desc() ->\ncopy_sec_desc(), which unconditionally writes the Owner SID at\npnntsd + sidsoffset and the Group SID at\npnntsd + sidsoffset + sizeof(struct smb_sid) (2 * 68 = 136 bytes total),\nand set_chmod_dacl() always writes a struct smb_acl header (8 bytes)\neven when the source descriptor has dacloffset == 0. When a security\ndescriptor has compact or overlapping Owner/Group SIDs (or\ndacloffset == 0), calling chmod() under-allocates pnntsd and writes past\nthe end of the slab buffer.\n\nReserve sizeof(struct smb_acl) + 2 * sizeof(struct smb_sid) (plus\nsizeof(struct smb_ntsd) on the posix path) in the chmod branch of\nid_mode_to_cifs_acl().",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix overflow in dacloffset bounds check in build_sec_desc()\n\nWhen the large dacl_offset is provided, dacl_offset + sizeof(struct\nsmb_acl) overflows on 32-bit builds and the check is passed,\nWhich makes le16_to_cpu(ppdacl_ptr->size) read out-of-bounds. This\nonly happens for dacl_offset in range [0xFFFFFFF8, 0xFFFFFFFF]. So\nthe oob read is max 8 bytes preceding the allocated ppntsd.\n\n    unsigned int dacl_offset = le32_to_cpu(ppntsd->dacloffset);\n    int ppdacl_size, ntacl_size = ppntsd_size - dacl_offset;\n\n    if (!dacl_offset ||\n\t(dacl_offset + sizeof(struct smb_acl) > ppntsd_size))\n\t    goto out;\n\nCommit beff0bc9d69b (\"ksmbd: fix overflow in dacloffset bounds check\")\nfixes similar checks in other functions. But leaves this one out,\nbecause it is only valid for 32-bit builds.\n\nReproduced on 32-bit ARM with KASAN, by a client sending SMB2\nSET_INFO(SEC) with dacloffset=0xfffffff8, then QUERY_INFO(SEC) on the\nsame file:\n\n BUG: KASAN: slab-out-of-bounds in build_sec_desc (fs/smb/server/smbacl.c:1105)\n Read of size 2 at addr c2a273fa by task kworker/1:1/35\n CPU: 1 UID: 0 PID: 35 Comm: kworker/1:1 Not tainted 7.3.0-rc2+ #5\n Workqueue: ksmbd-io handle_ksmbd_work\n Call trace:\n  kasan_check_range from build_sec_desc (fs/smb/server/smbacl.c:1105)\n  build_sec_desc from smb2_query_info (fs/smb/server/smb2pdu.c:7676)\n  smb2_query_info from handle_ksmbd_work (fs/smb/server/server.c:160)\n  handle_ksmbd_work from process_one_work (kernel/workqueue.c:3401)\n  process_one_work from worker_thread (kernel/workqueue.c:3473)\n  worker_thread from kthread (kernel/kthread.c:436)\n\nAdd overflow check."
     ]
@@ -12616,6 +13293,43 @@
    }
   },
   {
+   "id": "CVE-2026-99270",
+   "kind": "cve",
+   "title": "Linux 核心 漏洞 CVE-2026-99270",
+   "sub": "CVE-2026-99270 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-99270"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-03T13:17:24+00:00",
+   "first_seen": "2026-11-23T12:49:18+00:00",
+   "updated": "2026-11-23T12:49:18+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99270",
+   "pts": [
+    "In the Linux kernel, the following vulnerability has been resolved: tcp: Fix potential UAF in reqsk_timer_handler(). When TCP socket migrati"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: Fix potential UAF in reqsk_timer_handler().\n\nWhen TCP socket migration fails at inet_ehash_insert() in\nreqsk_timer_handler(), we jump to the no_ownership: label\nand free the new reqsk immediately with __reqsk_free().\n\nThus, we must stop the new reqsk's timer before jumping to the\nlabel, but the timer might be missed since the cited commit,\nresulting in UAF.\n\nAs we are in the original reqsk's timer context, we can safely\ncall timer_delete_sync() for the new reqsk.\n\nLet's pass false to __inet_csk_reqsk_queue_drop() to stop\nthe new reqsk's timer.",
+    "refs": [
+     "https://git.kernel.org/stable/c/97c8a3c1f73d828de43a5a88e8a9a143efb2b661",
+     "https://git.kernel.org/stable/c/b3b56e95f6fad7fa7281450b443e861d82616fdb",
+     "https://git.kernel.org/stable/c/bd3a72a14b1040f0e7ea827bd31322e26e2a9fae",
+     "https://git.kernel.org/stable/c/c130cc5f70b1f8f1f8f18432dfdc90ac59673f31",
+     "https://git.kernel.org/stable/c/d7f28a027af63a9d47784fd89d72ae15d87b7d5f"
+    ]
+   }
+  },
+  {
    "id": "tw:eba49409be7f",
    "kind": "news",
    "title": "甫修補的WordPress漏洞9分鐘後即出現嘗試利用活動",
@@ -18265,10 +18979,158 @@
   "CVE-2026-134817": [],
   "CVE-2026-134818": [],
   "CVE-2026-134819": [],
-  "CVE-2026-134805": []
+  "CVE-2026-134805": [],
+  "CVE-2026-134882": [],
+  "CVE-2026-115899": [
+   "Cisco",
+   "Ivanti",
+   "SonicWall"
+  ],
+  "CVE-2026-121613": [],
+  "CVE-2026-123886": [],
+  "CVE-2026-99292": [
+   "Linux"
+  ],
+  "CVE-2026-99309": [
+   "Linux"
+  ],
+  "CVE-2026-99312": [
+   "Linux"
+  ],
+  "CVE-2026-115873": [
+   "Cisco",
+   "Ivanti",
+   "SD-WAN"
+  ],
+  "CVE-2026-115900": [
+   "Ivanti",
+   "GitLab"
+  ],
+  "CVE-2026-80466": [],
+  "CVE-2026-133646": [],
+  "CVE-2026-93584": [],
+  "CVE-2026-115901": [],
+  "CVE-2026-99685": [
+   "Linux"
+  ],
+  "CVE-2026-99541": [
+   "Linux"
+  ],
+  "CVE-2026-99589": [
+   "Linux"
+  ],
+  "CVE-2026-99794": [
+   "Linux"
+  ],
+  "CVE-2026-99270": [
+   "Linux"
+  ],
+  "CVE-2026-99355": [
+   "Linux"
+  ],
+  "CVE-2026-99460": [
+   "Linux",
+   "Synology"
+  ],
+  "CVE-2026-99793": [
+   "Linux"
+  ],
+  "CVE-2026-135055": [],
+  "CVE-2026-121876": [],
+  "CVE-2026-99109": [
+   "Linux"
+  ],
+  "CVE-2026-99233": [
+   "Linux"
+  ],
+  "CVE-2026-99281": [
+   "Linux"
+  ],
+  "CVE-2026-99297": [
+   "Linux"
+  ],
+  "CVE-2026-99305": [
+   "Linux"
+  ],
+  "CVE-2026-99317": [
+   "Linux"
+  ],
+  "CVE-2026-99345": [
+   "Linux"
+  ],
+  "CVE-2026-99395": [
+   "Linux"
+  ],
+  "CVE-2026-99399": [
+   "Linux"
+  ],
+  "CVE-2026-99400": [
+   "Linux"
+  ],
+  "CVE-2026-99422": [
+   "Linux"
+  ],
+  "CVE-2026-99424": [
+   "Linux"
+  ],
+  "CVE-2026-99425": [
+   "Linux"
+  ],
+  "CVE-2026-99429": [
+   "Linux"
+  ],
+  "CVE-2026-99448": [
+   "Linux"
+  ],
+  "CVE-2026-99471": [
+   "Linux"
+  ],
+  "CVE-2026-99484": [
+   "Linux"
+  ],
+  "CVE-2026-99506": [
+   "Linux"
+  ],
+  "CVE-2026-99507": [
+   "Linux"
+  ],
+  "CVE-2026-99528": [
+   "Linux"
+  ],
+  "CVE-2026-99567": [
+   "Linux"
+  ],
+  "CVE-2026-99574": [
+   "Linux",
+   "Synology"
+  ],
+  "CVE-2026-99582": [
+   "Linux"
+  ],
+  "CVE-2026-99583": [
+   "Linux"
+  ],
+  "CVE-2026-99591": [
+   "Linux"
+  ],
+  "CVE-2026-99601": [
+   "Linux"
+  ],
+  "CVE-2026-99603": [
+   "Linux"
+  ],
+  "CVE-2026-99609": [
+   "Linux"
+  ],
+  "CVE-2026-99611": [
+   "Linux"
+  ],
+  "CVE-2026-99650": [
+   "Linux"
+  ]
  },
- "nvd_last": "2026-11-23T02:46:13+00:00",
- "kev_last": "2026-11-23T02:46:13+00:00",
+ "nvd_last": "2026-11-23T12:45:04+00:00",
+ "kev_last": "2026-11-23T12:45:04+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",

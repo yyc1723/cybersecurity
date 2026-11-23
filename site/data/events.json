@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T02:46:13+00:00",
+ "generated": "2026-11-23T12:45:04+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -331,6 +331,10 @@
     "desc": "全球第三方服務供應商資安事件持續擴大，單一供應商遭駭，往往連帶波及數十甚至數百家企業。例如：愛爾蘭銀行IT服務商Wellington IT遭駭，已有3家信用合作社發布資安公告，據統"
    },
    {
+    "title": "Synology 重大漏洞",
+    "desc": "群暉預計於 20 日提供部分版本作業系統修補程式。"
+   },
+   {
     "title": "Linux 核心 多個高風險漏洞",
     "desc": "In the Linux kernel, the following vulnerability has been resolved: ceph: clamp the inline"
    },
@@ -341,10 +345,6 @@
    {
     "title": "Cisco Expressway Series Use of Hard-code",
     "desc": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。"
-   },
-   {
-    "title": "AI 平台 漏洞 CVE-2026-77312",
-    "desc": "升級至 2.26.8 以上（依原文擷取）"
    },
    {
     "title": "Linux 核心 多個高風險漏洞",
@@ -361,6 +361,500 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:bd49688d1019",
+   "kind": "news",
+   "title": "電商開店平臺BVShop平臺揭露遭異常自動化存取，已通知多個品牌與主管機關",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:21+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180724",
+   "pts": [
+    "近期電商開店平臺接連傳出訂單資料遭未經授權存取的事件，由架值資訊科技經營、提供品牌商家網路開店服務BVShop平臺，上週突然發布資安事件公告，揭露部分商家的訂單資訊遭未經授權存取，可能涉及消費者個資及訂單內容。由於部分訂單聯絡資訊可能遭不當利用，業者也提醒商家及消費者提高警覺，慎防冒名詐騙。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:6912bc76b9db",
+   "kind": "news",
+   "title": "研究人員揭露PHP重大漏洞phpAfterShell，問題源自PHP2Shell修補不夠完整",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:21+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180722",
+   "pts": [
+    "上週PHP基金會發布安全更新，總共修補18個資安漏洞，其中最受到外界注意的地方，是由資安公司DepthFirst通報的重大漏洞CVE-2026-126714，此為檢查時間與使用時間（TOCTOU）競爭條件類型的弱點，攻擊者可利用PHP處理未通過身分驗證的multipart/form-data請求，更"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:4e7e166d253b",
+   "kind": "news",
+   "title": "Ghostscript字型載入器存在漏洞Upload2Shell，攻擊者可繞過沙箱執行任意命令",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:21+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180719",
+   "pts": [
+    "AI滲透測試公司Pwn.ai公布開源文件處理引擎Ghostscript資安漏洞CVE-2026-125396，攻擊者可透過一般檔案上傳、圖片預覽及電子郵件附件等功能，將惡意PostScript文件傳入Ghostscript，觸發記憶體錯誤，取得任意記憶體寫入能力，進一步修改Ghostscript內部"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:c8d671003f31",
+   "kind": "news",
+   "title": "【資安日報】11月23日，東亞多所大學遭鎖定，中國駭客用AI攻擊框架Cairn發動攻擊，11分鐘內發現並利用醫療影像AI軟體零時差漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180718",
+   "pts": [
+    "本日新聞焦點 ● 中國駭客用AI框架Cairn發動攻擊，11分鐘內發現並利用零時差漏洞 ● Apache Tomcat傳重大漏洞，可導致未經驗證加入受信任伺服器叢集 ● API金鑰隨Docker Hub映像檔暴露，研究發現最快7.86秒就遭濫用"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:60e1f162cde9",
+   "kind": "news",
+   "title": "日本Tower Records電商網站外洩千萬筆會員個資，網購出貨下單受影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180717",
+   "pts": [
+    "日本知名連鎖唱片行淘兒唱片（Tower Records）上週公告電子商務網站遭駭客入侵，外洩會員超過1,100萬筆個資及密碼，影響網購商品出貨及下單。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:53d89ae805d2",
+   "kind": "news",
+   "title": "荷蘭測試6款AI眼鏡揭安全漏洞，建議消費者不要購買",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180714",
+   "pts": [
+    "荷蘭個人資料保護局（Autoriteit Persoonsgegevens，AP）上周四（11/19）公布《AI攝影眼鏡安全調查報告》，發現受測產品普遍存在隱私、資安及人身安全風險，包括可能遭陌生人接管、偷偷錄影，甚至在緊急救援時提供錯誤資訊，因此建議消費者暫時不要購買。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:d4cdaa896ac5",
+   "kind": "news",
+   "title": "WhatsApp修補3個漏洞，其中Android版漏洞疑遭詐騙活動利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180712",
+   "pts": [
+    "Meta旗下通訊軟體平臺WhatsApp在11月資安公告揭露3個漏洞，其中Android版漏洞CVE-2026-23871疑似已被詐騙者利用。此漏洞源自Click to WhatsApp廣告回覆網址驗證不完整，攻擊者可透過特製訊息，誘使收訊者裝置載入攻擊者控制的外部媒體網址，進而洩露IP資訊。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:9d9d65df538e",
+   "kind": "news",
+   "title": "新加坡CSA警告Apache HTTP/2重大漏洞已遭積極利用，公開PoC也已流傳",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180711",
+   "pts": [
+    "新加坡網路安全局（CSA）於11月17日發布警告，指出Apache HTTP Server的HTTP/2模組漏洞CVE-2026-119618據報已遭攻擊者積極利用，且已有公開的概念驗證（PoC）攻擊程式。CSA指出，此漏洞可能讓攻擊者遠端執行程式碼，CVSS嚴重性評分達8.1分，但未進一步說明遭攻"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:73dc5195881c",
+   "kind": "news",
+   "title": "倫敦交通局發行的Oyster相片版地鐵卡資料外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180710",
+   "pts": [
+    "倫敦交通局（Transport for London，TfL）上週公告，相片版Oyster卡網站被駭，致使26.5萬用戶資料包括姓名、電話等個資外洩。 TfL是倫敦交通的主管機關。Oyster卡是由TfL發行的電子交通儲值卡，類似臺灣的悠遊卡，用於支付大倫敦地區的大眾運輸涵括地鐵、地上鐵路及巴士、火"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:2dd2fce8ea7f",
+   "kind": "news",
+   "title": "社群交友服務業者尚凡揭露不明IP位址侵入資訊設備，旗下iPair、SweetRing公告系統維護",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180708",
+   "pts": [
+    "以雲端交友與社群平臺起家的上櫃公司尚凡國際創新科技（5278），11月21日（週六）發布資安事件重大訊息，指出當日發現不明IP位址侵入公司資訊設備，資安團隊隨即啟動資安緊急應變機制，目前評估事件對營運尚無重大影響。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:f79bf5e299cd",
+   "kind": "news",
+   "title": "OpenJDK重大漏洞Java4Shell出現嘗試利用活動",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180709",
+   "pts": [
+    "11月17日Oracle與OpenJDK修補被稱為Java4Shell的OpenJDK重大漏洞CVE-2026-114938，發現此弱點的資安公司Calif.io已確認可在多款Java應用程式利用，隨後多家威脅情報公司發現，攻擊者已開始嘗試利用，企業應儘速採取行動因應。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:bc57a22f00f5",
+   "kind": "news",
+   "title": "Apache Tomcat傳出重大漏洞，可能導致未經身分驗證攻擊者加入受信任伺服器叢集",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Apache",
+    "Java"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180707",
+   "pts": [
+    "Java Web應用程式伺服器軟體專案Apache Tomcat於11月19日揭露重大漏洞CVE-2026-133325，問題源自叢集通訊使用TLS 1.3搭配預先共享金鑰（TLS-PSK）時，金鑰交換過程未能驗證連線對端身分，導致未經身分驗證的遠端攻擊者，只要能連線至叢集通訊服務，就可能冒充受信任"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:2b0d43161d5a",
+   "kind": "news",
+   "title": "全國電子發布資安重訊，會員收到含真實個資的假訂單釣魚郵件，來源待查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180706",
+   "pts": [
+    "11月19日上市電子通路業者全國電（6281）發布資安事件重大訊息，指出近期陸續接獲部分會員反映，收到冒用全國電名義寄發的虛假訂單電子郵件。經查發現，郵件中的會員姓名、電子郵件及會員卡號等資訊與真實資料相符，懷疑相關資訊遭第三方利用進行釣魚詐騙。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:f2ac532afd92",
+   "kind": "news",
+   "title": "Cisco Expressway重大漏洞遭利用，攻擊者入侵企業並內部環境取得Root權限",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180705",
+   "pts": [
+    "美國網路安全與基礎設施安全局（CISA）於11月20日，將思科（Cisco）視訊通訊閘道系統Expressway重大漏洞CVE-2026-76466納入已知遭利用漏洞名單（KEV），在此之前有資安公司發現首起攻擊活動。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:45a617f8ee39",
+   "kind": "news",
+   "title": "崇越發布資安重訊，揭露第三方電商服務商伊比薩發現異常資料存取，子公司全越運動影響待查",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180703",
+   "pts": [
+    "國內再傳委外服務供應商資安事件，這起事件因上市公司崇越近日發布重大訊息而曝光。根據上市公司崇越（5434）11月19日發布的資安事件重大訊息，旗下子公司全越運動事業接獲電商平臺委外服務商伊比薩（IBIZA）通知，該服務商近期發現異常資料存取情況。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:5c7ccec3c10c",
+   "kind": "news",
+   "title": "KPMG加拿大被駭，外洩部分客戶稅務資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180701",
+   "pts": [
+    "全球四大會計師事務所之一KPMG的加拿大分公司上週證實遭駭，導致部分客戶稅務資料外流。 加拿大媒體Globe and Mail上週首先報導，KPMG已證實內部系統被駭，部分客戶稅務文件遭到竊取，並已聯繫客戶。 KPMG發出聲明指出，根據調查，截至目前為止，受到影響的客戶資料未外流到線上或遭到任何形式"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:456dd2b19c1d",
+   "kind": "news",
+   "title": "OpenSSL Base64編碼函式傳出堆積緩衝區溢位漏洞，可能導致記憶體破壞與程式當機",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "OpenSSL"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180700",
+   "pts": [
+    "OpenSSL專案於11月18日揭露Base64編碼函式漏洞CVE-2026-121481，問題源自Base64編碼EVP_EncodeBlock()函式存在堆積緩衝區溢位，當輸入資料長度接近整數上限INT_MAX（約2GB）時，函式計算編碼後的輸出長度可能發生整數溢位，導致寫入資料超出呼叫端配置的"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:582e38fcd49c",
+   "kind": "news",
+   "title": "東亞多所大學遭鎖定，中國駭客用AI攻擊框架Cairn發動攻擊，11分鐘內發現並利用醫療影像AI軟體零時差漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180697",
+   "pts": [
+    "開放原始碼醫療影像AI軟體MONAI Label的零時差漏洞遭駭客利用，攻擊者透過AI代理程式自行發現漏洞並成功入侵大學伺服器，取得root最高權限。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:f19809ddfb2d",
+   "kind": "news",
+   "title": "CISA警告VMware vCenter等4款應用系統的漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-23T12:49:21+00:00",
+   "first_seen": "2026-11-23T12:49:34+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180699",
+   "pts": [
+    "11月20日美國網路安全與基礎設施安全局（CISA）發布公告，他們已掌握4個漏洞遭到積極利用的證據，將它們列入已知遭利用漏洞名單（KEV），這些漏洞是：CVE-2025-42884、"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-115900",
+   "kind": "cve",
+   "title": "GitLab 漏洞 CVE-2026-115900",
+   "sub": "CVE-2026-115900 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "GitLab",
+    "Ivanti"
+   ],
+   "cves": [
+    "CVE-2026-115900"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-23T09:17:05+00:00",
+   "first_seen": "2026-11-23T12:49:18+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115900",
+   "pts": [
+    "An attacker must possess a valid Worker distribution credential, reach the Leader distribution listener, and send crafted authenticated Work"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:Cisco:2026-11-23",
+   "kind": "group",
+   "title": "Cisco 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 9.3",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco",
+    "Ivanti",
+    "SonicWall",
+    "SD-WAN"
+   ],
+   "cves": [
+    "CVE-2026-115873",
+    "CVE-2026-115899"
+   ],
+   "cvss": 9.3,
+   "published": "2026-11-23T09:17:04+00:00",
+   "first_seen": "2026-11-23T12:49:18+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115873",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 9.3。",
+    "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must us"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:07745c21e30f",
    "kind": "news",
@@ -623,8 +1117,8 @@
    "id": "CVE-2026-120382",
    "kind": "cve",
    "title": "Synology 重大漏洞",
-   "sub": "CVE-2026-120382 · 尚未評分",
-   "sev": "high",
+   "sub": "CVE-2026-120382 · CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -633,7 +1127,7 @@
    "cves": [
     "CVE-2026-120382"
    ],
-   "cvss": null,
+   "cvss": 9.8,
    "published": "2026-11-20T13:00:46+00:00",
    "first_seen": "2026-11-20T13:00:52+00:00",
    "src": "iThome 報導",
@@ -1067,7 +1561,8 @@
    "kev": false,
    "ransomware": false,
    "products": [
-    "Linux"
+    "Linux",
+    "Synology"
    ],
    "cves": [
     "CVE-2026-99322",
@@ -2062,11 +2557,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99312",
    "pts": [
-    "影響 Linux 核心 KVM x86 與 HID 驅動，**涉及 MMU 未重設及存取過期堆疊指標的競爭條件漏洞**。",
-    "含 CVE-2026-99312、CVE-2026-99313，CVSS 最高 8.8，核心程式碼已修正，目前尚未遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 8.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: KVM: x86: Unconditionally reset MMU context when emulating INIT Force an"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "CVE-2025-15716",
@@ -3912,11 +4407,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99289",
    "pts": [
-    "影響 Linux 核心 ceph、nfsd、ksmbd 及 smb 元件，**存在整數溢位、釋放後使用與越界寫入風險**。",
-    "目前尚無遭利用紀錄；相關漏洞涉及檔案系統與 SMB 處理流程，部分問題已在核心中修正。"
+    "同日公布 7 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: ceph: fix integer overflow in the snap trace bounds check ceph_update_sn"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:43fcc44e8b73",
@@ -9134,6 +9629,31 @@
    ],
    "fix": "",
    "ai": true
+  },
+  {
+   "id": "CVE-2026-99270",
+   "kind": "cve",
+   "title": "Linux 核心 漏洞 CVE-2026-99270",
+   "sub": "CVE-2026-99270 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Linux"
+   ],
+   "cves": [
+    "CVE-2026-99270"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-03T13:17:24+00:00",
+   "first_seen": "2026-11-23T12:49:18+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99270",
+   "pts": [
+    "In the Linux kernel, the following vulnerability has been resolved: tcp: Fix potential UAF in reqsk_timer_handler(). When TCP socket migrati"
+   ],
+   "fix": "",
+   "ai": false
   },
   {
    "id": "tw:eba49409be7f",
