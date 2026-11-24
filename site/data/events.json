@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T00:52:02+00:00",
+ "generated": "2026-11-24T10:56:14+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -331,24 +331,24 @@
     "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
    },
    {
-    "title": "Cisco 等產品程式碼執行漏洞",
-    "desc": "需控制上游 API 分頁資料或具唯讀權限並存取 Leader API 方可觸發；目前尚未發現遭利用。"
+    "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
+    "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
    },
    {
-    "title": "Linux 核心多項子系統漏洞",
-    "desc": "含資料長度未設上限與引用計數異常等 10 個 CVE，CVSS 最高達 9.8；目前尚未發現遭利用。"
+    "title": "Chrome 多個高風險漏洞",
+    "desc": "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use"
    },
    {
-    "title": "Linux 核心 多個高風險漏洞",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Do not credit "
+    "title": "AI 平台驗證與預設金鑰漏洞",
+    "desc": "BISHENG 需知悉工作流程 UUID 即可利用，CVSS 最高達 10.0；目前尚未發現遭利用情事。"
    },
    {
     "title": "SonicWall 參數注入漏洞",
     "desc": "低權限遠端攻擊者即可發動攻擊，CVSS 達 9.9；目前尚未發現遭利用情事。"
    },
    {
-    "title": "AI 平台驗證與預設金鑰漏洞",
-    "desc": "BISHENG 需知悉工作流程 UUID 即可利用，CVSS 最高達 10.0；目前尚未發現遭利用情事。"
+    "title": "Cisco 等產品程式碼執行漏洞",
+    "desc": "需控制上游 API 分頁資料或具唯讀權限並存取 Leader API 方可觸發；目前尚未發現遭利用。"
    }
   ],
   "ai": false
@@ -361,6 +361,401 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:8e036b49578d",
+   "kind": "news",
+   "title": "車麗屋購物網站遭自動化攻擊，部分會員個資疑似外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:01:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180759",
+   "pts": [
+    "汽車百貨零售公司車麗屋（7955）於11月23日，在股市公開資訊觀測站發布重大訊息，該公司於11月21日發現網站遭自動化攻擊入侵，疑似有第三方未經授權存取部分會員資料，並利用取得的資料聯繫消費者，冒用車麗屋名義寄送電子郵件及簡訊，目前事件原因與可能影響範圍仍在調查釐清。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:2eefaa5ba60d",
+   "kind": "news",
+   "title": "挪威天然氣與電力公司遭駭，當局指出攻擊者利用Azure API管理服務漏洞得逞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:01:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180758",
+   "pts": [
+    "挪威天然氣公司Equinor與電力公司Skagerak Energi先後於11月17日、18日透露遭遇網路攻擊，後續"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:d4b2cccbf0e4",
+   "kind": "news",
+   "title": "CISA警告醫療影像軟體、N-able郵件防護平臺漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:01:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180757",
+   "pts": [
+    "11月23日美國網路安全與基礎設施安全局（CISA）表示，已掌握兩個資安漏洞遭積極利用的證據，將其加入已知遭利用漏洞名單（KEV），這些漏洞是CVE-2026-133968、CVE-2026-134624，分別影響開放原始碼醫療影像AI軟體MONAI Label，以及N-able郵件防護系統Mail"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:57a936a1d2d3",
+   "kind": "news",
+   "title": "韓國電力公社兩套系統遭入侵，約152萬人個資外洩，部分涉及銀行帳號及信用卡卡號",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180753",
+   "pts": [
+    "11月22日韓國重要電力基礎設施營運業者韓國電力公社（KEPCO）發布資安事件公告，揭露旗下兩套資訊系統遭駭，前已知個資外洩範圍涵蓋152萬名用戶、企業代表及員工，外洩資料除了身分與聯絡資訊，還涉及銀行帳號、信用卡卡號及電費帳單資訊。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:92644b2a685c",
+   "kind": "news",
+   "title": "D-Link老舊路由器DIR-600L被揭露存在三項漏洞，官方強調10年前停產，不會釋出修補",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:08+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180732",
+   "pts": [
+    "資安研究人員ruanyi近期接連揭露D-Link舊款無線路由器DIR-600L的三項漏洞，涵蓋兩項堆疊緩衝區溢位及一項作業系統命令注入，並分別取得CVE-2026-129353、CVE-2026-129354及CVE-2026-133493編號。D-Link對此表示，DIR-600L早在2016年1"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:c5505e8acc91",
+   "kind": "news",
+   "title": "電商資訊服務業者再傳資安事件，立富康內部管理帳密遭盜用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:48+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180755",
+   "pts": [
+    "提供電商訂單管理、倉儲及物流整合服務的立富康（LifeCOM），一週前突然發布資安事件公告，揭露訂單管理系統遭未經授權存取。該公司發現異常後迅速展開應變，數分鐘後已封鎖攻擊來源並停用相關帳號。至於帳號密碼確切的外洩途徑，立富康已委託第三方資安公司進行獨立鑑識，若後續有需要對外揭露的事項，將再更新官網"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:d33e33e55155",
+   "kind": "news",
+   "title": "【資安日報】11月24日，CrowdStrike以439億美元併購Zscaler，創下資安界交易紀錄",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "PHP"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:48+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180756",
+   "pts": [
+    "本日新聞焦點 ● CrowdStrike以439億美元併購Zscaler，創下資安界交易紀錄 ● Shopline部分商店出貨資訊疑遭未授權存取，Funte、Simon受影響 ● PHP2Shell修補不夠完整，研究人員揭露PHP重大漏洞phpAfterShell"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:1c05b155ea70",
+   "kind": "news",
+   "title": "N-able揭露電子郵件過濾服務系統重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:48+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180754",
+   "pts": [
+    "11月23日IT管理軟體公司N-able揭露CVE-2026-134624，此弱點存在於郵件安全服務Mail Assure及SpamExperts Hosted Cloud，為伺服器請求偽造（SSRF）型態的漏洞，CVSS v4.0嚴重程度評為9.3分，N-able發布20261121.1943版予"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:991fab855281",
+   "kind": "news",
+   "title": "駭客濫用ScreenConnect重大漏洞入侵MSP工程師電腦，9秒內取得遠端存取權",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180750",
+   "pts": [
+    "資安業者Huntress繼9月上旬揭露遠端存取管理軟體ScreenConnect遭濫用的可疑活動後，於11月16日揭露另一波利用ScreenConnect用戶端漏洞CVE-2026-84869的攻擊活動，藉此入侵代管"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:301a18c47a17",
+   "kind": "news",
+   "title": "Google發布Chrome穩定版及延伸穩定版更新，修補重大等級的輸入驗證不當漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180748",
+   "pts": [
+    "11月23日Google為電腦穩定版及Android版Chrome發布更新，不過這次有所不同的是，該公司僅有修補一個重大等級的資安漏洞CVE-2026-134401，這在近期加快更新節奏，且經常修補一"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:e64926fedb2a",
+   "kind": "news",
+   "title": "Apple揭露macOS重大漏洞，可能導致系統與App當機或執行任意程式碼",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180747",
+   "pts": [
+    "Apple於11月20日為macOS安全公告新增數個重大漏洞訊息，包括3個可能導致系統與App當機，或執行任意程式碼的重大漏洞。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:1eb4657f75bf",
+   "kind": "news",
+   "title": "資安研究員公布Windows零時差漏洞FastUnlock，攻擊者有機會以此在鎖定螢幕的電腦執行程式",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180746",
+   "pts": [
+    "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，攻擊者只要能實際接觸目標電腦，就可能利用Windows內建的朗讀程式（Narrator），繞過正常登入流程，在未登入使用"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:bfa4fd784dee",
+   "kind": "news",
+   "title": "韓國三星證券客戶申訴系統遭駭，逾8,200名客戶個資外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180744",
+   "pts": [
+    "韓國三星集團旗下金融服務企業三星證券於11月23日證實，官網「客戶之聲」（Voice of Customer，VOC）系統遭外部入侵，調查發現共有8,241名客戶個資外洩。三星證券於21日發現異常，確認部分客戶上傳的附件檔案遭竊，外洩資訊包括姓名、帳戶號碼、地址、聯絡方式及駕照號碼等13類資料，各客"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:ba9f783cb40d",
+   "kind": "news",
+   "title": "思科、OpenAI合作推出開源AI基礎架構防護技術Shirudo",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180742",
+   "pts": [
+    "思科和OpenAI週一（11月23日）宣布合作推出運用AI代理人加速基礎架構防護的開源技術Shirudo，能在不重啟系統的情況下抵禦攻擊，能在漏洞修補程式釋出前，確保企業系統安全。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:e51eeb2035b7",
+   "kind": "news",
+   "title": "CrowdStrike以439億美元併購Zscaler，創下資安界交易紀錄",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T11:01:55+00:00",
+   "first_seen": "2026-11-24T11:02:55+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180740",
+   "pts": [
+    "CrowdStrike和Zscaler週一宣佈簽訂協議，CrowdStrike將以全股票交易總價439億美元的代價併購Zscaler，跨足網路安全領域，創下資安最大併購案的紀錄。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:Cisco:2026-11-24",
+   "kind": "group",
+   "title": "Cisco 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 10.0",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-128791",
+    "CVE-2026-128798"
+   ],
+   "cvss": 10.0,
+   "published": "2026-11-24T04:17:22+00:00",
+   "first_seen": "2026-11-24T11:01:51+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128791",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication."
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:59e37f358a6f",
+   "kind": "news",
+   "title": "冒名短劇APP誘導開啟無障礙權限，籲Android使用者僅從官方商店下載",
+   "sub": "TWCERT/CC 資安新聞",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T02:16:00+00:00",
+   "first_seen": "2026-11-24T11:01:55+00:00",
+   "src": "TWCERT/CC 資安新聞",
+   "url": "https://www.twcert.org.tw/tw/cp-104-11426-ea310-1.html",
+   "pts": [
+    "民眾在社群平台看到有興趣的短劇片段，想下載 APP 繼續觀看時，應留意下載來源。若透過搜尋結果或社群貼文中的連結下載安裝檔，可能遇到冒用熱門 APP 名稱或圖示的惡意程式。TWCERT/CC 提醒，Android 使用者應從官方應用程式商店下載 APP，並留意 APP 要求開啟的權限是否與其用途相符"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:e94cb1437a8a",
    "kind": "news",
@@ -507,8 +902,8 @@
    "id": "grp:Chrome:2026-11-24",
    "kind": "group",
    "title": "Chrome 多個高風險漏洞",
-   "sub": "5 個 CVE",
-   "sev": "high",
+   "sub": "5 個 CVE · 最高 CVSS 9.6",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -521,13 +916,13 @@
     "CVE-2026-95449",
     "CVE-2026-95455"
    ],
-   "cvss": null,
+   "cvss": 9.6,
    "published": "2026-11-23T17:17:58+00:00",
    "first_seen": "2026-11-24T00:57:42+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
    "pts": [
-    "同日公布 5 個漏洞。",
+    "同日公布 5 個漏洞，最高 CVSS 9.6。",
     "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could le"
    ],
    "fix": "",
