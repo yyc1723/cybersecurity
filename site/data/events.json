@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T12:45:04+00:00",
+ "generated": "2026-11-24T00:52:02+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,31 +324,31 @@
   }
  ],
  "todo": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "items": [
    {
-    "title": "Office：【資安週報】1116～1120，全球第三方供應商遭駭連環爆；Jav",
-    "desc": "全球第三方服務供應商資安事件持續擴大，單一供應商遭駭，往往連帶波及數十甚至數百家企業。例如：愛爾蘭銀行IT服務商Wellington IT遭駭，已有3家信用合作社發布資安公告，據統"
+    "title": "Windows Server：Windows 漏洞 CVE-2026-13406",
+    "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
    },
    {
-    "title": "Synology 重大漏洞",
-    "desc": "群暉預計於 20 日提供部分版本作業系統修補程式。"
+    "title": "Cisco 等產品程式碼執行漏洞",
+    "desc": "需控制上游 API 分頁資料或具唯讀權限並存取 Leader API 方可觸發；目前尚未發現遭利用。"
    },
    {
-    "title": "Linux 核心 多個高風險漏洞",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved: ceph: clamp the inline"
-   },
-   {
-    "title": "Apache Roller Deserialization of Untrust",
-    "desc": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。"
-   },
-   {
-    "title": "Cisco Expressway Series Use of Hard-code",
-    "desc": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。"
+    "title": "Linux 核心多項子系統漏洞",
+    "desc": "含資料長度未設上限與引用計數異常等 10 個 CVE，CVSS 最高達 9.8；目前尚未發現遭利用。"
    },
    {
     "title": "Linux 核心 多個高風險漏洞",
     "desc": "In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Do not credit "
+   },
+   {
+    "title": "SonicWall 參數注入漏洞",
+    "desc": "低權限遠端攻擊者即可發動攻擊，CVSS 達 9.9；目前尚未發現遭利用情事。"
+   },
+   {
+    "title": "AI 平台驗證與預設金鑰漏洞",
+    "desc": "BISHENG 需知悉工作流程 UUID 即可利用，CVSS 最高達 10.0；目前尚未發現遭利用情事。"
    }
   ],
   "ai": false
@@ -361,6 +361,231 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:e94cb1437a8a",
+   "kind": "news",
+   "title": "微軟Entra Connect Health漏洞遭利用，企業管理員聯絡資訊與租用戶資料外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T00:57:44+00:00",
+   "first_seen": "2026-11-24T00:57:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180716",
+   "pts": [
+    "微軟（Microsoft）旗下身分識別基礎架構監控服務Microsoft Entra Connect Health傳出資安事件。攻擊者利用該服務的API漏洞，未經授權存取部分企業租用戶的管理員聯絡資訊及組態資料。這項雲端服務可協助企業監控內部部署身分識別系統的運作狀態、效能與警示。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:954061b87bdf",
+   "kind": "news",
+   "title": "2026年工控資安事故比例增至去年的1.7倍，逾7成事故期間廠區或系統曾停機",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T00:57:44+00:00",
+   "first_seen": "2026-11-24T00:57:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180694",
+   "pts": [
+    "資安研究與教育訓練機構SANS Institute公布2026年工業控制系統（ICS）與營運技術（OT）資安調查，34%的受訪者表示，所屬組織過去12個月曾發生ICS/OT資安事故，比例為2025年的1.7倍，創下SANS追蹤這項數據以來的最大單年度增幅。其中72%的事故伴隨廠區或系統停機，對工業設"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:7e72675092db",
+   "kind": "news",
+   "title": "美國總務署在既有身分驗證智慧卡上成功執行抗量子密碼演算法",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T00:57:44+00:00",
+   "first_seen": "2026-11-24T00:57:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180653",
+   "pts": [
+    "美國聯邦政府持續推動後量子密碼學（PQC）轉型，既有身分驗證設備能否支援抗量子密碼演算法，也受到關注。根據資安媒體CyberScoop報導，美國總務署（GSA）近期公布測試成果，技術團隊成功在既有個人身分驗證（PIV）智慧卡晶片上執行抗量子密碼演算法，顯示部分現有智慧卡可能不必汰換，就能支援新演算法"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:f5aeb3ffd8bf",
+   "kind": "news",
+   "title": "雲端服務Rackspace Spot遭入侵，攻擊者可讀取客戶叢集內的機密資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-24T00:57:44+00:00",
+   "first_seen": "2026-11-24T00:57:44+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180726",
+   "pts": [
+    "Rackspace託管式Kubernetes平臺Spot憑證遭外洩，攻擊者在部分客戶組織冒用合法使用者身分，得以在客戶叢集建立未經授權的Pod、讀取Kubernetes Secrets，以及列出叢集節點與儲存磁區。Rackspace接獲客戶通報後確認遭到入侵，平臺隨後暫停存取並清理環境，造成管理主控"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-82981",
+   "kind": "cve",
+   "title": "Ivanti 漏洞 CVE-2026-82981",
+   "sub": "CVE-2026-82981 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Ivanti"
+   ],
+   "cves": [
+    "CVE-2026-82981"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-23T22:23:40+00:00",
+   "first_seen": "2026-11-24T00:57:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82981",
+   "pts": [
+    "SQL injection in WHMCS could allow an unauthenticated user to retrieve clients' personal and support information, as well as administrator a"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "CVE-2026-134069",
+   "kind": "cve",
+   "title": "Windows 漏洞 CVE-2026-134069",
+   "sub": "CVE-2026-134069 · CVSS 8.2",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Windows Server"
+   ],
+   "cves": [
+    "CVE-2026-134069"
+   ],
+   "cvss": 8.2,
+   "published": "2026-11-23T22:20:12+00:00",
+   "first_seen": "2026-11-24T00:57:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134069",
+   "pts": [
+    "Use of a default cryptographic key in the instance registration component in Amazon SSM Agent before 3.3.5226.0 on AWS-provided Windows Serv"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:Chrome:2026-11-24",
+   "kind": "group",
+   "title": "Chrome 多個高風險漏洞",
+   "sub": "5 個 CVE",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Chrome"
+   ],
+   "cves": [
+    "CVE-2026-134401",
+    "CVE-2026-95433",
+    "CVE-2026-95448",
+    "CVE-2026-95449",
+    "CVE-2026-95455"
+   ],
+   "cvss": null,
+   "published": "2026-11-23T17:17:58+00:00",
+   "first_seen": "2026-11-24T00:57:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
+   "pts": [
+    "同日公布 5 個漏洞。",
+    "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could le"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:AI 平台:2026-11-24",
+   "kind": "group",
+   "title": "AI 平台驗證與預設金鑰漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 10.0",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-130169",
+    "CVE-2026-135211"
+   ],
+   "cvss": 10.0,
+   "published": "2026-11-23T16:17:38+00:00",
+   "first_seen": "2026-11-24T00:57:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130169",
+   "pts": [
+    "AutoGPT Platform 0.6.26-0.7.4 含預設金鑰；**BISHENG 3.0.0 前版本可未授權執行管理員工作流程**。",
+    "BISHENG 需知悉工作流程 UUID 即可利用，CVSS 最高達 10.0；目前尚未發現遭利用情事。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-103782",
+   "kind": "cve",
+   "title": "SonicWall 參數注入漏洞",
+   "sub": "CVE-2026-103782 · CVSS 9.9",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SonicWall"
+   ],
+   "cves": [
+    "CVE-2026-103782"
+   ],
+   "cvss": 9.9,
+   "published": "2026-11-23T16:17:25+00:00",
+   "first_seen": "2026-11-24T00:57:42+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103782",
+   "pts": [
+    "Dell Enterprise Sonic Distribution 4.6.1 前版本存在參數注入，**可執行任意指令並未授權存取檔案**。",
+    "低權限遠端攻擊者即可發動攻擊，CVSS 達 9.9；目前尚未發現遭利用情事。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:bd49688d1019",
    "kind": "news",
@@ -828,7 +1053,7 @@
   {
    "id": "grp:Cisco:2026-11-23",
    "kind": "group",
-   "title": "Cisco 多個高風險漏洞",
+   "title": "Cisco 等產品程式碼執行漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -849,11 +1074,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115873",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.3。",
-    "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must us"
+    "Cisco、Ivanti、SonicWall 等相關元件存在漏洞，**可以 Worker 或 Leader 服務帳號權限執行程式碼**。",
+    "需控制上游 API 分頁資料或具唯讀權限並存取 Leader API 方可觸發；目前尚未發現遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:07745c21e30f",
@@ -1165,7 +1390,7 @@
   {
    "id": "grp:Linux:2026-11-20",
    "kind": "group",
-   "title": "Linux 核心 多個高風險漏洞",
+   "title": "Linux 核心多項子系統漏洞",
    "sub": "11 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1192,11 +1417,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99586",
    "pts": [
-    "同日公布 11 個漏洞，最高 CVSS 9.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: ceph: clamp the inline data length in ceph_fill_inline_data() The MDS de"
+    "影響 Linux 核心 ceph、mptcp、net、xfs、smb/server、iommu/virtio 與 batman-adv 等子系統。",
+    "含資料長度未設上限與引用計數異常等 10 個 CVE，**CVSS 最高達 9.8**；目前尚未發現遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:195ea95bb6de",
@@ -1339,7 +1564,7 @@
   {
    "id": "CVE-2026-129448",
    "kind": "cve",
-   "title": "Apache Roller Deserialization of Untrust",
+   "title": "Apache Roller 反序列化漏洞",
    "sub": "CVE-2026-129448 · CVSS 9.8",
    "sev": "crit",
    "kev": true,
@@ -1356,16 +1581,16 @@
    "src": "CISA KEV",
    "url": "https://lists.apache.org/thread/cc0jck13nb9vvcmzxzwotr6n16mx28z9",
    "pts": [
-    "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "影響 Apache Roller，未經驗證遠端攻擊者可透過 XML-RPC 端點執行任意程式碼。",
+    "**目前已遭實際利用**，此漏洞與 CVE-2026-82384 同源但影響版本範圍更廣。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "CVE-2026-76466",
    "kind": "cve",
-   "title": "Cisco Expressway Series Use of Hard-code",
+   "title": "Cisco Expressway 硬編碼憑證漏洞",
    "sub": "CVE-2026-76466 · CVSS 9.8",
    "sev": "crit",
    "kev": true,
@@ -1382,11 +1607,11 @@
    "src": "CISA KEV",
    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
    "pts": [
-    "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persiste",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "Cisco Expressway Series 存在硬編碼憑證漏洞，**未經驗證攻擊者可以 root 權限在叢集設備執行指令**。",
+    "需具網路存取權限與持久性 Cookie 並透過資料庫服務觸發；目前已遭實際利用。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "CVE-2026-77312",
@@ -2170,7 +2395,7 @@
    "id": "grp:AI 平台:2026-11-19",
    "kind": "group",
    "title": "AI 平台存取與路徑漏洞",
-   "sub": "3 個 CVE · 最高 CVSS 9.8",
+   "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -2180,6 +2405,7 @@
    "cves": [
     "CVE-2026-127222",
     "CVE-2026-130154",
+    "CVE-2026-130766",
     "CVE-2026-63189"
    ],
    "cvss": 9.8,
@@ -2188,11 +2414,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127222",
    "pts": [
-    "影響 Dialoqbase、Zyrabit Platform 與 SGLang，**存在路徑穿越及授權缺失風險**。",
-    "共 3 個 CVE（最高 CVSS 9.8），部分端點不需驗證即可透過網路存取，目前尚未遭利用。"
+    "同日公布 4 個漏洞，最高 CVSS 9.8。",
+    "Dialoqbase is an application for creating chatbots. Prior to 1.11.5, the unauthenticated GET /api/v1/view/* route in server/src/routes/api/v"
    ],
-   "fix": "Dialoqbase 升至 1.11.5、Zyrabit Platform 升至 2.4.4，SGLang 套用 commit 7b5fb39",
-   "ai": true
+   "fix": "升級至 1.11.5 以上（依原文擷取）",
+   "ai": false
   },
   {
    "id": "grp:nginx:2026-11-19",
@@ -3296,11 +3522,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130906",
    "pts": [
-    "影響 Chrome 158.0.8127.36 以前版本（含 Android），**遠端攻擊者可於沙箱外執行任意程式碼**。",
-    "CVSS 9.6，目前尚未遭利用，亦無勒索軟體利用；遠端攻擊者可透過特製 HTML 頁面觸發 ANGLE、WebGL 與 GPU 漏洞。"
+    "同日公布 107 個漏洞，最高 CVSS 9.6。",
+    "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:AI 平台:2026-11-18",
