@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T10:56:14+00:00",
+ "generated": "2026-11-24T21:12:28+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,15 +324,19 @@
   }
  ],
  "todo": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "items": [
+   {
+    "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
+    "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
+   },
    {
     "title": "Windows Server：Windows 漏洞 CVE-2026-13406",
     "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
    },
    {
-    "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
-    "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
+    "title": "Cisco 多個高風險漏洞",
+    "desc": "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete fi"
    },
    {
     "title": "Chrome 多個高風險漏洞",
@@ -340,15 +344,11 @@
    },
    {
     "title": "AI 平台驗證與預設金鑰漏洞",
-    "desc": "BISHENG 需知悉工作流程 UUID 即可利用，CVSS 最高達 10.0；目前尚未發現遭利用情事。"
+    "desc": "升級至 0.8.0 以上（依原文擷取）"
    },
    {
     "title": "SonicWall 參數注入漏洞",
     "desc": "低權限遠端攻擊者即可發動攻擊，CVSS 達 9.9；目前尚未發現遭利用情事。"
-   },
-   {
-    "title": "Cisco 等產品程式碼執行漏洞",
-    "desc": "需控制上游 API 分頁資料或具唯讀權限並存取 Leader API 方可觸發；目前尚未發現遭利用。"
    }
   ],
   "ai": false
@@ -361,6 +361,31 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "CVE-2026-82169",
+   "kind": "cve",
+   "title": "VMware 漏洞 CVE-2026-82169",
+   "sub": "CVE-2026-82169 · CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [
+    "CVE-2026-82169"
+   ],
+   "cvss": 8.3,
+   "published": "2026-11-24T17:18:53+00:00",
+   "first_seen": "2026-11-24T21:18:07+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82169",
+   "pts": [
+    "Dell Virtual Storage Integrator for VMware vSphere Web Client, versions prior to 10.12.0.0, contains an OS Command Injection – confirm singl"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:8e036b49578d",
    "kind": "news",
@@ -902,7 +927,7 @@
    "id": "grp:Chrome:2026-11-24",
    "kind": "group",
    "title": "Chrome 多個高風險漏洞",
-   "sub": "5 個 CVE · 最高 CVSS 9.6",
+   "sub": "10 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -911,18 +936,23 @@
    ],
    "cves": [
     "CVE-2026-134401",
+    "CVE-2026-95417",
+    "CVE-2026-95418",
+    "CVE-2026-95425",
     "CVE-2026-95433",
+    "CVE-2026-95439",
+    "CVE-2026-95442",
     "CVE-2026-95448",
     "CVE-2026-95449",
     "CVE-2026-95455"
    ],
-   "cvss": 9.6,
+   "cvss": 9.8,
    "published": "2026-11-23T17:17:58+00:00",
    "first_seen": "2026-11-24T00:57:42+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 9.6。",
+    "同日公布 10 個漏洞，最高 CVSS 9.8。",
     "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could le"
    ],
    "fix": "",
@@ -949,11 +979,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130169",
    "pts": [
-    "AutoGPT Platform 0.6.26-0.7.4 含預設金鑰；**BISHENG 3.0.0 前版本可未授權執行管理員工作流程**。",
-    "BISHENG 需知悉工作流程 UUID 即可利用，CVSS 最高達 10.0；目前尚未發現遭利用情事。"
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.2"
    ],
-   "fix": "",
-   "ai": true
+   "fix": "升級至 0.8.0 以上（依原文擷取）",
+   "ai": false
   },
   {
    "id": "CVE-2026-103782",
@@ -1469,11 +1499,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115873",
    "pts": [
-    "Cisco、Ivanti、SonicWall 等相關元件存在漏洞，**可以 Worker 或 Leader 服務帳號權限執行程式碼**。",
-    "需控制上游 API 分頁資料或具唯讀權限並存取 Leader API 方可觸發；目前尚未發現遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 9.3。",
+    "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must us"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:07745c21e30f",
@@ -6431,11 +6461,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
-    "影響 FortiOS、FortiMail、FortiManager 與 FortiAnalyzer 多版本，**未經認證即可執行程式碼或接管帳號**。",
-    "目前未遭利用或用於勒索軟體；多數漏洞無須認證即可遠端觸發，部分需於鄰近網路具權限或特定 HA 架構。"
+    "同日公布 24 個漏洞，最高 CVSS 9.8。",
+    "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:Node.js:2026-11-12",

@@ -4,15 +4,19 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "items": [
+   {
+    "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
+    "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
+   },
    {
     "title": "Windows Server：Windows 漏洞 CVE-2026-13406",
     "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
    },
    {
-    "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
-    "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
+    "title": "Cisco 多個高風險漏洞",
+    "desc": "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete fi"
    },
    {
     "title": "Chrome 多個高風險漏洞",
@@ -20,20 +24,49 @@
    },
    {
     "title": "AI 平台驗證與預設金鑰漏洞",
-    "desc": "BISHENG 需知悉工作流程 UUID 即可利用，CVSS 最高達 10.0；目前尚未發現遭利用情事。"
+    "desc": "升級至 0.8.0 以上（依原文擷取）"
    },
    {
     "title": "SonicWall 參數注入漏洞",
     "desc": "低權限遠端攻擊者即可發動攻擊，CVSS 達 9.9；目前尚未發現遭利用情事。"
-   },
-   {
-    "title": "Cisco 等產品程式碼執行漏洞",
-    "desc": "需控制上游 API 分頁資料或具唯讀權限並存取 Leader API 方可觸發；目前尚未發現遭利用。"
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "CVE-2026-82169",
+   "kind": "cve",
+   "title": "VMware 漏洞 CVE-2026-82169",
+   "sub": "CVE-2026-82169 · CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [
+    "CVE-2026-82169"
+   ],
+   "cvss": 8.3,
+   "published": "2026-11-24T17:18:53+00:00",
+   "first_seen": "2026-11-24T21:18:07+00:00",
+   "updated": "2026-11-24T21:18:07+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82169",
+   "pts": [
+    "Dell Virtual Storage Integrator for VMware vSphere Web Client, versions prior to 10.12.0.0, contains an OS Command Injection – confirm singl"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "Dell Virtual Storage Integrator for VMware vSphere Web Client, versions prior to 10.12.0.0, contains an OS Command Injection – confirm single CWE vulnerability in Upgrade Service. A low privileged remote attacker could potentially exploit this vulnerability, leading to arbitrary command execution.",
+    "refs": [
+     "https://www.dell.com/support/kbdoc/en-us/000535705/dsa-2026-510-security-update-for-virtual-storage-integrator-for-vmware-vsphere-web-client-vulnerabilities"
+    ]
+   }
+  },
   {
    "id": "tw:8e036b49578d",
    "kind": "news",
@@ -502,7 +535,7 @@
    "cvss": 10.0,
    "published": "2026-11-24T04:17:22+00:00",
    "first_seen": "2026-11-24T11:01:51+00:00",
-   "updated": "2026-11-24T11:01:51+00:00",
+   "updated": "2026-11-24T21:18:07+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128791",
    "pts": [
@@ -514,6 +547,8 @@
    "ai_ver": 0,
    "raw": {
     "descs": [
+     "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication.",
+     "Any connected WiFi client can fetch device info and meeting recording metadata without credentials.",
      "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication.",
      "Any connected WiFi client can fetch device info and meeting recording metadata without credentials."
     ]
@@ -741,7 +776,7 @@
    "id": "grp:Chrome:2026-11-24",
    "kind": "group",
    "title": "Chrome 多個高風險漏洞",
-   "sub": "5 個 CVE · 最高 CVSS 9.6",
+   "sub": "10 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -750,19 +785,24 @@
    ],
    "cves": [
     "CVE-2026-134401",
+    "CVE-2026-95417",
+    "CVE-2026-95418",
+    "CVE-2026-95425",
     "CVE-2026-95433",
+    "CVE-2026-95439",
+    "CVE-2026-95442",
     "CVE-2026-95448",
     "CVE-2026-95449",
     "CVE-2026-95455"
    ],
-   "cvss": 9.6,
+   "cvss": 9.8,
    "published": "2026-11-23T17:17:58+00:00",
    "first_seen": "2026-11-24T00:57:42+00:00",
-   "updated": "2026-11-24T11:01:51+00:00",
+   "updated": "2026-11-24T21:18:07+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 9.6。",
+    "同日公布 10 個漏洞，最高 CVSS 9.8。",
     "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could le"
    ],
    "fix": "",
@@ -775,7 +815,13 @@
      "In NexustalkStream::PullFrameTask of nexustalk_stream.cc, there is a possible use after free due to a race condition. This could lead to remote code execution with no additional execution privileges needed. User interaction is needed for exploitation.",
      "In ServerSessionBroker of server_session_broker.cc, there is a possible use after free due to a race condition. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
      "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-     "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)"
+     "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "In ResolvePendingNotifyRequests of remote_characteristic.cc, there is a possible use after free due to a status callback that can destroy the object while its pending request queue is still being iterated. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+     "In LogicalLink::SignalError of logical_link.cc, there is a possible use after free due to the object being destroyed by a callback while it is still iterating over its channels. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+     "In StartDescriptorDiscovery of remote_service.cc, there is a possible use after free due to the service object being destroyed from within a synchronous callback while it is still iterating over its characteristics. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+     "In EnhancedRetransmissionModeRxEngine::ProcessPdu of enhanced_retransmission_mode_rx_engine.cc, there is a possible use after free due to a connection failure callback that synchronously destroys the channel and its engines while a received frame is still being processed. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+     "In NotifyCachedPeers of low_energy_scanner.cc, there is a possible use after free due to a scan result cache being cleared while it is being iterated. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+     "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could lead to remote code execution with no additional execution privileges needed. User interaction is needed for exploitation."
     ]
    }
   },
@@ -797,20 +843,21 @@
    "cvss": 10.0,
    "published": "2026-11-23T16:17:38+00:00",
    "first_seen": "2026-11-24T00:57:42+00:00",
-   "updated": "2026-11-24T00:57:42+00:00",
+   "updated": "2026-11-24T21:18:07+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130169",
    "pts": [
-    "AutoGPT Platform 0.6.26-0.7.4 含預設金鑰；**BISHENG 3.0.0 前版本可未授權執行管理員工作流程**。",
-    "BISHENG 需知悉工作流程 UUID 即可利用，CVSS 最高達 10.0；目前尚未發現遭利用情事。"
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.2"
    ],
-   "fix": "",
-   "ai": true,
+   "fix": "升級至 0.8.0 以上（依原文擷取）",
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.26 through 0.7.4, AutoGPT Platform ships a publicly known, hardcoded default JWT verification key in backend/.env.default and autogpt_platform/.env.default. Because HS256 is symmetric, anyone who knows the secret can forge valid JWTs for any user or for the admin role, bypassing authentication and authorization without user interaction. This issue is fixed in version 0.8.0.",
-     "BISHENG before 3.0.0 contains a missing authentication vulnerability in the /api/v2/workflow/invoke and /api/v2/workflow/stop routes that allows unauthenticated attackers to run workflows as the administrator. Attackers knowing a workflow UUID can supply an override replacing a Code node's code parameter with Python passed to exec(), achieving remote code execution, or stop other users' workflow sessions."
+     "BISHENG before 3.0.0 contains a missing authentication vulnerability in the /api/v2/workflow/invoke and /api/v2/workflow/stop routes that allows unauthenticated attackers to run workflows as the administrator. Attackers knowing a workflow UUID can supply an override replacing a Code node's code parameter with Python passed to exec(), achieving remote code execution, or stop other users' workflow sessions.",
+     "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.26 through 0.7.4, AutoGPT Platform ships a publicly known, hardcoded default JWT verification key in backend/.env.default and autogpt_platform/.env.default. Because HS256 is symmetric, anyone who knows the secret can forge valid JWTs for any user or for the admin role, bypassing authentication and authorization without user interaction. This issue is fixed in version 0.8.0."
     ]
    }
   },
@@ -1475,18 +1522,20 @@
    "cvss": 9.3,
    "published": "2026-11-23T09:17:04+00:00",
    "first_seen": "2026-11-23T12:49:18+00:00",
-   "updated": "2026-11-23T12:49:18+00:00",
+   "updated": "2026-11-24T21:18:07+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115873",
    "pts": [
-    "Cisco、Ivanti、SonicWall 等相關元件存在漏洞，**可以 Worker 或 Leader 服務帳號權限執行程式碼**。",
-    "需控制上游 API 分頁資料或具唯讀權限並存取 Leader API 方可觸發；目前尚未發現遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 9.3。",
+    "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must us"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
+     "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must use affected response-based pagination and process the crafted data during a job run. Successful exploitation executes code with the Worker service account's permissions.",
+     "A remote attacker must authenticate with Read Only (GroupRead) access to at least one Worker Group and reach the Leader API. A crafted expression can exploit the nested compiler to bypass expression restrictions and execute code with the Leader service account's permissions.",
      "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must use affected response-based pagination and process the crafted data during a job run. Successful exploitation executes code with the Worker service account's permissions.",
      "A remote attacker must authenticate with Read Only (GroupRead) access to at least one Worker Group and reach the Leader API. A crafted expression can exploit the nested compiler to bypass expression restrictions and execute code with the Leader service account's permissions."
     ]
@@ -2323,7 +2372,7 @@
    "cvss": 9.9,
    "published": "2026-11-19T20:17:32+00:00",
    "first_seen": "2026-11-19T21:37:42+00:00",
-   "updated": "2026-11-24T00:57:42+00:00",
+   "updated": "2026-11-24T21:18:07+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131199",
    "pts": [
@@ -2445,7 +2494,18 @@
      "In Splunk SOAR versions below 8.8.0, an operator of a configured identity provider could authenticate as an existing user associated with another configured identity provider. If that account has the \"Administrator\" Splunk SOAR role, the operator could control the Splunk SOAR deployment.\nSplunk SOAR does not bind external user accounts to the identity provider that provisions them and authenticates accounts by username without verifying provider ownership.\nThe vulnerability requires more than one configured external identity provider with distinct trust domains and a target username that an operator of a configured identity provider can authenticate through a different provider.\nFor more information see Configure single sign-on authentication (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.7.0/manage-your-splunk-soar-on-premises-users-and-accounts/configure-single-sign-on-authentication-for-splunk-soar-on-premises) and Manage roles and permissions (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.8.0/manage-your-splunk-soar-on-premises-users-and-accounts/manage-roles-and-permissions-in-splunk-soar-on-premises) in the Splunk documentation.",
      "In Splunk AI Assistant versions below 2.0.0 a user who does not hold the \"admin\" or \"power\" Splunk roles could access data associated with another tenant and cause actions to be attributed to that tenant through the Representational State Transfer (REST) API.\nThe vulnerability is possible because Splunk AI Assistant accepted a client-controlled tenant identifier when selecting the authorization context for a request.",
      "In Splunk AI Assistant versions below 2.0.0, a user who does not hold the \"admin\" or \"power\" Splunk roles could submit client-controlled feature settings through the Representational State Transfer (REST) API. This could modify limited response metadata outside the expected server-side configuration.\nThe vulnerability is possible because the REST API processes client-supplied feature settings without enforcing the expected server-side configuration boundary.",
-     "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.16, a user who does not hold the \"admin\" or \"power\" Splunk roles could cause scheduled metric alert searches to run arbitrary Search Processing Language (SPL) commands and access credentials stored in cleartext. This requires at least one non-internal metric index on the instance.\nThe vulnerability is possible because Splunk Enterprise does not fully validate metric alert filter input before using it in a scheduled search."
+     "In Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.16, a user who does not hold the \"admin\" or \"power\" Splunk roles could cause scheduled metric alert searches to run arbitrary Search Processing Language (SPL) commands and access credentials stored in cleartext. This requires at least one non-internal metric index on the instance.\nThe vulnerability is possible because Splunk Enterprise does not fully validate metric alert filter input before using it in a scheduled search.",
+     "In Splunk SOAR versions below 8.8.0, an authenticated user that holds a role with the Apps edit, Containers edit, and Playbooks execute permissions could use the App Wizard to execute arbitrary code as the user account that runs Splunk SOAR. This could compromise the confidentiality, integrity, and availability of the Splunk SOAR instance.\nThe vulnerability exists because the App Wizard does not validate user-supplied identifiers before incorporating them into generated connector code.",
+     "In Splunk Enterprise Security versions below 8.7.0, a user who holds the \"ess_admin\" Splunk Enterprise Security role could execute arbitrary code on the search head as the user account running Splunk Enterprise by combining lookup file upload and Configuration Checker functionality.\nThe vulnerability is possible because Splunk Enterprise Security does not restrict lookup upload file types or keep Configuration Checker module paths within the intended directory.\nFor more information see Users and roles for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/install/8.7/installation/users-and-roles-for-splunk-enterprise-security) and Create and manage lookups in Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.7/managing-security-content/create-and-manage-lookups-in-splunk-enterprise-security) in the Splunk documentation.",
+     "In Splunk Enterprise Security versions below 8.7.0, a user that holds a role with the mc_investigation_read capability could cause the Risk Event Timeline Representational State Transfer (REST) API to run arbitrary Search Processing Language (SPL) commands with elevated permissions. With this access, the user could expose stored credentials and modify indexes and lookup data available to those permissions.\nThe vulnerability is possible because the affected REST API does not validate request values before including them in search macro arguments.\nFor more information see Capability reference for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/install/8.7/installation/capability-reference-for-splunk-enterprise-security) and Risk analysis (https://help.splunk.com/en/splunk-enterprise-security-8/user-guide/8.7/analytics/risk-analysis) in the Splunk documentation.",
+     "In Splunk SOAR versions below 8.8.0, a user that holds a role with the Apps edit permission could execute arbitrary code as the user account that runs Splunk SOAR by installing a malicious app.\nThe vulnerability is possible because Splunk SOAR does not restrict app dependencies to validated binary packages before installing them.",
+     "In Splunk SOAR versions below 8.8.0, a user that holds a role with only the apps:edit permission could install a connector app that causes Splunk SOAR to write attacker-controlled files outside the app directory. This could let the user modify files used by Splunk SOAR and execute arbitrary code as the user account that runs Splunk SOAR.\nThe vulnerability is possible because Splunk SOAR constructs the dependency installation command from app-supplied metadata without preventing that metadata from changing its arguments.\nFor more information see Manage roles and permissions in Splunk SOAR (On-premises) (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.8.0/manage-your-splunk-soar-on-premises-users-and-accounts/manage-roles-and-permissions-in-splunk-soar-on-premises) and Add and configure apps and assets to provide actions in Splunk SOAR (On-premises) (https://help.splunk.com/en/splunk-soar/soar-on-premises/administer-soar-on-premises/8.6.0/manage-your-splunk-soar-on-premises-apps-and-assets/add-and-configure-apps-and-assets-to-provide-actions-in-splunk-soar-on-premises) in the Splunk documentation.",
+     "In Splunk Enterprise Security versions below 8.7.0, a user who holds the \"ess_analyst\" Splunk Enterprise Security role could modify a search macro associated with risk exclusions. Scheduled Risk data model acceleration searches could later run attacker-controlled Search Processing Language (SPL) commands from that macro with elevated permissions. With this access, the user who modified the search macro could expose stored credentials and modify indexes or lookup data available to those searches.\nThe vulnerability is possible because the Splunk Enterprise Security app metadata grants the \"ess_analyst\" role write access to the risk exclusion search macro.\nFor more information see Users and roles for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/install/8.7/installation/users-and-roles-for-splunk-enterprise-security), Finding exclusions in Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.3/user-and-entity-behavior-analytics/finding-exclusions-in-splunk-enterprise-security), and Use search macros in searches (https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/search-macros/use-search-macros-in-searches) in the Splunk documentation.",
+     "In Splunk Enterprise Security versions below 8.7.0, a user that holds a role with the ueba_ers_execution_post capability could cause the User and Entity Behavior Analytics (UEBA) Content App to run arbitrary Search Processing Language (SPL) commands with elevated permissions through an Entity Risk Score calculation. With this access, the user could expose stored credentials and other data outside the permissions assigned to that role.\nThe vulnerability is possible because the UEBA Content App does not validate Entity Risk Score calculation values before including them in SPL searches.\nFor more information see Installing the UEBA Content App for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/user-and-entity-behavior-analytics/installing-the-ueba-content-app-for-splunk-enterprise-security), Entity risk scoring in Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.4/risk-based-alerting/entity-risk-scoring-in-splunk-enterprise-security), and Roles and knowledge objects in UEBA for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.8/user-and-entity-behavior-analytics/ueba-content-app-for-on-premises/roles-and-knowledge-objects-in-ueba-for-splunk-enterprise-security) in the Splunk documentation.",
+     "In Splunk Enterprise Security versions below 8.7.0, a user that holds a role with the ueba_finding_exclusion_edit capability could store attacker-controlled values in a User and Entity Behavior Analytics (UEBA) finding exclusion rule. Splunk Enterprise Security could later run attacker-controlled Search Processing Language (SPL) commands from the rule with elevated permissions. With this access, the user could cause Splunk Enterprise Security to read stored credentials and modify lookups and knowledge objects.\nThe vulnerability is possible because the UEBA finding exclusion workflow does not escape user-controlled rule values before using them in generated SPL.\nFor more information see Create a finding exclusion rule using UEBA configuration page (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.7/user-and-entity-behavior-analytics/finding-exclusions-in-splunk-enterprise-security/create-a-finding-exclusion-rule-using-ueba-configuration-page) and Users and roles for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/install/8.7/installation/users-and-roles-for-splunk-enterprise-security) in the Splunk documentation.",
+     "In Splunk Enterprise Security versions below 8.7.0, a user that holds a role with the mc_investigation_read capability could inject arbitrary Search Processing Language (SPL) into Mission Control dashboard search requests. Mission Control could then run the injected SPL with elevated permissions. With this access, the user could cause Mission Control to read stored credentials and write data to indexes and lookups.\nThe vulnerability is possible because Mission Control does not validate reserved search filters before adding them to dashboard searches.\nFor more information see Overview of Mission Control in Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/user-guide/8.1/mission-control/overview-of-mission-control-in-splunk-enterprise-security) and Capability reference for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/install/8.2/installation/capability-reference-for-splunk-enterprise-security) in the Splunk documentation.",
+     "In Splunk Enterprise Security versions below 8.7.0, a user who holds the \"ess_analyst\" Splunk Enterprise Security role could create an attacker-controlled saved search. Threat intelligence lookup generation could later run the saved search with elevated permissions, which could let the user who created the saved search run arbitrary Search Processing Language (SPL) commands with those permissions.\nThe vulnerability is possible because Splunk Enterprise Security does not restrict threat intelligence lookup generation to the intended saved searches.\nFor more information see Users and roles for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/install/8.7/installation/users-and-roles-for-splunk-enterprise-security) and Turn on threat matching searches in Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.0/threat-intelligence/turn-on-threat-matching-searches-in-splunk-enterprise-security) in the Splunk documentation.",
+     "In Splunk Enterprise Security versions below 8.7.0, a user that holds a role with the ueba_finding_exclusion_edit capability could create a finding exclusion rule that references an attacker-controlled lookup definition if the role also grants write access to globally shared lookup definitions, as the \"ess_analyst\" Splunk Enterprise Security role does. The User and Entity Behavior Analytics (UEBA) Content App could later include the lookup name in a search and run arbitrary Search Processing Language (SPL) commands with elevated permissions. With this access, the user who created the finding exclusion rule could expose stored credentials and other data outside the permissions assigned to the \"ess_analyst\" role.\nThe vulnerability is possible because UEBA finding exclusion processing does not safely quote lookup names before including them in SPL searches.\nFor more information see Finding exclusions in Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.3/user-and-entity-behavior-analytics/finding-exclusions-in-splunk-enterprise-security) and Roles and knowledge objects in UEBA for Splunk Enterprise Security (https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.8/user-and-entity-behavior-analytics/ueba-content-app-for-on-premises/roles-and-knowledge-objects-in-ueba-for-splunk-enterprise-security) in the Splunk documentation."
     ]
    }
   },
@@ -3456,7 +3516,7 @@
    "cvss": 9.2,
    "published": "2026-11-18T16:17:59+00:00",
    "first_seen": "2026-11-18T22:03:25+00:00",
-   "updated": "2026-11-20T21:11:39+00:00",
+   "updated": "2026-11-24T21:18:07+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113425",
    "pts": [
@@ -3503,7 +3563,8 @@
      "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
      "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
-     "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+     "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+     "In Eclipse Ditto versions 1.1.0 to 3.9.8, when pre-authentication is enabled, the gateway service accepts the pre-authenticated subject not only from the `x-ditto-pre-authenticated` HTTP header set by a trusted reverse proxy, but also from an undocumented `x-ditto-pre-authenticated` URL query parameter that a client can set. A reverse proxy that only overwrites the header therefore does not stop clients from supplying their own subject. With the default configuration of the Ditto Helm chart (`global.jwtOnly: false`, which implicitly enables pre-authentication), the bundled nginx skips HTTP Basic authentication for any request with an `Authorization: Bearer` header and forwards it without the pre-authentication header. An unauthenticated remote attacker can send an invalid Bearer token together with the query parameter to authenticate as any chosen policy subject. Pre-authentication succeeds before the JWT is validated, so the attacker can read and modify Things and Policies with that subject's permissions. As a mitigation, disable pre-authentication in the gateway (`ENABLE_PRE_AUTHENTICATION=false`) or, when using the Helm chart, configure `global.jwtOnly: true`."
     ]
    }
   },
@@ -9053,15 +9114,15 @@
    "cvss": 9.8,
    "published": "2026-11-11T22:17:11+00:00",
    "first_seen": "2026-11-16T11:22:42+00:00",
-   "updated": "2026-11-17T22:58:36+00:00",
+   "updated": "2026-11-24T21:18:07+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
-    "影響 FortiOS、FortiMail、FortiManager 與 FortiAnalyzer 多版本，**未經認證即可執行程式碼或接管帳號**。",
-    "目前未遭利用或用於勒索軟體；多數漏洞無須認證即可遠端觸發，部分需於鄰近網路具權限或特定 HA 架構。"
+    "同日公布 24 個漏洞，最高 CVSS 9.8。",
+    "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -9100,7 +9161,8 @@
      "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11 may allow an adjacent-network authenticated attacker with user permission to join the FGFM configuration-sync mesh of the affected FortiGate deployment via the default pre-shared key.",
      "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 through 7.4.6, FortiMail 7.2 all versions, FortiRecorder 7.6.0 through 7.6.2, FortiRecorder 7.2.0 through 7.2.12, FortiRecorder 7.0.0 through 7.0.6 may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
      "A authentication bypass by spoofing vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiAnalyzer-BigData 7.6.0 through 7.6.2, FortiAnalyzer-BigData 7.4.0 through 7.4.6, FortiAnalyzer-BigData 7.2.0 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an attacker to disrupt the HA state.",
-     "A authentication bypass by spoofing vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiAnalyzer-BigData 7.6.0 through 7.6.2, FortiAnalyzer-BigData 7.4.0 through 7.4.6, FortiAnalyzer-BigData 7.2.0 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an attacker to disrupt the HA state."
+     "A authentication bypass by spoofing vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiAnalyzer-BigData 7.6.0 through 7.6.2, FortiAnalyzer-BigData 7.4.0 through 7.4.6, FortiAnalyzer-BigData 7.2.0 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an attacker to disrupt the HA state.",
+     "A improper neutralization of special elements used in a template engine vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11 may allow a low privileged Device Manager admin to obtain super admin privilege on managed FortiGates via injecting malicious commands."
     ]
    }
   },
@@ -20146,10 +20208,95 @@
    "AI 平台"
   ],
   "CVE-2026-135694": [],
-  "CVE-2026-120949": []
+  "CVE-2026-120949": [],
+  "CVE-2026-59415": [],
+  "CVE-2026-129514": [],
+  "CVE-2026-86155": [],
+  "CVE-2026-123342": [],
+  "CVE-2026-123722": [],
+  "CVE-2026-123723": [],
+  "CVE-2026-123986": [],
+  "CVE-2026-123987": [],
+  "CVE-2026-125675": [],
+  "CVE-2026-125676": [],
+  "CVE-2026-123266": [],
+  "CVE-2026-132877": [],
+  "CVE-2026-119582": [],
+  "CVE-2026-65135": [],
+  "CVE-2026-65175": [],
+  "CVE-2026-134019": [],
+  "CVE-2026-136434": [],
+  "CVE-2026-136441": [],
+  "CVE-2026-128974": [],
+  "CVE-2026-95417": [
+   "Chrome"
+  ],
+  "CVE-2026-95418": [
+   "Chrome"
+  ],
+  "CVE-2026-95420": [],
+  "CVE-2026-95421": [],
+  "CVE-2026-95425": [
+   "Chrome"
+  ],
+  "CVE-2026-95427": [],
+  "CVE-2026-95439": [
+   "Chrome"
+  ],
+  "CVE-2026-95442": [
+   "Chrome"
+  ],
+  "CVE-2026-135501": [],
+  "CVE-2026-135506": [],
+  "CVE-2026-135508": [],
+  "CVE-2026-135509": [],
+  "CVE-2026-135510": [],
+  "CVE-2026-135513": [],
+  "CVE-2026-135519": [],
+  "CVE-2026-135520": [],
+  "CVE-2026-135521": [],
+  "CVE-2026-135525": [],
+  "CVE-2026-135529": [],
+  "CVE-2026-135530": [],
+  "CVE-2026-135547": [],
+  "CVE-2026-135571": [],
+  "CVE-2026-135578": [],
+  "CVE-2026-135582": [],
+  "CVE-2026-135596": [],
+  "CVE-2026-135597": [],
+  "CVE-2026-123721": [],
+  "CVE-2026-125717": [],
+  "CVE-2026-136410": [],
+  "CVE-2026-136184": [],
+  "CVE-2026-129393": [],
+  "CVE-2026-125716": [],
+  "CVE-2026-135792": [],
+  "CVE-2026-135797": [],
+  "CVE-2026-136404": [],
+  "CVE-2026-136411": [],
+  "CVE-2026-123215": [],
+  "CVE-2026-136126": [],
+  "CVE-2026-130411": [],
+  "CVE-2026-136132": [],
+  "CVE-2026-65320": [],
+  "CVE-2026-123214": [],
+  "CVE-2026-126045": [],
+  "CVE-2026-127297": [],
+  "CVE-2026-136412": [],
+  "CVE-2026-133310": [],
+  "CVE-2026-117593": [],
+  "CVE-2026-124286": [],
+  "CVE-2026-136165": [],
+  "CVE-2026-123167": [],
+  "CVE-2026-123168": [],
+  "CVE-2026-123172": [],
+  "CVE-2026-135388": [],
+  "CVE-2026-135389": [],
+  "CVE-2026-82315": [],
+  "CVE-2026-82316": []
  },
- "nvd_last": "2026-11-24T10:56:14+00:00",
- "kev_last": "2026-11-24T10:56:14+00:00",
+ "nvd_last": "2026-11-24T21:12:28+00:00",
+ "kev_last": "2026-11-24T21:12:28+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
