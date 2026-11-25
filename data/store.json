@@ -4,7 +4,7 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "items": [
    {
     "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
@@ -15,8 +15,8 @@
     "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
    },
    {
-    "title": "AI 平台：AutoGPT 憑證阻斷漏洞",
-    "desc": "尚未遭利用；攻擊者需具備帳號、網路存取權或誘使執行共享代理程式，涵蓋 4 個 CVE（CVSS 9.1）。"
+    "title": "AI 平台：AutoGPT 多項安全漏洞",
+    "desc": "CVSS 9.1，目前尚未遭利用；攻擊者可透過網路存取 API、帳號或誘使執行共用代理觸發。"
    },
    {
     "title": "Cisco 無驗證刪檔漏洞",
@@ -24,16 +24,88 @@
    },
    {
     "title": "Chrome 遠端執行漏洞",
-    "desc": "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use"
+    "desc": "CVSS 9.8，目前尚未遭利用；部分漏洞無須使用者互動與額外權限即可觸發，其餘需透過惡意網頁或互動。"
    },
    {
-    "title": "AI 平台金鑰與驗證漏洞",
-    "desc": "尚未遭利用；攻擊者無需驗證、僅需取得工作流程 UUID 即可置換程式碼參數執行（CVSS 10.0）。"
+    "title": "AI 平台驗證繞過等漏洞",
+    "desc": "CVSS 10.0，目前尚未遭利用；漏洞源自內建公開預設 JWT 金鑰及 API 缺乏身分驗證。"
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "CVE-2026-137056",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-137056",
+   "sub": "CVE-2026-137056 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-137056"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-25T20:18:39+00:00",
+   "first_seen": "2026-11-25T23:43:32+00:00",
+   "updated": "2026-11-25T23:43:32+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137056",
+   "pts": [
+    "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval becau"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval because the shellsafe classifier treats git blame and git whatchanged as read-only. Attackers can plant a diff textconv driver in .gitattributes and .git/config so that git blame, triggered via prompt injection or routine use, executes attacker-chosen commands with the user's privileges, exposing stored provider API keys and session history.",
+    "refs": [
+     "https://github.com/esengine/DeepSeek-Reasonix/blob/v1.39.11/internal/shellsafe/effect.go#L279-L300",
+     "https://github.com/esengine/DeepSeek-Reasonix/commit/191d1e17a15021818f0c70fe47b7b0011f0958ff",
+     "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.53.0",
+     "https://github.com/esengine/DeepSeek-Reasonix/security/advisories/GHSA-m46m-j2rc-6ff4",
+     "https://www.vulncheck.com/advisories/deepseek-reasonix-before-2.53.0-command-execution-via-auto-approved-git-blame"
+    ]
+   }
+  },
+  {
+   "id": "grp:SQL Server:2026-11-26",
+   "kind": "group",
+   "title": "SQL Server 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 7.5",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SQL Server"
+   ],
+   "cves": [
+    "CVE-2026-136503",
+    "CVE-2026-62154"
+   ],
+   "cvss": 7.5,
+   "published": "2026-11-25T17:17:57+00:00",
+   "first_seen": "2026-11-25T23:43:32+00:00",
+   "updated": "2026-11-25T23:43:32+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136503",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 7.5。",
+    "During IMPORT FOREIGN SCHEMA, mysql_fdw copies column metadata returned by the remote MySQL server into the CREATE FOREIGN TABLE statements "
+   ],
+   "fix": "原文：The issue is fixed in mysql_fdw 2.10.0.",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "During IMPORT FOREIGN SCHEMA, mysql_fdw copies column metadata returned by the remote MySQL server into the CREATE FOREIGN TABLE statements it runs locally without quoting it. The COLUMN_DEFAULT value is placed directly in the DEFAULT clause, and the name of the generated ENUM type is inserted unquoted. A malicious or compromised MySQL server, or an attacker who can tamper with the connection, can return crafted information_schema metadata and run arbitrary SQL in the local PostgreSQL session of the user who runs IMPORT FOREIGN SCHEMA. The issue is fixed in mysql_fdw 2.10.0. From mysql_fdw 2.10.0, mysql_fdw quotes these values before building the statements.",
+     "psqlODBC frees memory that is still in use, frees it twice, or writes outside an application buffer in these cases:\n\n- The clean-up the driver runs at commit and rollback sends queries of its own, and the reply to one of them can start the clean-up again while it is running. The nested run frees the rollback log, or the list of cursors and prepared statements to close, and the outer run uses and frees it again.\n- The callback through which libpq delivers notices could run that clean-up, and close the connection, while libpq was still using the connection.\n- Freeing a statement whose result holds several cursors (FetchRefcursors=1, or UseDeclareFetch=1) used the freed first result while the later cursors were closed.\n- With UseDeclareFetch=1, after a rollback closed an updatable cursor, rows added or deleted through it were counted but not stored, so freeing the statement freed uninitialised pointers, and adding a row wrote past the keyset.\n- After a multi-row fetch failed on a row other than the first of its rowset, SQLGetData() wrote at an offset past the buffer the application passed.\n- SQLProcedureColumns() freed the result of its catalog query twice when the query failed.\n- In a process named sqlservr (SQL Server linked servers), a server version below 8.4 made the statement parser free a buffer twice.\n- A failed SQLPutData in the middle of a SQLSetPos() or SQLBulkOperations() data-at-execution sequence left the whole operation pending, with the internal statement still allocated and autocommit silently off, so later statements were rolled back at disconnect. The next positioned update ran the stale callback against a statement that was never executed and dereferenced NULL.\n\nMost of these can be triggered by a hostile or compromised server, or anyone on the network path of a connection that does not use sslmode=verify-full (the default is disable). A database user who can make a statement fail, or who controls the contents of a row the application reads, can trigger the UseDeclareFetch=1 and SQLGetData() cases against an honest server. The demonstrated results are crashes and heap corruption; code execution has not been demonstrated.\n\nVersions up to and including psqlODBC 18.00.0006 are affected."
+    ]
+   }
+  },
   {
    "id": "tw:16f42620c16f",
    "kind": "news",
@@ -383,7 +455,7 @@
    "cvss": 8.4,
    "published": "2026-11-25T13:17:23+00:00",
    "first_seen": "2026-11-25T14:32:27+00:00",
-   "updated": "2026-11-25T14:32:27+00:00",
+   "updated": "2026-11-25T23:43:32+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7430",
    "pts": [
@@ -395,6 +467,8 @@
    "ai_ver": 0,
    "raw": {
     "descs": [
+     "Application Performance Management 9.60 patch versions before IP4 are affected. This issue seems to be present throughout the application, as several endpoints or functionalities that are restricted to Admin users can be directly accessed by Regular users. The authorization method of the application can be bypassed allowing users to perform unauthorized actions to their role. The application supports different levels of access. The application performs authorization checks to keep users from accessing functionality outside of their role such as create, verify, and/or repair. \n\n\n\n\nThis authorization method can be bypassed. During VA testing, it was found that under the User Reports inside the Applications menu, it is possible to  create links and different reports. However, the creation of custom links, Excel reports, and service reports are restricted to admin users. Hence, it is possible for regular users with the least privileges to directly access these \n\npages and the application allows them to further use these restricted functionalities.",
+     "In Application Performance Management versions before 9.60 IP4, The application is vulnerable to cross-site scripting wherein the application does not properly validate the input parameters, allowing scripts to be injected and then executed in the context of a user’s browser. This can lead to the attacker stealing sensitive information, impersonating users, or performing actions on their behalf.  Also, the application may also be vulnerable to the below attacks:\n\n• Link Injection – This occurs when an attacker inserts a malicious link into a webpage, often in a way that makes it appear legitimate. When user clicks on the link, they may be directed to a harmful website or prompted to download malicious files.\n\n\n\n• Frame Injection – This attack involved embedding a webpage within an invisible frame on another site, User interacts with what appears to be a legitimate site, but their actions are performed on the malicious page, potentially leading to unintended actions or data theft.",
      "Application Performance Management 9.60 patch versions before IP4 are affected. This issue seems to be present throughout the application, as several endpoints or functionalities that are restricted to Admin users can be directly accessed by Regular users. The authorization method of the application can be bypassed allowing users to perform unauthorized actions to their role. The application supports different levels of access. The application performs authorization checks to keep users from accessing functionality outside of their role such as create, verify, and/or repair. \n\n\n\n\nThis authorization method can be bypassed. During VA testing, it was found that under the User Reports inside the Applications menu, it is possible to  create links and different reports. However, the creation of custom links, Excel reports, and service reports are restricted to admin users. Hence, it is possible for regular users with the least privileges to directly access these \n\npages and the application allows them to further use these restricted functionalities.",
      "In Application Performance Management versions before 9.60 IP4, The application is vulnerable to cross-site scripting wherein the application does not properly validate the input parameters, allowing scripts to be injected and then executed in the context of a user’s browser. This can lead to the attacker stealing sensitive information, impersonating users, or performing actions on their behalf.  Also, the application may also be vulnerable to the below attacks:\n\n• Link Injection – This occurs when an attacker inserts a malicious link into a webpage, often in a way that makes it appear legitimate. When user clicks on the link, they may be directed to a harmful website or prompted to download malicious files.\n\n\n\n• Frame Injection – This attack involved embedding a webpage within an invisible frame on another site, User interacts with what appears to be a legitimate site, but their actions are performed on the malicious page, potentially leading to unintended actions or data theft."
     ]
@@ -643,7 +717,7 @@
   {
    "id": "grp:AI 平台:2026-11-25",
    "kind": "group",
-   "title": "AutoGPT 憑證阻斷漏洞",
+   "title": "AutoGPT 多項安全漏洞",
    "sub": "4 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -660,12 +734,12 @@
    "cvss": 9.1,
    "published": "2026-11-24T21:18:17+00:00",
    "first_seen": "2026-11-25T04:18:54+00:00",
-   "updated": "2026-11-25T04:18:54+00:00",
+   "updated": "2026-11-25T23:43:32+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132264",
    "pts": [
-    "影響 AutoGPT 0.6.49 至 0.11.0 前版本，可導致**憑證濫用、接管工作流程或耗盡記憶體**。",
-    "尚未遭利用；攻擊者需具備帳號、網路存取權或誘使執行共享代理程式，涵蓋 4 個 CVE（CVSS 9.1）。"
+    "影響 AutoGPT 0.11.0 前多個版本，可能導致**工作流程遭接管、MCP 憑證外洩及記憶體耗盡**。",
+    "CVSS 9.1，目前尚未遭利用；攻擊者可透過網路存取 API、帳號或誘使執行共用代理觸發。"
    ],
    "fix": "",
    "ai": true,
@@ -675,7 +749,10 @@
      "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.7.1 through 0.10.0, a user can add a version under another user's workflow ID and take over its Marketplace listing. An attacker with an account and the target's workflow ID can replace the creator's pending Marketplace submission with their own, so that approval installs the attacker's workflow under the creator's listing. Without reviewer involvement, the attacker can also stop the owner from saving new versions and break runs that name no version. This issue is fixed in version 0.11.0.",
      "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Prior to 0.11.0, public webhook endpoints woould buffer request bodies in full before verifying them. Anyone with network access to the API ccould exhaust the memory of platform API workers without an account or a valid signature. The chat-bot webhook routes were reachable only where that chat platform was configured. This issue is fixed in version 0.11.0.",
      "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.6.49 before 0.11.0, the MCPToolBlock auto-lookup allows a shared agent's author to use the MCP credentials of the user who runs it. Anyone who ran a shared agent containing an MCPToolBlock node, and had already connected the MCP server URL that the node names, had that connection used for any read, write, or delete the server exposes, with the result sent to a host chosen by the author. This issue is fixed in version 0.11.0.",
-     "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.63 through 0.10.0, an external API key or OAuth token that has only the EXECUTE_BLOCK permission can run AutoPilotBlock through the external API and receive a full, unattended AutoPilot turn. This lets the holder use the account owner's stored third-party credentials, library agents, and workspace files, and run AutoPilot's sandboxed shell, which the same key is refused when it requests those directly. This issue is fixed in version 0.11.0."
+     "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.63 through 0.10.0, an external API key or OAuth token that has only the EXECUTE_BLOCK permission can run AutoPilotBlock through the external API and receive a full, unattended AutoPilot turn. This lets the holder use the account owner's stored third-party credentials, library agents, and workspace files, and run AutoPilot's sandboxed shell, which the same key is refused when it requests those directly. This issue is fixed in version 0.11.0.",
+     "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.7.1 through 0.10.0, a user can add a version under another user's workflow ID and take over its Marketplace listing. An attacker with an account and the target's workflow ID can replace the creator's pending Marketplace submission with their own, so that approval installs the attacker's workflow under the creator's listing. Without reviewer involvement, the attacker can also stop the owner from saving new versions and break runs that name no version. This issue is fixed in version 0.11.0.",
+     "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Prior to 0.11.0, public webhook endpoints woould buffer request bodies in full before verifying them. Anyone with network access to the API ccould exhaust the memory of platform API workers without an account or a valid signature. The chat-bot webhook routes were reachable only where that chat platform was configured. This issue is fixed in version 0.11.0.",
+     "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.6.49 before 0.11.0, the MCPToolBlock auto-lookup allows a shared agent's author to use the MCP credentials of the user who runs it. Anyone who ran a shared agent containing an MCPToolBlock node, and had already connected the MCP server URL that the node names, had that connection used for any read, write, or delete the server exposes, with the result sent to a host chosen by the author. This issue is fixed in version 0.11.0."
     ]
    }
   },
@@ -1163,6 +1240,41 @@
    }
   },
   {
+   "id": "CVE-2026-135802",
+   "kind": "cve",
+   "title": "nginx 漏洞 CVE-2026-135802",
+   "sub": "CVE-2026-135802 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-135802"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-24T09:17:08+00:00",
+   "first_seen": "2026-11-25T23:43:32+00:00",
+   "updated": "2026-11-25T23:43:32+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135802",
+   "pts": [
+    "When Request::getBaseUrl() does not find the script name at the start of the request URI, it looks for it further into the path. This suppor"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "When Request::getBaseUrl() does not find the script name at the start of the request URI, it looks for it further into the path. This supports web servers that rewrite every URL to a front controller in a subdirectory. The base URL then kept everything before the script name, and the client chooses that part. A request URI starting with // or /\\ made the base URL start with a host.\n\nWith SCRIPT_NAME=/public/index.php, a request for //evil.example/public/index.php/login is routed to /login, with the base URL //evil.example/public/index.php and the base path //evil.example/public. The URLs generated for that page then point to evil.example:\n- links built with path() and the actions of forms, so a login form sends the credentials of the user to evil.example;\n- redirects to generated URLs, such as the ones of redirectToRoute();\n- assets referenced with a relative path through asset(), so the page can load scripts from evil.example.\n\nThe attacker has to make a user follow a crafted link, such as https://app.example//evil.example/public/index.php/login. framework.trusted_hosts does not help, since the host of the request is the real one.\n\nApplications are affected when their front controller is in a subdirectory and the web server sends it URIs that do not start with that directory. A .htaccess file at the root of the project that rewrites every URL to public/ does that, for instance.\n\nApplications are also affected when the web server sets SCRIPT_NAME to the path of the request. Some nginx configurations do that when they send every request to the front controller without fastcgi_split_path_info. php -S does it too, with a router script outside the document root. A request for /\\evil.example/index.php then gets the base URL /\\evil.example/index.php, which browsers read as a link to evil.example.\n\nThe configurations recommended in the Symfony documentation are not affected.\n\nRequest::getBaseUrl() now returns an empty base URL when the request URI starts with // or /\\.",
+    "refs": [
+     "https://github.com/symfony/symfony/commit/7f1e183847530b7bc1bfbdae63e3f0e20051594b",
+     "https://github.com/symfony/symfony/security/advisories/GHSA-5mx8-mwrp-5693",
+     "https://symfony.com/cve-2026-135802"
+    ]
+   }
+  },
+  {
    "id": "grp:Cisco:2026-11-24",
    "kind": "group",
    "title": "Cisco 無驗證刪檔漏洞",
@@ -1421,7 +1533,7 @@
    "id": "grp:Chrome:2026-11-24",
    "kind": "group",
    "title": "Chrome 遠端執行漏洞",
-   "sub": "12 個 CVE · 最高 CVSS 9.8",
+   "sub": "15 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1440,20 +1552,23 @@
     "CVE-2026-95445",
     "CVE-2026-95448",
     "CVE-2026-95449",
-    "CVE-2026-95455"
+    "CVE-2026-95450",
+    "CVE-2026-95451",
+    "CVE-2026-95455",
+    "CVE-2026-95460"
    ],
    "cvss": 9.8,
    "published": "2026-11-23T17:17:58+00:00",
    "first_seen": "2026-11-24T00:57:42+00:00",
-   "updated": "2026-11-25T14:32:27+00:00",
+   "updated": "2026-11-25T23:43:32+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
    "pts": [
-    "同日公布 12 個漏洞，最高 CVSS 9.8。",
-    "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could le"
+    "影響 Google Chrome 158.0.8127.88 前版本及多項元件，**可讓遠端攻擊者執行任意程式碼**。",
+    "CVSS 9.8，目前尚未遭利用；部分漏洞無須使用者互動與額外權限即可觸發，其餘需透過惡意網頁或互動。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -1473,15 +1588,20 @@
      "In HandleEndTransaction of bearer.cc, there is a possible use after free due to a missing check that the object still exists after a security upgrade callback completes synchronously. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
      "In ProcessWriteQueue of client.cc, there is a possible use after free due to a callback that continues to use its object after the object is destroyed during connection shutdown. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
      "In ServerSessionBroker of server_session_broker.cc, there is a possible use after free due to a race condition. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
-     "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)"
+     "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "In MediaFocusFidlImpl of media_focus_fidl_impl.cc, there is a possible use after free due to a race condition. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+     "In HandleRxPdu of channel.cc, there is a possible use after free due to the channel being destroyed while it is still processing a received frame. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+     "In LogicalLink::SignalError of logical_link.cc, there is a possible use after free due to an error callback that can synchronously destroy the link while its channels are still being iterated. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+     "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+     "In Phase2SecureConnections::OnPeerPublicKey of phase_2_secure_connections.cc, there is a possible way to learn the passkey used during pairing due to an incomplete check for a reflected public key. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation."
     ]
    }
   },
   {
    "id": "grp:AI 平台:2026-11-24",
    "kind": "group",
-   "title": "AI 平台金鑰與驗證漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 10.0",
+   "title": "AI 平台驗證繞過等漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1490,17 +1610,18 @@
    ],
    "cves": [
     "CVE-2026-130169",
-    "CVE-2026-135211"
+    "CVE-2026-135211",
+    "CVE-2026-96296"
    ],
    "cvss": 10.0,
    "published": "2026-11-23T16:17:38+00:00",
    "first_seen": "2026-11-24T00:57:42+00:00",
-   "updated": "2026-11-24T21:18:07+00:00",
+   "updated": "2026-11-25T23:43:32+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130169",
    "pts": [
-    "影響 AutoGPT 0.6.26 至 0.7.4 與 BISHENG 3.0.0 前版本，含預設 JWT 金鑰或**可未經授權以管理員執行工作流程**。",
-    "尚未遭利用；攻擊者無需驗證、僅需取得工作流程 UUID 即可置換程式碼參數執行（CVSS 10.0）。"
+    "影響 AutoGPT、BISHENG 3.0.0 前及 Apache Texera，**未驗證者可以管理員身分執行工作流程**或刪除結果。",
+    "CVSS 10.0，目前尚未遭利用；漏洞源自內建公開預設 JWT 金鑰及 API 缺乏身分驗證。"
    ],
    "fix": "",
    "ai": true,
@@ -1509,7 +1630,8 @@
     "descs": [
      "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.26 through 0.7.4, AutoGPT Platform ships a publicly known, hardcoded default JWT verification key in backend/.env.default and autogpt_platform/.env.default. Because HS256 is symmetric, anyone who knows the secret can forge valid JWTs for any user or for the admin role, bypassing authentication and authorization without user interaction. This issue is fixed in version 0.8.0.",
      "BISHENG before 3.0.0 contains a missing authentication vulnerability in the /api/v2/workflow/invoke and /api/v2/workflow/stop routes that allows unauthenticated attackers to run workflows as the administrator. Attackers knowing a workflow UUID can supply an override replacing a Code node's code parameter with Python passed to exec(), achieving remote code execution, or stop other users' workflow sessions.",
-     "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.26 through 0.7.4, AutoGPT Platform ships a publicly known, hardcoded default JWT verification key in backend/.env.default and autogpt_platform/.env.default. Because HS256 is symmetric, anyone who knows the secret can forge valid JWTs for any user or for the admin role, bypassing authentication and authorization without user interaction. This issue is fixed in version 0.8.0."
+     "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.26 through 0.7.4, AutoGPT Platform ships a publicly known, hardcoded default JWT verification key in backend/.env.default and autogpt_platform/.env.default. Because HS256 is symmetric, anyone who knows the secret can forge valid JWTs for any user or for the admin role, bypassing authentication and authorization without user interaction. This issue is fixed in version 0.8.0.",
+     "An API which can allow a user to delete any workflow execution results is missing authentication. This means that any workflow result could be deleted by someone able to reach the Texera instance.\n\n\n\nThis issue affects Apache Texera: from 1.1.0-incubating before 1.3.0-incubating.\n\n\n\nUsers are recommended to upgrade to version 1.3.0-incubating, which fixes the issue."
     ]
    }
   },
@@ -3029,11 +3151,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131199",
    "pts": [
-    "同日公布 31 個漏洞，最高 CVSS 9.9。",
-    "In Splunk SOAR versions below 8.8.0, an authenticated user that holds a role with the Apps edit, Containers edit, and Playbooks execute perm"
+    "影響 Cisco 旗下 Splunk Enterprise、SOAR 及 Enterprise Security 多個版本，**可導致任意程式碼執行**。",
+    "CVSS 9.9，目前尚未遭利用；部分漏洞無須驗證即可讀寫叢集設定或執行 SPL 查詢，部分需特定角色權限。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -3165,7 +3287,7 @@
   {
    "id": "grp:Apache:2026-11-20",
    "kind": "group",
-   "title": "Apache 多個高風險漏洞",
+   "title": "Apache 驗證與加密漏洞",
    "sub": "5 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -3188,12 +3310,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116561",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 9.8。",
-    "@fastify/reply-from is a Fastify plugin that forwards requests to an upstream HTTP server. In versions before 12.8.4, its buildURL function "
+    "影響 Apache Tomcat 及 @fastify/reply-from，**可讓未驗證節點加入叢集**、繞過路徑檢查或明文傳輸資訊。",
+    "CVSS 9.8，目前尚未遭利用；Tomcat 叢集於啟用 TLS 1.3 與 TLS-PSK 時受影響，另有例外處理與重新導向異常。"
    ],
-   "fix": "升級至 12.8.4 以上（依原文擷取）",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "Apache Tomcat 叢集漏洞部分，建議改用 TLS 1.2。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "@fastify/reply-from is a Fastify plugin that forwards requests to an upstream HTTP server. In versions before 12.8.4, its buildURL function rejects parent-directory path segments by an exact string match, so a segment that carries a semicolon path parameter, such as a dot-dot segment followed by a semicolon and an optional parameter, is not equal to the plain dot-dot form and passes the traversal check, and the WHATWG URL parser keeps it as an ordinary segment so the base-prefix containment check also passes. Backends that strip semicolon path parameters before resolving dot-segments, such as Apache Tomcat, Jetty, WildFly, and Spring Boot, turn the segment back into a parent-directory reference and resolve it, so an unauthenticated client can escape the intended upstream prefix and reach internal paths such as admin or internal API endpoints, including with state-changing methods. Deployments that proxy to Node.js, nginx, or Express upstreams are not affected. The issue is fixed in @fastify/reply-from 12.8.4, and users should upgrade to 12.8.4 or later.",
@@ -3243,7 +3365,7 @@
   {
    "id": "grp:Linux:2026-11-19",
    "kind": "group",
-   "title": "Linux 核心 多個高風險漏洞",
+   "title": "Linux 核心多項漏洞",
    "sub": "20 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -3281,12 +3403,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99322",
    "pts": [
-    "同日公布 20 個漏洞，最高 CVSS 9.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Do not credit control-record octets to the RPC stream svc_tcp_so"
+    "影響 Linux 核心 SUNRPC、NFSD、SMB、ksmbd 及 VMBus 等元件，**存在緩衝區溢位與釋放後使用等漏洞**。",
+    "CVSS 9.8，目前尚未遭利用；涉及遠端檔案共享、重送處理及虛擬機共用環形緩衝區邊界檢查問題。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "In the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: Do not credit control-record octets to the RPC stream\n\nsvc_tcp_sock_recv_cmsg() receives up to two octets into a local\nbuffer, and returns that count for any record type other than\nTLS_RECORD_TYPE_ALERT. Nothing reached the caller's buffer, but\nsvc_tcp_read_marker() adds the count to sk_tcplen and\nsvc_tcp_read_msg()'s caller adds it to sk_datalen. The RPC stream\nadvances over octets it never received. The fragment marker is\nassembled from stale sk_marker octets. The message body comes from\npages nothing wrote.\n\nA conforming client reaches this. RFC 8446 Section 4.6.3 lets either\npeer send KeyUpdate once it has sent its Finished, and svcsock has no\nrekey path. kTLS leaves the partially consumed record on ctx->rx_list,\nso the body drains two octets per svc_tcp_recvfrom() call. Each pair\nis credited the same way.\n\nReturn -EAGAIN for a record that is not an alert. That is what\nsvc_tcp_sock_process_cmsg()'s default arm returned before the receive\nmoved into a local buffer.",
@@ -21118,10 +21240,95 @@
   "CVE-2026-133333": [],
   "CVE-2026-133334": [],
   "CVE-2026-95533": [],
-  "CVE-2026-87753": []
+  "CVE-2026-87753": [],
+  "CVE-2026-136835": [],
+  "CVE-2026-135400": [],
+  "CVE-2026-133467": [],
+  "CVE-2026-133971": [],
+  "CVE-2026-133972": [],
+  "CVE-2026-133973": [],
+  "CVE-2026-103406": [],
+  "CVE-2026-128719": [],
+  "CVE-2026-128661": [],
+  "CVE-2026-133303": [],
+  "CVE-2026-95450": [
+   "Chrome"
+  ],
+  "CVE-2026-95451": [
+   "Chrome"
+  ],
+  "CVE-2026-134880": [],
+  "CVE-2026-112788": [],
+  "CVE-2026-114346": [],
+  "CVE-2026-82489": [],
+  "CVE-2026-135224": [],
+  "CVE-2026-137090": [],
+  "CVE-2026-136823": [],
+  "CVE-2026-77230": [],
+  "CVE-2026-137086": [],
+  "CVE-2026-135150": [],
+  "CVE-2026-135146": [],
+  "CVE-2026-133464": [],
+  "CVE-2026-135803": [],
+  "CVE-2026-82442": [],
+  "CVE-2026-96296": [
+   "AI 平台"
+  ],
+  "CVE-2026-134873": [],
+  "CVE-2026-134945": [],
+  "CVE-2026-135985": [],
+  "CVE-2026-135399": [],
+  "CVE-2026-136834": [],
+  "CVE-2026-136837": [],
+  "CVE-2026-135898": [],
+  "CVE-2026-131817": [],
+  "CVE-2026-133974": [],
+  "CVE-2026-133975": [],
+  "CVE-2026-133976": [],
+  "CVE-2026-95460": [
+   "Chrome"
+  ],
+  "CVE-2026-82490": [],
+  "CVE-2026-82491": [],
+  "CVE-2026-82492": [],
+  "CVE-2026-82493": [],
+  "CVE-2026-64845": [],
+  "CVE-2026-73517": [],
+  "CVE-2026-135226": [],
+  "CVE-2026-137056": [
+   "AI 平台"
+  ],
+  "CVE-2026-137057": [],
+  "CVE-2026-137058": [],
+  "CVE-2026-66052": [],
+  "CVE-2026-69695": [],
+  "CVE-2026-136183": [],
+  "CVE-2026-114347": [],
+  "CVE-2026-136916": [],
+  "CVE-2026-135402": [],
+  "CVE-2026-135141": [],
+  "CVE-2026-136821": [],
+  "CVE-2026-136822": [],
+  "CVE-2026-121375": [],
+  "CVE-2026-136918": [],
+  "CVE-2026-136919": [],
+  "CVE-2026-136922": [],
+  "CVE-2026-136923": [],
+  "CVE-2026-135133": [],
+  "CVE-2026-137060": [],
+  "CVE-2026-137093": [],
+  "CVE-2026-125259": [],
+  "CVE-2026-125262": [],
+  "CVE-2026-125267": [],
+  "CVE-2026-134066": [],
+  "CVE-2026-127280": [],
+  "CVE-2026-135147": [],
+  "CVE-2026-135227": [],
+  "CVE-2026-137077": [],
+  "CVE-2026-133742": []
  },
- "nvd_last": "2026-11-25T14:26:49+00:00",
- "kev_last": "2026-11-25T14:26:49+00:00",
+ "nvd_last": "2026-11-25T23:37:53+00:00",
+ "kev_last": "2026-11-25T23:37:53+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",

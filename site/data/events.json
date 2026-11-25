@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T14:26:49+00:00",
+ "generated": "2026-11-25T23:37:53+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,7 +324,7 @@
   }
  ],
  "todo": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "items": [
    {
     "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
@@ -335,8 +335,8 @@
     "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
    },
    {
-    "title": "AI 平台：AutoGPT 憑證阻斷漏洞",
-    "desc": "尚未遭利用；攻擊者需具備帳號、網路存取權或誘使執行共享代理程式，涵蓋 4 個 CVE（CVSS 9.1）。"
+    "title": "AI 平台：AutoGPT 多項安全漏洞",
+    "desc": "CVSS 9.1，目前尚未遭利用；攻擊者可透過網路存取 API、帳號或誘使執行共用代理觸發。"
    },
    {
     "title": "Cisco 無驗證刪檔漏洞",
@@ -344,11 +344,11 @@
    },
    {
     "title": "Chrome 遠端執行漏洞",
-    "desc": "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use"
+    "desc": "CVSS 9.8，目前尚未遭利用；部分漏洞無須使用者互動與額外權限即可觸發，其餘需透過惡意網頁或互動。"
    },
    {
-    "title": "AI 平台金鑰與驗證漏洞",
-    "desc": "尚未遭利用；攻擊者無需驗證、僅需取得工作流程 UUID 即可置換程式碼參數執行（CVSS 10.0）。"
+    "title": "AI 平台驗證繞過等漏洞",
+    "desc": "CVSS 10.0，目前尚未遭利用；漏洞源自內建公開預設 JWT 金鑰及 API 缺乏身分驗證。"
    }
   ],
   "ai": false
@@ -361,6 +361,58 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "CVE-2026-137056",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-137056",
+   "sub": "CVE-2026-137056 · CVSS 8.7",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-137056"
+   ],
+   "cvss": 8.7,
+   "published": "2026-11-25T20:18:39+00:00",
+   "first_seen": "2026-11-25T23:43:32+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137056",
+   "pts": [
+    "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval becau"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "grp:SQL Server:2026-11-26",
+   "kind": "group",
+   "title": "SQL Server 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 7.5",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SQL Server"
+   ],
+   "cves": [
+    "CVE-2026-136503",
+    "CVE-2026-62154"
+   ],
+   "cvss": 7.5,
+   "published": "2026-11-25T17:17:57+00:00",
+   "first_seen": "2026-11-25T23:43:32+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136503",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 7.5。",
+    "During IMPORT FOREIGN SCHEMA, mysql_fdw copies column metadata returned by the remote MySQL server into the CREATE FOREIGN TABLE statements "
+   ],
+   "fix": "原文：The issue is fixed in mysql_fdw 2.10.0.",
+   "ai": false
+  },
   {
    "id": "tw:16f42620c16f",
    "kind": "news",
@@ -829,7 +881,7 @@
   {
    "id": "grp:AI 平台:2026-11-25",
    "kind": "group",
-   "title": "AutoGPT 憑證阻斷漏洞",
+   "title": "AutoGPT 多項安全漏洞",
    "sub": "4 個 CVE · 最高 CVSS 9.1",
    "sev": "crit",
    "kev": false,
@@ -849,8 +901,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132264",
    "pts": [
-    "影響 AutoGPT 0.6.49 至 0.11.0 前版本，可導致**憑證濫用、接管工作流程或耗盡記憶體**。",
-    "尚未遭利用；攻擊者需具備帳號、網路存取權或誘使執行共享代理程式，涵蓋 4 個 CVE（CVSS 9.1）。"
+    "影響 AutoGPT 0.11.0 前多個版本，可能導致**工作流程遭接管、MCP 憑證外洩及記憶體耗盡**。",
+    "CVSS 9.1，目前尚未遭利用；攻擊者可透過網路存取 API、帳號或誘使執行共用代理觸發。"
    ],
    "fix": "",
    "ai": true
@@ -1226,6 +1278,31 @@
    "ai": true
   },
   {
+   "id": "CVE-2026-135802",
+   "kind": "cve",
+   "title": "nginx 漏洞 CVE-2026-135802",
+   "sub": "CVE-2026-135802 · CVSS 8.1",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "nginx"
+   ],
+   "cves": [
+    "CVE-2026-135802"
+   ],
+   "cvss": 8.1,
+   "published": "2026-11-24T09:17:08+00:00",
+   "first_seen": "2026-11-25T23:43:32+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135802",
+   "pts": [
+    "When Request::getBaseUrl() does not find the script name at the start of the request URI, it looks for it further into the path. This suppor"
+   ],
+   "fix": "",
+   "ai": false
+  },
+  {
    "id": "grp:Cisco:2026-11-24",
    "kind": "group",
    "title": "Cisco 無驗證刪檔漏洞",
@@ -1421,7 +1498,7 @@
    "id": "grp:Chrome:2026-11-24",
    "kind": "group",
    "title": "Chrome 遠端執行漏洞",
-   "sub": "12 個 CVE · 最高 CVSS 9.8",
+   "sub": "15 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1440,7 +1517,10 @@
     "CVE-2026-95445",
     "CVE-2026-95448",
     "CVE-2026-95449",
-    "CVE-2026-95455"
+    "CVE-2026-95450",
+    "CVE-2026-95451",
+    "CVE-2026-95455",
+    "CVE-2026-95460"
    ],
    "cvss": 9.8,
    "published": "2026-11-23T17:17:58+00:00",
@@ -1448,17 +1528,17 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
    "pts": [
-    "同日公布 12 個漏洞，最高 CVSS 9.8。",
-    "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could le"
+    "影響 Google Chrome 158.0.8127.88 前版本及多項元件，**可讓遠端攻擊者執行任意程式碼**。",
+    "CVSS 9.8，目前尚未遭利用；部分漏洞無須使用者互動與額外權限即可觸發，其餘需透過惡意網頁或互動。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-11-24",
    "kind": "group",
-   "title": "AI 平台金鑰與驗證漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 10.0",
+   "title": "AI 平台驗證繞過等漏洞",
+   "sub": "3 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -1467,7 +1547,8 @@
    ],
    "cves": [
     "CVE-2026-130169",
-    "CVE-2026-135211"
+    "CVE-2026-135211",
+    "CVE-2026-96296"
    ],
    "cvss": 10.0,
    "published": "2026-11-23T16:17:38+00:00",
@@ -1475,8 +1556,8 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130169",
    "pts": [
-    "影響 AutoGPT 0.6.26 至 0.7.4 與 BISHENG 3.0.0 前版本，含預設 JWT 金鑰或**可未經授權以管理員執行工作流程**。",
-    "尚未遭利用；攻擊者無需驗證、僅需取得工作流程 UUID 即可置換程式碼參數執行（CVSS 10.0）。"
+    "影響 AutoGPT、BISHENG 3.0.0 前及 Apache Texera，**未驗證者可以管理員身分執行工作流程**或刪除結果。",
+    "CVSS 10.0，目前尚未遭利用；漏洞源自內建公開預設 JWT 金鑰及 API 缺乏身分驗證。"
    ],
    "fix": "",
    "ai": true
@@ -2636,16 +2717,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131199",
    "pts": [
-    "同日公布 31 個漏洞，最高 CVSS 9.9。",
-    "In Splunk SOAR versions below 8.8.0, an authenticated user that holds a role with the Apps edit, Containers edit, and Playbooks execute perm"
+    "影響 Cisco 旗下 Splunk Enterprise、SOAR 及 Enterprise Security 多個版本，**可導致任意程式碼執行**。",
+    "CVSS 9.9，目前尚未遭利用；部分漏洞無須驗證即可讀寫叢集設定或執行 SPL 查詢，部分需特定角色權限。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Apache:2026-11-20",
    "kind": "group",
-   "title": "Apache 多個高風險漏洞",
+   "title": "Apache 驗證與加密漏洞",
    "sub": "5 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -2667,11 +2748,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116561",
    "pts": [
-    "同日公布 5 個漏洞，最高 CVSS 9.8。",
-    "@fastify/reply-from is a Fastify plugin that forwards requests to an upstream HTTP server. In versions before 12.8.4, its buildURL function "
+    "影響 Apache Tomcat 及 @fastify/reply-from，**可讓未驗證節點加入叢集**、繞過路徑檢查或明文傳輸資訊。",
+    "CVSS 9.8，目前尚未遭利用；Tomcat 叢集於啟用 TLS 1.3 與 TLS-PSK 時受影響，另有例外處理與重新導向異常。"
    ],
-   "fix": "升級至 12.8.4 以上（依原文擷取）",
-   "ai": false
+   "fix": "Apache Tomcat 叢集漏洞部分，建議改用 TLS 1.2。",
+   "ai": true
   },
   {
    "id": "CVE-2026-87867",
@@ -2702,7 +2783,7 @@
   {
    "id": "grp:Linux:2026-11-19",
    "kind": "group",
-   "title": "Linux 核心 多個高風險漏洞",
+   "title": "Linux 核心多項漏洞",
    "sub": "20 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -2739,11 +2820,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99322",
    "pts": [
-    "同日公布 20 個漏洞，最高 CVSS 9.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Do not credit control-record octets to the RPC stream svc_tcp_so"
+    "影響 Linux 核心 SUNRPC、NFSD、SMB、ksmbd 及 VMBus 等元件，**存在緩衝區溢位與釋放後使用等漏洞**。",
+    "CVSS 9.8，目前尚未遭利用；涉及遠端檔案共享、重送處理及虛擬機共用環形緩衝區邊界檢查問題。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:VMware:2026-11-19",
