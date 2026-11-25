@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T21:12:28+00:00",
+ "generated": "2026-11-25T04:13:05+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -335,16 +335,16 @@
     "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
    },
    {
-    "title": "Cisco 多個高風險漏洞",
-    "desc": "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete fi"
+    "title": "Cisco 無驗證刪檔漏洞",
+    "desc": "尚未遭利用；任何連上 WiFi 的用戶端不需憑證即可直接發送請求觸發（CVSS 10.0）。"
    },
    {
-    "title": "Chrome 多個高風險漏洞",
-    "desc": "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use"
+    "title": "Chrome 遠端執行漏洞",
+    "desc": "尚未遭利用；部分漏洞不需使用者互動即可觸發，部分需透過特製 HTML 頁面或鄰近網路攻擊（CVSS 9.8）。"
    },
    {
-    "title": "AI 平台驗證與預設金鑰漏洞",
-    "desc": "升級至 0.8.0 以上（依原文擷取）"
+    "title": "AI 平台金鑰與驗證漏洞",
+    "desc": "尚未遭利用；攻擊者無需驗證、僅需取得工作流程 UUID 即可置換程式碼參數執行（CVSS 10.0）。"
    },
    {
     "title": "SonicWall 參數注入漏洞",
@@ -361,6 +361,219 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:bf906f931566",
+   "kind": "news",
+   "title": "Google修補Nest Hub裝置53個漏洞，包括可能導致遠端執行程式碼的藍牙重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T04:18:58+00:00",
+   "first_seen": "2026-11-25T04:18:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180789",
+   "pts": [
+    "Google於11月23日發布Nest資安公告，修補Nest Hub第2代及Nest Hub Max裝置共53個漏洞，其中27個為High等級、26個為Moderate等級。受影響元件以Bluetooth最多，共39個漏洞，其次是Cast的14個；依問題類型區分，則以服務阻斷（DoS）23個最多，其"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:5835827c2e47",
+   "kind": "news",
+   "title": "Broadcom修補VMware產品23個漏洞，含影響vCenter的身分驗證繞過重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T04:18:58+00:00",
+   "first_seen": "2026-11-25T04:18:58+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180786",
+   "pts": [
+    "Broadcom於11月24日發布公告，修補VMware ESX、vCenter、Workstation、Fusion及Avi Load Balancer等產品共23個漏洞，其中最嚴重的是vCenter的身分驗證繞過漏洞CVE-2026-123903，CVSS 3.1評分達9.8分。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "CVE-2026-123903",
+   "kind": "cve",
+   "title": "Broadcom修補VMware產品23個漏洞，含影響vCenter的身分驗證繞",
+   "sub": "CVE-2026-123903 · 尚未評分",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [
+    "CVE-2026-123903"
+   ],
+   "cvss": null,
+   "published": "2026-11-25T04:18:58+00:00",
+   "first_seen": "2026-11-25T04:19:05+00:00",
+   "src": "iThome 報導",
+   "url": "https://www.ithome.com.tw/news/180786",
+   "pts": [],
+   "fix": "",
+   "ai": false
+  },
+  {
+   "id": "tw:7195531bbb17",
+   "kind": "news",
+   "title": "駭客公布竊取的摩根大通、Visa、Mastercard資料",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T04:18:58+00:00",
+   "first_seen": "2026-11-25T04:19:05+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180784",
+   "pts": [
+    "在48小時倒數結束後，勒索組織n0n先後在暗網公布從全球最大銀行摩根大通（JPMorgan Chase）、Visa及Mastercard竊得的資料。 n0n上周在資料公布網站將59家知名企業列為苦主名單，包括摩根大通、Visa、Mastercard、Walmart等，並威脅若未在48小時內接獲三家金"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:eebe7372567a",
+   "kind": "news",
+   "title": "日本麥當勞App資料庫被駭，用戶消費紀錄恐外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T04:18:58+00:00",
+   "first_seen": "2026-11-25T04:19:05+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180782",
+   "pts": [
+    "日本麥當勞上周公告官方應用程式相關的資料庫遭到未授權第三方存取，致使部分顧客資料和購買紀錄可能外流。 日本麥當勞並未說明確切的資料外洩時間，以及影響的消費資料筆數或駭客入侵路徑等。可能已外洩的資料包括系統上的客戶ID、產品購買紀錄、IP位址及App使用時的行動裝置位置資訊。 不過麥當勞表示，光憑外流"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:6a7dc115f0d5",
+   "kind": "news",
+   "title": "因應AI網攻威脅，資安署強調遭駭及早通知上下游，並要提升漏洞處置效率及復原速度",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T04:18:58+00:00",
+   "first_seen": "2026-11-25T04:19:05+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180762",
+   "pts": [
+    "為因應先進AI降低網路攻擊門檻、加速漏洞利用的趨勢，數位發展部資通安全署（資安署）自9月起陸續發布相關防護政策及指引，並持續向各界倡議強化資安防護及應變能力。資安署副署長鄭瑋於11月24日一場數位信任論壇致詞時，也結合資安署近期推動的政策及當前資安情勢，特別說明現階段企業資安防護及聯防應著重的3大重"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:6ede022fc2fc",
+   "kind": "news",
+   "title": "美國FCC擬強化物聯網資安標章制度，獲認證產品每3年須更新認證",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T04:18:58+00:00",
+   "first_seen": "2026-11-25T04:19:05+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180738",
+   "pts": [
+    "美國聯邦通訊委員會（FCC）打算加強物聯網產品取得資安標章後的管理，要求獲認證產品每3年更新認證，並定期抽查上市產品是否持續符合安全要求。這項新規則草案於11月23日刊登在美國《聯邦公報》，涉及美國政府2025年推出的美國網路安全標章（U.S. Cyber Trust Mark）。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:45b36c882dc5",
+   "kind": "news",
+   "title": "BADBOX 3.0殭屍網路捲土重來，假廣告流量高峰時每天產生400億次競價請求",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T04:18:58+00:00",
+   "first_seen": "2026-11-25T04:19:05+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180729",
+   "pts": [
+    "資安業者HUMAN Security揭露BADBOX 3.0殭屍網路，指出攻擊者利用遭植入惡意程式的廉價Android電視盒，大規模從事廣告詐欺，高峰期間每天產生約400億次廣告競價請求，創下公開紀錄。這些虛假流量可能使廣告主為無人觀看的廣告付費。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:AI 平台:2026-11-25",
+   "kind": "group",
+   "title": "AutoGPT 憑證阻斷漏洞",
+   "sub": "4 個 CVE · 最高 CVSS 9.1",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-132264",
+    "CVE-2026-133453",
+    "CVE-2026-133460",
+    "CVE-2026-133462"
+   ],
+   "cvss": 9.1,
+   "published": "2026-11-24T21:18:17+00:00",
+   "first_seen": "2026-11-25T04:18:54+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132264",
+   "pts": [
+    "影響 AutoGPT 0.6.49 至 0.11.0 前版本，可導致**憑證濫用、接管工作流程或耗盡記憶體**。",
+    "尚未遭利用；攻擊者需具備帳號、網路存取權或誘使執行共享代理程式，涵蓋 4 個 CVE（CVSS 9.1）。"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "CVE-2026-82169",
    "kind": "cve",
@@ -734,7 +947,7 @@
   {
    "id": "grp:Cisco:2026-11-24",
    "kind": "group",
-   "title": "Cisco 多個高風險漏洞",
+   "title": "Cisco 無驗證刪檔漏洞",
    "sub": "2 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -752,11 +965,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128791",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 10.0。",
-    "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication."
+    "影響 Cisco 相關設備，**未經身分驗證即可永久刪除會議錄影檔案並取得裝置與錄影中繼資料**。",
+    "尚未遭利用；任何連上 WiFi 的用戶端不需憑證即可直接發送請求觸發（CVSS 10.0）。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:59e37f358a6f",
@@ -926,8 +1139,8 @@
   {
    "id": "grp:Chrome:2026-11-24",
    "kind": "group",
-   "title": "Chrome 多個高風險漏洞",
-   "sub": "10 個 CVE · 最高 CVSS 9.8",
+   "title": "Chrome 遠端執行漏洞",
+   "sub": "12 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
    "ransomware": false,
@@ -942,6 +1155,8 @@
     "CVE-2026-95433",
     "CVE-2026-95439",
     "CVE-2026-95442",
+    "CVE-2026-95444",
+    "CVE-2026-95445",
     "CVE-2026-95448",
     "CVE-2026-95449",
     "CVE-2026-95455"
@@ -952,16 +1167,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
    "pts": [
-    "同日公布 10 個漏洞，最高 CVSS 9.8。",
-    "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could le"
+    "影響 Google Chrome 158.0.8127.88 前版本，**可導致沙箱外任意程式碼執行或遠端執行程式碼**。",
+    "尚未遭利用；部分漏洞不需使用者互動即可觸發，部分需透過特製 HTML 頁面或鄰近網路攻擊（CVSS 9.8）。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-11-24",
    "kind": "group",
-   "title": "AI 平台驗證與預設金鑰漏洞",
+   "title": "AI 平台金鑰與驗證漏洞",
    "sub": "2 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -979,11 +1194,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130169",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 10.0。",
-    "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.2"
+    "影響 AutoGPT 0.6.26 至 0.7.4 與 BISHENG 3.0.0 前版本，含預設 JWT 金鑰或**可未經授權以管理員執行工作流程**。",
+    "尚未遭利用；攻擊者無需驗證、僅需取得工作流程 UUID 即可置換程式碼參數執行（CVSS 10.0）。"
    ],
-   "fix": "升級至 0.8.0 以上（依原文擷取）",
-   "ai": false
+   "fix": "",
+   "ai": true
   },
   {
    "id": "CVE-2026-103782",
@@ -1478,7 +1693,7 @@
   {
    "id": "grp:Cisco:2026-11-23",
    "kind": "group",
-   "title": "Cisco 等產品程式碼執行漏洞",
+   "title": "Cisco 等遠端執行漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.3",
    "sev": "crit",
    "kev": false,
@@ -1499,11 +1714,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115873",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.3。",
-    "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must us"
+    "影響 Cisco、Ivanti、SonicWall、SD-WAN，**可導致以服務帳號權限執行程式碼**。",
+    "尚未遭利用；需控制上游 API 分頁資料或以唯讀權限存取 Leader API 觸發（CVSS 9.3）。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:07745c21e30f",
@@ -2041,7 +2256,7 @@
   {
    "id": "CVE-2026-77312",
    "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-77312",
+   "title": "Flyto2 沙箱繞過漏洞",
    "sub": "CVE-2026-77312 · CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -2058,10 +2273,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77312",
    "pts": [
-    "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.8, the earlier CVE-2026-67429 remediation applied va"
+    "影響 Flyto2 Core 2.26.8 前版本，因路徑驗證不完整，可寫入沙箱外檔案並於主機執行程式碼。",
+    "尚未遭利用；具執行模組或配方權限的呼叫端可覆寫系統與授權檔案（CVSS 10.0）。"
    ],
-   "fix": "升級至 2.26.8 以上（依原文擷取）",
-   "ai": false
+   "fix": "**升級至 2.26.8 版本**。",
+   "ai": true
   },
   {
    "id": "CVE-2026-82339",
