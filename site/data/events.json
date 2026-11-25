@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T04:13:05+00:00",
+ "generated": "2026-11-25T14:26:49+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -335,20 +335,20 @@
     "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
    },
    {
+    "title": "AI 平台：AutoGPT 憑證阻斷漏洞",
+    "desc": "尚未遭利用；攻擊者需具備帳號、網路存取權或誘使執行共享代理程式，涵蓋 4 個 CVE（CVSS 9.1）。"
+   },
+   {
     "title": "Cisco 無驗證刪檔漏洞",
     "desc": "尚未遭利用；任何連上 WiFi 的用戶端不需憑證即可直接發送請求觸發（CVSS 10.0）。"
    },
    {
     "title": "Chrome 遠端執行漏洞",
-    "desc": "尚未遭利用；部分漏洞不需使用者互動即可觸發，部分需透過特製 HTML 頁面或鄰近網路攻擊（CVSS 9.8）。"
+    "desc": "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use"
    },
    {
     "title": "AI 平台金鑰與驗證漏洞",
     "desc": "尚未遭利用；攻擊者無需驗證、僅需取得工作流程 UUID 即可置換程式碼參數執行（CVSS 10.0）。"
-   },
-   {
-    "title": "SonicWall 參數注入漏洞",
-    "desc": "低權限遠端攻擊者即可發動攻擊，CVSS 達 9.9；目前尚未發現遭利用情事。"
    }
   ],
   "ai": false
@@ -361,6 +361,287 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:16f42620c16f",
+   "kind": "news",
+   "title": "Mozilla修補收信軟體Thunderbird重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180799",
+   "pts": [
+    "11月24日Mozilla基金會發布收信軟體Thunderbird 161大改版，修補115個資安漏洞，包括1個重大漏洞、62個高風險漏洞、33個中風險漏洞，以及19個低風險漏洞。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:afd2dd3f821d",
+   "kind": "news",
+   "title": "Mozilla發布Firefox 161，修補110個漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180798",
+   "pts": [
+    "11月24日Mozilla基金會正式發布Firefox 161大改版，提供個別網站的VPN規則控制、一鍵清除上網資料按鈕，並首度支援Android車載系統，值得留意的是，這次一併修補了110個資安漏洞，其中59個有高風險、30個有中度風險，21個有低風險，用戶應儘速套用更新。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:828490990c98",
+   "kind": "news",
+   "title": "CISA警告Drupal等3種應用系統的漏洞遭積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "ASP.NET",
+    ".NET"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180796",
+   "pts": [
+    "11月24日美國網路安全與基礎設施安全局（CISA）指出，已掌握3個新漏洞遭積極利用的證據，將其加入已知遭利用漏洞名單（KEV），這些漏洞編號是：CVE-2026-132165、CVE-2026-131914，以及CVE-2026-132224，分別存在於內容管理系統Drupal、ASP.NET網站"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:5f5a54e7236a",
+   "kind": "news",
+   "title": "葡萄王集團不到一個月兩度受委外廠商資安事件波及，子公司葡眾接獲統一資訊通知，加密會員資料遭異常存取",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180795",
+   "pts": [
+    "不到一個月內，國內知名生技保健食品業者葡萄王（1707）兩度因委外服務廠商發生資安事件而發布重大訊息。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:a5658b40abae",
+   "kind": "news",
+   "title": "黑貓宅急便委外系統廠商摩奇創意遭駭，統一速達指出部分預約寄件民眾個資外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180787",
+   "pts": [
+    "國內知名物流服務業者黑貓宅急便傳出委外系統遭駭客入侵的消息，國內媒體自由時報於11月24日報導這起事件，指出經營黑貓宅急便的統一速達已發送簡訊通知消費者，告知委外系統廠商摩奇創意股份有限公司的後臺系統遭未經授權存取。我們詢問統一速達，該公司的回覆證實此事發生，並已向相關客戶發出通知。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:d719180f3cd7",
+   "kind": "news",
+   "title": "【資安日報】11月25日，Broadcom修補VMware產品23個漏洞，含影響vCenter的身分驗證繞過重大漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180793",
+   "pts": [
+    "本日新聞焦點 ● Broadcom修補另一VMware vCenter身分驗證繞過重大漏洞 ● 挪威天然氣與電力公司遭駭，Azure API管理服務漏洞遭利用 ● 駭客公布聲稱竊取的摩根大通、Visa、Mastercard資料"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:71e1483a9f54",
+   "kind": "news",
+   "title": "Radware Cloud WAF內部管理API暴露於公開網路，部分客戶的雲端存取憑證恐已外洩",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "憑證/CA"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180780",
+   "pts": [
+    "網路與應用程式安全業者Radware傳出資安事件，資安媒體Bleeping Computer於11月24日報導指出，該公司原本僅供內部使用的雲端網頁應用防火牆（Cloud WAF）管理API暴露於公開網路，且無須通過身分驗證即可存取，11月19日遭到未經授權存取。客戶聯絡資料及部分客戶的雲端存取憑證"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:91c71fab31ca",
+   "kind": "news",
+   "title": "程式語言Elixir套件平臺Hex.pm遭駭，使用者資料與簽章金鑰恐外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180791",
+   "pts": [
+    "Erlang與Elixir程式語言的套件發布平臺Hex.pm於11月24日凌晨遭駭客入侵，攻擊者利用存在超過10年的反序列化漏洞，在6臺網頁伺服器上遠端執行作業系統命令。官方在20分鐘內阻擋攻擊並完成漏洞修補，但使用者資料及套件登錄資料的簽章金鑰可能外洩，官方已要求使用者變更密碼及重新設定雙因素驗證"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:4ed19bd41628",
+   "kind": "news",
+   "title": "Anthropic推出Siren安全評估機制，以蜜罐測試AI代理人的沙箱逃逸風險",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180792",
+   "pts": [
+    "Anthropic周二（11/24）首度公開AI安全評估機制Siren的完整設計及測試結果，透過在沙箱環境中刻意植入安全弱點，並於沙箱外部設置蜜罐（Honeypot），測試AI代理人是否會為了完成任務而突破沙箱限制，擅自存取及使用未經授權的資源。 沙箱（Sandbox）為一隔離執行環境，可用來限制A"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:68f149db3d4d",
+   "kind": "news",
+   "title": "SolarWinds修補Serv-U重大權限提升漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180790",
+   "pts": [
+    "網路管理軟體業者SolarWinds於11月24日發布資安公告，修補檔案傳輸軟體Serv-U的重大權限提升漏洞CVE-2026-123167。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:75fac1aea8d1",
+   "kind": "news",
+   "title": "網擎揭露AI應用布局，從郵件產品功能創新到加速軟體開發與測試",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-25T14:32:30+00:00",
+   "first_seen": "2026-11-25T14:32:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180693",
+   "pts": [
+    "如同其他企業將AI用於輔助內部營運，網擎以此提升技術服務與雲端營運的效率，身為軟體廠商，也將AI用於產品資安功能與軟體工程的強化，希望打造出更安全的產品，並持續推出AI新應用，例如，透過AI協助用戶善用既有的郵件資料，藉此活化組織的記憶資產，或運用AI提升資安產品的威脅偵測與攔截效果。 活用AI提升"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "grp:Ivanti:2026-11-25",
+   "kind": "group",
+   "title": "Ivanti 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.4",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Ivanti"
+   ],
+   "cves": [
+    "CVE-2024-7430",
+    "CVE-2024-7431"
+   ],
+   "cvss": 8.4,
+   "published": "2026-11-25T13:17:23+00:00",
+   "first_seen": "2026-11-25T14:32:27+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7430",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.4。",
+    "Application Performance Management 9.60 patch versions before IP4 are affected. This issue seems to be present throughout the application, a"
+   ],
+   "fix": "",
+   "ai": false
+  },
   {
    "id": "tw:bf906f931566",
    "kind": "news",
@@ -1167,11 +1448,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
    "pts": [
-    "影響 Google Chrome 158.0.8127.88 前版本，**可導致沙箱外任意程式碼執行或遠端執行程式碼**。",
-    "尚未遭利用；部分漏洞不需使用者互動即可觸發，部分需透過特製 HTML 頁面或鄰近網路攻擊（CVSS 9.8）。"
+    "同日公布 12 個漏洞，最高 CVSS 9.8。",
+    "In FuchsiaVideoOutputProvider of fuchsia_video_output_provider.cc, there is a possible use after free due to a race condition. This could le"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:AI 平台:2026-11-24",
