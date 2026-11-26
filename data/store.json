@@ -4,7 +4,7 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "items": [
    {
     "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
@@ -15,25 +15,278 @@
     "desc": "須改用 2026-09-09 後含 SSM Agent 3.3.5226.0 以上版本的 AMI 重建執行個體，原地升級無效且勿刪除 Vault。"
    },
    {
+    "title": "Broadcom修補VMware產品23個漏洞，含影響vCenter的身分驗證繞",
+    "desc": ""
+   },
+   {
+    "title": "Cisco：Mitel MiCollab Unrestricted Upload",
+    "desc": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。"
+   },
+   {
     "title": "AI 平台：AutoGPT 多項安全漏洞",
     "desc": "CVSS 9.1，目前尚未遭利用；攻擊者可透過網路存取 API、帳號或誘使執行共用代理觸發。"
    },
    {
     "title": "Cisco 無驗證刪檔漏洞",
     "desc": "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete fi"
-   },
-   {
-    "title": "Chrome 遠端執行漏洞",
-    "desc": "CVSS 9.8，目前尚未遭利用；部分漏洞無須使用者互動與額外權限即可觸發，其餘需透過惡意網頁或互動。"
-   },
-   {
-    "title": "AI 平台驗證繞過等漏洞",
-    "desc": "CVSS 10.0，目前尚未遭利用；漏洞源自內建公開預設 JWT 金鑰及 API 缺乏身分驗證。"
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:550ba061acd6",
+   "kind": "news",
+   "title": "香帥蛋糕、一事製菓揭露資安事件，電子發票服務商PayNow對外API遭異常存取，波及500商家",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T19:07:09+00:00",
+   "first_seen": "2026-11-26T19:07:09+00:00",
+   "updated": "2026-11-26T19:07:09+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180833",
+   "pts": [
+    "國內第三方資訊服務供應商資安事件接連發生，如今電子發票加值服務也傳出資料外洩事件，導致多家品牌業者受到波及。近日香帥蛋糕、一事製菓陸續發布資安事件公告，指出電子發票加值服務商PayNow發生資安事件，對外API遭異常存取，部分透過該服務開立的電子發票資料遭外部未經授權取得。對此狀況，PayNow說明"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "香帥蛋糕、一事製菓揭露資安事件，電子發票服務商PayNow對外API遭異常存取，波及500商家",
+    "desc": "國內第三方資訊服務供應商資安事件接連發生，如今電子發票加值服務也傳出資料外洩事件，導致多家品牌業者受到波及。近日香帥蛋糕、一事製菓陸續發布資安事件公告，指出電子發票加值服務商PayNow發生資安事件，對外API遭異常存取，部分透過該服務開立的電子發票資料遭外部未經授權取得。對此狀況，PayNow說明近期事故調查結果，指出攻擊者入侵發票主機取得系統設定資料與金鑰，進而批次讀取發票資料，累計約500家商家、281萬張電子發票受到影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:1df6cce3b294",
+   "kind": "news",
+   "title": "美國財政部金融犯罪執法局遭入侵，反洗錢批次申報服務中斷",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T19:07:09+00:00",
+   "first_seen": "2026-11-26T19:07:09+00:00",
+   "updated": "2026-11-26T19:07:09+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180830",
+   "pts": [
+    "美國財政部金融犯罪執法局（FinCEN）證實部分資訊系統遭未經授權存取，已主動將部分系統下線，金融機構用來批次提交反洗錢申報資料的服務也因此中斷。FinCEN已發布命令，將部分金融機構及企業的申報期限延至12月30日。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "美國財政部金融犯罪執法局遭入侵，反洗錢批次申報服務中斷",
+    "desc": "美國財政部金融犯罪執法局（FinCEN）證實部分資訊系統遭未經授權存取，已主動將部分系統下線，金融機構用來批次提交反洗錢申報資料的服務也因此中斷。FinCEN已發布命令，將部分金融機構及企業的申報期限延至12月30日。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:9650c8ec71d4",
+   "kind": "news",
+   "title": "地理資訊伺服器GeoServer漏洞遭串連用於攻擊活動",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T19:07:09+00:00",
+   "first_seen": "2026-11-26T19:07:09+00:00",
+   "updated": "2026-11-26T19:07:09+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180829",
+   "pts": [
+    "資安公司watchTowr指出，攻擊者正利用兩個近期修補的重大漏洞，對開源地理資訊伺服器GeoServer發動攻擊探測，試圖確認伺服器是否存在弱點。研究人員警告，這些漏洞還能與其他安全缺陷串連，形成不需身分驗證即可遠端執行程式碼（RCE）的攻擊鏈。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "地理資訊伺服器GeoServer漏洞遭串連用於攻擊活動",
+    "desc": "資安公司watchTowr指出，攻擊者正利用兩個近期修補的重大漏洞，對開源地理資訊伺服器GeoServer發動攻擊探測，試圖確認伺服器是否存在弱點。研究人員警告，這些漏洞還能與其他安全缺陷串連，形成不需身分驗證即可遠端執行程式碼（RCE）的攻擊鏈。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:2e835c1d3d15",
+   "kind": "news",
+   "title": "WordPress攔截6款遭植入後門的外掛程式，起因疑為開發者帳號遭盜用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T19:07:09+00:00",
+   "first_seen": "2026-11-26T19:07:09+00:00",
+   "updated": "2026-11-26T19:07:09+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180828",
+   "pts": [
+    "資安廠商Wordfence揭露WordPress軟體開發商疑似遭駭而引起的供應鏈攻擊事件，11月22日有6款WP Connect開發的WordPress延伸套件遭植入惡意程式碼，攻擊者疑似透過盜用開發者的WordPress.org帳號，將含有後門的版本提交至WordPress外掛程式儲存庫。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "WordPress攔截6款遭植入後門的外掛程式，起因疑為開發者帳號遭盜用",
+    "desc": "資安廠商Wordfence揭露WordPress軟體開發商疑似遭駭而引起的供應鏈攻擊事件，11月22日有6款WP Connect開發的WordPress延伸套件遭植入惡意程式碼，攻擊者疑似透過盜用開發者的WordPress.org帳號，將含有後門的版本提交至WordPress外掛程式儲存庫。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ab8fe1cbe1fc",
+   "kind": "news",
+   "title": "Danfoss冷凍控制器等10個漏洞遭到積極利用",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T19:07:09+00:00",
+   "first_seen": "2026-11-26T19:07:09+00:00",
+   "updated": "2026-11-26T19:07:09+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180827",
+   "pts": [
+    "11月25日美國網路安全與基礎設施安全局（CISA）發布公告，表示他們已掌握10個新漏洞遭到積極利用的證據，將其加入已知遭利用漏洞名單（KEV），這些漏洞影響Danfoss、Juniper、Mitel，以及Vates旗下產品，其中有8個聯邦機構需在11月28日完成修補，其餘2個的期限為12月9日。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Danfoss冷凍控制器等10個漏洞遭到積極利用",
+    "desc": "11月25日美國網路安全與基礎設施安全局（CISA）發布公告，表示他們已掌握10個新漏洞遭到積極利用的證據，將其加入已知遭利用漏洞名單（KEV），這些漏洞影響Danfoss、Juniper、Mitel，以及Vates旗下產品，其中有8個聯邦機構需在11月28日完成修補，其餘2個的期限為12月9日。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:9234ae84ef15",
+   "kind": "news",
+   "title": "【資安日報】11月26日，Copeland XWEB PRO冷凍控制器遭劫持，淪為垃圾郵件發送與代理節點",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T19:07:09+00:00",
+   "first_seen": "2026-11-26T19:07:09+00:00",
+   "updated": "2026-11-26T19:07:09+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180823",
+   "pts": [
+    "本日新聞焦點 ● Copeland XWEB PRO冷凍控制器遭劫持，淪為垃圾郵件與代理節點 ● 1Password員工GitHub帳號遭入侵，攻擊者竊取原始碼及客戶資料"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月26日，Copeland XWEB PRO冷凍控制器遭劫持，淪為垃圾郵件發送與代理節點",
+    "desc": "本日新聞焦點 ● Copeland XWEB PRO冷凍控制器遭劫持，淪為垃圾郵件與代理節點 ● 1Password員工GitHub帳號遭入侵，攻擊者竊取原始碼及客戶資料",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-137543",
+   "kind": "cve",
+   "title": "AI 平台 漏洞 CVE-2026-137543",
+   "sub": "CVE-2026-137543 · CVSS 8.3",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "AI 平台"
+   ],
+   "cves": [
+    "CVE-2026-137543"
+   ],
+   "cvss": 8.3,
+   "published": "2026-11-26T16:18:07+00:00",
+   "first_seen": "2026-11-26T19:07:06+00:00",
+   "updated": "2026-11-26T19:07:06+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137543",
+   "pts": [
+    "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services b"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services by abusing the unvalidated ai_ollama_base_url setting. Once a settings.edit user points the Ollama base URL internally, any post.create user can call /admin/ai/generate-seo with provider=ollama to fetch internal data reflected in SEO fields.",
+    "refs": [
+     "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-47pj-m4xp-74g5",
+     "https://www.vulncheck.com/advisories/laradashboard-before-1.5.2-ssrf-via-ai-ollama-base-url-and-generate-seo-endpoint"
+    ]
+   }
+  },
+  {
+   "id": "grp:VMware:2026-11-26",
+   "kind": "group",
+   "title": "VMware 多個高風險漏洞",
+   "sub": "4 個 CVE · 最高 CVSS 9.8",
+   "sev": "crit",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "VMware"
+   ],
+   "cves": [
+    "CVE-2026-123910",
+    "CVE-2026-123911",
+    "CVE-2026-123912",
+    "CVE-2026-123913"
+   ],
+   "cvss": 9.8,
+   "published": "2026-11-26T11:17:01+00:00",
+   "first_seen": "2026-11-26T19:07:06+00:00",
+   "updated": "2026-11-26T19:07:06+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123910",
+   "pts": [
+    "同日公布 4 個漏洞，最高 CVSS 9.8。",
+    "ESX contains a heap out-of-bounds write vulnerability in the I/O filter service. Broadcom has evaluated the severity of this issue to be in "
+   ],
+   "fix": "升級至 5.2.5 以上（依原文擷取）",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "ESX contains a heap out-of-bounds write vulnerability in the I/O filter service. Broadcom has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score of 9.8.\nAffected versions:\nVMware ESX 9.1.x.x: fixed in ESXi-9.1.2.0-25946735\nVMware ESX 9.0.x.x: fixed in ESXi-9.0.2.0200-25953133\nVMware ESX 8.0: fixed in ESXi80U3m-25926933\nVMware Cloud Foundation 5.x: fixed in 5.2.5\nVMware Telco Cloud Platform 5.0.x: fixed in KB463501\nVMware Telco Cloud Platform 5.1.x: fixed in KB463501",
+     "ESX contains a use-after-free vulnerability in the I/O filter service. Broadcom has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score of 9.8.\nAffected versions:\nVMware ESX 9.1.x.x: fixed in ESXi-9.1.2.0-25946735\nVMware ESX 9.0.x.x: fixed in ESXi-9.0.2.0200-25953133\nVMware ESX 8.0: fixed in ESXi80U3m-25926933\nVMware Cloud Foundation 5.x: fixed in 5.2.5\nVMware Telco Cloud Platform 5.0.x: fixed in KB463501\nVMware Telco Cloud Platform 5.1.x: fixed in KB463501",
+     "VMware ESXi, Workstation, and Fusion contain an out-of-bounds write vulnerability in the XHCI USB controller. Broadcom has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score of 9.3.\nAffected versions:\nVMware ESX 9.1.x.x: fixed in ESXi-9.1.2.0-25946735\nVMware ESX 9.0.x.x: fixed in ESXi-9.0.2.0200-25953133\nVMware ESX 8.0: fixed in ESXi80U3m-25926933\nVMware Cloud Foundation 5.x: fixed in 5.2.5\nVMware Telco Cloud Platform 5.0.x: fixed in KB463501\nVMware Telco Cloud Platform 5.1.x: fixed in KB463501\nVMware Workstation 25H2: fixed in 26H1u1\nVMware Fusion 25H2: fixed in 26H1u1",
+     "VMware ESX contains a stack-based buffer-overflow vulnerability in the VMkernel. Broadcom has evaluated the severity of this issue to be in the Important severity range with a maximum CVSSv3 base score of 8.2.\nAffected versions:\nVMware ESX 9.1.x.x: fixed in ESXi-9.1.2.0-25946735\nVMware ESX 9.0.x.x: fixed in ESXi-9.0.2.0200-25953133\nVMware ESX 8.0: fixed in ESXi80U3m-25926933\nVMware Cloud Foundation 5.x: fixed in 5.2.5\nVMware Telco Cloud Platform 5.0.x: fixed in KB463501\nVMware Telco Cloud Platform 5.1.x: fixed in KB463501"
+    ]
+   }
+  },
   {
    "id": "tw:a971f19318cd",
    "kind": "news",
@@ -465,10 +718,10 @@
    }
   },
   {
-   "id": "CVE-2026-137056",
-   "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-137056",
-   "sub": "CVE-2026-137056 · CVSS 8.7",
+   "id": "grp:AI 平台:2026-11-26",
+   "kind": "group",
+   "title": "AI 平台 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -476,28 +729,26 @@
     "AI 平台"
    ],
    "cves": [
-    "CVE-2026-137056"
+    "CVE-2026-137056",
+    "CVE-2026-137586"
    ],
    "cvss": 8.7,
    "published": "2026-11-25T20:18:39+00:00",
    "first_seen": "2026-11-25T23:43:32+00:00",
-   "updated": "2026-11-25T23:43:32+00:00",
+   "updated": "2026-11-26T19:07:06+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137056",
    "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
     "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval becau"
    ],
    "fix": "",
    "ai": false,
    "ai_ver": 0,
    "raw": {
-    "desc": "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval because the shellsafe classifier treats git blame and git whatchanged as read-only. Attackers can plant a diff textconv driver in .gitattributes and .git/config so that git blame, triggered via prompt injection or routine use, executes attacker-chosen commands with the user's privileges, exposing stored provider API keys and session history.",
-    "refs": [
-     "https://github.com/esengine/DeepSeek-Reasonix/blob/v1.39.11/internal/shellsafe/effect.go#L279-L300",
-     "https://github.com/esengine/DeepSeek-Reasonix/commit/191d1e17a15021818f0c70fe47b7b0011f0958ff",
-     "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.53.0",
-     "https://github.com/esengine/DeepSeek-Reasonix/security/advisories/GHSA-m46m-j2rc-6ff4",
-     "https://www.vulncheck.com/advisories/deepseek-reasonix-before-2.53.0-command-execution-via-auto-approved-git-blame"
+    "descs": [
+     "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval because the shellsafe classifier treats git blame and git whatchanged as read-only. Attackers can plant a diff textconv driver in .gitattributes and .git/config so that git blame, triggered via prompt injection or routine use, executes attacker-chosen commands with the user's privileges, exposing stored provider API keys and session history.",
+     "LibreChat 0.7.3 before 0.8.9 contains an improper input type validation vulnerability in the requireLdapAuth middleware of the /api/auth/login route that allows unauthenticated attackers to crash the server. Attackers can send a JSON login request with an existing directory user's email and a non-string password, triggering an ldapjs assertion error that terminates the Node.js process."
     ]
    }
   },
@@ -968,8 +1219,8 @@
    "id": "CVE-2026-123903",
    "kind": "cve",
    "title": "Broadcom修補VMware產品23個漏洞，含影響vCenter的身分驗證繞",
-   "sub": "CVE-2026-123903 · 尚未評分",
-   "sev": "high",
+   "sub": "CVE-2026-123903 · CVSS 9.8",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -978,10 +1229,10 @@
    "cves": [
     "CVE-2026-123903"
    ],
-   "cvss": null,
+   "cvss": 9.8,
    "published": "2026-11-25T04:18:58+00:00",
    "first_seen": "2026-11-25T04:19:05+00:00",
-   "updated": "2026-11-25T04:19:05+00:00",
+   "updated": "2026-11-26T19:07:06+00:00",
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180786",
    "pts": [],
@@ -21867,10 +22118,95 @@
   "CVE-2026-133311": [],
   "CVE-2026-132224": [],
   "CVE-2026-132165": [],
-  "CVE-2026-126187": []
+  "CVE-2026-126187": [],
+  "CVE-2026-126984": [],
+  "CVE-2026-137498": [],
+  "CVE-2026-123903": [
+   "VMware"
+  ],
+  "CVE-2026-123910": [
+   "VMware"
+  ],
+  "CVE-2026-123911": [
+   "VMware"
+  ],
+  "CVE-2026-131767": [],
+  "CVE-2026-134481": [],
+  "CVE-2026-104998": [],
+  "CVE-2026-86470": [],
+  "CVE-2026-135203": [],
+  "CVE-2026-137544": [],
+  "CVE-2026-123912": [
+   "VMware"
+  ],
+  "CVE-2026-130637": [],
+  "CVE-2026-137567": [],
+  "CVE-2026-137499": [],
+  "CVE-2026-137536": [],
+  "CVE-2026-137550": [],
+  "CVE-2026-124840": [],
+  "CVE-2026-124843": [],
+  "CVE-2026-137547": [],
+  "CVE-2026-137584": [],
+  "CVE-2026-133951": [],
+  "CVE-2026-134173": [],
+  "CVE-2026-135641": [],
+  "CVE-2026-136240": [],
+  "CVE-2026-137463": [],
+  "CVE-2026-137465": [],
+  "CVE-2026-135279": [],
+  "CVE-2026-137471": [],
+  "CVE-2026-127041": [],
+  "CVE-2026-124266": [],
+  "CVE-2026-109921": [],
+  "CVE-2026-137456": [],
+  "CVE-2026-76075": [],
+  "CVE-2026-118076": [],
+  "CVE-2026-86322": [],
+  "CVE-2026-137389": [],
+  "CVE-2026-137390": [],
+  "CVE-2026-133342": [],
+  "CVE-2026-124844": [],
+  "CVE-2026-137566": [],
+  "CVE-2026-137585": [],
+  "CVE-2026-137586": [
+   "AI 平台"
+  ],
+  "CVE-2026-137452": [],
+  "CVE-2026-137455": [],
+  "CVE-2026-137457": [],
+  "CVE-2026-137459": [],
+  "CVE-2026-137460": [],
+  "CVE-2026-137467": [],
+  "CVE-2026-137468": [],
+  "CVE-2026-137470": [],
+  "CVE-2026-137479": [],
+  "CVE-2026-137490": [],
+  "CVE-2026-137492": [],
+  "CVE-2026-137497": [],
+  "CVE-2026-137504": [],
+  "CVE-2026-137508": [],
+  "CVE-2026-137509": [],
+  "CVE-2026-137510": [],
+  "CVE-2026-137512": [],
+  "CVE-2026-137513": [],
+  "CVE-2026-137526": [],
+  "CVE-2026-137549": [],
+  "CVE-2026-137552": [],
+  "CVE-2026-137556": [],
+  "CVE-2026-133339": [],
+  "CVE-2026-137577": [],
+  "CVE-2026-137491": [],
+  "CVE-2026-137493": [],
+  "CVE-2026-137500": [],
+  "CVE-2026-137523": [],
+  "CVE-2026-137551": [],
+  "CVE-2026-124838": [],
+  "CVE-2026-137494": [],
+  "CVE-2026-137474": []
  },
- "nvd_last": "2026-11-26T08:20:16+00:00",
- "kev_last": "2026-11-26T08:20:16+00:00",
+ "nvd_last": "2026-11-26T19:01:27+00:00",
+ "kev_last": "2026-11-26T19:01:27+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
