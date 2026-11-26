@@ -11,8 +11,8 @@
     "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
    },
    {
-    "title": "Windows Server：Windows 漏洞 CVE-2026-13406",
-    "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Ag"
+    "title": "Windows Server：Windows 預設金鑰漏洞",
+    "desc": "須改用 2026-09-09 後含 SSM Agent 3.3.5226.0 以上版本的 AMI 重建執行個體，原地升級無效且勿刪除 Vault。"
    },
    {
     "title": "AI 平台：AutoGPT 多項安全漏洞",
@@ -20,7 +20,7 @@
    },
    {
     "title": "Cisco 無驗證刪檔漏洞",
-    "desc": "尚未遭利用；任何連上 WiFi 的用戶端不需憑證即可直接發送請求觸發（CVSS 10.0）。"
+    "desc": "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete fi"
    },
    {
     "title": "Chrome 遠端執行漏洞",
@@ -34,6 +34,436 @@
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:a971f19318cd",
+   "kind": "news",
+   "title": "網銀盜轉案逾百起，刑事局揭露偽冒短劇App散布Android木馬，歹徒濫用無障礙權限盜轉存款",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:24:57+00:00",
+   "updated": "2026-11-26T08:24:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180826",
+   "pts": [
+    "近期國內陸續傳出多家銀行客戶的網銀帳戶遭不明方式盜轉，如今警方公布部分受害者手機的鑑識結果，發現偽冒短劇App的Android惡意程式，並研判歹徒藉此遠端操控手機盜轉存款。內政部警政署刑事警察局（刑事局）於11月26日發布相關案件偵辦進展公告，進一步揭露歹徒利用偽冒短劇App的Android安裝檔散"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "網銀盜轉案逾百起，刑事局揭露偽冒短劇App散布Android木馬，歹徒濫用無障礙權限盜轉存款",
+    "desc": "近期國內陸續傳出多家銀行客戶的網銀帳戶遭不明方式盜轉，如今警方公布部分受害者手機的鑑識結果，發現偽冒短劇App的Android惡意程式，並研判歹徒藉此遠端操控手機盜轉存款。內政部警政署刑事警察局（刑事局）於11月26日發布相關案件偵辦進展公告，進一步揭露歹徒利用偽冒短劇App的Android安裝檔散布惡意程式，並透過規避手機安全防護、誘騙使用者開啟無障礙權限等手法取得手機控制權。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:93b5735761d4",
+   "kind": "news",
+   "title": "FBI疑似再發生資安事故，犯罪資料庫被駭",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:03+00:00",
+   "updated": "2026-11-26T08:25:03+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180822",
+   "pts": [
+    "CNN上週引述消息人士報導，由美國聯邦調查局（FBI）所維護的全國犯罪資訊中心（National Crime Information Center，NCIC）資料庫遭駭客存取，可能有為數不詳的刑案或罪犯資訊外流。FBI據傳已著手調查中。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "FBI疑似再發生資安事故，犯罪資料庫被駭",
+    "desc": "CNN上週引述消息人士報導，由美國聯邦調查局（FBI）所維護的全國犯罪資訊中心（National Crime Information Center，NCIC）資料庫遭駭客存取，可能有為數不詳的刑案或罪犯資訊外流。FBI據傳已著手調查中。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:8d36262c9191",
+   "kind": "news",
+   "title": "駭客入侵1Password員工GitHub帳號竊走公司原始碼，植入惡意程式碼下載客戶資料",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:09+00:00",
+   "updated": "2026-11-26T08:25:09+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180820",
+   "pts": [
+    "密碼管理服務供應商1Password昨日公告，正在調查一起公司資安事件。這起事件中，攻擊者存取了一名員工的公司GitHub帳號，藉此存取了公司程式原始碼並在後端服務植入惡意程式碼，進而下載部分客戶的帳號管理資料及非機密的帳號資訊。 1Password強調，儲存客戶密碼的儲存庫（vault）、保護儲存"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "駭客入侵1Password員工GitHub帳號竊走公司原始碼，植入惡意程式碼下載客戶資料",
+    "desc": "密碼管理服務供應商1Password昨日公告，正在調查一起公司資安事件。這起事件中，攻擊者存取了一名員工的公司GitHub帳號，藉此存取了公司程式原始碼並在後端服務植入惡意程式碼，進而下載部分客戶的帳號管理資料及非機密的帳號資訊。 1Password強調，儲存客戶密碼的儲存庫（vault）、保護儲存庫的金鑰及帳號復原金鑰，均未被駭客存取，1Password應用程式及瀏覽器擴充程式也不受影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:12ae36ce0b1a",
+   "kind": "news",
+   "title": "多國警方聯手瓦解Gootloader等惡意程式基礎設施，查獲640萬筆遭竊憑證",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:21+00:00",
+   "updated": "2026-11-26T08:25:21+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180813",
+   "pts": [
+    "繼FBI日前警告Gootloader已入侵逾千個WordPress網站，用來為勒索軟體攻擊者提供初始存取管道後，多國執法機關再度聯手打擊其基礎設施。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "多國警方聯手瓦解Gootloader等惡意程式基礎設施，查獲640萬筆遭竊憑證",
+    "desc": "繼FBI日前警告Gootloader已入侵逾千個WordPress網站，用來為勒索軟體攻擊者提供初始存取管道後，多國執法機關再度聯手打擊其基礎設施。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:513354336548",
+   "kind": "news",
+   "title": "全球22家企業組織Check Point管理伺服器被入侵，駭客利用已知漏洞取得管理員權限",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:27+00:00",
+   "updated": "2026-11-26T08:25:27+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180811",
+   "pts": [
+    "鎖定Check Point資安設備的攻擊行動，自今年年中開始陸續有事故傳出，本週有資安公司揭露最新一波全球攻擊活動，而成為資安界關注的焦點。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "全球22家企業組織Check Point管理伺服器被入侵，駭客利用已知漏洞取得管理員權限",
+    "desc": "鎖定Check Point資安設備的攻擊行動，自今年年中開始陸續有事故傳出，本週有資安公司揭露最新一波全球攻擊活動，而成為資安界關注的焦點。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:768644a6ead6",
+   "kind": "news",
+   "title": "React Server Components修補未經身分驗證RCE漏洞",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:33+00:00",
+   "updated": "2026-11-26T08:25:33+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180810",
+   "pts": [
+    "開源JavaScript函式庫React維護團隊近日修補 RSC（ React Server Components ）伺服器端元件架構重大漏洞CVE-2026-126187，CVSS 4.0評分達9.5分，問題源自RSC資料傳輸處理缺陷，攻擊者可向支援RSC的框架傳送特製負載，在特定條件下觸發未經驗"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "React Server Components修補未經身分驗證RCE漏洞",
+    "desc": "開源JavaScript函式庫React維護團隊近日修補 RSC（ React Server Components ）伺服器端元件架構重大漏洞CVE-2026-126187，CVSS 4.0評分達9.5分，問題源自RSC資料傳輸處理缺陷，攻擊者可向支援RSC的框架傳送特製負載，在特定條件下觸發未經驗證的遠端程式碼執行。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ecf4715a0e36",
+   "kind": "news",
+   "title": "Copeland XWEB PRO冷凍控制器遭劫持，淪為垃圾郵件與代理節點",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:46+00:00",
+   "updated": "2026-11-26T08:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180809",
+   "pts": [
+    "自10月上旬起，歐洲陸續爆發冷凍冷藏設備遭網路攻擊事件，法國數百家超市的冷凍設備遭人竄改溫度設定，後續攻擊更波及多個歐洲國家及血庫。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Copeland XWEB PRO冷凍控制器遭劫持，淪為垃圾郵件與代理節點",
+    "desc": "自10月上旬起，歐洲陸續爆發冷凍冷藏設備遭網路攻擊事件，法國數百家超市的冷凍設備遭人竄改溫度設定，後續攻擊更波及多個歐洲國家及血庫。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:eb816fdf578a",
+   "kind": "news",
+   "title": "Palo Alto Networks修補防火牆已遭利用的Linux核心漏洞Fragnesia",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Palo Alto",
+    "Linux"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:46+00:00",
+   "updated": "2026-11-26T08:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180808",
+   "pts": [
+    "11月25日資安廠商Palo Alto Networks發布防火牆作業系統PAN-OS更新，修補Linux核心的本機權限提升漏洞Fragnesia（CVE-2026-46300），該公司提及，此弱點已被用於攻擊曝露於網際網路的防火牆管理介面，呼籲用戶採取行動，除更新作業系統，也要根據最佳實務指引，避"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Palo Alto Networks修補防火牆已遭利用的Linux核心漏洞Fragnesia",
+    "desc": "11月25日資安廠商Palo Alto Networks發布防火牆作業系統PAN-OS更新，修補Linux核心的本機權限提升漏洞Fragnesia（CVE-2026-46300），該公司提及，此弱點已被用於攻擊曝露於網際網路的防火牆管理介面，呼籲用戶採取行動，除更新作業系統，也要根據最佳實務指引，避免管理介面直接曝露於網際網路環境。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:01cf10468113",
+   "kind": "news",
+   "title": "泰味國際委外雲端發票平臺遭異常存取，290人受影響",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:46+00:00",
+   "updated": "2026-11-26T08:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180806",
+   "pts": [
+    "連鎖餐飲集團瓦城（2729）於11月25日晚間，在股市公開資訊觀測站發布重大訊息，旗下子公司泰味國際使用的委外購物網站服務發生資安事件。委外服務廠商近期在雲端發票平臺發現異常資料存取情形，並於發現後阻擋異常存取行為。此次事件初步評估影響人數為290人，瓦城初步評估對公司營運並無重大影響。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "泰味國際委外雲端發票平臺遭異常存取，290人受影響",
+    "desc": "連鎖餐飲集團瓦城（2729）於11月25日晚間，在股市公開資訊觀測站發布重大訊息，旗下子公司泰味國際使用的委外購物網站服務發生資安事件。委外服務廠商近期在雲端發票平臺發現異常資料存取情形，並於發現後阻擋異常存取行為。此次事件初步評估影響人數為290人，瓦城初步評估對公司營運並無重大影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:37d02aff574f",
+   "kind": "news",
+   "title": "英國NCSC示警AI輔助網路攻擊顯著增加，駭客數分鐘內就可能利用企業既有資安弱點",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:46+00:00",
+   "updated": "2026-11-26T08:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180781",
+   "pts": [
+    "英國國家網路安全中心（National Cyber Security Centre，NCSC）11月24日發布警告指出，自今年9月以來，該機構觀測到AI輔助網路攻擊顯著增加，已波及多個產業的組織，部分事件造成服務中斷或系統遭到入侵。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "英國NCSC示警AI輔助網路攻擊顯著增加，駭客數分鐘內就可能利用企業既有資安弱點",
+    "desc": "英國國家網路安全中心（National Cyber Security Centre，NCSC）11月24日發布警告指出，自今年9月以來，該機構觀測到AI輔助網路攻擊顯著增加，已波及多個產業的組織，部分事件造成服務中斷或系統遭到入侵。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:5949dd824302",
+   "kind": "news",
+   "title": "卡巴斯基盤點2027年七大供應鏈資安風險，企業防護範圍從開源軟體擴及AI模型與代理",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:46+00:00",
+   "updated": "2026-11-26T08:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180745",
+   "pts": [
+    "企業日常營運仰賴的開源軟體、開發工具及AI服務，都可能成為供應鏈資安風險的來源。資安業者卡巴斯基（Kaspersky）公布2027年七大供應鏈風險預測，指出隨著企業日益依賴AI模型與代理，除了須防範攻擊者利用原本受信任的軟體及服務發動攻擊，也須將外部AI服務無法使用的情況納入風險評估。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "卡巴斯基盤點2027年七大供應鏈資安風險，企業防護範圍從開源軟體擴及AI模型與代理",
+    "desc": "企業日常營運仰賴的開源軟體、開發工具及AI服務，都可能成為供應鏈資安風險的來源。資安業者卡巴斯基（Kaspersky）公布2027年七大供應鏈風險預測，指出隨著企業日益依賴AI模型與代理，除了須防範攻擊者利用原本受信任的軟體及服務發動攻擊，也須將外部AI服務無法使用的情況納入風險評估。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d1223fb70bb6",
+   "kind": "news",
+   "title": "Google擴充AI代理安全防護，新增執行前政策檢查機制",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-26T08:24:54+00:00",
+   "first_seen": "2026-11-26T08:25:46+00:00",
+   "updated": "2026-11-26T08:25:46+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180723",
+   "pts": [
+    "Google於11月20日宣布推出AI代理語意治理政策（Semantic Governance Policies）預覽版，利用大型語言模型（LLM）檢查AI代理準備執行的工具操作，判斷是否符合使用者要求及企業政策，並在執行前阻擋不符合規定的操作。這項機制可用來防範AI代理受到提示詞注入攻擊影響，或在"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Google擴充AI代理安全防護，新增執行前政策檢查機制",
+    "desc": "Google於11月20日宣布推出AI代理語意治理政策（Semantic Governance Policies）預覽版，利用大型語言模型（LLM）檢查AI代理準備執行的工具操作，判斷是否符合使用者要求及企業政策，並在執行前阻擋不符合規定的操作。這項機制可用來防範AI代理受到提示詞注入攻擊影響，或在具備合法存取權限的情況下，執行違反企業規定的操作。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "CVE-2026-123682",
+   "kind": "cve",
+   "title": "SonicWall 漏洞 CVE-2026-123682",
+   "sub": "CVE-2026-123682 · CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "SonicWall"
+   ],
+   "cves": [
+    "CVE-2026-123682"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-26T03:16:35+00:00",
+   "first_seen": "2026-11-26T08:24:00+00:00",
+   "updated": "2026-11-26T08:24:00+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123682",
+   "pts": [
+    "An authenticated remote code execution vulnerability exists in the update functionality of StellarOne due to insufficient validation of file"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "desc": "An authenticated remote code execution vulnerability exists in the update functionality of StellarOne due to insufficient validation of files contained within uploaded update packages. An attacker with web administrator privileges can upload a crafted update package to execute arbitrary programs with root privileges on the server. This issue affects StellarOne: before 5.0.3232.",
+    "refs": [
+     "https://www.encyclopedia.txone.com/en-us/support/psirt/CVE-2026-123682"
+    ]
+   }
+  },
+  {
+   "id": "grp:Ivanti:2026-11-26",
+   "kind": "group",
+   "title": "Ivanti 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.6",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "Ivanti",
+    "SonicWall"
+   ],
+   "cves": [
+    "CVE-2026-123680",
+    "CVE-2026-123687"
+   ],
+   "cvss": 8.6,
+   "published": "2026-11-26T03:16:34+00:00",
+   "first_seen": "2026-11-26T08:24:00+00:00",
+   "updated": "2026-11-26T08:24:00+00:00",
+   "src": "NVD",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123680",
+   "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.6。",
+    "An authenticated remote code execution vulnerability exists in the firmware update functionality of StellarOne. An attacker with admin privi"
+   ],
+   "fix": "",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "descs": [
+     "An authenticated remote code execution vulnerability exists in the firmware update functionality of StellarOne. An attacker with admin privileges can upload a crafted firmware package to execute arbitrary programs with root privileges on the system. This issue affects StellarOne: before 5.0.3232.",
+     "An arbitrary file write vulnerability exists in the patch upload functionality of StellarOne due to improper validation of file paths. An attacker with admin web access can upload a crafted patch package to write arbitrary files on endpoints with the privileges of the endpoint service. This issue affects StellarOne: before 5.0.3232."
+    ]
+   }
+  },
   {
    "id": "CVE-2026-137056",
    "kind": "cve",
@@ -74,7 +504,7 @@
   {
    "id": "grp:SQL Server:2026-11-26",
    "kind": "group",
-   "title": "SQL Server 多個高風險漏洞",
+   "title": "SQL Server 元件漏洞",
    "sub": "2 個 CVE · 最高 CVSS 7.5",
    "sev": "note",
    "kev": false,
@@ -93,12 +523,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136503",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 7.5。",
-    "During IMPORT FOREIGN SCHEMA, mysql_fdw copies column metadata returned by the remote MySQL server into the CREATE FOREIGN TABLE statements "
+    "影響 SQL Server 相關 mysql_fdw 與 psqlODBC，**存在未加引號與記憶體重複釋放、越界寫入問題**。",
+    "包含 CVE-2026-136503 與 CVE-2026-62154，發生於匯入外部結構或交易提交回溯清理時，CVSS 7.5，尚未遭利用。"
    ],
-   "fix": "原文：The issue is fixed in mysql_fdw 2.10.0.",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "During IMPORT FOREIGN SCHEMA, mysql_fdw copies column metadata returned by the remote MySQL server into the CREATE FOREIGN TABLE statements it runs locally without quoting it. The COLUMN_DEFAULT value is placed directly in the DEFAULT clause, and the name of the generated ENUM type is inserted unquoted. A malicious or compromised MySQL server, or an attacker who can tamper with the connection, can return crafted information_schema metadata and run arbitrary SQL in the local PostgreSQL session of the user who runs IMPORT FOREIGN SCHEMA. The issue is fixed in mysql_fdw 2.10.0. From mysql_fdw 2.10.0, mysql_fdw quotes these values before building the statements.",
@@ -715,6 +1145,41 @@
    }
   },
   {
+   "id": "CVE-2026-133275",
+   "kind": "cve",
+   "title": "Mitel MiCollab Unrestricted Upload of Fi",
+   "sub": "CVE-2026-133275 · CVSS 5.3",
+   "sev": "crit",
+   "kev": true,
+   "ransomware": false,
+   "products": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-133275"
+   ],
+   "cvss": 5.3,
+   "published": "2026-11-25T00:00:00+00:00",
+   "first_seen": "2026-11-26T08:24:51+00:00",
+   "updated": "2026-11-26T08:24:51+00:00",
+   "src": "CISA KEV",
+   "url": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0012",
+   "pts": [
+    "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) comp",
+    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+   ],
+   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
+   "ai": false,
+   "ai_ver": 0,
+   "raw": {
+    "name": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+    "desc": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
+    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "vendor": "Mitel",
+    "product": "MiCollab"
+   }
+  },
+  {
    "id": "grp:AI 平台:2026-11-25",
    "kind": "group",
    "title": "AutoGPT 多項安全漏洞",
@@ -1292,18 +1757,20 @@
    "cvss": 10.0,
    "published": "2026-11-24T04:17:22+00:00",
    "first_seen": "2026-11-24T11:01:51+00:00",
-   "updated": "2026-11-24T21:18:07+00:00",
+   "updated": "2026-11-26T08:24:00+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128791",
    "pts": [
-    "影響 Cisco 相關設備，**未經身分驗證即可永久刪除會議錄影檔案並取得裝置與錄影中繼資料**。",
-    "尚未遭利用；任何連上 WiFi 的用戶端不需憑證即可直接發送請求觸發（CVSS 10.0）。"
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication."
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
+     "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication.",
+     "Any connected WiFi client can fetch device info and meeting recording metadata without credentials.",
      "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication.",
      "Any connected WiFi client can fetch device info and meeting recording metadata without credentials.",
      "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication.",
@@ -1464,7 +1931,7 @@
   {
    "id": "CVE-2026-82981",
    "kind": "cve",
-   "title": "Ivanti 漏洞 CVE-2026-82981",
+   "title": "Ivanti SQL 注入漏洞",
    "sub": "CVE-2026-82981 · CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -1482,11 +1949,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82981",
    "pts": [
-    "SQL injection in WHMCS could allow an unauthenticated user to retrieve clients' personal and support information, as well as administrator a"
+    "影響 Ivanti 相關產品（WHMCS）的 SQL 注入漏洞，可能導致客戶個人與支援資料，以及**管理員帳號紀錄與密碼雜湊遭竊取**。",
+    "攻擊者無須通過驗證即可利用，目前尚未發現遭實際利用，CVSS 評分為 8.7。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "SQL injection in WHMCS could allow an unauthenticated user to retrieve clients' personal and support information, as well as administrator account records and password hashes.",
     "refs": [
@@ -1497,7 +1965,7 @@
   {
    "id": "CVE-2026-134069",
    "kind": "cve",
-   "title": "Windows 漏洞 CVE-2026-134069",
+   "title": "Windows 預設金鑰漏洞",
    "sub": "CVE-2026-134069 · CVSS 8.2",
    "sev": "high",
    "kev": false,
@@ -1515,11 +1983,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134069",
    "pts": [
-    "Use of a default cryptographic key in the instance registration component in Amazon SSM Agent before 3.3.5226.0 on AWS-provided Windows Serv"
+    "影響 2026-09-09 前、SSM Agent 3.3.5226.0 前版本的 Windows Server AMI，恐洩漏角色憑證。",
+    "無管理權限的本機使用者可透過共用註冊金鑰利用此漏洞，目前尚未遭實際利用，CVSS 8.2。"
    ],
-   "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "fix": "**須改用 2026-09-09 後含 SSM Agent 3.3.5226.0 以上版本的 AMI 重建執行個體**，原地升級無效且勿刪除 Vault。",
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "Use of a default cryptographic key in the instance registration component in Amazon SSM Agent before 3.3.5226.0 on AWS-provided Windows Server AMIs released before 2026-09-09 might allow local users without administrative privileges to obtain the instance's Default Host Management Configuration role credentials via the registration key shared by all instances launched from the same AMI.\n\n\n\nTo remediate this issue, users should replace affected instances with instances launched from AWS Windows Server AMIs released on or after 2026-09-09, which include SSM Agent 3.3.5226.0 or later. Upgrading the agent in place does not replace the shared key, and deleting the agent's Vault breaks instances managed through Default Host Management Configuration.",
     "refs": [
@@ -2243,7 +2712,7 @@
   {
    "id": "CVE-2026-115900",
    "kind": "cve",
-   "title": "GitLab 漏洞 CVE-2026-115900",
+   "title": "GitLab 等驗證繞過漏洞",
    "sub": "CVE-2026-115900 · CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -2262,11 +2731,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115900",
    "pts": [
-    "An attacker must possess a valid Worker distribution credential, reach the Leader distribution listener, and send crafted authenticated Work"
+    "影響 GitLab 與 Ivanti 產品，**成功利用可繞過 Leader REST 驗證並取得管理員 API 存取權**。",
+    "攻擊者須持有有效 Worker 憑證並連線 Leader 監聽埠，若啟用 mTLS 則另須憑證與私鑰；目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "An attacker must possess a valid Worker distribution credential, reach the Leader distribution listener, and send crafted authenticated Worker heartbeats. Where mTLS client authentication is enforced, an accepted client certificate and its private key are also required. Successful exploitation bypasses Leader REST authentication and permits administrative API access.",
     "refs": [
@@ -4749,7 +5219,7 @@
   {
    "id": "grp:Linux:2026-11-18",
    "kind": "group",
-   "title": "Linux 核心高風險漏洞",
+   "title": "Linux 核心資源競爭等漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.8",
    "sev": "high",
    "kev": false,
@@ -4768,11 +5238,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99312",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: KVM: x86: Unconditionally reset MMU context when emulating INIT Force an"
+    "影響 Linux 核心 KVM x86 與 logitech-hidpp 驅動程式，**涉及 MMU 重置異常及過期指標競爭危害**。",
+    "此組包含 CVE-2026-99312 與 CVE-2026-99313，最高 CVSS 8.8，目前尚未發現遭實際利用。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -14975,7 +15445,7 @@
   {
    "id": "CVE-2026-99270",
    "kind": "cve",
-   "title": "Linux 核心 漏洞 CVE-2026-99270",
+   "title": "Linux 核心 UAF 漏洞",
    "sub": "CVE-2026-99270 · CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -14993,11 +15463,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99270",
    "pts": [
-    "In the Linux kernel, the following vulnerability has been resolved: tcp: Fix potential UAF in reqsk_timer_handler(). When TCP socket migrati"
+    "影響 Linux 核心 TCP 處理，socket 遷移失敗未停止計時器，**可能造成釋放後使用（UAF）漏洞**。",
+    "此漏洞發生於 TCP socket 遷移失敗的計時器處理流程，CVSS 8.1，目前尚未遭實際利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: Fix potential UAF in reqsk_timer_handler().\n\nWhen TCP socket migration fails at inet_ehash_insert() in\nreqsk_timer_handler(), we jump to the no_ownership: label\nand free the new reqsk immediately with __reqsk_free().\n\nThus, we must stop the new reqsk's timer before jumping to the\nlabel, but the timer might be missed since the cited commit,\nresulting in UAF.\n\nAs we are in the original reqsk's timer context, we can safely\ncall timer_delete_sync() for the new reqsk.\n\nLet's pass false to __inet_csk_reqsk_queue_drop() to stop\nthe new reqsk's timer.",
     "refs": [
@@ -21325,10 +21796,81 @@
   "CVE-2026-135147": [],
   "CVE-2026-135227": [],
   "CVE-2026-137077": [],
-  "CVE-2026-133742": []
+  "CVE-2026-133742": [],
+  "CVE-2026-122067": [],
+  "CVE-2026-126729": [],
+  "CVE-2026-126730": [],
+  "CVE-2026-126731": [],
+  "CVE-2026-133336": [],
+  "CVE-2026-137043": [],
+  "CVE-2026-115576": [],
+  "CVE-2026-133525": [],
+  "CVE-2026-66784": [],
+  "CVE-2026-137305": [],
+  "CVE-2026-123685": [],
+  "CVE-2017-20291": [],
+  "CVE-2026-123680": [
+   "Ivanti",
+   "SonicWall"
+  ],
+  "CVE-2026-123682": [
+   "SonicWall"
+  ],
+  "CVE-2026-123687": [
+   "Ivanti"
+  ],
+  "CVE-2026-123689": [],
+  "CVE-2026-135772": [],
+  "CVE-2026-123686": [],
+  "CVE-2026-137308": [],
+  "CVE-2026-133337": [],
+  "CVE-2026-136500": [],
+  "CVE-2026-136502": [],
+  "CVE-2026-136507": [],
+  "CVE-2026-110331": [],
+  "CVE-2026-80267": [],
+  "CVE-2026-80271": [],
+  "CVE-2026-80285": [],
+  "CVE-2026-80363": [],
+  "CVE-2026-80364": [],
+  "CVE-2026-80365": [],
+  "CVE-2026-80369": [],
+  "CVE-2026-80284": [],
+  "CVE-2026-52803": [],
+  "CVE-2026-137306": [],
+  "CVE-2026-133338": [],
+  "CVE-2026-133977": [],
+  "CVE-2026-133978": [],
+  "CVE-2026-136503": [],
+  "CVE-2026-136505": [],
+  "CVE-2026-136506": [],
+  "CVE-2026-136509": [],
+  "CVE-2026-136512": [],
+  "CVE-2026-136515": [],
+  "CVE-2026-130336": [],
+  "CVE-2026-133979": [],
+  "CVE-2026-137326": [],
+  "CVE-2026-80269": [],
+  "CVE-2026-80286": [],
+  "CVE-2026-136501": [],
+  "CVE-2026-137309": [],
+  "CVE-2026-123679": [
+   "Ivanti"
+  ],
+  "CVE-2025-41450": [],
+  "CVE-2023-25914": [],
+  "CVE-2023-25915": [],
+  "CVE-2026-133324": [],
+  "CVE-2026-133275": [
+   "Cisco"
+  ],
+  "CVE-2026-133311": [],
+  "CVE-2026-132224": [],
+  "CVE-2026-132165": [],
+  "CVE-2026-126187": []
  },
- "nvd_last": "2026-11-25T23:37:53+00:00",
- "kev_last": "2026-11-25T23:37:53+00:00",
+ "nvd_last": "2026-11-26T08:20:16+00:00",
+ "kev_last": "2026-11-26T08:20:16+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
@@ -21362,6 +21904,8 @@
   "tw:6a04d3e37f2e",
   "tw:c27e9b27b2c3",
   "tw:61d09fdddc1a",
-  "tw:d6920de1f980"
+  "tw:d6920de1f980",
+  "tw:01e696757368",
+  "tw:f10143e538e5"
  ]
 }
