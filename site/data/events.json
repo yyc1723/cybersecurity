@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T19:01:27+00:00",
+ "generated": "2026-11-27T02:11:28+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -331,24 +331,24 @@
     "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
    },
    {
-    "title": "Windows Server：Windows 預設金鑰漏洞",
-    "desc": "須改用 2026-09-09 後含 SSM Agent 3.3.5226.0 以上版本的 AMI 重建執行個體，原地升級無效且勿刪除 Vault。"
+    "title": "VMware ESX 重大漏洞",
+    "desc": "VMware ESX 9.1.x.x 需更新至 ESXi-9.1.2.0-25946735。"
    },
    {
-    "title": "Broadcom修補VMware產品23個漏洞，含影響vCenter的身分驗證繞",
-    "desc": ""
+    "title": "VMware 驗證繞過漏洞",
+    "desc": "Broadcom 於 11 月 24 日發布公告修補共 23 個漏洞，目前尚未發現遭利用或用於勒索軟體。"
    },
    {
-    "title": "Cisco：Mitel MiCollab Unrestricted Upload",
-    "desc": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。"
+    "title": "Cisco：MiCollab 上傳漏洞",
+    "desc": "依原廠公告套用修補或緩解措施，無法修補時停用該產品"
    },
    {
     "title": "AI 平台：AutoGPT 多項安全漏洞",
     "desc": "CVSS 9.1，目前尚未遭利用；攻擊者可透過網路存取 API、帳號或誘使執行共用代理觸發。"
    },
    {
-    "title": "Cisco 無驗證刪檔漏洞",
-    "desc": "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete fi"
+    "title": "Cisco 未授權存取漏洞",
+    "desc": "包含 CVE-2026-128791 與 CVE-2026-128798，最高 CVSS 達 10.0，目前尚未發現遭利用。"
    }
   ],
   "ai": false
@@ -361,6 +361,98 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:bd8fa48e84f5",
+   "kind": "news",
+   "title": "中國及北韓駭客皆已於武器庫中加入ARTEX",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T02:13:49+00:00",
+   "first_seen": "2026-11-27T02:13:53+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180835",
+   "pts": [
+    "微軟周三（11/25）公布AI自主滲透測試框架ARTEX的技術分析報告，指出已有至少6個駭客組織將ARTEX納入攻擊武器庫，包括Storm-0940、Storm-3358、Onyx Sleet、Pearl Sleet、Crystal Typhoon及Salt Typhoon。ARTEX最快只需數分鐘"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:c4dbc37465a3",
+   "kind": "news",
+   "title": "義大利、瑞士示警AI代理式攻擊，籲24小時內修補對外系統漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T02:13:49+00:00",
+   "first_seen": "2026-11-27T02:13:59+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180821",
+   "pts": [
+    "近期美國、英國及臺灣政府資安機構陸續示警AI代理式攻擊，義大利及瑞士也公布境內發生的攻擊案例。義大利資安事件應變團隊（CSIRT Italia）11月23日發布公告，指出駭客運用多個AI代理同時執行攻擊任務，部分案例中，短短數小時內就入侵大量系統。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:1bd4239657b2",
+   "kind": "news",
+   "title": "雲端安全聯盟提出AI治理框架整合指引，強調模型安全測試與執行過程可追溯性",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T02:13:49+00:00",
+   "first_seen": "2026-11-27T02:14:05+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180801",
+   "pts": [
+    "國際非營利資安組織雲端安全聯盟（CSA）近期發布企業AI成熟度指引，提出整合3套AI治理框架的做法，建議企業從AI系統原型開發階段就納入模型安全措施，定期檢測模型漏洞，並評估模型抵禦對抗性攻擊的能力，同時建立追蹤機制，以利查明AI系統的執行過程及各項作業所使用的身分。"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:00eccd316943",
+   "kind": "news",
+   "title": "BeyondTrust預測2027年企業資安新挑戰，AI代理權限遭濫用，對外開放系統重大漏洞應變時間縮短至數小時",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T02:13:49+00:00",
+   "first_seen": "2026-11-27T02:14:11+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180760",
+   "pts": [
+    "企業部署的AI代理能夠自主存取敏感資料、操作其他系統，並代表使用者執行任務，但攻擊者也可能濫用這些權限發動攻擊。特權存取管理（PAM）業者BeyondTrust公布2027年資安趨勢預測，指出企業資安管理的重點將不再只是掌握誰擁有存取權限，也須釐清人員、機器及AI代理取得權限後能夠執行哪些操作、授權"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:550ba061acd6",
    "kind": "news",
@@ -500,10 +592,10 @@
    "ai": true
   },
   {
-   "id": "CVE-2026-137543",
-   "kind": "cve",
-   "title": "AI 平台 漏洞 CVE-2026-137543",
-   "sub": "CVE-2026-137543 · CVSS 8.3",
+   "id": "grp:AI 平台:2026-11-27",
+   "kind": "group",
+   "title": "AI 平台 多個高風險漏洞",
+   "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
    "ransomware": false,
@@ -511,14 +603,16 @@
     "AI 平台"
    ],
    "cves": [
-    "CVE-2026-137543"
+    "CVE-2026-137543",
+    "CVE-2026-137657"
    ],
-   "cvss": 8.3,
+   "cvss": 8.7,
    "published": "2026-11-26T16:18:07+00:00",
    "first_seen": "2026-11-26T19:07:06+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137543",
    "pts": [
+    "同日公布 2 個漏洞，最高 CVSS 8.7。",
     "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services b"
    ],
    "fix": "",
@@ -527,7 +621,7 @@
   {
    "id": "grp:VMware:2026-11-26",
    "kind": "group",
-   "title": "VMware 多個高風險漏洞",
+   "title": "VMware ESX 重大漏洞",
    "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -547,11 +641,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123910",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 9.8。",
-    "ESX contains a heap out-of-bounds write vulnerability in the I/O filter service. Broadcom has evaluated the severity of this issue to be in "
+    "影響 VMware ESX 9.0.x.x、9.1.x.x、Workstation 與 Fusion，**存在越界寫入、釋放後使用與溢位漏洞**。",
+    "目前尚未遭利用，包含 CVE-2026-123910 至 123913 共 4 個漏洞，最高 CVSS 評分達 9.8。"
    ],
-   "fix": "升級至 5.2.5 以上（依原文擷取）",
-   "ai": false
+   "fix": "VMware ESX 9.1.x.x 需更新至 ESXi-9.1.2.0-25946735。",
+   "ai": true
   },
   {
    "id": "tw:a971f19318cd",
@@ -1267,7 +1361,7 @@
   {
    "id": "CVE-2026-123903",
    "kind": "cve",
-   "title": "Broadcom修補VMware產品23個漏洞，含影響vCenter的身分驗證繞",
+   "title": "VMware 驗證繞過漏洞",
    "sub": "CVE-2026-123903 · CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -1283,9 +1377,12 @@
    "first_seen": "2026-11-25T04:19:05+00:00",
    "src": "iThome 報導",
    "url": "https://www.ithome.com.tw/news/180786",
-   "pts": [],
+   "pts": [
+    "影響 VMware vCenter 等產品，**CVE-2026-123903 可導致身分驗證繞過**，CVSS 3.1 評分達 9.8。",
+    "Broadcom 於 11 月 24 日發布公告修補共 23 個漏洞，目前尚未發現遭利用或用於勒索軟體。"
+   ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:7195531bbb17",
@@ -1405,7 +1502,7 @@
   {
    "id": "CVE-2026-133275",
    "kind": "cve",
-   "title": "Mitel MiCollab Unrestricted Upload of Fi",
+   "title": "MiCollab 上傳漏洞",
    "sub": "CVE-2026-133275 · CVSS 5.3",
    "sev": "crit",
    "kev": true,
@@ -1422,11 +1519,11 @@
    "src": "CISA KEV",
    "url": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0012",
    "pts": [
-    "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) comp",
-    "**已列入 CISA KEV 已遭利用清單**，請優先處理。"
+    "影響 Mitel MiCollab AWV 元件，因檔案類型驗證不足，未經身分驗證的攻擊者可上傳任意檔案。",
+    "**此漏洞（CVE-2026-133275，CVSS 5.3）已遭實際利用**，目前尚無勒索軟體利用紀錄。"
    ],
-   "fix": "依原廠公告套用修補或緩解措施；無法修補時應停止使用該產品（CISA 建議）。",
-   "ai": false
+   "fix": "依原廠公告套用修補或緩解措施，無法修補時停用該產品",
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-11-25",
@@ -1460,7 +1557,7 @@
   {
    "id": "CVE-2026-82169",
    "kind": "cve",
-   "title": "VMware 漏洞 CVE-2026-82169",
+   "title": "VMware元件指令注入漏洞",
    "sub": "CVE-2026-82169 · CVSS 8.3",
    "sev": "high",
    "kev": false,
@@ -1477,10 +1574,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82169",
    "pts": [
-    "Dell Virtual Storage Integrator for VMware vSphere Web Client, versions prior to 10.12.0.0, contains an OS Command Injection – confirm singl"
+    "Dell Virtual Storage Integrator 10.12.0.0 前版本存命令注入漏洞，**可遭執行任意指令**。",
+    "CVSS 8.3，目前未遭利用；低權限遠端攻擊者可利用 Upgrade Service 觸發此漏洞。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:8e036b49578d",
@@ -1830,7 +1928,7 @@
   {
    "id": "CVE-2026-135802",
    "kind": "cve",
-   "title": "nginx 漏洞 CVE-2026-135802",
+   "title": "nginx 基礎網址偽造漏洞",
    "sub": "CVE-2026-135802 · CVSS 8.1",
    "sev": "high",
    "kev": false,
@@ -1847,15 +1945,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135802",
    "pts": [
-    "When Request::getBaseUrl() does not find the script name at the start of the request URI, it looks for it further into the path. This suppor"
+    "影響特定 nginx、php -S 等設定下的 Symfony 應用，**恐致憑證外洩、惡意重導向或載入外部腳本**。",
+    "CVSS 8.1，目前未遭利用；須誘使使用者點擊特製連結，且 framework.trusted_hosts 無法防禦。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Cisco:2026-11-24",
    "kind": "group",
-   "title": "Cisco 無驗證刪檔漏洞",
+   "title": "Cisco 未授權存取漏洞",
    "sub": "2 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -1873,11 +1972,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128791",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 10.0。",
-    "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication."
+    "影響 Cisco 相關設備，**任何連線的 WiFi 用戶端不需身分驗證即可永久刪除檔案**，或取得設備資訊與會議錄影中繼資料。",
+    "包含 CVE-2026-128791 與 CVE-2026-128798，最高 CVSS 達 10.0，目前尚未發現遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:59e37f358a6f",
@@ -3382,7 +3481,7 @@
   {
    "id": "grp:VMware:2026-11-19",
    "kind": "group",
-   "title": "VMware 多個高風險漏洞",
+   "title": "VMware 驗證與注入漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -3400,11 +3499,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
-    "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. Affected versions: 9.1.x (fixed in 9.1.1.020"
+    "影響 VMware vCenter、SDDC Manager 及 Telco Cloud，**分別存在身分驗證繞過與 SQL 注入漏洞**。",
+    "包含 CVE-2026-123890 與 CVE-2026-123891，最高 CVSS 達 9.8，目前尚未發現遭利用。"
    ],
-   "fix": "升級至 9.1.1.0200 以上（依原文擷取）",
-   "ai": false
+   "fix": "兩者修復版為 9.1.1.0200 與 5.2.5；vCenter 另為 9.0.2.0200、8.0 U3m；SDDC 另為 9.0.2.0100。",
+   "ai": true
   },
   {
    "id": "grp:PHP:2026-11-19",
@@ -3435,11 +3534,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115560",
    "pts": [
-    "同日公布 10 個漏洞，最高 CVSS 9.2。",
-    "Session serializer mismatch can lead to remote code execution. Session upload progress, when enabled, can store attacker-controlled data in "
+    "影響 PHP 多個元件，含 Session、時區快取與 PHP-FPM，**可導致遠端執行程式碼、本地權限提升與阻斷服務**。",
+    "共包含 10 個漏洞（最高 CVSS 9.2），多與特定設定或致命錯誤觸發有關，目前尚未發現遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:7e54063b17fb",
@@ -3950,7 +4049,7 @@
   {
    "id": "grp:AI 平台:2026-11-19",
    "kind": "group",
-   "title": "AI 平台存取與路徑漏洞",
+   "title": "AI 平台多項高風險漏洞",
    "sub": "4 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -3970,16 +4069,16 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127222",
    "pts": [
-    "同日公布 4 個漏洞，最高 CVSS 9.8。",
-    "Dialoqbase is an application for creating chatbots. Prior to 1.11.5, the unauthenticated GET /api/v1/view/* route in server/src/routes/api/v"
+    "影響 Dialoqbase、Zyrabit Platform、SGLang 與 Obot 指定版本，**可致未授權存取或竊取權杖**。",
+    "最高 CVSS 9.8，部分端點無須驗證即可經網路觸及；目前尚未發現遭實際或勒索軟體利用。"
    ],
-   "fix": "升級至 1.11.5 以上（依原文擷取）",
-   "ai": false
+   "fix": "Dialoqbase 升至 1.11.5、Zyrabit Platform 升至 2.4.4、Obot 升至 0.27.0；SGLang 套用 commit 7b5fb39。",
+   "ai": true
   },
   {
    "id": "grp:nginx:2026-11-19",
    "kind": "group",
-   "title": "NGINX 遠端執行與阻斷漏洞",
+   "title": "NGINX 記憶體與阻斷漏洞",
    "sub": "8 個 CVE · 最高 CVSS 9.2",
    "sev": "crit",
    "kev": false,
@@ -4004,11 +4103,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113425",
    "pts": [
-    "同日公布 8 個漏洞，最高 CVSS 9.2。",
-    "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker proces"
+    "影響 NGINX Plus 與 Open Source，**特定組態下可導致記憶體損毀、遠端執行程式碼或無窮迴圈**。",
+    "最高 CVSS 9.2，需啟用 HTTP/2、HTTP/3、TLSv1.3 或郵件代理等組態；目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:2e6ab840ef1c",
@@ -4268,7 +4367,7 @@
   {
    "id": "grp:OpenSSL:2026-11-18",
    "kind": "group",
-   "title": "OpenSSL 多個高風險漏洞",
+   "title": "OpenSSL 溢位阻斷漏洞",
    "sub": "2 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -4286,11 +4385,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107494",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 9.8。",
-    "Calling EVP_EncodeBlock() with an input length close to INT_MAX may overflow the calculation of the encoded output size and write past the e"
+    "影響 OpenSSL 的 EVP_EncodeBlock() 與 QUIC 堆疊，**遠端惡意節點可觸發記憶體耗盡或溢位**。",
+    "最高 CVSS 9.8，溢位尚未發現攻擊路徑，但 QUIC 漏洞可從遠端觸發；目前尚未遭實際利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "CVE-2026-19707",
@@ -4741,7 +4840,7 @@
   {
    "id": "grp:Oracle:2026-11-18",
    "kind": "group",
-   "title": "Oracle 多項嚴重漏洞",
+   "title": "Oracle 產品多項高危漏洞",
    "sub": "149 個 CVE · 最高 CVSS 10.0",
    "sev": "crit",
    "kev": false,
@@ -4907,11 +5006,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101652",
    "pts": [
-    "同日公布 149 個漏洞，最高 CVSS 10.0。",
-    "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Platform Security). Supported v"
+    "影響 Oracle BI、WebLogic、Access Manager、Java 安全元件與資料庫，**可致遠端入侵**。",
+    "最高 CVSS 10.0，多數經 HTTP 免驗證即可利用，資料庫需 Create Session 權限；目前尚未遭利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "grp:Windows Server:2026-11-18",
@@ -4955,7 +5054,7 @@
   {
    "id": "grp:Chrome:2026-11-18",
    "kind": "group",
-   "title": "Chrome 圖形元件沙箱漏洞",
+   "title": "Chrome 沙箱外遠端執行漏洞",
    "sub": "107 個 CVE · 最高 CVSS 9.6",
    "sev": "crit",
    "kev": false,
@@ -5078,11 +5177,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130906",
    "pts": [
-    "同日公布 107 個漏洞，最高 CVSS 9.6。",
-    "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute"
+    "影響 Google Chrome（含 Android）158.0.8127.36 前版本，**惡意網頁可突破沙箱執行程式碼**。",
+    "最高 CVSS 9.6，誘使瀏覽特製 HTML 即可觸發 ANGLE、WebGL 或 GPU 漏洞；目前尚未遭利用。"
    ],
-   "fix": "",
-   "ai": false
+   "fix": "升級 Google Chrome（含 Android 版）至 158.0.8127.36 以上版本。",
+   "ai": true
   },
   {
    "id": "grp:AI 平台:2026-11-18",
@@ -6166,7 +6265,7 @@
   {
    "id": "grp:Linux:2026-11-16",
    "kind": "group",
-   "title": "Linux 核心多項記憶體漏洞",
+   "title": "Linux 核心檔案系統漏洞",
    "sub": "7 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -6189,11 +6288,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99289",
    "pts": [
-    "同日公布 7 個漏洞，最高 CVSS 9.8。",
-    "In the Linux kernel, the following vulnerability has been resolved: ceph: fix integer overflow in the snap trace bounds check ceph_update_sn"
+    "影響 Linux 核心 ceph、nfsd、ksmbd 與 smb 用戶端，**可導致記憶體溢位、釋放後使用或越界寫入**。",
+    "最高 CVSS 9.8，包含整數溢位、鎖定缺失與緩衝區溢位等問題；目前尚未發現遭實際利用。"
    ],
    "fix": "",
-   "ai": false
+   "ai": true
   },
   {
    "id": "tw:43fcc44e8b73",
