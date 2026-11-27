@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T10:52:49+00:00",
+ "generated": "2026-11-27T19:57:48+00:00",
  "groups": [
   "網路與資安設備",
   "作業系統與伺服器",
@@ -324,11 +324,11 @@
   }
  ],
  "todo": {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "items": [
    {
-    "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
-    "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
+    "title": "AI 平台 SSRF 等漏洞",
+    "desc": "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allow"
    },
    {
     "title": "VMware ESX 重大漏洞",
@@ -347,8 +347,8 @@
     "desc": "CVSS 9.1，目前尚未遭利用；攻擊者可透過網路存取 API、帳號或誘使執行共用代理觸發。"
    },
    {
-    "title": "Cisco 未授權存取漏洞",
-    "desc": "包含 CVE-2026-128791 與 CVE-2026-128798，最高 CVSS 達 10.0，目前尚未發現遭利用。"
+    "title": "其他：【資安週報】1123～1127，網銀盜轉手法曝光，第三方資訊服務供應商資安",
+    "desc": "國內網銀交易安全近期備受關注，除了11月初永豐銀行異常轉帳事件，刑事局近日也公布其他網銀盜轉案件的調查進展，指出警方已受理逾百起案件，其中部分案件涉及民眾從非官方管道下載偽冒短劇A"
    }
   ],
   "ai": false
@@ -361,6 +361,52 @@
   "iThome": true
  },
  "events": [
+  {
+   "id": "tw:0cdf8a002a08",
+   "kind": "news",
+   "title": "日本摩斯漢堡不到一個月揭露5起資安事件，皆涉及第三方服務",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T20:03:28+00:00",
+   "first_seen": "2026-11-27T20:03:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180862",
+   "pts": [
+    "近來第三方服務商遭駭事件頻傳，除了單一服務商遭駭波及多家企業的情況，也有企業在短時間內接連受到不同第三方服務商資安事件影響。日本知名連鎖速食業者摩斯漢堡（Mos Burger）便是相當值得關注的案例，經營該品牌的日本摩斯食品服務公司（Mos Food Services），自10月23日至11月20日"
+   ],
+   "fix": "",
+   "ai": true
+  },
+  {
+   "id": "tw:78f7570f270c",
+   "kind": "news",
+   "title": "AI治理從制度走向安全驗證，BSI解析ISO/IEC 27090與42119新進展，強調企業須跨部門管理AI風險",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T20:03:28+00:00",
+   "first_seen": "2026-11-27T20:03:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180834",
+   "pts": [
+    "如何落實AI治理、因應新興資安風險，已成為企業關注的重要課題。BSI英國標準協會近日舉辦「2026 BSI國際標準管理年會」，會中不僅強調AI治理須由跨部門共同負責，也特別提及幾項值得企業關注的AI安全標準與治理驗證進展，包括今年10月發布的ISO/IEC 27090、持續發展中的ISO/IEC 4"
+   ],
+   "fix": "",
+   "ai": true
+  },
   {
    "id": "tw:b4e0ae89a3fc",
    "kind": "news",
@@ -917,8 +963,8 @@
    "id": "grp:AI 平台:2026-11-27",
    "kind": "group",
    "title": "AI 平台 SSRF 等漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 8.7",
-   "sev": "high",
+   "sub": "3 個 CVE · 最高 CVSS 9.3",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -926,19 +972,20 @@
    ],
    "cves": [
     "CVE-2026-137543",
-    "CVE-2026-137657"
+    "CVE-2026-137657",
+    "CVE-2026-85258"
    ],
-   "cvss": 8.7,
+   "cvss": 9.3,
    "published": "2026-11-26T16:18:07+00:00",
    "first_seen": "2026-11-26T19:07:06+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137543",
    "pts": [
-    "影響 LaraDashboard 1.5.2 前及 InternLM LMDeploy 0.9.0~0.18.0，可存取內網或耗盡記憶體。",
-    "CVE-2026-137543、CVE-2026-137657（CVSS 8.7）尚未遭利用；**LMDeploy 無須驗證即可觸發**。"
+    "同日公布 3 個漏洞，最高 CVSS 9.3。",
+    "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services b"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:VMware:2026-11-26",
@@ -2295,11 +2342,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128791",
    "pts": [
-    "影響 Cisco 相關設備，**任何連線的 WiFi 用戶端不需身分驗證即可永久刪除檔案**，或取得設備資訊與會議錄影中繼資料。",
-    "包含 CVE-2026-128791 與 CVE-2026-128798，最高 CVSS 達 10.0，目前尚未發現遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication."
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "tw:59e37f358a6f",
@@ -3795,11 +3842,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99322",
    "pts": [
-    "影響 Linux 核心 SUNRPC、NFSD、SMB、ksmbd 及 VMBus 等元件，**存在緩衝區溢位與釋放後使用等漏洞**。",
-    "CVSS 9.8，目前尚未遭利用；涉及遠端檔案共享、重送處理及虛擬機共用環形緩衝區邊界檢查問題。"
+    "同日公布 20 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Do not credit control-record octets to the RPC stream svc_tcp_so"
    ],
    "fix": "",
-   "ai": true
+   "ai": false
   },
   {
    "id": "grp:VMware:2026-11-19",

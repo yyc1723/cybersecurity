@@ -4,11 +4,11 @@
   "2026-Nov"
  ],
  "todo": {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "items": [
    {
-    "title": "Windows Server：資安研究員公布Windows零時差漏洞FastUn",
-    "desc": "屢次槓上微軟的研究人員Nightmare Eclipse，在之前透露自己的身分是微軟前員工後，最近再度公布新的Windows零時差漏洞FastUnlock，這次公布的弱點相當特別，"
+    "title": "AI 平台 SSRF 等漏洞",
+    "desc": "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allow"
    },
    {
     "title": "VMware ESX 重大漏洞",
@@ -27,13 +27,73 @@
     "desc": "CVSS 9.1，目前尚未遭利用；攻擊者可透過網路存取 API、帳號或誘使執行共用代理觸發。"
    },
    {
-    "title": "Cisco 未授權存取漏洞",
-    "desc": "包含 CVE-2026-128791 與 CVE-2026-128798，最高 CVSS 達 10.0，目前尚未發現遭利用。"
+    "title": "其他：【資安週報】1123～1127，網銀盜轉手法曝光，第三方資訊服務供應商資安",
+    "desc": "國內網銀交易安全近期備受關注，除了11月初永豐銀行異常轉帳事件，刑事局近日也公布其他網銀盜轉案件的調查進展，指出警方已受理逾百起案件，其中部分案件涉及民眾從非官方管道下載偽冒短劇A"
    }
   ],
   "ai": false
  },
  "events": [
+  {
+   "id": "tw:0cdf8a002a08",
+   "kind": "news",
+   "title": "日本摩斯漢堡不到一個月揭露5起資安事件，皆涉及第三方服務",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T20:03:28+00:00",
+   "first_seen": "2026-11-27T20:03:28+00:00",
+   "updated": "2026-11-27T20:03:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180862",
+   "pts": [
+    "近來第三方服務商遭駭事件頻傳，除了單一服務商遭駭波及多家企業的情況，也有企業在短時間內接連受到不同第三方服務商資安事件影響。日本知名連鎖速食業者摩斯漢堡（Mos Burger）便是相當值得關注的案例，經營該品牌的日本摩斯食品服務公司（Mos Food Services），自10月23日至11月20日"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "日本摩斯漢堡不到一個月揭露5起資安事件，皆涉及第三方服務",
+    "desc": "近來第三方服務商遭駭事件頻傳，除了單一服務商遭駭波及多家企業的情況，也有企業在短時間內接連受到不同第三方服務商資安事件影響。日本知名連鎖速食業者摩斯漢堡（Mos Burger）便是相當值得關注的案例，經營該品牌的日本摩斯食品服務公司（Mos Food Services），自10月23日至11月20日，在不到一個月的時間內接連發布5起涉及第三方服務或委外維運系統的資安事件公告。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:78f7570f270c",
+   "kind": "news",
+   "title": "AI治理從制度走向安全驗證，BSI解析ISO/IEC 27090與42119新進展，強調企業須跨部門管理AI風險",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T20:03:28+00:00",
+   "first_seen": "2026-11-27T20:03:28+00:00",
+   "updated": "2026-11-27T20:03:28+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180834",
+   "pts": [
+    "如何落實AI治理、因應新興資安風險，已成為企業關注的重要課題。BSI英國標準協會近日舉辦「2026 BSI國際標準管理年會」，會中不僅強調AI治理須由跨部門共同負責，也特別提及幾項值得企業關注的AI安全標準與治理驗證進展，包括今年10月發布的ISO/IEC 27090、持續發展中的ISO/IEC 4"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "AI治理從制度走向安全驗證，BSI解析ISO/IEC 27090與42119新進展，強調企業須跨部門管理AI風險",
+    "desc": "如何落實AI治理、因應新興資安風險，已成為企業關注的重要課題。BSI英國標準協會近日舉辦「2026 BSI國際標準管理年會」，會中不僅強調AI治理須由跨部門共同負責，也特別提及幾項值得企業關注的AI安全標準與治理驗證進展，包括今年10月發布的ISO/IEC 27090、持續發展中的ISO/IEC 42119系列AI測試標準，以及BSI推出的AI可信賴治理框架（AIFF）與AI信賴標誌（AI MoT），並分享AI代理團隊的實際管理經驗。",
+    "summarize": true
+   }
+  },
   {
    "id": "tw:b4e0ae89a3fc",
    "kind": "news",
@@ -758,8 +818,8 @@
    "id": "grp:AI 平台:2026-11-27",
    "kind": "group",
    "title": "AI 平台 SSRF 等漏洞",
-   "sub": "2 個 CVE · 最高 CVSS 8.7",
-   "sev": "high",
+   "sub": "3 個 CVE · 最高 CVSS 9.3",
+   "sev": "crit",
    "kev": false,
    "ransomware": false,
    "products": [
@@ -767,24 +827,27 @@
    ],
    "cves": [
     "CVE-2026-137543",
-    "CVE-2026-137657"
+    "CVE-2026-137657",
+    "CVE-2026-85258"
    ],
-   "cvss": 8.7,
+   "cvss": 9.3,
    "published": "2026-11-26T16:18:07+00:00",
    "first_seen": "2026-11-26T19:07:06+00:00",
-   "updated": "2026-11-27T02:13:47+00:00",
+   "updated": "2026-11-27T20:03:25+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137543",
    "pts": [
-    "影響 LaraDashboard 1.5.2 前及 InternLM LMDeploy 0.9.0~0.18.0，可存取內網或耗盡記憶體。",
-    "CVE-2026-137543、CVE-2026-137657（CVSS 8.7）尚未遭利用；**LMDeploy 無須驗證即可觸發**。"
+    "同日公布 3 個漏洞，最高 CVSS 9.3。",
+    "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services b"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
      "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services by abusing the unvalidated ai_ollama_base_url setting. Once a settings.edit user points the Ollama base URL internally, any post.create user can call /admin/ai/generate-seo with provider=ollama to fetch internal data reflected in SEO fields.",
+     "InternLM LMDeploy 0.9.0 through 0.18.0 contains an unbounded resource allocation vulnerability in the DistServe proxy /distserve/connection_warmup endpoint that allows unauthenticated attackers to exhaust memory. While a prefill/decode connection is pending, for example after registering a slow node via /nodes/add, repeated warmup requests spawn unbounded wait_for_conn() tasks and sockets until the proxy process is killed.",
+     "A Missing Authorization vulnerability in the private console API in Google Cloud Vertex AI (Vertex AI Assistant) versions prior to 2026-04-13 on Google Cloud Platform allows an unauthenticated remote attacker to list, read, create, and send messages in other users' chat sessions using crafted API requests.\n\n\nThis vulnerability was patched on 13 April 2026, and no customer action is needed.",
      "InternLM LMDeploy 0.9.0 through 0.18.0 contains an unbounded resource allocation vulnerability in the DistServe proxy /distserve/connection_warmup endpoint that allows unauthenticated attackers to exhaust memory. While a prefill/decode connection is pending, for example after registering a slow node via /nodes/add, repeated warmup requests spawn unbounded wait_for_conn() tasks and sockets until the proxy process is killed."
     ]
    }
@@ -2555,15 +2618,15 @@
    "cvss": 10.0,
    "published": "2026-11-24T04:17:22+00:00",
    "first_seen": "2026-11-24T11:01:51+00:00",
-   "updated": "2026-11-26T08:24:00+00:00",
+   "updated": "2026-11-27T20:03:25+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128791",
    "pts": [
-    "影響 Cisco 相關設備，**任何連線的 WiFi 用戶端不需身分驗證即可永久刪除檔案**，或取得設備資訊與會議錄影中繼資料。",
-    "包含 CVE-2026-128791 與 CVE-2026-128798，最高 CVSS 達 10.0，目前尚未發現遭利用。"
+    "同日公布 2 個漏洞，最高 CVSS 10.0。",
+    "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication."
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -2572,6 +2635,7 @@
      "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication.",
      "Any connected WiFi client can fetch device info and meeting recording metadata without credentials.",
      "Any WiFi client can send HTTP DELETE to /meeting-recording/delete to permanently delete files without authentication.",
+     "Any connected WiFi client can fetch device info and meeting recording metadata without credentials.",
      "Any connected WiFi client can fetch device info and meeting recording metadata without credentials."
     ]
    }
@@ -4667,15 +4731,15 @@
    "cvss": 9.8,
    "published": "2026-11-19T15:17:42+00:00",
    "first_seen": "2026-11-22T15:20:54+00:00",
-   "updated": "2026-11-23T12:49:18+00:00",
+   "updated": "2026-11-27T20:03:25+00:00",
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99322",
    "pts": [
-    "影響 Linux 核心 SUNRPC、NFSD、SMB、ksmbd 及 VMBus 等元件，**存在緩衝區溢位與釋放後使用等漏洞**。",
-    "CVSS 9.8，目前尚未遭利用；涉及遠端檔案共享、重送處理及虛擬機共用環形緩衝區邊界檢查問題。"
+    "同日公布 20 個漏洞，最高 CVSS 9.8。",
+    "In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Do not credit control-record octets to the RPC stream svc_tcp_so"
    ],
    "fix": "",
-   "ai": true,
+   "ai": false,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -4716,7 +4780,8 @@
      "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: serialize directory emptiness checks with readdir\n\nSMB2 QUERY_DIRECTORY holds fp->readdir_lock while it calls iterate_dir()\non fp->filp. An SMB2 SET_INFO request with FILE_DISPOSITION_INFORMATION\ncan resolve the same FileId and call ksmbd_vfs_empty_dir() on the same\nfilp without that lock.\n\niterate_dir()'s inode read lock permits concurrent readers and does not\nserialize per-file iterator state. ext4 stores its dx readdir cursor and\nfname RB tree in file->private_data. Concurrent reset or refill can\ntherefore free a fname node while the other worker still traverses it or\nretains its RB-tree link, resulting in use-after-free accesses.\n\nAn authenticated SMB client with list and delete rights on a directory in\na writable KSMBD share backed by ext4 can trigger this when the directory\ntakes the dx readdir path. The client overlaps an SMB2 QUERY_DIRECTORY\nrequest with an SMB2 SET_INFO request carrying FILE_DISPOSITION_INFORMATION\non one live FileId.\n\nIn one x86_64 SMP KASAN multi-shot guest using ksmbd-for-next at\n171df27077fb, the unmodified kernel reported a cross-worker use-after-free\nbefore a panic. The first report's access and free stacks show the two\nrequest paths directly (trimmed):\n\n  BUG: KASAN: slab-use-after-free in ext4_htree_store_dirent+0x488/0x550\n  Read of size 8 by task kworker/2:0/29\n  Workqueue: ksmbd-io handle_ksmbd_work\n  Call Trace:\n   ext4_htree_store_dirent+0x488/0x550\n   htree_dirblock_to_tree+0x535/0x990\n   ext4_htree_fill_tree+0x319/0xba0\n   ext4_readdir+0x175a/0x2f40\n   iterate_dir+0x1b6/0x630\n   smb2_query_dir+0x1003/0x1cc0\n\n  Freed by task 279:\n   free_rb_tree_fname+0x67/0xc0\n   ext4_readdir+0x13a9/0x2f40\n   iterate_dir+0x1b6/0x630\n   ksmbd_vfs_empty_dir+0xa2/0x100\n   smb2_set_info+0x2ffa/0x45d0\n\nTake fp->readdir_lock across the entire emptiness check. This places both\niterators over that handle's filp in the same lock domain while\npreserving the disposition status handling. The exact code change\ncompleted a warning-free x86_64 KASAN bzImage build. Tracing three request\npairs showed that the two iterate_dir() calls no longer overlapped and the\nexpected statuses were preserved. A further 1,600 reproducer iterations\ncompleted with expected statuses and no KASAN report, Oops, or panic.\n\nThe reproducer and complete guest configuration are available privately\nto maintainers on request.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix OOB read and cross-share confusion in ksmbd_validate_name_reconnect()\n\nksmbd_validate_name_reconnect() indexes\nab_pathname[share->path_sz + 1] without checking that the path is\nlonger than share->path_sz + 1 (d_path() fills the buffer from the\nend). A durable fp is not bound to its original share, so a client\ncan preserve a file from a short-path share and reconnect it on a\nlong-path share, making strcmp() read past the PATH_MAX buffer -\nwith a long enough share path this oopses the kernel, and on a\nmapped page it also gives a byte-equality oracle on adjacent heap\n(the reconnect succeeds exactly when the out-of-bounds string\nequals the requested name). A same-share variant with the durable\nfp at the share root reads 1 byte past the buffer\n(strlen(ab_pathname) == share->path_sz).\n\nCheck before comparing: the path must be longer than share->path_sz,\nit must start with share->path, and the next character must be '/'.\nThe share root itself is accepted only for an empty name.",
      "In the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: fix oversized GSS proxy token copy\n\ngss_read_proxy_verf() allocates one page per token chunk, but it copies the\nentire linear head of an RPC request into in_token->pages[0]. A UDP datagram\ncan leave more than PAGE_SIZE bytes in the linear head, so a large\nRPCSEC_GSS INIT token overwrites following pages.\n\nCopy the linear head in page-sized chunks before switching to the request\npage array. The linear head itself can span multiple pages.",
-     "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: hold MP_JOIN msk ref when cloning reqsk\n\nTCP request migration clones pending request sockets with\ninet_reqsk_clone().  For MPTCP MP_JOIN requests this byte-copies\nsubflow_req->msk, but the clone does not own a reference.\n\nThe original and cloned requests can consequently drop the same msk\nreference, leaving one request with a dangling pointer.  This manifests as\na KASAN slab-use-after-free in subflow_req_destructor():\n\n  BUG: KASAN: slab-use-after-free in subflow_req_destructor (net/mptcp/subflow.c:45)\n  Write of size 4 at addr ff1100010e008d40 by task swapper/0/0\n  CPU: 0 UID: 0 PID: 0 Comm: swapper/0 Not tainted 7.2.0-rc5-00353-gc27e36054537 #10 PREEMPT(full)\n\n  Call Trace:\n   subflow_req_destructor (net/mptcp/subflow.c:45)\n   subflow_v4_req_destructor (net/mptcp/subflow.c:694)\n   __reqsk_free (net/ipv4/inet_connection_sock.c:906)\n   reqsk_timer_handler (include/net/request_sock.h:137 net/ipv4/inet_connection_sock.c:1147)\n\n  Allocated by task 10014:\n   sk_prot_alloc (net/core/sock.c:2246)\n   sk_clone (net/core/sock.c:2488)\n   mptcp_sk_clone_init (include/net/sock.h:1848 net/mptcp/protocol.c:3564)\n   subflow_syn_recv_sock (net/mptcp/subflow.c:883)\n   tcp_check_req (net/ipv4/tcp_minisocks.c:934)\n\n  Freed by task 0:\n   slab_free_after_rcu_debug (include/linux/kasan.h:235 mm/slub.c:2677 mm/slub.c:6439)\n   rcu_core (kernel/rcu/tree.c:2645 kernel/rcu/tree.c:2897)\n\n  Last potentially related work creation:\n   kmem_cache_free (mm/slub.c:2638 mm/slub.c:6377 mm/slub.c:6504)\n   __sk_destruct (net/core/sock.c:2289 net/core/sock.c:2391)\n   sk_destruct (net/core/sock.c:2419)\n   __sk_free (net/core/sock.c:2430)\n   sk_free (net/core/sock.c:2441)\n   mptcp_close (include/net/sock.h:2020 net/mptcp/protocol.c:3399)\n   inet_release (net/ipv4/af_inet.c:442)\n\n  The buggy address belongs to the cache MPTCP of size 2968\n  The buggy address is 128 bytes inside a freed 2968-byte region\n\nA non-NULL subflow_req->msk means that the request owns one reference. The\nthird ACK can concurrently transfer the original request reference to the\nchild and release it, so taking an unconditional hold on the copied pointer\nis unsafe.\n\nMPTCP sockets use SLAB_TYPESAFE_BY_RCU and all current inet_reqsk_clone()\ncallers run in an RCU read-side critical section. Document and\nlockdep-check that calling-context requirement.  Read the pointer from the\noriginal request and acquire a reference only if it is still live.  Use\nrefcount_inc_not_zero_acquire() so the subsequent ownership validation\ncannot be reordered before the try-get, then re-read the original request\nto verify that it still owns the same msk. If either check fails, clear the\nclone pointer; otherwise its normal destructor balances the new reference.\nMark the ownership-transfer store with WRITE_ONCE() to match the lockless\nreads.\n\nThe following patch completes the clone fixup for MP_CAPABLE token\nownership. Both patches carry the same Fixes tag and are required for\nstable backports."
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: hold MP_JOIN msk ref when cloning reqsk\n\nTCP request migration clones pending request sockets with\ninet_reqsk_clone().  For MPTCP MP_JOIN requests this byte-copies\nsubflow_req->msk, but the clone does not own a reference.\n\nThe original and cloned requests can consequently drop the same msk\nreference, leaving one request with a dangling pointer.  This manifests as\na KASAN slab-use-after-free in subflow_req_destructor():\n\n  BUG: KASAN: slab-use-after-free in subflow_req_destructor (net/mptcp/subflow.c:45)\n  Write of size 4 at addr ff1100010e008d40 by task swapper/0/0\n  CPU: 0 UID: 0 PID: 0 Comm: swapper/0 Not tainted 7.2.0-rc5-00353-gc27e36054537 #10 PREEMPT(full)\n\n  Call Trace:\n   subflow_req_destructor (net/mptcp/subflow.c:45)\n   subflow_v4_req_destructor (net/mptcp/subflow.c:694)\n   __reqsk_free (net/ipv4/inet_connection_sock.c:906)\n   reqsk_timer_handler (include/net/request_sock.h:137 net/ipv4/inet_connection_sock.c:1147)\n\n  Allocated by task 10014:\n   sk_prot_alloc (net/core/sock.c:2246)\n   sk_clone (net/core/sock.c:2488)\n   mptcp_sk_clone_init (include/net/sock.h:1848 net/mptcp/protocol.c:3564)\n   subflow_syn_recv_sock (net/mptcp/subflow.c:883)\n   tcp_check_req (net/ipv4/tcp_minisocks.c:934)\n\n  Freed by task 0:\n   slab_free_after_rcu_debug (include/linux/kasan.h:235 mm/slub.c:2677 mm/slub.c:6439)\n   rcu_core (kernel/rcu/tree.c:2645 kernel/rcu/tree.c:2897)\n\n  Last potentially related work creation:\n   kmem_cache_free (mm/slub.c:2638 mm/slub.c:6377 mm/slub.c:6504)\n   __sk_destruct (net/core/sock.c:2289 net/core/sock.c:2391)\n   sk_destruct (net/core/sock.c:2419)\n   __sk_free (net/core/sock.c:2430)\n   sk_free (net/core/sock.c:2441)\n   mptcp_close (include/net/sock.h:2020 net/mptcp/protocol.c:3399)\n   inet_release (net/ipv4/af_inet.c:442)\n\n  The buggy address belongs to the cache MPTCP of size 2968\n  The buggy address is 128 bytes inside a freed 2968-byte region\n\nA non-NULL subflow_req->msk means that the request owns one reference. The\nthird ACK can concurrently transfer the original request reference to the\nchild and release it, so taking an unconditional hold on the copied pointer\nis unsafe.\n\nMPTCP sockets use SLAB_TYPESAFE_BY_RCU and all current inet_reqsk_clone()\ncallers run in an RCU read-side critical section. Document and\nlockdep-check that calling-context requirement.  Read the pointer from the\noriginal request and acquire a reference only if it is still live.  Use\nrefcount_inc_not_zero_acquire() so the subsequent ownership validation\ncannot be reordered before the try-get, then re-read the original request\nto verify that it still owns the same msk. If either check fails, clear the\nclone pointer; otherwise its normal destructor balances the new reference.\nMark the ownership-transfer store with WRITE_ONCE() to match the lockless\nreads.\n\nThe following patch completes the clone fixup for MP_CAPABLE token\nownership. Both patches carry the same Fixes tag and are required for\nstable backports.",
+     "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: preflight SEQUENCE replies before accepting a slot\n\nnfsd4_sequence() narrows the reply buffer to the session's cached\nreply limit before it accepts the slot seqid. A client may negotiate\nca_maxresponsesize_cached down to NFSD_MIN_HDR_SEQ_SZ, and\nnfsd4_alloc_slot() then gives every slot a zero-length sl_data[]. A\nCOMPOUND tag can fill that narrowed buffer until it holds the\nSEQUENCE opcode but not the status word that follows.\nnfsd4_encode_operation() returns without running\nnfsd4_encode_sequence(), so cstate.data_offset stays zero. It leaves\nop->status at nfs_ok as well, so the COMPOUND is treated as having\nsucceeded.\n\nnfsd4_store_cache_entry() declines to cache a lone SEQUENCE that\nreturned an error. That test reads the status the operation\nreported, so it passes here. The copy starts at offset zero and\ntakes the whole reply, RPC and COMPOUND headers included, into the\nzero-length sl_data[]. The COMPOUND tag is copied along with it, so\nthe client picks most of the bytes written past the end of the slot:\n\n  BUG: KASAN: slab-out-of-bounds in read_bytes_from_xdr_buf+0x1bc/0x390\n  Write of size 80 at addr ffff888003a549cd by task kunit_try_catch/24\n   __asan_memcpy+0x38/0x60\n   read_bytes_from_xdr_buf+0x1bc/0x390\n   nfsd4_sequence_done+0x5b0/0x810\n   nfs4svc_encode_compoundres+0x1bf/0x240\n\nCheck that the fixed-size SEQUENCE result, plus room for a following\noperation's error status, fits the negotiated limit before narrowing\nthe buffer and consuming the slot seqid. The slot and its reply\ncache are left unchanged, as RFC 8881 Section 2.10.6.1.2 requires of\nan error returned from SEQUENCE."
     ]
    }
   },
@@ -22830,10 +22895,87 @@
   "CVE-2026-126717": [],
   "CVE-2026-137041": [],
   "CVE-2026-136995": [],
-  "CVE-2026-133274": []
+  "CVE-2026-133274": [],
+  "CVE-2026-134963": [],
+  "CVE-2026-135933": [],
+  "CVE-2026-134994": [],
+  "CVE-2026-136115": [],
+  "CVE-2026-136716": [],
+  "CVE-2026-106169": [],
+  "CVE-2026-124981": [],
+  "CVE-2026-135009": [],
+  "CVE-2026-85258": [
+   "AI 平台"
+  ],
+  "CVE-2026-137964": [],
+  "CVE-2026-136113": [],
+  "CVE-2026-135930": [],
+  "CVE-2026-110739": [],
+  "CVE-2026-135048": [],
+  "CVE-2026-137953": [],
+  "CVE-2026-135517": [],
+  "CVE-2026-135532": [],
+  "CVE-2026-135534": [],
+  "CVE-2026-135538": [],
+  "CVE-2026-135553": [],
+  "CVE-2026-135555": [],
+  "CVE-2026-135557": [],
+  "CVE-2026-135560": [],
+  "CVE-2026-135565": [],
+  "CVE-2026-135580": [],
+  "CVE-2026-135581": [],
+  "CVE-2026-135585": [],
+  "CVE-2026-137952": [],
+  "CVE-2026-137954": [],
+  "CVE-2026-137963": [],
+  "CVE-2026-137992": [],
+  "CVE-2026-134129": [],
+  "CVE-2026-134708": [],
+  "CVE-2026-134987": [],
+  "CVE-2026-135968": [],
+  "CVE-2026-135790": [],
+  "CVE-2026-135794": [],
+  "CVE-2026-137907": [],
+  "CVE-2026-137994": [],
+  "CVE-2026-137997": [],
+  "CVE-2026-137998": [],
+  "CVE-2026-137999": [],
+  "CVE-2026-80485": [],
+  "CVE-2026-80507": [],
+  "CVE-2026-137514": [],
+  "CVE-2026-123761": [],
+  "CVE-2026-137466": [],
+  "CVE-2026-137559": [],
+  "CVE-2026-137564": [],
+  "CVE-2026-137582": [],
+  "CVE-2026-80498": [],
+  "CVE-2026-80501": [],
+  "CVE-2026-137746": [],
+  "CVE-2026-80500": [],
+  "CVE-2026-137977": [],
+  "CVE-2026-137978": [],
+  "CVE-2026-80510": [],
+  "CVE-2026-132876": [],
+  "CVE-2026-123762": [],
+  "CVE-2026-123764": [],
+  "CVE-2026-124728": [],
+  "CVE-2026-134993": [],
+  "CVE-2026-135032": [],
+  "CVE-2026-4641": [],
+  "CVE-2026-4642": [],
+  "CVE-2026-135019": [],
+  "CVE-2026-135024": [],
+  "CVE-2026-135266": [],
+  "CVE-2026-134958": [],
+  "CVE-2026-123757": [],
+  "CVE-2026-137938": [],
+  "CVE-2026-137939": [],
+  "CVE-2026-80483": [],
+  "CVE-2026-80505": [],
+  "CVE-2026-133738": []
  },
- "nvd_last": "2026-11-27T10:52:49+00:00",
- "kev_last": "2026-11-27T10:52:49+00:00",
+ "nvd_last": "2026-11-27T19:57:48+00:00",
+ "kev_last": "2026-11-27T19:57:48+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
