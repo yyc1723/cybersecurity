@@ -35,6 +35,426 @@
  },
  "events": [
   {
+   "id": "tw:b4e0ae89a3fc",
+   "kind": "news",
+   "title": "【資安週報】1123～1127，網銀盜轉手法曝光，第三方資訊服務供應商資安事件延燒至物流與電子發票服務",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:56:30+00:00",
+   "updated": "2026-11-27T10:56:30+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180857",
+   "pts": [
+    "國內網銀交易安全近期備受關注，除了11月初永豐銀行異常轉帳事件，刑事局近日也公布其他網銀盜轉案件的調查進展，指出警方已受理逾百起案件，其中部分案件涉及民眾從非官方管道下載偽冒短劇App，歹徒藉此散布Android木馬，濫用無障礙權限盜轉存款；刑事局另揭露詐騙集團利用一般Android手機充當話務中繼"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安週報】1123～1127，網銀盜轉手法曝光，第三方資訊服務供應商資安事件延燒至物流與電子發票服務",
+    "desc": "國內網銀交易安全近期備受關注，除了11月初永豐銀行異常轉帳事件，刑事局近日也公布其他網銀盜轉案件的調查進展，指出警方已受理逾百起案件，其中部分案件涉及民眾從非官方管道下載偽冒短劇App，歹徒藉此散布Android木馬，濫用無障礙權限盜轉存款；刑事局另揭露詐騙集團利用一般Android手機充當話務中繼站的新手法，並呼籲民眾勿輕信兼職或設備代管話術而淪為共犯。AI網攻方面，中國駭客利用AI攻擊框架Cairn鎖定東亞多所大學的情況備受關注，其中AI代理僅花約11分鐘便自主發現並利用醫療影像AI軟體的零時差漏洞。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e2302b9ddad0",
+   "kind": "news",
+   "title": "假求職測驗暗藏惡意NuGet套件，駭客藉開發人員應徵流程散布惡意軟體",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:56:36+00:00",
+   "updated": "2026-11-27T10:56:36+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180860",
+   "pts": [
+    "資安公司Socket發現針對.NET開發人員的惡意程式散布活動，攻擊者偽造求職技術測驗，誘使應徵者下載GitHub專案，並使用Visual Studio建置、執行程式，進而利用惡意NuGet套件植入惡意程式。Socket總計發現13個惡意NuGet套件，分布於4個帳號，涵蓋28個版本，相關活動可追溯"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "假求職測驗暗藏惡意NuGet套件，駭客藉開發人員應徵流程散布惡意軟體",
+    "desc": "資安公司Socket發現針對.NET開發人員的惡意程式散布活動，攻擊者偽造求職技術測驗，誘使應徵者下載GitHub專案，並使用Visual Studio建置、執行程式，進而利用惡意NuGet套件植入惡意程式。Socket總計發現13個惡意NuGet套件，分布於4個帳號，涵蓋28個版本，相關活動可追溯至今年7月。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:27dd8985ea06",
+   "kind": "news",
+   "title": "北韓駭客從事供應鏈攻擊PolinRider，污染逾375個GitHub儲存庫以散布惡意軟體",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:56:42+00:00",
+   "updated": "2026-11-27T10:56:42+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180858",
+   "pts": [
+    "資安公司SafeDep於11月24日揭露，北韓駭客從事名為PolinRider的惡意軟體攻擊活動近期出現變化，開始將攻擊範圍擴大至Python專案，駭客透過竄改GitHub儲存庫，植入惡意Python載入程式，並利用以太坊區塊鏈交易資料傳遞JavaScript惡意程式碼，藉此躲避傳統仰賴網域或IP位"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "北韓駭客從事供應鏈攻擊PolinRider，污染逾375個GitHub儲存庫以散布惡意軟體",
+    "desc": "資安公司SafeDep於11月24日揭露，北韓駭客從事名為PolinRider的惡意軟體攻擊活動近期出現變化，開始將攻擊範圍擴大至Python專案，駭客透過竄改GitHub儲存庫，植入惡意Python載入程式，並利用以太坊區塊鏈交易資料傳遞JavaScript惡意程式碼，藉此躲避傳統仰賴網域或IP位址進行追蹤的偵測方式。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d26c27d14ef4",
+   "kind": "news",
+   "title": "SYS010竊資攻擊濫用瀏覽器管理功能，可攔讀並刪除Gmail與Outlook郵件",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:56:51+00:00",
+   "updated": "2026-11-27T10:56:51+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180855",
+   "pts": [
+    "資安業者Bitdefender揭露新一波鎖定Meta企業帳號的SYS010攻擊活動，駭客透過Meta廣告誘導使用者下載免費動態桌布軟體，並濫用瀏覽器的企業管理功能，在Chrome、Edge及Firefox強制安裝竊資擴充套件，其中Chrome版本還能讀取及永久刪除Gmail與Outlook網頁版郵件"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "SYS010竊資攻擊濫用瀏覽器管理功能，可攔讀並刪除Gmail與Outlook郵件",
+    "desc": "資安業者Bitdefender揭露新一波鎖定Meta企業帳號的SYS010攻擊活動，駭客透過Meta廣告誘導使用者下載免費動態桌布軟體，並濫用瀏覽器的企業管理功能，在Chrome、Edge及Firefox強制安裝竊資擴充套件，其中Chrome版本還能讀取及永久刪除Gmail與Outlook網頁版郵件。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d82e04ad983c",
+   "kind": "news",
+   "title": "MiCollab漏洞修補前已遭利用，攻擊者約在1小時取得網域控制權限",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:56:57+00:00",
+   "updated": "2026-11-27T10:56:57+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180854",
+   "pts": [
+    "11月25日美國網路安全與基礎設施安全局（CISA）更新已知遭利用漏洞名單（KEV），一口氣揭露10個遭到利用的新漏洞，其中一半與Mitel企業整合通訊與協作系統MiCollab有關而引人矚目。有研究人員指出，這些漏洞在Mitel修補之前就被用於實際攻擊，並在大約1個小時的時間滲透受害組織的內部網路"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "MiCollab漏洞修補前已遭利用，攻擊者約在1小時取得網域控制權限",
+    "desc": "11月25日美國網路安全與基礎設施安全局（CISA）更新已知遭利用漏洞名單（KEV），一口氣揭露10個遭到利用的新漏洞，其中一半與Mitel企業整合通訊與協作系統MiCollab有關而引人矚目。有研究人員指出，這些漏洞在Mitel修補之前就被用於實際攻擊，並在大約1個小時的時間滲透受害組織的內部網路環境。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:e07946fd05de",
+   "kind": "news",
+   "title": "美國鈾礦場因資安事件暫停運作",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:06+00:00",
+   "updated": "2026-11-27T10:57:06+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180852",
+   "pts": [
+    "澳洲礦業公司Peninsula Energy於11月25日公告，一座位於美國懷俄明州的鈾礦場發生資安事件，造成礦場暫停運作。 這座礦場名為Lance鈾計畫（Lance Uranium Project），由Peninsula Energy全資持有。其美國子公司Strata Energy於11月20日上"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "美國鈾礦場因資安事件暫停運作",
+    "desc": "澳洲礦業公司Peninsula Energy於11月25日公告，一座位於美國懷俄明州的鈾礦場發生資安事件，造成礦場暫停運作。 這座礦場名為Lance鈾計畫（Lance Uranium Project），由Peninsula Energy全資持有。其美國子公司Strata Energy於11月20日上午發現資安事件，立即啟動回應及預防措施，包括暫停Lance計畫運作，隔離受影響的系統。母公司亦在澳洲證交所申請暫停交易以評估影響。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:4241373edf61",
+   "kind": "news",
+   "title": "【資安日報】11月27日，中國及北韓駭客皆已於武器庫中加入ARTEX",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:12+00:00",
+   "updated": "2026-11-27T10:57:12+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180851",
+   "pts": [
+    "本日新聞焦點 ● 中國及北韓駭客皆已於武器庫中加入ARTEX ● FBI疑似再發生資安事故，全國犯罪資料庫遭入侵 ● Drupal揭露已遭利用的安裝程式新漏洞"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "【資安日報】11月27日，中國及北韓駭客皆已於武器庫中加入ARTEX",
+    "desc": "本日新聞焦點 ● 中國及北韓駭客皆已於武器庫中加入ARTEX ● FBI疑似再發生資安事故，全國犯罪資料庫遭入侵 ● Drupal揭露已遭利用的安裝程式新漏洞",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:1d8ed2374abb",
+   "kind": "news",
+   "title": "美CIA等情報機構傳遭駭，外洩非機密資料",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:18+00:00",
+   "updated": "2026-11-27T10:57:18+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180850",
+   "pts": [
+    "紐約時報、CNN引述多名消息人士報導，美國中央情報局（CIA）及國家情報總監辦公室（Office of the Director of National Intelligence，ODNI）的情報系"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "美CIA等情報機構傳遭駭，外洩非機密資料",
+    "desc": "紐約時報、CNN引述多名消息人士報導，美國中央情報局（CIA）及國家情報總監辦公室（Office of the Director of National Intelligence，ODNI）的情報系",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b7adcd11f633",
+   "kind": "news",
+   "title": "WPIDE修補未經驗證遠端程式碼執行漏洞，未更新可能導致管理員遭誘使執行惡意PHP",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:24+00:00",
+   "updated": "2026-11-27T10:57:24+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180848",
+   "pts": [
+    "WordPress網站管理外掛WPIDE近日發布更新，修補高風險漏洞CVE-2026-124251。WPIDE整合檔案管理、程式碼編輯器及程式碼片段功能，讓管理者可直接在後臺修改網站檔案及加入自訂功能，目前已有逾4萬個啟用安裝，前述漏洞可能導致攻擊者利用跨網站請求偽造（CSRF）繞過防護，進而在伺服"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "WPIDE修補未經驗證遠端程式碼執行漏洞，未更新可能導致管理員遭誘使執行惡意PHP",
+    "desc": "WordPress網站管理外掛WPIDE近日發布更新，修補高風險漏洞CVE-2026-124251。WPIDE整合檔案管理、程式碼編輯器及程式碼片段功能，讓管理者可直接在後臺修改網站檔案及加入自訂功能，目前已有逾4萬個啟用安裝，前述漏洞可能導致攻擊者利用跨網站請求偽造（CSRF）繞過防護，進而在伺服器執行任意程式碼，CVSS評分為8.8分。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:d13c0cfafba8",
+   "kind": "news",
+   "title": "Drupal揭露已遭利用的安裝程式新漏洞",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:40+00:00",
+   "updated": "2026-11-27T10:57:40+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180846",
+   "pts": [
+    "上週開源內容管理系統（CMS）Drupal修補與安裝程式有關的遠端程式碼執行（RCE）漏洞CVE-2026-132165（Fail2Install），近日傳出被用於實際攻擊，如今Drupal再度揭露安裝程式相關漏洞，成為資安圈的焦點。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "Drupal揭露已遭利用的安裝程式新漏洞",
+    "desc": "上週開源內容管理系統（CMS）Drupal修補與安裝程式有關的遠端程式碼執行（RCE）漏洞CVE-2026-132165（Fail2Install），近日傳出被用於實際攻擊，如今Drupal再度揭露安裝程式相關漏洞，成為資安圈的焦點。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:aefff2892edd",
+   "kind": "news",
+   "title": "近4,200個AI自主攻擊框架暴露於公開網路，臺灣也發現10個",
+   "sub": "iThome",
+   "sev": "note",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:50+00:00",
+   "updated": "2026-11-27T10:57:50+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180843",
+   "pts": [
+    "開源AI自主攻擊框架逐漸成為新型網路威脅來源，攻擊者可利用這類工具串接大型語言模型（LLM）代理，自動執行網路偵察、漏洞探測及憑證蒐集等工作，大幅加快入侵速度，並降低發動攻擊所需的人力與技術門檻。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "近4,200個AI自主攻擊框架暴露於公開網路，臺灣也發現10個",
+    "desc": "開源AI自主攻擊框架逐漸成為新型網路威脅來源，攻擊者可利用這類工具串接大型語言模型（LLM）代理，自動執行網路偵察、漏洞探測及憑證蒐集等工作，大幅加快入侵速度，並降低發動攻擊所需的人力與技術門檻。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:52fc1d8dcd22",
+   "kind": "news",
+   "title": "袋鼠金融平臺遭外部攻擊，部分使用者個資外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:56+00:00",
+   "updated": "2026-11-27T10:57:56+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180841",
+   "pts": [
+    "11月26日防詐科技公司Gogolook（6902）於股市公開資訊觀測站發布重大訊息，旗下子公司袋鼠金融科技營運的袋鼠金融（Roo.Cash）平臺，於11月25日遭受外部攻擊，部分使用者個人資料外洩。公司已啟動資安事件應變機制，暫停受影響系統功能，並持續調查事件及確認資料外洩範圍。"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "袋鼠金融平臺遭外部攻擊，部分使用者個資外洩",
+    "desc": "11月26日防詐科技公司Gogolook（6902）於股市公開資訊觀測站發布重大訊息，旗下子公司袋鼠金融科技營運的袋鼠金融（Roo.Cash）平臺，於11月25日遭受外部攻擊，部分使用者個人資料外洩。公司已啟動資安事件應變機制，暫停受影響系統功能，並持續調查事件及確認資料外洩範圍。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:ce9caf12e11f",
+   "kind": "news",
+   "title": "日本JAXA網站遭駭，2,000名用戶帳密外洩",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:59+00:00",
+   "updated": "2026-11-27T10:57:59+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180839",
+   "pts": [
+    "日本宇宙航空研究開發機構（JAXA）本週揭露，提供氣象資料的衛星觀測資料公開網站於上週遭第三方未授權存取，導致2,000名使用者的帳號資料外洩。 受害的網站為JAXA第一宇宙技術部門地球觀測研究中心及衛星利用運作中心所營運的公共資訊網站，該網站向用戶提供自地球觀測衛星取得的降水和氣象資料。JAXA於"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "日本JAXA網站遭駭，2,000名用戶帳密外洩",
+    "desc": "日本宇宙航空研究開發機構（JAXA）本週揭露，提供氣象資料的衛星觀測資料公開網站於上週遭第三方未授權存取，導致2,000名使用者的帳號資料外洩。 受害的網站為JAXA第一宇宙技術部門地球觀測研究中心及衛星利用運作中心所營運的公共資訊網站，該網站向用戶提供自地球觀測衛星取得的降水和氣象資料。JAXA於11月18日證實網站遭未授權存取，並於當日停止Web伺服器服務，封鎖存取路徑，且停止FTP伺服器服務以防萬一。",
+    "summarize": true
+   }
+  },
+  {
+   "id": "tw:b2e67f5fbfe5",
+   "kind": "news",
+   "title": "研究人員揭露已遭利用的Drupal重大漏洞Fail2Install細節",
+   "sub": "iThome",
+   "sev": "high",
+   "kev": false,
+   "ransomware": false,
+   "products": [
+    "其他"
+   ],
+   "cves": [],
+   "cvss": null,
+   "published": "2026-11-27T10:56:23+00:00",
+   "first_seen": "2026-11-27T10:57:59+00:00",
+   "updated": "2026-11-27T10:57:59+00:00",
+   "src": "iThome",
+   "url": "https://www.ithome.com.tw/news/180838",
+   "pts": [
+    "上週Drupal開發團隊發布安全更新，修補重大漏洞CVE-2026-132165（CVSS嚴重程度評分為9.8），後續Drupal更新公告內容指出該漏洞被用於攻擊網站，本週美國網路安全與基礎設施安全局（CISA）也證實已遭利用的情況。近期有資安公司對此漏洞進行深度分析，指出在多種用戶常見部署Drup"
+   ],
+   "fix": "",
+   "ai": true,
+   "ai_ver": 0,
+   "raw": {
+    "title": "研究人員揭露已遭利用的Drupal重大漏洞Fail2Install細節",
+    "desc": "上週Drupal開發團隊發布安全更新，修補重大漏洞CVE-2026-132165（CVSS嚴重程度評分為9.8），後續Drupal更新公告內容指出該漏洞被用於攻擊網站，本週美國網路安全與基礎設施安全局（CISA）也證實已遭利用的情況。近期有資安公司對此漏洞進行深度分析，指出在多種用戶常見部署Drupal的環境下，該弱點都能造成危害。",
+    "summarize": true
+   }
+  },
+  {
    "id": "tw:bd8fa48e84f5",
    "kind": "news",
    "title": "中國及北韓駭客皆已於武器庫中加入ARTEX",
@@ -337,7 +757,7 @@
   {
    "id": "grp:AI 平台:2026-11-27",
    "kind": "group",
-   "title": "AI 平台 多個高風險漏洞",
+   "title": "AI 平台 SSRF 等漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -356,12 +776,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137543",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.7。",
-    "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services b"
+    "影響 LaraDashboard 1.5.2 前及 InternLM LMDeploy 0.9.0~0.18.0，可存取內網或耗盡記憶體。",
+    "CVE-2026-137543、CVE-2026-137657（CVSS 8.7）尚未遭利用；**LMDeploy 無須驗證即可觸發**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "LaraDashboard before 1.5.2 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services by abusing the unvalidated ai_ollama_base_url setting. Once a settings.edit user points the Ollama base URL internally, any post.create user can call /admin/ai/generate-seo with provider=ollama to fetch internal data reflected in SEO fields.",
@@ -772,7 +1192,7 @@
   {
    "id": "CVE-2026-123682",
    "kind": "cve",
-   "title": "SonicWall 漏洞 CVE-2026-123682",
+   "title": "StellarOne 執行漏洞",
    "sub": "CVE-2026-123682 · CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -790,11 +1210,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123682",
    "pts": [
-    "An authenticated remote code execution vulnerability exists in the update functionality of StellarOne due to insufficient validation of file"
+    "影響 StellarOne 5.0.3232 以前版本，更新功能驗證不足，**攻擊者可上傳惡意更新檔以 root 權限執行任意程式**。",
+    "CVE-2026-123682（CVSS 8.6），目前尚未遭利用，須具網頁管理員權限方可利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "desc": "An authenticated remote code execution vulnerability exists in the update functionality of StellarOne due to insufficient validation of files contained within uploaded update packages. An attacker with web administrator privileges can upload a crafted update package to execute arbitrary programs with root privileges on the server. This issue affects StellarOne: before 5.0.3232.",
     "refs": [
@@ -805,7 +1226,7 @@
   {
    "id": "grp:Ivanti:2026-11-26",
    "kind": "group",
-   "title": "Ivanti 多個高風險漏洞",
+   "title": "StellarOne寫檔等漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.6",
    "sev": "high",
    "kev": false,
@@ -825,12 +1246,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123680",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.6。",
-    "An authenticated remote code execution vulnerability exists in the firmware update functionality of StellarOne. An attacker with admin privi"
+    "影響 StellarOne（含 5.0.3232 前版本），更新與上傳驗證不當，**可致 root 權限執行或端點寫檔**。",
+    "涵蓋 CVE-2026-123680、CVE-2026-123687（CVSS 8.6），目前尚未遭利用，須管理員權限方可利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "An authenticated remote code execution vulnerability exists in the firmware update functionality of StellarOne. An attacker with admin privileges can upload a crafted firmware package to execute arbitrary programs with root privileges on the system. This issue affects StellarOne: before 5.0.3232.",
@@ -841,7 +1262,7 @@
   {
    "id": "grp:AI 平台:2026-11-26",
    "kind": "group",
-   "title": "AI 平台 多個高風險漏洞",
+   "title": "AI 平台指令執行等漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.7",
    "sev": "high",
    "kev": false,
@@ -860,12 +1281,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137056",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.7。",
-    "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval becau"
+    "影響 DeepSeek-Reasonix 2.53.0 前與 LibreChat 0.7.3 至 0.8.9 前，可執行指令或使伺服器當機。",
+    "CVE-2026-137056、CVE-2026-137586（CVSS 8.7）尚未遭利用；**LibreChat 無須驗證即可觸發**。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval because the shellsafe classifier treats git blame and git whatchanged as read-only. Attackers can plant a diff textconv driver in .gitattributes and .git/config so that git blame, triggered via prompt injection or routine use, executes attacker-chosen commands with the user's privileges, exposing stored provider API keys and session history.",
@@ -1242,7 +1663,7 @@
   {
    "id": "grp:Ivanti:2026-11-25",
    "kind": "group",
-   "title": "Ivanti 多個高風險漏洞",
+   "title": "Ivanti 越權與跨站漏洞",
    "sub": "2 個 CVE · 最高 CVSS 8.4",
    "sev": "high",
    "kev": false,
@@ -1261,12 +1682,12 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7430",
    "pts": [
-    "同日公布 2 個漏洞，最高 CVSS 8.4。",
-    "Application Performance Management 9.60 patch versions before IP4 are affected. This issue seems to be present throughout the application, a"
+    "影響 Application Performance Management 9.60 IP4 前，**一般用戶可存取管理功能**與 XSS。",
+    "涵蓋 CVE-2024-7430、CVE-2024-7431（CVSS 8.4），目前尚未發現遭利用。"
    ],
    "fix": "",
-   "ai": false,
-   "ai_ver": 0,
+   "ai": true,
+   "ai_ver": 2,
    "raw": {
     "descs": [
      "Application Performance Management 9.60 patch versions before IP4 are affected. This issue seems to be present throughout the application, as several endpoints or functionalities that are restricted to Admin users can be directly accessed by Regular users. The authorization method of the application can be bypassed allowing users to perform unauthorized actions to their role. The application supports different levels of access. The application performs authorization checks to keep users from accessing functionality outside of their role such as create, verify, and/or repair. \n\n\n\n\nThis authorization method can be bypassed. During VA testing, it was found that under the User Reports inside the Applications menu, it is possible to  create links and different reports. However, the creation of custom links, Excel reports, and service reports are restricted to admin users. Hence, it is possible for regular users with the least privileges to directly access these \n\npages and the application allows them to further use these restricted functionalities.",
@@ -10699,7 +11120,7 @@
   {
    "id": "grp:Fortinet:2026-11-12",
    "kind": "group",
-   "title": "Fortinet 遠端執行漏洞",
+   "title": "Fortinet指令注入等漏洞",
    "sub": "24 個 CVE · 最高 CVSS 9.8",
    "sev": "crit",
    "kev": false,
@@ -10740,11 +11161,11 @@
    "src": "NVD",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121528",
    "pts": [
-    "同日公布 24 個漏洞，最高 CVSS 9.8。",
-    "A use of hard-coded credentials vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7"
+    "影響 FortiOS、FortiMail、FortiManager 等，**未經驗證可執行程式碼或接管帳號**。",
+    "含 CVE-2026-121528 等 10 項漏洞（CVSS 9.8），目前尚未遭利用，多數無須驗證即可遠端利用。"
    ],
    "fix": "",
-   "ai": false,
+   "ai": true,
    "ai_ver": 2,
    "raw": {
     "descs": [
@@ -22362,10 +22783,57 @@
    "AI 平台"
   ],
   "CVE-2026-127162": [],
-  "CVE-2026-135385": []
+  "CVE-2026-135385": [],
+  "CVE-2026-137721": [],
+  "CVE-2026-137724": [],
+  "CVE-2026-106125": [],
+  "CVE-2026-115867": [],
+  "CVE-2026-137738": [],
+  "CVE-2026-137723": [],
+  "CVE-2026-124802": [],
+  "CVE-2026-137706": [],
+  "CVE-2026-59103": [],
+  "CVE-2026-113774": [],
+  "CVE-2026-105917": [],
+  "CVE-2026-115283": [],
+  "CVE-2026-137705": [],
+  "CVE-2026-137704": [],
+  "CVE-2026-133938": [],
+  "CVE-2026-133939": [],
+  "CVE-2026-133941": [],
+  "CVE-2026-125399": [],
+  "CVE-2026-115284": [],
+  "CVE-2026-115288": [],
+  "CVE-2026-80453": [],
+  "CVE-2026-80477": [],
+  "CVE-2026-132890": [],
+  "CVE-2026-133842": [],
+  "CVE-2026-133940": [],
+  "CVE-2026-137702": [],
+  "CVE-2026-119071": [],
+  "CVE-2026-80472": [],
+  "CVE-2026-80268": [],
+  "CVE-2026-80451": [],
+  "CVE-2026-80457": [],
+  "CVE-2026-137715": [],
+  "CVE-2026-80448": [],
+  "CVE-2026-80450": [],
+  "CVE-2026-80475": [],
+  "CVE-2026-115285": [],
+  "CVE-2026-135616": [],
+  "CVE-2026-135626": [],
+  "CVE-2026-135627": [],
+  "CVE-2026-115286": [],
+  "CVE-2026-115287": [],
+  "CVE-2026-133845": [],
+  "CVE-2026-80459": [],
+  "CVE-2026-126717": [],
+  "CVE-2026-137041": [],
+  "CVE-2026-136995": [],
+  "CVE-2026-133274": []
  },
- "nvd_last": "2026-11-27T02:11:28+00:00",
- "kev_last": "2026-11-27T02:11:28+00:00",
+ "nvd_last": "2026-11-27T10:52:49+00:00",
+ "kev_last": "2026-11-27T10:52:49+00:00",
  "news_skip": [
   "tw:0f0528290e30",
   "tw:e1ee68ce60be",
@@ -22408,6 +22876,11 @@
   "tw:728e9e085804",
   "tw:947f762c6080",
   "tw:14014fed1fa4",
-  "tw:8fe179a6a364"
+  "tw:8fe179a6a364",
+  "tw:9d5759dea02e",
+  "tw:b569ca38fe47",
+  "tw:005c6562d9cd",
+  "tw:431f884804a9",
+  "tw:7f3397a6c647"
  ]
 }
